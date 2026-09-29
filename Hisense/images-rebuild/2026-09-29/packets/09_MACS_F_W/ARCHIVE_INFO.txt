@@ -1,0 +1,8 @@
+file=Hisense_packet_09_MACS_F_W.zip
+size_bytes=1204059
+sha256=b4ff9ab97e62f9d9f51c5bcb307518c6d2588d4e97b605ece94f78e7a1dc5c43
+zip_entries=41
+jpg_count=34
+product_folders=14
+verify_errors=0
+removed_cross_category=0

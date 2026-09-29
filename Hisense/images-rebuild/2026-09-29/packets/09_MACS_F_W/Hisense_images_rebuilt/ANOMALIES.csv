@@ -1,0 +1,15 @@
+﻿model,series,folder,reasons,warnings
+MACS-I-W27P2K,MACS,MACS/MACS-I-W27P2K,indoor missing; outdoor missing,
+MACS-I-W29P2K,MACS,MACS/MACS-I-W29P2K,indoor missing; outdoor missing,
+MACS-I-W38P2K,MACS,MACS/MACS-I-W38P2K,indoor missing; outdoor missing,
+MACS-I-W45P2K,MACS,MACS/MACS-I-W45P2K,indoor missing; outdoor missing,
+MACS-I-W54P2K,MACS,MACS/MACS-I-W54P2K,indoor missing; outdoor missing,
+MACS-I-F20P2KU,MACS,MACS/MACS-I-F20P2KU,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+MACS-I-F30P2KU,MACS,MACS/MACS-I-F30P2KU,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+MACS-I-F40P2KU,MACS,MACS/MACS-I-F40P2KU,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+MACS-I-F45P2KU,MACS,MACS/MACS-I-F45P2KU,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+MACS-I-F56P2KU,MACS,MACS/MACS-I-F56P2KU,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+MACS-I-F75P2KU,MACS,MACS/MACS-I-F75P2KU,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+MACS-I-F90P2KU,MACS,MACS/MACS-I-F90P2KU,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+MACS-I-F110P2KU,MACS,MACS/MACS-I-F110P2KU,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+MACS-I-F130P2KU,MACS,MACS/MACS-I-F130P2KU,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
