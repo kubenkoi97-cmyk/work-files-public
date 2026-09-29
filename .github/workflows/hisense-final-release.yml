@@ -1,0 +1,745 @@
+name: Build final Hisense image archive
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-final-release.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  final:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: python -m pip install -q requests pillow imagehash
+
+      - name: Fetch selected final-input branches
+        run: |
+          set -euxo pipefail
+          git fetch origin hisense-public-packet-01:refs/remotes/origin/hisense-public-packet-01
+          for i in 02 03 04 05 06 07; do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
+          git fetch origin hisense-public-packet-08-curated:refs/remotes/origin/hisense-public-packet-08-curated
+          for i in 09 10 11 12 13 14; do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
+          git fetch origin hisense-public-packet-15-curated:refs/remotes/origin/hisense-public-packet-15-curated
+
+      - name: Extract selected packets
+        run: |
+          set -euxo pipefail
+          rm -rf /tmp/hisense_inputs /tmp/hisense_final_work
+          mkdir -p /tmp/hisense_inputs /tmp/hisense_final_work
+          for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15; do mkdir -p "/tmp/hisense_inputs/$i"; done
+          git archive origin/hisense-public-packet-01 | tar -x -C /tmp/hisense_inputs/01
+          for i in 02 03 04 05 06 07; do git archive "origin/hisense-public-packet-$i" | tar -x -C "/tmp/hisense_inputs/$i"; done
+          git archive origin/hisense-public-packet-08-curated | tar -x -C /tmp/hisense_inputs/08
+          for i in 09 10 11 12 13 14; do git archive "origin/hisense-public-packet-$i" | tar -x -C "/tmp/hisense_inputs/$i"; done
+          git archive origin/hisense-public-packet-15-curated | tar -x -C /tmp/hisense_inputs/15
+
+      - name: Sanitize, add exact accessories, verify, and build ZIPs
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          cat > /tmp/finalize_hisense.py <<'PY'
+          import csv
+          import hashlib
+          import io
+          import json
+          import os
+          import re
+          import shutil
+          import zipfile
+          from collections import Counter, defaultdict
+          from pathlib import Path
+
+          import requests
+          from PIL import Image
+
+          INPUT=Path('/tmp/hisense_inputs')
+          WORK=Path('/tmp/hisense_final_work')
+          OUT=WORK/'release'
+          OUT.mkdir(parents=True,exist_ok=True)
+
+          PACKETS={
+            '01':('AVC_AVY', INPUT/'01/Hisense/images-rebuild/2026-09-29/packets/01_AVC_AVY/curated/Hisense_packet_01_AVC_AVY'),
+            '02':('AVBC', INPUT/'02/Hisense/images-rebuild/2026-09-29/packets/02_AVBC/Hisense_images_rebuilt'),
+            '03':('AVS_AVF', INPUT/'03/Hisense/images-rebuild/2026-09-29/packets/03_AVS_AVF/Hisense_images_rebuilt'),
+            '04':('AVD_HJDH', INPUT/'04/Hisense/images-rebuild/2026-09-29/packets/04_AVD_HJDH/Hisense_images_rebuilt'),
+            '05':('AVD_HJFH_AVE', INPUT/'05/Hisense/images-rebuild/2026-09-29/packets/05_AVD_HJFH_AVE/Hisense_images_rebuilt'),
+            '06':('S5', INPUT/'06/Hisense/images-rebuild/2026-09-29/packets/06_S5/Hisense_images_rebuilt'),
+            '07':('H5_A_W', INPUT/'07/Hisense/images-rebuild/2026-09-29/packets/07_H5_A_W/Hisense_images_rebuilt'),
+            '08':('MACS_C', INPUT/'08/Hisense/images-rebuild/2026-09-29/packets/08_MACS_C_CURATED/Hisense_images_rebuilt'),
+            '09':('MACS_F_W', INPUT/'09/Hisense/images-rebuild/2026-09-29/packets/09_MACS_F_W/Hisense_images_rebuilt'),
+            '10':('MACS_D_A', INPUT/'10/Hisense/images-rebuild/2026-09-29/packets/10_MACS_D_A/Hisense_images_rebuilt'),
+            '11':('MACS_D_B', INPUT/'11/Hisense/images-rebuild/2026-09-29/packets/11_MACS_D_B/Hisense_images_rebuilt'),
+            '12':('MACS_D_C', INPUT/'12/Hisense/images-rebuild/2026-09-29/packets/12_MACS_D_C/Hisense_images_rebuilt'),
+            '13':('ZKPU', INPUT/'13/Hisense/images-rebuild/2026-09-29/packets/13_ZKPU/Hisense_images_rebuilt'),
+            '14':('HEAVY_UNIVERSO', INPUT/'14/Hisense/images-rebuild/2026-09-29/packets/14_HEAVY_UNIVERSO/Hisense_images_rebuilt'),
+            '15':('TRIUMPH_AR_IR_HIMOD', INPUT/'15/Hisense/images-rebuild/2026-09-29/packets/15_TRIUMPH_AR_IR_HIMOD_CURATED/Hisense_images_rebuilt'),
+          }
+          for pid,(slug,root) in PACKETS.items():
+              if not root.exists():
+                  raise SystemExit(f'Input root missing for packet {pid}: {root}')
+
+          # Visually confirmed forbidden/non-product normalized JPGs from the third-pass cross-model audit.
+          BAD_HASH_REASON={
+            '833e8140e3d3f9f38a79a5a42f3746185144b4584be1911863268887000347e1':'MirCli/Hisense authorized service certificate',
+            '047f09f590a8859329d2f6ee45d98b33439c679d6531065d9b59e365ee218712':'MirCli/Hisense official dealer certificate',
+            '130da847ad4fa3319d6c3bd4f17f64f7e22e5d423451a06ec2e2d1170d7efc60':'Hisense HVAC promotional multi-product banner',
+            '747f32a8d9b91ab0e3729446cd2269a3608511e990b9cf2112d01e16a7717f83':'Hisense/Hitachi corporate/factory promotional image',
+          }
+
+          # Other forbidden source-patterns. These are used only when an IMAGE_SOURCES row maps
+          # directly to a current file; they are not broad filename guesses.
+          BAD_SOURCE_TOKENS=(
+            'classic-split-system-extraforce',
+            'pic.rtbcdn.ru/video/',
+            '/img/banners/',
+            'programma_podbora',
+          )
+
+          session=requests.Session()
+          session.headers.update({'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'})
+
+          removed=[]
+          sanitation_notes=defaultdict(list)
+          original_reports={}
+          source_rows=[]
+
+          def read_csv(path):
+              if not path.exists(): return []
+              with path.open(encoding='utf-8-sig',newline='') as f:
+                  return list(csv.DictReader(f))
+
+          def write_csv(path, rows, fields):
+              path.parent.mkdir(parents=True,exist_ok=True)
+              with path.open('w',encoding='utf-8-sig',newline='') as f:
+                  w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore')
+                  w.writeheader();w.writerows(rows)
+
+          # First pass: load metadata, remove known forbidden images, remove mapped obvious-source junk.
+          for pid,(slug,root) in PACKETS.items():
+              original_reports[pid]=read_csv(root/'REPORT.csv')
+
+              srcfile=root/'IMAGE_SOURCES.csv'
+              sources=read_csv(srcfile)
+              source_map={}
+              for s in sources:
+                  model=s.get('model','')
+                  fn=s.get('file','')
+                  url=s.get('url') or s.get('source_url') or ''
+                  if model and fn:
+                      source_map[(model,fn)]=url
+                  s2=dict(s);s2['packet']=pid;s2['final_status']='source_registry'
+                  source_rows.append(s2)
+
+              for p in list(root.rglob('*.jpg')):
+                  sha=hashlib.sha256(p.read_bytes()).hexdigest()
+                  reason=BAD_HASH_REASON.get(sha)
+                  # model folder is direct parent in all selected packet structures.
+                  model_folder=p.parent.name
+                  mapped_url=source_map.get((model_folder,p.name),'')
+                  if not reason and mapped_url and any(tok in mapped_url.lower() for tok in BAD_SOURCE_TOKENS):
+                      reason='forbidden source pattern: '+mapped_url
+                  if reason:
+                      rel=str(p.relative_to(root))
+                      removed.append({'packet':pid,'series':p.parent.parent.name,'model_folder':model_folder,
+                                      'file':p.name,'sha256':sha,'reason':reason,'relative_path':rel})
+                      sanitation_notes[(pid,model_folder)].append('removed: '+reason)
+                      p.unlink()
+
+          # Renumber every model folder after removals, preserving current visual order.
+          def model_folders(root):
+              out=[]
+              for d in root.rglob('*'):
+                  if d.is_dir() and any(d.glob('*.jpg')):
+                      out.append(d)
+              return out
+
+          def renumber(folder):
+              fs=sorted(folder.glob('*.jpg'),key=lambda p:(int(p.stem) if p.stem.isdigit() else 9999,p.name))
+              if not fs:
+                  return
+              tmp=[]
+              for i,p in enumerate(fs,1):
+                  q=folder/f'__tmp_final_{i:03d}.jpg'
+                  p.rename(q);tmp.append(q)
+              for i,p in enumerate(tmp,1):
+                  p.rename(folder/f'{i:02d}.jpg')
+
+          for pid,(slug,root) in PACKETS.items():
+              # Include empty model dirs too in a later completeness check, but renumber nonempty now.
+              for d in model_folders(root):
+                  renumber(d)
+
+          # ---------- Exact accessory library ----------
+          def get_image(url):
+              r=session.get(url,timeout=40)
+              r.raise_for_status()
+              return Image.open(io.BytesIO(r.content)).convert('RGBA'), len(r.content)
+
+          def object_crop(im):
+              rgba=im.convert('RGBA')
+              base=Image.new('RGBA',rgba.size,(255,255,255,255));base.alpha_composite(rgba)
+              rgb=base.convert('RGB')
+              pix=rgb.load();w,h=rgb.size
+              xs=[];ys=[]
+              for y in range(h):
+                  for x in range(w):
+                      rr,gg,bb=pix[x,y]
+                      if not (rr>244 and gg>244 and bb>244):
+                          xs.append(x);ys.append(y)
+              if not xs:return rgb
+              return rgb.crop((max(0,min(xs)-3),max(0,min(ys)-3),min(w,max(xs)+4),min(h,max(ys)+4)))
+
+          def normalize(im):
+              obj=object_crop(im)
+              obj.thumbnail((750,750),Image.Resampling.LANCZOS)
+              c=Image.new('RGB',(850,850),'white')
+              c.paste(obj,((850-obj.width)//2,(850-obj.height)//2))
+              return c
+
+          def jpeg_bytes(im):
+              b=io.BytesIO();im.save(b,'JPEG',quality=94,optimize=True,subsampling=0);return b.getvalue()
+
+          def load_accessory(name,urls):
+              errors=[]
+              for url in urls:
+                  try:
+                      im,srcbytes=get_image(url)
+                      n=normalize(im)
+                      return {'name':name,'image':n,'bytes':jpeg_bytes(n),'url':url,
+                              'source_size':f'{im.width}x{im.height}','source_bytes':srcbytes}
+                  except Exception as e:
+                      errors.append(f'{url}: {e}')
+              raise RuntimeError(name+' failed: '+' | '.join(errors))
+
+          ACCESS={}
+          ACCESS['HPE-GNK1']=load_accessory('HPE-GNK1',[
+            'https://hi.1clim.ru/upload/iblock/5dd/rlk0tm1j8c4zwa59jck3sdeswvufz5gi.jpg',
+            'https://cdn2.mircli.ru/_next/img/media/430098/Hisense_HPE_GNK1.jpg?w=520&h=520&fit=fit&q=92&f=webp&dpr=2',
+          ])
+          ACCESS['HP-G-NK']=load_accessory('HP-G-NK',[
+            'https://schiessl.pl/Zdj%C4%99cia%20produkt%C3%B3w_new%20schiessl/Klimatyzacja%20VRF/Akcesoria%20klimatyzacja_VRF/wyposa%C5%BCenie%20dodatkowe/53861/image-thumb__53861__gallery_large_photo/HP-G-NK.jpg',
+          ])
+          ACCESS['HYE-VD01-front']=load_accessory('HYE-VD01-front',[
+            'https://www.kaut-hisense.de/media/f6/0c/81/1681722580/1268304201_bild01_bild-hye-vd01_web.png?ts=1692274121',
+          ])
+          ACCESS['HYE-VD01-angle']=load_accessory('HYE-VD01-angle',[
+            'https://www.kaut-hisense.de/media/d5/c5/52/1681722516/1268304201_bild02_bild-hye-vd01_side_web.png?ts=1692274122',
+          ])
+          ACCESS['HYXE-VC01']=load_accessory('HYXE-VC01',[
+            'https://hisenseair.ru/image/cache/catalog/hisense/HYXE_VC01_HYXE-VC01-500x500.png',
+          ])
+          ACCESS['HYXE-VA01A']=load_accessory('HYXE-VA01A',[
+            'https://es.hisensehvac.com/upload/images/20203/20203281830361345420.png',
+          ])
+
+          accessory_log=[]
+
+          def existing_hashes(folder):
+              return {hashlib.sha256(p.read_bytes()).hexdigest() for p in folder.glob('*.jpg')}
+
+          def append_accessory(folder,acc,component,model):
+              data=acc['bytes'];sha=hashlib.sha256(data).hexdigest()
+              if sha in existing_hashes(folder):
+                  accessory_log.append({'packet':'','series':folder.parent.name,'model_folder':folder.name,
+                                        'component':component,'accessory_model':model,'file':'already present',
+                                        'source_url':acc['url'],'sha256':sha,'action':'deduplicated'})
+                  return None
+              nums=[int(p.stem) for p in folder.glob('*.jpg') if p.stem.isdigit()]
+              n=max(nums,default=0)+1
+              path=folder/f'{n:02d}.jpg'
+              path.write_bytes(data)
+              accessory_log.append({'packet':'','series':folder.parent.name,'model_folder':folder.name,
+                                    'component':component,'accessory_model':model,'file':path.name,
+                                    'source_url':acc['url'],'sha256':sha,'action':'added'})
+              return path
+
+          # Locate folder by series + report model folder path.
+          def folders_for_series(pid,series):
+              root=PACKETS[pid][1]
+              d=root/series
+              return [x for x in d.iterdir() if x.is_dir()] if d.exists() else []
+
+          # Packet 02 AVBC-HJDBA: exact HPE-GNK1 panel + exact HYE-VD01 remote.
+          for d in folders_for_series('02','AVBC-HJDBA'):
+              append_accessory(d,ACCESS['HPE-GNK1'],'panel','HPE-GNK1')
+              append_accessory(d,ACCESS['HYE-VD01-angle'],'remote','HYE-VD01')
+              append_accessory(d,ACCESS['HYE-VD01-front'],'remote','HYE-VD01')
+              sanitation_notes[('02',d.name)].append('added exact HPE-GNK1 panel and HYE-VD01 remote')
+          # Packet 02 AVBC-HJFKA: exact panel HP-G-NK. Exact wireless remote model is not given in workbook.
+          for d in folders_for_series('02','AVBC-HJFKA'):
+              append_accessory(d,ACCESS['HP-G-NK'],'panel','HP-G-NK')
+              sanitation_notes[('02',d.name)].append('added exact HP-G-NK panel; wireless remote exact model unspecified in source data')
+          # Packet 03: all models specify HYE-VD01.
+          for series in ('AVS-HJDTD','AVF-H2FDA'):
+              for d in folders_for_series('03',series):
+                  append_accessory(d,ACCESS['HYE-VD01-angle'],'remote','HYE-VD01')
+                  append_accessory(d,ACCESS['HYE-VD01-front'],'remote','HYE-VD01')
+                  sanitation_notes[('03',d.name)].append('added exact HYE-VD01 remote')
+          # Packet 04: workbook explicitly lists both HYXE-VA01A/HYXE-VC01.
+          for d in folders_for_series('04','AVD-HJDH'):
+              append_accessory(d,ACCESS['HYXE-VA01A'],'controller','HYXE-VA01A')
+              append_accessory(d,ACCESS['HYXE-VC01'],'controller','HYXE-VC01')
+              sanitation_notes[('04',d.name)].append('both workbook-listed controllers retained: HYXE-VA01A and HYXE-VC01')
+          # Packet 05: AVE-HJDDH specifies HYXE-VC01. AVD-HJFH says only "wired" with no exact model.
+          for d in folders_for_series('05','AVE-HJDDH'):
+              append_accessory(d,ACCESS['HYXE-VC01'],'controller','HYXE-VC01')
+              sanitation_notes[('05',d.name)].append('added exact HYXE-VC01 controller')
+          for d in folders_for_series('05','AVD-HJFH'):
+              sanitation_notes[('05',d.name)].append('wired controller required, but exact controller model is not specified; no guessed controller added')
+
+          # Record exact remote uncertainty for HJFKA.
+          for d in folders_for_series('02','AVBC-HJFKA'):
+              sanitation_notes[('02',d.name)].append('wireless remote is specified, but exact model is not specified; no guessed remote added')
+
+          # Ensure remote/controller images remain last by having been appended after panels.
+          # Renumber again in numeric order for clean sequence.
+          for pid,(slug,root) in PACKETS.items():
+              for d in model_folders(root):
+                  renumber(d)
+
+          # ---------- Targeted second-pass limitations ----------
+          targeted_limits={}
+          def set_limit(pid,series,msg):
+              for d in folders_for_series(pid,series):
+                  targeted_limits[(pid,d.name)]=msg
+
+          set_limit('09','MACS',
+              'Targeted exact-model audit checked iClim and Royal Clima pages. Floor/ceiling models with different physical widths reuse the same dealer renders; unsafe generic duplicates were not added.')
+          for pid in ('10','11','12'):
+              set_limit(pid,'MACS',
+                  'Targeted exact-model audit checked iClim and Royal Clima pages. Only one unique clean product candidate was found per exact duct/fan-coil model; reused generic family renders were not used as extra angles.')
+          for series in ('ZKPU-mini','ZKPU-maxi'):
+              set_limit('13',series,
+                  'Targeted exact-model audit checked Breez, Toplan and AirVentilation. Additional images are generic series components/marketing material shared across size variants; only safe product imagery retained.')
+          set_limit('14','UNIVERSO',
+              'Targeted exact-model audit checked Royal Clima, iClim and dealer pages. Exact model pages reuse the same render across different outdoor dimensions; no unsafe extra model-specific images were invented.')
+          set_limit('15','Triumph',
+              'Targeted exact-model audit found dealer renders reused across models with different outdoor dimensions; only safe confirmed imagery retained.')
+          set_limit('15','AR',
+              'Targeted second pass found one clean series product image per exact model; banner/video thumbnails were excluded.')
+          set_limit('15','IR',
+              'Targeted second pass confirmed the available clean IR product gallery; unrelated banner/video thumbnails were excluded.')
+          set_limit('15','HiMod AE2',
+              'HiMod exact-model second pass completed. HFRWE-65DGF/SYS has one independently confirmed exact-model render; HFRWE-130DGF/SYS has three exact-model renders.')
+
+          # ---------- Build standardized final report ----------
+          report_rows=[]
+          report_by_key={}
+          for pid,(slug,root) in PACKETS.items():
+              for r in original_reports.get(pid,[]):
+                  model=r.get('model','')
+                  series=r.get('series','')
+                  folder_rel=r.get('folder','')
+                  folder=root/folder_rel if folder_rel else None
+                  # Packet model folder names sometimes normalize slash. Fall back by series and one-to-one report order.
+                  if not folder or not folder.exists():
+                      sdir=root/series
+                      candidates=[d for d in sdir.iterdir() if d.is_dir()] if sdir.exists() else []
+                      norm=lambda s:re.sub(r'[^A-Za-z0-9А-Яа-я]+','-',s).strip('-').lower()
+                      match=[d for d in candidates if norm(d.name)==norm(model)]
+                      if match: folder=match[0]
+                  if not folder or not folder.exists():
+                      raise RuntimeError(f'Cannot map report row to folder: packet {pid} {series} {model} {folder_rel}')
+                  fs=sorted(folder.glob('*.jpg'))
+                  if not fs:
+                      raise RuntimeError(f'Empty model folder after sanitation: {pid} {series} {model}')
+                  notes=list(sanitation_notes.get((pid,folder.name),[]))
+                  limit=targeted_limits.get((pid,folder.name),'')
+                  if limit:notes.append(limit)
+                  oldwarn=r.get('warnings','') or ''
+                  # Keep meaningful model-specific warnings but drop obsolete "missing" claims corrected here.
+                  if oldwarn and not any(x in oldwarn.lower() for x in (
+                      'confirmed remote image not found','confirmed panel image not found','01.jpg missing','no_usable_images')):
+                      notes.append(oldwarn)
+                  quality=r.get('quality','') or 'OK'
+                  remote_model=r.get('remote_model','') or ''
+                  remote_status=r.get('remote_found','') or ''
+                  panel_status=r.get('panel_found','') or ''
+                  panel_model=r.get('panel_model','') or ''
+                  if series=='AVBC-HJDBA':
+                      remote_model='HYE-VD01';remote_status='да — точная модель добавлена'
+                      panel_model='HPE-GNK1';panel_status='да — точная панель добавлена'
+                  elif series=='AVBC-HJFKA':
+                      panel_model='HP-G-NK';panel_status='да — точная панель добавлена'
+                      remote_model='точная модель не указана';remote_status='беспроводной пульт указан, модель не задана'
+                  elif series in ('AVS-HJDTD','AVF-H2FDA'):
+                      remote_model='HYE-VD01';remote_status='да — точная модель добавлена'
+                  elif series=='AVD-HJDH':
+                      remote_model='HYXE-VA01A / HYXE-VC01';remote_status='да — обе указанные модели сохранены'
+                  elif series=='AVD-HJFH':
+                      remote_model='точная модель не указана';remote_status='проводной пульт указан, модель не задана'
+                  elif series=='AVE-HJDDH':
+                      remote_model='HYXE-VC01';remote_status='да — точная модель добавлена'
+                  row={
+                      'packet':pid,'model':model,'series':series,
+                      'folder':f'{series}/{folder.name}',
+                      'final_files':len(fs),'preview_01':'да' if (folder/'01.jpg').exists() else 'нет',
+                      'source_1':r.get('source_1','') or r.get('source1',''),
+                      'additional_sources':r.get('additional_sources',''),
+                      'indoor_found':r.get('indoor_found',''),
+                      'outdoor_found':r.get('outdoor_found',''),
+                      'remote_status':remote_status,'remote_model':remote_model,
+                      'panel_status':panel_status,'panel_model':panel_model,
+                      'quality':quality,
+                      'warnings':' | '.join(dict.fromkeys(x for x in notes if x)),
+                      'second_pass':'completed',
+                      'third_pass':'completed',
+                  }
+                  report_rows.append(row)
+                  report_by_key[(pid,series,folder.name)]=row
+
+          if len(report_rows)!=276:
+              raise RuntimeError(f'Final report must have 276 rows, got {len(report_rows)}')
+
+          # ---------- Build unified final directory ----------
+          FINAL=WORK/'Hisense_FINAL'
+          if FINAL.exists():shutil.rmtree(FINAL)
+          FINAL.mkdir(parents=True)
+          part_dirs={}
+          for pid,(slug,root) in PACKETS.items():
+              pdir=WORK/f'Hisense_FINAL_PART_{pid}_{slug}'
+              if pdir.exists():shutil.rmtree(pdir)
+              pdir.mkdir(parents=True)
+              part_dirs[pid]=pdir
+              # Copy only series/model directories (root metadata files are regenerated).
+              for sdir in [x for x in root.iterdir() if x.is_dir()]:
+                  # series dir must contain at least one model folder with JPG.
+                  if not any(d.is_dir() and any(d.glob('*.jpg')) for d in sdir.iterdir()):
+                      continue
+                  destF=FINAL/sdir.name
+                  destP=pdir/sdir.name
+                  destF.mkdir(parents=True,exist_ok=True)
+                  destP.mkdir(parents=True,exist_ok=True)
+                  for mdir in [d for d in sdir.iterdir() if d.is_dir() and any(d.glob('*.jpg'))]:
+                      if (destF/mdir.name).exists():
+                          raise RuntimeError(f'Duplicate final model folder {sdir.name}/{mdir.name}')
+                      shutil.copytree(mdir,destF/mdir.name)
+                      shutil.copytree(mdir,destP/mdir.name)
+
+          # ---------- Final source/addition/removal logs ----------
+          report_fields=['packet','model','series','folder','final_files','preview_01','source_1','additional_sources',
+                         'indoor_found','outdoor_found','remote_status','remote_model','panel_status','panel_model',
+                         'quality','warnings','second_pass','third_pass']
+          write_csv(FINAL/'REPORT.csv',report_rows,report_fields)
+          write_csv(OUT/'FINAL_REPORT.csv',report_rows,report_fields)
+
+          rem_fields=['packet','series','model_folder','file','sha256','reason','relative_path']
+          write_csv(FINAL/'REMOVED_FORBIDDEN_IMAGES.csv',removed,rem_fields)
+          write_csv(OUT/'REMOVED_FORBIDDEN_IMAGES.csv',removed,rem_fields)
+
+          acc_fields=['packet','series','model_folder','component','accessory_model','file','source_url','sha256','action']
+          # Fill packet for accessory rows from folder membership.
+          for a in accessory_log:
+              if not a.get('packet'):
+                  for pid,(slug,root) in PACKETS.items():
+                      if (root/a['series']/a['model_folder']).exists():
+                          a['packet']=pid;break
+          write_csv(FINAL/'ACCESSORY_ADDITIONS.csv',accessory_log,acc_fields)
+          write_csv(OUT/'ACCESSORY_ADDITIONS.csv',accessory_log,acc_fields)
+
+          # Compact sources registry: original source rows + exact accessories.
+          source_fields=['packet','model','file','category','url','source_page','width','height','final_status']
+          normalized_sources=[]
+          for s in source_rows:
+              normalized_sources.append({
+                  'packet':s.get('packet',''),'model':s.get('model',''),'file':s.get('file',''),
+                  'category':s.get('category',''),
+                  'url':s.get('url') or s.get('source_url') or '',
+                  'source_page':s.get('source_page',''),
+                  'width':s.get('width',''),'height':s.get('height',''),
+                  'final_status':s.get('final_status','source_registry')
+              })
+          for a in accessory_log:
+              normalized_sources.append({
+                  'packet':a.get('packet',''),'model':a.get('model_folder',''),'file':a.get('file',''),
+                  'category':a.get('component','')+' '+a.get('accessory_model',''),
+                  'url':a.get('source_url',''),'source_page':'exact accessory audit',
+                  'width':'','height':'','final_status':a.get('action','added')
+              })
+          write_csv(FINAL/'SOURCES.csv',normalized_sources,source_fields)
+
+          # ---------- Anomaly / limitations table ----------
+          anomaly_rows=[]
+          for r in report_rows:
+              reasons=[]
+              if int(r['final_files'])<=2:reasons.append(f"{r['final_files']} confirmed image(s)")
+              if r['preview_01']!='да':reasons.append('01.jpg missing')
+              if r['warnings']:reasons.append(r['warnings'])
+              # exact-model controller uncertainties always stay visible
+              if 'точная модель не указана' in r['remote_model']:
+                  reasons.append('controller/remote exact model unresolved in source data')
+              if reasons:
+                  anomaly_rows.append({
+                      'packet':r['packet'],'model':r['model'],'series':r['series'],'folder':r['folder'],
+                      'final_files':r['final_files'],'severity':'limitation',
+                      'reasons':' | '.join(dict.fromkeys(reasons))
+                  })
+          anomaly_fields=['packet','model','series','folder','final_files','severity','reasons']
+          write_csv(FINAL/'ANOMALIES.csv',anomaly_rows,anomaly_fields)
+          write_csv(OUT/'FINAL_ANOMALIES.csv',anomaly_rows,anomaly_fields)
+
+          # ---------- Third-pass verification ----------
+          all_model_dirs=[d for s in FINAL.iterdir() if s.is_dir() for d in s.iterdir() if d.is_dir() and any(d.glob('*.jpg'))]
+          model_count=len(all_model_dirs)
+          jpgs=list(FINAL.rglob('*.jpg'))
+          missing01=[];bad_images=[];forbidden_remaining=[]
+          hashes=defaultdict(list)
+          for d in all_model_dirs:
+              if not (d/'01.jpg').exists():missing01.append(str(d.relative_to(FINAL)))
+          for p in jpgs:
+              b=p.read_bytes();sha=hashlib.sha256(b).hexdigest();hashes[sha].append(str(p.relative_to(FINAL)))
+              if sha in BAD_HASH_REASON:forbidden_remaining.append((str(p.relative_to(FINAL)),sha))
+              try:
+                  im=Image.open(io.BytesIO(b));im.verify()
+                  im=Image.open(io.BytesIO(b))
+                  if im.format!='JPEG' or im.size!=(850,850):
+                      bad_images.append(f'{p.relative_to(FINAL)} format={im.format} size={im.size}')
+              except Exception as e:
+                  bad_images.append(f'{p.relative_to(FINAL)} error={e}')
+
+          # cross-series exact duplicate audit after sanitation
+          cross_series=[]
+          for sha,paths in hashes.items():
+              series=set(x.split('/')[0] for x in paths)
+              if len(series)>1:
+                  # exact known accessories are legitimately reusable across different series.
+                  acc_sha={hashlib.sha256(v['bytes']).hexdigest():k for k,v in ACCESS.items()}
+                  cross_series.append({
+                      'sha256':sha,'model_images':len(paths),'series_count':len(series),
+                      'series':' | '.join(sorted(series)),
+                      'classification':'known exact accessory '+acc_sha[sha] if sha in acc_sha else 'shared image — review logged',
+                      'paths':' | '.join(paths)
+                  })
+          cross_fields=['sha256','model_images','series_count','series','classification','paths']
+          write_csv(FINAL/'CROSS_MODEL_DUPLICATES_FINAL.csv',cross_series,cross_fields)
+
+          # Check every report folder exists.
+          report_missing=[]
+          for r in report_rows:
+              if not (FINAL/r['folder']).exists():report_missing.append(r['folder'])
+
+          verify_errors=[]
+          if model_count!=276:verify_errors.append(f'model_folder_count={model_count}, expected 276')
+          if missing01:verify_errors.append('missing01='+repr(missing01))
+          if bad_images:verify_errors.append('bad_images='+repr(bad_images[:20]))
+          if forbidden_remaining:verify_errors.append('forbidden_remaining='+repr(forbidden_remaining))
+          if report_missing:verify_errors.append('report_missing='+repr(report_missing))
+
+          # Stats and limitation categories.
+          count_dist=Counter()
+          for d in all_model_dirs:
+              n=len(list(d.glob('*.jpg')))
+              count_dist['1']+=n==1;count_dist['2']+=n==2;count_dist['3+']+=n>=3
+          warnings=sum(bool(r['warnings']) for r in report_rows)
+          uncertain=sum('точная модель не указана' in r['remote_model'] for r in report_rows)
+
+          verify_text='\n'.join([
+              'FINAL HISENSE IMAGE ARCHIVE VERIFICATION',
+              f'model_folders={model_count}',
+              f'jpg_count={len(jpgs)}',
+              f'models_1_image={count_dist["1"]}',
+              f'models_2_images={count_dist["2"]}',
+              f'models_3plus_images={count_dist["3+"]}',
+              f'missing_01={len(missing01)}',
+              f'bad_jpeg_or_size={len(bad_images)}',
+              f'forbidden_known_images_remaining={len(forbidden_remaining)}',
+              f'forbidden_images_removed={len(removed)}',
+              f'cross_series_exact_duplicate_groups={len(cross_series)}',
+              f'rows_with_documented_limitations={warnings}',
+              f'rows_with_unspecified_controller_model={uncertain}',
+              'zip_test=performed after packaging',
+              'status='+('OK' if not verify_errors else 'FAILED'),
+              *verify_errors
+          ])+'\n'
+          (FINAL/'VERIFY.txt').write_text(verify_text,encoding='utf-8')
+          (OUT/'VERIFY.txt').write_text(verify_text,encoding='utf-8')
+          if verify_errors:
+              raise SystemExit('\n'.join(verify_errors))
+
+          # README deliberately distinguishes completeness from source limitations.
+          unresolved=[
+              'AVBC-HJFKA: source workbook specifies a wireless remote but does not identify its exact model; no guessed remote image was added.',
+              'AVD-HJFH: source workbook specifies a wired controller but does not identify its exact model; no guessed controller image was added.',
+              'MACS floor/ceiling and duct fan coils: targeted exact-model dealer audits showed reused generic renders across dimensionally different models; generic repeats were not used to inflate galleries.',
+              'ZKPU: exact-model pages mainly expose shared series component/marketing images; only safe product imagery was retained.',
+              'UNIVERSO and Triumph: exact dealer pages reuse renders across models with different dimensions; only safe confirmed imagery was retained.',
+              'HFRWE-65DGF/SYS: only one independently confirmed exact-model clean render was found after the dedicated second pass.',
+          ]
+          readme='\n'.join([
+              'HISENSE — FINAL IMAGE ARCHIVE',
+              'Finalized: 2026-09-30',
+              '',
+              'Coverage:',
+              f'- 276/276 workbook products represented by a model folder.',
+              f'- {len(jpgs)} final JPG files.',
+              f'- Every model folder has 01.jpg: yes.',
+              '- Every JPG verified as JPEG 850x850: yes.',
+              f'- Known forbidden certificate/banner/corporate images removed: {len(removed)}.',
+              '',
+              'Quality process:',
+              '- Exact-model/series searches were performed in staged packets.',
+              '- Mandatory second pass performed for 0/1/2-image models and missing panel/controller cases.',
+              '- Dedicated audits performed for MACS cassette, floor/ceiling and duct models, ZKPU, UNIVERSO, Triumph/AR/IR, HiMod AE2 and VRF accessories.',
+              '- Third-pass cross-model hash audit used to identify hidden certificates, banners, corporate imagery and suspicious shared renders.',
+              '- Two MirCli/Hisense certificates, a Hisense HVAC marketing banner and a Hisense/Hitachi corporate image family were removed globally.',
+              '- Generic dealer renders were not treated as distinct model images when different physical dimensions could not be visually verified.',
+              '',
+              'Exact accessories added where the workbook identified the model:',
+              '- AVBC-HJDBA: HPE-GNK1 panel + HYE-VD01 remote.',
+              '- AVBC-HJFKA: HP-G-NK panel; wireless remote left unresolved because exact model is not specified.',
+              '- AVS-HJDTD / AVF-H2FDA: HYE-VD01 remote.',
+              '- AVD-HJDH: both HYXE-VA01A and HYXE-VC01 retained because both are explicitly listed.',
+              '- AVE-HJDDH: HYXE-VC01.',
+              '',
+              'Documented limitations (not hidden or guessed):',
+              *['- '+x for x in unresolved],
+              '',
+              'Files:',
+              '- REPORT.csv — one row per product/model.',
+              '- ANOMALIES.csv — source limitations that remain after the second/third pass.',
+              '- SOURCES.csv — collected source registry plus exact accessory additions.',
+              '- REMOVED_FORBIDDEN_IMAGES.csv — every globally removed forbidden image.',
+              '- ACCESSORY_ADDITIONS.csv — exact panels/controllers/remotes added in finalization.',
+              '- CROSS_MODEL_DUPLICATES_FINAL.csv — remaining cross-series exact duplicates, including legitimate shared accessories.',
+              '- VERIFY.txt — mechanical validation results.',
+          ])+'\n'
+          (FINAL/'README.txt').write_text(readme,encoding='utf-8')
+          (OUT/'README.txt').write_text(readme,encoding='utf-8')
+
+          # Copy report metadata into every part ZIP.
+          by_packet=defaultdict(list)
+          for r in report_rows:by_packet[r['packet']].append(r)
+          by_packet_an=defaultdict(list)
+          for r in anomaly_rows:by_packet_an[r['packet']].append(r)
+          for pid,pdir in part_dirs.items():
+              write_csv(pdir/'REPORT.csv',by_packet[pid],report_fields)
+              write_csv(pdir/'ANOMALIES.csv',by_packet_an[pid],anomaly_fields)
+              (pdir/'README.txt').write_text(f'HISENSE FINAL PART {pid}\nSee REPORT.csv and ANOMALIES.csv.\n',encoding='utf-8')
+
+          # ---------- ZIPs ----------
+          def make_zip(source,zip_path):
+              if zip_path.exists():zip_path.unlink()
+              with zipfile.ZipFile(zip_path,'w',zipfile.ZIP_DEFLATED,compresslevel=6,allowZip64=True) as z:
+                  for p in source.rglob('*'):
+                      if p.is_file():
+                          z.write(p,p.relative_to(source.parent))
+              with zipfile.ZipFile(zip_path) as z:
+                  bad=z.testzip()
+                  if bad:raise RuntimeError(f'Bad ZIP member {zip_path}: {bad}')
+                  entries=len(z.infolist())
+              return entries,zip_path.stat().st_size,hashlib.sha256(zip_path.read_bytes()).hexdigest()
+
+          manifest=[]
+          # unified
+          e,s,h=make_zip(FINAL,OUT/'Hisense_FINAL_ALL_276.zip')
+          manifest.append({'file':'Hisense_FINAL_ALL_276.zip','kind':'unified','packet':'ALL','size_bytes':s,'sha256':h,'zip_entries':e})
+          for pid,(slug,root) in PACKETS.items():
+              zp=OUT/f'Hisense_FINAL_part_{pid}_{slug}.zip'
+              e,s,h=make_zip(part_dirs[pid],zp)
+              manifest.append({'file':zp.name,'kind':'part','packet':pid,'size_bytes':s,'sha256':h,'zip_entries':e})
+
+          # Re-open all final ZIPs.
+          for m in manifest:
+              with zipfile.ZipFile(OUT/m['file']) as z:
+                  bad=z.testzip()
+                  if bad:raise RuntimeError(f'Final recheck failed {m["file"]}: {bad}')
+
+          write_csv(OUT/'MANIFEST.csv',manifest,['file','kind','packet','size_bytes','sha256','zip_entries'])
+          (OUT/'MANIFEST.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+
+          # Summary for workflow log.
+          summary={
+              'products':model_count,'jpg_count':len(jpgs),
+              'one_image':count_dist['1'],'two_images':count_dist['2'],'three_plus':count_dist['3+'],
+              'removed_forbidden':len(removed),'missing_01':len(missing01),
+              'bad_images':len(bad_images),'unresolved_controller_rows':uncertain,
+              'unified_zip_bytes':(OUT/'Hisense_FINAL_ALL_276.zip').stat().st_size,
+              'unified_zip_sha256':hashlib.sha256((OUT/'Hisense_FINAL_ALL_276.zip').read_bytes()).hexdigest(),
+          }
+          (OUT/'FINAL_SUMMARY.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(summary,ensure_ascii=False,indent=2))
+          PY
+          python /tmp/finalize_hisense.py
+
+      - name: Persist final reports on a clean branch
+        run: |
+          set -euxo pipefail
+          REPORT_TMP="/tmp/hisense-final-reports"
+          rm -rf "$REPORT_TMP"
+          mkdir -p "$REPORT_TMP"
+          cp /tmp/hisense_final_work/release/FINAL_REPORT.csv "$REPORT_TMP/"
+          cp /tmp/hisense_final_work/release/FINAL_ANOMALIES.csv "$REPORT_TMP/"
+          cp /tmp/hisense_final_work/release/REMOVED_FORBIDDEN_IMAGES.csv "$REPORT_TMP/"
+          cp /tmp/hisense_final_work/release/ACCESSORY_ADDITIONS.csv "$REPORT_TMP/"
+          cp /tmp/hisense_final_work/release/VERIFY.txt "$REPORT_TMP/"
+          cp /tmp/hisense_final_work/release/README.txt "$REPORT_TMP/"
+          cp /tmp/hisense_final_work/release/MANIFEST.csv "$REPORT_TMP/"
+          cp /tmp/hisense_final_work/release/MANIFEST.json "$REPORT_TMP/"
+          cp /tmp/hisense_final_work/release/FINAL_SUMMARY.json "$REPORT_TMP/"
+          git reset --hard
+          git clean -fdx
+          git checkout --orphan hisense-final-reports
+          git rm -rf . || true
+          git clean -fdx
+          mkdir -p Hisense/images-rebuild/2026-09-30/final
+          cp -a "$REPORT_TMP"/. Hisense/images-rebuild/2026-09-30/final/
+          git add Hisense/images-rebuild/2026-09-30/final
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Publish final Hisense image archive reports"
+          git push -f origin hisense-final-reports:refs/heads/hisense-final
+
+      - name: Publish public GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euxo pipefail
+          TAG="hisense-images-final-2026-09-30"
+          TITLE="Hisense images — FINAL — 276 products — 2026-09-30"
+          cd /tmp/hisense_final_work/release
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release delete "$TAG" --repo "$GITHUB_REPOSITORY" --yes
+            git push origin ":refs/tags/$TAG" || true
+          fi
+          gh release create "$TAG"             Hisense_FINAL_ALL_276.zip             Hisense_FINAL_part_*.zip             FINAL_REPORT.csv FINAL_ANOMALIES.csv REMOVED_FORBIDDEN_IMAGES.csv ACCESSORY_ADDITIONS.csv             VERIFY.txt README.txt MANIFEST.csv MANIFEST.json FINAL_SUMMARY.json             --repo "$GITHUB_REPOSITORY"             --title "$TITLE"             --notes-file README.txt
+          gh release view "$TAG" --repo "$GITHUB_REPOSITORY" --json url,tagName,name,assets
+
+      - name: Verify public release API
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,subprocess,sys
+          tag='hisense-images-final-2026-09-30'
+          repo='kubenkoi97-cmyk/work-files-public'
+          data=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/releases/tags/{tag}']))
+          assets=data.get('assets',[])
+          expected=1+15+10
+          print('release_url',data.get('html_url'))
+          print('asset_count',len(assets))
+          for a in assets:
+              print(a['name'],a['size'],a['state'],a['browser_download_url'])
+          if data.get('draft'):raise SystemExit('release is draft')
+          if len(assets)<expected:raise SystemExit(f'expected at least {expected} assets, got {len(assets)}')
+          if any(a.get('state')!='uploaded' or a.get('size',0)<=0 for a in assets):
+              raise SystemExit('release contains failed/empty asset')
+          names={a['name'] for a in assets}
+          required={'Hisense_FINAL_ALL_276.zip','FINAL_REPORT.csv','VERIFY.txt','MANIFEST.json','FINAL_SUMMARY.json'}
+          missing=required-names
+          if missing:raise SystemExit('missing assets '+repr(missing))
+          print('PUBLIC_RELEASE_VERIFY=OK')
+          PY
