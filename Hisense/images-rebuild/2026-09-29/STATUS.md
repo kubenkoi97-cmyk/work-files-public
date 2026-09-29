@@ -80,3 +80,16 @@ Will check:
 - [ ] unified anomalies log
 - [ ] final ZIP(s)
 - [ ] public direct-download links verified without authentication
+
+
+## Progress update — second pass
+- [x] Packet 08 MACS cassette: exact-model audit completed for all 30 models.
+- [x] Packet 08: 28 exact-model renders added from exact iClim pages.
+- [x] Packet 08: targeted C45/C51 audit completed.
+- [x] Packet 08: C45 and C51 exact/validated renders added.
+- [x] Packet 08 final curated result: 30/30 models have 2 images; ZIP verified.
+- [x] ZKPU exact/series audit completed: dealer pages reuse generic series imagery across distinct sizes; no unsafe cross-size promotion of generic images.
+- [x] UNIVERSO exact-model audit completed: official exact product pages reuse only two renders across eight models with materially different dimensions, so reused renders are treated as generic and not accepted as model-specific additions.
+- [ ] MACS duct (69 models) exact-gallery audit running.
+- [ ] MACS floor/ceiling (9 weak models) exact-gallery audit running.
+- [ ] Packet 15 Triumph/AR/IR exact-gallery audit running.
