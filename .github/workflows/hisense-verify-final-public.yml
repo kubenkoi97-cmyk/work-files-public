@@ -1,0 +1,118 @@
+name: Verify final Hisense release publicly
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-verify-final-public.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Verify release through unauthenticated public HTTP
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/hisense-images-final-2026-09-30"
+          PAGE="https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/hisense-images-final-2026-09-30"
+          : > /tmp/public_verify.txt
+
+          code="$(curl -L -sS -o /tmp/release_page.html -w '%{http_code}' "$PAGE")"
+          echo "release_page_http=$code" | tee -a /tmp/public_verify.txt
+          test "$code" = "200"
+
+          files=(
+            "Hisense_FINAL_ALL_276.zip"
+            "Hisense_FINAL_part_01_AVC_AVY.zip"
+            "Hisense_FINAL_part_02_AVBC.zip"
+            "Hisense_FINAL_part_03_AVS_AVF.zip"
+            "Hisense_FINAL_part_04_AVD_HJDH.zip"
+            "Hisense_FINAL_part_05_AVD_HJFH_AVE.zip"
+            "Hisense_FINAL_part_06_S5.zip"
+            "Hisense_FINAL_part_07_H5_A_W.zip"
+            "Hisense_FINAL_part_08_MACS_C.zip"
+            "Hisense_FINAL_part_09_MACS_F_W.zip"
+            "Hisense_FINAL_part_10_MACS_D_A.zip"
+            "Hisense_FINAL_part_11_MACS_D_B.zip"
+            "Hisense_FINAL_part_12_MACS_D_C.zip"
+            "Hisense_FINAL_part_13_ZKPU.zip"
+            "Hisense_FINAL_part_14_HEAVY_UNIVERSO.zip"
+            "Hisense_FINAL_part_15_TRIUMPH_AR_IR_HIMOD.zip"
+            "FINAL_REPORT.csv"
+            "FINAL_ANOMALIES.csv"
+            "VERIFY.txt"
+            "README.txt"
+            "MANIFEST.json"
+            "FINAL_SUMMARY.json"
+          )
+
+          n=0
+          for f in "${files[@]}"; do
+            n=$((n+1))
+            url="$BASE/$f"
+            rm -f /tmp/probe
+            # Unauthenticated ranged GET: proves the public asset can actually be downloaded.
+            code="$(curl -L --fail --silent --show-error --range 0-1023 -o /tmp/probe -w '%{http_code}' "$url")"
+            bytes="$(wc -c < /tmp/probe)"
+            echo "$f|http=$code|probe_bytes=$bytes" | tee -a /tmp/public_verify.txt
+            case "$code" in
+              200|206) ;;
+              *) exit 1 ;;
+            esac
+            test "$bytes" -gt 0
+            if [[ "$f" == *.zip ]]; then
+              magic="$(od -An -tx1 -N2 /tmp/probe | tr -d ' \n')"
+              test "$magic" = "504b"
+            fi
+          done
+          echo "checked_assets=$n" | tee -a /tmp/public_verify.txt
+          echo "PUBLIC_UNAUTHENTICATED_DOWNLOAD_VERIFY=OK" | tee -a /tmp/public_verify.txt
+
+      - name: Verify release metadata and exact asset count
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json,subprocess
+          repo='kubenkoi97-cmyk/work-files-public'
+          tag='hisense-images-final-2026-09-30'
+          d=json.loads(subprocess.check_output(['gh','api',f'repos/{repo}/releases/tags/{tag}']))
+          assets=d['assets']
+          print('asset_count',len(assets))
+          assert len(assets)==25, len(assets)
+          assert not d['draft']
+          assert all(a['state']=='uploaded' and a['size']>0 for a in assets)
+          names={a['name'] for a in assets}
+          assert 'Hisense_FINAL_ALL_276.zip' in names
+          assert all(f'Hisense_FINAL_part_{i:02d}_' in ' '.join(names) for i in range(1,16))
+          print('RELEASE_METADATA_VERIFY=OK')
+          PY
+
+      - name: Save public verification record
+        run: |
+          set -euxo pipefail
+          TMP=/tmp/final-public-verify
+          rm -rf "$TMP"; mkdir -p "$TMP"
+          cp /tmp/public_verify.txt "$TMP/PUBLIC_DOWNLOAD_VERIFY.txt"
+          git reset --hard
+          git clean -fdx
+          git checkout --orphan verify-final
+          git rm -rf . || true
+          git clean -fdx
+          mkdir -p Hisense/images-rebuild/2026-09-30/final
+          cp "$TMP/PUBLIC_DOWNLOAD_VERIFY.txt" Hisense/images-rebuild/2026-09-30/final/
+          git add Hisense/images-rebuild/2026-09-30/final/PUBLIC_DOWNLOAD_VERIFY.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Verify public Hisense release downloads without authentication"
+          git push -f origin verify-final:refs/heads/hisense-final-public-verify
