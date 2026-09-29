@@ -1,0 +1,174 @@
+name: Audit packet 08 MACS cassette exact galleries
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-audit-packet08-macs.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python -m pip install -q requests beautifulsoup4 pillow imagehash
+
+      - name: Decode manifest and audit exact model pages
+        run: |
+          python - <<'PY'
+          import base64,gzip,json,csv,io,re,hashlib,unicodedata
+          from pathlib import Path
+          from urllib.parse import urljoin
+          import requests
+          from bs4 import BeautifulSoup
+          from PIL import Image,ImageOps,ImageDraw
+          import imagehash
+
+          base=Path('Hisense/images-rebuild/2026-09-29')
+          eng=base/'engine'
+          data=json.loads(gzip.decompress(base64.b64decode((eng/'manifest_compact.json.gz.b64').read_text())))
+          models=[x for x in data if x.get('series')=='MACS' and str(x.get('model','')).startswith('MACS-I-C')]
+          assert len(models)==30,len(models)
+
+          out=base/'audits'/'packet08_macs'
+          out.mkdir(parents=True,exist_ok=True)
+          ses=requests.Session()
+          ses.headers.update({'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'})
+
+          def ascii_slug(s):
+              s=s.replace('С','C').replace('Р','P').replace('с','c').replace('р','p')
+              s=unicodedata.normalize('NFKD',s)
+              s=''.join(ch for ch in s if ord(ch)<128)
+              s=s.lower()
+              s=re.sub(r'[^a-z0-9]+','_',s).strip('_')
+              return s
+          def dash_slug(s):
+              return ascii_slug(s).replace('_','-')
+
+          bad_words=('logo','banner','certificate','sertif','dealer','delivery','payment','brand','sprite','icon','flag','prostore')
+          rows=[]; summaries=[]
+          for item in models:
+              model=str(item.get('model',''))
+              first=model.split('/')[0]
+              slug_first=ascii_slug(first)
+              slug_full=ascii_slug(model)
+              pages=[
+                f'https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/royal_clima_{slug_first}/',
+                f'https://royal.com.ru/catalog/fankoyly/royal_clima_{slug_first}/',
+              ]
+              if slug_full!=slug_first:
+                pages += [
+                  f'https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/royal_clima_{slug_full}/',
+                  f'https://royal.com.ru/catalog/fankoyly/royal_clima_{slug_full}/',
+                  f'https://eco-conditioner.ru/kassetnyy-fankoyl-royal-clima-{dash_slug(model)}/',
+                ]
+              cand=[]; seen_url=set(); seen_sha=set(); seen_ph=[]
+              for page in pages:
+                  try:
+                      rr=ses.get(page,timeout=20)
+                      if rr.status_code!=200: continue
+                      soup=BeautifulSoup(rr.text,'html.parser')
+                  except: continue
+                  urls=set()
+                  for tag in soup.find_all(['img','source','a']):
+                      for a in ('src','data-src','data-original','data-lazy-src','href'):
+                          v=tag.get(a)
+                          if v and re.search(r'\.(?:jpe?g|png|webp)(?:\?|$)',v,re.I):
+                              urls.add(urljoin(page,v))
+                      for a in ('srcset','data-srcset'):
+                          v=tag.get(a)
+                          if v:
+                              for part in v.split(','):
+                                  u=part.strip().split(' ')[0]
+                                  if u and re.search(r'\.(?:jpe?g|png|webp)(?:\?|$)',u,re.I):
+                                      urls.add(urljoin(page,u))
+                  for u in sorted(urls):
+                      if u in seen_url: continue
+                      seen_url.add(u)
+                      low=u.lower()
+                      if any(w in low for w in bad_words): continue
+                      try:
+                          ir=ses.get(u,timeout=15)
+                          if ir.status_code!=200 or not ir.headers.get('content-type','').startswith('image/'): continue
+                          b=ir.content
+                          if len(b)<12000: continue
+                          im=Image.open(io.BytesIO(b)).convert('RGB')
+                          w,h=im.size
+                          if max(w,h)<400 or min(w,h)<250: continue
+                          ar=max(w/h,h/w)
+                          if ar>2.6: continue
+                          sha=hashlib.sha256(b).hexdigest()
+                          ph=imagehash.phash(im)
+                          if sha in seen_sha: continue
+                          if any(ph-hh<=2 for hh in seen_ph): continue
+                          seen_sha.add(sha); seen_ph.append(ph)
+                          cand.append((page,u,im,w,h,len(b),sha,str(ph)))
+                      except: pass
+
+              # Keep only model-page candidates; exact source provenance is logged.
+              for idx,(page,u,im,w,h,bs,sha,ph) in enumerate(cand,1):
+                  rows.append([model,idx,page,u,w,h,bs,sha,ph])
+
+              # Contact sheet per model.
+              tiles=[]
+              for idx,(page,u,im,w,h,bs,sha,ph) in enumerate(cand,1):
+                  tile=Image.new('RGB',(300,340),'white')
+                  obj=ImageOps.contain(im,(270,250),Image.Resampling.LANCZOS)
+                  tile.paste(obj,((300-obj.width)//2,8))
+                  d=ImageDraw.Draw(tile)
+                  d.text((8,265),f'{idx:02d} {w}x{h} {bs//1024}KB',fill='black')
+                  host=re.sub(r'^https?://([^/]+).*',r'\1',page)
+                  d.text((8,286),host[:38],fill='black')
+                  d.text((8,307),sha[:16],fill='black')
+                  tiles.append(tile)
+              if tiles:
+                  cols=3; rn=(len(tiles)+cols-1)//cols
+                  sheet=Image.new('RGB',(cols*300,rn*340),'white')
+                  for i,t in enumerate(tiles): sheet.paste(t,((i%cols)*300,(i//cols)*340))
+                  safe=re.sub(r'[^A-Za-z0-9_-]+','_',model)
+                  sheet.save(out/f'{safe}_CONTACT.jpg','JPEG',quality=88)
+              summaries.append([model,len(cand),' | '.join(pages)])
+
+          with (out/'CANDIDATES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.writer(f); w.writerow(['model','candidate_no','page','image_url','width','height','bytes','sha256','phash']); w.writerows(rows)
+          with (out/'MODEL_SUMMARY.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.writer(f); w.writerow(['model','unique_candidates','pages_checked']); w.writerows(summaries)
+
+          dist={}
+          for _,n,_ in summaries: dist[n]=dist.get(n,0)+1
+          (out/'README.txt').write_text(
+              'Packet 08 exact-model gallery audit.\n'
+              f'Models audited: {len(summaries)}\n'
+              f'Candidate-count distribution: {json.dumps(dist,ensure_ascii=False,sort_keys=True)}\n'
+              'Contact sheets contain only large unique image candidates after banner/logo/aspect-ratio filtering.\n',
+              encoding='utf-8')
+          print('distribution',dist)
+          PY
+
+      - name: Save packet 08 audit
+        run: |
+          set -euxo pipefail
+          DIR="Hisense/images-rebuild/2026-09-29/audits/packet08_macs"
+          TMP="/tmp/packet08_macs_audit"
+          cp -a "$DIR" "$TMP"
+          git reset --hard
+          git clean -fdx
+          git checkout --orphan audit-p08
+          git rm -rf . || true
+          git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29/audits"
+          cp -a "$TMP" "$DIR"
+          git add "$DIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Audit packet 08 MACS cassette exact galleries"
+          git push -f origin audit-p08:refs/heads/hisense-audit-packet08
