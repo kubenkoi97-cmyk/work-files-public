@@ -1,0 +1,149 @@
+name: Hisense cross-model image duplicate audit
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-cross-model-image-audit.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python -m pip install -q pillow imagehash
+
+      - name: Fetch current result branches
+        run: |
+          git fetch origin hisense-public-packet-01:refs/remotes/origin/hisense-public-packet-01
+          for i in $(seq -w 2 7); do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
+          git fetch origin hisense-public-packet-08-curated:refs/remotes/origin/hisense-public-packet-08-curated
+          for i in $(seq -w 9 14); do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
+          git fetch origin hisense-public-packet-15-curated:refs/remotes/origin/hisense-public-packet-15-curated
+
+      - name: Extract packet images
+        run: |
+          mkdir -p /tmp/allpk
+          git archive origin/hisense-public-packet-01 | tar -x -C /tmp/allpk
+          for i in $(seq -w 2 7); do git archive "origin/hisense-public-packet-$i" | tar -x -C /tmp/allpk; done
+          git archive origin/hisense-public-packet-08-curated | tar -x -C /tmp/allpk
+          for i in $(seq -w 9 14); do git archive "origin/hisense-public-packet-$i" | tar -x -C /tmp/allpk; done
+          git archive origin/hisense-public-packet-15-curated | tar -x -C /tmp/allpk
+
+      - name: Build exact and perceptual duplicate reports
+        run: |
+          python - <<'PY'
+          import hashlib,csv,re,collections,json
+          from pathlib import Path
+          from PIL import Image
+          import imagehash
+
+          root=Path('/tmp/allpk')
+          out=Path('Hisense/images-rebuild/2026-09-29/cross-model-audit');out.mkdir(parents=True,exist_ok=True)
+
+          rows=[]
+          for p in root.rglob('*.jpg'):
+              rel=str(p.relative_to(root))
+              # Only model images, not contact sheets/audits.
+              if '/Hisense_images_rebuilt/' not in rel and '/Hisense_packet_01_AVC_AVY/' not in rel: continue
+              b=p.read_bytes();sha=hashlib.sha256(b).hexdigest()
+              try:
+                  im=Image.open(p).convert('RGB');ph=str(imagehash.phash(im));w,h=im.size
+              except:continue
+              parts=p.parts
+              # Infer series/model from path segment following Hisense_images_rebuilt,
+              # or packet01's series/model structure.
+              model='';series=''
+              try:
+                  if 'Hisense_images_rebuilt' in parts:
+                      i=parts.index('Hisense_images_rebuilt')
+                      # Skip metadata files; JPG path should series/model/file.
+                      if len(parts)>i+3:
+                          series=parts[i+1];model=parts[i+2]
+                  elif 'Hisense_packet_01_AVC_AVY' in parts:
+                      i=parts.index('Hisense_packet_01_AVC_AVY')
+                      if len(parts)>i+3:
+                          series=parts[i+1];model=parts[i+2]
+              except:pass
+              if not model:continue
+              packet=''
+              m=re.search(r'/packets/(\d\d)_', '/'+rel)
+              if m:packet=m.group(1)
+              rows.append({'packet':packet,'series':series,'model_folder':model,'file':p.name,'path':rel,'sha256':sha,'phash':ph,'width':w,'height':h})
+
+          with (out/'IMAGE_HASHES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+
+          exact=collections.defaultdict(list)
+          for r in rows:exact[r['sha256']].append(r)
+          exgroups=[]
+          gid=0
+          for sha,arr in exact.items():
+              models=sorted(set((x['series'],x['model_folder']) for x in arr))
+              if len(models)<2:continue
+              gid+=1
+              exgroups.append({
+                'group':gid,'sha256':sha,'image_count':len(arr),'model_count':len(models),
+                'models':' | '.join(f'{s}/{m}' for s,m in models),
+                'paths':' | '.join(x['path'] for x in arr)
+              })
+          with (out/'EXACT_CROSS_MODEL_DUPLICATES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              fields=['group','sha256','image_count','model_count','models','paths'];w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(exgroups)
+
+          # pHash groups using union-find for distance <=2, but only across different exact hashes.
+          n=len(rows);parent=list(range(n))
+          def find(a):
+              while parent[a]!=a:
+                  parent[a]=parent[parent[a]];a=parent[a]
+              return a
+          def union(a,b):
+              a=find(a);b=find(b)
+              if a!=b:parent[b]=a
+          phobjs=[imagehash.hex_to_hash(r['phash']) for r in rows]
+          for i in range(n):
+              for j in range(i+1,n):
+                  if rows[i]['sha256']==rows[j]['sha256']:continue
+                  if rows[i]['model_folder']==rows[j]['model_folder'] and rows[i]['series']==rows[j]['series']:continue
+                  if phobjs[i]-phobjs[j]<=2:union(i,j)
+          pg=collections.defaultdict(list)
+          for i,r in enumerate(rows):pg[find(i)].append(r)
+          near=[];gid=0
+          for arr in pg.values():
+              models=sorted(set((x['series'],x['model_folder']) for x in arr))
+              shas=set(x['sha256'] for x in arr)
+              if len(models)<2 or len(shas)<2:continue
+              gid+=1
+              near.append({
+                'group':gid,'image_count':len(arr),'model_count':len(models),
+                'models':' | '.join(f'{s}/{m}' for s,m in models),
+                'paths':' | '.join(x['path'] for x in arr)
+              })
+          with (out/'NEAR_DUPLICATES_PHASH2.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              fields=['group','image_count','model_count','models','paths'];w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(near)
+
+          summary={
+            'jpg_rows':len(rows),'exact_cross_model_groups':len(exgroups),
+            'near_duplicate_groups_phash_le_2':len(near)
+          }
+          (out/'SUMMARY.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
+          print(summary)
+          PY
+
+      - name: Save cross-model audit
+        run: |
+          set -euxo pipefail
+          DIR="Hisense/images-rebuild/2026-09-29/cross-model-audit";TMP="/tmp/crossaudit";cp -a "$DIR" "$TMP"
+          git reset --hard;git clean -fdx;git checkout --orphan cross-audit;git rm -rf . || true;git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29";cp -a "$TMP" "$DIR";git add "$DIR"
+          git config user.name "github-actions[bot]";git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Audit cross-model image duplicates"
+          git push -f origin cross-audit:refs/heads/hisense-cross-model-audit
