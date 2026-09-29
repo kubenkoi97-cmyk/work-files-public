@@ -1,0 +1,8 @@
+file=Hisense_packet_08_MACS_C.zip
+size_bytes=1907834
+sha256=324d1c5d0c94fbbca94f0c4b7e67c170bc7b8fdc6817677abdf9fe3c43da1c5c
+zip_entries=37
+jpg_count=30
+product_folders=30
+verify_errors=0
+removed_cross_category=0
