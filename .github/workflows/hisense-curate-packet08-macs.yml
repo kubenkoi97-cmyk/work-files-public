@@ -1,0 +1,191 @@
+name: Curate packet 08 MACS exact-model renders
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-curate-packet08-macs.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python -m pip install -q requests pillow
+
+      - name: Fetch packet and audit branches
+        run: |
+          git fetch origin hisense-public-packet-08:refs/remotes/origin/hisense-public-packet-08
+          git fetch origin hisense-audit-packet08:refs/remotes/origin/hisense-audit-packet08
+
+      - name: Extract base packet and audit table
+        run: |
+          mkdir -p work
+          git archive origin/hisense-public-packet-08 Hisense/images-rebuild/2026-09-29/packets/08_MACS_C | tar -x -C work
+          git show origin/hisense-audit-packet08:Hisense/images-rebuild/2026-09-29/audits/packet08_macs/CANDIDATES.csv > /tmp/CANDIDATES.csv
+
+      - name: Add exact-model renders and rebuild packet
+        run: |
+          python - <<'PY'
+          import csv,io,hashlib,shutil,zipfile,re
+          from pathlib import Path
+          import requests
+          from PIL import Image
+
+          packet=Path('work/Hisense/images-rebuild/2026-09-29/packets/08_MACS_C')
+          root=packet/'Hisense_images_rebuilt'
+          report_path=root/'REPORT.csv'
+          rows=list(csv.DictReader(report_path.open(encoding='utf-8-sig')))
+          fields=list(rows[0].keys())
+          by_model={r['model']:r for r in rows}
+
+          cand=list(csv.DictReader(open('/tmp/CANDIDATES.csv',encoding='utf-8-sig')))
+          # Visual audit established a stable pattern on exact iClim pages:
+          # candidate 1 = iClim certificate, candidate 2 = product render,
+          # candidate 3 = Royal Clima/Breez dealer certificate.
+          # Two models (C45P2C, C51P2C) returned no exact-page candidates and remain unchanged.
+          chosen={}
+          for r in cand:
+              if r.get('candidate_no')=='2':
+                  chosen[r['model']]=r
+
+          ses=requests.Session()
+          ses.headers.update({'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'})
+
+          def object_crop(im):
+              rgba=im.convert('RGBA')
+              base=Image.new('RGBA',rgba.size,(255,255,255,255)); base.alpha_composite(rgba)
+              rgb=base.convert('RGB')
+              px=rgb.load(); w,h=rgb.size
+              xs=[];ys=[]
+              for y in range(h):
+                  for x in range(w):
+                      rr,gg,bb=px[x,y]
+                      if not (rr>242 and gg>242 and bb>242):
+                          xs.append(x);ys.append(y)
+              if not xs:return rgb
+              return rgb.crop((max(0,min(xs)-3),max(0,min(ys)-3),min(w,max(xs)+4),min(h,max(ys)+4)))
+
+          def norm(im):
+              o=object_crop(im)
+              o.thumbnail((750,750),Image.Resampling.LANCZOS)
+              c=Image.new('RGB',(850,850),'white')
+              c.paste(o,((850-o.width)//2,(850-o.height)//2))
+              return c
+
+          exact_sources=[]
+          added=0
+          for model,c in chosen.items():
+              rr=ses.get(c['image_url'],timeout=30);rr.raise_for_status()
+              im=Image.open(io.BytesIO(rr.content))
+              r=by_model[model]
+              folder=root/Path(r['folder'])
+              folder.mkdir(parents=True,exist_ok=True)
+              # Existing 01.jpg remains the Breez family/series image.
+              out=folder/'02.jpg'
+              norm(im).save(out,'JPEG',quality=94,optimize=True,subsampling=0)
+              added+=1
+              exact_sources.append([
+                  model,'02.jpg','exact-model product render',c['image_url'],c['page'],
+                  c['width'],c['height'],c['bytes'],c['sha256']
+              ])
+              r['found_images']='2'
+              r['final_files']='2'
+              prev=(r.get('additional_sources') or '').strip()
+              r['additional_sources']=(prev+' | ' if prev else '')+c['page']
+              r['additional_angles']='1'
+              r['usable_source_count']='2'
+              if '/' in model:
+                  r['panel_found']='да (панель видна на точном рендере)'
+                  if model.startswith(('MACS-I-C35P2C','MACS-I-C61P2','MACS-I-C81P2','MACS-I-C101P2','MACS-I-C121P2','MACS-I-C141P2')):
+                      r['warnings']='separate panel-only render not found; panel is visibly present in exact-model render'
+              else:
+                  r['warnings']='exact model render added; no additional independent angle found'
+
+          # Explicit warnings for the two unresolved combined models.
+          for model in ('MACS-I-C45P2С/MACS-I-CSPС2','MACS-I-C51P2С/MACS-I-CSPС2'):
+              if model in by_model:
+                  by_model[model]['warnings']='only 1 usable family image; exact model page/gallery not found in this pass; confirmed panel model exists but no exact product/panel render was accepted'
+                  by_model[model]['quality']='LIMITED_EXACT_GALLERY'
+
+          with report_path.open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(rows)
+
+          with (root/'EXACT_MODEL_ADDITIONS.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.writer(f);w.writerow(['model','file','component','image_url','page','source_width','source_height','source_bytes','source_sha256']);w.writerows(exact_sources)
+
+          # Rebuild anomaly list.
+          an_fields=['model','series','folder','reasons','warnings']
+          ans=[]
+          for r in rows:
+              try:n=int(r.get('final_files') or 0)
+              except:n=0
+              reasons=[]
+              if n==0:reasons.append('0 file(s)')
+              elif n==1:reasons.append('1 file(s)')
+              elif n==2:reasons.append('2 file(s)')
+              if r.get('warnings'):reasons.append(r.get('quality') or 'warning')
+              if reasons:
+                  ans.append({'model':r['model'],'series':r['series'],'folder':r['folder'],'reasons':'; '.join(reasons),'warnings':r.get('warnings','')})
+          with (root/'ANOMALIES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.DictWriter(f,fieldnames=an_fields);w.writeheader();w.writerows(ans)
+
+          # Verify every JPG.
+          errs=[];jpgs=0
+          for p in root.rglob('*.jpg'):
+              jpgs+=1
+              try:
+                  im=Image.open(p);im.verify();im=Image.open(p)
+                  if im.size!=(850,850):errs.append(f'{p}: {im.size}')
+                  if im.format!='JPEG':errs.append(f'{p}: {im.format}')
+              except Exception as e:errs.append(f'{p}: {e}')
+          if errs:raise SystemExit('\n'.join(errs))
+          (root/'VERIFY_CURATED.txt').write_text('OK',encoding='utf-8')
+
+          dest=Path('Hisense/images-rebuild/2026-09-29/packets/08_MACS_C_CURATED')
+          if dest.exists():shutil.rmtree(dest)
+          dest.mkdir(parents=True)
+          shutil.copytree(root,dest/'Hisense_images_rebuilt')
+          zp=dest/'Hisense_packet_08_MACS_C_CURATED.zip'
+          with zipfile.ZipFile(zp,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+              for p in (dest/'Hisense_images_rebuilt').rglob('*'):
+                  if p.is_file():z.write(p,p.relative_to(dest))
+          with zipfile.ZipFile(zp) as z:
+              bad=z.testzip();entries=len(z.infolist())
+              if bad:raise SystemExit(bad)
+          sha=hashlib.sha256(zp.read_bytes()).hexdigest()
+          one=sum(1 for r in rows if int(r.get('final_files') or 0)==1)
+          two=sum(1 for r in rows if int(r.get('final_files') or 0)==2)
+          (dest/'ARCHIVE_INFO.txt').write_text(
+              f'file={zp.name}\nsize_bytes={zp.stat().st_size}\nsha256={sha}\nzip_entries={entries}\njpg_count={jpgs}\nmodels=30\nmodels_with_1_image={one}\nmodels_with_2_images={two}\nexact_model_additions={added}\nverify_errors=0\n',
+              encoding='utf-8')
+          print((dest/'ARCHIVE_INFO.txt').read_text())
+          PY
+
+      - name: Save curated packet 08 to clean public branch
+        run: |
+          set -euxo pipefail
+          DIR="Hisense/images-rebuild/2026-09-29/packets/08_MACS_C_CURATED"
+          TMP="/tmp/packet08_curated"
+          cp -a "$DIR" "$TMP"
+          git reset --hard
+          git clean -fdx
+          git checkout --orphan packet08-curated
+          git rm -rf . || true
+          git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29/packets"
+          cp -a "$TMP" "$DIR"
+          git add "$DIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Curate packet 08 with exact-model MACS cassette renders"
+          git push -f origin packet08-curated:refs/heads/hisense-public-packet-08-curated
