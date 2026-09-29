@@ -1,0 +1,31 @@
+﻿model,series,folder,reasons,warnings
+MACS-I-C35P2C/MACS-I-CSPС2,MACS,MACS/MACS-I-C35P2C-MACS-I-CSPС2,2 file(s); OK,separate panel-only render not found; panel is visibly present in exact-model render
+MACS-I-C45P2С/MACS-I-CSPС2,MACS,MACS/MACS-I-C45P2С-MACS-I-CSPС2,1 file(s); LIMITED_EXACT_GALLERY,only 1 usable family image; exact model page/gallery not found in this pass; confirmed panel model exists but no exact product/panel render was accepted
+MACS-I-C51P2С/MACS-I-CSPС2,MACS,MACS/MACS-I-C51P2С-MACS-I-CSPС2,1 file(s); LIMITED_EXACT_GALLERY,only 1 usable family image; exact model page/gallery not found in this pass; confirmed panel model exists but no exact product/panel render was accepted
+MACS-I-C61P2/MACS-I-CSP2,MACS,MACS/MACS-I-C61P2-MACS-I-CSP2,2 file(s); OK,separate panel-only render not found; panel is visibly present in exact-model render
+MACS-I-C81P2/MACS-I-CSP2,MACS,MACS/MACS-I-C81P2-MACS-I-CSP2,2 file(s); OK,separate panel-only render not found; panel is visibly present in exact-model render
+MACS-I-C101P2/MACS-I-CSP2,MACS,MACS/MACS-I-C101P2-MACS-I-CSP2,2 file(s); OK,separate panel-only render not found; panel is visibly present in exact-model render
+MACS-I-C121P2/MACS-I-CSP2,MACS,MACS/MACS-I-C121P2-MACS-I-CSP2,2 file(s); OK,separate panel-only render not found; panel is visibly present in exact-model render
+MACS-I-C141P2/MACS-I-CSP2,MACS,MACS/MACS-I-C141P2-MACS-I-CSP2,2 file(s); OK,separate panel-only render not found; panel is visibly present in exact-model render
+MACS-I-C20P2K,MACS,MACS/MACS-I-C20P2K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C28P2K,MACS,MACS/MACS-I-C28P2K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C35P2K,MACS,MACS/MACS-I-C35P2K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C50P2K,MACS,MACS/MACS-I-C50P2K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C60P2K,MACS,MACS/MACS-I-C60P2K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C75P2K,MACS,MACS/MACS-I-C75P2K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C95P2K,MACS,MACS/MACS-I-C95P2K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C115P2K,MACS,MACS/MACS-I-C115P2K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C130P2K,MACS,MACS/MACS-I-C130P2K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C25P4K,MACS,MACS/MACS-I-C25P4K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C30P4K,MACS,MACS/MACS-I-C30P4K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C40P4K,MACS,MACS/MACS-I-C40P4K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C50P4K,MACS,MACS/MACS-I-C50P4K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C60P4K,MACS,MACS/MACS-I-C60P4K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C80P4K,MACS,MACS/MACS-I-C80P4K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C90P4K,MACS,MACS/MACS-I-C90P4K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C110P4K,MACS,MACS/MACS-I-C110P4K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C20P21K,MACS,MACS/MACS-I-C20P21K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C25P21K,MACS,MACS/MACS-I-C25P21K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C35P21K,MACS,MACS/MACS-I-C35P21K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C45P21K,MACS,MACS/MACS-I-C45P21K,2 file(s); OK,exact model render added; no additional independent angle found
+MACS-I-C55P21K,MACS,MACS/MACS-I-C55P21K,2 file(s); OK,exact model render added; no additional independent angle found
