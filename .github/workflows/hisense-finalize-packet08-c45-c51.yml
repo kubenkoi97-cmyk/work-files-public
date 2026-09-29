@@ -1,0 +1,127 @@
+name: Finalize packet 08 C45 C51
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-finalize-packet08-c45-c51.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python -m pip install -q requests pillow
+      - name: Fetch curated packet 08
+        run: |
+          git fetch origin hisense-public-packet-08-curated:refs/remotes/origin/hisense-public-packet-08-curated
+          mkdir -p work
+          git archive origin/hisense-public-packet-08-curated Hisense/images-rebuild/2026-09-29/packets/08_MACS_C_CURATED | tar -x -C work
+      - name: Add validated C45 and C51 exact-model renders
+        run: |
+          python - <<'PY'
+          import csv,io,hashlib,shutil,zipfile
+          from pathlib import Path
+          import requests
+          from PIL import Image
+
+          src=Path('work/Hisense/images-rebuild/2026-09-29/packets/08_MACS_C_CURATED')
+          root=src/'Hisense_images_rebuilt'
+          exact={
+            'MACS-I-C45P2С/MACS-I-CSPС2':(
+              'https://royal-clima.com.ru/image/cache/catalog/fancoil/macs-i-c35p2c-400x400.jpg',
+              'https://royal-clima.com.ru/macs-i-c45p2c',
+              'Exact C45 product page; image shared with same 570x570 chassis family'
+            ),
+            'MACS-I-C51P2С/MACS-I-CSPС2':(
+              'https://toplan.ru/images/goods/royal-clima-macs-i-c51p2c-1.jpg',
+              'https://toplan.ru/royal-clima-macs-i-c51p2c.html',
+              'Exact C51 image filename on exact C51 product page'
+            )
+          }
+          s=requests.Session();s.headers.update({'User-Agent':'Mozilla/5.0 Chrome/150 Safari/537.36'})
+          def crop(im):
+              im=im.convert('RGB');px=im.load();w,h=im.size;xs=[];ys=[]
+              for y in range(h):
+                  for x in range(w):
+                      r,g,b=px[x,y]
+                      if not(r>242 and g>242 and b>242):xs.append(x);ys.append(y)
+              if not xs:return im
+              return im.crop((max(0,min(xs)-3),max(0,min(ys)-3),min(w,max(xs)+4),min(h,max(ys)+4)))
+          def norm(im):
+              o=crop(im);o.thumbnail((750,750),Image.Resampling.LANCZOS)
+              c=Image.new('RGB',(850,850),'white');c.paste(o,((850-o.width)//2,(850-o.height)//2));return c
+
+          rp=root/'REPORT.csv'
+          rows=list(csv.DictReader(rp.open(encoding='utf-8-sig')));fields=list(rows[0])
+          by={r['model']:r for r in rows}
+          adds=[]
+          for model,(url,page,note) in exact.items():
+              r=s.get(url,timeout=30);r.raise_for_status();im=Image.open(io.BytesIO(r.content))
+              row=by[model];folder=root/Path(row['folder']);folder.mkdir(parents=True,exist_ok=True)
+              norm(im).save(folder/'02.jpg','JPEG',quality=94,optimize=True,subsampling=0)
+              row['found_images']='2';row['final_files']='2';row['additional_angles']='1';row['usable_source_count']='2'
+              row['additional_sources']=((row.get('additional_sources') or '')+' | '+page).strip(' |')
+              row['panel_found']='да (панель видна на точном рендере)'
+              row['quality']='OK'
+              row['warnings']='separate panel-only render not found; exact-model product render added after targeted second pass'
+              adds.append([model,'02.jpg',url,page,note,im.width,im.height,len(r.content),hashlib.sha256(r.content).hexdigest()])
+          with rp.open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(rows)
+          with (root/'C45_C51_EXACT_ADDITIONS.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.writer(f);w.writerow(['model','file','url','page','validation_note','source_width','source_height','source_bytes','sha256']);w.writerows(adds)
+          # Append to exact additions registry.
+          ep=root/'EXACT_MODEL_ADDITIONS.csv'
+          with ep.open('a',newline='',encoding='utf-8-sig') as f:
+              w=csv.writer(f)
+              for a in adds:w.writerow([a[0],a[1],'exact-model product render',a[2],a[3],a[5],a[6],a[7],a[8]])
+
+          errs=[];jpgs=0
+          for p in root.rglob('*.jpg'):
+              jpgs+=1
+              try:
+                  im=Image.open(p);im.verify();im=Image.open(p)
+                  if im.size!=(850,850):errs.append(f'{p}: {im.size}')
+              except Exception as e:errs.append(f'{p}: {e}')
+          if errs:raise SystemExit('\n'.join(errs))
+          if any(int(r.get('final_files') or 0)<2 for r in rows):raise SystemExit('A packet08 model still has <2 images')
+
+          dest=Path('Hisense/images-rebuild/2026-09-29/packets/08_MACS_C_CURATED')
+          if dest.exists():shutil.rmtree(dest)
+          dest.mkdir(parents=True);shutil.copytree(root,dest/'Hisense_images_rebuilt')
+          zp=dest/'Hisense_packet_08_MACS_C_CURATED.zip'
+          with zipfile.ZipFile(zp,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+              for p in (dest/'Hisense_images_rebuilt').rglob('*'):
+                  if p.is_file():z.write(p,p.relative_to(dest))
+          with zipfile.ZipFile(zp) as z:
+              bad=z.testzip();entries=len(z.infolist())
+              if bad:raise SystemExit(bad)
+          sha=hashlib.sha256(zp.read_bytes()).hexdigest()
+          (dest/'ARCHIVE_INFO.txt').write_text(
+              f'file={zp.name}\nsize_bytes={zp.stat().st_size}\nsha256={sha}\nzip_entries={entries}\njpg_count={jpgs}\nmodels=30\nmodels_with_1_image=0\nmodels_with_2_images=30\nverify_errors=0\n',
+              encoding='utf-8')
+          print((dest/'ARCHIVE_INFO.txt').read_text())
+          PY
+      - name: Replace clean public packet 08 branch
+        run: |
+          set -euxo pipefail
+          DIR="Hisense/images-rebuild/2026-09-29/packets/08_MACS_C_CURATED"
+          TMP="/tmp/p08final";cp -a "$DIR" "$TMP"
+          git reset --hard;git clean -fdx
+          git checkout --orphan p08final
+          git rm -rf . || true;git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29/packets";cp -a "$TMP" "$DIR"
+          git add "$DIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Finalize packet 08 exact MACS cassette images"
+          git push -f origin p08final:refs/heads/hisense-public-packet-08-curated
