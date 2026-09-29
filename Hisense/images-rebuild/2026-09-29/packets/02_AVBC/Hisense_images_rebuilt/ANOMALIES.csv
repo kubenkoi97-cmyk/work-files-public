@@ -1,0 +1,18 @@
+﻿model,series,folder,reasons,warnings
+AVBC-19HJFKA,AVBC-HJFKA,AVBC-HJFKA/AVBC-19HJFKA,panel missing; OK; low-res alternatives rejected,14 low-resolution images rejected; confirmed panel image not found
+AVBC-24HJFKA,AVBC-HJFKA,AVBC-HJFKA/AVBC-24HJFKA,panel missing; OK; low-res alternatives rejected,17 low-resolution images rejected; confirmed panel image not found
+AVBC-30HJFKA,AVBC-HJFKA,AVBC-HJFKA/AVBC-30HJFKA,panel missing; OK; low-res alternatives rejected,12 low-resolution images rejected; confirmed panel image not found
+AVBC-38HJFKA,AVBC-HJFKA,AVBC-HJFKA/AVBC-38HJFKA,panel missing; OK; low-res alternatives rejected,43 low-resolution images rejected; confirmed panel image not found
+AVBC-48HJFKA,AVBC-HJFKA,AVBC-HJFKA/AVBC-48HJFKA,panel missing; OK; low-res alternatives rejected,43 low-resolution images rejected; confirmed panel image not found
+AVBC-54HJFKA,AVBC-HJFKA,AVBC-HJFKA/AVBC-54HJFKA,panel missing; OK; low-res alternatives rejected,40 low-resolution images rejected; confirmed panel image not found
+AVBC-09HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-09HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,53 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-12HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-12HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,20 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-15HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-15HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,39 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-19HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-19HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,48 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-22HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-22HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,26 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-24HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-24HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,34 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-27HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-27HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,26 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-30HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-30HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,34 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-38HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-38HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,36 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-48HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-48HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,34 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found
+AVBC-54HJDBA,AVBC-HJDBA,AVBC-HJDBA/AVBC-54HJDBA,remote missing; panel missing; OK; low-res alternatives rejected,26 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found

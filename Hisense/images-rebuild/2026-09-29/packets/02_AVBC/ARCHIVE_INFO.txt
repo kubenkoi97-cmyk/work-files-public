@@ -1,0 +1,8 @@
+file=Hisense_packet_02_AVBC.zip
+size_bytes=13819165
+sha256=384a1232cf67dd67b7ade553bc012496511b3b2cbb91607f89359b9066d71fee
+zip_entries=140
+jpg_count=133
+product_folders=17
+verify_errors=0
+removed_cross_category=77
