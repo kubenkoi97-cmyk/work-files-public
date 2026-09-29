@@ -1,0 +1,6 @@
+file=Hisense_packet_15_TRIUMPH_AR_IR_HIMOD_CURATED.zip
+size_bytes=1160460
+sha256=56a938c043e66102570a957c16c88038783a36ff2c7664ece1b02e15629c3570
+zip_entries=28
+jpg_count=20
+verify_errors=0
