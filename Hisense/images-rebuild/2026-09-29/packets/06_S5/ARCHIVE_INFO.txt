@@ -1,0 +1,8 @@
+file=Hisense_packet_06_S5.zip
+size_bytes=16267763
+sha256=d723c4c7c3109c5d0129bc8a3d4d48c3e584e11cacc9d0825c18fd8e07272d2f
+zip_entries=187
+jpg_count=180
+product_folders=18
+verify_errors=0
+removed_cross_category=0
