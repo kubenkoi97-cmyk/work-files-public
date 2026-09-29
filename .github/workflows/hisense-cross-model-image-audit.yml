@@ -25,18 +25,18 @@ jobs:
       - name: Fetch current result branches
         run: |
           git fetch origin hisense-public-packet-01:refs/remotes/origin/hisense-public-packet-01
-          for i in $(seq -w 2 7); do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
+          for i in 02 03 04 05 06 07; do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
           git fetch origin hisense-public-packet-08-curated:refs/remotes/origin/hisense-public-packet-08-curated
-          for i in $(seq -w 9 14); do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
+          for i in 09 10 11 12 13 14; do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
           git fetch origin hisense-public-packet-15-curated:refs/remotes/origin/hisense-public-packet-15-curated
 
       - name: Extract packet images
         run: |
           mkdir -p /tmp/allpk
           git archive origin/hisense-public-packet-01 | tar -x -C /tmp/allpk
-          for i in $(seq -w 2 7); do git archive "origin/hisense-public-packet-$i" | tar -x -C /tmp/allpk; done
+          for i in 02 03 04 05 06 07; do git archive "origin/hisense-public-packet-$i" | tar -x -C /tmp/allpk; done
           git archive origin/hisense-public-packet-08-curated | tar -x -C /tmp/allpk
-          for i in $(seq -w 9 14); do git archive "origin/hisense-public-packet-$i" | tar -x -C /tmp/allpk; done
+          for i in 09 10 11 12 13 14; do git archive "origin/hisense-public-packet-$i" | tar -x -C /tmp/allpk; done
           git archive origin/hisense-public-packet-15-curated | tar -x -C /tmp/allpk
 
       - name: Build exact and perceptual duplicate reports
