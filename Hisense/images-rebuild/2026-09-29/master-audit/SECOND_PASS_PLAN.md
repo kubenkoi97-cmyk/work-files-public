@@ -1,0 +1,288 @@
+# Hisense mandatory second-pass plan
+
+Total models: 276
+0 images: 0
+1 image: 143
+2 images: 2
+3+ images: 131
+Rows with warnings: 270
+
+Priority order: P0_ZERO -> P1_ONE -> P2_TWO -> P3_WARNING
+
+## P0_ZERO (0)
+
+## P1_ONE (143)
+- Packet 08: MACS / MACS-I-C35P2C/MACS-I-CSPС2 — 1 files — only 1 image | warning: only 1 usable source images; confirmed panel image not found
+- Packet 08: MACS / MACS-I-C45P2С/MACS-I-CSPС2 — 1 files — only 1 image | warning: only 1 usable source images; confirmed panel image not found
+- Packet 08: MACS / MACS-I-C51P2С/MACS-I-CSPС2 — 1 files — only 1 image | warning: only 1 usable source images; confirmed panel image not found
+- Packet 08: MACS / MACS-I-C61P2/MACS-I-CSP2 — 1 files — only 1 image | warning: only 1 usable source images; confirmed panel image not found
+- Packet 08: MACS / MACS-I-C81P2/MACS-I-CSP2 — 1 files — only 1 image | warning: only 1 usable source images; confirmed panel image not found
+- Packet 08: MACS / MACS-I-C101P2/MACS-I-CSP2 — 1 files — only 1 image | warning: only 1 usable source images; confirmed panel image not found
+- Packet 08: MACS / MACS-I-C121P2/MACS-I-CSP2 — 1 files — only 1 image | warning: only 1 usable source images; confirmed panel image not found
+- Packet 08: MACS / MACS-I-C141P2/MACS-I-CSP2 — 1 files — only 1 image | warning: only 1 usable source images; confirmed panel image not found
+- Packet 08: MACS / MACS-I-C20P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C28P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C35P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C50P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C60P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C75P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C95P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C115P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C130P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C25P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C30P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C40P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C50P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C60P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C80P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C90P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C110P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C20P21K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C25P21K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C35P21K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C45P21K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 08: MACS / MACS-I-C55P21K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 09: MACS / MACS-I-F20P2KU — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 09: MACS / MACS-I-F30P2KU — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 09: MACS / MACS-I-F40P2KU — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 09: MACS / MACS-I-F45P2KU — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 09: MACS / MACS-I-F56P2KU — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 09: MACS / MACS-I-F75P2KU — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 09: MACS / MACS-I-F90P2KU — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 09: MACS / MACS-I-F110P2KU — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 09: MACS / MACS-I-F130P2KU — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 10: MACS / MACS-I-D80P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-D100P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-D120P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-D140P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD20P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD30P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD40P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD45P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD56P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD80P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD100P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD120P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD140P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD20P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD30P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD40P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD45P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD56P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD80P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD100P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD120P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-VD140P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 10: MACS / MACS-I-D20P2KU — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-D30P2KU — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-D40P2KU — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-D45P2KU — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-D56P2KU — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-D80P2KU — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-D100P2KU — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-D120P2KU — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-D140P2KU — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-ED21P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-ED31P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-ED41P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-ED46P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-ED56P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-ED81P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-ED96P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-ED111P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-ED131P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-PD61P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-PD76P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-PD91P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-PD116P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-PD136P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 11: MACS / MACS-I-PD220P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD280P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD330P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD270P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD380P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD420P2K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD60P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD75P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD90P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD115P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD135P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD160P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD210P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD270P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD315P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD51P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD66P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD76P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD96P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD116P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD136P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD176P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD226P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 12: MACS / MACS-I-PD266P4K — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 2 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 4 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 6 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 8 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 10 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 12 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 14 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 16 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 18 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-maxi / ZKPU-maxi 20 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-mini / ZKPU-mini 50-25 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-mini / ZKPU-mini 50-30 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-mini / ZKPU-mini 60-30 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-mini / ZKPU-mini 60-35 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-mini / ZKPU-mini 70-40 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-mini / ZKPU-mini 80-50 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 13: ZKPU-mini / ZKPU-mini 100-50 — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 14: UNIVERSO / MCU-23K — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: UNIVERSO / MCU-29K — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: UNIVERSO / MCU-35K — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: UNIVERSO / MCU-43K — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: UNIVERSO / MCU-63K — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: UNIVERSO / MCU-75K — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: UNIVERSO / MCU-93K — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: UNIVERSO / MCU-117K — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 15: Triumph / TWC22HN/OUT с модулем RC-KA02 — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 15: Triumph / TWC28HN/OUT с модулем RC-KA02 — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 15: Triumph / TWC35HN/OUT с модулем RC-KA02 — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 15: Triumph / TWC55HN/OUT с модулем RC-KA02 — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 15: Triumph / TWC75HN/OUT с модулем RC-KA02 — 1 files — only 1 image | warning: only 1 usable source images; 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 15: HiMod AE2 / HFRWE-65DGF/SYS — 1 files — only 1 image | warning: Only one independently confirmed exact-model render; conflicting/reused dealer family renders excluded
+- Packet 15: AR / AR08U/F/D — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 15: AR / AR13U/F/D — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 15: AR / AR17U/F/D — 1 files — only 1 image | warning: only 1 usable source images
+- Packet 15: AR / AR20U/F/D — 1 files — only 1 image | warning: only 1 usable source images
+
+## P2_TWO (2)
+- Packet 15: IR / IR40F — 2 files — only 2 images | warning: only 2 usable source images
+- Packet 15: IR / IR50F — 2 files — only 2 images | warning: only 2 usable source images
+
+## P3_WARNING (125)
+- Packet 01: AVC-HJDBA / AVC-05HJDBA — 10 files — warning: German Kaut lists HPE-DNK1 separately; Russian target catalog treats panel as included
+- Packet 01: AVC-HJDBA / AVC-07HJDBA — 10 files — warning: German Kaut lists HPE-DNK1 separately; Russian target catalog treats panel as included
+- Packet 01: AVC-HJDBA / AVC-09HJDBA — 10 files — warning: German Kaut lists HPE-DNK1 separately; Russian target catalog treats panel as included
+- Packet 01: AVC-HJDBA / AVC-12HJDBA — 10 files — warning: German Kaut lists HPE-DNK1 separately; Russian target catalog treats panel as included
+- Packet 01: AVC-HJDBA / AVC-15HJDBA — 10 files — warning: German Kaut lists HPE-DNK1 separately; Russian target catalog treats panel as included
+- Packet 01: AVC-HJDBA / AVC-17HJDBA — 10 files — warning: German Kaut lists HPE-DNK1 separately; Russian target catalog treats panel as included
+- Packet 01: AVC-HJDBA / AVC-19HJDBA — 10 files — warning: German Kaut lists HPE-DNK1 separately; Russian target catalog treats panel as included
+- Packet 01: AVY-HJDA / AVY-05HJDA — 4 files — warning: Only one clean exact-product-page indoor render found; dealer reuses the same family render across both chassis sizes; separate panel-only render not found. Panel model/size is specification-confirmed. | quality: OK; limited gallery
+- Packet 01: AVY-HJDA / AVY-07HJDA — 4 files — warning: Only one clean exact-product-page indoor render found; dealer reuses the same family render across both chassis sizes; separate panel-only render not found. Panel model/size is specification-confirmed. | quality: OK; limited gallery
+- Packet 01: AVY-HJDA / AVY-09HJDA — 4 files — warning: Only one clean exact-product-page indoor render found; dealer reuses the same family render across both chassis sizes; separate panel-only render not found. Panel model/size is specification-confirmed. | quality: OK; limited gallery
+- Packet 01: AVY-HJDA / AVY-12HJDA — 4 files — warning: Only one clean exact-product-page indoor render found; dealer reuses the same family render across both chassis sizes; separate panel-only render not found. Panel model/size is specification-confirmed. | quality: OK; limited gallery
+- Packet 01: AVY-HJDA / AVY-15HJDA — 4 files — warning: Only one clean exact-product-page indoor render found; dealer reuses the same family render across both chassis sizes; separate panel-only render not found. Panel model/size is specification-confirmed. | quality: OK; limited gallery
+- Packet 01: AVY-HJDA / AVY-19HJDA — 4 files — warning: Only one clean exact-product-page indoor render found; dealer reuses the same family render across both chassis sizes; separate panel-only render not found. Panel model/size is specification-confirmed. | quality: OK; limited gallery
+- Packet 01: AVY-HJDA / AVY-24HJDA — 4 files — warning: Only one clean exact-product-page indoor render found; dealer reuses the same family render across both chassis sizes; separate panel-only render not found. Panel model/size is specification-confirmed. | quality: OK; limited gallery
+- Packet 02: AVBC-HJFKA / AVBC-19HJFKA — 7 files — warning: 14 low-resolution images rejected; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJFKA / AVBC-24HJFKA — 7 files — warning: 17 low-resolution images rejected; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJFKA / AVBC-30HJFKA — 7 files — warning: 12 low-resolution images rejected; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJFKA / AVBC-38HJFKA — 7 files — warning: 43 low-resolution images rejected; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJFKA / AVBC-48HJFKA — 7 files — warning: 43 low-resolution images rejected; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJFKA / AVBC-54HJFKA — 7 files — warning: 40 low-resolution images rejected; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-09HJDBA — 20 files — warning: 53 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-12HJDBA — 7 files — warning: 20 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-15HJDBA — 20 files — warning: 39 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-19HJDBA — 20 files — warning: 48 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-22HJDBA — 7 files — warning: 26 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-24HJDBA — 20 files — warning: 34 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-27HJDBA — 7 files — warning: 26 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-30HJDBA — 20 files — warning: 34 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-38HJDBA — 20 files — warning: 36 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-48HJDBA — 20 files — warning: 34 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 02: AVBC-HJDBA / AVBC-54HJDBA — 7 files — warning: 26 low-resolution images rejected; confirmed remote image not found; confirmed panel image not found | quality: OK; low-res alternatives rejected
+- Packet 03: AVF-H2FDA / AVF-36H2FDA — 5 files — warning: confirmed remote image not found
+- Packet 03: AVF-H2FDA / AVF-48H2FDA — 5 files — warning: confirmed remote image not found
+- Packet 03: AVF-H2FDA / AVF-56H2FDA — 5 files — warning: confirmed remote image not found
+- Packet 03: AVF-H2FDA / AVF-96H2FDA — 5 files — warning: confirmed remote image not found
+- Packet 03: AVS-HJDTD / AVS-05HJDTD — 19 files — warning: 38 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 03: AVS-HJDTD / AVS-07HJDTD — 19 files — warning: 36 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 03: AVS-HJDTD / AVS-09HJDTD — 19 files — warning: 36 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 03: AVS-HJDTD / AVS-12HJDTD — 19 files — warning: 36 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 03: AVS-HJDTD / AVS-15HJDTD — 19 files — warning: 36 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 03: AVS-HJDTD / AVS-19HJDTD — 19 files — warning: 36 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 03: AVS-HJDTD / AVS-24HJDTD — 19 files — warning: 41 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 03: AVS-HJDTD / AVS-28HJDTD — 6 files — warning: 18 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-24HJDH — 6 files — warning: 37 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-09HJDH — 6 files — warning: 33 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-12HJDH — 6 files — warning: 37 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-15HJDH — 6 files — warning: 25 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-19HJDH — 6 files — warning: 31 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-24HJDH1 — 6 files — warning: 37 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-30HJDH — 6 files — warning: 28 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-38HJDH — 6 files — warning: 28 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-42HJDH — 6 files — warning: 28 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-48HJDH — 6 files — warning: 25 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-54HJDH — 6 files — warning: 31 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-76HJDH — 6 files — warning: 31 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 04: AVD-HJDH / AVD-96HJDH — 6 files — warning: 35 low-resolution images rejected; confirmed remote image not found; multiple controller variants listed in Excel; both searched | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-07HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-09HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-12HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-15HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-19HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-24HJFH1 — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-30HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-38HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-48HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-54HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-76HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVD-HJFH / AVD-96HJFH — 7 files — warning: 90 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVE-HJDDH / AVE-05HJDDH — 12 files — warning: 39 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVE-HJDDH / AVE-07HJDDH — 12 files — warning: 76 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVE-HJDDH / AVE-09HJDDH — 12 files — warning: 76 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVE-HJDDH / AVE-12HJDDH — 12 files — warning: 79 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVE-HJDDH / AVE-15HJDDH — 12 files — warning: 68 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVE-HJDDH / AVE-19HJDDH — 12 files — warning: 74 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 05: AVE-HJDDH / AVE-24HJDDH — 12 files — warning: 79 low-resolution images rejected; confirmed remote image not found | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-76HKF5 — 10 files — warning: 41 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-96HKF5 — 10 files — warning: 22 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-114HKF5 — 10 files — warning: 41 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-136HKF5 — 10 files — warning: 37 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-154HKF5 — 10 files — warning: 36 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-170HKF5 — 10 files — warning: 44 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-190HKF5 — 10 files — warning: 44 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-212HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-232HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-250HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-272HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-290HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-307HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-324HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-343HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-365HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-386HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 06: S5 / AVWT-404HKF5 — 10 files — warning: 49 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: A / AVW-27HJFAE1 — 11 files — warning: 12 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: A / AVW-34HJFAE1 — 11 files — warning: 26 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: A / AVW-42HJFAE1 — 11 files — warning: 26 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: A / AVW-48HJFAE1 — 11 files — warning: 14 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: A / AVW-54HJFAE1 — 11 files — warning: 20 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: A / AVW-63HJFAE1 — 11 files — warning: 19 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: A / AVW-68HJFAE1 — 11 files — warning: 25 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: A / AVW-76HJFAE1 — 11 files — warning: 25 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: H5 / AVW-41HJDH2H1 — 14 files — warning: 18 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: H5 / AVW-48HJDH2H1 — 14 files — warning: 18 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: H5 / AVW-54HJDH2H1 — 14 files — warning: 18 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: H5 / AVW-76HKDHE2 — 14 files — warning: 24 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: H5 / AVW-96HKDHE2 — 14 files — warning: 25 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: H5 / AVW-114HKDHE2 — 14 files — warning: 44 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: H5 / AVW-136HKDHE2 — 14 files — warning: 40 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: H5 / AVW-154HKDHE2 — 14 files — warning: 39 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: W HEAT RECOVERY / AVWW-76FKFW1 — 5 files — warning: 30 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: W HEAT RECOVERY / AVWW-96FKFW1 — 5 files — warning: 23 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: W HEAT RECOVERY / AVWW-114FKFW1 — 5 files — warning: 42 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: W HEAT RECOVERY / AVWW-136FKFW1 — 5 files — warning: 38 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: W HEAT RECOVERY / AVWW-154FKFW1 — 5 files — warning: 38 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: W HEAT RECOVERY / AVWW-170FKFW1 — 5 files — warning: 46 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 07: W HEAT RECOVERY / AVWW-190FKFW1 — 5 files — warning: 46 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: HEAVY EU DC INVERTER / AUW-09U4RS8 — 8 files — warning: 18 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: HEAVY EU DC INVERTER / AUW-12U4RS8 — 8 files — warning: 18 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: HEAVY EU DC INVERTER / AUW-18U4RS7 — 8 files — warning: 18 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: HEAVY EU DC INVERTER / AUW-24U4RJ7 — 8 files — warning: 10 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: HEAVY EU DC INVERTER / AUW-36U4RK7 — 8 files — warning: 9 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: HEAVY EU DC INVERTER / AUW-48U6RN8 — 8 files — warning: 14 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: HEAVY EU DC INVERTER / AUW-60U6RW8 — 8 files — warning: 8 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 14: HEAVY EU DC INVERTER / AUW-85U6RZ8 — 12 files — warning: 41 low-resolution images rejected | quality: OK; low-res alternatives rejected
+- Packet 15: IR / IR60F — 3 files — warning: 1 low-resolution images rejected | quality: OK; low-res alternatives rejected
