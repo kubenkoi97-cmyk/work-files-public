@@ -1,0 +1,1 @@
+ZKPU exact/series audit. Models=17. Candidate distribution={"8": 1, "9": 9, "19": 7}. Shared exact hashes across models=20. Shared hashes are evidence of generic/reused imagery and are not treated as model-specific without further confirmation.
