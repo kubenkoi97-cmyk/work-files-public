@@ -1,0 +1,213 @@
+name: Curate packet 15 HiMod AE2
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-curate-packet15-himod.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+
+      - name: Decode engine and select packet 15
+        run: |
+          python - <<'PY'
+          import base64,gzip,json,pathlib
+          base=pathlib.Path('Hisense/images-rebuild/2026-09-29')
+          eng=base/'engine'
+          for src,dst in [('manifest_compact.json.gz.b64','manifest_compact.json'),('hisense_image_rebuild.py.gz.b64','hisense_image_rebuild.py')]:
+              (eng/dst).write_bytes(gzip.decompress(base64.b64decode((eng/src).read_text())))
+          data=json.loads((eng/'manifest_compact.json').read_text())
+          wanted={'Triumph','AR','IR','HiMod AE2'}
+          pkt=[x for x in data if str(x.get('series','')) in wanted]
+          assert len(pkt)==14, len(pkt)
+          (base/'packet_15_curated.json').write_text(json.dumps(pkt,ensure_ascii=False,indent=2))
+          PY
+
+      - run: python -m pip install -q requests beautifulsoup4 lxml pillow ImageHash numpy
+
+      - name: Build base packet 15
+        env:
+          MANIFEST: ${{ github.workspace }}/Hisense/images-rebuild/2026-09-29/packet_15_curated.json
+          OUT_DIR: ${{ github.workspace }}/Hisense/images-rebuild/2026-09-29/work_15_curated
+          WORKERS: '5'
+        run: python Hisense/images-rebuild/2026-09-29/engine/hisense_image_rebuild.py
+
+      - name: Insert exact HiMod AE2 images and rebuild reports
+        run: |
+          python - <<'PY'
+          import csv,io,hashlib,shutil,zipfile
+          from pathlib import Path
+          import requests
+          from PIL import Image
+
+          base=Path('Hisense/images-rebuild/2026-09-29')
+          root=base/'work_15_curated'/'Hisense_images_rebuilt'
+          ses=requests.Session()
+          ses.headers.update({'User-Agent':'Mozilla/5.0 Chrome/150 Safari/537.36'})
+
+          exact={
+            'HFRWE-65DGF-SYS':[
+              ('https://hi.1clim.ru/upload/iblock/447/qy2bza8k5i6mph4a0uu19z2eiuo6go7v.jpg',
+               '1Clim exact HFRWE-65DGF/SYS page')
+            ],
+            'HFRWE-130DGF-SYS':[
+              ('https://iclim.ru/upload/iblock/1c8/061bljkg47xjc381plvmz2w9pxc8baae.jpg',
+               'iClim exact HFRWE-130DGF/SYS page — front'),
+              ('https://iclim.ru/upload/iblock/6ad/3d0btgrn0vittfgrmpftd68e83xcftj6.jpg',
+               'iClim exact HFRWE-130DGF/SYS page — angle'),
+              ('https://iclim.ru/upload/iblock/91c/75007ur6rduz0oar3l29muppo6204pv7.jpg',
+               'iClim exact HFRWE-130DGF/SYS page — opposite angle'),
+            ],
+          }
+
+          def crop_obj(im):
+              im=im.convert('RGB')
+              px=im.load(); w,h=im.size
+              xs=[]; ys=[]
+              for y in range(h):
+                  for x in range(w):
+                      r,g,b=px[x,y]
+                      if not (r>242 and g>242 and b>242):
+                          xs.append(x); ys.append(y)
+              if not xs: return im
+              x0=max(0,min(xs)-3); y0=max(0,min(ys)-3)
+              x1=min(w,max(xs)+4); y1=min(h,max(ys)+4)
+              return im.crop((x0,y0,x1,y1))
+
+          def norm(im):
+              o=crop_obj(im)
+              o.thumbnail((750,750),Image.Resampling.LANCZOS)
+              c=Image.new('RGB',(850,850),'white')
+              c.paste(o,((850-o.width)//2,(850-o.height)//2))
+              return c
+
+          sources=[]
+          for model,items in exact.items():
+              folder=root/'HiMod AE2'/model
+              folder.mkdir(parents=True,exist_ok=True)
+              # Remove any previous low-quality/non-usable files for these exact models.
+              for p in folder.glob('*.jpg'): p.unlink()
+              for i,(url,src) in enumerate(items,1):
+                  r=ses.get(url,timeout=30); r.raise_for_status()
+                  im=Image.open(io.BytesIO(r.content))
+                  out=folder/f'{i:02d}.jpg'
+                  norm(im).save(out,'JPEG',quality=94,optimize=True,subsampling=0)
+                  sources.append([model,out.name,'product',url,src,im.width,im.height,len(r.content)])
+              if not (folder/'01.jpg').exists():
+                  raise SystemExit(model+' missing 01.jpg')
+
+          # Patch REPORT.csv.
+          rp=root/'REPORT.csv'
+          rows=list(csv.DictReader(rp.open(encoding='utf-8-sig')))
+          fields=list(rows[0].keys())
+          for r in rows:
+              m=r.get('model','')
+              if m in ('HFRWE-65DGF/SYS','HFRWE-130DGF/SYS'):
+                  key=m.replace('/','-')
+                  cnt=1 if m.startswith('HFRWE-65') else 3
+                  r['found_images']=str(cnt)
+                  r['final_files']=str(cnt)
+                  r['source_1']='https://hi.1clim.ru/catalog/chillery/hisense_hfrwe_65dgf_sys/' if '65DGF' in m else 'https://iclim.ru/catalog/promyshlennye_konditsionery/chillery/hisense_hfrwe_130dgf_sys/'
+                  r['additional_sources']='exact-model audit'
+                  r['indoor_found']='не применимо'
+                  r['outdoor_found']='не применимо'
+                  r['remote_found']='не требуется'
+                  r['panel_found']='не требуется'
+                  r['preview_created']='да'
+                  r['additional_angles']='0' if cnt==1 else '2'
+                  r['quality']='OK; exact-model image' if cnt==1 else 'OK; exact-model gallery'
+                  r['warnings']='Only one independently confirmed exact-model render; conflicting/reused dealer family renders excluded' if cnt==1 else ''
+                  r['preview_mode']='main'
+                  r['usable_source_count']=str(cnt)
+          with rp.open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
+
+          # Rebuild ANOMALIES from report for consistency.
+          an=root/'ANOMALIES.csv'
+          anomaly_fields=['model','series','folder','reasons','warnings']
+          outrows=[]
+          for r in rows:
+              reasons=[]
+              try: n=int(r.get('final_files') or 0)
+              except: n=0
+              if n==0: reasons.append('0 file(s); no 01.jpg')
+              elif n==1: reasons.append('1 file(s)')
+              elif n==2: reasons.append('2 file(s)')
+              if r.get('warnings'): reasons.append(r.get('quality',''))
+              if reasons:
+                  outrows.append({
+                      'model':r.get('model',''),'series':r.get('series',''),'folder':r.get('folder',''),
+                      'reasons':'; '.join(reasons),'warnings':r.get('warnings','')
+                  })
+          with an.open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.DictWriter(f,fieldnames=anomaly_fields); w.writeheader(); w.writerows(outrows)
+
+          # Add exact source audit.
+          with (root/'HIMOD_EXACT_SOURCES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.writer(f); w.writerow(['model','file','component','url','source','source_width','source_height','source_bytes']); w.writerows(sources)
+
+          # Verify all JPGs.
+          errs=[]; jpgs=0
+          for p in root.rglob('*.jpg'):
+              jpgs+=1
+              try:
+                  im=Image.open(p); im.verify()
+                  im=Image.open(p)
+                  if im.size!=(850,850): errs.append(f'{p}: {im.size}')
+                  if im.format!='JPEG': errs.append(f'{p}: {im.format}')
+              except Exception as e: errs.append(f'{p}: {e}')
+          for m in exact:
+              if not (root/'HiMod AE2'/m/'01.jpg').exists(): errs.append(m+': missing 01.jpg')
+          if errs: raise SystemExit('\n'.join(errs))
+          (root/'VERIFY_CURATED.txt').write_text('OK',encoding='utf-8')
+
+          # Package.
+          dest=base/'packets'/'15_TRIUMPH_AR_IR_HIMOD_CURATED'
+          if dest.exists(): shutil.rmtree(dest)
+          dest.mkdir(parents=True)
+          shutil.copytree(root,dest/'Hisense_images_rebuilt')
+          zp=dest/'Hisense_packet_15_TRIUMPH_AR_IR_HIMOD_CURATED.zip'
+          with zipfile.ZipFile(zp,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+              for p in (dest/'Hisense_images_rebuilt').rglob('*'):
+                  if p.is_file(): z.write(p,p.relative_to(dest))
+          with zipfile.ZipFile(zp) as z:
+              bad=z.testzip(); entries=len(z.infolist())
+              if bad: raise SystemExit(bad)
+          sha=hashlib.sha256(zp.read_bytes()).hexdigest()
+          (dest/'ARCHIVE_INFO.txt').write_text(
+              f'file={zp.name}\nsize_bytes={zp.stat().st_size}\nsha256={sha}\nzip_entries={entries}\njpg_count={jpgs}\nverify_errors=0\n',
+              encoding='utf-8')
+          print((dest/'ARCHIVE_INFO.txt').read_text())
+          PY
+
+      - name: Save curated packet 15 to clean public branch
+        run: |
+          set -euxo pipefail
+          DIR="Hisense/images-rebuild/2026-09-29/packets/15_TRIUMPH_AR_IR_HIMOD_CURATED"
+          TMP="/tmp/packet15_curated"
+          cp -a "$DIR" "$TMP"
+          git reset --hard
+          git clean -fdx
+          git checkout --orphan packet15-curated
+          git rm -rf . || true
+          git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29/packets"
+          cp -a "$TMP" "$DIR"
+          git add "$DIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Curated packet 15 with exact HiMod AE2 imagery"
+          git push -f origin packet15-curated:refs/heads/hisense-public-packet-15-curated
