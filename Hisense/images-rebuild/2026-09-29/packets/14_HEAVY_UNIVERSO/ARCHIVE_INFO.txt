@@ -1,0 +1,8 @@
+file=Hisense_packet_14_HEAVY_UNIVERSO.zip
+size_bytes=9268540
+sha256=07ad81ebd5999bb99ed01810fd10d066e51acc39bdf1ab7f3ed3b325ce33e267
+zip_entries=83
+jpg_count=76
+product_folders=16
+verify_errors=0
+removed_cross_category=0
