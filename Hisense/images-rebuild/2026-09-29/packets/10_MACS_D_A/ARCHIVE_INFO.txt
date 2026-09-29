@@ -1,0 +1,8 @@
+file=Hisense_packet_10_MACS_D_A.zip
+size_bytes=1156681
+sha256=fef8f61083f1252867f6cc1d69ef666b2f41f6eb928d1269a3439966eaba4ec5
+zip_entries=30
+jpg_count=23
+product_folders=23
+verify_errors=0
+removed_cross_category=0
