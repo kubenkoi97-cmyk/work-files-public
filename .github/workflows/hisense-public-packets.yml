@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: hisense-public-packets
+  cancel-in-progress: true
+
 jobs:
   build:
     strategy:
@@ -173,8 +177,17 @@ jobs:
           set -euxo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -B "packet-${PID}" "origin/main"
-          git add "Hisense/images-rebuild/2026-09-29/packets/${PID}_${SLUG}"
+          PKTDIR="Hisense/images-rebuild/2026-09-29/packets/${PID}_${SLUG}"
+          TMPDIR="/tmp/${PID}_${SLUG}"
+          cp -a "${PKTDIR}" "${TMPDIR}"
+          git reset --hard
+          git clean -fdx
+          git checkout --orphan "packet-${PID}"
+          git rm -rf . || true
+          git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29/packets"
+          cp -a "${TMPDIR}" "${PKTDIR}"
+          git add "${PKTDIR}"
           git commit -m "Hisense public packet ${PID} ${SLUG}"
           git push -f origin "packet-${PID}:refs/heads/hisense-public-packet-${PID}"
 
