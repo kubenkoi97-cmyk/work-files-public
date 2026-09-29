@@ -1,0 +1,6 @@
+file=Hisense_packet_01_AVC_AVY_CURATED.zip
+size_bytes=8028705
+sha256=0e4ad5174f3405f7321232f3cddf1b4d8b0a6dd9149392ca77307e4f78512fab
+zip_entries=103
+jpg_count=98
+verify_errors=0
