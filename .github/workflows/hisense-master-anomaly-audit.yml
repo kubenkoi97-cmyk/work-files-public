@@ -1,0 +1,168 @@
+name: Build Hisense master anomaly audit
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-master-anomaly-audit.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Fetch result branches
+        run: |
+          git fetch origin hisense-public-packet-01:refs/remotes/origin/hisense-public-packet-01
+          for i in $(seq -w 2 14); do
+            git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"
+          done
+          git fetch origin hisense-public-packet-15-curated:refs/remotes/origin/hisense-public-packet-15-curated
+
+      - name: Aggregate all reports
+        run: |
+          python - <<'PY'
+          import csv,io,subprocess,pathlib,collections,json
+
+          specs=[
+            ('01','hisense-public-packet-01','Hisense/images-rebuild/2026-09-29/packets/01_AVC_AVY/curated/Hisense_packet_01_AVC_AVY/REPORT.csv'),
+            ('02','hisense-public-packet-02','Hisense/images-rebuild/2026-09-29/packets/02_AVBC/Hisense_images_rebuilt/REPORT.csv'),
+            ('03','hisense-public-packet-03','Hisense/images-rebuild/2026-09-29/packets/03_AVS_AVF/Hisense_images_rebuilt/REPORT.csv'),
+            ('04','hisense-public-packet-04','Hisense/images-rebuild/2026-09-29/packets/04_AVD_HJDH/Hisense_images_rebuilt/REPORT.csv'),
+            ('05','hisense-public-packet-05','Hisense/images-rebuild/2026-09-29/packets/05_AVD_HJFH_AVE/Hisense_images_rebuilt/REPORT.csv'),
+            ('06','hisense-public-packet-06','Hisense/images-rebuild/2026-09-29/packets/06_S5/Hisense_images_rebuilt/REPORT.csv'),
+            ('07','hisense-public-packet-07','Hisense/images-rebuild/2026-09-29/packets/07_H5_A_W/Hisense_images_rebuilt/REPORT.csv'),
+            ('08','hisense-public-packet-08','Hisense/images-rebuild/2026-09-29/packets/08_MACS_C/Hisense_images_rebuilt/REPORT.csv'),
+            ('09','hisense-public-packet-09','Hisense/images-rebuild/2026-09-29/packets/09_MACS_F_W/Hisense_images_rebuilt/REPORT.csv'),
+            ('10','hisense-public-packet-10','Hisense/images-rebuild/2026-09-29/packets/10_MACS_D_A/Hisense_images_rebuilt/REPORT.csv'),
+            ('11','hisense-public-packet-11','Hisense/images-rebuild/2026-09-29/packets/11_MACS_D_B/Hisense_images_rebuilt/REPORT.csv'),
+            ('12','hisense-public-packet-12','Hisense/images-rebuild/2026-09-29/packets/12_MACS_D_C/Hisense_images_rebuilt/REPORT.csv'),
+            ('13','hisense-public-packet-13','Hisense/images-rebuild/2026-09-29/packets/13_ZKPU/Hisense_images_rebuilt/REPORT.csv'),
+            ('14','hisense-public-packet-14','Hisense/images-rebuild/2026-09-29/packets/14_HEAVY_UNIVERSO/Hisense_images_rebuilt/REPORT.csv'),
+            ('15','hisense-public-packet-15-curated','Hisense/images-rebuild/2026-09-29/packets/15_TRIUMPH_AR_IR_HIMOD_CURATED/Hisense_images_rebuilt/REPORT.csv'),
+          ]
+
+          out=pathlib.Path('Hisense/images-rebuild/2026-09-29/master-audit')
+          out.mkdir(parents=True,exist_ok=True)
+          allrows=[]
+          packet_stats=[]
+          for pid,branch,path in specs:
+              raw=subprocess.check_output(['git','show',f'origin/{branch}:{path}'])
+              txt=raw.decode('utf-8-sig')
+              rows=list(csv.DictReader(io.StringIO(txt)))
+              for r in rows:
+                  r['packet']=pid
+                  allrows.append(r)
+              cnt=collections.Counter()
+              for r in rows:
+                  try:n=int(r.get('final_files') or 0)
+                  except:n=0
+                  if n==0:cnt['0']+=1
+                  elif n==1:cnt['1']+=1
+                  elif n==2:cnt['2']+=1
+                  else:cnt['3+']+=1
+                  if r.get('warnings'):cnt['warn']+=1
+              packet_stats.append({
+                  'packet':pid,'models':len(rows),'zero':cnt['0'],'one':cnt['1'],
+                  'two':cnt['2'],'three_plus':cnt['3+'],'warnings':cnt['warn']
+              })
+
+          if len(allrows)!=276:
+              raise SystemExit(f'Expected 276 products, got {len(allrows)}')
+
+          # Master report union of all columns.
+          cols=['packet']
+          for r in allrows:
+              for k in r:
+                  if k not in cols: cols.append(k)
+          with (out/'MASTER_REPORT.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.DictWriter(f,fieldnames=cols);w.writeheader();w.writerows(allrows)
+
+          anomaly=[]
+          for r in allrows:
+              reasons=[]
+              try:n=int(r.get('final_files') or 0)
+              except:n=0
+              if n==0:reasons.append('0 images')
+              elif n==1:reasons.append('only 1 image')
+              elif n==2:reasons.append('only 2 images')
+              if str(r.get('preview_created','')).lower() in ('нет','no','false','0',''):
+                  reasons.append('preview not confirmed')
+              if r.get('warnings'): reasons.append('warning: '+r.get('warnings',''))
+              quality=r.get('quality','')
+              if quality and any(x in quality.lower() for x in ('no_usable','low-res','limited','missing')):
+                  reasons.append('quality: '+quality)
+              if reasons:
+                  anomaly.append({
+                      'packet':r.get('packet',''),'model':r.get('model',''),'series':r.get('series',''),
+                      'folder':r.get('folder',''),'final_files':n,'reasons':' | '.join(reasons),
+                      'warnings':r.get('warnings',''),'quality':quality
+                  })
+
+          af=['packet','model','series','folder','final_files','reasons','warnings','quality']
+          with (out/'ANOMALY_MASTER.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.DictWriter(f,fieldnames=af);w.writeheader();w.writerows(anomaly)
+
+          ps=['packet','models','zero','one','two','three_plus','warnings']
+          with (out/'PACKET_SUMMARY.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.DictWriter(f,fieldnames=ps);w.writeheader();w.writerows(packet_stats)
+
+          total=collections.Counter()
+          for s in packet_stats:
+              total['models']+=s['models'];total['zero']+=s['zero'];total['one']+=s['one']
+              total['two']+=s['two'];total['three_plus']+=s['three_plus'];total['warnings']+=s['warnings']
+
+          # Prioritised second-pass plan.
+          groups=collections.defaultdict(list)
+          for a in anomaly:
+              n=a['final_files']
+              key='P0_ZERO' if n==0 else 'P1_ONE' if n==1 else 'P2_TWO' if n==2 else 'P3_WARNING'
+              groups[key].append(a)
+
+          lines=[
+              '# Hisense mandatory second-pass plan','',
+              f'Total models: {total["models"]}',
+              f'0 images: {total["zero"]}',
+              f'1 image: {total["one"]}',
+              f'2 images: {total["two"]}',
+              f'3+ images: {total["three_plus"]}',
+              f'Rows with warnings: {total["warnings"]}','',
+              'Priority order: P0_ZERO -> P1_ONE -> P2_TWO -> P3_WARNING',''
+          ]
+          for key in ('P0_ZERO','P1_ONE','P2_TWO','P3_WARNING'):
+              arr=groups.get(key,[])
+              lines.append(f'## {key} ({len(arr)})')
+              for a in arr:
+                  lines.append(f'- Packet {a["packet"]}: {a["series"]} / {a["model"]} — {a["final_files"]} files — {a["reasons"]}')
+              lines.append('')
+          (out/'SECOND_PASS_PLAN.md').write_text('\n'.join(lines),encoding='utf-8')
+          (out/'SUMMARY.json').write_text(json.dumps({'total':dict(total),'packets':packet_stats},ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps({'total':dict(total),'packets':packet_stats},indent=2))
+          PY
+
+      - name: Save master audit to clean branch
+        run: |
+          set -euxo pipefail
+          DIR="Hisense/images-rebuild/2026-09-29/master-audit"
+          TMP="/tmp/hisense-master-audit"
+          cp -a "$DIR" "$TMP"
+          git reset --hard
+          git clean -fdx
+          git checkout --orphan master-audit
+          git rm -rf . || true
+          git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29"
+          cp -a "$TMP" "$DIR"
+          git add "$DIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Build Hisense master anomaly audit"
+          git push -f origin master-audit:refs/heads/hisense-public-master-audit
