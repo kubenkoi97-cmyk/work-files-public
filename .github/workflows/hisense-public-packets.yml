@@ -177,3 +177,5 @@ jobs:
           git add "Hisense/images-rebuild/2026-09-29/packets/${PID}_${SLUG}"
           git commit -m "Hisense public packet ${PID} ${SLUG}"
           git push -f origin "packet-${PID}:refs/heads/hisense-public-packet-${PID}"
+
+# trigger public packet build
