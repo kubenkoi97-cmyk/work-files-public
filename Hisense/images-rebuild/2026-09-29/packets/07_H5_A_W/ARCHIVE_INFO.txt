@@ -1,0 +1,8 @@
+file=Hisense_packet_07_H5_A_W.zip
+size_bytes=25942789
+sha256=616640b2e2aa61123a7a1ff3013b635cc1f2df17a2c12b39b9f3983dde5ea2d4
+zip_entries=242
+jpg_count=235
+product_folders=23
+verify_errors=0
+removed_cross_category=0
