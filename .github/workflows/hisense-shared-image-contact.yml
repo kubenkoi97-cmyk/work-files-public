@@ -1,0 +1,95 @@
+name: Visual audit shared Hisense images
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-shared-image-contact.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python -m pip install -q pillow
+
+      - name: Fetch result and audit branches
+        run: |
+          git fetch origin hisense-cross-model-audit:refs/remotes/origin/hisense-cross-model-audit
+          git fetch origin hisense-public-packet-01:refs/remotes/origin/hisense-public-packet-01
+          for i in 02 03 04 05 06 07; do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
+          git fetch origin hisense-public-packet-08-curated:refs/remotes/origin/hisense-public-packet-08-curated
+          for i in 09 10 11 12 13 14; do git fetch origin "hisense-public-packet-$i:refs/remotes/origin/hisense-public-packet-$i"; done
+          git fetch origin hisense-public-packet-15-curated:refs/remotes/origin/hisense-public-packet-15-curated
+
+      - name: Extract selected packet branches
+        run: |
+          rm -rf /tmp/allpk && mkdir -p /tmp/allpk
+          git archive origin/hisense-public-packet-01 | tar -x -C /tmp/allpk
+          for i in 02 03 04 05 06 07; do git archive "origin/hisense-public-packet-$i" | tar -x -C /tmp/allpk; done
+          git archive origin/hisense-public-packet-08-curated | tar -x -C /tmp/allpk
+          for i in 09 10 11 12 13 14; do git archive "origin/hisense-public-packet-$i" | tar -x -C /tmp/allpk; done
+          git archive origin/hisense-public-packet-15-curated | tar -x -C /tmp/allpk
+          mkdir -p /tmp/cross
+          git show origin/hisense-cross-model-audit:Hisense/images-rebuild/2026-09-29/cross-model-audit/EXACT_CROSS_MODEL_DUPLICATES.csv > /tmp/cross/exact.csv
+
+      - name: Build representative contact sheet
+        run: |
+          python - <<'PY'
+          import csv,io
+          from pathlib import Path
+          from PIL import Image,ImageOps,ImageDraw
+          rows=list(csv.DictReader(open('/tmp/cross/exact.csv',encoding='utf-8-sig')))
+          rows=[r for r in rows if int(r['model_count'])>=5]
+          rows.sort(key=lambda r:(-int(r['model_count']),int(r['group'])))
+          tiles=[]
+          report=[]
+          root=Path('/tmp/allpk')
+          for r in rows:
+              candidates=[x.strip() for x in r['paths'].split(' | ') if x.strip()]
+              p=None
+              for rel in candidates:
+                  q=root/rel
+                  if q.exists():
+                      p=q;break
+              if not p: continue
+              try: im=Image.open(p).convert('RGB')
+              except: continue
+              obj=ImageOps.contain(im,(260,220),Image.Resampling.LANCZOS)
+              tile=Image.new('RGB',(300,300),'white')
+              tile.paste(obj,((300-obj.width)//2,5))
+              d=ImageDraw.Draw(tile)
+              d.text((7,232),f"group {r['group']}  models={r['model_count']}",fill='black')
+              d.text((7,250),r['sha256'][:18],fill='black')
+              short='/'.join(p.parts[-4:])
+              d.text((7,269),short[:44],fill='black')
+              tiles.append(tile)
+              report.append([r['group'],r['model_count'],r['sha256'],str(p.relative_to(root))])
+          cols=4; rn=max(1,(len(tiles)+cols-1)//cols)
+          sheet=Image.new('RGB',(cols*300,rn*300),'white')
+          for i,t in enumerate(tiles):sheet.paste(t,((i%cols)*300,(i//cols)*300))
+          out=Path('Hisense/images-rebuild/2026-09-29/audits/shared_images')
+          out.mkdir(parents=True,exist_ok=True)
+          sheet.save(out/'SHARED_IMAGES_CONTACT.jpg','JPEG',quality=92)
+          with (out/'REPRESENTATIVES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.writer(f);w.writerow(['group','model_count','sha256','representative_path']);w.writerows(report)
+          print('groups',len(report))
+          PY
+
+      - name: Save audit
+        run: |
+          DIR="Hisense/images-rebuild/2026-09-29/audits/shared_images";TMP="/tmp/sharedimg";cp -a "$DIR" "$TMP"
+          git reset --hard;git clean -fdx;git checkout --orphan shared-audit;git rm -rf . || true;git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29/audits";cp -a "$TMP" "$DIR";git add "$DIR"
+          git config user.name "github-actions[bot]";git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Visual audit shared Hisense images"
+          git push -f origin shared-audit:refs/heads/hisense-audit-shared-images
