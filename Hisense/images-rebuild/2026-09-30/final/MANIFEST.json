@@ -1,0 +1,130 @@
+[
+  {
+    "file": "Hisense_FINAL_ALL_276.zip",
+    "kind": "unified",
+    "packet": "ALL",
+    "size_bytes": 77053141,
+    "sha256": "56cd22de267d23de63631707a6087ea81bc77cf0e0963982abf262b1dfd4b072",
+    "zip_entries": 1090
+  },
+  {
+    "file": "Hisense_FINAL_part_01_AVC_AVY.zip",
+    "kind": "part",
+    "packet": "01",
+    "size_bytes": 8027391,
+    "sha256": "eb0892e7b3bb1ede296dce98aaf1fbbb60c7f2cdbc1025a3398bf9d1644bb6f8",
+    "zip_entries": 101
+  },
+  {
+    "file": "Hisense_FINAL_part_02_AVBC.zip",
+    "kind": "part",
+    "packet": "02",
+    "size_bytes": 8093693,
+    "sha256": "0bae454989d1974234c6f1d146ea1adf1830c4d5af0c09825f15d63a33b39b36",
+    "zip_entries": 127
+  },
+  {
+    "file": "Hisense_FINAL_part_03_AVS_AVF.zip",
+    "kind": "part",
+    "packet": "03",
+    "size_bytes": 2849377,
+    "sha256": "a60870e87d9e37c6350805508b71ae17252b3a1732023c0fe2804e48f6ca3a98",
+    "zip_entries": 79
+  },
+  {
+    "file": "Hisense_FINAL_part_04_AVD_HJDH.zip",
+    "kind": "part",
+    "packet": "04",
+    "size_bytes": 4473399,
+    "sha256": "2a1577c3442bf4c49a2774a9ee81818d59b33b7596ac54bb623352e82dd891eb",
+    "zip_entries": 81
+  },
+  {
+    "file": "Hisense_FINAL_part_05_AVD_HJFH_AVE.zip",
+    "kind": "part",
+    "packet": "05",
+    "size_bytes": 7347030,
+    "sha256": "917ad6fd311252b9a3d292c27924d4f7482f4cfd4e2e30c96ad9edd34b727498",
+    "zip_entries": 116
+  },
+  {
+    "file": "Hisense_FINAL_part_06_S5.zip",
+    "kind": "part",
+    "packet": "06",
+    "size_bytes": 9875846,
+    "sha256": "e3a47d56a642b7fca4c21694c5a1f6185f552c4c4b99a194fba4d9cd2a9f83d1",
+    "zip_entries": 147
+  },
+  {
+    "file": "Hisense_FINAL_part_07_H5_A_W.zip",
+    "kind": "part",
+    "packet": "07",
+    "size_bytes": 17776192,
+    "sha256": "9b9458d7f91c3441a758fabd24b420dc348413579b5a3909ba9c9652c9613f35",
+    "zip_entries": 192
+  },
+  {
+    "file": "Hisense_FINAL_part_08_MACS_C.zip",
+    "kind": "part",
+    "packet": "08",
+    "size_bytes": 4116469,
+    "sha256": "aab259e541bea6965ebe7f14ef57c07f01364155fff0c365cd33a1602f8a01c8",
+    "zip_entries": 63
+  },
+  {
+    "file": "Hisense_FINAL_part_09_MACS_F_W.zip",
+    "kind": "part",
+    "packet": "09",
+    "size_bytes": 1203102,
+    "sha256": "b9ba0c7ee73c7a61216c858e89ad39e332123b0c4adf7afad71881398e17ac4f",
+    "zip_entries": 37
+  },
+  {
+    "file": "Hisense_FINAL_part_10_MACS_D_A.zip",
+    "kind": "part",
+    "packet": "10",
+    "size_bytes": 1155613,
+    "sha256": "73f2e18d8db02890ffb985eb7e42fc0b98f79d9555f88b6443f293bf63978c26",
+    "zip_entries": 26
+  },
+  {
+    "file": "Hisense_FINAL_part_11_MACS_D_B.zip",
+    "kind": "part",
+    "packet": "11",
+    "size_bytes": 1561205,
+    "sha256": "f05f0c6b57f8b678370093a5aaf90480a66962eb0f91b5348177266271ebfe4e",
+    "zip_entries": 26
+  },
+  {
+    "file": "Hisense_FINAL_part_12_MACS_D_C.zip",
+    "kind": "part",
+    "packet": "12",
+    "size_bytes": 1824470,
+    "sha256": "6c7cee7f21a6677031b57055f4a35d6da0adb06a635e9ec93fb0048119e77c35",
+    "zip_entries": 26
+  },
+  {
+    "file": "Hisense_FINAL_part_13_ZKPU.zip",
+    "kind": "part",
+    "packet": "13",
+    "size_bytes": 1195353,
+    "sha256": "784521337bcbc8060118ef02464975e5e1df5b7f449aec6096225524f373f855",
+    "zip_entries": 20
+  },
+  {
+    "file": "Hisense_FINAL_part_14_HEAVY_UNIVERSO.zip",
+    "kind": "part",
+    "packet": "14",
+    "size_bytes": 6427663,
+    "sha256": "733c684e25782c9d8860ee7883a2c869887dac8e444a639ea377d24d8a78a7ab",
+    "zip_entries": 63
+  },
+  {
+    "file": "Hisense_FINAL_part_15_TRIUMPH_AR_IR_HIMOD.zip",
+    "kind": "part",
+    "packet": "15",
+    "size_bytes": 1159218,
+    "sha256": "d50265b859f8b15fdfae9154afa938bbd7876529ce3746c4c930c304075e2068",
+    "zip_entries": 23
+  }
+]

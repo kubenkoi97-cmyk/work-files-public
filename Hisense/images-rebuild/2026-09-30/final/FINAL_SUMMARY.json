@@ -1,0 +1,13 @@
+{
+  "products": 276,
+  "jpg_count": 1082,
+  "one_image": 113,
+  "two_images": 32,
+  "three_plus": 131,
+  "removed_forbidden": 264,
+  "missing_01": 0,
+  "bad_images": 0,
+  "unresolved_controller_rows": 18,
+  "unified_zip_bytes": 77053141,
+  "unified_zip_sha256": "56cd22de267d23de63631707a6087ea81bc77cf0e0963982abf262b1dfd4b072"
+}

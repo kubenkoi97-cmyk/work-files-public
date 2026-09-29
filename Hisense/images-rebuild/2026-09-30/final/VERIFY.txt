@@ -1,0 +1,15 @@
+FINAL HISENSE IMAGE ARCHIVE VERIFICATION
+model_folders=276
+jpg_count=1082
+models_1_image=113
+models_2_images=32
+models_3plus_images=131
+missing_01=0
+bad_jpeg_or_size=0
+forbidden_known_images_remaining=0
+forbidden_images_removed=264
+cross_series_exact_duplicate_groups=6
+rows_with_documented_limitations=276
+rows_with_unspecified_controller_model=18
+zip_test=performed after packaging
+status=OK
