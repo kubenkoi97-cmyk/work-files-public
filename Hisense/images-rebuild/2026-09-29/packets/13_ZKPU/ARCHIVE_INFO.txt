@@ -1,0 +1,8 @@
+file=Hisense_packet_13_ZKPU.zip
+size_bytes=1196583
+sha256=255ba96678d754cf5e0f516412a4aa697bc1770cbfbb181cfd80f941f70a92a6
+zip_entries=24
+jpg_count=17
+product_folders=17
+verify_errors=0
+removed_cross_category=0
