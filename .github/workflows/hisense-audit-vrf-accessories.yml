@@ -1,0 +1,108 @@
+name: Audit Hisense VRF accessory images
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-audit-vrf-accessories.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main, fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python -m pip install -q requests beautifulsoup4 pillow
+      - name: Scrape exact accessory pages
+        run: |
+          python - <<'PY'
+          import csv,io,re,hashlib
+          from pathlib import Path
+          from urllib.parse import urljoin
+          import requests
+          from bs4 import BeautifulSoup
+          from PIL import Image,ImageOps,ImageDraw
+
+          pages={
+            'HPE-GNK1':[
+              'https://mircli.ru/Hisense-HPE-GNK1/',
+              'https://hi.1clim.ru/catalog/dekorativnye_paneli/hisense_hpe_gnk1/',
+            ],
+            'HP-G-NK':[
+              'https://schiessl.pl/pl/hp-g-nk-panel-hisense-hp-g-nk-do-jkasetonowych-avbc',
+              'https://www.matmax.es/aire-acondicionado-y-refrigeracion/productos/hisense/hp-g-nk-panel-hp-g-nk-para-unidad-interior-cassette-4-vias-1348000136',
+              'https://4dealer.ru/item/hp-g-nk_panel_dekorativnaya_950h950_hisense-30770560.html?info=d',
+            ],
+            'HYXE-VC01':[
+              'https://support.hisensehvac.com/common/index.aspx?nodeid=17101',
+              'https://hisense.id/product/wired-controller/',
+            ],
+            'HYXE-VA01A':[
+              'https://support.hisensehvac.com/common/index.aspx?nodeid=17100',
+              'https://es.hisensehvac.com/Product/index.aspx?nodeid=8591',
+              'https://hisense.id/product/wired-controller/',
+            ],
+          }
+          out=Path('Hisense/images-rebuild/2026-09-29/audits/vrf_accessories')
+          out.mkdir(parents=True,exist_ok=True)
+          ses=requests.Session();ses.headers.update({'User-Agent':'Mozilla/5.0 Chrome/150 Safari/537.36'})
+          rows=[]
+          for model,plist in pages.items():
+            cand=[]; seen=set()
+            for page in plist:
+              try:
+                r=ses.get(page,timeout=25);r.raise_for_status()
+              except Exception as e:
+                rows.append([model,page,'PAGE_ERROR:'+repr(e),0,0,0,''])
+                continue
+              soup=BeautifulSoup(r.text,'html.parser'); urls=set()
+              for tag in soup.find_all(['img','source','a']):
+                for a in ('src','data-src','data-original','data-lazy-src','href'):
+                  v=tag.get(a)
+                  if v and re.search(r'\.(?:jpg|jpeg|png|webp)(?:\?|$)',v,re.I): urls.add(urljoin(page,v))
+                for a in ('srcset','data-srcset'):
+                  v=tag.get(a)
+                  if v:
+                    for part in v.split(','):
+                      u=part.strip().split(' ')[0]
+                      if u and re.search(r'\.(?:jpg|jpeg|png|webp)(?:\?|$)',u,re.I): urls.add(urljoin(page,u))
+              for u in sorted(urls):
+                try:
+                  ir=ses.get(u,timeout=20)
+                  if ir.status_code!=200 or not ir.headers.get('content-type','').startswith('image/'): continue
+                  b=ir.content
+                  if len(b)<8000: continue
+                  im=Image.open(io.BytesIO(b)).convert('RGB');w,h=im.size
+                  if max(w,h)<300: continue
+                  sha=hashlib.sha256(b).hexdigest()
+                  if sha in seen: continue
+                  seen.add(sha)
+                  rows.append([model,page,u,w,h,len(b),sha]);cand.append((u,im,w,h,len(b),sha,page))
+                except: pass
+            tiles=[]
+            for i,(u,im,w,h,bs,sha,page) in enumerate(cand,1):
+              tile=Image.new('RGB',(320,350),'white');obj=ImageOps.contain(im,(290,270),Image.Resampling.LANCZOS)
+              tile.paste(obj,((320-obj.width)//2,8));d=ImageDraw.Draw(tile)
+              d.text((8,286),f'{i:02d} {w}x{h} {bs//1024}KB',fill='black')
+              d.text((8,307),re.sub(r'^https?://([^/]+).*',r'\1',page)[:42],fill='black')
+              d.text((8,327),sha[:18],fill='black');tiles.append(tile)
+            cols=3; rn=max(1,(len(tiles)+2)//3);sheet=Image.new('RGB',(cols*320,rn*350),'white')
+            for i,t in enumerate(tiles):sheet.paste(t,((i%3)*320,(i//3)*350))
+            sheet.save(out/f'{model}_CONTACT.jpg','JPEG',quality=90)
+          with (out/'CANDIDATES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+            w=csv.writer(f);w.writerow(['model','page','image_url','width','height','bytes','sha256']);w.writerows(rows)
+          PY
+      - name: Save audit
+        run: |
+          DIR="Hisense/images-rebuild/2026-09-29/audits/vrf_accessories";TMP="/tmp/vrfacc";cp -a "$DIR" "$TMP"
+          git reset --hard;git clean -fdx;git checkout --orphan acc-audit;git rm -rf . || true;git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29/audits";cp -a "$TMP" "$DIR";git add "$DIR"
+          git config user.name "github-actions[bot]";git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Audit exact Hisense VRF accessory images"
+          git push -f origin acc-audit:refs/heads/hisense-audit-vrf-accessories
