@@ -1,0 +1,8 @@
+file=Hisense_packet_04_AVD_HJDH.zip
+size_bytes=7731183
+sha256=aacd3d994f109dc521bf1f9f03170dc9988f99afc1033fdf0c925c5d5cc748fe
+zip_entries=85
+jpg_count=78
+product_folders=13
+verify_errors=0
+removed_cross_category=0
