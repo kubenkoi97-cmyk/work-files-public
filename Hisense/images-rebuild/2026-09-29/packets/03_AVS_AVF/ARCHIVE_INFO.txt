@@ -1,0 +1,8 @@
+file=Hisense_packet_03_AVS_AVF.zip
+size_bytes=6249651
+sha256=711a8a8aef6a096f1ada2b57444210eb0d64f48609f16901cb855946c3063b43
+zip_entries=89
+jpg_count=82
+product_folders=12
+verify_errors=0
+removed_cross_category=77

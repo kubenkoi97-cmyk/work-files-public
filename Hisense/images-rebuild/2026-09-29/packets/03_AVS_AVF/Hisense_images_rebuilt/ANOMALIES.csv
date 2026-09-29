@@ -1,0 +1,13 @@
+﻿model,series,folder,reasons,warnings
+AVF-36H2FDA,AVF-H2FDA,AVF-H2FDA/AVF-36H2FDA,remote missing,confirmed remote image not found
+AVF-48H2FDA,AVF-H2FDA,AVF-H2FDA/AVF-48H2FDA,remote missing,confirmed remote image not found
+AVF-56H2FDA,AVF-H2FDA,AVF-H2FDA/AVF-56H2FDA,remote missing,confirmed remote image not found
+AVF-96H2FDA,AVF-H2FDA,AVF-H2FDA/AVF-96H2FDA,remote missing,confirmed remote image not found
+AVS-05HJDTD,AVS-HJDTD,AVS-HJDTD/AVS-05HJDTD,remote missing; OK; low-res alternatives rejected,38 low-resolution images rejected; confirmed remote image not found
+AVS-07HJDTD,AVS-HJDTD,AVS-HJDTD/AVS-07HJDTD,remote missing; OK; low-res alternatives rejected,36 low-resolution images rejected; confirmed remote image not found
+AVS-09HJDTD,AVS-HJDTD,AVS-HJDTD/AVS-09HJDTD,remote missing; OK; low-res alternatives rejected,36 low-resolution images rejected; confirmed remote image not found
+AVS-12HJDTD,AVS-HJDTD,AVS-HJDTD/AVS-12HJDTD,remote missing; OK; low-res alternatives rejected,36 low-resolution images rejected; confirmed remote image not found
+AVS-15HJDTD,AVS-HJDTD,AVS-HJDTD/AVS-15HJDTD,remote missing; OK; low-res alternatives rejected,36 low-resolution images rejected; confirmed remote image not found
+AVS-19HJDTD,AVS-HJDTD,AVS-HJDTD/AVS-19HJDTD,remote missing; OK; low-res alternatives rejected,36 low-resolution images rejected; confirmed remote image not found
+AVS-24HJDTD,AVS-HJDTD,AVS-HJDTD/AVS-24HJDTD,remote missing; OK; low-res alternatives rejected,41 low-resolution images rejected; confirmed remote image not found
+AVS-28HJDTD,AVS-HJDTD,AVS-HJDTD/AVS-28HJDTD,remote missing; OK; low-res alternatives rejected,18 low-resolution images rejected; confirmed remote image not found
