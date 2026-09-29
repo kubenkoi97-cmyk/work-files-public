@@ -1,0 +1,15 @@
+﻿model,series,folder,reasons,warnings
+TWC22HN/OUT с модулем RC-KA02,Triumph,Triumph/TWC22HN-OUT с модулем RC-KA02,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+TWC28HN/OUT с модулем RC-KA02,Triumph,Triumph/TWC28HN-OUT с модулем RC-KA02,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+TWC35HN/OUT с модулем RC-KA02,Triumph,Triumph/TWC35HN-OUT с модулем RC-KA02,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+TWC55HN/OUT с модулем RC-KA02,Triumph,Triumph/TWC55HN-OUT с модулем RC-KA02,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+TWC75HN/OUT с модулем RC-KA02,Triumph,Triumph/TWC75HN-OUT с модулем RC-KA02,1 file(s); indoor missing; outdoor missing; OK; low-res alternatives rejected,only 1 usable source images; 1 low-resolution images rejected
+HFRWE-65DGF/SYS,HiMod AE2,HiMod AE2/HFRWE-65DGF-SYS,0 file(s); no 01.jpg; indoor missing; outdoor missing; NO_USABLE_IMAGES,01.jpg missing; only 0 usable source images; 4 low-resolution images rejected
+HFRWE-130DGF/SYS,HiMod AE2,HiMod AE2/HFRWE-130DGF-SYS,0 file(s); no 01.jpg; indoor missing; outdoor missing; NO_USABLE_IMAGES,01.jpg missing; only 0 usable source images; 4 low-resolution images rejected
+AR08U/F/D,AR,AR/AR08U-F-D,1 file(s); indoor missing; outdoor missing,only 1 usable source images
+AR13U/F/D,AR,AR/AR13U-F-D,1 file(s); indoor missing; outdoor missing,only 1 usable source images
+AR17U/F/D,AR,AR/AR17U-F-D,1 file(s); indoor missing; outdoor missing,only 1 usable source images
+AR20U/F/D,AR,AR/AR20U-F-D,1 file(s); indoor missing; outdoor missing,only 1 usable source images
+IR40F,IR,IR/IR40F,2 file(s); indoor missing; outdoor missing,only 2 usable source images
+IR50F,IR,IR/IR50F,2 file(s); indoor missing; outdoor missing,only 2 usable source images
+IR60F,IR,IR/IR60F,outdoor missing; OK; low-res alternatives rejected,1 low-resolution images rejected
