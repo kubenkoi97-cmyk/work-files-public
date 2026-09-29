@@ -1,0 +1,285 @@
+name: Hisense packet 01 curated rebuild
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/hisense-packet01-curated.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  curated:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q requests beautifulsoup4 pillow ImageHash
+      - name: Build curated exact-model packet
+        shell: bash
+        run: |
+          cat > /tmp/curate.py <<'PY'
+          import csv, io, os, re, shutil, zipfile, hashlib
+          from pathlib import Path
+          from urllib.parse import urljoin
+          import requests
+          from bs4 import BeautifulSoup
+          from PIL import Image, ImageChops
+
+          ROOT=Path('Hisense/images-rebuild/2026-09-29/packets/01_AVC_AVY/curated')
+          if ROOT.exists(): shutil.rmtree(ROOT)
+          ROOT.mkdir(parents=True)
+          PACK=ROOT/'Hisense_packet_01_AVC_AVY'
+          PACK.mkdir()
+          s=requests.Session()
+          s.headers.update({'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36'})
+          REMOTE_FRONT='https://www.kaut-hisense.de/media/f6/0c/81/1681722580/1268304201_bild01_bild-hye-vd01_web.png?ts=1692274121'
+          REMOTE_SIDE='https://www.kaut-hisense.de/media/d5/c5/52/1681722516/1268304201_bild02_bild-hye-vd01_side_web.png?ts=1692274122'
+          PANEL_FRONT='https://www.kaut-hisense.de/media/3c/87/29/1709628365/1268300111bild02bild_hpe_dnk1_web.jpg?ts=1709628365'
+          PANEL_SIDE='https://www.kaut-hisense.de/media/d2/bc/83/1709628364/1268300111bild01bild_hpe_dnk1_side_web.jpg?ts=1709628364'
+          BREEZ_AVC=[
+            'https://images.breez.ru/catalog/hisense/compact-vnutr-blocki-casset-tipa-r32-r410a/compact-vnutr-blocki-casset-tipa-r32-r410a-01.png',
+            'https://images.breez.ru/catalog/hisense/compact-vnutr-blocki-casset-tipa-r32-r410a/compact-vnutr-blocki-casset-tipa-r32-r410a-02.png'
+          ]
+          AVC=['AVC-05HJDBA','AVC-07HJDBA','AVC-09HJDBA','AVC-12HJDBA','AVC-15HJDBA','AVC-17HJDBA','AVC-19HJDBA']
+          AVY=['AVY-05HJDA','AVY-07HJDA','AVY-09HJDA','AVY-12HJDA','AVY-15HJDA','AVY-19HJDA','AVY-24HJDA']
+          small=set(AVY[:5])
+          large=set(AVY[5:])
+
+          def get(url):
+            r=s.get(url,timeout=35); r.raise_for_status(); return r.content
+
+          def open_image(url):
+            return Image.open(io.BytesIO(get(url))).convert('RGBA')
+
+          def object_crop(im):
+            rgba=im.convert('RGBA')
+            # Composite transparent pixels onto white before thresholding.
+            base=Image.new('RGBA',rgba.size,(255,255,255,255)); base.alpha_composite(rgba)
+            rgb=base.convert('RGB')
+            pix=rgb.load(); w,h=rgb.size
+            xs=[]; ys=[]
+            for y in range(h):
+              for x in range(w):
+                r,g,b=pix[x,y]
+                if not (r>242 and g>242 and b>242):
+                  xs.append(x); ys.append(y)
+            if not xs: return rgb
+            x0=max(0,min(xs)-3); y0=max(0,min(ys)-3); x1=min(w,max(xs)+4); y1=min(h,max(ys)+4)
+            return rgb.crop((x0,y0,x1,y1))
+
+          def normalize(im):
+            obj=object_crop(im)
+            obj.thumbnail((750,750),Image.Resampling.LANCZOS)
+            c=Image.new('RGB',(850,850),'white')
+            c.paste(obj,((850-obj.width)//2,(850-obj.height)//2))
+            return c
+
+          def preview(indoor,remote):
+            a=object_crop(indoor); b=object_crop(remote)
+            # Indoor block: max 750 wide, max 500 high.
+            a.thumbnail((750,500),Image.Resampling.LANCZOS)
+            # Remote centered below: deliberately smaller than indoor.
+            b.thumbnail((190,260),Image.Resampling.LANCZOS)
+            c=Image.new('RGB',(850,850),'white')
+            top_y=max(35,55+(500-a.height)//2)
+            c.paste(a,((850-a.width)//2,top_y))
+            rem_y=max(top_y+a.height+25,560)
+            if rem_y+b.height>815: rem_y=815-b.height
+            c.paste(b,((850-b.width)//2,rem_y))
+            return c
+
+          def save_jpg(im,path):
+            path.parent.mkdir(parents=True,exist_ok=True)
+            im.save(path,'JPEG',quality=94,optimize=True,subsampling=0)
+
+          # Load prior auto source registry to recover exact AVC MirCli model images.
+          src_path=Path('Hisense/images-rebuild/2026-09-29/packets/01_AVC_AVY/generated/Hisense_images_rebuilt/IMAGE_SOURCES.csv')
+          rows=list(csv.DictReader(src_path.open(encoding='utf-8-sig')))
+          avc_exact={}
+          for m in AVC:
+            urls=[]
+            for row in rows:
+              if row.get('model')!=m: continue
+              u=row.get('source_url') or row.get('url') or ''
+              # Header is model,file,category,url,source_page,width,height in current run.
+              if not u:
+                vals=list(row.values())
+                if len(vals)>=4: u=vals[3] or ''
+              aliases={m, m.replace('-','_'), m.replace('-','')}
+              if 'cdn2.mircli.ru' in u and any(a in u for a in aliases):
+                urls.append(u)
+            avc_exact[m]=list(dict.fromkeys(urls))
+
+          def exact_avy_image(model):
+            page=f'https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/hisense_{model.lower().replace("-","_")}/'
+            r=s.get(page,timeout=30); r.raise_for_status()
+            soup=BeautifulSoup(r.text,'html.parser')
+            cand=[]
+            seen=set()
+            for tag in soup.find_all('img'):
+              for a in ('src','data-src','data-original','data-lazy-src'):
+                v=tag.get(a)
+                if not v: continue
+                u=urljoin(page,v)
+                if u in seen: continue
+                seen.add(u)
+                try:
+                  b=get(u); im=Image.open(io.BytesIO(b))
+                  w,h=im.size
+                  # Exact product pages expose their main clean product render as 1000x1000.
+                  if w==1000 and h==1000 and len(b)>30000:
+                    cand.append((len(b),u,b))
+                except: pass
+            if not cand:
+              raise RuntimeError(f'No exact 1000x1000 product image on {page}')
+            cand.sort(reverse=True)
+            return page,cand[0][1],Image.open(io.BytesIO(cand[0][2])).convert('RGBA')
+
+          report=[]; sources=[]; anomalies=[]
+          remote_front=open_image(REMOTE_FRONT)
+          remote_side=open_image(REMOTE_SIDE)
+          panel_front=open_image(PANEL_FRONT)
+          panel_side=open_image(PANEL_SIDE)
+
+          # AVC: confirmed same 215x570x570 chassis + exact HPE-DNK1 + HYE-VD01.
+          for model in AVC:
+            folder=PACK/'AVC-HJDBA'/model
+            folder.mkdir(parents=True)
+            indoor_sources=[]
+            for u in BREEZ_AVC:
+              indoor_sources.append((u,'Breez confirmed AVC-HJDBA family gallery',open_image(u)))
+            for u in avc_exact.get(model,[]):
+              indoor_sources.append((u,f'MirCli exact {model} gallery',open_image(u)))
+            # dedupe by normalized JPEG hash
+            uniq=[]; seen=set()
+            for u,src,im in indoor_sources:
+              n=normalize(im); buf=io.BytesIO(); n.save(buf,'JPEG',quality=94,subsampling=0)
+              h=hashlib.sha256(buf.getvalue()).hexdigest()
+              if h not in seen:
+                seen.add(h); uniq.append((u,src,im,n))
+            if not uniq: raise RuntimeError('No AVC indoor images '+model)
+            # 01 preview
+            preview_indoor = uniq[1][2] if len(uniq)>1 else uniq[0][2]  # Breez angle shows both cassette body and panel
+            save_jpg(preview(preview_indoor,remote_front),folder/'01.jpg')
+            sources.append([model,'01.jpg','preview','composite of confirmed indoor + HYE-VD01','curated'])
+            idx=2
+            for u,src,im,n in uniq:
+              fn=f'{idx:02d}.jpg'; save_jpg(n,folder/fn); sources.append([model,fn,'indoor',u,src]); idx+=1
+            for label,u,im in [('panel-front',PANEL_FRONT,panel_front),('panel-angle',PANEL_SIDE,panel_side)]:
+              fn=f'{idx:02d}.jpg'; save_jpg(normalize(im),folder/fn); sources.append([model,fn,label,u,'Kaut exact HPE-DNK1']); idx+=1
+            fn=f'{idx:02d}.jpg'; save_jpg(normalize(remote_side),folder/fn); sources.append([model,fn,'remote-angle',REMOTE_SIDE,'Kaut exact HYE-VD01']); idx+=1
+            fn=f'{idx:02d}.jpg'; save_jpg(normalize(remote_front),folder/fn); sources.append([model,fn,'remote',REMOTE_FRONT,'Kaut exact HYE-VD01'])
+            count=idx
+            warning='German Kaut lists HPE-DNK1 separately; Russian target catalog treats panel as included'
+            report.append([model,'AVC-HJDBA',f'AVC-HJDBA/{model}',len(indoor_sources),count,'да','не требуется','да','HYE-VD01','да','да',max(0,len(uniq)-1),'OK',warning,'AVC-HJDBA_CFG_A','215x570x570','HPE-DNK1'])
+          
+          # AVY: exact per-model page image only; do not ingest generic tech-doc thumbnails.
+          for model in AVY:
+            folder=PACK/'AVY-HJDA'/model
+            folder.mkdir(parents=True)
+            page,u,indoor=exact_avy_image(model)
+            save_jpg(preview(indoor,remote_front),folder/'01.jpg')
+            save_jpg(normalize(indoor),folder/'02.jpg')
+            save_jpg(normalize(remote_side),folder/'03.jpg')
+            save_jpg(normalize(remote_front),folder/'04.jpg')
+            sources += [
+              [model,'01.jpg','preview','composite of exact-page indoor + HYE-VD01','curated'],
+              [model,'02.jpg','indoor',u,page],
+              [model,'03.jpg','remote-angle',REMOTE_SIDE,'Kaut exact HYE-VD01'],
+              [model,'04.jpg','remote',REMOTE_FRONT,'Kaut exact HYE-VD01'],
+            ]
+            cfg='AVY-HJDA_CFG_SMALL' if model in small else 'AVY-HJDA_CFG_LARGE'
+            dims='129x910x470' if model in small else '129x1180x470'
+            panel='HP-D-NA1' if model in small else 'HP-E-NA1'
+            warning='Only one clean exact-product-page indoor render found; dealer reuses the same family render across both chassis sizes; separate panel-only render not found. Panel model/size is specification-confirmed.'
+            report.append([model,'AVY-HJDA',f'AVY-HJDA/{model}',1,4,'да','не требуется','да','HYE-VD01','да (в составе блока)','да',0,'OK; limited gallery',warning,cfg,dims,panel])
+            anomalies.append([model,'AVY-HJDA',cfg,'limited exact gallery; no size-distinguished photo; no separate panel-only render',warning])
+
+          # Reports.
+          with (PACK/'REPORT.csv').open('w',newline='',encoding='utf-8-sig') as f:
+            w=csv.writer(f); w.writerow(['model','series','folder','found_product_images','final_files','indoor_found','outdoor_found','remote_found','remote_model','panel_found','preview_created','additional_product_angles','quality','warnings','visual_configuration','body_dimensions','panel_model']); w.writerows(report)
+          with (PACK/'SOURCES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+            w=csv.writer(f); w.writerow(['model','file','component','url_or_basis','source']); w.writerows(sources)
+          with (PACK/'ANOMALIES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+            w=csv.writer(f); w.writerow(['model','series','visual_configuration','reasons','warnings']); w.writerows(anomalies)
+          readme_lines = [
+            'HISENSE PACKET 01 — CURATED REBUILD',
+            'Models: 14',
+            'Series: AVC-HJDBA, AVY-HJDA',
+            'Confirmed visual configurations: 3',
+            '- AVC-HJDBA_CFG_A: 7 models, 215x570x570, HPE-DNK1, HYE-VD01',
+            '- AVY-HJDA_CFG_SMALL: 5 models, 129x910x470, HP-D-NA1, HYE-VD01',
+            '- AVY-HJDA_CFG_LARGE: 2 models, 129x1180x470, HP-E-NA1, HYE-VD01',
+            '',
+            'Auto-run contamination removed:',
+            '- no Hisense Ukraine type thumbnails (1wcass/2wcass/4wcass/duct/wall/etc.) are included as product photos;',
+            '- only exact product-page or confirmed exact-family product images are retained;',
+            '- AVC exact HPE-DNK1 panel and exact HYE-VD01 remote images are added.',
+            '',
+            'Known limitation:',
+            'For current AVY-HJDA, dealers provide one clean product render and reuse it across both 910 mm and 1180 mm chassis groups. The technical distinction is fully confirmed, but a second photographic/render source that visibly differentiates the two lengths was not found in this pass. This is recorded rather than concealed.',
+          ]
+          readme = chr(10).join(readme_lines) + chr(10)
+          (PACK/'README.txt').write_text(readme,encoding='utf-8')
+
+          # Verify JPGs and folder structure.
+          errs=[]; jpgs=0
+          for m in AVC+AVY:
+            ser='AVC-HJDBA' if m.startswith('AVC-') else 'AVY-HJDA'
+            fd=PACK/ser/m
+            fs=sorted(fd.glob('*.jpg'))
+            if not fs or fs[0].name!='01.jpg': errs.append(f'{m}: missing 01.jpg')
+            for p in fs:
+              jpgs+=1
+              try:
+                im=Image.open(p); im.verify()
+                im=Image.open(p)
+                if im.size!=(850,850): errs.append(f'{p}: {im.size}')
+                if im.format!='JPEG': errs.append(f'{p}: {im.format}')
+              except Exception as e: errs.append(f'{p}: {e}')
+          (PACK/'VERIFY.txt').write_text('\n'.join(errs) if errs else 'OK',encoding='utf-8')
+          if errs: raise SystemExit('\n'.join(errs))
+
+          # ZIP with one top-level packet folder.
+          zpath=ROOT/'Hisense_packet_01_AVC_AVY_CURATED.zip'
+          if zpath.exists(): zpath.unlink()
+          with zipfile.ZipFile(zpath,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+            for p in PACK.rglob('*'):
+              if p.is_file(): z.write(p,p.relative_to(ROOT))
+          with zipfile.ZipFile(zpath) as z:
+            bad=z.testzip()
+            if bad: raise SystemExit('Bad zip member '+bad)
+            entries=len(z.infolist())
+          sha=hashlib.sha256(zpath.read_bytes()).hexdigest()
+          (ROOT/'ARCHIVE_INFO.txt').write_text(f'file={zpath.name}\nsize_bytes={zpath.stat().st_size}\nsha256={sha}\nzip_entries={entries}\njpg_count={jpgs}\nverify_errors=0\n',encoding='utf-8')
+          print((ROOT/'ARCHIVE_INFO.txt').read_text())
+          PY
+          python /tmp/curate.py
+      - name: Save curated packet to clean public branch
+        shell: bash
+        run: |
+          set -euxo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          PKTDIR="Hisense/images-rebuild/2026-09-29/packets/01_AVC_AVY/curated"
+          TMPDIR="/tmp/packet01_curated"
+          cp -a "$PKTDIR" "$TMPDIR"
+          git reset --hard
+          git clean -fdx
+          git checkout --orphan packet-01
+          git rm -rf . || true
+          git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29/packets/01_AVC_AVY"
+          cp -a "$TMPDIR" "$PKTDIR"
+          git add "$PKTDIR"
+          git commit -m "Hisense public packet 01 curated"
+          git push -f origin packet-01:refs/heads/hisense-public-packet-01
