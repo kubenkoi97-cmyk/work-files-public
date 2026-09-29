@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - .github/workflows/hisense-packet01-curated.yml
+      - .github/workflows/hisense-public-packet01-curated.yml
   workflow_dispatch:
 
 permissions:
