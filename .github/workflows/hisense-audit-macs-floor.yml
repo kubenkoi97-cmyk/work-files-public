@@ -1,0 +1,107 @@
+name: Audit MACS floor ceiling exact images
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-audit-macs-floor.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python -m pip install -q requests beautifulsoup4 pillow imagehash
+
+      - name: Audit 9 exact floor ceiling models
+        run: |
+          python - <<'PY'
+          import base64,gzip,json,csv,io,re,hashlib
+          from pathlib import Path
+          from urllib.parse import urljoin
+          import requests
+          from bs4 import BeautifulSoup
+          from PIL import Image,ImageOps,ImageDraw
+          import imagehash
+          base=Path('Hisense/images-rebuild/2026-09-29');eng=base/'engine'
+          data=json.loads(gzip.decompress(base64.b64decode((eng/'manifest_compact.json.gz.b64').read_text())))
+          models=[x for x in data if x.get('series')=='MACS' and str(x.get('model','')).startswith('MACS-I-F')]
+          assert len(models)==9,len(models)
+          out=base/'audits'/'macs_floor';out.mkdir(parents=True,exist_ok=True)
+          s=requests.Session();s.headers.update({'User-Agent':'Mozilla/5.0 Chrome/150 Safari/537.36'})
+          bad=('logo','icon','sprite','banner','cert','sert','payment','delivery','flag','social','phone','visa','mastercard','prostore')
+          rows=[];summary=[]
+          for item in models:
+              model=str(item['model']);sm=model.lower().replace('-','_')
+              pages=[
+                f'https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/royal_clima_{sm}/',
+                f'https://royal.com.ru/catalog/fankoyly/royal_clima_{sm}/',
+              ]
+              cand=[];seen=set();phs=[]
+              for page in pages:
+                  try:
+                      rr=s.get(page,timeout=18)
+                      if rr.status_code!=200:continue
+                      soup=BeautifulSoup(rr.text,'html.parser')
+                  except:continue
+                  us=set()
+                  for tag in soup.find_all(['img','source','a']):
+                      for a in ('src','data-src','data-original','data-lazy-src','href'):
+                          v=tag.get(a)
+                          if v and re.search(r'\.(?:jpe?g|png|webp)(?:\?|$)',v,re.I):us.add(urljoin(page,v))
+                  for u in sorted(us):
+                      if u in seen or any(x in u.lower() for x in bad):continue
+                      seen.add(u)
+                      try:
+                          ir=s.get(u,timeout=12)
+                          if ir.status_code!=200 or not ir.headers.get('content-type','').startswith('image/'):continue
+                          b=ir.content
+                          if len(b)<10000:continue
+                          im=Image.open(io.BytesIO(b)).convert('RGB');w,h=im.size
+                          if max(w,h)<400 or min(w,h)<220:continue
+                          if (680<=w<=760 and 950<=h<=1050) or (950<=w<=1050 and 680<=h<=760):continue
+                          if max(w/h,h/w)>3.0:continue
+                          ph=imagehash.phash(im)
+                          if any(ph-x<=2 for x in phs):continue
+                          phs.append(ph);sha=hashlib.sha256(b).hexdigest()
+                          cand.append((page,u,im,w,h,len(b),sha,str(ph)))
+                      except:pass
+              for i,x in enumerate(cand,1):
+                  page,u,im,w,h,bs,sha,ph=x;rows.append([model,i,page,u,w,h,bs,sha,ph])
+              summary.append([model,len(cand),' | '.join(pages)])
+              tiles=[]
+              for i,x in enumerate(cand,1):
+                  page,u,im,w,h,bs,sha,ph=x
+                  t=Image.new('RGB',(300,330),'white');o=ImageOps.contain(im,(270,240),Image.Resampling.LANCZOS);t.paste(o,((300-o.width)//2,8))
+                  d=ImageDraw.Draw(t);d.text((8,253),f'{i:02d} {w}x{h} {bs//1024}KB',fill='black')
+                  d.text((8,274),re.sub(r'^https?://([^/]+).*',r'\1',page)[:38],fill='black');d.text((8,295),sha[:16],fill='black');tiles.append(t)
+              sh=Image.new('RGB',(900,max(330,((len(tiles)+2)//3)*330)),'white')
+              for i,t in enumerate(tiles):sh.paste(t,((i%3)*300,(i//3)*330))
+              sh.save(out/f'{model}_CONTACT.jpg','JPEG',quality=88)
+          with (out/'CANDIDATES.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.writer(f);w.writerow(['model','candidate_no','page','image_url','width','height','bytes','sha256','phash']);w.writerows(rows)
+          with (out/'MODEL_SUMMARY.csv').open('w',newline='',encoding='utf-8-sig') as f:
+              w=csv.writer(f);w.writerow(['model','unique_candidates','pages_checked']);w.writerows(summary)
+          dist={}
+          for _,n,_ in summary:dist[n]=dist.get(n,0)+1
+          (out/'README.txt').write_text(f'MACS floor/ceiling exact audit. Models=9. Candidate distribution={json.dumps(dist,sort_keys=True)}\n',encoding='utf-8')
+          print(dist)
+          PY
+      - name: Save audit
+        run: |
+          set -euxo pipefail
+          DIR="Hisense/images-rebuild/2026-09-29/audits/macs_floor";TMP="/tmp/macs_floor";cp -a "$DIR" "$TMP"
+          git reset --hard;git clean -fdx;git checkout --orphan audit-macs-floor;git rm -rf . || true;git clean -fdx
+          mkdir -p "Hisense/images-rebuild/2026-09-29/audits";cp -a "$TMP" "$DIR";git add "$DIR"
+          git config user.name "github-actions[bot]";git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Audit exact MACS floor ceiling model images"
+          git push -f origin audit-macs-floor:refs/heads/hisense-audit-macs-floor
