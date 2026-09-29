@@ -1,0 +1,179 @@
+name: Hisense public packets 02-15
+
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/hisense-public-packets.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      max-parallel: 14
+      matrix:
+        packet:
+          - { id: "02", slug: "AVBC", mode: "series", value: "AVBC-HJDBA|AVBC-HJFKA" }
+          - { id: "03", slug: "AVS_AVF", mode: "series", value: "AVS-HJDTD|AVF-H2FDA" }
+          - { id: "04", slug: "AVD_HJDH", mode: "series", value: "AVD-HJDH" }
+          - { id: "05", slug: "AVD_HJFH_AVE", mode: "series", value: "AVD-HJFH|AVE-HJDDH" }
+          - { id: "06", slug: "S5", mode: "series", value: "S5" }
+          - { id: "07", slug: "H5_A_W", mode: "series", value: "H5|A|W HEAT RECOVERY" }
+          - { id: "08", slug: "MACS_C", mode: "macs_c", value: "" }
+          - { id: "09", slug: "MACS_F_W", mode: "macs_fw", value: "" }
+          - { id: "10", slug: "MACS_D_A", mode: "macs_duct", value: "0" }
+          - { id: "11", slug: "MACS_D_B", mode: "macs_duct", value: "1" }
+          - { id: "12", slug: "MACS_D_C", mode: "macs_duct", value: "2" }
+          - { id: "13", slug: "ZKPU", mode: "series", value: "ZKPU-mini|ZKPU-maxi" }
+          - { id: "14", slug: "HEAVY_UNIVERSO", mode: "series", value: "HEAVY EU DC INVERTER|UNIVERSO" }
+          - { id: "15", slug: "TRIUMPH_AR_IR_HIMOD", mode: "series", value: "Triumph|AR|IR|HiMod AE2" }
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+
+      - name: Decode engine and select packet
+        env:
+          PID: ${{ matrix.packet.id }}
+          MODE: ${{ matrix.packet.mode }}
+          VALUE: ${{ matrix.packet.value }}
+        run: |
+          python - <<'PY'
+          import base64,gzip,json,os,pathlib
+          base=pathlib.Path('Hisense/images-rebuild/2026-09-29')
+          eng=base/'engine'
+          for src,dst in [('manifest_compact.json.gz.b64','manifest_compact.json'),('hisense_image_rebuild.py.gz.b64','hisense_image_rebuild.py')]:
+              (eng/dst).write_bytes(gzip.decompress(base64.b64decode((eng/src).read_text())))
+          data=json.loads((eng/'manifest_compact.json').read_text())
+          mode=os.environ['MODE']; val=os.environ.get('VALUE',''); pid=os.environ['PID']
+          ser=lambda x:str(x.get('series',''))
+          mod=lambda x:str(x.get('model',''))
+          title=lambda x:str(x.get('title') or x.get('name') or '')
+          if mode=='series':
+              wanted=set(val.split('|')); pkt=[x for x in data if ser(x) in wanted]
+          elif mode=='macs_c':
+              pkt=[x for x in data if ser(x)=='MACS' and mod(x).startswith('MACS-I-C')]
+          elif mode=='macs_fw':
+              pkt=[x for x in data if ser(x)=='MACS' and mod(x).startswith(('MACS-I-F','MACS-I-W'))]
+          elif mode=='macs_duct':
+              duct=[x for x in data if ser(x)=='MACS' and 'Канальный фанкойл' in title(x)]
+              idx=int(val); pkt=duct[idx*23:(idx+1)*23]
+              assert len(duct)==69, len(duct)
+          else: raise SystemExit(mode)
+          expected={'02':17,'03':12,'04':13,'05':19,'06':18,'07':23,'08':30,'09':14,'10':23,'11':23,'12':23,'13':17,'14':16,'15':14}
+          if len(pkt)!=expected[pid]: raise SystemExit(f'count mismatch {len(pkt)} vs {expected[pid]}')
+          out=base/f'packet_{pid}.json'
+          out.write_text(json.dumps(pkt,ensure_ascii=False,indent=2))
+          print('packet',pid,'count',len(pkt))
+          PY
+
+      - run: python -m pip install --disable-pip-version-check -q requests beautifulsoup4 lxml pillow ImageHash numpy
+
+      - name: Build packet
+        env:
+          MANIFEST: ${{ github.workspace }}/Hisense/images-rebuild/2026-09-29/packet_${{ matrix.packet.id }}.json
+          OUT_DIR: ${{ github.workspace }}/Hisense/images-rebuild/2026-09-29/work_${{ matrix.packet.id }}
+          WORKERS: '5'
+        run: python Hisense/images-rebuild/2026-09-29/engine/hisense_image_rebuild.py
+
+      - name: Strict post-filter and package
+        env:
+          PID: ${{ matrix.packet.id }}
+          SLUG: ${{ matrix.packet.slug }}
+        run: |
+          python - <<'PY'
+          import csv,os,pathlib,shutil,zipfile,hashlib
+          from PIL import Image
+          pid=os.environ['PID']; slug=os.environ['SLUG']
+          base=pathlib.Path('Hisense/images-rebuild/2026-09-29')
+          work=base/f'work_{pid}'
+          root=work/'Hisense_images_rebuilt'
+          bad_tokens=(
+            'hisense.com.ua/wp-content/uploads/2025/05/1wcass.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/2wcass.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/4wcass.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/ceil.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/console.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/duct5.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/floor.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/mini4way.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/newduct.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/wall.webp',
+            'hisense.com.ua/wp-content/uploads/2025/05/walldc.webp')
+          removed=[]
+          src=root/'IMAGE_SOURCES.csv'
+          if src.exists():
+              rows=list(csv.DictReader(src.open(encoding='utf-8-sig')))
+              for r in rows:
+                  vals=list(r.values())
+                  model=r.get('model') or (vals[0] if vals else '')
+                  fn=r.get('file') or (vals[1] if len(vals)>1 else '')
+                  url=r.get('url') or r.get('source_url') or (vals[3] if len(vals)>3 else '')
+                  if any(t in (url or '') for t in bad_tokens):
+                      for p in root.rglob(fn):
+                          if p.parent.name==model and p.exists():
+                              p.unlink(); removed.append(str(p.relative_to(root)))
+              for d in [x for x in root.rglob('*') if x.is_dir()]:
+                  fs=sorted(d.glob('*.jpg'))
+                  if not fs: continue
+                  tmp=[]
+                  for i,p in enumerate(fs,1):
+                      q=d/f'__tmp_{i:03d}.jpg'; p.rename(q); tmp.append(q)
+                  for i,p in enumerate(tmp,1): p.rename(d/f'{i:02d}.jpg')
+          errs=[]; jpgs=0; folders=0
+          for d in [x for x in root.rglob('*') if x.is_dir()]:
+              fs=sorted(d.glob('*.jpg'))
+              if not fs: continue
+              folders+=1
+              if fs[0].name!='01.jpg': errs.append(f'{d}: first jpg {fs[0].name}')
+          for p in root.rglob('*.jpg'):
+              jpgs+=1
+              try:
+                  im=Image.open(p); im.verify()
+                  im=Image.open(p)
+                  if im.size!=(850,850): errs.append(f'{p}: size {im.size}')
+                  if im.format!='JPEG': errs.append(f'{p}: format {im.format}')
+              except Exception as e: errs.append(f'{p}: {e}')
+          (root/'POSTFILTER.txt').write_text('removed_cross_category='+str(len(removed))+'\n'+'\n'.join(removed),encoding='utf-8')
+          if errs: raise SystemExit('\n'.join(errs))
+          dest=base/'packets'/f'{pid}_{slug}'
+          if dest.exists(): shutil.rmtree(dest)
+          dest.mkdir(parents=True)
+          shutil.copytree(root,dest/'Hisense_images_rebuilt')
+          zpath=dest/f'Hisense_packet_{pid}_{slug}.zip'
+          with zipfile.ZipFile(zpath,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+              for p in (dest/'Hisense_images_rebuilt').rglob('*'):
+                  if p.is_file(): z.write(p,p.relative_to(dest))
+          with zipfile.ZipFile(zpath) as z:
+              bad=z.testzip(); entries=len(z.infolist())
+              if bad: raise SystemExit('bad member '+bad)
+          sha=hashlib.sha256(zpath.read_bytes()).hexdigest()
+          (dest/'ARCHIVE_INFO.txt').write_text(
+              f'file={zpath.name}\nsize_bytes={zpath.stat().st_size}\nsha256={sha}\nzip_entries={entries}\njpg_count={jpgs}\nproduct_folders={folders}\nverify_errors=0\nremoved_cross_category={len(removed)}\n',
+              encoding='utf-8')
+          print((dest/'ARCHIVE_INFO.txt').read_text())
+          PY
+
+      - name: Save packet to isolated public branch
+        env:
+          PID: ${{ matrix.packet.id }}
+          SLUG: ${{ matrix.packet.slug }}
+        run: |
+          set -euxo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "packet-${PID}" "origin/main"
+          git add "Hisense/images-rebuild/2026-09-29/packets/${PID}_${SLUG}"
+          git commit -m "Hisense public packet ${PID} ${SLUG}"
+          git push -f origin "packet-${PID}:refs/heads/hisense-public-packet-${PID}"
