@@ -17,10 +17,7 @@ jobs:
           mkdir -p bundle/wheels bundle/model
           python -m pip download --only-binary=:all: -d bundle/wheels faster-whisper
           python -m pip install huggingface_hub
-          python - <<'PY'
-from huggingface_hub import snapshot_download
-snapshot_download(repo_id="Systran/faster-whisper-base", local_dir="bundle/model")
-PY
+          python -c 'from huggingface_hub import snapshot_download; snapshot_download(repo_id="Systran/faster-whisper-base", local_dir="bundle/model")'
       - name: Upload bundle
         uses: actions/upload-artifact@v4
         with:
