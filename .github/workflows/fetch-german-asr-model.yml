@@ -1,0 +1,21 @@
+name: Fetch German ASR model
+on:
+  push:
+    paths:
+      - '.github/workflows/fetch-german-asr-model.yml'
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download model
+        run: |
+          mkdir -p model
+          curl -L --fail --retry 5 --retry-delay 2 -o model/wav2vec2_voxpopuli_base_10k_asr_de.pt https://download.pytorch.org/torchaudio/models/wav2vec2_voxpopuli_base_10k_asr_de.pt
+          sha256sum model/wav2vec2_voxpopuli_base_10k_asr_de.pt | tee model/SHA256SUMS.txt
+      - name: Upload model artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: german-asr-model
+          path: model/
+          compression-level: 0
+          retention-days: 1
