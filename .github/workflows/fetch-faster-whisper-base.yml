@@ -1,0 +1,30 @@
+name: Fetch Faster Whisper base
+on:
+  push:
+    paths:
+      - '.github/workflows/fetch-faster-whisper-base.yml'
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Download runtime and model
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p bundle/wheels bundle/model
+          python -m pip download --only-binary=:all: -d bundle/wheels faster-whisper
+          python -m pip install huggingface_hub
+          python - <<'PY'
+from huggingface_hub import snapshot_download
+snapshot_download(repo_id="Systran/faster-whisper-base", local_dir="bundle/model")
+PY
+      - name: Upload bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: faster-whisper-base-bundle
+          path: bundle/
+          compression-level: 0
+          retention-days: 1
