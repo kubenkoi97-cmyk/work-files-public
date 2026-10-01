@@ -11,16 +11,14 @@ jobs:
         with:
           python-version: '3.13'
       - name: Download package files
+        shell: bash
         run: |
+          set -euxo pipefail
           mkdir -p bundle/wheels bundle/model
           python -m pip download --no-deps -d bundle/wheels openai-whisper
           python -m pip download --only-binary=:all: -d bundle/wheels tiktoken
-          python -m pip install openai-whisper >/dev/null
-          MODEL_URL=$(python - <<'PY'
-import whisper
-print(whisper._MODELS["base"])
-PY
-          )
+          python -m pip install openai-whisper
+          MODEL_URL=$(python -c 'import whisper; print(whisper._MODELS["base"])')
           echo "$MODEL_URL"
           curl -L --fail --retry 5 --retry-delay 2 -o bundle/model/base.pt "$MODEL_URL"
           sha256sum bundle/model/base.pt | tee bundle/model/SHA256SUMS.txt
