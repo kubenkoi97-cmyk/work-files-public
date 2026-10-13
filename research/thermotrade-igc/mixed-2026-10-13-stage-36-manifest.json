@@ -1,0 +1,41 @@
+{
+  "stage": 36,
+  "date": "2026-10-13",
+  "workbook": "MIXED_Термотрейд_IGC_этап36_MIH_GHN18_IGC_реаудит.xlsx",
+  "bytes": 450478,
+  "sha256": "d676f404ea5517a1c6d0ab2d100bacfbf378b53b8221dae576d5135e0263ebc9",
+  "source_original_sha256_values": "851c62f6d3d88c01603188178a1f1cb15a8385589bd67749477148e68b158c87",
+  "filled": 323,
+  "unfilled": 421,
+  "partial": 0,
+  "sheets": 29,
+  "new_rows": [
+    409,
+    410,
+    411,
+    412,
+    413,
+    414
+  ],
+  "reaudit_rows": [
+    27,
+    28,
+    29
+  ],
+  "blocked_rows": [
+    366,
+    376,
+    385,
+    386
+  ],
+  "screened": 323,
+  "summary": {
+    "description_under500": 93,
+    "spec_lines_under16": 16,
+    "possible_domain_gaps": 233,
+    "high_priority": 141
+  },
+  "visual_factory_PDF_QA": "NOT VERIFIED; web PDF fetch timed out or was too large",
+  "full_website_check": "NOT VERIFIED; the other previously filled models received structural screening only",
+  "conditional_correction": "IGC ISO cooling external temperature indexed 5°C/24°C, suspect source/OCR — not silently changed to 35°C"
+}
