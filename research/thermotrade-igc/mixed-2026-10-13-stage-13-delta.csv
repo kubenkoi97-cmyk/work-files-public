@@ -1,0 +1,8 @@
+excel_row,model,cooling_kW,heating_kW,power_W,airflow_max_m3h,airflow_min_m3h,sound_max_dBA,sound_min_dBA,weight_kg,liquid_mm,gas_mm,card_url,catalog_url,qa
+210,KTZB18HZBN1,1.5,1.8,14,450,295,29,25,13,6.35,12.7,https://www.effect-nn.ru/condition_65079.htm,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_PENDING
+211,KTZB24HZBN1,2.2,2.4,14,450,295,29,25,13,6.35,12.7,https://www.effect-nn.ru/condition_65080.htm,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_PENDING
+212,KTZB30HZBN1,2.8,3.2,16,510,340,30,25,13,6.35,12.7,https://www.effect-nn.ru/condition_65081.htm,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_PENDING
+213,KTZB40HZBN1,3.6,4.0,18,530,345,31,25.5,14,6.35,12.7,https://www.effect-nn.ru/condition_65082.htm,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_PENDING
+214,KTZB50HZBN1,4.5,5.0,25,640,425,36.5,26.5,14,6.35,12.7,https://www.effect-nn.ru/condition_65083.htm,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_PENDING
+215,KTZB60HZBN1,5.6,6.3,35,810,535,39,32,15,6.35,12.7,https://www.effect-nn.ru/condition_65084.htm,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_PENDING
+216,KTZB70HZBN1,6.3,7.1,50,905,605,43,33.5,15,9.52,15.9,https://www.effect-nn.ru/condition_65085.htm,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_PENDING
