@@ -1,0 +1,9 @@
+model,cooling_kW,heating_kW,airflow_m3h,noise_dBA,cooling_electric_W,source_url,unresolved_QA
+"MI2-36DLDHN18(At)","3.6","4.0","564/539/514/492/467/445/424","32/30/29/28/27/26/25","20","https://multisystems.ru/catalog/vrf-napolno-potolochnye/midea-mi2-36dldhn18-at","R32/R410A; heating power conflict"
+"MI2-45DLDHN18(At)","4.5","5.0","712 max","36/30","20","https://mircli.ru/Midea-MI2-45DLDHN18-At-/","Seven speed table/pipes/weight missing"
+"MI2-56DLDHN18(At)","5.6","6.3","927 max","43/33","40","https://mircli.ru/Midea-MI2-56DLDHN18-At-/","Drain type / seven speeds / package unverified"
+"MI2-71DLDHN18(At)","7.1","8.0","1128 max","43/33","42","https://mircli.ru/Midea-MI2-71DLDHN18-At-/","Weight pipes dimensions full speed missing"
+"MI2-80DLDHN18(At)","8.0","9.0","1300 max","45/34","60","https://mircli.ru/Midea-MI2-80DLDHN18-At-/","Weight pipes dimensions full speed missing"
+"MI2-90DLDHN18(At)","9.0","10.0","1480 max","48/37","75","https://mircli.ru/Midea-MI2-90DLDHN18-At-/","Pipes weight / full speeds missing"
+"MI2-112DLDHN18(At)","11.2","12.5","1648 max","44/33","65","https://mircli.ru/Midea-MI2-112DLDHN18-At-/","Pipes weight dimensions full speeds missing"
+"MI2-140DLDHN18(At)","14.0","16.0","2206/2070/1937/1810/1677/1516/1402","51.5/50/48/46/44/42/40","140","https://brand-climat.ru/midea-mi2-140dldhn18-at","R32/R410A conflict; pipes and maker PDF missing"
