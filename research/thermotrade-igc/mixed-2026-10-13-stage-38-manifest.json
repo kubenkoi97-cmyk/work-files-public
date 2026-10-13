@@ -1,0 +1,37 @@
+{
+  "stage": 38,
+  "date": "2026-10-13",
+  "filename": "MIXED_Термотрейд_IGC_этап38_MIH_BHN18_IGC_QV_реаудит.xlsx",
+  "size_bytes": 515829,
+  "sha256": "a3dc94e415ffa3d906cbe1aa8e3f520d921900d41b6e3249af78228b677d4b00",
+  "original_values_sha256": "851c62f6d3d88c01603188178a1f1cb15a8385589bd67749477148e68b158c87",
+  "filled": 337,
+  "empty": 407,
+  "partial": 0,
+  "sheets": 33,
+  "new_rows": [
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428
+  ],
+  "reaudited_rows": [
+    43,
+    44,
+    45
+  ],
+  "screened": 337,
+  "screening_metrics": {
+    "shortA": 87,
+    "shortB": 16,
+    "possible_gaps": 220,
+    "highPriority": 138
+  },
+  "visual_pdf_qa": "OPEN; PDF web fetch failed",
+  "confirmed_full_completeness": 0,
+  "source_page_reading": "search-index tables and exact visible model HTML; no JS clicks"
+}
