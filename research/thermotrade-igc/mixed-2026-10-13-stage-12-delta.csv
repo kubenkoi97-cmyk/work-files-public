@@ -1,0 +1,14 @@
+row,model,family,cooling_kW,heating_kW,power_W,airflow_max_m3h,airflow_min_m3h,noise_max_dBA,noise_min_dBA,dimensions_mm,net_weight_kg,compatible_panel,source_primary,source_catalog,QA
+197,KTYB18HZBN1,KTYB,1.8,2.2,15,300,200,28,23,700×150×425,9.6,KPU1S-D3,https://coolsochi.ru/product/kentatsu-ktyb18hzbn1-kpu1s-d3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+198,KTYB24HZBN1,KTYB,2.2,2.6,19,400,250,32,25,700×150×425,9.6,KPU1S-D3,https://coolsochi.ru/product/kentatsu-ktyb24hzbn1-kpu1s-d3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+199,KTYB30HZBN1,KTYB,2.8,3.2,27,550,350,33,25,900×150×425,11.2,KPU1M-D3,https://coolsochi.ru/product/kentatsu-ktyb30hzbn1-kpu1m-d3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+200,KTYB40HZBN1,KTYB,3.6,4.0,29,550,350,36,28,900×150×425,12.2,KPU1M-D3,https://coolsochi.ru/product/kentatsu-ktyb40hzbn1-kpu1m-d3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+201,KTYB50HZBN1,KTYB,4.5,5.0,30,850,500,39,32,1200×150×425,14.3,KPU1L-D3,https://coolsochi.ru/product/kentatsu-ktyb50hzbn1-kpu1l-d3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+202,KTYB60HZBN1,KTYB,5.6,6.3,40,1000,650,45,36,1200×150×425,15.5,KPU1L-D3,https://coolsochi.ru/product/kentatsu-ktyb60hzbn1-kpu1l-d3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+203,KTYB72HZBN1,KTYB,7.1,8.0,52,1050,750,47,40,1200×150×425,15.5,KPU1L-D3,https://coolsochi.ru/product/kentatsu-ktyb72hzbn1-kpu1l-d3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+204,KTDB24HZBN1,KTDB,2.2,2.6,35,654,410,33,24,1172×299×591,29.7,KPU2-D3,https://mircli.ru/Kentatsu-KTDB24HZBN1-KPU2-D3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+205,KTDB30HZBN1,KTDB,2.8,3.2,40,654,410,33,24,1172×299×591,29.7,KPU2-D3,https://mircli.ru/Kentatsu-KTDB30HZBN1-KPU2-D3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+206,KTDB40HZBN1,KTDB,3.6,4.0,40,725,458,35,25,1172×299×591,29.7,KPU2-D3,https://mircli.ru/Kentatsu-KTDB40HZBN1-KPU2-D3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+207,KTDB50HZBN1,KTDB,4.5,5.0,50,850,550,37,30,1172×299×591,31.6,KPU2-D3,https://mircli.ru/Kentatsu-KTDB50HZBN1-KPU2-D3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+208,KTDB60HZBN1,KTDB,5.6,6.3,69,980,670,39,30,1172×299×591,31.6,KPU2-D3,https://mircli.ru/Kentatsu-KTDB60HZBN1-KPU2-D3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
+209,KTDB72HZBN1,KTDB,7.1,8.0,98,1200,770,44,34,1172×299×591,31.6,KPU2-D3,https://mircli.ru/Kentatsu-KTDB72HZBN1-KPU2-D3/,https://daichi.business/support/documents/download.php?ID=27751,PDF_VISUAL_PENDING
