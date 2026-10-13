@@ -1,0 +1,8 @@
+excel_row,model,cooling_kW,heating_kW,power_kW,airflow_m3h,sound_dBA,source_url
+140,KTYV18HZBN1,1.8,2,0.02,300/283/266/250/233/216/200,28/27/26/26/25/24/24,https://brand-climat.ru/kentatsu-ktyv18hzbn1
+141,KTYV24HZBN1,2.2,2.5,0.02,400/375/350/325/300/275/250,32/31/30/29/28/27/26,https://brand-climat.ru/kentatsu-ktyv24hzbn1
+142,KTYV30HZBN1,2.8,3.2,0.03,550/516/483/450/416/383/350,33/32/31/30/29/28/27,https://brand-climat.ru/kentatsu-ktyv30hzbn1
+143,KTYV40HZBN1,3.6,4,0.03,550/516/483/450/416/383/350,36/34/33/32/30/29/28,https://brand-climat.ru/kentatsu-ktyv40hzbn1
+144,KTYV50HZBN1,4.5,5,0.03,850/791/733/675/616/558/500,39/37/36/35/33/32/31,https://brand-climat.ru/kentatsu-ktyv50hzbn1
+145,KTYV60HZBN1,5.6,6.3,0.04,1000/941/883/825/766/708/650,44/42/41/40/38/37/36,https://brand-climat.ru/kentatsu-ktyv60hzbn1
+146,KTYV72HZBN1,7.1,8,0.05,1050/1000/950/900/850/800/750,47/45/44/43/42/41/40,https://brand-climat.ru/kentatsu-ktyv72hzbn1
