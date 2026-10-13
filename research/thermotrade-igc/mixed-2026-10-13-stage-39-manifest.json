@@ -1,0 +1,35 @@
+{
+  "stage": 39,
+  "date": "2026-10-13",
+  "file": "MIXED_Термотрейд_IGC_этап39_MIH_Q1_A_IGC_QV_реаудит.xlsx",
+  "size_bytes": 549221,
+  "sha256": "0fcedc51894057f47bf66cca8ee0005b92b30531b60d52587c490fe097dc15e3",
+  "original_values_sha256": "851c62f6d3d88c01603188178a1f1cb15a8385589bd67749477148e68b158c87",
+  "filled": 344,
+  "empty": 400,
+  "partial": 0,
+  "sheets": 35,
+  "new_rows": [
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435
+  ],
+  "reaudit_rows": [
+    46,
+    47,
+    48
+  ],
+  "screened": 344,
+  "metrics": {
+    "shortA": 84,
+    "shortB": 16,
+    "potential_gaps": 224,
+    "high_priority": 142
+  },
+  "visual_pdf": "2026 brochure page 2 features visually checked; page 1 numeric table unverified; other PDFs text indexed",
+  "fully_certified_this_stage": 0
+}
