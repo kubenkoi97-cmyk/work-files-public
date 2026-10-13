@@ -1,0 +1,8 @@
+excel_row,model,cooling_kW,heating_kW,airflow_m3h_max_to_min,sound_dBA_max_to_min,cooling_current_A,unit_dimensions_mm,drain_pump,weight_kg,sources
+"349","MI2-45GDHN18(At)","4.5","5","720","37/29","0.41","950x295x265","not confirmed","","https://mircli.ru/Midea-MI2-45GDHN18-At-/"
+"350","MI2-56GDHN18(At)","5.6","6.3","860","41/29","0.51","950x295x265","not confirmed","","https://mircli.ru/Midea-MI2-56GDHN18-At-/"
+"351","MI2-71GDHN18(At)","7.1","8","1220 (secondary dealer)","44/32","0.69","1200x295x265","not confirmed","","https://mircli.ru/Midea-MI2-71GDHN18-At-/ ; https://smolensk.vsekondicioneri.ru/category/vrv-sistemy/midea/?page=7"
+"352","MI2-80GDHN18(At)","8","9","1380/1260/1140/1020/900/780/660","45/43/41/39/37/35/32","0.98","1200x295x265","not confirmed","15 net;18.5 gross","https://mircli.ru/Midea-MI2-80GDHN18-At-/ ; https://brand-climat.ru/midea-mi2-80gdhn18-at"
+"357","MI2-45GDHN18(At)DP","4.5","5","720","37/29","0.41","950x295x265","yes 1200 mm lift","12","https://mircli.ru/Midea-MI2-45GDHN18-At-DP/ ; https://u-climat.ru/catalog/konditsionery/konditsionery-vrf-sistemy/konditsionery-vrf-sistemy-kanalnye1079-nastennye463/konditsionery-vrf-sistemy-nastennye-4-4-9-kvt-31a1f9030139/Midea-MI2-45GDHN18-At-DP.html"
+"360","MI2-80GDHN18(At)DP","8","9","1380/1260/1140/1020/900/780/660","45/43/41/39/37/35/32","0.98","1200x295x265","yes 1200 mm lift","15 net;18.4 gross","https://mircli.ru/Midea-MI2-80GDHN18-At-DP/ ; https://brand-climat.ru/midea-mi2-80gdhn18-at-dp"
+"382","MI2-100Q4DHN18(At)","10","11.2","1470/1360/1250/1141/1031/921/811","43/41/40/38/36/35/33","","840x840x246","yes 1200 mm lift","22 net;24.5 gross","https://brand-climat.ru/midea-mi2-100q4dhn18-at"
