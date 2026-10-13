@@ -1,0 +1,5 @@
+original_row,model,action,confirmed_source,open_qa
+140,KTYV18HZBN1,Added maximum current 0.39 A,https://kondiair.ru/product/kentatsu-%D0%B4%D1%8D%D0%B8%D0%BA%D1%81-%D0%BF%D1%80%D0%BE-%D0%B1%D1%8D%D0%B9%D1%81%D0%B8%D0%BA-dx-pro-basic-ktyv-ktyv18hzbn1/,panel included not confirmed
+189,KTGB24HZBN1,Retested 21 W 500 m3h 750x295x265,https://orel.vsekondicioneri.ru/product/kentatsu-ktgb24hzbn1/,manufacturer PDF not inspected
+251,KTTB60HZBN1,Reconfirmed manufacturer 159 W vs retailer 780 W conflict,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,780 W discrepancy unresolved
+272,KTHB90HZBN1,Reconfirmed 75 W 1480-979 m3h 48-37 dBA,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,full HTML and PDF visual QA outstanding
