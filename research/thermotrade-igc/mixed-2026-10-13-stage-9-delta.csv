@@ -1,0 +1,7 @@
+excel_row,model,cooling_kW,heating_kW,airflow_m3h,sound_dBA,input_kW,external_static_pressure_pa,dimensions_mm,net_weight_kg,source_url
+174,KTKV80HZBN1,8,9,1457/1344/1233/1121/1088/896/785,38/36/34/33/31/29/28,0.11,40,1050×750×245,30,https://brand-climat.ru/kentatsu-ktkv80hzbn1
+175,KTKV90HZBN1,9,10,1585/1465/1348/1231/1113/996/878,40/38/36/34/32/30/28,0.11,40,1050×750×245,30,https://brand-climat.ru/kentatsu-ktkv90hzbn1
+176,KTKV115HZBN1,11.2,12.5,1656/1536/1418/1300/1180/1062/945,41/39/37/35/33/31/29,0.12,40,1050×750×245,32,https://brand-climat.ru/kentatsu-ktkv115hzbn1
+177,KTKV125HZBN1,12.5,14,2177/2020/1866/1711/1554/1400/1246,44/42/40/38/36/34/32,0.17,50,1400×750×245,37,https://brand-climat.ru/kentatsu-ktkv125hzbn1
+178,KTKV140HZBN1,14,16,2098/1948/1798/1649/1499/1349/1199,42/40/38/36/34/32/31,0.17,50,1400×750×245,39,https://brand-climat.ru/kentatsu-ktkv140hzbn1
+179,KTKV160HZBN1,16,18,2350/2160/2015/1871/1776/1533/1400,42/40/38/36/34/33/31,0.21,50,1400×750×245,39,https://brand-climat.ru/kentatsu-ktkv160hzbn1
