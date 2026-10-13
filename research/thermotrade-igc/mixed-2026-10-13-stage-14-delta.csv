@@ -1,0 +1,13 @@
+excel_row,model,cooling_kW,heating_kW,power_W,airflow_max_m3h,airflow_min_m3h,sound_max_dBA,sound_min_dBA,weight_kg,liquid_mm,gas_mm,body_dimensions_mm,compatible_panel,catalog_url,qa
+217,KTVB30HZBN1,2.8,3.2,17,790,492,30,25,18,6.35,12.7,840×204×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+218,KTVB40HZBN1,3.6,4.0,17,790,492,30,25,18,6.35,12.7,840×204×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+219,KTVB50HZBN1,4.5,5.0,36,910,491,37,27,18,6.35,12.7,840×204×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+220,KTVB60HZBN1,5.6,6.3,23,840,543,33,27,19.5,6.35,12.7,840×204×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+221,KTVB72HZBN1,7.1,8.0,32,1000,658,37,28,19.5,9.52,15.9,840×204×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+222,KTVB80HZBN1,8.0,9.0,41,1100,616,42.5,30,19.5,9.52,15.9,840×204×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+223,KTVB90HZBN1,9.0,10.0,43,1330,783,38,29,21.5,9.52,15.9,840×246×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+224,KTVB100HZBN1,10.0,11.2,74,1470,811,43,33,21.5,9.52,15.9,840×246×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+225,KTVB115HZBN1,11.2,12.5,61,1600,979,41,33,24,9.52,15.9,840×288×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+226,KTVB140HZBN1,14.0,16.0,118,1900,1219,47.5,36.5,24,9.52,15.9,840×288×840,KPU95-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+227,KTVB160HZBN1,16.0,18.0,110,2100,1270,48,37,32.6,9.52,15.9,950×300×950,KPU95L-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
+228,KTVB180HZBN1,18.0,20.0,145,2300,1270,52,38,32.7,9.52,19.1,950×300×950,KPU95L-D3,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_QA_OPEN
