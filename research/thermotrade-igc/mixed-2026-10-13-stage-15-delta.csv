@@ -1,0 +1,11 @@
+excel_row,model,cooling_kW,heating_kW,power_W,airflow_max_m3h,airflow_min_m3h,noise_max_dBA,noise_min_dBA,esp_nominal_Pa,esp_max_Pa,liq_mm,gas_mm,width_mm,height_mm,depth_mm,weight_kg,product_url,pdf_url,qa_status
+229,KTLB18HZBN1,1.5,1.8,21,340,290,27,22,10,50,6.35,12.7,550,199,450,11.5,https://coolsochi.ru/product/kentatsu-ktlb18hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
+230,KTLB24HZBN1,2.2,2.5,22,370,295,28,22,10,50,6.35,12.7,550,199,450,11.5,https://coolsochi.ru/product/kentatsu-ktlb24hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
+231,KTLB30HZBN1,2.8,3.2,28,460,300,30,22,10,50,6.35,12.7,550,199,450,11.5,https://coolsochi.ru/product/kentatsu-ktlb30hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
+232,KTLB40HZBN1,3.6,4.0,31,605,320,30,25,10,50,6.35,12.7,700,199,450,13,https://coolsochi.ru/product/kentatsu-ktlb40hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
+233,KTLB50HZBN1,4.5,5.0,43,800,435,33,26,10,50,6.35,12.7,900,199,450,16.5,https://coolsochi.ru/product/kentatsu-ktlb50hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
+234,KTLB60HZBN1,5.6,6.3,58,900,470,36,27,10,50,6.35,12.7,900,199,450,16.5,https://coolsochi.ru/product/kentatsu-ktlb60hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
+235,KTLB72HZBN1,7.1,8.0,65,1145,580,37,29,10,50,9.52,15.9,1100,199,450,20,https://coolsochi.ru/product/kentatsu-ktlb72hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
+236,KTLB80HZBN1,8.0,9.0,108,1400,960,36.5,30.5,20,80,9.52,15.9,1600,199,450,28,https://coolsochi.ru/product/kentatsu-ktlb80hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
+237,KTLB90HZBN1,9.0,10.0,108,1400,960,36.5,30.5,20,80,9.52,15.9,1600,199,450,28,https://coolsochi.ru/product/kentatsu-ktlb90hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
+238,KTLB115HZBN1,11.2,12.5,128,1620,1080,39.5,31.5,20,80,9.52,15.9,1600,199,450,28,https://coolsochi.ru/product/kentatsu-ktlb115hzbn1/,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,PDF_VISUAL_PENDING
