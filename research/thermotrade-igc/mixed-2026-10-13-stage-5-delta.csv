@@ -1,0 +1,14 @@
+excel_row,model,cooling_kW,heating_kW,source_url,qa
+23,IMS-BH220NH(DC),22.4,25,https://www.c-o-k.ru/library/catalogs/igc/38195/140669.pdf,PDF_VISUAL_QA_PENDING
+24,IMS-BH280NH(DC),28,31.5,https://www.c-o-k.ru/library/catalogs/igc/38195/140669.pdf,PDF_VISUAL_QA_PENDING
+38,IMS-4T71NHQ(DC),7.1,8.5,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,CHECK_CATALOG_NEIGHBOR_COLUMN_TYPOS
+43,IMS-QV28NH(DC),2.8,3.2,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,PDF_VISUAL_QA_PENDING
+44,IMS-QV36NH(DC),3.6,4.3,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,PDF_VISUAL_QA_PENDING
+45,IMS-QV45NH(DC),4.5,5,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,PDF_VISUAL_QA_PENDING
+46,IMS-QV56NH(DC),5.6,6.3,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,PDF_VISUAL_QA_PENDING
+47,IMS-QV71NH(DC),7.1,8,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,PDF_VISUAL_QA_PENDING
+48,IMS-QV90NH(DC),9,11,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,PDF_VISUAL_QA_PENDING
+50,IMS-QV125NH(DC),12.5,14,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,PDF_VISUAL_QA_PENDING
+51,IMS-QV140NH(DC),14,15,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,AIRFLOW_NOISE_SPEED_COUNT_MISMATCH
+52,IMS-AHU220NH(DC),22.4,18,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,PDF_VISUAL_QA_PENDING
+53,IMS-AHU280NH(DC),28,22,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,PDF_VISUAL_QA_PENDING
