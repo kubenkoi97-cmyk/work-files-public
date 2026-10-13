@@ -1,0 +1,35 @@
+{
+  "stage": 37,
+  "date": "2026-10-13",
+  "filename": "MIXED_Термотрейд_IGC_этап37_MIH_DP_IGC_1T_реаудит.xlsx",
+  "bytes": 482314,
+  "sha256": "93bf9447b00ab7ba0a66fcc8b184269874ff2d13da43528b125ab72b9abe3e9d",
+  "source_sha_values": "851c62f6d3d88c01603188178a1f1cb15a8385589bd67749477148e68b158c87",
+  "filled": 329,
+  "empty": 415,
+  "partial": 0,
+  "sheets": 31,
+  "new_rows": [
+    415,
+    416,
+    417,
+    418,
+    419,
+    420
+  ],
+  "reaudit_rows": [
+    30,
+    31,
+    32
+  ],
+  "total_screened": 329,
+  "summary": {
+    "shortA": 90,
+    "shortB": 16,
+    "possible_gaps": 236,
+    "highPriority": 141
+  },
+  "pdf_visual_qa": "OPEN",
+  "total_reaudited_this_stage": 3,
+  "full_completeness_certified_new": 0
+}
