@@ -1,0 +1,11 @@
+model,brand,cooling_kW,heating_kW,source,qa
+FXKQ32A,Daikin,3.6,4.0,https://es.scribd.com/document/983856464/Tarifa-Reducida-Abril-2025,R410A_R32_CONFLICT_LOW_AIRFLOW_OMITTED
+FXKQ40A,Daikin,4.5,5.0,https://es.scribd.com/document/983856464/Tarifa-Reducida-Abril-2025,R410A_R32_CONFLICT
+FXKQ50A,Daikin,5.6,6.3,https://es.scribd.com/document/983856464/Tarifa-Reducida-Abril-2025,R410A_R32_CONFLICT_WEIGHT_23_VS_24
+FXKQ63A,Daikin,7.1,8.0,https://es.scribd.com/document/983856464/Tarifa-Reducida-Abril-2025,SOUND_LEVEL_DISAGREEMENT_R410A_R32
+FXMQ200A,Daikin,22.4,25.0,https://www.daikin.at/content/dam/DACE-AT/document-library/catalogues/ac/vrv/Daikin_Katalog_VRV_2026.pdf,PDF_VISUAL_QA_OPEN
+FXMQ250A,Daikin,28.0,31.5,https://www.daikin.at/content/dam/DACE-AT/document-library/catalogues/ac/vrv/Daikin_Katalog_VRV_2026.pdf,PDF_VISUAL_QA_OPEN
+KTGV50HZBN1,Kentatsu,4.5,5.0,https://mircli.ru/Kentatsu-KTGV50HZBN1/,SOURCE_CARD_CONFIRMED
+KTGV60HZBN1,Kentatsu,5.6,6.3,https://coolsochi.ru/product/kentatsu-ktgv60hzbn1/,SOURCE_CARD_CONFIRMED
+KTGV72HZBN1,Kentatsu,7.1,8.0,https://mircli.ru/Kentatsu-KTGV72HZBN1/,AIRFLOW_NOT_AVAILABLE
+KTGV80HZBN1,Kentatsu,8.0,9.0,https://mircli.ru/Kentatsu-KTGV80HZBN1/,ELECTRIC_POWER_CONFLICT_OMITTED
