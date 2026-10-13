@@ -1,0 +1,10 @@
+"Строка","Точная модель","Направление","A до, символов","A после, символов","B до, пунктов","B после, пунктов","PDF визуально","Что подтверждено точно","QA / остающиеся действия","Прямые источники","Полнота доказана?"
+"27","IMS-1T22NH (DC)","DEEP REAUDIT","383","1901","17","32","НЕТ; PDF только индексированный текст","Числа сохранены; воздух (4) / шум (3), корпус/панель разделены, ISO 5151:2017","Визуальный PDF, панель в поставке, насос, пульт, все обязательные домены; сомнительная строка PDF 5°C/24°C, не исправлять на 35°C без изображения","https://www.nsk.igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf
+https://www.c-o-k.ru/library/instructions/igc/kondicionery-promyshlennye/38333/141247.pdf
+https://www.igc-aircon.com/product/kassetnye_vrf_1_potochnye_komplekty/","НЕТ"
+"28","IMS-1T28NH (DC)","DEEP REAUDIT","383","1901","17","32","НЕТ; PDF только индексированный текст","Числа сохранены; воздух (4) / шум (3), корпус/панель разделены, ISO 5151:2017","Визуальный PDF, панель в поставке, насос, пульт, все обязательные домены; сомнительная строка PDF 5°C/24°C, не исправлять на 35°C без изображения","https://www.nsk.igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf
+https://www.c-o-k.ru/library/instructions/igc/kondicionery-promyshlennye/38333/141247.pdf
+https://www.igc-aircon.com/product/kassetnye_vrf_1_potochnye_komplekty/","НЕТ"
+"29","IMS-1T36NH(DC)","DEEP REAUDIT","383","1900","17","32","НЕТ; PDF только индексированный текст","Числа сохранены; воздух (4) / шум (3), корпус/панель разделены, ISO 5151:2017","Визуальный PDF, панель в поставке, насос, пульт, все обязательные домены; сомнительная строка PDF 5°C/24°C, не исправлять на 35°C без изображения","https://www.nsk.igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf
+https://www.c-o-k.ru/library/instructions/igc/kondicionery-promyshlennye/38333/141247.pdf
+https://www.igc-aircon.com/product/kassetnye_vrf_1_potochnye_komplekty/","НЕТ"
