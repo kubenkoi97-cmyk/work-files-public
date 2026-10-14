@@ -1,0 +1,37 @@
+{
+  "stage": 40,
+  "date": "2026-10-14",
+  "workbook": "MIXED_Термотрейд_IGC_этап40_MIH_Q2_IGC_QV_реаудит.xlsx",
+  "size_bytes": 580731,
+  "sha256": "0570544eef05498892d246908534be3322e78397865c3562898a83a5a5178354",
+  "prior_sha256": "0fcedc51894057f47bf66cca8ee0005b92b30531b60d52587c490fe097dc15e3",
+  "source_values_sha256": "d548afd4f71fbeeae55e208a4b74971c5ee6587ed3b5fb1798499483b5d8904a",
+  "rows": 744,
+  "sheets": 37,
+  "populated_ab": 350,
+  "empty_ab": 394,
+  "partial": 0,
+  "new_rows": [
+    436,
+    437,
+    438,
+    439,
+    440,
+    441
+  ],
+  "deep_reaudit_rows": [
+    50,
+    51
+  ],
+  "screened_structurally": 350,
+  "fully_certified_models": 0,
+  "short_A_lt500": 82,
+  "short_B_lt16": 16,
+  "potential_topic_gaps": 308,
+  "high_priority": 148,
+  "visual_factory_pdf_passed_new_models": 6,
+  "visual_IGC_original_pending": 2,
+  "all_required_domains_checked": false,
+  "javascript_expand_verified": false,
+  "validation": "round-trip import; original 744x15 identical; identities exact; only 8 intended rows changed; no detected formula error tokens"
+}
