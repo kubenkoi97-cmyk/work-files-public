@@ -1,0 +1,35 @@
+{
+  "stage": 41,
+  "date": "2026-10-14",
+  "workbook": "MIXED_Термотрейд_IGC_этап41_MIH_Q4_T1_IGC_AHU_реаудит.xlsx",
+  "bytes": 614726,
+  "sha256": "c3614553404a23a70999cc0c8664c62dd53fcfe2732058b8d7f86d6a89eb0016",
+  "git_blob_sha1": "1eb7b410019adc2ac93bf5b85925285d3a64db12",
+  "baseline_stage40_sha256": "0570544eef05498892d246908534be3322e78397865c3562898a83a5a5178354",
+  "source_unchanged": true,
+  "identity_C_D_E_I_unchanged": true,
+  "new_rows": [
+    442,
+    443,
+    444,
+    445,
+    446,
+    447
+  ],
+  "reaudit_rows": [
+    52,
+    53
+  ],
+  "notes": "Only new and explicitly reaudited models received external source investigation; all previously filled models were structurally screened, not fully crawled.",
+  "populated_ab": 356,
+  "empty_ab": 388,
+  "total": 744,
+  "sheets": 39,
+  "deep_reaudit": 2,
+  "new": 6,
+  "screened": 356,
+  "desc_below_500": 80,
+  "b_below_16": 16,
+  "potential_gaps": 298,
+  "priority_high": 146
+}
