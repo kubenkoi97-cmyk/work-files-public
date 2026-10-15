@@ -1,0 +1,7 @@
+stage,row,model,col,field,old,new,url,source_tier,status,retailer_id
+"30","280","MI2-15Q4CDHN18(At)","27","Хладагент [PROP_290]","","R410A","https://mircli.ru/Midea-MI2-15Q4CDHN18-At-T-MBQ4-03F/","EXACT_MIRCLI_CARD","RETAIL_VERIFIED_OEM_PENDING","292480"
+"30","284","MI2-45Q4CDHN18(At)","27","Хладагент [PROP_290]","","R410A","https://mircli.ru/Midea-MI2-45Q4CDHN18-At-T-MBQ4-03F/","EXACT_MIRCLI_CARD","RETAIL_VERIFIED_OEM_PENDING","292486"
+"30","288","MI2-45Q4DHN18(At)","27","Хладагент [PROP_290]","","R410A","https://mircli.ru/Midea-MI2-45Q4DHN18-At-T-MBQ4-01F/","EXACT_MIRCLI_CARD","RETAIL_VERIFIED_OEM_PENDING","292503"
+"31","311","MI2-45DLDHN18(At)","27","Хладагент [PROP_290]","","R32","https://mircli.ru/Midea-MI2-45DLDHN18-At-/","EXACT_MIRCLI_CARD","RETAIL_VERIFIED_OEM_PENDING","292768"
+"31","315","MI2-90DLDHN18(At)","27","Хладагент [PROP_290]","","R32","https://mircli.ru/Midea-MI2-90DLDHN18-At-/","EXACT_MIRCLI_CARD","RETAIL_VERIFIED_OEM_PENDING","292772"
+"31","317","MI2-140DLDHN18(At)","27","Хладагент [PROP_290]","","R32","https://mircli.ru/Midea-MI2-140DLDHN18-At-/","EXACT_MIRCLI_CARD","RETAIL_VERIFIED_OEM_PENDING","292774"
