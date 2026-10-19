@@ -1,0 +1,357 @@
+Строка,Модель / название,Бренд,Непустых из 77,Пустых из 77 (вкл. неприменимые),Открытых базовых применимых,"Поля, ожидающие web-pass",Статус,Stage45 FILE color mapping
+2,Внутренний блок настенный VRF/VRV системы IGC IMS-K22NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+3,Внутренний блок настенный VRF/VRV системы IGC IMS-K28NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+4,Внутренний блок настенный VRF/VRV системы IGC IMS-K36NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+5,Внутренний блок настенный VRF/VRV системы IGC IMS-K45NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+6,Внутренний блок настенный VRF/VRV системы IGC IMS-K56NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+7,Внутренний блок настенный VRF/VRV системы IGC IMS-K71NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+8,Внутренний блок канальный VRF/VRV системы IGC IMS-BS22NH (DC),IGC,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+9,Внутренний блок канальный VRF/VRV системы IGC IMS-BS36NH(DC),IGC,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+10,Внутренний блок канальный VRF/VRV системы IGC IMS-BS45NH(DC),IGC,25,52,6,"Хладагент [PROP_290] | Ширина, мм | Высота, мм | Глубина, мм | Габариты (ШхВхГ), мм | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+11,Внутренний блок канальный VRF/VRV системы IGC IMS-BS15NHQ(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+12,Внутренний блок канальный VRF/VRV системы IGC IMS-BS22NHQ(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+13,Внутренний блок канальный VRF/VRV системы IGC IMS-BS28NHQ(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+14,Внутренний блок канальный VRF/VRV системы IGC IMS-BS36NHQ(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+15,Внутренний блок канальный VRF/VRV системы IGC IMS-BS45NHQ(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+16,Внутренний блок канальный VRF/VRV системы IGC IMS-BS56NHQ(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+17,Внутренний блок канальный VRF/VRV системы IGC IMS-BS71NHQ(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+18,Внутренний блок канальный VRF/VRV системы IGC IMS-BH220NH(DC),IGC,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+19,Внутренний блок канальный VRF/VRV системы IGC IMS-BH280NH(DC),IGC,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+20,Внутренний блок кассетный VRF/VRV системы IGC IMS-1T22NH (DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+21,Внутренний блок кассетный VRF/VRV системы IGC IMS-1T28NH (DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+22,Внутренний блок кассетный VRF/VRV системы IGC IMS-1T36NH(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+23,Внутренний блок кассетный VRF/VRV системы IGC IMS-1T45NH(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+24,Внутренний блок кассетный VRF/VRV системы IGC IMS-1T56NH(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+25,Внутренний блок кассетный VRF/VRV системы IGC IMS-1T71NH(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+26,Внутренний блок кассетный VRF/VRV системы IGC IMS-4T71NHQ(DC),IGC,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+27,Внутренний блок напольно-потолочный VRF/VRV системы IGC IMS-QV28NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+28,Внутренний блок напольно-потолочный VRF/VRV системы IGC IMS-QV36NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+29,Внутренний блок напольно-потолочный VRF/VRV системы IGC IMS-QV45NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+30,Внутренний блок напольно-потолочный VRF/VRV системы IGC IMS-QV56NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+31,Внутренний блок напольно-потолочный VRF/VRV системы IGC IMS-QV71NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+32,Внутренний блок напольно-потолочный VRF/VRV системы IGC IMS-QV90NH(DC),IGC,28,49,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+33,Внутренний блок напольно-потолочный VRF/VRV системы IGC IMS-QV125NH(DC),IGC,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+34,Внутренний блок напольно-потолочный VRF/VRV системы IGC IMS-QV140NH(DC),IGC,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+35,Внутренний блок канальный VRF/VRV системы IGC IMS-AHU220NH(DC),IGC,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+36,Внутренний блок канальный VRF/VRV системы IGC IMS-AHU280NH(DC),IGC,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+37,Внутренний блок кассетный VRF/VRV системы Daikin FXKQ20A,Daikin,32,45,0,,CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+38,Внутренний блок кассетный VRF/VRV системы Daikin FXKQ25A,Daikin,32,45,0,,CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+39,Внутренний блок кассетный VRF/VRV системы Daikin FXKQ32A,Daikin,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+40,Внутренний блок кассетный VRF/VRV системы Daikin FXKQ40A,Daikin,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+41,Внутренний блок кассетный VRF/VRV системы Daikin FXKQ50A,Daikin,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+42,Внутренний блок кассетный VRF/VRV системы Daikin FXKQ63A,Daikin,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+43,Внутренний блок канальный VRF/VRV системы Daikin FXMQ200A,Daikin,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+44,Внутренний блок канальный VRF/VRV системы Daikin FXMQ250A,Daikin,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+45,Внутренний блок настенный VRF/VRV системы Kentatsu KTGV18HZBN1,Kentatsu,33,44,0,,UNVERIFIED_77_FIELD_APPLICABILITY,NO_NEW_COLOR_CHANGE
+46,Внутренний блок настенный VRF/VRV системы Kentatsu KTGV24HZBN1,Kentatsu,32,45,1,Диаметр труб хладагента [PROP_25],OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+47,Внутренний блок настенный VRF/VRV системы Kentatsu KTGV30HZBN1,Kentatsu,33,44,0,,UNVERIFIED_77_FIELD_APPLICABILITY,NO_NEW_COLOR_CHANGE
+48,Внутренний блок настенный VRF/VRV системы Kentatsu KTGV40HZBN1,Kentatsu,34,43,0,,UNVERIFIED_77_FIELD_APPLICABILITY,NO_NEW_COLOR_CHANGE
+49,Внутренний блок настенный VRF/VRV системы Kentatsu KTGV50HZBN1,Kentatsu,34,43,0,,UNVERIFIED_77_FIELD_APPLICABILITY,NO_NEW_COLOR_CHANGE
+50,Внутренний блок настенный VRF/VRV системы Kentatsu KTGV60HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+51,Внутренний блок настенный VRF/VRV системы Kentatsu KTGV72HZBN1,Kentatsu,33,44,0,,UNVERIFIED_77_FIELD_APPLICABILITY,NO_NEW_COLOR_CHANGE
+52,Внутренний блок настенный VRF/VRV системы Kentatsu KTGV80HZBN1,Kentatsu,33,44,0,,UNVERIFIED_77_FIELD_APPLICABILITY,NO_NEW_COLOR_CHANGE
+53,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYV18HZBN1,Kentatsu,32,45,3,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+54,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYV24HZBN1,Kentatsu,32,45,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+55,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYV30HZBN1,Kentatsu,31,46,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+56,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYV40HZBN1,Kentatsu,31,46,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+57,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYV50HZBN1,Kentatsu,32,45,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+58,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYV60HZBN1,Kentatsu,31,46,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+59,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYV72HZBN1,Kentatsu,30,47,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+60,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZV15HZBN1,Kentatsu,31,46,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+61,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZV24HZBN1,Kentatsu,31,46,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+62,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZV30HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+63,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZV40HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+64,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZV50HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+65,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZV60HZBN1,Kentatsu,32,45,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+66,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZV70HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+67,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV30HZBN1,Kentatsu,31,46,3,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+68,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV40HZBN1,Kentatsu,31,46,3,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+69,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV50HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+70,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV60HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+71,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV72HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+72,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV80HZBN1,Kentatsu,31,46,3,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+73,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV90HZBN1,Kentatsu,31,46,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+74,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV100HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+75,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV115HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+76,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV140HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+77,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV160HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+78,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVV180HZBN1,Kentatsu,29,48,4,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION] | Габариты панели",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+79,Внутренний блок канальный VRF/VRV системы Kentatsu KTLV15HZBN1,Kentatsu,30,47,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+80,Внутренний блок канальный VRF/VRV системы Kentatsu KTLV18HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+81,Внутренний блок канальный VRF/VRV системы Kentatsu KTLV24HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+82,Внутренний блок канальный VRF/VRV системы Kentatsu KTLV30HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+83,Внутренний блок канальный VRF/VRV системы Kentatsu KTLV40HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+84,Внутренний блок канальный VRF/VRV системы Kentatsu KTLV50HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+85,Внутренний блок канальный VRF/VRV системы Kentatsu KTLV60HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+86,Внутренний блок канальный VRF/VRV системы Kentatsu KTLV72HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+87,Внутренний блок канальный VRF/VRV системы Kentatsu KTKV80HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+88,Внутренний блок канальный VRF/VRV системы Kentatsu KTKV90HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+89,Внутренний блок канальный VRF/VRV системы Kentatsu KTKV115HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+90,Внутренний блок канальный VRF/VRV системы Kentatsu KTKV125HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+91,Внутренний блок канальный VRF/VRV системы Kentatsu KTKV140HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+92,Внутренний блок канальный VRF/VRV системы Kentatsu KTKV160HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+93,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHV40HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+94,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHV50HZBN1,Kentatsu,30,47,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+95,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHV60HZBN1,Kentatsu,30,47,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+96,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHV72HZBN1,Kentatsu,30,47,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+97,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHV80HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+98,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHV90HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+99,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHV115HZBN1,Kentatsu,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+100,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHV140HZBN1,Kentatsu,30,47,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+101,Внутренний блок настенный VRF/VRV системы Kentatsu KTGB18HZBN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+102,Внутренний блок настенный VRF/VRV системы Kentatsu KTGB24HZBN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+103,Внутренний блок настенный VRF/VRV системы Kentatsu KTGB30HZBN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+104,Внутренний блок настенный VRF/VRV системы Kentatsu KTGB40HZBN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+105,Внутренний блок настенный VRF/VRV системы Kentatsu KTGB50HZBN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+106,Внутренний блок настенный VRF/VRV системы Kentatsu KTGB60HZBN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+107,Внутренний блок настенный VRF/VRV системы Kentatsu KTGB72HZBN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+108,Внутренний блок настенный VRF/VRV системы Kentatsu KTGB80HZBN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+109,Внутренний блок настенный VRF/VRV системы Kentatsu KTGB90HZBN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+110,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYB18HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+111,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYB24HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+112,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYB30HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+113,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYB40HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+114,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYB50HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+115,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYB60HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+116,Внутренний блок кассетный VRF/VRV системы Kentatsu KTYB72HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+117,Внутренний блок кассетный VRF/VRV системы Kentatsu KTDB24HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+118,Внутренний блок кассетный VRF/VRV системы Kentatsu KTDB30HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+119,Внутренний блок кассетный VRF/VRV системы Kentatsu KTDB40HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+120,Внутренний блок кассетный VRF/VRV системы Kentatsu KTDB50HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+121,Внутренний блок кассетный VRF/VRV системы Kentatsu KTDB60HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+122,Внутренний блок кассетный VRF/VRV системы Kentatsu KTDB72HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+123,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZB18HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+124,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZB24HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+125,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZB30HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+126,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZB40HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+127,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZB50HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+128,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZB60HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+129,Внутренний блок кассетный VRF/VRV системы Kentatsu KTZB70HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+130,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB30HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+131,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB40HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+132,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB50HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+133,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB60HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+134,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB72HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+135,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB80HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+136,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB90HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+137,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB100HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+138,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB115HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+139,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB140HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+140,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB160HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+141,Внутренний блок кассетный VRF/VRV системы Kentatsu KTVB180HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+142,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB18HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+143,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB24HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+144,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB30HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+145,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB40HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+146,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB50HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+147,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB60HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+148,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB72HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+149,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB80HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+150,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB90HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+151,Внутренний блок канальный VRF/VRV системы Kentatsu KTLB115HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+152,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB18HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+153,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB24HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+154,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB30HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+155,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB40HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+156,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB50HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+157,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB60HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+158,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB72HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+159,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB80HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+160,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB90HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+161,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB115HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+162,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB140HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+163,Внутренний блок канальный VRF/VRV системы Kentatsu KTKB160HZBN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+164,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB60HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+165,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB72HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+166,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB80HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+167,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB90HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+168,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB115HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+169,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB125HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+170,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB140HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+171,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB160HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+172,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB200HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+173,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB224HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+174,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB250HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+175,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB280HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+176,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB340HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+177,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB400HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+178,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB450HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+179,Внутренний блок канальный VRF/VRV системы Kentatsu KTTB560HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+180,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB40HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+181,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB50HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+182,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB60HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+183,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB72HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+184,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB80HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+185,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB90HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+186,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB100HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+187,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB115HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+188,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB125HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+189,Внутренний блок напольно-потолочный VRF/VRV системы Kentatsu KTHB140HZBN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+190,Внутренний блок настенный VRF/VRV системы Kentatsu KGA24HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+191,Внутренний блок настенный VRF/VRV системы Kentatsu KGA30HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+192,Внутренний блок настенный VRF/VRV системы Kentatsu KGA40HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+193,Внутренний блок настенный VRF/VRV системы Kentatsu KGA50HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+194,Внутренний блок настенный VRF/VRV системы Kentatsu KGA60HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+195,Внутренний блок настенный VRF/VRV системы Kentatsu KGA72HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+196,Внутренний блок настенный VRF/VRV системы Kentatsu KGA80HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+197,Внутренний блок настенный VRF/VRV системы Kentatsu KGA90HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+198,Внутренний блок настенный VRF/VRV системы Kentatsu KGA100HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+199,Внутренний блок настенный VRF/VRV системы Kentatsu KGA115HZAN1,Kentatsu,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+200,Внутренний блок кассетный VRF/VRV системы Kentatsu KZA18HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+201,Внутренний блок кассетный VRF/VRV системы Kentatsu KZA24HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+202,Внутренний блок кассетный VRF/VRV системы Kentatsu KZA30HZAN1,Kentatsu,30,47,2,"Вес (нетто), кг | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+203,Внутренний блок кассетный VRF/VRV системы Kentatsu KZA40HZAN1,Kentatsu,30,47,2,"Вес (нетто), кг | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+204,Внутренний блок кассетный VRF/VRV системы Kentatsu KZA50HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+205,Внутренний блок кассетный VRF/VRV системы Kentatsu KZA60HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+206,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA72HFAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+207,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA80HFAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+208,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA90HFAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+209,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA100HFAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+210,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA115HFAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+211,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA125HFAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+212,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA140HFAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+213,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA70HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+214,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA72HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+215,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA80HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+216,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA90HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+217,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA100HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+218,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA115HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+219,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA125HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+220,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA140HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+221,Внутренний блок кассетный VRF/VRV системы Kentatsu KRA160HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+222,Внутренний блок канальный VRF/VRV системы Kentatsu KLA24HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+223,Внутренний блок канальный VRF/VRV системы Kentatsu KLA30HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+224,Внутренний блок канальный VRF/VRV системы Kentatsu KLA40HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+225,Внутренний блок канальный VRF/VRV системы Kentatsu KLA50HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+226,Внутренний блок канальный VRF/VRV системы Kentatsu KLA60HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+227,Внутренний блок канальный VRF/VRV системы Kentatsu KLA72HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+228,Внутренний блок канальный VRF/VRV системы Kentatsu KLA24HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+229,Внутренний блок канальный VRF/VRV системы Kentatsu KLA30HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+230,Внутренний блок канальный VRF/VRV системы Kentatsu KLA40HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+231,Внутренний блок канальный VRF/VRV системы Kentatsu KLA50HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+232,Внутренний блок канальный VRF/VRV системы Kentatsu KLA60HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+233,Внутренний блок канальный VRF/VRV системы Kentatsu KLA72HZAN1,Kentatsu,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+234,Внутренний блок канальный VRF/VRV системы Kentatsu KKA50HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+235,Внутренний блок канальный VRF/VRV системы Kentatsu KKA60HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+236,Внутренний блок канальный VRF/VRV системы Kentatsu KKA72HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+237,Внутренний блок канальный VRF/VRV системы Kentatsu KKA80HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+238,Внутренний блок канальный VRF/VRV системы Kentatsu KKA90HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+239,Внутренний блок канальный VRF/VRV системы Kentatsu KKA100HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+240,Внутренний блок канальный VRF/VRV системы Kentatsu KKA115HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+241,Внутренний блок канальный VRF/VRV системы Kentatsu KKA125HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+242,Внутренний блок канальный VRF/VRV системы Kentatsu KKA140HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+243,Внутренний блок канальный VRF/VRV системы Kentatsu KKA150HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+244,Внутренний блок канальный VRF/VRV системы Kentatsu KTA115HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+245,Внутренний блок канальный VRF/VRV системы Kentatsu KTA125HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+246,Внутренний блок канальный VRF/VRV системы Kentatsu KTA140HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+247,Внутренний блок канальный VRF/VRV системы Kentatsu KTA150HFAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+248,Внутренний блок канальный VRF/VRV системы Kentatsu KTA220HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+249,Внутренний блок канальный VRF/VRV системы Kentatsu KTA280HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+250,Внутренний блок канальный VRF/VRV системы Kentatsu KCA50HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+251,Внутренний блок канальный VRF/VRV системы Kentatsu KCA60HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+252,Внутренний блок канальный VRF/VRV системы Kentatsu KCA72HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+253,Внутренний блок канальный VRF/VRV системы Kentatsu KCA80HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+254,Внутренний блок канальный VRF/VRV системы Kentatsu KCA90HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+255,Внутренний блок канальный VRF/VRV системы Kentatsu KCA115HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+256,Внутренний блок канальный VRF/VRV системы Kentatsu KCA125HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+257,Внутренний блок канальный VRF/VRV системы Kentatsu KCA140HZAN1,Kentatsu,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+258,Внутренний блок настенный VRF/VRV системы Midea MI2-15GDHN18(At),Midea,30,47,1,Техническая документация [TECH_DOCUMENTATION],OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+259,Внутренний блок настенный VRF/VRV системы Midea MI2-22GDHN18(At),Midea,30,47,1,Техническая документация [TECH_DOCUMENTATION],OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+260,Внутренний блок настенный VRF/VRV системы Midea MI2-28GDHN18(At),Midea,30,47,1,Техническая документация [TECH_DOCUMENTATION],OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+261,Внутренний блок настенный VRF/VRV системы Midea MI2-36GDHN18(At),Midea,30,47,1,Техническая документация [TECH_DOCUMENTATION],OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+262,Внутренний блок настенный VRF/VRV системы Midea MI2-45GDHN18(At),Midea,28,49,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+263,Внутренний блок настенный VRF/VRV системы Midea MI2-56GDHN18(At),Midea,30,47,1,Техническая документация [TECH_DOCUMENTATION],OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+264,Внутренний блок настенный VRF/VRV системы Midea MI2-71GDHN18(At),Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+265,Внутренний блок настенный VRF/VRV системы Midea MI2-80GDHN18(At),Midea,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+266,Внутренний блок настенный VRF/VRV системы Midea MI2-15GDHN18(At)DP,Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+267,Внутренний блок настенный VRF/VRV системы Midea MI2-22GDHN18(At)DP,Midea,30,47,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+268,Внутренний блок настенный VRF/VRV системы Midea MI2-28GDHN18(At)DP,Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+269,Внутренний блок настенный VRF/VRV системы Midea MI2-36GDHN18(At)DP,Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+270,Внутренний блок настенный VRF/VRV системы Midea MI2-45GDHN18(At)DP,Midea,30,47,1,Техническая документация [TECH_DOCUMENTATION],OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+271,Внутренний блок настенный VRF/VRV системы Midea MI2-56GDHN18(At)DP,Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+272,Внутренний блок настенный VRF/VRV системы Midea MI2-71GDHN18(At)DP,Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+273,Внутренний блок настенный VRF/VRV системы Midea MI2-80GDHN18(At)DP,Midea,28,49,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+274,Внутренний блок кассетный VRF/VRV системы Midea MI2-18Q1DHN18(At),Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+275,Внутренний блок кассетный VRF/VRV системы Midea MI2-22Q1DHN18(At),Midea,29,48,3,"Вес (нетто), кг | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+276,Внутренний блок кассетный VRF/VRV системы Midea MI2-28Q1DHN18(At),Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+277,Внутренний блок кассетный VRF/VRV системы Midea MI2-36Q1DHN18(At),Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+278,Внутренний блок кассетный VRF/VRV системы Midea MI2-45Q1DHN18(At),Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+279,Внутренний блок кассетный VRF/VRV системы Midea MI2-71Q1DHN18(At),Midea,29,48,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+280,Внутренний блок кассетный VRF/VRV системы Midea MI2-15Q4CDHN18(At),Midea,29,48,2,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+281,Внутренний блок кассетный VRF/VRV системы Midea MI2-22Q4CDHN18(At),Midea,27,50,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+282,Внутренний блок кассетный VRF/VRV системы Midea MI2-28Q4CDHN18(At),Midea,27,50,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+283,Внутренний блок кассетный VRF/VRV системы Midea MI2-36Q4CDHN18(At),Midea,27,50,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+284,Внутренний блок кассетный VRF/VRV системы Midea MI2-45Q4CDHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+285,Внутренний блок кассетный VRF/VRV системы Midea MI2-56Q4CDHN18(At),Midea,27,50,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+286,Внутренний блок кассетный VRF/VRV системы Midea MI2-63Q4CDHN18(At),Midea,27,50,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+287,Внутренний блок кассетный VRF/VRV системы Midea MI2-28Q4DHN18(At),Midea,28,49,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+288,Внутренний блок кассетный VRF/VRV системы Midea MI2-45Q4DHN18(At),Midea,29,48,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+289,Внутренний блок кассетный VRF/VRV системы Midea MI2-56Q4DHN18(At),Midea,30,47,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+290,Внутренний блок кассетный VRF/VRV системы Midea MI2-71Q4DHN18(At),Midea,28,49,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+291,Внутренний блок кассетный VRF/VRV системы Midea MI2-80Q4DHN18(At),Midea,28,49,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+292,Внутренний блок кассетный VRF/VRV системы Midea MI2-90Q4DHN18(At),Midea,28,49,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+293,Внутренний блок кассетный VRF/VRV системы Midea MI2-100Q4DHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+294,Внутренний блок кассетный VRF/VRV системы Midea MI2-112Q4DHN18(At),Midea,28,49,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+295,Внутренний блок кассетный VRF/VRV системы Midea MI2-140Q4DHN18(At),Midea,28,49,4,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,FILE_EXACT_MATCH / COLOR=Белый
+296,Внутренний блок канальный VRF/VRV системы Midea MI2-15T3DHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+297,Внутренний блок канальный VRF/VRV системы Midea MI2-18T3DHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+298,Внутренний блок канальный VRF/VRV системы Midea MI2-22T3DHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+299,Внутренний блок канальный VRF/VRV системы Midea MI2-28T3DHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+300,Внутренний блок канальный VRF/VRV системы Midea MI2-36T3DHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+301,Внутренний блок канальный VRF/VRV системы Midea MI2-45T3DHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+302,Внутренний блок канальный VRF/VRV системы Midea MI2-56T3DHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+303,Внутренний блок канальный VRF/VRV системы Midea MI2-71T3DHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+304,Внутренний блок канальный VRF/VRV системы Midea MI2-80T2DHN18(At),Midea,29,48,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+305,Внутренний блок канальный VRF/VRV системы Midea MI2-90T2DHN18(At),Midea,29,48,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+306,Внутренний блок канальный VRF/VRV системы Midea MI2-112T2DHN18(At),Midea,29,48,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+307,Внутренний блок канальный VRF/VRV системы Midea MI2-125T2DHN18(At),Midea,31,46,2,"Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+308,Внутренний блок канальный VRF/VRV системы Midea MI2-140T2DHN18(At),Midea,29,48,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+309,Внутренний блок канальный VRF/VRV системы Midea MI2-160T2DHN18(At),Midea,30,47,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+310,Внутренний блок напольно-потолочный VRF/VRV системы Midea MI2-36DLDHN18(At),Midea,27,50,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+311,Внутренний блок напольно-потолочный VRF/VRV системы Midea MI2-45DLDHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+312,Внутренний блок напольно-потолочный VRF/VRV системы Midea MI2-56DLDHN18(At),Midea,27,50,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+313,Внутренний блок напольно-потолочный VRF/VRV системы Midea MI2-71DLDHN18(At),Midea,23,54,8,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Ширина, мм | Высота, мм | Глубина, мм | Габариты (ШхВхГ), мм | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+314,Внутренний блок напольно-потолочный VRF/VRV системы Midea MI2-80DLDHN18(At),Midea,23,54,8,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Ширина, мм | Высота, мм | Глубина, мм | Габариты (ШхВхГ), мм | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+315,Внутренний блок напольно-потолочный VRF/VRV системы Midea MI2-90DLDHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+316,Внутренний блок напольно-потолочный VRF/VRV системы Midea MI2-112DLDHN18(At),Midea,23,54,8,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Ширина, мм | Высота, мм | Глубина, мм | Габариты (ШхВхГ), мм | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+317,Внутренний блок напольно-потолочный VRF/VRV системы Midea MI2-140DLDHN18(At),Midea,28,49,3,"Диаметр труб хладагента [PROP_25] | Гарантия, мес. [PROP_438] | Техническая документация [TECH_DOCUMENTATION]",CONFLICT_OPEN,NO_NEW_COLOR_CHANGE
+318,Внутренний блок настенный VRF/VRV системы Midea MIH71GHN18,Midea,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+319,Внутренний блок настенный VRF/VRV системы Midea MIH80GHN18,Midea,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+320,Внутренний блок настенный VRF/VRV системы Midea MIH90GHN18,Midea,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+321,Внутренний блок настенный VRF/VRV системы Midea MIH15GHN18(DP),Midea,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+322,Внутренний блок настенный VRF/VRV системы Midea MIH22GHN18(DP),Midea,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+323,Внутренний блок настенный VRF/VRV системы Midea MIH28GHN18(DP),Midea,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+324,Внутренний блок настенный VRF/VRV системы Midea MIH36GHN18(DP),Midea,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+325,Внутренний блок настенный VRF/VRV системы Midea MIH45GHN18(DP),Midea,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+326,Внутренний блок настенный VRF/VRV системы Midea MIH56GHN18(DP),Midea,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+327,Внутренний блок настенный VRF/VRV системы Midea MIH71GHN18(DP),Midea,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+328,Внутренний блок настенный VRF/VRV системы Midea MIH80GHN18(DP),Midea,29,48,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+329,Внутренний блок настенный VRF/VRV системы Midea MIH90GHN18(DP),Midea,27,50,3,"Диаметр труб хладагента [PROP_25] | Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+330,Внутренний блок настенный VRF/VRV системы Midea MIH15BHN18,Midea,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+331,Внутренний блок настенный VRF/VRV системы Midea MIH22BHN18,Midea,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+332,Внутренний блок настенный VRF/VRV системы Midea MIH28BHN18,Midea,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+333,Внутренний блок настенный VRF/VRV системы Midea MIH36BHN18,Midea,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+334,Внутренний блок настенный VRF/VRV системы Midea MIH45BHN18,Midea,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+335,Внутренний блок настенный VRF/VRV системы Midea MIH56BHN18,Midea,31,46,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+336,Внутренний блок настенный VRF/VRV системы Midea MIH71BHN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+337,Внутренний блок настенный VRF/VRV системы Midea MIH80BHN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+338,Внутренний блок кассетный VRF/VRV системы Midea MIH18Q1HN18(A),Midea,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+339,Внутренний блок кассетный VRF/VRV системы Midea MIH22Q1HN18(A),Midea,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+340,Внутренний блок кассетный VRF/VRV системы Midea MIH28Q1HN18(A),Midea,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+341,Внутренний блок кассетный VRF/VRV системы Midea MIH36Q1HN18(A),Midea,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+342,Внутренний блок кассетный VRF/VRV системы Midea MIH45Q1HN18(A),Midea,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+343,Внутренний блок кассетный VRF/VRV системы Midea MIH56Q1HN18(A),Midea,30,47,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+344,Внутренний блок кассетный VRF/VRV системы Midea MIH71Q1HN18(A),Midea,29,48,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+345,Внутренний блок кассетный VRF/VRV системы Midea MIH22Q2HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+346,Внутренний блок кассетный VRF/VRV системы Midea MIH28Q2HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+347,Внутренний блок кассетный VRF/VRV системы Midea MIH36Q2HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+348,Внутренний блок кассетный VRF/VRV системы Midea MIH45Q2HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+349,Внутренний блок кассетный VRF/VRV системы Midea MIH56Q2HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+350,Внутренний блок кассетный VRF/VRV системы Midea MIH71Q2HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+351,Внутренний блок кассетный VRF/VRV системы Midea MIH160Q4HN18,Midea,29,48,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Габариты панели",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+352,Внутренний блок кассетный VRF/VRV системы Midea MIH180Q4HN18,Midea,29,48,3,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438] | Габариты панели",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+353,Внутренний блок канальный VRF/VRV системы Midea MIH56T1HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+354,Внутренний блок канальный VRF/VRV системы Midea MIH71T1HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+355,Внутренний блок канальный VRF/VRV системы Midea MIH80T1HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+356,Внутренний блок канальный VRF/VRV системы Midea MIH90T1HN18,Midea,30,47,2,"Хладагент [PROP_290] | Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
+357,Наружный блок VRF/VRV системы Bosch MDCI 12-1,Bosch,34,43,1,"Гарантия, мес. [PROP_438]",OPEN_WEB_PASS,NO_NEW_COLOR_CHANGE
