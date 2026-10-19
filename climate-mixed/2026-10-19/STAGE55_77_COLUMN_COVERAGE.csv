@@ -1,0 +1,78 @@
+Column,Exact header,Filled,Blank incl NA,Open CORE applicable,QA status
+1,ID элемента,0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+2,Наименование элемента,356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+3,Символьный код,356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+4,Сортировка,0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+5,Бренд [BRAND],356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+6,Артикул [CML2_ARTICLE],0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+7,Статус наличия [STOCK_STATUS],356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+8,Наши предложения [HIT],0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+9,Картинки [MORE_PHOTO],0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+10,Детальная картинка (путь),0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+11,Серия,356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+12,Режим работы [PROP_423],356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+13,Инвертор,1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+14,"Площадь, м²",25,331,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+15,Ионизатор [PROP_235],0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+16,"Охлаждение, кВт",356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+17,"Обогрев, кВт",356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+18,"Номинальная мощность, кВт",356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+19,"Электропитание, В",356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+20,"Расход воздуха, м³/час",356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+21,"Уровень шума, дБ(А)",356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+22,Цвет внутреннего блока [PROP_34],71,285,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+23,Диаметр труб хладагента [PROP_25],292,64,64,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+24,"Длина трассы/перепад высот, м [PROP_26]",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+25,Диапазон рабочих темп. охл. °С [PROP_27],1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+26,Диапазон рабочих темп. нагрев. °С [PROP_200],1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+27,Хладагент [PROP_290],293,63,63,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+28,WI-FI модуль [PROP_549],63,293,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+29,"Ширина, мм",351,5,4,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+30,"Высота, мм",351,5,4,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+31,"Глубина, мм",351,5,4,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+32,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+33,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+34,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+35,"Габариты (ШхВхГ), мм",351,5,4,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+36,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+37,"Вес (нетто), кг",352,4,3,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+38,"Вес наружного блока, кг [PROP_33]",1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+39,Снят с производства [OUT_OF_PRODUCTION],1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+40,Поставщик [PURVEYOR],0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+41,"Гарантия, мес. [PROP_438]",15,341,341,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+42,Страна изготовитель [PROP_439],356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+43,Техническая документация [TECH_DOCUMENTATION],250,106,106,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+44,Зимний комплект [PROP_201],0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+45,"Осушение, л/ч [PROP_279]",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+46,Детальное описание,356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+47,Доступное количество,356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+48,Закупочная цена,356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+49,"Валюта для цены ""Закупочная цена""",356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+50,"Цена ""Розничная цена""",356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+51,"Валюта для цены ""Розничная цена""",356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+52,Габариты панели,110,246,20,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+53,"Макс. напор, Па",114,242,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+54,Категория,356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+55,Тип блока,356,0,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+56,Кол-во подключаемых блоков,1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+57,Тип подключения,0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+58,"Расход воды (охлаждение), л/ч",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+59,"Расход воды (нагрев), л/ч",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+60,"Гидросопротивление (охлаждение), кПа",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+61,"Гидросопротивление (нагрев), кПа",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+62,Теплообменник,41,315,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+63,"Расход воды, м³/ч",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+64,"Резьба входного патрубка, дюйм",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+65,"Резьба выходного патрубка, дюйм",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+66,Охлаждение конденсатора,0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+67,Компрессор,1,355,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+68,Тип установки,71,285,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+69,Источник тепла,0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+70,"Температура воды на выходе, °C",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+71,"Макс. температура воды, °С",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+72,"Максимальная потребляемая мощность, кВт",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+73,"Максимальный ток, А",26,330,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+74,"Диаметр соединительных патрубков, дюйм",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+75,Защита IP,0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+76,"Диапазон рабочих температур, °C",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
+77,"Тепловая мощность, кВт",0,356,0,OPEN all applicable fields per exact SKU; old CORE 613 does NOT cover conditional columns
