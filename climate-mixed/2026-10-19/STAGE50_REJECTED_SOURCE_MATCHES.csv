@@ -1,0 +1,4 @@
+Rows,Exact family,Observed in exact FILE,Target field,Decision,Reason
+280-286,Midea MI2-Q4CDHN18(At),Цвет панели: белый по продавцу; цвет скрытого корпуса отдельно не подтверждён,22 Цвет внутреннего блока,NOT APPLIED,Panel whiteness does not prove concealed indoor unit body color
+202-203,Kentatsu KZA30/40HZAN1,"Масса корпуса 15,5 кг in existing source; other catalogs and revisions differ",37 Вес нетто,NOT APPLIED,"Prior 2025/other OEM edition conflict unresolved, original factory PDF page not visually checked"
+275,Midea MI2-22Q1DHN18(At),10 kg net dealer single unit; 12 kg ambiguous with panel bundle,37 Вес нетто,NOT APPLIED,Factory single-body source pending

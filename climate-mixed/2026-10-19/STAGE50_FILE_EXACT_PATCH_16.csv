@@ -1,0 +1,17 @@
+Excel row,Column,Exact SKU,Old,New,Exact source cell,Provenance,Verbatim statement
+101,22,KTGB18HZBN1,,Белый,Сбор данных!F101,FILE_EXACT_TEXT,Цвет корпуса: белый
+102,22,KTGB24HZBN1,,Белый,Сбор данных!F102,FILE_EXACT_TEXT,Цвет корпуса: белый
+103,22,KTGB30HZBN1,,Белый,Сбор данных!F103,FILE_EXACT_TEXT,Цвет корпуса: белый
+104,22,KTGB40HZBN1,,Белый,Сбор данных!F104,FILE_EXACT_TEXT,Цвет корпуса: белый
+105,22,KTGB50HZBN1,,Белый,Сбор данных!F105,FILE_EXACT_TEXT,Цвет корпуса: белый
+106,22,KTGB60HZBN1,,Белый,Сбор данных!F106,FILE_EXACT_TEXT,Цвет корпуса: белый
+107,22,KTGB72HZBN1,,Белый,Сбор данных!F107,FILE_EXACT_TEXT,Цвет корпуса: белый
+108,22,KTGB80HZBN1,,Белый,Сбор данных!F108,FILE_EXACT_TEXT,Цвет корпуса: белый
+109,22,KTGB90HZBN1,,Белый,Сбор данных!F109,FILE_EXACT_TEXT,Цвет корпуса: белый
+274,22,MI2-18Q1DHN18(At),,Белый,Сбор данных!F274,FILE_EXACT_TEXT,Цвет корпуса: белый
+275,22,MI2-22Q1DHN18(At),,Белый,Сбор данных!F275,FILE_EXACT_TEXT,Цвет корпуса: белый
+276,22,MI2-28Q1DHN18(At),,Белый,Сбор данных!F276,FILE_EXACT_TEXT,Цвет корпуса: белый
+277,22,MI2-36Q1DHN18(At),,Белый,Сбор данных!F277,FILE_EXACT_TEXT,Цвет корпуса: белый
+278,22,MI2-45Q1DHN18(At),,Белый,Сбор данных!F278,FILE_EXACT_TEXT,Цвет корпуса: белый
+279,22,MI2-71Q1DHN18(At),,Белый,Сбор данных!F279,FILE_EXACT_TEXT,Цвет корпуса: белый
+357,55,MDCI 12-1,,наружный,Сбор данных!F357,FILE_EXACT_EXECUTION,Исполнение: наружный блок мини-VRF
