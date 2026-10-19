@@ -1,0 +1,13 @@
+# Long-session handoff MIXED — exclusive first50 focus, 2026-10-19
+
+**Final checkpoint for this session is Stage58**: `MIXED_356_77cols_STAGE58_FIRST50_50x77_DEEP_QA_2026-10-19.xlsx` (704681 bytes SHA256 `bc2544a8967faaf9c6754db60871f1824a5cefc2c04487ba9125cf28d978a389`); current-chat downloadable binary only, not GitHub. This is a **work in progress**; 0/50 verified READY. Historical Stage55 binary 423302B SHA256 `83c1e0414c75af3b38d766e9434bc80a9433fa8f64c96a0c3b1fc7b434ab6bcf` remains unchanged.
+
+**STRICT SCOPE 50 products**: Excel output rows2–51, IGC35+Daikin8+Kentatsu7 (IMS-K22NH(DC) to KTGV72HZBN1). **Do not edit rows52–357 (306 items)**. Regression across 356×77 confirmed rows52–357 fully identical.
+
+Stage56 cleared 8 seller-only 12mo warranty claims in column41 (old values in QA/Log). Stage57 filled 42 model-specific installation modes in column68 from exact original FILE descriptions; eight prefilled modes preserved, no else changed. Stage58 added 3850 field-status rows and 50-model summary, manufacturer/source/risk log. Compared Stage55→58 product cells: **42 blank→value, 8 seller warranty value→blank, zero other changes**, same exact 77 headings, model order, source tab unchanged. 23 sheets. Field classes: 1527 physically filled, 1071 provisionally N/A, 350 unset commercial/service, 76 core+seller warranty issues, 826 other conditional or system-dependent checks. **These are statuses, not a claim that all 77 fields are fully OEM verified.** The 50 source-unchanged retail prices are zeros and must not be internet-replaced.
+
+**New official-brand warranty lead:** manufacturer-hosted old IGC IMS manual search excerpt states factory 12-month basic and conditional 36-month extended warranty; official IGC dealer policy says same. Original manufacturer PDF couldn't be opened (502), and application to old exact (DC) revision and date remains open. No automatic insertion.
+
+**Highest-priority exact model blockers:** IGC original (DC) PDF page image access and exact series refrigerant, BS45 body dimensions conflict; Daikin FXKQ/FXMQ series suffix/region and consumption/weight; KTGV24 gas/liquid piping; SKU-specific manufacturer warranty; all model-dependent heat exchanger, IP and max current applicable checks. Never infer from neighbor, never copy seller warranties.
+
+**Stage56/57 source patches and Stage58 model/OEM QA** are now in this GitHub folder. Full `STAGE58_FIRST50_FIELDS_3850.csv` and XLSX stored as ChatGPT sandbox files, not GitHub binary. Resume from Stage58, never revert to Stage39/42/55 for subsequent first50 edits; track exact before/after and republish each stage.
