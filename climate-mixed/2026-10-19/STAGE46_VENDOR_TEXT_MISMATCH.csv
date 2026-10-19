@@ -1,0 +1,2 @@
+Excel row,Exact SKU,Source URL,Contradiction,Product-data significance,Action,Status
+65,KTZV60HZBN1,https://envok.ru/catalog/konditsionery_split_sistemy/vrf-sistemy/vnutrennie-bloki-vrf/vnutrenniy-blok-vrf-sistemy-kentatsu-ktzv60hzbn1-daichi-28775/,"Dealer descriptive paragraph erroneously refers to 1.5 kW while exact model specs list 5.6 kW cooling and 6.3 kW heating","Do not copy generic marketing description or confuse KTZV15 with KTZV60; max current 0.65 A comes from keyed exact SKU specification",Compare OEM exact Russian catalogue original page,OPEN_QA
