@@ -1,0 +1,10 @@
+# MIXED first50 current handoff to Stage65 (2026-10-20)
+
+STRICT first50 Excel output rows 2–51 only, rest 306 product records unchanged.
+Latest actual exported/reimported workbook is Stage63 MIXED_356_77cols_STAGE63_FIRST50_IGC_BS_BSQ_EXACT_OEM_QA_2026-10-20.xlsx (729740 bytes; sha256 a2c95f15b9fde459c9a9f3143bb71752bcce003f97ac37b297a0205bd912a0d9). Binary is a downloadable ChatGPT sandbox artifact ONLY; GitHub contains audits but NOT the current binary.
+Stage62: 24 existing fields (3 exact IGC BS DC SKU) manufacturer-branded original visual match, source: https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf. Stage63: 70 existing fields (7 exact BSQ DC) original manufacturer PDF indexed table match; seven R410A fields were ALREADY FILLED, no spurious additions. 356x77 product values remain exactly identical to Stage61, including excluded 306.
+Stage64: Kentatsu KTGV24HZBN1 gas tube12.7 only from exact dealer indexed; missing liquid/factory-pair proof; no edit. Never copy KTGZ24 data.
+Stage65: side-by-side exact SKU DC vs DIFFERENT suffix DC4 for IGC IMS-BS45. Manufacturer branded visual exact DC declares anomalous body700mm width vs shipping1305mm, while DC4 search index body1160mm, different energy/noise/mass/pressure. DO NOT COPY ACROSS REVISION; do not fill disputed DC body dimensions until independent exact dimensional drawing.
+0 new product edits Stages62–65. 0/50 certified ready. Baseline 41 core empty applicable in first50, around826 additional conditional/source applicability pending, 35 manufacturer warranty claims remain provisional and original (DC) effective edition unresolved.
+Next: original factory exact refrigerant for 21 IGC DC blanks, manufacturer's applicable warranty, Daikin FXKQ and FXMQ production suffix, KTGV24 pipe pair, BS45 dimensional drawing. Maintain full source Log and repeat all 356x77 cell equality for 306 untouched after every edit.
+Stage65 checkpoint [here](STAGE65_CHECKPOINT.md); previous [Stage64 handoff](SESSION_MANIFEST_56_TO_64_FIRST50.md).

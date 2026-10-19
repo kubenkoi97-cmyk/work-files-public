@@ -1,0 +1,13 @@
+Parameter,Exact target DC OEM visual,Different DC4 PDF indexed,Status,Target exact branded PDF,Different suffix indexed PDF
+SKU,IMS-BS45NH(DC),IMS-BS45NH(DC4),DIFFERENT_EXACT_SUFFFIX,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Cooling kW,4.5,4.5,SAME_NOMINAL_NOT_SAME_MODEL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Heating kW,5.0,5.0,SAME_NOMINAL_NOT_SAME_MODEL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Electric fan nominal W,90,80,DO_NOT_TRANSFER,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Airflow high m3h,850,850,SAME_NOMINAL_NOT_SAME_MODEL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Noise high dBA,34,38,DO_NOT_TRANSFER,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Static pressure Pa,13 adjustable 0-50,10/30,DO_NOT_TRANSFER,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Body W-D-H mm,700×470×200,1160×460×185,QUARANTINE_DC_BODY_SIZE,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Package W-D-H mm,1305×580×275,1350×545×250,DO_NOT_TRANSFER,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Net weight kg,23.5,20,DO_NOT_TRANSFER,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Liquid tube mm,6.35,6.35,SAME_NUMERIC_NOT_PROOF,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
+Gas tube mm,12.7,12.7,SAME_NUMERIC_NOT_PROOF,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf,https://split-nastroi.ru/uploads/612e04ce22a69doc573316842/612dfce441ed0.pdf
