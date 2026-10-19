@@ -10,7 +10,7 @@
 
 ## Kentatsu decorative panel cross-series conflict
 
-- An exact dealer card of Kentatsu `KTZV15HZBN1` identifies an accessory **KPU65-D3**; other older/indexed technical documents mention **620×65×620 mm** dimensions, while a **different KTVB family** retail page associates a similarly named panel with **950×53×950 mm**. These claims cannot be freely merged across block families, panel revisions or markets. Do not add panel dimensions without **exact target unit → compatible panel article → manufacturer-dimensional drawing** chain. Historical indexed OEM PDF was not visually inspected because PDF download exceeded access limits.
+- An exact dealer card of Kentatsu `KTZV15HZBN1` identifies an accessory **KPU65-D3**. A manufacturer-table search index for the **different KTZB** family pairs **KPU65-D3** with **620×65×620 mm**; this is not yet visual confirmation of the KTZV combination. A directly inspected **KTVB30HZBN1/KPU95-D3** retail card independently reports **950×53×950 mm**, but that is **a DIFFERENT accessory model KPU95-D3** (not KPU65-D3). Therefore the former characterization of 620-vs-950 as a same-panel dimensional conflict was **incorrect**; the genuine risk is cross-panel or cross-series SKU conflation. Exact KTZV → panel compatibility and size still require a manufacturer's original table/drawing. Sources: https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf (indexed only, PDF page visual pending); https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-ktvb30hzbn1-kpu95-d3 (fully opened).
 
 ## Electrical current / protection distinction
 
