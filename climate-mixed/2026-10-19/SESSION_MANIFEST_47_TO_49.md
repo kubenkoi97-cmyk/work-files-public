@@ -1,0 +1,11 @@
+# MIXED handoff: Stage47–Stage49 (2026-10-19)
+
+**Status: PARTIAL; latest valid XLSX Stage47.** The technically edited tested binary is `MIXED_356_77cols_STAGE47_KTLV15_EXACT_PIPES_2026-10-19.xlsx` **640092 B, SHA-256 91ce58730c4f8d27091d450aa3f58d213a9940fd4ba335e631ffc24b33e9ac48**. It exists as ChatGPT sandbox attachment and was **not pushed to GitHub as a binary**; do not pretend text checkpoint is the complete workbook. Parent Stage46 remains accessible as user attachment. The Stage43 full XLSX (2026-10-17) was the actual latest higher-source-data baseline, while October19 Stage41/42 snapshots cloned older Stage39 and are evidence-only; never revert to older technical data.
+
+[Stage47 full QA/checkpoint](STAGE47_CHECKPOINT.md): Kentatsu `KTLV15HZBN1`, row79, column23, pipes blank→6,35/12,7, seller exact SKU (factory pending), stable 356×77, one old-empty cell modified, all 613 core blanks remain in [open register](STAGE47_OPEN_613.csv). Core 614→613.
+
+[Stage48 no-edit checkpoint](STAGE48_CHECKPOINT.md): `KTZV24HZBN1` exact retailer indexed max current 0.46 A, direct full-table line unavailable, stage export RPC failed twice, **do not count any workbook update**. [Candidate source](STAGE48_EXACT_KTZV24_SOURCE_QA.csv).
+
+[Stage49 no-edit source review](STAGE49_CHECKPOINT.md): exact `MI2-22Q1DHN18(At)` individual unit dealer lists **10 kg net**, bundle code with `/T-MBQ1-01G` lists **12 kg ambiguous**; none entered pending OEM. KPU65-D3 decorative panel has contradictory cross-family dimensions; do not auto-transfer. Cooling/heating current and a 15A breaker are not maximum current. [Source cases](STAGE49_SOURCE_QUALITY_CASES.csv).
+
+**Current numbers:** 356 products; 77 columns; Stage47 core blank **613**, plus conditional field applicability audits. **0 additional Excel edits in Stages48–49.** 9 Midea refrigerant conflicts, 2 Daikin FXKQ mass conflicts, KTLV15 1.8 vs1.5 heating still open. No original manufacturer PDF visual proof of these unresolved facts. Resume from Stage47 binary; inspect exact model/market manufacturer PDF original, recheck source→column for each SKU, and reimport full XLSX before claiming a later technical stage. Preserve all previous versions and register every edited field with provenance and QA.
