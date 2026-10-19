@@ -1,0 +1,7 @@
+# MIXED session manifest / 2026-10-19 / Stage44
+
+Latest **technically edited** workbook is **Stage44** `MIXED_356_77cols_STAGE44_KTZV15_PIPE_CURRENT_QA_2026-10-19.xlsx` (ChatGPT sandbox only, **not GitHub binary**), SHA256 `3a1f08d2bccbeeeb6db4260355a81e402b9bd03542965b8b40ed4fcc442b7122`, 581672 bytes, parent Stage43 available in user's Library (555300 bytes, SHA256 `eef2987a6e4bb6bd0fc8779029ef647a571bf82bad5081af06626da378d4409b`). Stage43 (17 October) supersedes evidence-only Oct19 Stage41/42 Stage39 clone: Stage43 had 615 core blanks, Stage44 now **614**.
+
+356 exact products ×77 headings, 2 previously blank cells populated at row60 Kentatsu KTZV15HZBN1: pipe sizes col23 6,35/12,7 and max current col73 0.46 A. Both retail exact model, OEM factory page still PENDING. Zero previously nonempty values edited, all prior QA sheets retained; 36 sheets. Master and standards: [Stage40 handoff](../2026-10-15/HANDOFF_MASTER_PROMPT_STAGE40_RU.md). Source-only nine Midea conflicts and six IGC exact-suffix reports [Oct15 historical](../2026-10-15/SESSION_MANIFEST_41_TO_42.md); technical Stage43 history [Oct17](../2026-10-17/SESSION_MANIFEST_41_TO_43.md). Pending 614 base fields + 77 column conditional audit + two Daikin mass conflicts and nine Midea R32/R410A conflicts.
+
+[Detailed checkpoint](STAGE44_CHECKPOINT.md), [patch CSV](STAGE44_KTZV15_PATCH.csv), [614 missing](STAGE44_OPEN_614.csv), [77 cover](STAGE44_77_COVERAGE.csv). Continue per-SKU FILE→WEB→OEM repeated checks. Never pretend local full XLSX uploaded if no remote binary exists.
