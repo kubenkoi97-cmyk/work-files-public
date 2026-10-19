@@ -1,0 +1,25 @@
+Row,Exact SKU,Column,Field,Excel value,Verified OEM,Match,Manufacturer-branded PDF,Proof quality
+8,IMS-BS22NH(DC),16,Cooling,2.2,2.2,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+8,IMS-BS22NH(DC),17,Heating,2.6,2.6,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+8,IMS-BS22NH(DC),18,Electric power,0.04,0.04,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+8,IMS-BS22NH(DC),20,Airflow,550,550,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+8,IMS-BS22NH(DC),21,Noise,32,32,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+8,IMS-BS22NH(DC),37,Net weight,18.5,18.5,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+8,IMS-BS22NH(DC),23,Liquid/gas pipes,"6,35/9,52","6,35/9,52",MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+8,IMS-BS22NH(DC),53,Max pressure,50,50,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+9,IMS-BS36NH(DC),16,Cooling,3.6,3.6,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+9,IMS-BS36NH(DC),17,Heating,4,4,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+9,IMS-BS36NH(DC),18,Electric power,0.04,0.04,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+9,IMS-BS36NH(DC),20,Airflow,600,600,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+9,IMS-BS36NH(DC),21,Noise,33,33,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+9,IMS-BS36NH(DC),37,Net weight,19,19,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+9,IMS-BS36NH(DC),23,Liquid/gas pipes,"6,35/12,7","6,35/12,7",MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+9,IMS-BS36NH(DC),53,Max pressure,50,50,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+10,IMS-BS45NH(DC),16,Cooling,4.5,4.5,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+10,IMS-BS45NH(DC),17,Heating,5,5,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+10,IMS-BS45NH(DC),18,Electric power,0.09,0.09,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+10,IMS-BS45NH(DC),20,Airflow,850,850,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+10,IMS-BS45NH(DC),21,Noise,34,34,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+10,IMS-BS45NH(DC),37,Net weight,23.5,23.5,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+10,IMS-BS45NH(DC),23,Liquid/gas pipes,"6,35/12,7","6,35/12,7",MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53
+10,IMS-BS45NH(DC),53,Max pressure,50,50,MATCH,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-duct.pdf#page=4,EXACT_MODEL_OEM_CATALOG_VISUAL_PAGE53

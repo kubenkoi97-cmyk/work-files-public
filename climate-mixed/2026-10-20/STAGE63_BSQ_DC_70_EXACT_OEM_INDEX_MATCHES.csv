@@ -1,0 +1,71 @@
+Row,Exact SKU,Column,Field,Excel value,Manufacturer indexed,Match,Manufacturer original PDF,Proof quality
+11,IMS-BS15NHQ(DC),16,Cooling,1.5,1.5,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+11,IMS-BS15NHQ(DC),17,Heating,1.8,1.8,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+11,IMS-BS15NHQ(DC),18,Electric power,0.031,0.031,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+11,IMS-BS15NHQ(DC),20,Airflow,460,460,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+11,IMS-BS15NHQ(DC),21,Noise,30,30,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+11,IMS-BS15NHQ(DC),35,Body size,550×198×450,550×198×450,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+11,IMS-BS15NHQ(DC),37,Net weight,11,11,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+11,IMS-BS15NHQ(DC),23,Liquid/gas pipes,"6,35/9,52","6,35/9,52",MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+11,IMS-BS15NHQ(DC),53,Max pressure,50,50,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+11,IMS-BS15NHQ(DC),27,Refrigerant,R410A,R410A,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),16,Cooling,2.2,2.2,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),17,Heating,2.6,2.6,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),18,Electric power,0.031,0.031,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),20,Airflow,460,460,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),21,Noise,30,30,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),35,Body size,550×198×450,550×198×450,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),37,Net weight,11,11,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),23,Liquid/gas pipes,"6,35/9,52","6,35/9,52",MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),53,Max pressure,50,50,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+12,IMS-BS22NHQ(DC),27,Refrigerant,R410A,R410A,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),16,Cooling,2.8,2.8,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),17,Heating,3.2,3.2,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),18,Electric power,0.031,0.031,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),20,Airflow,460,460,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),21,Noise,30,30,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),35,Body size,550×198×450,550×198×450,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),37,Net weight,11,11,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),23,Liquid/gas pipes,"6,35/9,52","6,35/9,52",MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),53,Max pressure,50,50,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+13,IMS-BS28NHQ(DC),27,Refrigerant,R410A,R410A,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),16,Cooling,3.6,3.6,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),17,Heating,4,4,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),18,Electric power,0.031,0.031,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),20,Airflow,605,605,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),21,Noise,30,30,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),35,Body size,700×198×450,700×198×450,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),37,Net weight,13,13,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),23,Liquid/gas pipes,"6,35/9,52","6,35/9,52",MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),53,Max pressure,50,50,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+14,IMS-BS36NHQ(DC),27,Refrigerant,R410A,R410A,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),16,Cooling,4.5,4.5,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),17,Heating,5,5,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),18,Electric power,0.031,0.031,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),20,Airflow,800,800,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),21,Noise,30,30,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),35,Body size,900×198×450,900×198×450,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),37,Net weight,15.5,15.5,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),23,Liquid/gas pipes,"6,35/12,7","6,35/12,7",MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),53,Max pressure,50,50,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+15,IMS-BS45NHQ(DC),27,Refrigerant,R410A,R410A,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),16,Cooling,5.6,5.6,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),17,Heating,6.3,6.3,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),18,Electric power,0.031,0.031,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),20,Airflow,900,900,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),21,Noise,30,30,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),35,Body size,900×198×450,900×198×450,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),37,Net weight,15.5,15.5,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),23,Liquid/gas pipes,"6,35/12,7","6,35/12,7",MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),53,Max pressure,50,50,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+16,IMS-BS56NHQ(DC),27,Refrigerant,R410A,R410A,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),16,Cooling,7.1,7.1,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),17,Heating,8,8,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),18,Electric power,0.065,0.065,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),20,Airflow,1145,1145,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),21,Noise,36,36,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),35,Body size,1100×198×450,1100×198×450,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),37,Net weight,18.5,18.5,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),23,Liquid/gas pipes,"9,52/15,88","9,52/15,88",MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),53,Max pressure,50,50,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
+17,IMS-BS71NHQ(DC),27,Refrigerant,R410A,R410A,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,EXACT_MODEL_OEM_PDF_INDEXED_TEXT_VISUAL_PENDING
