@@ -1,0 +1,2 @@
+Row,SKU,Field,Stage45 value retained,Conflicting exact-source evidence,Source file,Web source,Status,Next action
+79,KTLV15HZBN1,Heating power kW,1.8,1.5,Сбор данных!F79,https://pro-komfort.com/product/vnutrenniy-kanalnyy-blok-multizonalnoy-vrf-sistemy-kentatsu-ktlv15hzbn1/,CONFLICT_OPEN,Retrieve exact Russian Kentatsu OEM technical table and check series/revision; do not overwrite 1.8
