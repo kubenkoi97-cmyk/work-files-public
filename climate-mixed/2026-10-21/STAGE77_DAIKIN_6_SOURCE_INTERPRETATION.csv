@@ -1,0 +1,7 @@
+Priority,Exact SKU range,Evidence,Unmodified URL,Verification tier,Decision
+1,FXKQ20A–FXKQ63A,VRV 2026 introduction: FXKA R32; FXKQ R410A,https://catalogues.daikin.eu/flipbooks/EN/Air_conditioning/ECPEN26-200/index.html,OFFICIAL HTML,Do not infer R32 for FXKQ
+2,FXKQ20A–FXKQ63A,VRV 2026 page 134 HTML text: R32 in block FXKQ,https://catalogues.daikin.eu/flipbooks/EN/Air_conditioning/ECPEN26-200/134/,OFFICIAL HTML TEXT NOT ORIGINAL VISUAL,May be editorial/layout/extraction anomaly
+3,FXKQ20A–FXKQ63A,General 2026 page 496: FXKQ R410A,https://catalogues.daikin.eu/flipbooks/EN/General_catalogue/07vrv/496/,OFFICIAL HTML,Independent current manufacturer R410A statement
+4,FXKQ20A–FXKQ63A,Full suffix FXKQxxAMVEB: R410A,https://www.daikin.eu/en_us/products/product.table.html/FXKQ-A.html,OTHER FULL SUFFIX,Do not conflate suffix
+5,FXKQ20A–FXKQ63A,Official Spain 2025 indexed PDF: short FXKQ codes R410A,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,PDF INDEX NO VISUAL,Market-specific context
+6,FXKQ20A–FXKQ63A,Some Russian exact short seller cards list R32,https://mircli.ru/Daikin-FXKQ32A/,EXACT RETAILER,Cannot overrule manufacturer without stock-specific original

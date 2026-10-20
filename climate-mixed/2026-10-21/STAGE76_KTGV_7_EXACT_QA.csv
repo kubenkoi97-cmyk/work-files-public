@@ -1,0 +1,8 @@
+Excel row,Exact SKU,Existing pipe pair,Existing maximum current A,Exact source URL,Quality observation,Verification status,Required next action
+45,KTGV18HZBN1,"6,35/9,52",,https://coolsochi.ru/product/kentatsu-ktgv18hzbn1/,Piping exactly confirmed; max current still blank,PARTIAL,Find exact factory electrical table
+46,KTGV24HZBN1,BLANK,,https://tdkomfort.ru/shop/product/vnutrenniy_blok_vrf_sistemy_kentatsu_ktgv24hzbn1/,Seller index only gas pipe 12.7mm; no paired liquid,OPEN,Find factory liquid+gas dimensional table
+47,KTGV30HZBN1,"6,35/12,7",0.36,https://kondiair.ru/product/kentatsu-%D0%B4%D1%8D%D0%B8%D0%BA%D1%81-%D0%BF%D1%80%D0%BE-%D0%B1%D1%8D%D0%B9%D1%81%D0%B8%D0%BA-dx-pro-basic-ktgv-ktgv30hzbn1/,Exact retailer current matches workbook,RETAIL_EXACT,Obtain OEM manual original
+48,KTGV40HZBN1,"6,35/12,7",0.39,https://kondiair.ru/product/kentatsu-%D0%B4%D1%8D%D0%B8%D0%BA%D1%81-%D0%BF%D1%80%D0%BE-%D0%B1%D1%8D%D0%B9%D1%81%D0%B8%D0%BA-dx-pro-basic-ktgv-ktgv40hzbn1/,Exact retailer current matches workbook,RETAIL_EXACT,Obtain OEM manual original
+49,KTGV50HZBN1,"6,35/12,7",0.41,https://kondiair.ru/product/kentatsu-%D0%B4%D1%8D%D0%B8%D0%BA%D1%81-%D0%BF%D1%80%D0%BE-%D0%B1%D1%8D%D0%B9%D1%81%D0%B8%D0%BA-dx-pro-basic-ktgv-ktgv50hzbn1/,Exact retailer current matches workbook,RETAIL_EXACT,Obtain OEM manual original
+50,KTGV60HZBN1,"6,35/12,7",,,No exact factory maximum operating current opened,OPEN,Find exact OEM amp rating
+51,KTGV72HZBN1,"9,52/15,9",,,No exact factory maximum operating current opened,OPEN,Find exact OEM amp rating
