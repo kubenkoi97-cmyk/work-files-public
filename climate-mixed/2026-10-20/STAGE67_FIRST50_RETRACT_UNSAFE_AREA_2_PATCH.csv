@@ -1,0 +1,3 @@
+Excel row,Exact SKU,Output column,Old value,New value,Rejected old source URL,Reason
+41,FXKQ50A,14,56,,https://mircli.ru/Daikin-FXCQ50A/,Source primary card is FXCQ50A not standalone exact FXKQ50A
+42,FXKQ63A,14,71,,https://mircli.ru/Daikin-FXCQ63A/,Source primary card is FXCQ63A not standalone exact FXKQ63A
