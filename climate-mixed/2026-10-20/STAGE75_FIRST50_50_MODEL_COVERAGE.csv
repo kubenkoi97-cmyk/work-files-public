@@ -1,0 +1,51 @@
+Excel row,Literal exact SKU from FILE,Brand,Filled of 77,Unfilled incl not-applicable,Certified import status,Open factual/revision risks
+2,IMS-K22NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+3,IMS-K28NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+4,IMS-K36NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+5,IMS-K45NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+6,IMS-K56NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+7,IMS-K71NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+8,IMS-BS22NH (DC),IGC,32,45,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+9,IMS-BS36NH(DC),IGC,32,45,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+10,IMS-BS45NH(DC),IGC,28,49,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+11,IMS-BS15NHQ(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+12,IMS-BS22NHQ(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+13,IMS-BS28NHQ(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+14,IMS-BS36NHQ(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+15,IMS-BS45NHQ(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+16,IMS-BS56NHQ(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+17,IMS-BS71NHQ(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+18,IMS-BH220NH(DC),IGC,32,45,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+19,IMS-BH280NH(DC),IGC,32,45,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+20,IMS-1T22NH (DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+21,IMS-1T28NH (DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+22,IMS-1T36NH(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+23,IMS-1T45NH(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+24,IMS-1T56NH(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+25,IMS-1T71NH(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+26,IMS-4T71NHQ(DC),IGC,33,44,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+27,IMS-QV28NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+28,IMS-QV36NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+29,IMS-QV45NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+30,IMS-QV56NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+31,IMS-QV71NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+32,IMS-QV90NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+33,IMS-QV125NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+34,IMS-QV140NH(DC),IGC,31,46,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+35,IMS-AHU220NH(DC),IGC,32,45,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+36,IMS-AHU280NH(DC),IGC,32,45,NOT_READY,IGC: exact (DC) gas and manufacturer edition; brand warranty provisional
+37,FXKQ20A,Daikin,33,44,NOT_READY,"Daikin: EU/Russian edition, R32/R410A, weight/input/dimensions"
+38,FXKQ25A,Daikin,33,44,NOT_READY,"Daikin: EU/Russian edition, R32/R410A, weight/input/dimensions"
+39,FXKQ32A,Daikin,33,44,NOT_READY,"Daikin: EU/Russian edition, R32/R410A, weight/input/dimensions"
+40,FXKQ40A,Daikin,33,44,NOT_READY,"Daikin: EU/Russian edition, R32/R410A, weight/input/dimensions"
+41,FXKQ50A,Daikin,32,45,NOT_READY,"Daikin: EU/Russian edition, R32/R410A, weight/input/dimensions"
+42,FXKQ63A,Daikin,32,45,NOT_READY,"Daikin: EU/Russian edition, R32/R410A, weight/input/dimensions"
+43,FXMQ200A,Daikin,33,44,NOT_READY,"Daikin: EU/Russian edition, R32/R410A, weight/input/dimensions"
+44,FXMQ250A,Daikin,33,44,NOT_READY,"Daikin: EU/Russian edition, R32/R410A, weight/input/dimensions"
+45,KTGV18HZBN1,Kentatsu,34,43,NOT_READY,Kentatsu: OEM edition; KTGV24 paired tubing; electrical/optional feature proof
+46,KTGV24HZBN1,Kentatsu,33,44,NOT_READY,Kentatsu: OEM edition; KTGV24 paired tubing; electrical/optional feature proof
+47,KTGV30HZBN1,Kentatsu,35,42,NOT_READY,Kentatsu: OEM edition; KTGV24 paired tubing; electrical/optional feature proof
+48,KTGV40HZBN1,Kentatsu,35,42,NOT_READY,Kentatsu: OEM edition; KTGV24 paired tubing; electrical/optional feature proof
+49,KTGV50HZBN1,Kentatsu,35,42,NOT_READY,Kentatsu: OEM edition; KTGV24 paired tubing; electrical/optional feature proof
+50,KTGV60HZBN1,Kentatsu,34,43,NOT_READY,Kentatsu: OEM edition; KTGV24 paired tubing; electrical/optional feature proof
+51,KTGV72HZBN1,Kentatsu,34,43,NOT_READY,Kentatsu: OEM edition; KTGV24 paired tubing; electrical/optional feature proof

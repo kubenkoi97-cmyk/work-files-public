@@ -1,0 +1,9 @@
+# MIXED Stage74 — first50 exact Kentatsu KTGV30Hzbn1 maximum operating current
+
+2026-10-20. **One real old-empty → value cell only**. Exact Excel row47 `KTGV30HZBN1`, col73 `Максимальный ток, А`: blank → **0.36 A**. Exact model full seller spec URL:
+https://kondiair.ru/product/kentatsu-%D0%B4%D1%8D%D0%B8%D0%BA%D1%81-%D0%BF%D1%80%D0%BE-%D0%B1%D1%8D%D0%B9%D1%81%D0%B8%D0%BA-dx-pro-basic-ktgv-ktgv30hzbn1/
+Search-indexed keyed technical properties of that exact SKU explicitly report maximum current `0;36` (seller's punctuation convention) = 0.36 A. The card also specifies refrigerant R410A, nominal capacity2.8/3.2kW, gas/liquid 12.7/6.35mm and producer-country China. Manufacturer original regional technical PDF visual confirmation still OPEN. Do not confuse this maximum operating current with fuse/circuit-breaker rating.
+**Critical self-correction**: vendor pages independently confirm country of manufacture China for exact KTGV18/30/40/50/60, but all SEVEN Kentatsu KTGV rows 45–51 **ALREADY HAD `Китай` in column42** in Stage73. Thus country was *not changed* and is not counted as new fill. No country inferred for any model.
+Actual latest Stage74 XLSX: `MIXED_356_77cols_STAGE74_FIRST50_KTGV30_EXACT_CURRENT_2026-10-20.xlsx`, **753315 B**, SHA256 `2636a8811a668f1dca60545b14303b68618a7c7b3841e43d9e77edcda37de4ff`, 39 sheets. Parent Stage73 752044 B; exported using artifact_tool, reopened; direct OOXML diff over 356×77 exactly ONE change (BU47), 0 previously nonblank changes, 0 changes to all excluded 306 products in rows52–357. Sources/Log append-only, QA74 single source row.
+Manufacturer-grade exact-suffix source for other four currently unfilled KTGV maximum-current entries 18/24/60/72 not found and thus not guessed.
+[Real one-field exact patch](STAGE74_KTGV30_MAX_CURRENT_PATCH.csv). Binary file exists in ChatGPT sandbox, **not on public GitHub**.
