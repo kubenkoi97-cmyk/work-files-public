@@ -1,0 +1,8 @@
+Excel row,Exact source SKU,Column,Property,Original FILE,Existing Excel,User-provided exact source cell,OEM source for DIFFERENT longer suffix,Status
+37,FXKQ20A,18,Cooling electric input kW,0.02,0.024,F37,https://www.daikin.eu/en_us/products/product.table.html/FXKQ-A.html,UNRESOLVED_CONFLICT_EXACT_OEM_MARKET_SUFFIX_REQUIRED
+37,FXKQ20A,27,Refrigerant,R32,R410A,F37,https://www.daikin.eu/en_us/products/product.table.html/FXKQ-A.html,UNRESOLVED_CONFLICT_EXACT_OEM_MARKET_SUFFIX_REQUIRED
+38,FXKQ25A,27,Refrigerant,R32,R410A,F38,https://www.daikin.eu/en_us/products/product.table.html/FXKQ-A.html,UNRESOLVED_CONFLICT_EXACT_OEM_MARKET_SUFFIX_REQUIRED
+43,FXMQ200A,18,Electrical consumption kW,0.62,0.54,F43,https://www.daikin.co.uk/en_gb/products/product.table.html/FXMQ-A.html,UNRESOLVED_CONFLICT_EXACT_OEM_MARKET_SUFFIX_REQUIRED
+44,FXMQ250A,18,Electrical consumption kW,0.72,0.65,F44,https://www.daikin.co.uk/en_gb/products/product.table.html/FXMQ-A.html,UNRESOLVED_CONFLICT_EXACT_OEM_MARKET_SUFFIX_REQUIRED
+43,FXMQ200A,35,W×H×D mm,1572×1143×470,1490×470×1100,F43,https://www.daikin.co.uk/en_gb/products/product.table.html/FXMQ-A.html,UNRESOLVED_CONFLICT_EXACT_OEM_MARKET_SUFFIX_REQUIRED
+44,FXMQ250A,35,W×H×D mm,1572×1143×470,1490×470×1100,F44,https://www.daikin.co.uk/en_gb/products/product.table.html/FXMQ-A.html,UNRESOLVED_CONFLICT_EXACT_OEM_MARKET_SUFFIX_REQUIRED
