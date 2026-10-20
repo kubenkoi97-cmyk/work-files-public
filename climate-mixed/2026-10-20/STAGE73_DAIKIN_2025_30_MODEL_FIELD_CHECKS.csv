@@ -1,0 +1,31 @@
+Excel row,Exact SKU,Column,Property,Excel,Official 2025,Match,Official PDF,Proof level
+37,FXKQ20A,18,"Номинальное потребление, кВт",0.024,0.024,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+37,FXKQ20A,37,"Масса корпуса без панели, кг",18,17,CONFLICT,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+37,FXKQ20A,35,"Размеры корпуса Ш×В×Г, мм",840×200×470,840×200×470,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+37,FXKQ20A,52,"Размеры панели Ш×Г×В, мм",950×550×80,950×550×80,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+37,FXKQ20A,27,Хладагент,R410A,R410A,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+38,FXKQ25A,18,"Номинальное потребление, кВт",0.024,0.024,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+38,FXKQ25A,37,"Масса корпуса без панели, кг",18,17,CONFLICT,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+38,FXKQ25A,35,"Размеры корпуса Ш×В×Г, мм",840×200×470,840×200×470,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+38,FXKQ25A,52,"Размеры панели Ш×Г×В, мм",950×550×80,950×550×80,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+38,FXKQ25A,27,Хладагент,R410A,R410A,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+39,FXKQ32A,18,"Номинальное потребление, кВт",0.033,0.033,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+39,FXKQ32A,37,"Масса корпуса без панели, кг",18,18,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+39,FXKQ32A,35,"Размеры корпуса Ш×В×Г, мм",840×200×470,840×200×470,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+39,FXKQ32A,52,"Размеры панели Ш×Г×В, мм",950×550×80,950×550×80,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+39,FXKQ32A,27,Хладагент,R410A,R410A,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+40,FXKQ40A,18,"Номинальное потребление, кВт",0.038,0.038,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+40,FXKQ40A,37,"Масса корпуса без панели, кг",23,23,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+40,FXKQ40A,35,"Размеры корпуса Ш×В×Г, мм",1240×200×470,1240×200×470,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+40,FXKQ40A,52,"Размеры панели Ш×Г×В, мм",1350×550×80,1350×550×80,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+40,FXKQ40A,27,Хладагент,R410A,R410A,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+41,FXKQ50A,18,"Номинальное потребление, кВт",0.055,0.055,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+41,FXKQ50A,37,"Масса корпуса без панели, кг",23,23,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+41,FXKQ50A,35,"Размеры корпуса Ш×В×Г, мм",1240×200×470,1240×200×470,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+41,FXKQ50A,52,"Размеры панели Ш×Г×В, мм",1350×550×80,1350×550×80,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+41,FXKQ50A,27,Хладагент,R410A,R410A,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+42,FXKQ63A,18,"Номинальное потребление, кВт",0.118,0.118,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+42,FXKQ63A,37,"Масса корпуса без панели, кг",23,23,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+42,FXKQ63A,35,"Размеры корпуса Ш×В×Г, мм",1240×200×470,1240×200×470,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+42,FXKQ63A,52,"Размеры панели Ш×Г×В, мм",1350×550×80,1350×550×80,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
+42,FXKQ63A,27,Хладагент,R410A,R410A,MATCH,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,OFFICIAL_DAIKIN_SPAIN_2025_EXACT_SHORT_SKU_PDF_INDEXED_NO_VISUAL
