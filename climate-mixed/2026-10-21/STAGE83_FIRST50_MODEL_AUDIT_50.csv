@@ -1,0 +1,51 @@
+Excel row,SKU,Brand,Filled,Blank incl N/A,Open core,Core issue classes,Import readiness,Open verification
+2,IMS-K22NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+3,IMS-K28NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+4,IMS-K36NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+5,IMS-K45NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+6,IMS-K56NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+7,IMS-K71NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+8,IMS-BS22NH (DC),IGC,32,45,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+9,IMS-BS36NH(DC),IGC,32,45,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+10,IMS-BS45NH(DC),IGC,28,49,5,"OPEN_BS45_CABINET_SIZE_ANOMALY,OPEN_EXACT_DC_REFRIGERANT",NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+11,IMS-BS15NHQ(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+12,IMS-BS22NHQ(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+13,IMS-BS28NHQ(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+14,IMS-BS36NHQ(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+15,IMS-BS45NHQ(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+16,IMS-BS56NHQ(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+17,IMS-BS71NHQ(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+18,IMS-BH220NH(DC),IGC,32,45,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+19,IMS-BH280NH(DC),IGC,32,45,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+20,IMS-1T22NH (DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+21,IMS-1T28NH (DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+22,IMS-1T36NH(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+23,IMS-1T45NH(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+24,IMS-1T56NH(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+25,IMS-1T71NH(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+26,IMS-4T71NHQ(DC),IGC,33,44,0,,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+27,IMS-QV28NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+28,IMS-QV36NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+29,IMS-QV45NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+30,IMS-QV56NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+31,IMS-QV71NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+32,IMS-QV90NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+33,IMS-QV125NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+34,IMS-QV140NH(DC),IGC,31,46,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+35,IMS-AHU220NH(DC),IGC,32,45,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+36,IMS-AHU280NH(DC),IGC,32,45,1,OPEN_EXACT_DC_REFRIGERANT,NOT_READY,IGC historical (DC) OEM refrigerant + version / warranty / applicable fields
+37,FXKQ20A,Daikin,33,44,1,OPEN_OEM_WARRANTY,NOT_READY,"Daikin FXKQ/FXMQ market and serial version, declared gas, mass, inputs and contract warranty"
+38,FXKQ25A,Daikin,33,44,1,OPEN_OEM_WARRANTY,NOT_READY,"Daikin FXKQ/FXMQ market and serial version, declared gas, mass, inputs and contract warranty"
+39,FXKQ32A,Daikin,33,44,1,OPEN_OEM_WARRANTY,NOT_READY,"Daikin FXKQ/FXMQ market and serial version, declared gas, mass, inputs and contract warranty"
+40,FXKQ40A,Daikin,33,44,1,OPEN_OEM_WARRANTY,NOT_READY,"Daikin FXKQ/FXMQ market and serial version, declared gas, mass, inputs and contract warranty"
+41,FXKQ50A,Daikin,32,45,1,OPEN_OEM_WARRANTY,NOT_READY,"Daikin FXKQ/FXMQ market and serial version, declared gas, mass, inputs and contract warranty"
+42,FXKQ63A,Daikin,32,45,1,OPEN_OEM_WARRANTY,NOT_READY,"Daikin FXKQ/FXMQ market and serial version, declared gas, mass, inputs and contract warranty"
+43,FXMQ200A,Daikin,33,44,1,OPEN_OEM_WARRANTY,NOT_READY,"Daikin FXKQ/FXMQ market and serial version, declared gas, mass, inputs and contract warranty"
+44,FXMQ250A,Daikin,33,44,1,OPEN_OEM_WARRANTY,NOT_READY,"Daikin FXKQ/FXMQ market and serial version, declared gas, mass, inputs and contract warranty"
+45,KTGV18HZBN1,Kentatsu,35,42,1,OPEN_OEM_WARRANTY,NOT_READY,"Kentatsu manufacturer warranty, OEM exact-model currents and optional fields"
+46,KTGV24HZBN1,Kentatsu,34,43,1,OPEN_OEM_WARRANTY,NOT_READY,"Kentatsu manufacturer warranty, OEM exact-model currents and optional fields"
+47,KTGV30HZBN1,Kentatsu,35,42,1,OPEN_OEM_WARRANTY,NOT_READY,"Kentatsu manufacturer warranty, OEM exact-model currents and optional fields"
+48,KTGV40HZBN1,Kentatsu,35,42,1,OPEN_OEM_WARRANTY,NOT_READY,"Kentatsu manufacturer warranty, OEM exact-model currents and optional fields"
+49,KTGV50HZBN1,Kentatsu,35,42,1,OPEN_OEM_WARRANTY,NOT_READY,"Kentatsu manufacturer warranty, OEM exact-model currents and optional fields"
+50,KTGV60HZBN1,Kentatsu,34,43,1,OPEN_OEM_WARRANTY,NOT_READY,"Kentatsu manufacturer warranty, OEM exact-model currents and optional fields"
+51,KTGV72HZBN1,Kentatsu,35,42,1,OPEN_OEM_WARRANTY,NOT_READY,"Kentatsu manufacturer warranty, OEM exact-model currents and optional fields"
