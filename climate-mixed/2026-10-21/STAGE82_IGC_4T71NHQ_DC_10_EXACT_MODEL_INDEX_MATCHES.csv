@@ -1,0 +1,11 @@
+Excel row,Exact SKU,Cell,Field,Excel,OEM table indexed,Match,Source URL,Tier
+26,IMS-4T71NHQ(DC),P26,Охлаждение кВт,7.1,7.1,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
+26,IMS-4T71NHQ(DC),Q26,Обогрев кВт,8.5,8.5,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
+26,IMS-4T71NHQ(DC),R26,Потребление кВт,0.04,0.04,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
+26,IMS-4T71NHQ(DC),T26,Расход воздуха H м3/час,1150,1150,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
+26,IMS-4T71NHQ(DC),U26,Шум H дБА,40,40,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
+26,IMS-4T71NHQ(DC),W26,Трубы жидкость/газ мм,"9,52/15,88","9,52/15,88",MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
+26,IMS-4T71NHQ(DC),AA26,Хладагент,R410A,R410A,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
+26,IMS-4T71NHQ(DC),AI26,Габариты ШВГ мм,840×205×840,840×205×840,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
+26,IMS-4T71NHQ(DC),AK26,Вес нетто кг,19,19,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
+26,IMS-4T71NHQ(DC),AZ26,"Панель, отдельная принадлежность",950×950×53,950×950×53,MATCH,https://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf,MANUFACTURER_EXACT_INDEXED_NO_PAGE_VISUAL
