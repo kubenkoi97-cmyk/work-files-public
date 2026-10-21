@@ -1,0 +1,41 @@
+Excel row,Exact SKU,Column,Verified blank status,Next required proof
+2,IMS-K22NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+3,IMS-K28NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+4,IMS-K36NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+5,IMS-K45NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+6,IMS-K56NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+7,IMS-K71NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+8,IMS-BS22NH (DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+9,IMS-BS36NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+10,IMS-BS45NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+18,IMS-BH220NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+19,IMS-BH280NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+27,IMS-QV28NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+28,IMS-QV36NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+29,IMS-QV45NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+30,IMS-QV56NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+31,IMS-QV71NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+32,IMS-QV90NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+33,IMS-QV125NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+34,IMS-QV140NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+35,IMS-AHU220NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+36,IMS-AHU280NH(DC),27,OPEN_EXACT_DC_REFRIGERANT,Exact old DC manufacturer/revision refrigerant proof required
+10,IMS-BS45NH(DC),29,OPEN_BS45_CABINET_SIZE_ANOMALY,Manufacturer's bare body size contradicts shipping dimensions; independent original drawing required
+10,IMS-BS45NH(DC),30,OPEN_BS45_CABINET_SIZE_ANOMALY,Manufacturer's bare body size contradicts shipping dimensions; independent original drawing required
+10,IMS-BS45NH(DC),31,OPEN_BS45_CABINET_SIZE_ANOMALY,Manufacturer's bare body size contradicts shipping dimensions; independent original drawing required
+10,IMS-BS45NH(DC),35,OPEN_BS45_CABINET_SIZE_ANOMALY,Manufacturer's bare body size contradicts shipping dimensions; independent original drawing required
+37,FXKQ20A,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+38,FXKQ25A,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+39,FXKQ32A,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+40,FXKQ40A,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+41,FXKQ50A,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+42,FXKQ63A,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+43,FXMQ200A,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+44,FXMQ250A,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+45,KTGV18HZBN1,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+46,KTGV24HZBN1,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+47,KTGV30HZBN1,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+48,KTGV40HZBN1,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+49,KTGV50HZBN1,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+50,KTGV60HZBN1,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
+51,KTGV72HZBN1,41,OPEN_OEM_WARRANTY,Daichi importer 36-month contract requires agreement and verified startup; no-contract up to 12; SKU supply context unavailable
