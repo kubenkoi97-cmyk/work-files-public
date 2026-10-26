@@ -1,0 +1,8 @@
+Excel row,Exact SKU,Existing Stage99 marketing area m2,Exact retailer observed marketing area m2,Status,Source,Decision
+45,KTGV18HZBN1,15,15,MATCH,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-nastennye-bloki/?limit=75,NO_CHANGE
+46,KTGV24HZBN1,22,22,MATCH,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-nastennye-bloki/?limit=75,NO_CHANGE
+47,KTGV30HZBN1,28,28,MATCH,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-nastennye-bloki/?limit=75,NO_CHANGE
+48,KTGV40HZBN1,36,36,MATCH,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-nastennye-bloki/?limit=75,NO_CHANGE
+49,KTGV50HZBN1,45,45,MATCH,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-nastennye-bloki/?limit=75,NO_CHANGE
+50,KTGV60HZBN1,55,55 OR 56,SELLER_CONFLICT_OPEN,https://coolsochi.ru/product/kentatsu-ktgv60hzbn1/ ; https://mircli.ru/nastennye-bloki-vrf/5-5-9-kvt/Kentatsu/,PRESERVE_55_POTENTIAL_CONFLICT
+51,KTGV72HZBN1,71,71,MATCH,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-nastennye-bloki/?limit=75,NO_CHANGE
