@@ -1,0 +1,5 @@
+# MIXED current source of truth — Stage91 (2026-10-26)
+
+Latest COMPLETE workbook **MIXED_356_77cols_STAGE91_FIRST50_IGC_DC_OEM_4_AREAS_11_DOCS_2026-10-26.xlsx**, **802105 bytes**, SHA256 **`16e71acb4889ab8c75f6acf9541642393b86c6334f017452696dd7ff70ed1a90`**, 60 sheets. This binary resides in ChatGPT conversation, **not GitHub**. Parent Stage90 sha `ee476daee694713e44320a24a7c7bd2679649967814715525878af4a1c30d176`.
+
+Actual 15 product cell changes: 4 new retailer-model-literal areas (QV28=28/QV36=36/QV45=45/QV71=71), 11 factory exact visibly readable PDF table links (8 QV, 3 BS). Additional 101 old OEM-model fields compared without value changes, all match. 356×77 regression 15 expected, 0 differences rows52–357 and all original source/history sheet values unchanged. Physical first50 fill 1631, 40 historic CORE still unresolved. Not certified ready (0/50). **Resume Stage91, not Stage83 or Stage90.** Prioritize measurable new fields and old DC refrigerant through matching serial/production factory manuals; preserve edits and QA. Github sources are text ledger only; do not misstate binary availability.

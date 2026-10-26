@@ -1,0 +1,6 @@
+Blocker,Count,Scope,Status,Decisive evidence
+Exact historic old DC refrigerant,21,IGC (DC),OPEN,Factory matching generation and outdoor-system refrigerant
+Contractual warranties,15,Daikin and Kentatsu,OPEN,Applicable supply agreement with commissioning act
+BS45 disputed body dimensions,4,IMS-BS45NH(DC),OPEN,Independent exact old DC dimensional drawing
+Daikin regional code and value conflicts,8,FXKQ/FXMQ,OPEN,Factory region production ID/label before changing fields
+Other source and N/A checks,Conditional,50 original SKUs,OPEN,Visual own-SKU manufacturer's manuals and contract/source
