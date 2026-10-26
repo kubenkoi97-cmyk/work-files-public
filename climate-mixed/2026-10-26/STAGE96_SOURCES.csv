@@ -1,0 +1,4 @@
+Excel row,Exact SKU,Field,Source URL,Evidence
+42,FXKQ63A,Area 71 m²,https://mircli.ru/Daikin-FXKQ63A/,EXACT_OWN_SKU_RETAIL_SINGLE
+42,FXKQ63A,Existing cooling/heating/air/noise,https://mircli.ru/Daikin-FXKQ63A/,RETAIL_SINGLE_MATCH_EXISTING
+42,FXKQ63A,Consumption/refrigerant/warranty conflicts,https://mircli.ru/Daikin-FXKQ63A/,DO_NOT_COPY_WITHOUT_PRODUCTION_EDITION_AND_CONTRACT
