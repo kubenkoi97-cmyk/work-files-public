@@ -1,0 +1,5 @@
+Model,Field,Concern,Status,Needed evidence
+IMS-QV56NH(DC),27,"Dealer R410A is not historic factory production proof",OPEN_OLD_DC_VERSION,Exact OEM factory historic DC reference and system pairing
+IMS-QV56NH(DC),41,"Dealer 3 years versus prefilled 12 months in Stage83",OPEN_WARRANTY_SCOPE,Historic manufacturer/contractual scope
+IMS-BS45NH(DC),29/30/31/35,"Old DC cabinet/package dimensions conflict",OPEN,Exact historical independent engineering drawing
+Daikin FXMQ200A/FXMQ250A,18/29-37,FILE original vs output other regional edition conflicts,OPEN,Exact original OEM code year and drawing
