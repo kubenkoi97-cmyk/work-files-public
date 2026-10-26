@@ -1,0 +1,61 @@
+Excel row,SKU,Column,Meaning,Result,PDF,Printed page
+2,IMS-K22NH(DC),16,cooling kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+2,IMS-K22NH(DC),17,heating kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+2,IMS-K22NH(DC),18,nominal electrical kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+2,IMS-K22NH(DC),20,airflow m3h,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+2,IMS-K22NH(DC),21,sound dBA,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+2,IMS-K22NH(DC),29,body width mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+2,IMS-K22NH(DC),30,body height mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+2,IMS-K22NH(DC),31,body depth mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+2,IMS-K22NH(DC),37,net kg,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+2,IMS-K22NH(DC),23,liquid gas pipe mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),16,cooling kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),17,heating kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),18,nominal electrical kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),20,airflow m3h,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),21,sound dBA,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),29,body width mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),30,body height mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),31,body depth mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),37,net kg,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+3,IMS-K28NH(DC),23,liquid gas pipe mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),16,cooling kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),17,heating kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),18,nominal electrical kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),20,airflow m3h,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),21,sound dBA,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),29,body width mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),30,body height mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),31,body depth mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),37,net kg,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+4,IMS-K36NH(DC),23,liquid gas pipe mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),16,cooling kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),17,heating kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),18,nominal electrical kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),20,airflow m3h,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),21,sound dBA,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),29,body width mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),30,body height mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),31,body depth mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),37,net kg,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+5,IMS-K45NH(DC),23,liquid gas pipe mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),16,cooling kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),17,heating kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),18,nominal electrical kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),20,airflow m3h,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),21,sound dBA,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),29,body width mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),30,body height mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),31,body depth mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),37,net kg,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+6,IMS-K56NH(DC),23,liquid gas pipe mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),16,cooling kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),17,heating kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),18,nominal electrical kW,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),20,airflow m3h,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),21,sound dBA,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),29,body width mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),30,body height mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),31,body depth mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),37,net kg,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40
+7,IMS-K71NH(DC),23,liquid gas pipe mm,MATCH_EXISTING_OEM_EXACT_VISUAL,https://onokom.ru/dok/igc/2024/catalog/2024-catalog-ims-wall-dc.pdf,40

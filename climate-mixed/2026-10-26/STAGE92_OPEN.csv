@@ -1,0 +1,6 @@
+Class,Count,Status,Next action
+Historic exact IGC DC refrigerant,21,OPEN,Find exact system-generation factory refrigerant matched to outdoor units
+Contract-dependent Daichi warranty,15,OPEN,Contract and accepted commission/startup documents
+IGC BS45 old DC dimensions,4,OPEN,Independent old exact edition cabinet drawing
+Daikin regional source contradictions,8,OPEN,Factory production code and applicable date/region
+Other conditional / unverified,NOT FULLY ENUMERATED,OPEN,Manufacturer-only field certification and commercial originals
