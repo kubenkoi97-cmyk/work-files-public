@@ -1,0 +1,11 @@
+# MIXED canonical checkpoint Stage99 (2026-10-26)
+
+**Latest full XLSX** MIXED_356_77cols_STAGE99_FIRST50_900_APPLICABILITY_CLOSED_2026-10-26.xlsx — **821594 bytes**, SHA256 **002163d4294cb1829964ca511a58edb118dc6d392a550b4eb3f464b50c1e899e**, 70 sheets. Genuine XLSX in ChatGPT, **not posted to GitHub as binary**.
+
+Parent verified Stage98: MIXED_356_77cols_STAGE98_FIRST50_EVIDENCE_RELEASE_GATE_2026-10-26.xlsx 819326 bytes SHA256 4eeaa175ddfe9b77d21ae8ae38f944c0e4187f1918c199f3674ce7525895e0c8 (69 sheets); parent Stage97 816004 bytes SHA256 3824cdcc6cfa0fd8167d2c5c0f776634c68dd223ad21769d44e82549ab12bd77 (68 sheets).
+
+Stage98 mapped 50 SKU ×77 = 3850 exact original source-to-target field QA rows and 50 release-gate model decisions (sidecar CSVs in ChatGPT); documented existing conflicts without changing technical numbers. Stage99 proved that 50 individual SKU source titles in 'Сбор данных!B2:B51' specify internal VRF/VRV units, classified 18 separate outdoor-unit/hydraulic-only target columns each as not-applicable: 50×18 = **900 N/A decisions**. See indexed 900-row exact-SKU GitHub CSV STAGE99_FIRST50_NA_900_EXACT_SKU_INDEX.csv. This is based on **exact source unit type**, NOT 900 separately opened factory PDF pages. No dummy zeros; source product target values remain blank. Column77 (50 instances) remains OPEN_HEAT_OUTPUT_SEMANTICS and is not certified N/A.
+
+Independent full OOXML re-read diff Stage97→Stage98 and Stage97→Stage99: **zero original product cell changes in 356×77**, **zero modifications of other306 rows 52–357**; original 68 source/history worksheets fully preserved, plus QA98 and QA99. Physical fill first50 stays **1636/3850**, not an engineering completeness percentage. Historical critical 40 source gaps (21 old IGC DC refrigerants, 15 contract warranties, 4 BS45 dimensions) remain; plus six old IGC K WHD axis, Daikin regional FXKQ/FMOQ conflicts and incomplete own-SKU OEM QA. **READY_FOR_IMPORT 0/50**, **TECH_READY_COMMERCIAL_BLOCKED 0/50**.
+
+Resume from Stage99 complete workbook, do not revert to Stage97/83. Prioritize decisive exact OEM edition/serial documents, real model-specific applicable missing field values; do not edit other 306. GitHub text and index are not binary workbook.
