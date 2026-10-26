@@ -1,0 +1,6 @@
+Stage,Rows / SKU,Exact URL,Meaning,Evidence
+89,43 FXMQ200A,https://www.daikin.it/content/dam/MDM/TechnicalDrawings/VRV/FXMQ-A/EN/FXMQ200A_dim_3D143508_EN.pdf,Body size + gas/liquid pipe + installation clearances,DAIKIN_OEM_VISUALLY_READ_P1
+89,44 FXMQ250A,https://www.daikin.it/content/dam/MDM/TechnicalDrawings/VRV/FXMQ-A/EN/FXMQ250A_dim_3D143509_EN.pdf,Body size + gas/liquid pipe + installation clearances,DAIKIN_OEM_VISUALLY_READ_P1
+89,37-42 FXKQ-A European reference,https://www.daikin.eu/en_us/products/product.table.html/FXKQ-A.html,Shows full European AMVEB SKU and masses/power that DIFFER from earlier regional short-coded Excel,OEM_EXACT_EDITION_CONFLICT_DO_NOT_COPY
+89,37-42 FXKQ-A Austria 2025,https://www.daikin.at/content/dam/DACE-AT/document-library/catalogues/ac/vrv/Daikin_Katalog_VRV_2025.pdf,2025 SHORT FXKQ-A market table existing lower input and masses,OEM_INDEX_ONLY_OR_REGION_QA_PENDING
+88-90,2-51 source FILE,Сбор данных!E2:F51,Each model exact original description and characteristic fields,INTERNAL_FILE_EXACT_SKU

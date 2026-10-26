@@ -1,0 +1,8 @@
+# MIXED Stage89 — Daikin 8 + Kentatsu 7, 2026-10-26
+Full validated XLSX: `MIXED_356_77cols_STAGE89_FIRST50_DAIKIN8_KENTATSU7_HTML_OEM_DRAWINGS_2026-10-26.xlsx` — **799094 bytes**, SHA256 **`eb22992e5b450e88f8f255a551b0a18a859dfee124f642da0a86d95d916afe21`**, **58 sheets**. Parent Stage88 SHA256 `34dfe132e015625babc8dce75571114fe43c9048697fee13867a56852fbca921`.
+Exactly **17 product-cell changes**: 15 model-specific col46 HTML descriptions, all 8 Daikin rows37-44 and all 7 Kentatsu rows45-51, plus two OEM exact manufacturer drawing URLs in col43 FXMQ200A row43 and FXMQ250A row44. Full XLSX is downloadable in ChatGPT, **binary NOT on GitHub**.
+Both manufacturer original PDF drawings were visually inspected at sheet page1:
+- https://www.daikin.it/content/dam/MDM/TechnicalDrawings/VRV/FXMQ-A/EN/FXMQ200A_dim_3D143508_EN.pdf — body W1490 H470 D1100 mm, refrigerant liquid Ø9.5 gas Ø19.1.
+- https://www.daikin.it/content/dam/MDM/TechnicalDrawings/VRV/FXMQ-A/EN/FXMQ250A_dim_3D143509_EN.pdf — body W1490 H470 D1100 mm, refrigerant liquid Ø9.5 gas Ø22.2.
+**1572 mm is hanger span, 1143 mm service clearance; neither is body size.** Both existing Excel body dimensions and refrigerant pipe pairs agree. Drain 1-inch BSP is condensate, NOT hydronic. OEM original supports **only drawing-specific geometry**; electrical input, masses and regional edition remain unresolved.
+**Post-export independent 356×77 comparison** exactly 17 expected edits; other 306 rows52–357 entirely unchanged, all 57 earlier sheets retained plus new QA89. No new technical numeric fields. 40 historic CORE still open; 0/50 import ready.

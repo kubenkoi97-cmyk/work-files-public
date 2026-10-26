@@ -1,0 +1,18 @@
+Excel row,Exact SKU,Column,Change,Trace,Trust
+37,"FXKQ20A",46,Website HTML rewritten,"Сбор данных!E37:F37; existing Stage88 model values",OWN_SKU_SOURCE
+38,"FXKQ25A",46,Website HTML rewritten,"Сбор данных!E38:F38; existing Stage88 model values",OWN_SKU_SOURCE
+39,"FXKQ32A",46,Website HTML rewritten,"Сбор данных!E39:F39; existing Stage88 model values",OWN_SKU_SOURCE
+40,"FXKQ40A",46,Website HTML rewritten,"Сбор данных!E40:F40; existing Stage88 model values",OWN_SKU_SOURCE
+41,"FXKQ50A",46,Website HTML rewritten,"Сбор данных!E41:F41; existing Stage88 model values",OWN_SKU_SOURCE
+42,"FXKQ63A",46,Website HTML rewritten,"Сбор данных!E42:F42; existing Stage88 model values",OWN_SKU_SOURCE
+43,"FXMQ200A",46,Website HTML rewritten,"Сбор данных!E43:F43; existing Stage88 model values",OWN_SKU_SOURCE
+44,"FXMQ250A",46,Website HTML rewritten,"Сбор данных!E44:F44; existing Stage88 model values",OWN_SKU_SOURCE
+45,"KTGV18HZBN1",46,Website HTML rewritten,"Сбор данных!E45:F45; existing Stage88 model values",OWN_SKU_SOURCE
+46,"KTGV24HZBN1",46,Website HTML rewritten,"Сбор данных!E46:F46; existing Stage88 model values",OWN_SKU_SOURCE
+47,"KTGV30HZBN1",46,Website HTML rewritten,"Сбор данных!E47:F47; existing Stage88 model values",OWN_SKU_SOURCE
+48,"KTGV40HZBN1",46,Website HTML rewritten,"Сбор данных!E48:F48; existing Stage88 model values",OWN_SKU_SOURCE
+49,"KTGV50HZBN1",46,Website HTML rewritten,"Сбор данных!E49:F49; existing Stage88 model values",OWN_SKU_SOURCE
+50,"KTGV60HZBN1",46,Website HTML rewritten,"Сбор данных!E50:F50; existing Stage88 model values",OWN_SKU_SOURCE
+51,"KTGV72HZBN1",46,Website HTML rewritten,"Сбор данных!E51:F51; existing Stage88 model values",OWN_SKU_SOURCE
+43,FXMQ200A,43,Added exact Daikin dimensional drawing,https://www.daikin.it/content/dam/MDM/TechnicalDrawings/VRV/FXMQ-A/EN/FXMQ200A_dim_3D143508_EN.pdf,OEM_EXACT_PDF_VISUAL
+44,FXMQ250A,43,Added exact Daikin dimensional drawing,https://www.daikin.it/content/dam/MDM/TechnicalDrawings/VRV/FXMQ-A/EN/FXMQ250A_dim_3D143509_EN.pdf,OEM_EXACT_PDF_VISUAL
