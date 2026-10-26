@@ -1,0 +1,36 @@
+Stage,Excel row,Exact SKU,Column,Field,Original source,Change,Source confidence
+88,2,"IMS-K22NH(DC)",46,"Детальное описание","Сбор данных!E2:F2","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,3,"IMS-K28NH(DC)",46,"Детальное описание","Сбор данных!E3:F3","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,4,"IMS-K36NH(DC)",46,"Детальное описание","Сбор данных!E4:F4","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,5,"IMS-K45NH(DC)",46,"Детальное описание","Сбор данных!E5:F5","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,6,"IMS-K56NH(DC)",46,"Детальное описание","Сбор данных!E6:F6","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,7,"IMS-K71NH(DC)",46,"Детальное описание","Сбор данных!E7:F7","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,8,"IMS-BS22NH (DC)",46,"Детальное описание","Сбор данных!E8:F8","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,9,"IMS-BS36NH(DC)",46,"Детальное описание","Сбор данных!E9:F9","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,10,"IMS-BS45NH(DC)",46,"Детальное описание","Сбор данных!E10:F10","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,11,"IMS-BS15NHQ(DC)",46,"Детальное описание","Сбор данных!E11:F11","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,12,"IMS-BS22NHQ(DC)",46,"Детальное описание","Сбор данных!E12:F12","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,13,"IMS-BS28NHQ(DC)",46,"Детальное описание","Сбор данных!E13:F13","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,14,"IMS-BS36NHQ(DC)",46,"Детальное описание","Сбор данных!E14:F14","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,15,"IMS-BS45NHQ(DC)",46,"Детальное описание","Сбор данных!E15:F15","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,16,"IMS-BS56NHQ(DC)",46,"Детальное описание","Сбор данных!E16:F16","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,17,"IMS-BS71NHQ(DC)",46,"Детальное описание","Сбор данных!E17:F17","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,18,"IMS-BH220NH(DC)",46,"Детальное описание","Сбор данных!E18:F18","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,19,"IMS-BH280NH(DC)",46,"Детальное описание","Сбор данных!E19:F19","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,20,"IMS-1T22NH (DC)",46,"Детальное описание","Сбор данных!E20:F20","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,21,"IMS-1T28NH (DC)",46,"Детальное описание","Сбор данных!E21:F21","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,22,"IMS-1T36NH(DC)",46,"Детальное описание","Сбор данных!E22:F22","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,23,"IMS-1T45NH(DC)",46,"Детальное описание","Сбор данных!E23:F23","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,24,"IMS-1T56NH(DC)",46,"Детальное описание","Сбор данных!E24:F24","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,25,"IMS-1T71NH(DC)",46,"Детальное описание","Сбор данных!E25:F25","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,26,"IMS-4T71NHQ(DC)",46,"Детальное описание","Сбор данных!E26:F26","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,27,"IMS-QV28NH(DC)",46,"Детальное описание","Сбор данных!E27:F27","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,28,"IMS-QV36NH(DC)",46,"Детальное описание","Сбор данных!E28:F28","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,29,"IMS-QV45NH(DC)",46,"Детальное описание","Сбор данных!E29:F29","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,30,"IMS-QV56NH(DC)",46,"Детальное описание","Сбор данных!E30:F30","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,31,"IMS-QV71NH(DC)",46,"Детальное описание","Сбор данных!E31:F31","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,32,"IMS-QV90NH(DC)",46,"Детальное описание","Сбор данных!E32:F32","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,33,"IMS-QV125NH(DC)",46,"Детальное описание","Сбор данных!E33:F33","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,34,"IMS-QV140NH(DC)",46,"Детальное описание","Сбор данных!E34:F34","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,35,"IMS-AHU220NH(DC)",46,"Детальное описание","Сбор данных!E35:F35","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING
+88,36,"IMS-AHU280NH(DC)",46,"Детальное описание","Сбор данных!E36:F36","Rewrite HTML with own SKU cooling/heating/airflow/electrical/installation; remove unsupported extras",FILE_EXACT_EXISTING

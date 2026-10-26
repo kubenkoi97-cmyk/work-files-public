@@ -1,0 +1,36 @@
+Stage,Excel row,SKU,Original source cell,Source URL anchor,Status
+88,2,"IMS-K22NH(DC)","Сбор данных!E2:F2","source row URL held in Сбор данных!G2",FILE_OWN_SKU
+88,3,"IMS-K28NH(DC)","Сбор данных!E3:F3","source row URL held in Сбор данных!G3",FILE_OWN_SKU
+88,4,"IMS-K36NH(DC)","Сбор данных!E4:F4","source row URL held in Сбор данных!G4",FILE_OWN_SKU
+88,5,"IMS-K45NH(DC)","Сбор данных!E5:F5","source row URL held in Сбор данных!G5",FILE_OWN_SKU
+88,6,"IMS-K56NH(DC)","Сбор данных!E6:F6","source row URL held in Сбор данных!G6",FILE_OWN_SKU
+88,7,"IMS-K71NH(DC)","Сбор данных!E7:F7","source row URL held in Сбор данных!G7",FILE_OWN_SKU
+88,8,"IMS-BS22NH (DC)","Сбор данных!E8:F8","source row URL held in Сбор данных!G8",FILE_OWN_SKU
+88,9,"IMS-BS36NH(DC)","Сбор данных!E9:F9","source row URL held in Сбор данных!G9",FILE_OWN_SKU
+88,10,"IMS-BS45NH(DC)","Сбор данных!E10:F10","source row URL held in Сбор данных!G10",FILE_OWN_SKU
+88,11,"IMS-BS15NHQ(DC)","Сбор данных!E11:F11","source row URL held in Сбор данных!G11",FILE_OWN_SKU
+88,12,"IMS-BS22NHQ(DC)","Сбор данных!E12:F12","source row URL held in Сбор данных!G12",FILE_OWN_SKU
+88,13,"IMS-BS28NHQ(DC)","Сбор данных!E13:F13","source row URL held in Сбор данных!G13",FILE_OWN_SKU
+88,14,"IMS-BS36NHQ(DC)","Сбор данных!E14:F14","source row URL held in Сбор данных!G14",FILE_OWN_SKU
+88,15,"IMS-BS45NHQ(DC)","Сбор данных!E15:F15","source row URL held in Сбор данных!G15",FILE_OWN_SKU
+88,16,"IMS-BS56NHQ(DC)","Сбор данных!E16:F16","source row URL held in Сбор данных!G16",FILE_OWN_SKU
+88,17,"IMS-BS71NHQ(DC)","Сбор данных!E17:F17","source row URL held in Сбор данных!G17",FILE_OWN_SKU
+88,18,"IMS-BH220NH(DC)","Сбор данных!E18:F18","source row URL held in Сбор данных!G18",FILE_OWN_SKU
+88,19,"IMS-BH280NH(DC)","Сбор данных!E19:F19","source row URL held in Сбор данных!G19",FILE_OWN_SKU
+88,20,"IMS-1T22NH (DC)","Сбор данных!E20:F20","source row URL held in Сбор данных!G20",FILE_OWN_SKU
+88,21,"IMS-1T28NH (DC)","Сбор данных!E21:F21","source row URL held in Сбор данных!G21",FILE_OWN_SKU
+88,22,"IMS-1T36NH(DC)","Сбор данных!E22:F22","source row URL held in Сбор данных!G22",FILE_OWN_SKU
+88,23,"IMS-1T45NH(DC)","Сбор данных!E23:F23","source row URL held in Сбор данных!G23",FILE_OWN_SKU
+88,24,"IMS-1T56NH(DC)","Сбор данных!E24:F24","source row URL held in Сбор данных!G24",FILE_OWN_SKU
+88,25,"IMS-1T71NH(DC)","Сбор данных!E25:F25","source row URL held in Сбор данных!G25",FILE_OWN_SKU
+88,26,"IMS-4T71NHQ(DC)","Сбор данных!E26:F26","source row URL held in Сбор данных!G26",FILE_OWN_SKU
+88,27,"IMS-QV28NH(DC)","Сбор данных!E27:F27","source row URL held in Сбор данных!G27",FILE_OWN_SKU
+88,28,"IMS-QV36NH(DC)","Сбор данных!E28:F28","source row URL held in Сбор данных!G28",FILE_OWN_SKU
+88,29,"IMS-QV45NH(DC)","Сбор данных!E29:F29","source row URL held in Сбор данных!G29",FILE_OWN_SKU
+88,30,"IMS-QV56NH(DC)","Сбор данных!E30:F30","source row URL held in Сбор данных!G30",FILE_OWN_SKU
+88,31,"IMS-QV71NH(DC)","Сбор данных!E31:F31","source row URL held in Сбор данных!G31",FILE_OWN_SKU
+88,32,"IMS-QV90NH(DC)","Сбор данных!E32:F32","source row URL held in Сбор данных!G32",FILE_OWN_SKU
+88,33,"IMS-QV125NH(DC)","Сбор данных!E33:F33","source row URL held in Сбор данных!G33",FILE_OWN_SKU
+88,34,"IMS-QV140NH(DC)","Сбор данных!E34:F34","source row URL held in Сбор данных!G34",FILE_OWN_SKU
+88,35,"IMS-AHU220NH(DC)","Сбор данных!E35:F35","source row URL held in Сбор данных!G35",FILE_OWN_SKU
+88,36,"IMS-AHU280NH(DC)","Сбор данных!E36:F36","source row URL held in Сбор данных!G36",FILE_OWN_SKU
