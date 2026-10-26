@@ -1,0 +1,5 @@
+Issue,Count,Scope,State,Next action
+Historical core total,40,First50,OPEN,"21 IGC exact DC refrigerants; 15 contract-dependent warranties; 4 BS45 size cells"
+IGC dealer warranty semantics,35 IGC values need verification,First50,OPEN,"Old 12 months data vs 3-years IGC dealer card for QV125/QV140"
+Factory visual for new area values,2,IMS-QV125NH(DC);IMS-QV140NH(DC),NOT_REQUIRED_FOR_MARKETING_AREA,"Exact dealer SKU page supports approximate shop area field, not heat load"
+Full per-field OEM QA,First50 × 77,All 50,IN_PROGRESS,"Continue extraction and verification of exact source data and 77-column applicability"

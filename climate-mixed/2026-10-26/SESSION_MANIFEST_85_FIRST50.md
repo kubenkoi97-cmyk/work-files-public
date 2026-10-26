@@ -1,0 +1,5 @@
+# Current MIXED first50 validated full workbook Stage85 (2026-10-26)
+
+**Current authoritative full binary:** `MIXED_356_77cols_STAGE85_FIRST50_IGC_QV125_QV140_EXACT_AREAS_2026-10-26.xlsx`, 791174 bytes SHA256 `4bbb2964fffdcf55aaea7c1b3fe6fb08926867d6228e03548d6fd1043706203a`, 54 sheets. Original Stage83 SHA `45c096e1fae41833e8f5bdeac66b5380999ece248b1a4a462d23cff0673dbff0`. Stage84 sha `68db42147ce5ccf5e529eef89bfb4d1625a4147b05fd07def88d73724235a07d`.
+
+Four independent exact-first50 new values since Stage83: row46 KTGV24 max current 0.29A; row50 KTGV60 max current 0.51A (Stage84, retailer dual exact), row33 IGC IMS-QV125NH(DC) rec. area 125m², row34 IGC IMS-QV140NH(DC) rec. area 140m² (Stage85 exact official Russian dealer). Core 40 still open; 0 first50 release-ready. Stage84/85 both independently reimported and compared all original 356×77; each exactly 2 targeted changes, no alterations to 306 rows52–357. Published repo files are patches, source log, conflict/open statuses and audits, **not binary XLSX**, which is in user's ChatGPT downloads. Resume Stage85, NEVER Stage79 and never mass copy DC5 or FXCQ models.

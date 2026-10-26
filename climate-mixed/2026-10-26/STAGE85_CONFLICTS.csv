@@ -1,0 +1,5 @@
+Class,Exact models,Field,Observation,Status,Next decisive step
+HISTORICAL_DC_REFRIGERANT,IMS-QV125NH(DC);IMS-QV140NH(DC),27,"Current dealer cards list R410A; this does not yet prove original old factory DC build/system revision",OPEN,"Find exact OEM historic manual page and supported outdoor refrigerant"
+IGC_DEALER_WARRANTY,IMS-QV125NH(DC);IMS-QV140NH(DC),41,"Dealer card reports 3 years versus Stage83 existing 12 months on IGC; sale date contract and scope unknown. No overwrites made.",OPEN,"Verify historic manufacturer and sale contract warranty with customer"
+DAIKIN_REGION,FXMQ200A;FXMQ250A,18/29-37,"Source FILE and selected original region model versions conflict",OPEN,"Exact factory year full SKU and dimensional drawing"
+BS45_DIMENSION,IMS-BS45NH(DC),29/30/31/35,"OEM indexed body dimension appears inconsistent with package; still empty",OPEN,"Find independent exact DC technical drawing"
