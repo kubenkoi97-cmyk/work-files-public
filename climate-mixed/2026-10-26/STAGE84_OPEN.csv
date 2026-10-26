@@ -1,0 +1,6 @@
+Class,Count,Scope,State,Next step
+Core refrigerant,21,IGC exact old (DC) lines,OPEN,Find factory edition/serial-group tables explicitly naming these exact SKUs and refrigerant
+Core warranty,15,Daikin+Kentatsu,OPEN,Obtain supplier agreement and signed commissioning proof tied to item lot
+Core cabinet dimensions,4,IMS-BS45NH(DC) fields 29/30/31/35,OPEN,Find exact old DC independent dimensional drawing and reconcile original table/packaging
+Additional conditional/OEM edition,NOT YET AUDITED COMPLETELY,First 50 only,OPEN,Finish per-field applicability and existing-value visual factory checks
+Commercial data,50 potential,Owner-controlled fields 1/4/9/10/40 and supplier prices,OPEN,Confirm original import source instead of borrowing external prices

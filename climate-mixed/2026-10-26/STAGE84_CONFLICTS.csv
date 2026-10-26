@@ -1,0 +1,6 @@
+Class,Models,Field,Description,State,Required evidence
+IGC_REFRIGERANT,21 exact old (DC) IGC models,27,Exact historical OEM refrigerant tied to production/system revision not proven,OPEN,Manufacturer exact old revision and supported outdoor system
+IGC_BS45_DIMENSION,IMS-BS45NH(DC),29/30/31/35,Factory-index body dimension conflicts with package geometry,OPEN,Independent exact DC model dimensional drawing
+DAIKIN_REGIONAL_EDITION,FXKQ20A-FXKQ63A;FXMQ200A;FXMQ250A,Existing technical fields,R410A vs R32 merchant claim and FXMQ dimensions/input/weight regional versions unresolved,OPEN,Exact production market OEM code and visual original pages
+CONTRACT_WARRANTY,8 Daikin;7 Kentatsu,41,Daichi 36m only conditionally; specific sales contract/startup unverified,OPEN,Exact contract and accepted start-up acts
+IGC_DEALER_WARRANTY,35 old IGC (DC),41,Stored 12m not verified for every historic SKU; one dealer reports 3y for exact QV125 SKU,OPEN,Factory warranty scope and historic sale date/contract
