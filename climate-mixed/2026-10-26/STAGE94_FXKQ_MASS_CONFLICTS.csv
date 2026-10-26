@@ -1,0 +1,7 @@
+Excel row,Exact SKU,Excel kg,Daikin Spain 2025 kg,Conflict,Source URL,Decision
+37,FXKQ20A,18,17,YES,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,"OPEN: full serial/market edition needed; preserve 18"
+38,FXKQ25A,18,17,YES,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,"OPEN: full serial/market edition needed; preserve 18"
+39,FXKQ32A,18,18,NO,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,"Matched existing source; OEM visual still pending"
+40,FXKQ40A,23,23,NO,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,"Matched existing source; OEM visual still pending"
+41,FXKQ50A,23,23,NO,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,"Matched existing source; OEM visual still pending"
+42,FXKQ63A,23,23,NO,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,"Matched existing source; OEM visual still pending"

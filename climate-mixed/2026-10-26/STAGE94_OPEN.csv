@@ -1,0 +1,7 @@
+Class,Count,Status,Exact next action
+Old IGC historical DC refrigerant,21,OPEN,Find factory serial/generation and compatible outdoor system refrigerant
+Daikin/Kentatsu warranty,15,OPEN,Obtain original contract and commissioning evidence
+IMS-BS45NH(DC) body dimensions,4,OPEN,Find exact old DC independent dimension drawing
+FXKQ20A and FXKQ25A net mass,2,OPEN_CONFLICT,"Resolve Spanish 2025 17kg versus existing 18kg with full manufacturer market revision"
+FXMQ200A/250A electrical consumption,2,OPEN_CONFLICT,Identify factory year/region corresponding to short model and original FILE
+All 50 applied 77-field source QA,50,IN_PROGRESS,Finish exact source-to-target verification per applicability and original commercial file

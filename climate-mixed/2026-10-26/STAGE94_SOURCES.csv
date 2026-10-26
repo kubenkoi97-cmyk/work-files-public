@@ -1,0 +1,5 @@
+Excel row,Exact SKU,Field,Source,Observation,Confidence
+26,IMS-4T71NHQ(DC),N area m2,https://igc.com.ru/catalog/arkhiv_modeley/igc_ims_4t71nhq_dc/,"Literal Площадь 71, separate 'recommended to 80' not copied",OFFICIAL_DEALER_EXACT
+37,FXKQ20A,AQ technical PDF,https://www.daikin.es/content/dam/MDM/TechnicalDrawings/VRV/fxka-a_fxkq-a/lv/FXKA20A_FXKQ20A_spres_4D151078_ES.pdf,"Factory chart cooling dB(A) high/medium/low 32/27.5/22.5, page 1 visually read",OEM_VISUAL_EXACT
+37,FXKQ20A,U existing 22.5 dBA,https://www.daikin.es/content/dam/MDM/TechnicalDrawings/VRV/fxka-a_fxkq-a/lv/FXKA20A_FXKQ20A_spres_4D151078_ES.pdf,"Visual cross-check matches present Excel",OEM_VISUAL_EXACT
+37:42,FXKQ20A..FXKQ63A,AK net mass,https://www.daikin.es/content/dam/internet-spain/AVANCE-TARIFA-2025.pdf,"Daikin Spain short-code exact table 2025: 17/17/18/23/23/23 kg; index only, visual original unavailable",OEM_INDEXED_VISUAL_PENDING
