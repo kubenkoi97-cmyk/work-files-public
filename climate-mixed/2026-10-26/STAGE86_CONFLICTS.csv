@@ -1,0 +1,4 @@
+Model,Field,Concern,Decision,Needed evidence
+FXKQ50A,27,"Russian listings show R32; Daikin EU technical table FXKQ-A shows R410A for full AMVEB model",UNRESOLVED_NO_CHANGE,Exact Russian production/factory code and regional service manual
+FXKQ50A,41,"Seller says 1 year; distributor Daichi warranty varies by contractual installation terms",UNRESOLVED_LEFT_BLANK,Contract and supplier serial batch
+FXKQ63A,14,"Exact direct page for area 71 not read: other FXCQ or FXKQ63M pages are different SKU",LEFT_BLANK,Direct readable exact FXKQ63A merchant/factory document

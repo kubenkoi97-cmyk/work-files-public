@@ -1,0 +1,5 @@
+Class,Count,Status,Next step
+Historic core unfilled,40,OPEN,"IGC 21 exact refrigerants; Daikin/Kentatsu 15 contractual warranties; IGC BS45 4 body dimension cells"
+Daikin product regional conflicts,8 variants to audit,OPEN,Match full original OEM code year market and source values
+All 77-field factory verification,50 models,IN_PROGRESS,Complete exact source pages PDF visual and applicability checks
+Full import readiness,0 confirmed,NOT_READY,Do not import as READY before all gates pass
