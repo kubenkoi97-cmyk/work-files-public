@@ -1,0 +1,7 @@
+# MIXED current canonical validated workbook Stage93, 2026-10-26
+
+**Full 356×77 catalog:** `MIXED_356_77cols_STAGE93_FIRST50_BS15_1T22_EXACT_MARKET_AREAS_2026-10-26.xlsx` 803918 bytes, SHA256 `c9f7a5a232202006ae7d6d0397f1def5b8e75fa9ae57e31dece052a28ccf8cb6`, 62 sheets, ChatGPT attachment ONLY, NOT a binary GitHub upload. Previous full workbook Stage92 SHA256 `b5b89bb47f5000b276e5236abcd635024f5614370d78f8eeab4896cc7fb6172d`, 61 sheets.
+
+Stage91: 4 exact IGC QV marketed areas + 11 visually read branded exact original factory model PDFs, 101 exact model-field prior values confirmed; Stage92 six IGC old wall SKU PDF links and 60 more existing-value OEM matches; Stage93 exact IGC BS15 (N11=15) and 1T22 with preserved spacing (N20=22). Total **6 real new numeric field fills and 17 documentation hyperlinks**, 161 existing technical values visually checked. Independent complete 356x77 OOXML diff zero changes to other 306 SKU in all 3 steps, all earlier source and history sheets preserved. Filled first50 **1633**/3850 (not a completeness percentage). 40 historical core blocked; another region/version, commercial and conditional field gate open. Certified READY_FOR_IMPORT 0/50; TECH_READY_COMMERCIAL_BLOCKED 0/50.
+
+**Resume from Stage93 full verified binary file, NEVER from outdated Stage83/Stage90.** GitHub contains text source/patched file manifest, NOT the full binary XLSX. Continue exact old DC factory refrigerant production documents, Daikin exact region, IGC BS45 body drawing, contracts, complete per-SKU per-field application QA.

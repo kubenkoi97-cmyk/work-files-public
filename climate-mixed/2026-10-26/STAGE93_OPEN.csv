@@ -1,0 +1,6 @@
+Blocker,Quantity,State,Required proof
+Historical IGC DC exact refrigerant,21,OPEN,Exact older factory documented pairing with relevant outdoor units
+Daikin Kentatsu warranty,15,OPEN,Specific supplier contract and commissioning act
+IGC BS45 cabinet dimensions,4,OPEN,Independent historical exact DC cabinet schematic
+Daikin FXKQ FXMQ regional spec,8,OPEN,Exact factory manufacture market code/edition plus OEM spec
+First50 full verified applicability,50 SKU,OPEN,Close remaining exact source and conditional-accessory property audits

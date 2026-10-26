@@ -1,0 +1,5 @@
+Model,Field,Conflicting marketing descriptions,Decision,Need
+IMS-BS15NHQ(DC),14,Literal Площадь 15 vs general recommended до20 and another manufacturer marketing до25,Used literal product specific Площадь 15,Area is marketed estimation not building calculation
+IMS-1T22NH (DC),14,Literal Площадь22 vs recommended до25,Used literal product field22,Literal variant preserved in workbook
+35 historical IGC DC,41,Stored12 months versus current dealer display 3years,No wholesale warranty changes,Historic production and sale contract
+21 historical IGC DC,27,Exact refrigerant generation still not verified,Kept 21 cells empty,Matching old production system OEM outdoor refrigerant

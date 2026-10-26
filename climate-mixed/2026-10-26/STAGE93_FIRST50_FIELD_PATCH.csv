@@ -1,0 +1,3 @@
+Excel row,Exact SKU,Column,Field,Old,New,Source URL,Trust,Notes
+11,IMS-BS15NHQ(DC),14,Площадь м²,,15,https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_bs15nhq_dc/,AUTHORIZED_DISTRIBUTOR_EXACT_MARKETING,Dealer literal area field 15; separate up-to20 marketing estimate not used
+20,IMS-1T22NH (DC),14,Площадь м²,,22,https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_1t22nh_dc/,AUTHORIZED_DISTRIBUTOR_EXACT_MARKETING,Dealer title without space but variants explicitly original literal with space; up-to25 estimate not used
