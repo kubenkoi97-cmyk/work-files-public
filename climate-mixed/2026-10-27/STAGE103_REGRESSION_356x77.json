@@ -1,0 +1,20 @@
+{
+  "stage": 103,
+  "scope": "NEXT50",
+  "baseline_stage": 102,
+  "affected_sheet": "Наполнение MIXED",
+  "expected_affected_range": "N60:N78",
+  "new_values": 19,
+  "source_tier": "RETAIL_EXACT_SINGLE",
+  "active_filled_before": 1542,
+  "active_filled_after": 1561,
+  "product_grid_checked": 27412,
+  "unexpected_product_changes": 0,
+  "protected_306_unchanged": true,
+  "old_72_sheets_values_preserved": true,
+  "sheet_count": 73,
+  "bytes": 829473,
+  "sha256": "b157bad80f241fc373fc62271f167097f20d7015b831923e37c8de5f1cb57ba2",
+  "tech_ready": 0,
+  "ready_for_import": 0
+}
