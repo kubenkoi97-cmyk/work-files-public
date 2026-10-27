@@ -1,0 +1,6 @@
+SKU,Decision,Finding,Source URL,Result
+"KTYV30HZBN1","CURRENT_NOT_MAX","0.52 A operating current for package /KPU1M-D3, max not confirmed","https://mircli.ru/Kentatsu-KTYV30HZBN1-KPU1M-D3/","No BU edit"
+"KTYV40HZBN1","CURRENT_NOT_MAX","0.53 A operating current for package /KPU1M-D3, max not confirmed","https://mircli.ru/Kentatsu-KTYV40HZBN1-KPU1M-D3/","No BU edit"
+"KTZV60HZBN1","PANEL_ASSOCIATION_NOT_INCLUDED","KPU65-D3 compatible panel mention, no proof bundled/size","https://envok.ru/catalog/konditsionery_split_sistemy/vrf-sistemy/vnutrennie-bloki-vrf/vnutrenniy-blok-vrf-sistemy-kentatsu-ktzv60hzbn1-daichi-28775/","No AZ edit"
+"KTVV80HZBN1","EXACT_DEALER_CROSSCHECK","0.63 A maximum and 9.52/15.9 liquid-gas pipes in dealer card","https://kondiair.ru/catalog/vnutrenniy_blok_vrf_sistemy_kentatsu_ktvv80hzbn1/","Existing values only"
+"ALL_KTYV_KTVV","WRONG_SERIES","Kentatsu indexed PDF references KTYB/KTVB, not V series","https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf","No transfers"
