@@ -1,0 +1,20 @@
+{
+  "stage": 102,
+  "scope": "NEXT50",
+  "original_sheets": 71,
+  "sheets_after": 72,
+  "product_rows": 356,
+  "fields": 77,
+  "positions_checked": 27412,
+  "changed_cells": 50,
+  "unexpected": 0,
+  "protected_306_unchanged": true,
+  "original_71_sheet_values_preserved": true,
+  "filled_before": 1492,
+  "filled_after": 1542,
+  "TECH_READY": 0,
+  "READY_FOR_IMPORT": 0,
+  "file": "MIXED_356_77cols_STAGE102_NEXT50_50_EXACT_SKUS_2026-10-27.xlsx",
+  "size_bytes": 826744,
+  "sha256": "48984ba45f7c2b17ce6b84bbf0f844df0464364c7b0488072829b70463b221bc"
+}

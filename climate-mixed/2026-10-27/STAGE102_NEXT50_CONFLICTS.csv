@@ -1,0 +1,4 @@
+Excel row,SKU,Severity,Open issue,Next step
+52,KTGV80HZBN1,CONTRACT,12-month existing warranty not supplier-contract validated,Seek exact Kentatsu distributor warranty
+101,KTGB18HZBN1,CONTRACT,One seller says 12 months another 36 months,Do not fill until contract confirmed
+100,KTHV140HZBN1,TECH,Noise 51.5dBA unusual in baseline,Check OEM model-specific table
