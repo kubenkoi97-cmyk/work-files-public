@@ -1,0 +1,24 @@
+Excel row,Exact SKU,Target cell,Marketing floor area m2,Source URL,Confidence
+79,KTLV15HZBN1,'Наполнение MIXED'!N79,15,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_DUAL
+80,KTLV18HZBN1,'Наполнение MIXED'!N80,18,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+81,KTLV24HZBN1,'Наполнение MIXED'!N81,22,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+82,KTLV30HZBN1,'Наполнение MIXED'!N82,28,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+83,KTLV40HZBN1,'Наполнение MIXED'!N83,36,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+84,KTLV50HZBN1,'Наполнение MIXED'!N84,45,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+85,KTLV60HZBN1,'Наполнение MIXED'!N85,56,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+86,KTLV72HZBN1,'Наполнение MIXED'!N86,71,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+87,KTKV80HZBN1,'Наполнение MIXED'!N87,80,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+88,KTKV90HZBN1,'Наполнение MIXED'!N88,90,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+89,KTKV115HZBN1,'Наполнение MIXED'!N89,112,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+90,KTKV125HZBN1,'Наполнение MIXED'!N90,125,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+91,KTKV140HZBN1,'Наполнение MIXED'!N91,140,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+92,KTKV160HZBN1,'Наполнение MIXED'!N92,160,https://brand-climat.ru/konditsionery/vrf-sistemy/vrf-kanalnye-bloki/?limit=75,RETAIL_EXACT_SINGLE
+93,KTHV40HZBN1,'Наполнение MIXED'!N93,36,https://brand-climat.ru/konditsionery/?limit=75&page=110,RETAIL_EXACT_SINGLE
+94,KTHV50HZBN1,'Наполнение MIXED'!N94,45,https://brand-climat.ru/konditsionery/?limit=75&page=110,RETAIL_EXACT_SINGLE
+95,KTHV60HZBN1,'Наполнение MIXED'!N95,56,https://brand-climat.ru/konditsionery/?limit=75&page=110,RETAIL_EXACT_SINGLE
+96,KTHV72HZBN1,'Наполнение MIXED'!N96,71,https://brand-climat.ru/konditsionery/?limit=75&page=110,RETAIL_EXACT_DUAL
+97,KTHV80HZBN1,'Наполнение MIXED'!N97,80,https://brand-climat.ru/konditsionery/?limit=75&page=110,RETAIL_EXACT_SINGLE
+98,KTHV90HZBN1,'Наполнение MIXED'!N98,90,https://brand-climat.ru/konditsionery/?limit=75&page=110,RETAIL_EXACT_SINGLE
+99,KTHV115HZBN1,'Наполнение MIXED'!N99,112,https://brand-climat.ru/konditsionery/?limit=75&page=110,RETAIL_EXACT_SINGLE
+100,KTHV140HZBN1,'Наполнение MIXED'!N100,140,https://brand-climat.ru/konditsionery/?limit=75&page=110,RETAIL_EXACT_SINGLE
+101,KTGB18HZBN1,'Наполнение MIXED'!N101,15,https://coolsochi.ru/product/kentatsu-ktgb18hzbn1/,RETAIL_EXACT_DUAL
