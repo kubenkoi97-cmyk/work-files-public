@@ -1,0 +1,28 @@
+{
+  "stage": 107,
+  "date": "2026-10-27",
+  "source_stage": 106,
+  "source_sha256": "f9bdfb219789f6f0ba27dd0378ded84613c19e93b5042c4c329b2303d3607a2d",
+  "file": "MIXED_356_77cols_STAGE107_NEXT50_EXACT3_SYSTEM_INVERTER_COLOR_2026-10-27.xlsx",
+  "sha256": "0332af716d9284fdb270d01464e1aca65420fdd1ccff9900a9b0e2a9cadfec19",
+  "bytes": 1106927,
+  "sheets_before": 78,
+  "sheets_after": 79,
+  "product_rows": 356,
+  "product_columns": 77,
+  "product_cells_checked": 27412,
+  "expected_changes": 3,
+  "unexpected_changes": 0,
+  "protected_products": 306,
+  "protected_differences": 0,
+  "active_filled_before": 1588,
+  "active_filled_after": 1591,
+  "tech_ready": 0,
+  "ready_for_import": 0,
+  "authorized_cells": [
+    "V79",
+    "M79",
+    "M101"
+  ],
+  "archive_sha256": "7c36f8bf2534e6e917f816ec909226828dc287a206f9adf4ac3b4d45fdf6f9ef"
+}

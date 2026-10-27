@@ -1,0 +1,4 @@
+Row,Exact SKU,Cell,Old,New,Source tier,Source URL,Scope warning
+79,KTLV15HZBN1,V79,,Серебристый,RETAIL_EXACT_SINGLE,https://pro-komfort.com/product/vnutrenniy-kanalnyy-blok-multizonalnoy-vrf-sistemy-kentatsu-ktlv15hzbn1/,Retailer body color
+79,KTLV15HZBN1,M79,,Да,RETAIL_EXACT_SINGLE_SYSTEM,https://pro-komfort.com/product/vnutrenniy-kanalnyy-blok-multizonalnoy-vrf-sistemy-kentatsu-ktlv15hzbn1/,Inverter belongs to system not compressor inside indoor unit
+101,KTGB18HZBN1,M101,,Да,RETAIL_EXACT_SINGLE_SYSTEM,https://effect-nn.ru/condition_65062.htm,Inverter belongs to system not compressor inside indoor unit
