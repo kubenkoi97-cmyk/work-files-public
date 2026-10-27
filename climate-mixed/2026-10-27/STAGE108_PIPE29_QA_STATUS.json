@@ -1,0 +1,13 @@
+{
+  "stage": 108,
+  "source_stage": 107,
+  "source_sha256": "0332af716d9284fdb270d01464e1aca65420fdd1ccff9900a9b0e2a9cadfec19",
+  "scope": "PIPE_ONLY",
+  "exact_models": 29,
+  "new_confirmed": 0,
+  "open": 29,
+  "original_workbook_unchanged": true,
+  "other_fields_untouched": true,
+  "audit_xlsx_sha256": "07cd7bbe6d27e96387aaecda71ab62fba8c08445a5071ce8f4ed6b1e72b0a93f",
+  "archive_sha256": "ea727e240446060129c1b1dd2f8f4d8bff0a9b7f48d23b3a94b1671354a23052"
+}
