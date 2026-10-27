@@ -1,0 +1,18 @@
+# MIXED Stage101 — Full catalog export restored; 6 exact Daikin drawing links
+2026-10-27
+
+**Latest full 356-product ×77-column XLSX**: `MIXED_356_77cols_STAGE101_FIRST50_DAIKIN6_EXACT_FACTORY_DIMENSION_DRAWINGS_2026-10-27.xlsx` **822797 bytes** SHA256 **`c31d52d0b4d73f44541fa77f9dbdeb35bd5f04eee6b487637b1e4aebf137a4f7`**, **71 worksheets**. Source Stage99 `MIXED_356_77cols_STAGE99_FIRST50_900_APPLICABILITY_CLOSED_2026-10-26.xlsx` 821594 bytes SHA256 `002163d4294cb1829964ca511a58edb118dc6d392a550b4eb3f464b50c1e899e`, 70 sheets. Original Stage100 was SOURCE_ONLY, without a valid full export. **Stage101 is now the new canonical full workbook.** Genuine binary XLSX in ChatGPT, NOT in this GitHub repository.
+
+**Six actual product edits only**: Excel AQ37:AQ42 (=column43), all Daikin FXKQ20A,25A,32A,40A,50A,63A; append original manufacturer full-variant FXKQ...AMVEB one-page pipe/dimension drawing links. Retain each old document hyperlink. Both factory sheets were individually visually opened with a PDF screenshot: https://www.daikin.cz/content/dam/MDM/TechnicalDrawings/VRV/fxka-a_fxkq-a/en/FXKA20-32A_FXKQ20-32A_dim_2D146914a_EN.pdf and https://www.daikin.it/content/dam/MDM/TechnicalDrawings/VRV/fxka-a_fxkq-a/en/FXKA40-63A_FXKQ40-63A_dim_2D148806a_EN.pdf.
+
+Exact factory AMVEB drawing models 20,25,32,40,50 have liquid/gas 6.4/12.7 mm; 63 has 9.5/15.9 mm. Excel existing pipes match **these full AMVEB drawings**. The retail abbreviated code FXKQ...A has **no verified mapping to a manufacturer serial/region/year AMVEB suffix**, and another official 2025 Austria factory catalog lists abbreviated code tube pairings differently. Existing numerical tube fields untouched. Old Daikin other manufacturing-edition mass, noise, refrigerant and fan power conflicts remain OPEN.
+
+## Independent verified regression
+Using a standalone **pure-standard-library OOXML parser**, re-opened both original XLSX ZIPs, every prior worksheet, headers and all 356×77 positions. Exactly **six changed product cells** AQ37, AQ38, AQ39, AQ40, AQ41, AQ42; every other previously populated/blank cell **identical**, all **306 protected products rows52–357 unchanged**, original 70 worksheets' values unchanged, plus `QA101 Daikin 6 drawings` sheet. Full 356×77 check **PASS**.
+
+First50 physical fill remains **1636/3850** including commercial and inapplicable empties, not a technical readiness score. Original **40 core blocking blanks** persist: 21 historic IGC old (DC) refrigerants, 15 contract-controlled Daikin/Kentatsu warranty months, 4 exact IMS-BS45NH(DC) body dimensions. Other disputes: six old wall IGC K(DC) height/depth axis, Daikin mass/noise/power/refrigerant edition. **READY_FOR_IMPORT 0/50; no certified TECH_READY_COMMERCIAL_BLOCKED**.
+
+## New priority discrepancy discovered
+KTGV18HZBN1 current verified Excel col23 liquid/gas **6.35/9.52 mm**, supported by *exact* retail https://coolsochi.ru/product/kentatsu-ktgv18hzbn1/ but manufacturer Kentatsu heavy indexed catalog https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf **appears to show** gas 12.7 mm for 18 model. Manufacturer full PDF not yet readable as screenshot so this is an **INDEXED_ONLY OPEN CRITICAL CONFLICT, NOT a confirmed 12.7mm factory value**. No overwrite. Resolve from exact factory original mounting diagram for model and region.
+
+**Never mistake a documentation link or a conservative N/A decision for a newly measured numeric field.** Resumption source must be Stage101 complete verified binary, not prior Stage99 or Stage100 source-only proof-pack.
