@@ -1,0 +1,50 @@
+{
+  "stage": 105,
+  "sha256": "95a295c73eea4c1d4da4ce05c2acd44c3fb4fd6e64abff6cf8979531ce2c4673",
+  "bytes": 836724,
+  "source_sheets": 74,
+  "after_sheets": 75,
+  "rows": 356,
+  "fields": 77,
+  "regressed_positions": 27412,
+  "authorized_changes": 4,
+  "unexpected_changes": 0,
+  "protected_rows": 306,
+  "protected_changes": 0,
+  "physical_before": 1584,
+  "physical_after": 1588,
+  "area_confirmed_without_edit": 8,
+  "tech_ready": 0,
+  "ready_for_import": 0,
+  "archive_sha256": "4f7d0a3c2b1e0c11420223fc9316dbb99ccaa231d8a59fae30395e8cd205030c",
+  "fixes": [
+    {
+      "row": 93,
+      "sku": "KTHV40HZBN1",
+      "field": "W",
+      "value": "6,35/12,7",
+      "url": "https://pro-komfort.com/product/vnutrenniy-napolno-potolochnyy-blok-multizonalnoy-vrf-sistemy-kentatsu-kthv40hzbn1/"
+    },
+    {
+      "row": 97,
+      "sku": "KTHV80HZBN1",
+      "field": "W",
+      "value": "9,52/15,88",
+      "url": "https://pro-komfort.com/product/vnutrenniy-napolno-potolochnyy-blok-multizonalnoy-vrf-sistemy-kentatsu-kthv80hzbn1/"
+    },
+    {
+      "row": 98,
+      "sku": "KTHV90HZBN1",
+      "field": "W",
+      "value": "9,52/15,88",
+      "url": "https://pro-komfort.com/product/vnutrenniy-napolno-potolochnyy-blok-multizonalnoy-vrf-sistemy-kentatsu-kthv90hzbn1/"
+    },
+    {
+      "row": 99,
+      "sku": "KTHV115HZBN1",
+      "field": "W",
+      "value": "9,52/15,88",
+      "url": "https://pro-komfort.com/product/vnutrenniy-napolno-potolochnyy-blok-multizonalnoy-vrf-sistemy-kentatsu-kthv115hzbn1/"
+    }
+  ]
+}
