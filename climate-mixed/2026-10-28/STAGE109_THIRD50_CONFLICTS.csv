@@ -1,0 +1,9 @@
+sku,excel_row,field,evidence1,evidence2,decision,status,source_reference
+KTGB24HZBN1,102,area_N,MirCli_22m2,Dealer_20m2,KEEP_EMPTY,CONFLICT_OPEN,Сбор данных!I102
+KTGB24HZBN1,102,warranty_AO,1yr,36months,KEEP_EMPTY,CONFLICT_OPEN,Сбор данных!I102
+KTGB30HZBN1,103,area_N,MirCli_28m2,Dealer_25m2,KEEP_EMPTY,CONFLICT_OPEN,Сбор данных!I103
+KTGB30HZBN1,103,warranty_AO,1yr,36months,KEEP_EMPTY,CONFLICT_OPEN,Сбор данных!I103
+KTGB40HZBN1,104,area_N,35m2,36m2,KEEP_EMPTY,CONFLICT_OPEN,Сбор данных!I104
+KTGB50HZBN1,105,warranty_AO,1yr_or_seller_specific,36months_or_seller_specific,KEEP_EMPTY,CONFLICT_OPEN,Сбор данных!I105
+KTGB60HZBN1,106,area_N,55m2,56m2,KEEP_EMPTY,CONFLICT_OPEN,Сбор данных!I106
+KTGB72HZBN1,107,area_N,70m2,71m2,KEEP_EMPTY,CONFLICT_OPEN,Сбор данных!I107
