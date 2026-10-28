@@ -1,0 +1,24 @@
+{
+  "stage": 109,
+  "date": "2026-10-28",
+  "original_sha256": "0332af716d9284fdb270d01464e1aca65420fdd1ccff9900a9b0e2a9cadfec19",
+  "output_sha256": "e444a6ecefac57106ccf4d5bc57aa0b47e25c85b8ac4d4349f875cbb85014f26",
+  "original_bytes": 1106927,
+  "output_bytes": 1109787,
+  "original_sheets": 79,
+  "output_sheets": 80,
+  "changed_existing_sheet_parts": [
+    "xl/worksheets/sheet1.xml"
+  ],
+  "unchanged_original_sheet_parts": 78,
+  "exact_changed_product_cells": 50,
+  "range": "F102:F151",
+  "unauthorized_changes": 0,
+  "protected_product_rows": "2:101 and 152:357",
+  "protected_products": 306,
+  "before_filled": 1508,
+  "after_filled": 1558,
+  "active_total_cells": 3850,
+  "verified_archive_in_chat": true,
+  "github_xlsx_binary_present": false
+}
