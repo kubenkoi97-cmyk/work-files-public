@@ -1,0 +1,13 @@
+Scope,SKU_or_series,Status,Action,Evidence,Owner,Due
+ALL_50,KTGB/KTYB/KTDB/KTZB/KTVB/KTLB,OPEN,OEM visual verification of exact table for all full SKU and relevant 77 fields,https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf,Research,UNSPECIFIED
+ALL_50,KTGB/KTYB/KTDB/KTZB/KTVB/KTLB,OWNER_REQUIRED,Confirm actual AU stock; AV/AX purchase/retail prices; real guarantee and CMS product images,Stage107!AU/AV/AX are 100/0/0 placeholder,Catalog owner,BEFORE_IMPORT
+ALL_50,KTGB/KTYB/KTDB/KTZB/KTVB/KTLB,OPEN,Double sweep source E/F/G vs 77 target columns and wording of descriptions AT,Stage107 internal source rows 102:151,Research,BEFORE_TECH_READY
+ALL_50,KTGB/KTYB/KTDB/KTZB/KTVB/KTLB,SCHEMA_REVIEW,Define meaning of inverter M for indoor VRF blocks: system inverter vs compressor,Kentatsu DX PRO VII inverter outdoor system,CMS owner,BEFORE_IMPORT
+ONE_SKU,KTGB24HZBN1,CONFLICT_OPEN,Resolve N (area) with exact OEM or authorized selling terms; keep blank,Сбор данных!I102,Research / Owner,BEFORE_IMPORT
+ONE_SKU,KTGB24HZBN1,CONFLICT_OPEN,Resolve AO (warranty) with exact OEM or authorized selling terms; keep blank,Сбор данных!I102,Research / Owner,BEFORE_IMPORT
+ONE_SKU,KTGB40HZBN1,CONFLICT_OPEN,Resolve N (area) with exact OEM or authorized selling terms; keep blank,Сбор данных!I104,Research / Owner,BEFORE_IMPORT
+ONE_SKU,KTGB50HZBN1,CONFLICT_OPEN,Resolve AO (warranty) with exact OEM or authorized selling terms; keep blank,Сбор данных!I105,Research / Owner,BEFORE_IMPORT
+ONE_SKU,KTGB60HZBN1,CONFLICT_OPEN,Resolve N (area) with exact OEM or authorized selling terms; keep blank,Сбор данных!I106,Research / Owner,BEFORE_IMPORT
+ONE_SKU,KTGB30HZBN1,CONFLICT_OPEN,Resolve N (area) with exact OEM or authorized selling terms; keep blank,Сбор данных!I103,Research / Owner,BEFORE_IMPORT
+ONE_SKU,KTGB30HZBN1,CONFLICT_OPEN,Resolve AO (warranty) with exact OEM or authorized selling terms; keep blank,Сбор данных!I103,Research / Owner,BEFORE_IMPORT
+ONE_SKU,KTGB72HZBN1,CONFLICT_OPEN,Resolve N (area) with exact OEM or authorized selling terms; keep blank,Сбор данных!I107,Research / Owner,BEFORE_IMPORT
