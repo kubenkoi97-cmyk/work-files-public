@@ -1,0 +1,28 @@
+{
+  "stage": 113,
+  "date": "2026-10-30",
+  "status": "PASS",
+  "previous": "MIXED_356_77cols_STAGE112_THIRD50_101-150_SERIES_NORMALIZED_2026-10-29.xlsx",
+  "current": "MIXED_356_77cols_STAGE113_THIRD50_101-150_OEM_FEATURES_2026-10-30.xlsx",
+  "input_sha256": "18c9cfc70a12c9e907701e098a602a64e256cbdbc287665cd3c4a6c982e710fd",
+  "output_sha256": "b61cf7c3ab01e4124b06008a418ada6b2e93512c994bf71bead5c51697b8a58a",
+  "output_bytes": 1112877,
+  "changed_cells": 16,
+  "change_ranges": [
+    "AT117:AT122",
+    "AT142:AT151"
+  ],
+  "added_nonempty_import_fields": 0,
+  "protected_products": 306,
+  "protected_cell_differences": 0,
+  "unchanged_worksheet_xml_parts": 79,
+  "worksheets_total": 80,
+  "active_product_count": 50,
+  "active_fields_filled": 1608,
+  "active_fields_total": 3850,
+  "tech_ready_count": 0,
+  "import_ready_count": 0,
+  "evidence_tier": "OEM_INDEXED_SERIES_FEATURE_NOT_VISUALLY_SIGNED",
+  "source": "https://daichi.business/support/documents/download.php?ID=27751",
+  "binary_github_upload_status": "PENDING"
+}
