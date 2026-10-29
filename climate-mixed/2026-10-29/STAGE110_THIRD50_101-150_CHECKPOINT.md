@@ -9,6 +9,7 @@
 - Exactly 50 proposed `BP102:BP151` field additions: installation mode appropriate to individual exact SKU/series.
 - Exactly 50 proposed `AT102:AT151` rewrites: individual SKU-specific descriptions with cooling, heating, indoor-unit input in watts, max airflow, acoustic min–max, housing dimensions, weight, fluid/gas tube diameters, R410A and precise optional compatible panel models.
 - Proposed **100 cell changes**, **not yet merged** into the full workbook. `1558/3850` physically filled in canonical Stage109; `1608/3850` only after a successful future merge/regression test.
+- Independent internal consistency check: **500/500** exact numeric matches across 50 SKUs for cooling, heating, indoor electric input, air flow, three body dimensions, weight, liquid and gas pipe diameters. All comparisons were against the same SKU row on `Сбор данных!F`; independent visual OEM PDF confirmation remains open.
 - Existing acoustic scalar `U` has **27 MIN vs 23 MAX** out of 50. Do not silently normalize U or confuse min and max. Exact paired data in `STAGE110_THIRD50_NOISE_SEMANTICS.csv`.
 - 50 exact model/source records in `STAGE110_THIRD50_OEM_MODEL_INDEX.csv`. Full 100 proposed cell values in `STAGE110_THIRD50_FIELD_PATCH.csv`.
 - Historical 8 area/warranty disputes remain OPEN. 50/50 commercially blocked (unverified quantity AU=100, purchase AV=0, retail AX=0), 0/50 READY_FOR_IMPORT. Other 306 products remain out of scope.
