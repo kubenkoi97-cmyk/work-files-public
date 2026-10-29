@@ -1,0 +1,5 @@
+scope,series,action,status,evidence,blocker
+"All 50","KTGB/KTYB/KTDB/KTZB/KTVB/KTLB","Finish exact-OEM model verification","OPEN","Manufacturer indexed tables","PDF visuals not verified"
+"All 50","All","Decide U scalar semantics MIN/MAX","OPEN","Stage110 noise semantics CSV","27 MIN vs 23 MAX"
+"8 conflicts","KTGB","Resolve area and warranty disagreements","OPEN","Stage109 conflict file","Retailer sources disagree"
+"All 50","All","Confirm real stock, owner prices, product images and warranty","OPEN","Owner/CMS only","AU/AV/AX placeholders and no media"
