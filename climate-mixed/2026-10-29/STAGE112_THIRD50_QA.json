@@ -1,0 +1,29 @@
+{
+  "stage": 112,
+  "status": "PASS",
+  "date": "2026-10-29",
+  "baseline_file": "MIXED_356_77cols_STAGE111_THIRD50_101-150_MERGED_2026-10-29.xlsx",
+  "baseline_sha256": "ea181eb7b0afccbd130da64943b7aba5b982b168945614b81fce1dffabd16fae",
+  "full_file": "MIXED_356_77cols_STAGE112_THIRD50_101-150_SERIES_NORMALIZED_2026-10-29.xlsx",
+  "file_sha256": "18c9cfc70a12c9e907701e098a602a64e256cbdbc287665cd3c4a6c982e710fd",
+  "git_blob_sha": "c8647ae8a099e56904a43a44f555227dbd8fbefc",
+  "size_bytes": 1112548,
+  "sheets": 80,
+  "products": 356,
+  "columns": 77,
+  "changed_cells": 35,
+  "changed_columns": [
+    "K"
+  ],
+  "allowed_rows": "110-122 and 130-151",
+  "other_original_worksheet_parts_unchanged": 79,
+  "protected_products_unchanged": 306,
+  "existing_formula_changes": 0,
+  "active_filled": 1608,
+  "active_possible": 3850,
+  "tech_import_ready": 0,
+  "commercial_placeholders": "AU=100 AV=0 AX=0 for all 50",
+  "historical_area_warranty_conflicts": 8,
+  "noise_semantics": "27 U-values show minimum and 23 show maximum; not edited",
+  "visual_oem_pdf_checked": false
+}
