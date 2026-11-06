@@ -74,11 +74,15 @@ def main():
         response = page.goto(URL, wait_until="domcontentloaded", timeout=75000)
         print("NAVIGATION", response.status if response else None, page.url)
         page.wait_for_timeout(5000)
-        # Lazy-load product images by scrolling through the main page
-        for y in range(0, 4500, 700):
-            page.evaluate("(y) => window.scrollTo(0,y)", y)
-            page.wait_for_timeout(120)
-        page.evaluate("window.scrollTo(0,0)")
+        # Avoid scrolling an error page that redirects to an anti-bot challenge.
+        if not response or response.status < 400:
+            try:
+                for y in range(0, 4500, 700):
+                    page.evaluate("(y) => window.scrollTo(0,y)", y)
+                    page.wait_for_timeout(120)
+                page.evaluate("window.scrollTo(0,0)")
+            except Exception as e:
+                print("SCROLL_FAILED", str(e)[:160])
         # The product details may initially be collapsed; leave the actual DOM
         # untouched rather than injecting a synthetic description.
         html = page.content()
