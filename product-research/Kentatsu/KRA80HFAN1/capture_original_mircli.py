@@ -82,17 +82,31 @@ def main():
         # The product details may initially be collapsed; leave the actual DOM
         # untouched rather than injecting a synthetic description.
         html = page.content()
-        if MODEL not in html or "Kentatsu" not in html or (response and response.status >= 400):
-            raise RuntimeError("Page response is not the required product: "+html[:400])
-        HTML.write_text("<!DOCTYPE html>\n" + html, encoding="utf-8")
+        browser_ok = MODEL in html and "Kentatsu" in html and (not response or response.status < 400)
+        if not browser_ok:
+            print("BROWSER_BLOCKED; testing plain HTTPS original source.")
+            with requests.Session() as session:
+                session.headers.update({
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                    "Accept-Language": "ru-RU,ru;q=0.9,en-US;q=0.7",
+                    "Referer": "https://mircli.ru/"})
+                rr = session.get(URL, timeout=35)
+            print("RAW_HTTPS_STATUS", rr.status_code, "BYTES", len(rr.content), "CTYPE", rr.headers.get("Content-Type"))
+            if rr.status_code != 200 or MODEL not in rr.text or "Kentatsu" not in rr.text:
+                raise RuntimeError("No original HTML available: browser and direct HTTPS access blocked")
+            html = rr.text
+            print("SOURCE_TYPE", "original server response, not browser hydrated DOM")
+        HTML.write_text(html if html.lstrip().lower().startswith("<!doctype") else "<!DOCTYPE html>\n" + html, encoding="utf-8")
         print("HTML BYTES", HTML.stat().st_size)
-        try:
-            devtools = page.context.new_cdp_session(page)
-            snap = devtools.send("Page.captureSnapshot", {"format": "mhtml"})
-            MHTML.write_text(snap["data"], encoding="utf-8")
-            print("MHTML BYTES", MHTML.stat().st_size)
-        except Exception as e:
-            print("MHTML failed", str(e)[:300])
+        if browser_ok:
+            try:
+                devtools = page.context.new_cdp_session(page)
+                snap = devtools.send("Page.captureSnapshot", {"format": "mhtml"})
+                MHTML.write_text(snap["data"], encoding="utf-8")
+                print("MHTML BYTES", MHTML.stat().st_size)
+            except Exception as e:
+                print("MHTML failed", str(e)[:300])
         browser.close()
 
     soup = BeautifulSoup(HTML.read_text(encoding="utf-8"), "html.parser")
@@ -155,7 +169,7 @@ def main():
     HTML.write_text("<!DOCTYPE html>\n" + str(soup), encoding="utf-8")
     manifest = {
         "origin_url": URL, "model": MODEL,
-        "source_type": "Original live Chromium DOM saved after page load; no reconstructed product data",
+        "source_type": ("Original live Chromium DOM saved after page load" if MHTML.exists() else "Original server HTML response, not browser-hydrated DOM"),
         "html_bytes": HTML.stat().st_size, "mhtml_bytes": MHTML.stat().st_size if MHTML.exists() else None,
         "asset_count": len(downloaded), "asset_failures": failures,
         "note": "HTML references local _files folder for downloaded assets; missing assets stay live URLs. MHTML is standalone."
