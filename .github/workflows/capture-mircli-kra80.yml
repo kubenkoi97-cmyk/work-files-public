@@ -1,0 +1,49 @@
+name: Capture original MirCli KRA80HFAN1 product HTML
+on:
+  push:
+    paths:
+      - '.github/workflows/capture-mircli-kra80.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser capture tools
+        run: |
+          python -m pip install --quiet requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Capture original DOM, MHTML and resource archive
+        run: python product-research/Kentatsu/KRA80HFAN1/capture_original_mircli.py
+      - name: Publish HTML to public repository
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_original.html
+          git add product-research/Kentatsu/KRA80HFAN1/original/capture_manifest.json
+          git commit -m "Archive genuine loaded MirCli HTML: Kentatsu KRA80HFAN1"
+          git push
+      - name: Publish complete archive as GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "KRA80HFAN1-mircli-2026-11-07" \
+            "product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_original_complete.zip" \
+            "product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_original.mhtml" \
+            --title "Kentatsu KRA80HFAN1 original MirCli page (2026-11-07)" \
+            --notes "Original rendered DOM HTML with downloaded image/CSS/JS assets in a ZIP archive, plus single-file browser MHTML. Source: https://mircli.ru/Kentatsu-KRA80HFAN1-KPU95-RA/"
+      - name: Upload artifact copy
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KRA80HFAN1-MirCli-capture
+          path: product-research/Kentatsu/KRA80HFAN1/original/
+          retention-days: 7
