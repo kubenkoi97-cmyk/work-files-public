@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/capture-mircli-kra80.yml'
+      - 'product-research/Kentatsu/KRA80HFAN1/capture_original_mircli.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -35,11 +36,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "KRA80HFAN1-mircli-2026-11-07" \
-            "product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_original_complete.zip" \
-            "product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_original.mhtml" \
+          assets=("product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_original_complete.zip")
+          mhtml="product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_original.mhtml"
+          if [ -f "$mhtml" ]; then assets+=("$mhtml"); fi
+          gh release create "KRA80HFAN1-mircli-2026-11-07" "${assets[@]}" \
             --title "Kentatsu KRA80HFAN1 original MirCli page (2026-11-07)" \
-            --notes "Original rendered DOM HTML with downloaded image/CSS/JS assets in a ZIP archive, plus single-file browser MHTML. Source: https://mircli.ru/Kentatsu-KRA80HFAN1-KPU95-RA/"
+            --notes "Original HTML capture with downloaded image/CSS/JS assets in a ZIP archive; MHTML included when browser access succeeded. Source: https://mircli.ru/Kentatsu-KRA80HFAN1-KPU95-RA/"
       - name: Upload artifact copy
         if: always()
         uses: actions/upload-artifact@v4
