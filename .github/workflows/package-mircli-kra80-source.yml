@@ -1,0 +1,44 @@
+name: Package original MirCli KRA80HFAN1 HTML + assets
+on:
+  push:
+    paths:
+      - '.github/workflows/package-mircli-kra80-source.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install minimal requirements
+        run: python -m pip install --quiet requests beautifulsoup4
+      - name: Download original webpage resources and package
+        run: python product-research/Kentatsu/KRA80HFAN1/package_raw_html.py
+      - name: Publish complete-HTML variant and manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_complete.html
+          git add product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_complete_manifest.json
+          git commit -m "Add original KRA80HFAN1 MirCli HTML with offline asset references"
+          git push
+      - name: Publish ZIP with _files folder
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "KRA80HFAN1-mircli-complete-2026-11-07" \
+            "product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_complete.zip" \
+            --title "Kentatsu KRA80HFAN1 MirCli complete original HTML and resources" \
+            --notes "Original server HTML plus HTML copy with locally downloaded assets folder, including product image URLs, CSS and scripts. View manifest for source and resource failures. No product description was reconstructed."
+      - name: Upload redundant build artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KRA80HFAN1-complete-MirCli
+          path: product-research/Kentatsu/KRA80HFAN1/original/KRA80HFAN1_MirCli_complete*
+          retention-days: 7
