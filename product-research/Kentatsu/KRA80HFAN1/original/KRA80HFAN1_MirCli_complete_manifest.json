@@ -1,0 +1,13 @@
+{
+  "source_url": "https://mircli.ru/Kentatsu-KRA80HFAN1-KPU95-RA/",
+  "model": "KRA80HFAN1",
+  "raw_html_bytes": 622058,
+  "complete_html_bytes": 620506,
+  "downloaded_asset_count": 81,
+  "asset_failures_count": 1,
+  "asset_failures": {
+    "https://cdn2.mircli.ru/img/icon/triangle-orange.svg": "404 Client Error: Not Found for url: https://cdn2.mircli.ru/img/icon/triangle-orange.svg"
+  },
+  "provenance": "Authentic MirCli server HTML; complete copy only changes local asset paths. Not a reconstruction.",
+  "limitations": "Original server response is not hydrated browser DOM. Some dynamic functions may need internet; failed assets retain original links."
+}
