@@ -1,0 +1,25 @@
+name: Verify public download KRA80HFAN1 MirCli HTML archive
+on:
+  push:
+    paths:
+      - '.github/workflows/verify-kra80-public-archive.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Check unauthenticated download and zip integrity
+        shell: bash
+        run: |
+          set -euo pipefail
+          unset GH_TOKEN GITHUB_TOKEN || true
+          url='https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/KRA80HFAN1-mircli-complete-2026-11-07/KRA80HFAN1_MirCli_complete.zip'
+          curl --location --fail --silent --show-error --max-time 60 --output /tmp/KRA80HFAN1_MirCli_complete.zip "$url"
+          echo "PUBLIC_DOWNLOAD_OK size=$(wc -c </tmp/KRA80HFAN1_MirCli_complete.zip)"
+          unzip -t /tmp/KRA80HFAN1_MirCli_complete.zip | tail -3
+          unzip -Z1 /tmp/KRA80HFAN1_MirCli_complete.zip | grep -q '^KRA80HFAN1_MirCli_server_original.html$'
+          unzip -Z1 /tmp/KRA80HFAN1_MirCli_complete.zip | grep -q '^KRA80HFAN1_MirCli_complete.html$'
+          unzip -Z1 /tmp/KRA80HFAN1_MirCli_complete.zip | grep -q 'KRA80HFAN1_MirCli_complete_files/'
+          echo "VERIFICATION_SUCCESS: original HTML, browser-style HTML and assets accessible without authentication."
