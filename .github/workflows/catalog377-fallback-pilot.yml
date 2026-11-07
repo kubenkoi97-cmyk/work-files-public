@@ -1,4 +1,4 @@
-name: Catalog377 fallback pilot one missing model
+name: Catalog377 fallback pilot improved gallery
 on:
   push:
     paths:
@@ -21,7 +21,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create catalog377-recovery-KTZV60 \
+          gh release create catalog377-recovery-KTZV60-v2 \
             product-research/catalog-377/output/catalog377-082-082.zip \
             product-research/catalog-377/output/catalog377-082-082-status.csv \
             --title "Recovery test: exact Kentatsu KTZV60HZBN1" \
