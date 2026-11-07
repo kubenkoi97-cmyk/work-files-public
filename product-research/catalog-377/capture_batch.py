@@ -116,6 +116,23 @@ def product_images(soup, model, brand, base_url):
             path=urlparse(u).path
             if key(model) in key(raw) or key(model) in key(path):
                 tag_entries.append((u,alt))
+    # Verified exact product on climatehnik.com: its main gallery uses
+    # <img alt=""> wrapped in class="thumb"; filenames are opaque hashes.
+    # These must not be confused with similar-product and logo images.
+    if (urlparse(base_url).hostname or "").endswith("climatehnik.com"):
+        for img in soup.find_all("img"):
+            parent=img.parent
+            cls=(parent.get("class",[]) if parent else [])
+            if "thumb" not in cls: continue
+            for attr in ("src","data-src","data-original"):
+                raw=img.get(attr)
+                if not raw: continue
+                u=urljoin(base_url,htmlmod.unescape(raw))
+                if "/resize_cache/iblock/" not in urlparse(u).path: continue
+                # Prefer large gallery frame; keep thumbnail if that is all
+                # the source has, but do not count duplicates twice.
+                if "/140_140_1/" in u: continue
+                tag_entries.append((u,"Exact-model product gallery (climatehnik)"))
     # If the site uses JSON-LD, collect only exact product image URLs.
     for tag in soup.find_all("script",type="application/ld+json"):
         try: obj=json.loads(tag.get_text())
