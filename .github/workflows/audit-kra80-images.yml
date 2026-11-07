@@ -1,0 +1,45 @@
+name: Audit KRA80HFAN1 archived gallery images
+on:
+  push:
+    paths:
+      - '.github/workflows/audit-kra80-images.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Dependencies
+        run: python -m pip install --quiet pillow beautifulsoup4
+      - name: Download and inspect published archive without authentication
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 2 --max-time 90 'https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/KRA80HFAN1-mircli-complete-2026-11-07/KRA80HFAN1_MirCli_complete.zip' -o /tmp/kra80.zip
+          python - <<'PY'
+          import io,json,zipfile,html
+          from PIL import Image
+          from bs4 import BeautifulSoup
+          with zipfile.ZipFile('/tmp/kra80.zip') as z:
+              allnames=z.namelist()
+              page=BeautifulSoup(z.read('KRA80HFAN1_MirCli_complete.html').decode('utf-8'),'html.parser')
+              photos=[]; seen=set()
+              for img in page.select('img'):
+                  alt=img.get('alt','')
+                  if 'KRA80HFAN1/KPU95-RA' not in alt: continue
+                  src=img.get('src','')
+                  if src not in allnames: continue
+                  raw=z.read(src)
+                  with Image.open(io.BytesIO(raw)) as pic:
+                      data={'alt':alt,'file':src.rsplit('/',1)[-1],
+                            'width':pic.width,'height':pic.height,'bytes':len(raw),
+                            'format':pic.format,'color_mode':pic.mode}
+                  if src not in seen:
+                      photos.append(data);seen.add(src)
+              print('PRODUCT_GALLERY_IMAGES_START')
+              print(json.dumps(photos,ensure_ascii=False,indent=2))
+              print('PRODUCT_GALLERY_IMAGES_END')
+              print('ZIP_ASSETS',len([n for n in allnames if '_files/' in n]))
+              print('ZIP_SIZE_BYTES',sum(z.getinfo(n).file_size for n in allnames))
+          PY
