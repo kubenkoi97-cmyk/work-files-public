@@ -1,0 +1,16 @@
+﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
+68,Kentatsu,KTGV60HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTGV60HZBN1/,True,True,10,10,75,
+69,Kentatsu,KTGV72HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTGV72HZBN1/,True,True,10,10,75,
+70,Kentatsu,KTGV80HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTGV80HZBN1/,True,True,10,10,76,
+71,Kentatsu,KTYV18HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTYV18HZBN1-KPU1S-D3/,True,True,6,6,64,
+72,Kentatsu,KTYV24HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTYV24HZBN1-KPU1S-D3/,True,True,6,6,63,
+73,Kentatsu,KTYV30HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTYV30HZBN1-KPU1M-D3/,True,True,6,6,63,
+74,Kentatsu,KTYV40HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTYV40HZBN1-KPU1M-D3/,True,True,6,6,63,
+75,Kentatsu,KTYV50HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTYV50HZBN1-KPU1L-D3/,True,True,6,6,67,
+76,Kentatsu,KTYV60HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTYV60HZBN1-KPU1L-D3/,True,True,6,6,63,
+77,Kentatsu,KTYV72HZBN1,COMPLETE,MirCli,https://mircli.ru/Kentatsu-KTYV72HZBN1-KPU1L-D3/,True,True,6,6,63,
+78,Kentatsu,KTZV15HZBN1,NOT_FOUND,,,,,,,,No verified exact model product HTML
+79,Kentatsu,KTZV24HZBN1,NOT_FOUND,,,,,,,,No verified exact model product HTML
+80,Kentatsu,KTZV30HZBN1,NOT_FOUND,,,,,,,,No verified exact model product HTML
+81,Kentatsu,KTZV40HZBN1,NOT_FOUND,,,,,,,,No verified exact model product HTML
+82,Kentatsu,KTZV50HZBN1,NOT_FOUND,,,,,,,,No verified exact model product HTML
