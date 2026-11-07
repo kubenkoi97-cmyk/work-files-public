@@ -173,17 +173,46 @@ def search_mircli(model):
     return list(dict.fromkeys(links))[:15]
 
 def external_candidates(brand, model):
-    # Search-engine discovery, never a guess that a model is present.
+    # Query actual vendor sites plus Bing's well-formed RSS results. HTML
+    # search engines may hide organic links; do not mistake that for no SKU.
     q=f'"{model}" "{brand}" купить характеристики'
     candidates=[]
-    engines=[
-      "https://www.bing.com/search?format=rss&"+urlencode({"q":q}),
-      "https://www.google.com/search?"+urlencode({"q":q,"num":"10"}),
-      "https://www.google.com/search?"+urlencode({"q":f'"{model}" "{brand}"','num':'10'}),
+    vendor_searches=[
+       "https://climatehnik.com/search/?"+urlencode({"q":model}),
+       "https://envok.ru/search/?"+urlencode({"q":model}),
+       "https://daichi.market/search/index.php?"+urlencode({"q":model}),
     ]
-    for search_url in engines:
+    for u in vendor_searches:
+        r=get(u,timeout=12)
+        if not r:continue
+        soup=BeautifulSoup(r.text,"html.parser")
+        for a in soup.find_all("a",href=True):
+            link=a.get("href","")
+            label=a.get_text(" ",strip=True)
+            if key(model) in key(link+" "+label):
+                dest=urljoin(r.url,link)
+                path=urlparse(dest).path.lower()
+                if "/search/" not in path and dest not in candidates:
+                    candidates.append(dest)
+    # The brand+model can often be indexed even if a shop's internal search
+    # has no URL in the anchor text. Bing RSS item links are actual URLs.
+    urls=[
+      "https://www.bing.com/search?format=rss&"+urlencode({"q":q}),
+      "https://www.bing.com/search?format=rss&"+urlencode({"q":f'"{model}"'}),
+      "https://www.google.com/search?"+urlencode({"q":q,"num":"10"}),
+    ]
+    for search_url in urls:
         r=get(search_url,timeout=13)
         if not r:continue
+        if "bing.com" in search_url:
+            feed=BeautifulSoup(r.text,"xml")
+            for item in feed.find_all("item"):
+                u=item.find("link").get_text(" ",strip=True) if item.find("link") else ""
+                title=item.find("title").get_text(" ",strip=True) if item.find("title") else ""
+                description=item.find("description").get_text(" ",strip=True) if item.find("description") else ""
+                if key(model) in key(title+" "+u+" "+description):
+                    candidates.append(u)
+            continue
         soup=BeautifulSoup(r.text,"html.parser")
         for a in soup.find_all("a",href=True):
             href=a.get("href","")
@@ -196,8 +225,20 @@ def external_candidates(brand, model):
             if host.endswith(("google.com","bing.com","yandex.ru","duckduckgo.com","youtube.com","wikipedia.org")): continue
             if key(model) in key(u+" "+a.get_text(" ",strip=True)):
                 candidates.append(u)
-        if len(candidates)>=12:break
-    return list(dict.fromkeys(candidates))[:20]
+    # Structural guesses are *candidates only*, never proof of a matching model.
+    if brand=="Kentatsu":
+        candidates.extend([
+            f"https://climatehnik.com/search/?q={quote(model)}",
+            f"https://msk.climate-group.ru/vnutrenniy-blok-vrf-sistemy-kentatsu-{model.lower()}/",
+            f"https://nizhniy-novgorod.vsekondicioneri.ru/product/kentatsu-{model.lower()}/",
+            f"https://brand-climat.ru/kentatsu-{model.lower()}",
+        ])
+    cleaned=[]
+    for u in candidates:
+        pr=urlparse(u)
+        if pr.scheme not in ("http","https") or not pr.netloc: continue
+        if u not in cleaned:cleaned.append(u)
+    return cleaned[:28]
 
 def choose_source(brand, model):
     attempts=[]
