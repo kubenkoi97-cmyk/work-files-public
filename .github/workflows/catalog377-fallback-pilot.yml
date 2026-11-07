@@ -1,0 +1,28 @@
+name: Catalog377 fallback pilot one missing model
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-fallback-pilot.yml'
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet requests beautifulsoup4 lxml
+      - name: Exact model fallback source
+        run: python product-research/catalog-377/capture_batch.py --start 81 --end 82
+      - name: Publish test archive if verified
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create catalog377-recovery-KTZV60 \
+            product-research/catalog-377/output/catalog377-082-082.zip \
+            product-research/catalog-377/output/catalog377-082-082-status.csv \
+            --title "Recovery test: exact Kentatsu KTZV60HZBN1" \
+            --notes "Validation of vendor fallback source. The model must be exact. Results in status.csv."
