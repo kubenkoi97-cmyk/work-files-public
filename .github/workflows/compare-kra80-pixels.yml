@@ -1,0 +1,38 @@
+name: Compare KRA80 image pixel samples from user PNG and stored WebP
+on:
+  push:
+    paths:
+      - '.github/workflows/compare-kra80-pixels.yml'
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install pillow
+        run: python -m pip install --quiet pillow
+      - name: Compare sampled pixels without uploading user PNGs
+        shell: bash
+        run: |
+          curl -fsSL 'https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/KRA80HFAN1-mircli-complete-2026-11-07/KRA80HFAN1_MirCli_complete.zip' -o /tmp/kra80.zip
+          python - <<'PY'
+          import base64,zlib,zipfile,io,math,json
+          from PIL import Image
+          samples=["eNr7/x8dzJw5c+7cuf9xgGs3rp+/eGH16tULFy5MS0vDVNDT03Pt2rXLly+vWrVq27Ztk6ZMQ1Nw8crly9euzpo168jhY/v27fv3719vT//0mSg2Hj956sSp0wcOHAKyd+zYsXv37r///7d3diGr2b5tJ5A8c+bM/sPHvn79eu7cOaBRYJm/cDVAkadPnwIZSUlJbGxsS5cu/fHjx6VLlyAq//79C9T48+dPIMnAwJCRkcHIyBgeHl5dXf39+3eYaf/fvXv3HQyAskBlnJycTExM2traQF1nz54FGgK37v379wEBAezs7DFR0d++fbv/8DHQ8ai+BynOyc0Cyn769Onz58//cYPPHz7+R/IPhAQA5/FnIA==","eNplkM9KhFAUxkcEF77AzCv5AFHofmhy1tUjCK4SauVicKWTDS0GZpURyM3BYTIzKRduxI0wqInOQP7pkGFDfYvDuff73Y9zT9P8yrKsIAhc131xX9frtSzLFEXN5/MOsB3Xsm1wn56t89MzhIzJZFJVVV3XHaMjY7VaXVxeIWN5d/+wSeL2fp9Bprk0Tf0RVdUnHD3PK5uy/lYLjE+O1dmtpmnQQ/71zQxqURS9Xi+OfwIVRWkb9+19t9uBK4oiACzLchznOE47GFTbtsFdLBbseESSJI7jgA0GA3gLaWmagrvdbnmeJwgCXAzDptOpJEmqqnYzZ1m2SROapsMw9H0fIV0QhMOjg36/v7fCJooiWGAbyDAMpOX5B/TNPwFZNjWQeZ4Ph8PuX3+UJAlM2G3mC61gW6U=","eNqVj8tOwkAUhhfGhS+k8SlMSHThTuPK6CsYVEQSNQiITUWsSmrB2gBiK7dAGJChODTcqqvGPTEhWmkUKHgUFy7cePIvTvJ988/McPi/wRhTFH3KnAe5yz8FQkguj0AIBXmeFxzbu7+ppmm5XF6p1grFEjSAIIlx26bd7P8IqqrWmo3Gg1qtN+WKwrIcVMVEKZFKe7z0yKk1vigEerBcDgTYxYWlkUPR/lbrGRylUi8ThdwrO3tOVMQet3d5ZTUcjUnxpPfwiPb5wSmTKi6RdAZBEsnM8QnzZhgv+is4++4D2seo6iMqlACJtykIfxXpfo9hGO12e8PmcHko5oyV4ukRfe9+9Eyz3+sjhDqdjq7r+Tu8ZrWPjU9EbhIh4RoE0zRlWda0J1gsMxYhHIUq6/qW0+UOcAKczWazg8EAKLwQFrhuanKau+DgX7Nz858cM1hm"]
+          lookup=[
+            '5a6377207b9c_Kentatsu_KRA80HFAN1KPU95_RA.jpg',
+            'fdb1a942dd5e_Kentatsu_KRA80HFAN1KPU95_RA.png',
+            '1fb1196e7da3_Kentatsu_KRA80HFAN1KPU95_RA_1_.jpg'
+          ]
+          with zipfile.ZipFile('/tmp/kra80.zip') as z:
+              for idx,(sample,name) in enumerate(zip(samples,lookup),1):
+                  p=next(q for q in z.namelist() if q.endswith('/'+name))
+                  im=Image.open(io.BytesIO(z.read(p))).convert('RGB')
+                  expected=zlib.decompress(base64.b64decode(sample))
+                  n=12; actual=bytes(c for j in range(n) for i in range(n) for c in im.getpixel((int((i+.5)*im.width/n),int((j+.5)*im.height/n))))
+                  if len(expected)!=len(actual):raise RuntimeError('bad samples')
+                  diff=[abs(a-b) for a,b in zip(expected,actual)]
+                  mse=sum((a-b)**2 for a,b in zip(expected,actual))/len(diff)
+                  psnr=(10*math.log10(255**2/mse)) if mse else 99
+                  print('PHOTO',idx,json.dumps({'width':im.width,'height':im.height,'pixel_samples':144,'identical_rgb_samples':sum(expected[i:i+3]==actual[i:i+3] for i in range(0,len(diff),3)),'mean_absolute_channel_error':round(sum(diff)/len(diff),4),'max_channel_error':max(diff),'sampled_PSNR_dB':round(psnr,3)},ensure_ascii=False),flush=True)
+          PY
