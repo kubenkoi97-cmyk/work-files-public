@@ -1,0 +1,96 @@
+name: Catalog377 remaining exact-model HTML + image batches
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-all-remaining.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        include:
+          - {start: 66, end: 81, label: "067-081"}
+          - {start: 81, end: 96, label: "082-096"}
+          - {start: 96, end: 111, label: "097-111"}
+          - {start: 111, end: 126, label: "112-126"}
+          - {start: 126, end: 141, label: "127-141"}
+          - {start: 141, end: 156, label: "142-156"}
+          - {start: 156, end: 171, label: "157-171"}
+          - {start: 171, end: 186, label: "172-186"}
+          - {start: 186, end: 201, label: "187-201"}
+          - {start: 201, end: 216, label: "202-216"}
+          - {start: 216, end: 231, label: "217-231"}
+          - {start: 231, end: 246, label: "232-246"}
+          - {start: 246, end: 261, label: "247-261"}
+          - {start: 261, end: 274, label: "262-274"}
+          - {start: 274, end: 289, label: "275-289"}
+          - {start: 289, end: 304, label: "290-304"}
+          - {start: 304, end: 319, label: "305-319"}
+          - {start: 319, end: 334, label: "320-334"}
+          - {start: 334, end: 349, label: "335-349"}
+          - {start: 349, end: 364, label: "350-364"}
+          - {start: 364, end: 377, label: "365-377"}
+          - {start: 0, end: 13, label: "001-013"}
+          - {start: 13, end: 26, label: "014-026"}
+          - {start: 26, end: 39, label: "027-039"}
+          - {start: 39, end: 52, label: "040-052"}
+          - {start: 52, end: 60, label: "053-060"}
+          - {start: 60, end: 61, label: "061-061"}
+    steps:
+      - name: Checkout inventory, scripts and existing states
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python -m pip install --quiet requests beautifulsoup4
+      - name: Capture exact product pages; MirCli first
+        run: python product-research/catalog-377/capture_batch.py --start ${{ matrix.start }} --end ${{ matrix.end }}
+      - name: Publish archive and results after this batch
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LABEL: ${{ matrix.label }}
+        run: |
+          set -eu
+          tag="catalog377-batch-$LABEL"
+          zip="product-research/catalog-377/output/catalog377-$LABEL.zip"
+          csv="product-research/catalog-377/output/catalog377-$LABEL-status.csv"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$zip" "$csv" --clobber
+          else
+            gh release create "$tag" "$zip" "$csv" \
+              --title "Catalog 377 — original HTML + photos — $LABEL" \
+              --notes "Source Excel inventory: rows $(echo "$LABEL"). Every product stores exact-model source HTML, resource-linked copy, downloaded photos, provenance URL, manifest, and an explicit COMPLETE/PARTIAL/NOT_FOUND/ERROR result. Source priority: MirCli."
+          fi
+      - name: Save this batch's status in public GitHub
+        shell: bash
+        env:
+          LABEL: ${{ matrix.label }}
+        run: |
+          set -eu
+          mkdir -p product-research/catalog-377/status
+          cp "product-research/catalog-377/output/catalog377-$LABEL-status.csv" "product-research/catalog-377/status/batch-$LABEL.csv"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "product-research/catalog-377/status/batch-$LABEL.csv"
+          git commit -m "Publish catalog 377 verification results $LABEL"
+          for attempt in 1 2 3 4 5 6 7 8; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
+      - name: Upload short-lived redundant artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog377-${{ matrix.label }}
+          path: product-research/catalog-377/output/
+          retention-days: 7
