@@ -27,6 +27,7 @@ import unicodedata
 from urllib.parse import urljoin, urlparse, quote, urlencode, parse_qs
 from urllib.robotparser import RobotFileParser
 import zipfile
+from concurrent.futures import ThreadPoolExecutor
 
 import requests
 from bs4 import BeautifulSoup
@@ -253,9 +254,10 @@ def download_assets(page,folder):
     assets={}
     failed=[]
     downloaded_photos=[]
-    for url,meta in chosen.items():
+    def one(item):
+        url,meta=item
         try:
-            r=SESSION.get(url, timeout=16)
+            r=requests.get(url,headers=HEADERS,timeout=14)
             if r.status_code!=200 or not r.content or len(r.content)>12_000_000:
                 raise ValueError("HTTP "+str(r.status_code)+" or asset size limit")
             content_type=r.headers.get("content-type","").split(";")[0].strip()
@@ -263,16 +265,22 @@ def download_assets(page,folder):
             ext=mimetypes.guess_extension(content_type) or ""
             basename=safe(Path(urlparse(url).path).name)[:75] or "resource"
             if "." not in basename and ext:basename+=ext
-            # A misleading URL suffix is kept but actual format recorded.
             file=hashlib.sha256(url.encode()).hexdigest()[:12]+"_"+basename
             (folder/file).write_bytes(r.content)
-            assets[url]={"file":file,"bytes":len(r.content),"content_type":content_type,"role":meta["type"]}
-            if meta["type"]=="product_photo":
-                if content_type.startswith("image/"):
-                    downloaded_photos.append({"file":file,"url":url,"bytes":len(r.content),
-                                            "content_type":content_type})
+            return url,meta,{"file":file,"bytes":len(r.content),
+                       "content_type":content_type,"role":meta["type"]},None
         except Exception as e:
-            failed.append({"url":url,"error":str(e)[:140]})
+            return url,meta,None,str(e)[:140]
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        for url,meta,res,error in pool.map(one,chosen.items()):
+            if res:
+                assets[url]=res
+                if meta["type"]=="product_photo" and res["content_type"].startswith("image/"):
+                    downloaded_photos.append({
+                        "file":res["file"],"url":url,"bytes":res["bytes"],
+                        "content_type":res["content_type"]})
+            else:
+                failed.append({"url":url,"error":error})
     return assets,downloaded_photos,failed
 
 def offline_html(page,asset_map,foldername):
@@ -308,7 +316,8 @@ def capture(row, dirpath):
                 offline_html(page,asset_map,"page_files"),encoding="utf-8")
             has_desc=page["has_description"]
             has_specs=page["has_specs"]
-            complete=has_desc and has_specs and len(downloaded_photos)>=1
+            complete=(has_desc and has_specs and len(downloaded_photos)>=1
+                      and len(downloaded_photos)==len(page["photos"]))
             status="COMPLETE" if complete else "PARTIAL"
             manifest.update(
               status=status,site=site,source_url=page["url"],title=page["title"],
