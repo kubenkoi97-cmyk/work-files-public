@@ -7,6 +7,7 @@ on:
       - '.github/workflows/catalog377-reconcile.yml'
       - 'product-research/catalog-377/status/batch-*.csv'
       - 'product-research/catalog-377/status/recovery-batch-*.csv'
+      - 'product-research/catalog-377/status/fast-*.csv'
   workflow_run:
     workflows: ["Catalog377 recover exact-model cards missing in first pass"]
     types: [completed]
