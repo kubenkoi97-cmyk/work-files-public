@@ -1,0 +1,38 @@
+name: Catalog377 verify GitHub Release ZIP via authenticated CLI
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-release-download-diagnostic.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {tag: "catalog377-batch-062-066", file: "catalog377-062-066.zip"}
+          - {tag: "catalog377-recovery-batch-082-096", file: "catalog377-082-096.zip"}
+          - {tag: "catalog377-supplemental-v2-batch-172-186", file: "catalog377-172-186.zip"}
+    steps:
+      - name: Authenticated release asset download with official CLI
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ matrix.tag }}
+          FILE: ${{ matrix.file }}
+          GH_REPO: kubenkoi97-cmyk/work-files-public
+        run: |
+          set -euo pipefail
+          echo "TEST_RELEASE=$TAG"
+          echo "ASSET_METADATA:"
+          gh release view "$TAG" --json assets --jq '.assets[] | select(.name == env.FILE) | {name,size,downloadCount}' || true
+          for attempt in 1 2 3 4; do
+            if gh release download "$TAG" -p "$FILE" -D /tmp/release-verify --clobber; then break; fi
+            sleep $((attempt*3))
+          done
+          test -s "/tmp/release-verify/$FILE"
+          unzip -t "/tmp/release-verify/$FILE" | tail -3
+          echo "VERIFIED_ARCHIVE_BYTES=$(stat -c '%s' "/tmp/release-verify/$FILE")"
+          echo "VERIFIED_ARCHIVE_SHA256=$(sha256sum "/tmp/release-verify/$FILE")"
