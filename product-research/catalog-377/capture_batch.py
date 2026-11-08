@@ -372,7 +372,7 @@ def igc_http_candidates(model):
                 event=td.get("onclick","")
                 found=re.search(r"""(?:location(?:\.href)?\s*=\s*)['"]([^'"]+)['"]""",event)
                 href=found.group(1) if found else td.get("href","")
-                if not href or "/product/" not in href or not title:continue
+                if not href or "/product/" not in href:continue  # image-only TD can have no visible text
                 # Preserve HTTP since publisher's HTTPS certificate endpoint
                 # drops incoming requests from GitHub runners.
                 url=urljoin(category_url,href).replace("https://igc-aircon.com/","http://igc-aircon.com/").replace("https://www.igc-aircon.com/","http://igc-aircon.com/")
