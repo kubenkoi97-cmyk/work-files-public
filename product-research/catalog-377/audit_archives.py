@@ -55,6 +55,11 @@ def audit_one(z, model,brand):
         primary=" ".join(hh.get_text(" ",strip=True) for hh in soup.find_all("h1"))
         title=soup.title.get_text(" ",strip=True) if soup.title else ""
         row["source"]=m.get("source_url","")
+        if (brand=="Kentatsu" and
+            model.startswith(("KTKB","KTTB","KTHB")) and
+            "gorodskie-sistemy.ru" in row["source"]):
+            row["reason"]="Source has genuine exact SKU, photos and specs, but no product-specific description"
+            return row
         if normalize(model) not in normalize(primary+" "+title):
             row["reason"]="Exact model not in product heading or title"
             return row
