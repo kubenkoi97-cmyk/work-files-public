@@ -155,7 +155,10 @@ def main():
         for tag in sorted(results):
             if not tag.startswith(stage):continue
             for row in results[tag]:
-                states[(row["brand"],row["model"])]=row
+                k=(row["brand"],row["model"])
+                old=states.get(k)
+                if old and old.get("verified"): continue
+                states[k]=row
     lines=sorted(states.values(),key=lambda a:(a["brand"],a["model"]))
     with (REPORT/"audit_status.csv").open("w",newline="",encoding="utf-8-sig") as f:
         columns=["brand","model","declared","verified","reason",
