@@ -20,8 +20,9 @@ SAMPLES=[
 ]
 def check_sku(model,text):
     sku=re.sub(r"\s+","",model).upper()
-    source=re.sub(r"\s+","",text).upper()
-    return bool(re.search(r"(?<![A-Z0-9])"+re.escape(sku)+r"(?![A-Z0-9(])",source))
+    # Never concatenate brand + SKU in a single token. Require full suffix.
+    pat=re.escape(sku).replace(r"\(",r"\s*\(")
+    return bool(re.search(r"(?<![A-Z0-9])"+pat+r"(?![A-Z0-9(])",str(text).upper()))
 def jsonld_descriptions(raw,model):
     found=[]
     try:
