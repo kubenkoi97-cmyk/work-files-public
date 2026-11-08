@@ -164,6 +164,9 @@ def product_images(soup, model, brand, base_url):
         if pr.scheme not in ("http","https") or "/static/" in pr.path:
             continue
         if u in seen: continue
+        if any(pat in pr.path.lower() for pat in ("picture.loading.svg","placeholder.svg","loader.svg","loading.svg")):
+            # Transparent/loading placeholders are not product photographs.
+            continue
         seen.add(u)
         out.append({"url":u,"alt":alt})
     return out[:50]
