@@ -1,14 +1,15 @@
 {
   "catalog_total": 377,
-  "complete_claimed_in_master": 325,
-  "unresolved": 52,
+  "complete_claimed_in_master": 315,
+  "unresolved": 62,
   "distribution": {
+    "ARCHIVED_DC5_INSTEAD_OF_DC": 10,
     "HISTORICAL_SKU_NO_ORIGINAL_INDIVIDUAL_PAGE": 11,
     "EXACT_SKU_NOT_CONFIRMED": 1,
     "PUBLISHED_WITHOUT_PRODUCT_DESCRIPTION": 38,
     "ORIGINAL_PAGE_ONLY_SPECS_AND_IMAGES": 2
   },
   "original_page_plus_photos_exists": 40,
-  "no_individual_original_html": 12,
-  "warning": "Registry COMPLETE is not independent ZIP verification. Existing standalone audit suffered GitHub HTTP 504."
+  "no_individual_original_html": 22,
+  "warning": "Audit-v2 verified 355 source ZIP contents; 10 rejected for mismatching exact SKU suffix. 315 remaining COMPLETE have QA status in master_status.csv."
 }
