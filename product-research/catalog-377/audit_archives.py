@@ -140,7 +140,7 @@ def main():
     r.raise_for_status()
     releases=r.json()
     relevant=[x for x in releases
-          if re.fullmatch(r"catalog377-(?:recovery-)?batch-\d{3}-\d{3}",x["tag_name"])]
+          if re.fullmatch(r"catalog377-(?:recovery-|deep-)?batch-\d{3}-\d{3}",x["tag_name"])]
     print("RELEASES_TO_AUDIT",len(relevant),flush=True)
     results={}
     failures={}
@@ -151,14 +151,11 @@ def main():
             print("CHECKED",tag,len(rows),"FAILED",len(errors),flush=True)
     states={}
     # Initial + recovered passes: recovery takes precedence for the same SKU
-    for tag in sorted(results):
-        if tag.startswith("catalog377-recovery"):continue
-        for row in results[tag]:
-            states[(row["brand"],row["model"])]=row
-    for tag in sorted(results):
-        if not tag.startswith("catalog377-recovery"):continue
-        for row in results[tag]:
-            states[(row["brand"],row["model"])]=row
+    for stage in ("catalog377-batch-", "catalog377-recovery-batch-", "catalog377-deep-batch-"):
+        for tag in sorted(results):
+            if not tag.startswith(stage):continue
+            for row in results[tag]:
+                states[(row["brand"],row["model"])]=row
     lines=sorted(states.values(),key=lambda a:(a["brand"],a["model"]))
     with (REPORT/"audit_status.csv").open("w",newline="",encoding="utf-8-sig") as f:
         columns=["brand","model","declared","verified","reason",
