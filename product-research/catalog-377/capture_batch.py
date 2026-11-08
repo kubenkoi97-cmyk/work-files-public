@@ -250,6 +250,40 @@ def external_candidates(brand, model):
             f"https://nizhniy-novgorod.vsekondicioneri.ru/product/kentatsu-{model.lower()}/",
             f"https://brand-climat.ru/kentatsu-{model.lower()}",
         ])
+    if brand=="IGC":
+        # Bitrix catalogue used by IGC's official Russian dealer. Product
+        # links are found from the *actual* listing, never presumed matches.
+        listing="https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/"
+        for page in range(1,8):
+            url=listing+("?PAGEN_1="+str(page) if page>1 else "")
+            r=get(url,timeout=13)
+            if not r:continue
+            soup=BeautifulSoup(r.text,"html.parser")
+            for a in soup.find_all("a",href=True):
+                h=a.get("href","")
+                t=a.get_text(" ",strip=True)
+                if key(model) in key(t+" "+h):
+                    link=urljoin(url,h)
+                    if link.startswith("https://igc.com.ru/catalog/") and link not in candidates:
+                        candidates.append(link)
+        guesses=[model.lower().replace("-","_").replace("(","_").replace(")","").replace(" ","_")]
+        for slug in guesses:
+            for path in ["vnutrennie_bloki_vrf_sistemy",""]:
+                candidates.append("https://igc.com.ru/catalog/"+(path+"/" if path else "")+"igc_"+slug+"/")
+        for base in ("https://igc-aircon.com/product/nastennye_bloki_vrf/",
+                     "https://igc-aircon.com/product/kanalnye_bloki_vrf/",
+                     "https://igc-aircon.com/product/kassetnye_vrf_4_kh_potochnye_komplekty/"):
+            rr=get(base,timeout=13)
+            if not rr:continue
+            soup=BeautifulSoup(rr.text,"html.parser")
+            for a in soup.find_all("a",href=True):
+                if key(model) in key(a.get_text(" ",strip=True)+" "+a["href"]):
+                    candidates.append(urljoin(base,a["href"]))
+    if brand=="Midea":
+        candidates.extend([
+            f"https://vsekondicioneri.ru/product/midea-{model.lower().replace('(', '-').replace(')', '')}/",
+            f"https://nizhniy-novgorod.vsekondicioneri.ru/product/midea-{model.lower().replace('(', '-').replace(')', '')}/",
+        ])
     cleaned=[]
     for u in candidates:
         pr=urlparse(u)
