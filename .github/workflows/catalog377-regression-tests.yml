@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - '.github/workflows/catalog377-regression-tests.yml'
+      - 'product-research/catalog-377/capture_batch.py'
+      - 'product-research/catalog-377/test_capture_regressions.py'
 permissions:
   contents: read
 jobs:
