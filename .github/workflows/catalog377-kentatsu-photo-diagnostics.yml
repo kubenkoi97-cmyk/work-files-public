@@ -23,6 +23,15 @@ jobs:
               for x in m.get('asset_failures',[]):
                 if any(k in x.get('url','').lower() for k in ['ktkb','image','photo','goods','product','resize','preview','catalog','upload','picture']):
                   print('FAIL',x)
+              folder=path.rsplit('/',1)[0]
+              for item in z.namelist():
+                if item.startswith(folder+'/page_files/') and item.lower().endswith(('.webp','.jpg','.png','.jpeg')):
+                  payload=z.read(item)
+                  print('SAVED_ASSET',item.rsplit('/',1)[-1],len(payload),payload[:16])
+              offline=BeautifulSoup(z.read(folder+'/offline.html'),'html.parser')
+              for im in offline.find_all('img'):
+                if m['model'].lower() in str(im).lower():
+                  print('OFFLINEIMG',str(im)[:460])
               raw=z.read(path.rsplit('/',1)[0]+'/original.html').decode('utf-8')
               soup=BeautifulSoup(raw,'html.parser')
               for img in soup.find_all('img')[:35]:
