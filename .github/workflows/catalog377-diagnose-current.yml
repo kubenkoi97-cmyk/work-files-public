@@ -1,0 +1,27 @@
+name: Catalog377 root-cause remediation for 62 unresolved SKUs
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-diagnose-current.yml'
+permissions:
+  contents: write
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate current 62 model per-SKU root cause and remedy matrix
+        run: python product-research/catalog-377/diagnose_blockers_62.py
+      - name: Publish result
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add product-research/catalog-377/diagnostics
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Update root-cause matrix for 62 unresolved SKUs and 10 wrong DC5 variants'
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
