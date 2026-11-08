@@ -1,0 +1,16 @@
+﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
+336,Midea,MI2-80DLDHN18(At),COMPLETE,MirCli,https://mircli.ru/Midea-MI2-80DLDHN18-At-/,True,True,10,10,78,
+337,Midea,MI2-90DLDHN18(At),COMPLETE,MirCli,https://mircli.ru/Midea-MI2-90DLDHN18-At-/,True,True,10,10,74,
+338,Midea,MI2-112DLDHN18(At),COMPLETE,MirCli,https://mircli.ru/Midea-MI2-112DLDHN18-At-/,True,True,10,10,76,
+339,Midea,MI2-140DLDHN18(At),COMPLETE,MirCli,https://mircli.ru/Midea-MI2-140DLDHN18-At-/,True,True,10,10,76,
+340,Midea,MIH71GHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH71GHN18/,True,True,15,15,95,
+341,Midea,MIH80GHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH80GHN18/,True,True,15,15,97,
+342,Midea,MIH90GHN18,NOT_FOUND,,,,,,,,No verified exact model product HTML
+343,Midea,MIH15GHN18(DP),COMPLETE,MirCli,https://mircli.ru/Midea-MIH15GHN18-DP-/,True,True,12,12,94,
+344,Midea,MIH22GHN18(DP),COMPLETE,MirCli,https://mircli.ru/Midea-MIH22GHN18-DP-/,True,True,12,12,94,
+345,Midea,MIH28GHN18(DP),COMPLETE,MirCli,https://mircli.ru/Midea-MIH28GHN18-DP-/,True,True,12,12,94,
+346,Midea,MIH36GHN18(DP),COMPLETE,MirCli,https://mircli.ru/Midea-MIH36GHN18-DP-/,True,True,12,12,94,
+347,Midea,MIH45GHN18(DP),COMPLETE,MirCli,https://mircli.ru/Midea-MIH45GHN18-DP-/,True,True,12,12,94,
+348,Midea,MIH56GHN18(DP),COMPLETE,MirCli,https://mircli.ru/Midea-MIH56GHN18-DP-/,True,True,12,12,94,
+349,Midea,MIH71GHN18(DP),COMPLETE,MirCli,https://mircli.ru/Midea-MIH71GHN18-DP-/,True,True,12,12,94,
+350,Midea,MIH80GHN18(DP),COMPLETE,MirCli,https://mircli.ru/Midea-MIH80GHN18-DP-/,True,True,12,12,95,
