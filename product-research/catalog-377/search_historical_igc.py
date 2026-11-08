@@ -26,6 +26,14 @@ def probe(url):
             return {"status":r.status_code,"body":r.text[:140]}
         ct=r.headers.get("content-type","")
         lines=r.text.splitlines()
+        if "application/json" in ct:
+            try:
+                data=r.json()
+                if isinstance(data,list):
+                    return {"status":200,"content_type":ct,"json":data[:30],"len":len(r.content)}
+                if isinstance(data,dict):
+                    return {"status":200,"content_type":ct,"json":data,"len":len(r.content)}
+            except ValueError:pass
         return {"status":200,"content_type":ct,"lines":lines[:25],"len":len(r.content)}
     except Exception as e:return {"error":str(e)[:200]}
 # Find active index endpoints rather than inventing index names.
@@ -33,7 +41,7 @@ cc=probe("https://index.commoncrawl.org/collinfo.json")
 indexes=[]
 if cc.get("status")==200:
     try:
-        data=json.loads("\n".join(cc["lines"]))
+        data=cc.get("json") or json.loads("\n".join(cc["lines"]))
         indexes=[x["cdx-api"] for x in data if "cdx-api" in x][:3]
     except Exception:pass
 print("INDEXES",indexes,"CC",str(cc)[:250],flush=True)
@@ -41,17 +49,8 @@ print("INDEXES",indexes,"CC",str(cc)[:250],flush=True)
 samples=["IMS-K22NH(DC)","IMS-BS36NHQ(DC)","IMS-BH220NH(DC)","IMS-QV100NH(DC)"]
 for model in samples:
     stem=re.sub("[^a-z0-9]","",model.lower().replace("(dc)",""))
-    for source,template in [
-        ("Wayback CDX","https://web.archive.org/cdx/search/cdx?url=*.igc-aircon.com/*%s*&output=json&filter=statuscode:200&collapse=urlkey&limit=10"),
-        ("Wayback seller","https://web.archive.org/cdx/search/cdx?url=*.iclim.ru/*%s*&output=json&filter=statuscode:200&collapse=urlkey&limit=10"),
-    ]:
-        response=probe(template%stem)
-        evidence.append({"model":model,"source":source,"result":response})
-        print("HISTORY",model,source,str(response)[:420],flush=True)
-        if response.get("blocked"):
-            # No aggressive attempts when archival provider refuses requests.
-            break
-        time.sleep(.6)
+    # Wayback service is currently returning 503/timeouts from this runner.
+    # Avoid repeated blocked calls; Common Crawl is an independent index.
     for index in indexes[:2]:
         from urllib.parse import urlencode
         candidate=index+"?"+urlencode({"url":"*.igc-aircon.com/*"+stem+"*","output":"json","filter":"status:200"})
