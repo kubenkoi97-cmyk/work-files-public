@@ -206,6 +206,11 @@ def external_candidates(brand, model):
     # genuine model-specific detail links, not aliases guessed from a series.
     extra=[]
     if brand=="Kentatsu":
+        # Another genuinely accessible exact-model product source.
+        # Text may lack a separate description; mark PARTIAL accordingly.
+        u="https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-"+model.lower()
+        if model.startswith(("KTKB","KTTB","KTHB")):
+            extra.append(u)
         if EFFECT_CATALOG_LINKS is None:
             EFFECT_CATALOG_LINKS=[]
             for page_num in range(9,28):
@@ -507,13 +512,24 @@ def main():
     ap.add_argument("--quick",action="store_true")
     ap.add_argument("--only-unresolved",action="store_true",
                     help="Retry only models without prior COMPLETE status in initial batches")
+    ap.add_argument("--only-master-unresolved",action="store_true",
+                    help="Run only models missing COMPLETE in latest authoritative registry")
     args=ap.parse_args()
     products=inventory()
     assert 0<=args.start<args.end<=len(products)
     tag=f"{args.start+1:03d}-{args.end:03d}"
-    batch=OUT / (("recovery-" if args.only_unresolved else "batch-")+tag)
+    prefix=("supplemental-" if args.only_master_unresolved
+            else "recovery-" if args.only_unresolved else "batch-")
+    batch=OUT / (prefix+tag)
     batch.mkdir(parents=True,exist_ok=True)
     chosen=products[args.start:args.end]
+    if args.only_master_unresolved:
+        p=ROOT/"status/master_status.csv"
+        if not p.exists():
+            raise RuntimeError("Missing master_status.csv; refusing to replace verified assets")
+        previous=list(csv.DictReader(p.open(encoding="utf-8-sig",newline="")))
+        completed={(r["brand"],r["model"]) for r in previous if r.get("status")=="COMPLETE"}
+        chosen=[r for r in chosen if (r["brand"],r["model"]) not in completed]
     if args.only_unresolved:
         existing=ROOT / "status" / ("batch-"+tag+".csv")
         if existing.exists():
@@ -545,6 +561,7 @@ def main():
     report={"source":"User uploaded Товары для наполнения Илья.xlsx",
             "inventory_total":len(products),
             "range_indices":[args.start+1,args.end],"recovery":args.only_unresolved,
+            "supplemental":args.only_master_unresolved,
             "batch":tag,"counts":counters,
             "products":[{"brand":x["brand"],"model":x["model"],
                          "status":x["status"],"url":x.get("source_url",""),
