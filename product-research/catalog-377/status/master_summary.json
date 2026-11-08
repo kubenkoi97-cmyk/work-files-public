@@ -2,8 +2,8 @@
   "inventory_total": 377,
   "counts": {
     "COMPLETE": 314,
-    "NOT_FOUND": 62,
-    "PARTIAL": 1
+    "NOT_FOUND": 24,
+    "PARTIAL": 39
   },
   "brands": {
     "Bosch": {
