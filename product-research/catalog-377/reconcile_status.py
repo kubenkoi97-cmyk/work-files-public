@@ -16,7 +16,7 @@ def inventory():
 
 def all_states():
     states={}
-    for prefix in ("batch-","recovery-batch-","deep-batch-"):
+    for prefix in ("batch-","recovery-batch-","deep-batch-","supplemental-batch-","supplemental-v2-batch-"):
         for p in sorted(STAT.glob(prefix+"*.csv")):
             tag=p.stem[len(prefix):]
             with p.open(encoding="utf-8-sig",newline="") as f:
@@ -24,15 +24,15 @@ def all_states():
                     if not row.get("model"):continue
                     r=dict(row)
                     root="https://github.com/kubenkoi97-cmyk/work-files-public/releases/"
-                    release=("catalog377-deep-batch-" if prefix=="deep-batch-" else "catalog377-recovery-batch-" if prefix=="recovery-batch-" else "catalog377-batch-")+tag
+                    release=("catalog377-"+prefix)+tag
                     r["archive_release_url"]=root+"tag/"+release
                     r["archive_download_url"]=root+"download/"+release+"/catalog377-"+tag+".zip"
-                    r["result_stage"]="deep" if prefix=="deep-batch-" else "recovery" if prefix=="recovery-batch-" else "initial"
+                    r["result_stage"]=prefix.rstrip("-")
                     k=(r["brand"],r["model"])
                     old=states.get(k)
                     # Never replace a verified complete source with a failed
                     # later attempt; preserve MirCli/source priority.
-                    if old and old.get("status")=="COMPLETE":
+                    if old and old.get("status")=="COMPLETE" and prefix!="supplemental-v2-batch-":
                         continue
                     states[k]=r
     return states
