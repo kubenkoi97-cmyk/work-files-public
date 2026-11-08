@@ -1,0 +1,32 @@
+name: Diagnose Kentatsu vendor photo CDN failures
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-kentatsu-photo-diagnostics.yml'
+jobs:
+  diagnostics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - run: |
+          python -m pip install -q requests beautifulsoup4
+          python - <<'PY'
+          import requests,zipfile,io,json
+          from bs4 import BeautifulSoup
+          u='https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-supplemental-batch-157-171/catalog377-157-171.zip'
+          r=requests.get(u,timeout=35);print('ARCHIVE',r.status_code,len(r.content))
+          r.raise_for_status()
+          z=zipfile.ZipFile(io.BytesIO(r.content))
+          for path in z.namelist():
+            if path.endswith('manifest.json'):
+              m=json.loads(z.read(path));print('MODEL',m['model'],'GALLERY_LINKS',m.get('photo_links_found'),'FILES',m.get('downloaded_product_photos'))
+              for x in m.get('asset_failures',[]):
+                if any(k in x.get('url','').lower() for k in ['ktkb','image','photo','goods','product','resize','preview','catalog','upload','picture']):
+                  print('FAIL',x)
+              raw=z.read(path.rsplit('/',1)[0]+'/original.html').decode('utf-8')
+              soup=BeautifulSoup(raw,'html.parser')
+              for img in soup.find_all('img')[:35]:
+                if m['model'].lower() in str(img).lower():
+                  print('PRODUCTIMG',str(img)[:700])
+              break
+          PY
