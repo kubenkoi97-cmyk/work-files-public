@@ -1,0 +1,39 @@
+name: Catalog377 authoritative 377-row status dashboard
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-reconcile.yml'
+  workflow_run:
+    workflows: ["Catalog377 recover exact-model cards missing in first pass"]
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  aggregate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reconcile each unique SKU with documented exact-model archive
+        run: python product-research/catalog-377/reconcile_status.py
+      - name: Publish readable master inventory and 377-line result
+        run: |
+          set -eu
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add product-research/catalog-377/inventory.tsv \
+                  product-research/catalog-377/status/master_status.csv \
+                  product-research/catalog-377/status/master_summary.json \
+                  product-research/catalog-377/status/summary.md
+          git commit -m "Reconcile 377-model original HTML archive status"
+          for i in 1 2 3 4 5 6 7 8; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
