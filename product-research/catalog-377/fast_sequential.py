@@ -214,17 +214,29 @@ def archive_and_publish(row,page,attempts,site,prior_status):
         # This per-model status is reconciled into master_status.csv. Only
         # publish for a genuinely archived individual exact-model product.
         per=STATUS/f"fast-{key}.csv"
-        per.write_bytes(statfile.read_bytes())
+        enriched=dict(manifest)
+        enriched.update(archive_release_url=manifest["release_url"],
+                        archive_download_url=manifest["zip_url"],
+                        archive_sha256=manifest["local_zip_sha256"])
+        with per.open("w",encoding="utf-8-sig",newline="") as fd:
+            writer=csv.DictWriter(fd,fieldnames=fields+
+                ["archive_release_url","archive_download_url","archive_sha256"],
+                extrasaction="ignore")
+            writer.writeheader();writer.writerow(enriched)
         return manifest,per
 
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument("--max-models",type=int,default=62)
+    ap.add_argument("--start-row",type=int,default=1)
+    ap.add_argument("--end-row",type=int,default=377)
     args=ap.parse_args()
     inventory=c.inventory()
     with (STATUS/"master_status.csv").open(encoding="utf-8-sig",newline="") as f:
         master={(r["brand"],r["model"]):r for r in csv.DictReader(f)}
-    pending=[row for row in inventory if master[(row["brand"],row["model"])]["status"]!="COMPLETE"]
+    pending=[row for row in inventory
+             if args.start_row<=int(row["row"])<=args.end_row
+             and master[(row["brand"],row["model"])]["status"]!="COMPLETE"]
     pending.sort(key=lambda row:int(row["row"]))
     print("SEQUENTIAL_START",len(pending),"MAX",args.max_models,flush=True)
     for pos,row in enumerate(pending[:args.max_models],start=1):
