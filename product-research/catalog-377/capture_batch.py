@@ -408,21 +408,34 @@ def main():
     ap.add_argument("--start",type=int,default=0)
     ap.add_argument("--end",type=int,default=5)
     ap.add_argument("--quick",action="store_true")
+    ap.add_argument("--only-unresolved",action="store_true",
+                    help="Retry only models without prior COMPLETE status in initial batches")
     args=ap.parse_args()
     products=inventory()
     assert 0<=args.start<args.end<=len(products)
     tag=f"{args.start+1:03d}-{args.end:03d}"
-    batch=OUT / ("batch-"+tag)
+    batch=OUT / (("recovery-" if args.only_unresolved else "batch-")+tag)
     batch.mkdir(parents=True,exist_ok=True)
+    chosen=products[args.start:args.end]
+    if args.only_unresolved:
+        existing=ROOT / "status" / ("batch-"+tag+".csv")
+        if existing.exists():
+            previous=list(csv.DictReader(existing.open(encoding="utf-8-sig",newline="")))
+            completed={(r["brand"],r["model"]) for r in previous
+                       if r.get("status")=="COMPLETE"}
+            chosen=[r for r in chosen if (r["brand"],r["model"]) not in completed]
+            print("RECOVERY_MODE",tag,"previous_complete",len(completed),
+                  "recapturing",len(chosen),flush=True)
     records=[]
-    for index,record in enumerate(products[args.start:args.end],start=args.start+1):
+    for record in chosen:
+        index=int(record["row"])-1
         print(f"BEGIN {index}/377 [{record['brand']}] {record['model']}",flush=True)
         result=capture(record,batch/"products")
         print("RESULT",index,record["model"],result["status"],
               result.get("source_url",""),result.get("downloaded_product_photos",0),flush=True)
         records.append(result)
         (batch/"progress.json").write_text(
-            json.dumps({"batch":tag,"processed":len(records),"total_in_batch":args.end-args.start,
+            json.dumps({"batch":tag,"processed":len(records),"total_in_batch":len(chosen),
                         "results":records},ensure_ascii=False,indent=2),encoding="utf-8")
     columns=["excel_row","brand","model","status","site","source_url","has_description",
              "has_specs","photo_links_found","downloaded_product_photos",
@@ -431,10 +444,10 @@ def main():
         writer=csv.DictWriter(f,fieldnames=columns,extrasaction="ignore")
         writer.writeheader();writer.writerows(records)
     counters={state:sum(r["status"]==state for r in records)
-              for state in ("COMPLETE","PARTIAL","NOT_FOUND","ERROR")}
+              for state in ("COMPLETE","PARTIAL","NOT_FOUND","ERROR") }
     report={"source":"User uploaded Товары для наполнения Илья.xlsx",
             "inventory_total":len(products),
-            "range_indices":[args.start+1,args.end],
+            "range_indices":[args.start+1,args.end],"recovery":args.only_unresolved,
             "batch":tag,"counts":counters,
             "products":[{"brand":x["brand"],"model":x["model"],
                          "status":x["status"],"url":x.get("source_url",""),
