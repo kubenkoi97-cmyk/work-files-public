@@ -1,0 +1,48 @@
+﻿brand,model,master_status,release_tag,zip_integrity,file_presence,exact_heading,photo_images_verified,has_description_in_manifest,has_specs_in_manifest,source_url,reason
+IGC,IMS-K22NH(DC),COMPLETE,catalog377-batch-001-013,OK,YES,NO,0,YES,YES,https://mircli.ru/IGC-IMS-K22NHDC5/,SKU not in product heading
+IGC,IMS-K28NH(DC),COMPLETE,catalog377-batch-001-013,OK,YES,NO,0,YES,YES,https://mircli.ru/IGC-IMS-K28NHDC5/,SKU not in product heading
+IGC,IMS-K36NH(DC),COMPLETE,catalog377-batch-001-013,OK,YES,NO,0,YES,YES,https://mircli.ru/IGC-IMS-K36NHDC5/,SKU not in product heading
+IGC,IMS-K45NH(DC),COMPLETE,catalog377-batch-001-013,OK,YES,NO,0,YES,YES,https://mircli.ru/IGC-IMS-K45NHDC5/,SKU not in product heading
+IGC,IMS-K56NH(DC),COMPLETE,catalog377-batch-001-013,OK,YES,NO,0,YES,YES,https://mircli.ru/IGC-IMS-K56NHDC5/,SKU not in product heading
+IGC,IMS-K71NH(DC),COMPLETE,catalog377-batch-001-013,OK,YES,NO,0,YES,YES,https://mircli.ru/IGC-IMS-K71NHDC5/,SKU not in product heading
+IGC,IMS-4TM56NH(DC5),COMPLETE,catalog377-batch-027-039,OK,YES,YES,3,YES,YES,https://mircli.ru/IGC-IMS-4TM56NH-DC5-/,OK
+Kentatsu,KTGV60HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,5,YES,YES,https://mircli.ru/Kentatsu-KTGV60HZBN1/,OK
+Kentatsu,KTGV72HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,5,YES,YES,https://mircli.ru/Kentatsu-KTGV72HZBN1/,OK
+Kentatsu,KTGV80HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,5,YES,YES,https://mircli.ru/Kentatsu-KTGV80HZBN1/,OK
+Kentatsu,KTYV18HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,3,YES,YES,https://mircli.ru/Kentatsu-KTYV18HZBN1-KPU1S-D3/,OK
+Kentatsu,KTYV24HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,3,YES,YES,https://mircli.ru/Kentatsu-KTYV24HZBN1-KPU1S-D3/,OK
+Kentatsu,KTYV30HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,3,YES,YES,https://mircli.ru/Kentatsu-KTYV30HZBN1-KPU1M-D3/,OK
+Kentatsu,KTYV40HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,3,YES,YES,https://mircli.ru/Kentatsu-KTYV40HZBN1-KPU1M-D3/,OK
+Kentatsu,KTYV50HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,3,YES,YES,https://mircli.ru/Kentatsu-KTYV50HZBN1-KPU1L-D3/,OK
+Kentatsu,KTYV60HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,3,YES,YES,https://mircli.ru/Kentatsu-KTYV60HZBN1-KPU1L-D3/,OK
+Kentatsu,KTYV72HZBN1,COMPLETE,catalog377-batch-067-081,OK,YES,YES,3,YES,YES,https://mircli.ru/Kentatsu-KTYV72HZBN1-KPU1L-D3/,OK
+Kentatsu,KGA24HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA24HZAN1/,OK
+Kentatsu,KGA30HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA30HZAN1/,OK
+Kentatsu,KGA40HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA40HZAN1/,OK
+Kentatsu,KGA50HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA50HZAN1/,OK
+Kentatsu,KGA60HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA60HZAN1/,OK
+Kentatsu,KGA72HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA72HZAN1/,OK
+Kentatsu,KGA80HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA80HZAN1/,OK
+Kentatsu,KGA90HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA90HZAN1/,OK
+Kentatsu,KGA100HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA100HZAN1/,OK
+Kentatsu,KGA115HZAN1,COMPLETE,catalog377-batch-202-216,OK,YES,YES,4,YES,YES,https://mircli.ru/Kentatsu-KGA115HZAN1/,OK
+Midea,MI2-80GDHN18(At)DP,COMPLETE,catalog377-batch-290-304,OK,YES,YES,9,YES,YES,https://mircli.ru/Midea-MI2-80GDHN18-At-DP/,OK
+Midea,MI2-18Q1DHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,7,YES,YES,https://mircli.ru/Midea-MI2-18Q1DHN18-At-T-MBQ1-01G/,OK
+Midea,MI2-22Q1DHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,7,YES,YES,https://mircli.ru/Midea-MI2-22Q1DHN18-At-T-MBQ1-01G/,OK
+Midea,MI2-28Q1DHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,7,YES,YES,https://mircli.ru/Midea-MI2-28Q1DHN18-At-T-MBQ1-02G/,OK
+Midea,MI2-36Q1DHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,7,YES,YES,https://mircli.ru/Midea-MI2-36Q1DHN18-At-T-MBQ1-02G/,OK
+Midea,MI2-45Q1DHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,7,YES,YES,https://mircli.ru/Midea-MI2-45Q1DHN18-At-T-MBQ1-03G/,OK
+Midea,MI2-56Q1DHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,7,YES,YES,https://mircli.ru/Midea-MI2-56Q1DHN18-At-T-MBQ1-03G/,OK
+Midea,MI2-71Q1DHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,7,YES,YES,https://mircli.ru/Midea-MI2-71Q1DHN18-At-T-MBQ1-03G/,OK
+Midea,MI2-15Q4CDHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,12,YES,YES,https://mircli.ru/Midea-MI2-15Q4CDHN18-At-T-MBQ4-03F/,OK
+Midea,MI2-22Q4CDHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,12,YES,YES,https://mircli.ru/Midea-MI2-22Q4CDHN18-At-T-MBQ4-03F/,OK
+Midea,MI2-28Q4CDHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,12,YES,YES,https://mircli.ru/Midea-MI2-28Q4CDHN18-At-T-MBQ4-03F/,OK
+Midea,MI2-36Q4CDHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,12,YES,YES,https://mircli.ru/Midea-MI2-36Q4CDHN18-At-T-MBQ4-03F/,OK
+Midea,MI2-45Q4CDHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,12,YES,YES,https://mircli.ru/Midea-MI2-45Q4CDHN18-At-T-MBQ4-03F/,OK
+Midea,MI2-56Q4CDHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,12,YES,YES,https://mircli.ru/Midea-MI2-56Q4CDHN18-At-T-MBQ4-03F/,OK
+Midea,MI2-63Q4CDHN18(At),COMPLETE,catalog377-batch-290-304,OK,YES,YES,12,YES,YES,https://mircli.ru/Midea-MI2-63Q4CDHN18-At-T-MBQ4-03F/,OK
+Kentatsu,KTHB90HZBN1,PARTIAL,catalog377-final-sweep-batch-202-216,OK,YES,YES,2,NO,YES,https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-kthb90hzbn1,OK
+Kentatsu,KTHB100HZBN1,PARTIAL,catalog377-final-sweep-batch-202-216,OK,YES,YES,2,NO,YES,https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-kthb100hzbn1,OK
+Kentatsu,KTHB115HZBN1,PARTIAL,catalog377-final-sweep-batch-202-216,OK,YES,YES,2,NO,YES,https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-kthb115hzbn1,OK
+Kentatsu,KTHB125HZBN1,PARTIAL,catalog377-final-sweep-batch-202-216,OK,YES,YES,2,NO,YES,https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-kthb125hzbn1,OK
+Kentatsu,KTHB140HZBN1,PARTIAL,catalog377-final-sweep-batch-202-216,OK,YES,YES,2,NO,YES,https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-kthb140hzbn1,OK

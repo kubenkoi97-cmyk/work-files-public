@@ -1,0 +1,13 @@
+{
+  "shard": 2,
+  "nshards": 6,
+  "models_checked": 47,
+  "release_groups": 6,
+  "counts": {
+    "INVALID_CONTENT": 6,
+    "VERIFIED": 41
+  },
+  "no_source_records": [],
+  "integrity_rule": "ZIP opens and CRC passes, exact model heading and manifest, original+offline HTML, at least one decodable local product image",
+  "disclaimer": "ZIP integrity and photos do not prove vendor published a product description; consult manifest and text-specific checks."
+}
