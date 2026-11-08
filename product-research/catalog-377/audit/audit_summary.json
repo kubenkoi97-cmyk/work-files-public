@@ -1,14 +1,162 @@
 {
-  "releases_scanned": 58,
-  "releases_downloaded": 58,
-  "release_failures": {},
-  "unique_models_found": 377,
-  "counts": {
-    "VERIFIED": 314,
-    "NOT_FOUND": 24,
-    "PARTIAL": 39
+  "releases_scanned": 63,
+  "releases_downloaded": 14,
+  "release_failures": {
+    "catalog377-supplemental-v2-batch-202-216": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-supplemental-v2-batch-202-216/catalog377-202-216.zip"
+    ],
+    "catalog377-supplemental-v2-batch-187-201": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-supplemental-v2-batch-187-201/catalog377-187-201.zip"
+    ],
+    "catalog377-supplemental-v2-batch-172-186": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-supplemental-v2-batch-172-186/catalog377-172-186.zip"
+    ],
+    "catalog377-supplemental-batch-202-216": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-supplemental-batch-202-216/catalog377-202-216.zip"
+    ],
+    "catalog377-supplemental-batch-187-201": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-supplemental-batch-187-201/catalog377-187-201.zip"
+    ],
+    "catalog377-supplemental-batch-172-186": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-supplemental-batch-172-186/catalog377-172-186.zip"
+    ],
+    "catalog377-supplemental-batch-157-171": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-supplemental-batch-157-171/catalog377-157-171.zip"
+    ],
+    "catalog377-recovery-batch-350-364": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-350-364/catalog377-350-364.zip"
+    ],
+    "catalog377-recovery-batch-172-186": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-172-186/catalog377-172-186.zip"
+    ],
+    "catalog377-recovery-batch-157-171": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-157-171/catalog377-157-171.zip"
+    ],
+    "catalog377-recovery-batch-142-156": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-142-156/catalog377-142-156.zip"
+    ],
+    "catalog377-recovery-batch-127-141": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-127-141/catalog377-127-141.zip"
+    ],
+    "catalog377-recovery-batch-112-126": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-112-126/catalog377-112-126.zip"
+    ],
+    "catalog377-recovery-batch-097-111": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-097-111/catalog377-097-111.zip"
+    ],
+    "catalog377-recovery-batch-082-096": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-082-096/catalog377-082-096.zip"
+    ],
+    "catalog377-recovery-batch-067-081": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-067-081/catalog377-067-081.zip"
+    ],
+    "catalog377-recovery-batch-040-052": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-040-052/catalog377-040-052.zip"
+    ],
+    "catalog377-recovery-batch-027-039": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-027-039/catalog377-027-039.zip"
+    ],
+    "catalog377-recovery-batch-014-026": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-014-026/catalog377-014-026.zip"
+    ],
+    "catalog377-recovery-batch-001-013": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-recovery-batch-001-013/catalog377-001-013.zip"
+    ],
+    "catalog377-midea-batch-341-341": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-midea-batch-341-341/catalog377-341-341.zip"
+    ],
+    "catalog377-igc-http-batch-040-052": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-igc-http-batch-040-052/catalog377-040-052.zip"
+    ],
+    "catalog377-igc-http-batch-027-039": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-igc-http-batch-027-039/catalog377-027-039.zip"
+    ],
+    "catalog377-deep-batch-202-216": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-deep-batch-202-216/catalog377-202-216.zip"
+    ],
+    "catalog377-deep-batch-157-171": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-deep-batch-157-171/catalog377-157-171.zip"
+    ],
+    "catalog377-deep-batch-142-156": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-deep-batch-142-156/catalog377-142-156.zip"
+    ],
+    "catalog377-deep-batch-127-141": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-deep-batch-127-141/catalog377-127-141.zip"
+    ],
+    "catalog377-batch-365-377": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-365-377/catalog377-365-377.zip"
+    ],
+    "catalog377-batch-350-364": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-350-364/catalog377-350-364.zip"
+    ],
+    "catalog377-batch-335-349": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-335-349/catalog377-335-349.zip"
+    ],
+    "catalog377-batch-305-319": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-305-319/catalog377-305-319.zip"
+    ],
+    "catalog377-batch-275-289": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-275-289/catalog377-275-289.zip"
+    ],
+    "catalog377-batch-262-274": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-262-274/catalog377-262-274.zip"
+    ],
+    "catalog377-batch-247-261": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-247-261/catalog377-247-261.zip"
+    ],
+    "catalog377-batch-232-246": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-232-246/catalog377-232-246.zip"
+    ],
+    "catalog377-batch-217-231": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-217-231/catalog377-217-231.zip"
+    ],
+    "catalog377-batch-061-061": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-061-061/catalog377-061-061.zip"
+    ],
+    "catalog377-batch-053-060": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-053-060/catalog377-053-060.zip"
+    ],
+    "catalog377-batch-040-052": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-040-052/catalog377-040-052.zip"
+    ],
+    "catalog377-batch-027-039": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-027-039/catalog377-027-039.zip"
+    ],
+    "catalog377-batch-014-026": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-014-026/catalog377-014-026.zip"
+    ],
+    "catalog377-batch-202-216": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-202-216/catalog377-202-216.zip"
+    ],
+    "catalog377-batch-187-201": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-187-201/catalog377-187-201.zip"
+    ],
+    "catalog377-batch-172-186": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-172-186/catalog377-172-186.zip"
+    ],
+    "catalog377-batch-157-171": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-157-171/catalog377-157-171.zip"
+    ],
+    "catalog377-batch-097-111": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-097-111/catalog377-097-111.zip"
+    ],
+    "catalog377-batch-082-096": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-082-096/catalog377-082-096.zip"
+    ],
+    "catalog377-batch-067-081": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-067-081/catalog377-067-081.zip"
+    ],
+    "catalog377-batch-062-066": [
+      "504 Server Error: Gateway Time-out for url: https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-batch-062-066/catalog377-062-066.zip"
+    ]
   },
-  "verified_ready": 314,
+  "unique_models_found": 136,
+  "counts": {
+    "NOT_FOUND": 73,
+    "VERIFIED": 60,
+    "PARTIAL": 3
+  },
+  "verified_ready": 60,
   "definition": "Original HTML, offline HTML, exact model heading, product description/specs, all local product images decodable, one image >=200x200.",
   "status": "audit_completed"
 }
