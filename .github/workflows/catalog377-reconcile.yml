@@ -1,4 +1,5 @@
 name: Catalog377 authoritative 377-row status dashboard
+# Reconcile all completed 28 initial batch CSVs and future recovery records.
 on:
   push:
     paths:
