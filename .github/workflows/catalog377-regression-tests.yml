@@ -1,0 +1,19 @@
+name: Catalog377 exact SKU and HTTP retry regression tests
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-regression-tests.yml'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests beautifulsoup4
+      - run: python -m py_compile product-research/catalog-377/capture_batch.py product-research/catalog-377/reconcile_status.py product-research/catalog-377/audit_gh_cli.py
+      - run: python product-research/catalog-377/test_capture_regressions.py
