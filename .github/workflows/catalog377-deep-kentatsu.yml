@@ -30,11 +30,16 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LABEL: ${{ matrix.label }}
         run: |
-          gh release create "catalog377-deep-batch-$LABEL" \
-            "product-research/catalog-377/output/catalog377-$LABEL.zip" \
-            "product-research/catalog-377/output/catalog377-$LABEL-status.csv" \
-            --title "Catalog 377 deep vendor search $LABEL: genuine product HTML and images" \
-            --notes "Third-pass verified original HTML from exact models, prioritizing effect-nn.ru where MirCli and other vendors had no match. Every model has status and original source."
+          tag="catalog377-deep-batch-$LABEL"
+          archive="product-research/catalog-377/output/catalog377-$LABEL.zip"
+          status="product-research/catalog-377/output/catalog377-$LABEL-status.csv"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$archive" "$status" --clobber
+          else
+            gh release create "$tag" "$archive" "$status" \
+              --title "Catalog 377 deep vendor search $LABEL: genuine product HTML and images" \
+              --notes "Third-pass exact SKU HTML with original source and local images. Every model has status; charset corrected for legacy Russian sites."
+          fi
       - name: Commit third-pass statuses
         env:
           LABEL: ${{ matrix.label }}
