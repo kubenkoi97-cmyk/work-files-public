@@ -35,9 +35,13 @@ jobs:
           tag="catalog377-supplemental-batch-$LABEL"
           archive="product-research/catalog-377/output/catalog377-$LABEL.zip"
           status="product-research/catalog-377/output/catalog377-$LABEL-status.csv"
-          gh release create "$tag" "$archive" "$status" \
-            --title "Catalog 377 additional exact-model Kentatsu HTML + images $LABEL" \
-            --notes "Authentic alternative seller HTML, local images, metadata; any missing seller descriptions are explicitly PARTIAL, not COMPLETE."
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$archive" "$status" --clobber
+          else
+            gh release create "$tag" "$archive" "$status" \
+              --title "Catalog 377 additional exact-model Kentatsu HTML + images $LABEL" \
+              --notes "Authentic alternative seller HTML, locally downloaded product photos and resource files; status explicitly validated."
+          fi
       - name: Persist model-level status
         env:
           LABEL: ${{ matrix.label }}
