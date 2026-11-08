@@ -1,8 +1,8 @@
 {
   "inventory_total": 377,
   "counts": {
-    "UNPROCESSED": 192,
-    "COMPLETE": 77,
+    "UNPROCESSED": 177,
+    "COMPLETE": 92,
     "NOT_FOUND": 108
   },
   "brands": {
@@ -87,7 +87,7 @@
     },
     "Kentatsu": {
       "total": 213,
-      "complete": 77,
+      "complete": 92,
       "unresolved": [
         "KTZV15HZBN1",
         "KTZV24HZBN1",
@@ -197,21 +197,6 @@
         "KTHB115HZBN1",
         "KTHB125HZBN1",
         "KTHB140HZBN1",
-        "KLA40HZAN1",
-        "KLA50HZAN1",
-        "KLA60HZAN1",
-        "KLA72HZAN1",
-        "KKA50HFAN1",
-        "KKA60HFAN1",
-        "KKA72HFAN1",
-        "KKA80HFAN1",
-        "KKA90HFAN1",
-        "KKA100HFAN1",
-        "KKA115HFAN1",
-        "KKA125HFAN1",
-        "KKA140HFAN1",
-        "KKA150HFAN1",
-        "KTA115HFAN1",
         "KTA125HFAN1",
         "KTA140HFAN1",
         "KTA150HFAN1",

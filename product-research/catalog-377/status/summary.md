@@ -1,8 +1,8 @@
 # Catalog 377 — текущий проверенный статус
 
-Исходно 377 моделей. Обработано: 185.
-С подтверждённой карточкой и изображениями (COMPLETE): 77.
-PARTIAL: 0; NOT_FOUND: 108; ERROR: 0; необработано: 192.
+Исходно 377 моделей. Обработано: 200.
+С подтверждённой карточкой и изображениями (COMPLETE): 92.
+PARTIAL: 0; NOT_FOUND: 108; ERROR: 0; необработано: 177.
 
 Каждый результат в [master_status.csv](./master_status.csv) содержит источник и ссылку на конкретный архив в GitHub Releases. Ни PARTIAL, ни NOT_FOUND, ни ERROR не являются выполненной задачей.
 
@@ -11,7 +11,7 @@ PARTIAL: 0; NOT_FOUND: 108; ERROR: 0; необработано: 192.
 | Bosch | 1 | 0 | 1 |
 | Daikin | 8 | 0 | 8 |
 | IGC | 52 | 0 | 52 |
-| Kentatsu | 213 | 77 | 136 |
+| Kentatsu | 213 | 92 | 121 |
 | Midea | 103 | 0 | 103 |
 
 ## Незакрытые товары
@@ -118,4 +118,4 @@ PARTIAL: 0; NOT_FOUND: 108; ERROR: 0; необработано: 192.
 - Kentatsu KTHV72HZBN1 — NOT_FOUND
 - Kentatsu KTHV80HZBN1 — NOT_FOUND
 - Kentatsu KTHV90HZBN1 — NOT_FOUND
-- ...ещё 200 моделей в CSV.
+- ...ещё 185 моделей в CSV.
