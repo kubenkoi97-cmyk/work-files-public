@@ -394,60 +394,58 @@ def igc_http_candidates(model):
     return matches[:8]
 
 def choose_source(brand, model):
-    if brand=="Midea" and model=="MIH90GHN18":
-        # Confirmed exact article and original product page; previous
-        # vsekondicioneri mirror returned 429, this seller returns 200.
-        u=("https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/"
-           "vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/"
-           "vnutrennij-blok-vrf-sistemy-midea-mih90ghn18")
-        p=parse_source(u,brand,model,get(u,timeout=18))
-        if p:
-            return p,[u],"External"
-    # This source was overlooked previously because HTTPS fails; the
-    # exact IGC model has already been checked on MirCli in the first pass.
-    if brand=="IGC":
-        urls=igc_http_candidates(model)
-        for u in urls:
-            page=parse_source(u,brand,model,get(u,timeout=18))
-            if page and page["has_description"] and page["has_specs"] and page["photos"]:
-                return page,[u],"IGC official (HTTP)"
-    # MirCli and broad-source passes have already been exhausted for these
-    # specific unresolved SKUs. Prefer the validated exact seller URL for
-    # this supplemental pass; preserve provenance and strict model check.
-    if brand=="Kentatsu" and model.startswith(("KTKB","KTTB","KTHB")):
-        u=("https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/"
-           "vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/"
-           "vnutrennij-blok-vrf-sistemy-kentatsu-"+model.lower())
-        p=parse_source(u,brand,model,get(u,timeout=18))
-        if p:
-            return p,[u],"External"
-    # A real page for the exact model is necessary but not sufficient:
-    # if it has no description or gallery, continue checking vendors.
+    """Find the best genuine exact-model product page, not just first match.
+
+    A source with images/specifications but no product-specific description is
+    retained as PARTIAL while all remaining vendors are checked.
+    """
     attempts=[]
     best=None
     best_score=-1
     best_site=""
-    def consider(url,site):
+
+    def consider(url, site):
         nonlocal best,best_score,best_site
         if url in attempts:return False
-        response=get(url,timeout=15)
-        p=parse_source(url,brand,model,response)
         attempts.append(url)
-        if p:
-            score=(int(p["has_description"])*4+
-                   int(p["has_specs"])*4+
-                   int(bool(p["photos"]))*5+
-                   min(len(p["photos"]),10)/100)
-            if score>best_score:
-                best,best_score,best_site=p,score,site
-            if p["has_description"] and p["has_specs"] and p["photos"]:
-                # First complete MirCli gets priority over all alternatives.
-                return True
-        return False
-    for u in slug_candidates(brand,model):
-        if consider(u,"MirCli"):return best,attempts,best_site
-    for u in search_mircli(model):
-        if consider(u,"MirCli"):return best,attempts,best_site
+        p=parse_source(url,brand,model,get(url,timeout=15))
+        if not p:return False
+        # Product details at Gorodskie Sistemy have specifications/photos but
+        # no independent product description; generic nav text isn't one.
+        if (urlparse(p["url"]).hostname or "").endswith("gorodskie-sistemy.ru"):
+            p["has_description"]=False
+        score=(int(p["has_description"])*4+
+               int(p["has_specs"])*4+
+               int(bool(p["photos"]))*5+
+               min(len(p["photos"]),10)/100)
+        if score>best_score:
+            best,best_score,best_site=p,score,site
+        return bool(p["has_description"] and p["has_specs"] and p["photos"])
+
+    # MirCli was already checked for this unresolved subset in the full first
+    # pass. The known exact seller page is worth retaining even if incomplete.
+    skip_mircli=False
+    if brand=="Midea" and model=="MIH90GHN18":
+        u=("https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/"
+           "vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/"
+           "vnutrennij-blok-vrf-sistemy-midea-mih90ghn18")
+        if consider(u,"External"):return best,attempts,best_site
+        skip_mircli=True
+    if brand=="IGC":
+        for u in igc_http_candidates(model):
+            if consider(u,"IGC official (HTTP)"):return best,attempts,best_site
+        skip_mircli=True
+    if brand=="Kentatsu" and model.startswith(("KTKB","KTTB","KTHB")):
+        u=("https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/"
+           "vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/"
+           "vnutrennij-blok-vrf-sistemy-kentatsu-"+model.lower())
+        if consider(u,"External"):return best,attempts,best_site
+        skip_mircli=True
+    if not skip_mircli:
+        for u in slug_candidates(brand,model):
+            if consider(u,"MirCli"):return best,attempts,best_site
+        for u in search_mircli(model):
+            if consider(u,"MirCli"):return best,attempts,best_site
     for u in external_candidates(brand,model):
         if consider(u,"External"):return best,attempts,best_site
     return best,attempts,best_site
