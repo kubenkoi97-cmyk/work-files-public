@@ -1,0 +1,50 @@
+{
+  "excel_row": 13,
+  "brand": "IGC",
+  "model": "IMS-BS22NH (DC)",
+  "previous_status": "NOT_FOUND",
+  "original_source": "",
+  "started_utc": "2026-11-08T19:49:43Z",
+  "attempted_urls": [
+    "https://mircli.ru/IGC-IMS-BS22NH--DC-/",
+    "https://mircli.ru/IGC-IMS-BS22NH--DC/"
+  ],
+  "http_attempts": [
+    {
+      "url": "https://www.bing.com/search?format=rss&q=%22IMS-BS22NH+%28DC%29%22+%22IGC%22+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5+%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8",
+      "final_url": "https://www.bing.com/search?format=rss&q=%22IMS-BS22NH+%28DC%29%22+%22IGC%22+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5+%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8",
+      "status": 200,
+      "bytes": 5520,
+      "retry_after": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://www.bing.com/search?format=rss&q=%22IMS-BS22NH+%28DC%29%22+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C",
+      "final_url": "https://www.bing.com/search?format=rss&q=%22IMS-BS22NH+%28DC%29%22+%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C",
+      "status": 200,
+      "bytes": 5228,
+      "retry_after": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://mircli.ru/IGC-IMS-BS22NH--DC-/",
+      "final_url": "https://mircli.ru/IGC-IMS-BS22NH--DC-/",
+      "status": 200,
+      "bytes": 218209,
+      "retry_after": "",
+      "attempt": 1
+    },
+    {
+      "url": "https://mircli.ru/IGC-IMS-BS22NH--DC/",
+      "final_url": "https://mircli.ru/IGC-IMS-BS22NH--DC/",
+      "status": 200,
+      "bytes": 218207,
+      "retry_after": "",
+      "attempt": 1
+    }
+  ],
+  "result": "NO_NEW_SOURCE",
+  "reason": "No exact additional vendor HTML with specifications and product photos",
+  "finished_utc": "2026-11-08T19:49:44Z",
+  "elapsed_seconds": 0.6
+}
