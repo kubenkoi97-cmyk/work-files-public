@@ -319,22 +319,36 @@ def external_candidates(brand, model):
     return cleaned[:28]
 
 def choose_source(brand, model):
+    # A real page for the exact model is necessary but not sufficient:
+    # if it has no description or gallery, continue checking vendors.
     attempts=[]
+    best=None
+    best_score=-1
+    best_site=""
+    def consider(url,site):
+        nonlocal best,best_score,best_site
+        if url in attempts:return False
+        response=get(url,timeout=15)
+        p=parse_source(url,brand,model,response)
+        attempts.append(url)
+        if p:
+            score=(int(p["has_description"])*4+
+                   int(p["has_specs"])*4+
+                   int(bool(p["photos"]))*5+
+                   min(len(p["photos"]),10)/100)
+            if score>best_score:
+                best,best_score,best_site=p,score,site
+            if p["has_description"] and p["has_specs"] and p["photos"]:
+                # First complete MirCli gets priority over all alternatives.
+                return True
+        return False
     for u in slug_candidates(brand,model):
-        p=parse_source(u,brand,model,get(u),)
-        attempts.append(u)
-        if p:return p,attempts,"MirCli"
+        if consider(u,"MirCli"):return best,attempts,best_site
     for u in search_mircli(model):
-        if u in attempts:continue
-        p=parse_source(u,brand,model,get(u))
-        attempts.append(u)
-        if p:return p,attempts,"MirCli"
+        if consider(u,"MirCli"):return best,attempts,best_site
     for u in external_candidates(brand,model):
-        if u in attempts:continue
-        p=parse_source(u,brand,model,get(u))
-        attempts.append(u)
-        if p:return p,attempts,"External"
-    return None,attempts,""
+        if consider(u,"External"):return best,attempts,best_site
+    return best,attempts,best_site
 
 def choose_download_urls(page):
     soup=page["soup"]
