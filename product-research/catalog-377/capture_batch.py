@@ -433,10 +433,10 @@ def capture(row, dirpath):
             enc=(page.get("source_encoding") or "").lower()
             if enc not in ("utf-8","utf8","ascii","us-ascii"):
                 (product_dir/"source-original-charset.html").write_bytes(page["raw_bytes"])
-                original=re.sub(r"(?i)(<meta[^>]*charset\\s*=\\s*['\\\"]?)(?:ansi|windows-1251|cp1251)",
+                original=re.sub(r'(?i)(<meta[^>]*charset\s*=\s*["\']?)(?:ansi|windows-1251|cp1251)',
                                 lambda m:m.group(1)+"utf-8",original)
-                if not re.search(r"(?i)<meta[^>]+charset",original):
-                    original=re.sub(r"(?i)<head([^>]*)>",r'<head\\1><meta charset="utf-8">',original,count=1)
+                if not re.search(r'(?i)<meta[^>]+charset',original):
+                    original=re.sub(r'(?i)<head([^>]*)>',r'<head\1><meta charset="utf-8">',original,count=1)
             # The decoded document remains original page markup, not an
             # authored model card; only charset marker is normalized.
             page["text"]=original
