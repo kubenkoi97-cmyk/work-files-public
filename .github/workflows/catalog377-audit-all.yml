@@ -7,6 +7,7 @@ on:
     workflows: ["Catalog377 recover exact-model cards missing in first pass"]
     types: [completed]
   # verify completion of all primary and recovery batches
+  # final reconciliation of original plus corrected alternate vendor releases
   workflow_dispatch:
 permissions:
   contents: write
