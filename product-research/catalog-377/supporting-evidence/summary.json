@@ -15,11 +15,14 @@
     },
     {
       "name": "IGC_VRF_technical_characteristics.pdf",
-      "url": "http://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf",
+      "url": "https://www.c-o-k.ru/library/instructions/igc/kondicionery-promyshlennye/38333/141247.pdf",
       "brand": "IGC",
-      "note": "IGC manufacturer VRF technical characteristics, old DC versions; no model-by-model product HTML",
-      "downloaded": false,
-      "error": "404 Client Error: Not Found for url: http://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf"
+      "note": "Original IGC VRF manufacturer technical catalogue hosted in СОК documentation library, exact old DC variants; not product HTML",
+      "downloaded": true,
+      "actual_url": "https://www.c-o-k.ru/library/catalogs/igc/38333/141247.pdf",
+      "bytes": 16545914,
+      "pages": 98,
+      "sha256": "ff75eb0574889fe94812a0a46b162004fa8294881a72ef84dcee104b796ceaa2"
     },
     {
       "name": "Midea_MIH_GHN18_original_manual.pdf",
@@ -46,6 +49,6 @@
       "sha256": "f4e53d416b8072e40eaf292cdcb60cd21d9c8e56650e99f4a18e055af2971a26"
     }
   ],
-  "models_with_exact_sku_in_original_pdf": 40,
+  "models_with_exact_sku_in_original_pdf": 51,
   "photos": "Original product photographs remain in linked earlier per-SKU HTML ZIPs for PARTIAL; PDFs are supporting evidence only."
 }

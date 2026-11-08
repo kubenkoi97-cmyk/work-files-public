@@ -1,16 +1,16 @@
 ﻿brand,model,html_status,existing_html_archive,existing_html_source,pdf_sources,exact_sku_confirmed_in_pdf
-IGC,IMS-BS22NH (DC),NOT_FOUND,,,,False
-IGC,IMS-BS36NH(DC),NOT_FOUND,,,,False
-IGC,IMS-BS45NH(DC),NOT_FOUND,,,,False
-IGC,IMS-BS36NHQ(DC),NOT_FOUND,,,,False
-IGC,IMS-BS45NHQ(DC),NOT_FOUND,,,,False
-IGC,IMS-BS56NHQ(DC),NOT_FOUND,,,,False
-IGC,IMS-BS71NHQ(DC),NOT_FOUND,,,,False
-IGC,IMS-BH220NH(DC),NOT_FOUND,,,,False
-IGC,IMS-BH280NH(DC),NOT_FOUND,,,,False
+IGC,IMS-BS22NH (DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
+IGC,IMS-BS36NH(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
+IGC,IMS-BS45NH(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
+IGC,IMS-BS36NHQ(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
+IGC,IMS-BS45NHQ(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
+IGC,IMS-BS56NHQ(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
+IGC,IMS-BS71NHQ(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
+IGC,IMS-BH220NH(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
+IGC,IMS-BH280NH(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
 IGC,IMS-QV100NH(DC),NOT_FOUND,,,,False
-IGC,IMS-AHU220NH(DC),NOT_FOUND,,,,False
-IGC,IMS-AHU280NH(DC),NOT_FOUND,,,,False
+IGC,IMS-AHU220NH(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
+IGC,IMS-AHU280NH(DC),NOT_FOUND,,,IGC_VRF_technical_characteristics.pdf,True
 Kentatsu,KTKB18HZBN1,PARTIAL,https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-final-sweep-batch-157-171/catalog377-157-171.zip,https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-ktkb18hzbn1,Kentatsu_DX_PRO_VII_catalog_2025.pdf,True
 Kentatsu,KTKB24HZBN1,PARTIAL,https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-final-sweep-batch-157-171/catalog377-157-171.zip,https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-ktkb24hzbn1,Kentatsu_DX_PRO_VII_catalog_2025.pdf,True
 Kentatsu,KTKB30HZBN1,PARTIAL,https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-final-sweep-batch-157-171/catalog377-157-171.zip,https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-ktkb30hzbn1,Kentatsu_DX_PRO_VII_catalog_2025.pdf,True
