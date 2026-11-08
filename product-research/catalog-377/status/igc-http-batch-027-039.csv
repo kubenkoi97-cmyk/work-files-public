@@ -1,0 +1,9 @@
+﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
+28,IGC,IMS-1T28NH (DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+29,IGC,IMS-1T36NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+30,IGC,IMS-1T45NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+31,IGC,IMS-1T56NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+32,IGC,IMS-1T71NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+34,IGC,IMS-4TM28NH (DC5),COMPLETE,IGC official (HTTP),http://igc-aircon.com/product/kassetnye_vrf_4_kh_potochnye_komplekty/vnutrenniy_kassetnyy_kompakt_blok_igc_650_650_ims_4tm28nh_dc5_komplekt/,True,True,3,3,74,
+35,IGC,IMS-4TM36NH(DC5),COMPLETE,IGC official (HTTP),http://igc-aircon.com/product/kassetnye_vrf_4_kh_potochnye_komplekty/vnutrenniy_kassetnyy_kompakt_blok_igc_650_650_ims_4tm36nh_dc5_komplekt/,True,True,3,3,74,
+36,IGC,IMS-4TM45NH(DC5),COMPLETE,IGC official (HTTP),http://igc-aircon.com/product/kassetnye_vrf_4_kh_potochnye_komplekty/vnutrenniy_kassetnyy_kompakt_blok_igc_650_650_ims_4tm45nh_dc5_komplekt/,True,True,3,3,74,
