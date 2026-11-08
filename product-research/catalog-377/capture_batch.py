@@ -46,6 +46,7 @@ SESSION.headers.update(HEADERS)
 IGC_OFFICIAL_LINKS = None  # populated once per batch to avoid repeated catalogue crawls
 EFFECT_CATALOG_LINKS = None
 IGC_HTTP_INDEX = None  # original IGC manufacturer catalogue; HTTP works, HTTPS is inaccessible
+HTTP_ATTEMPT_LOG = []  # per-model HTTP responses, no silent 404/429/CAPTCHA conflation
 
 def key(s):
     return re.sub(r"[^A-Z0-9]", "", unicodedata.normalize("NFKC", str(s)).upper())
@@ -54,19 +55,54 @@ def safe(s):
     return re.sub(r"[^A-Za-z0-9._-]", "_", str(s)).strip("_")[:85]
 
 def get(url, timeout=15):
-    try:
-        r=SESSION.get(url,timeout=timeout,allow_redirects=True)
-        if r.status_code != 200 or len(r.content)<500:
+    """Respect server throttling and log HTTP failure separately from missing SKU.
+
+    404 is absent URL; 429/403 is access-limited; 502/503/504 is transient.
+    A response is NOT a valid original product page just because HTTP=200.
+    """
+    for attempt in range(2):
+        try:
+            r=SESSION.get(url,timeout=timeout,allow_redirects=True)
+            status=r.status_code
+            retry_after=r.headers.get("Retry-After","")
+            HTTP_ATTEMPT_LOG.append({
+                "url":url,"final_url":r.url,"status":status,
+                "bytes":len(r.content),"retry_after":retry_after,
+                "attempt":attempt+1
+            })
+            if status==200 and len(r.content)>=500:
+                declared=(r.encoding or "").strip().lower()
+                if declared in ("ansi","iso-8859-1","latin-1","latin1",""):
+                    r.encoding=r.apparent_encoding or "windows-1251"
+                return r
+            if status==429:
+                # Honor server's explicit retry window. If long, stop now,
+                # preserve RATE_LIMITED evidence instead of hammering.
+                try: delay=float(retry_after)
+                except (TypeError,ValueError): delay=8.0
+                if attempt==0 and delay<=20:
+                    time.sleep(max(2,delay))
+                    continue
+                return None
+            if status in (502,503,504) and attempt==0:
+                try: delay=float(retry_after)
+                except (TypeError,ValueError):delay=3.0
+                if delay>20:return None
+                time.sleep(max(2,delay))
+                continue
+            # 403/CAPTCHA/404 and non-HTML short pages must not retry blindly.
             return None
-        # Older Russian vendor pages declare "ANSI", which is not a valid
-        # Python encoding. Requests then incorrectly substitutes UTF-8 and
-        # loses all Russian descriptions/specifications.
-        declared=(r.encoding or "").strip().lower()
-        if declared in ("ansi","iso-8859-1","latin-1","latin1",""):
-            r.encoding=r.apparent_encoding or "windows-1251"
-        return r
-    except requests.RequestException:
-        return None
+        except requests.RequestException as exc:
+            HTTP_ATTEMPT_LOG.append({
+                "url":url,"status":"NETWORK_ERROR",
+                "error":str(exc)[:180],"attempt":attempt+1
+            })
+            if attempt==0:
+                time.sleep(1)
+                continue
+            return None
+    return None
+
 
 def parse_source(url, brand, model, response):
     if not response:
@@ -546,6 +582,7 @@ def offline_html(page,asset_map,foldername):
     return "<!DOCTYPE html>\n"+str(soup)
 
 def capture(row, dirpath):
+    HTTP_ATTEMPT_LOG.clear()
     model,brand,excelrow=row["model"],row["brand"],row["row"]
     product_dir=dirpath/f"{brand}_{safe(model)}"
     product_dir.mkdir(parents=True,exist_ok=True)
@@ -556,10 +593,25 @@ def capture(row, dirpath):
     try:
         page,attempts,site=choose_source(brand,model)
         manifest["attempted_urls"]=attempts
+        manifest["request_diagnostics"]=HTTP_ATTEMPT_LOG[-200:]
+        manifest["http_status_counts"]={str(st):sum(a.get("status")==st for a in HTTP_ATTEMPT_LOG)
+            for st in set(a.get("status") for a in HTTP_ATTEMPT_LOG)}
         if not page:
-            manifest.update(status="NOT_FOUND",reason="No verified exact model product HTML")
+            failures={str(a.get("status")) for a in HTTP_ATTEMPT_LOG}
+            cause=("RATE_LIMITED" if "429" in failures else
+                   "ACCESS_DENIED" if "403" in failures else
+                   "TRANSIENT_SERVER_ERROR" if failures.intersection({"502","503","504"}) else
+                   "NETWORK_ERROR" if "NETWORK_ERROR" in failures else
+                   "EXACT_PRODUCT_PAGE_UNAVAILABLE_OR_NOT_MATCHED")
+            manifest.update(status="NOT_FOUND",failure_code=cause,
+                            reason="No verified exact product HTML; inspect request_diagnostics")
         else:
             original=page["text"]
+            # Keep byte-for-byte HTTP source separately: original.html may
+            # normalize charset encoding, whereas server-source-original.html
+            # is the authentic response body, not a reconstruction.
+            (product_dir/"server-source-original.html").write_bytes(page["raw_bytes"])
+            manifest["raw_html_sha256"]=hashlib.sha256(page["raw_bytes"]).hexdigest()
             # Keep the true raw bytes for any legacy non-UTF-8 product site.
             enc=(page.get("source_encoding") or "").lower()
             if enc not in ("utf-8","utf8","ascii","us-ascii"):
