@@ -380,8 +380,13 @@ def igc_http_candidates(model):
                     IGC_HTTP_INDEX.append((title,url))
         print("IGC_HTTP_LISTINGS",len(IGC_HTTP_INDEX),flush=True)
     matches=[]
+    sku_slug=re.sub(r"[^a-z0-9]+","_",model.lower().replace(" ","")).strip("_")
+    slug_pattern=re.compile(r"(?<![a-z0-9])"+re.escape(sku_slug)+r"(?![a-z0-9])")
     for title,url in IGC_HTTP_INDEX:
-        if exact_model_in_text(model,title) and url not in matches:
+        # On some Bitrix listings the clickable TD contains no visible text.
+        # Its onclick link nevertheless contains the *exact* SKU slug.
+        if (exact_model_in_text(model,title) or
+            slug_pattern.search(urlparse(url).path.lower())) and url not in matches:
             matches.append(url)
     return matches[:8]
 
