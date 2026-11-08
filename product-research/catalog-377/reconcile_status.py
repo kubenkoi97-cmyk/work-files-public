@@ -71,6 +71,39 @@ def main():
           archive_download_url=st.get("archive_download_url",""),
           stage=st.get("result_stage",""),reason=st.get("reason","")
         ))
+    # Independent authenticated ZIP audit: store both good captures and
+    # quarantined wrong-SKU pages. Never treat (DC5) as the requested (DC).
+    qa={}
+    for shard_file in sorted((ROOT/"audit-v2").glob("integrity-shard-*.csv")):
+        with shard_file.open(encoding="utf-8-sig",newline="") as fd:
+            for rec in csv.DictReader(fd):
+                k=(rec["brand"],rec["model"])
+                if k in qa: raise RuntimeError("Duplicate QA source record: "+str(k))
+                qa[k]=rec
+    for row in final:
+        row["zip_verified"]="NOT_CHECKED"
+        row["rejected_source_url"]=""
+        row["rejected_archive_url"]=""
+        rec=qa.get((row["brand"],row["model"]))
+        # QA applies only to the specific chosen archive release.
+        if not rec or ("/releases/tag/"+rec["release_tag"])!=row.get("archive_release_url",""):
+            continue
+        if (rec.get("zip_integrity")=="OK" and rec.get("reason")=="OK"
+                and rec.get("file_presence")=="YES"
+                and rec.get("exact_heading")=="YES"):
+            row["zip_verified"]="YES"
+        elif rec.get("reason")=="SKU not in product heading":
+            row["zip_verified"]="WRONG_SKU"
+            row["rejected_source_url"]=row["source_url"]
+            row["rejected_archive_url"]=row["archive_download_url"]
+            row["source_url"]=""
+            row["archive_download_url"]=""
+            row["archive_release_url"]=""
+            row["status"]="WRONG_MODEL"
+            row["reason"]="QUARANTINED: original page contains different SKU suffix, e.g. DC5 instead of requested DC. See rejected_source_url."
+        else:
+            row["zip_verified"]="FAIL"
+            row["reason"]="ZIP audit finding: "+rec.get("reason","")[:200]
     STAT.mkdir(parents=True,exist_ok=True)
     with (STAT/"master_status.csv").open("w",newline="",encoding="utf-8-sig") as f:
         writer=csv.DictWriter(f,fieldnames=list(final[0]))
@@ -86,14 +119,14 @@ def main():
        fully_verified=counts["COMPLETE"]==377,
        process_terminated=sum(x["status"]!="UNPROCESSED" for x in final)==377,
        definition="COMPLETE only when exact model has source HTML, verified description/specs, and downloaded product photos",
-       methodology="First pass statuses overridden by documented fallback recovery; source artifacts linked per model")
+       methodology="Original archives matched to independently validated zip files; wrong SKU captures quarantined with link preserved only as rejected source")
     (STAT/"master_summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding="utf-8")
     md=["# Catalog 377 — текущий проверенный статус",
         "",f"Исходно 377 моделей. Обработано: {377-counts['UNPROCESSED']}.",
         f"С подтверждённой карточкой и изображениями (COMPLETE): {counts['COMPLETE']}.",
-        f"PARTIAL: {counts['PARTIAL']}; NOT_FOUND: {counts['NOT_FOUND']}; ERROR: {counts['ERROR']}; необработано: {counts['UNPROCESSED']}.",
+        f"PARTIAL: {counts['PARTIAL']}; NOT_FOUND: {counts['NOT_FOUND']}; WRONG_MODEL: {counts['WRONG_MODEL']}; ERROR: {counts['ERROR']}; необработано: {counts['UNPROCESSED']}.",
         "",
-        "Каждый результат в [master_status.csv](./master_status.csv) содержит источник и ссылку на конкретный архив в GitHub Releases. Ни PARTIAL, ни NOT_FOUND, ни ERROR не являются выполненной задачей.",
+        "Каждый результат в [master_status.csv](./master_status.csv) содержит источник и ссылку на конкретный архив в GitHub Releases. Ни PARTIAL, ни NOT_FOUND, ни WRONG_MODEL, ни ERROR не являются выполненной задачей.",
         "",
         "| Бренд | Всего | COMPLETE | Неполные |",
         "|---|---:|---:|---:|"]
