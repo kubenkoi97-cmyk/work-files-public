@@ -391,6 +391,15 @@ def igc_http_candidates(model):
     return matches[:8]
 
 def choose_source(brand, model):
+    if brand=="Midea" and model=="MIH90GHN18":
+        # Confirmed exact article and original product page; previous
+        # vsekondicioneri mirror returned 429, this seller returns 200.
+        u=("https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/"
+           "vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/"
+           "vnutrennij-blok-vrf-sistemy-midea-mih90ghn18")
+        p=parse_source(u,brand,model,get(u,timeout=18))
+        if p:
+            return p,[u],"External"
     # This source was overlooked previously because HTTPS fails; the
     # exact IGC model has already been checked on MirCli in the first pass.
     if brand=="IGC":
