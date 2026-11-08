@@ -1,0 +1,14 @@
+﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
+28,IGC,IMS-1T28NH (DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+29,IGC,IMS-1T36NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+30,IGC,IMS-1T45NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+31,IGC,IMS-1T56NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+32,IGC,IMS-1T71NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+33,IGC,IMS-4TM15NH(DC5),NOT_FOUND,,,,,,,,No verified exact model product HTML
+34,IGC,IMS-4TM28NH (DC5),NOT_FOUND,,,,,,,,No verified exact model product HTML
+35,IGC,IMS-4TM36NH(DC5),NOT_FOUND,,,,,,,,No verified exact model product HTML
+36,IGC,IMS-4TM45NH(DC5),NOT_FOUND,,,,,,,,No verified exact model product HTML
+37,IGC,IMS-4TM56NH(DC5),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-4TM56NH-DC5-/,True,True,6,6,66,
+38,IGC,IMS-4T71NHQ(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+39,IGC,IMS-4T80NHQ(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+40,IGC,IMS-4T100NHQ(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
