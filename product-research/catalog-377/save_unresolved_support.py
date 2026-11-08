@@ -30,9 +30,9 @@ SOURCES=[
     },
     {
        "name":"IGC_VRF_technical_characteristics.pdf",
-       "url":"http://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf",
+       "url":"https://www.c-o-k.ru/library/instructions/igc/kondicionery-promyshlennye/38333/141247.pdf",
        "brand":"IGC",
-       "note":"IGC manufacturer VRF technical characteristics, old DC versions; no model-by-model product HTML"
+       "note":"Original IGC VRF manufacturer technical catalogue hosted in СОК documentation library, exact old DC variants; not product HTML"
     },
     {
        "name":"Midea_MIH_GHN18_original_manual.pdf",
