@@ -8,6 +8,7 @@ on:
     types: [completed]
   # verify completion of all primary and recovery batches
   # final reconciliation of original plus corrected alternate vendor releases
+  # Recompute after newly downloaded official IGC HTTP and Midea product archives
   workflow_dispatch:
 permissions:
   contents: write
