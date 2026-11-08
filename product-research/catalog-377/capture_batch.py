@@ -419,9 +419,9 @@ def download_assets(page,folder):
             # Identify the real format from the file signature, not the header.
             if r.content[:4]==b"RIFF" and r.content[8:12]==b"WEBP":
                 content_type="image/webp"
-            elif r.content.startswith(b"\x89PNG\\r\\n\\x1a\\n"):
+            elif r.content.startswith(b"\x89PNG\r\n\x1a\n"):
                 content_type="image/png"
-            elif r.content.startswith(b"\xff\\xd8\\xff"):
+            elif r.content.startswith(b"\xff\xd8\xff"):
                 content_type="image/jpeg"
             elif r.content.startswith((b"GIF87a",b"GIF89a")):
                 content_type="image/gif"
