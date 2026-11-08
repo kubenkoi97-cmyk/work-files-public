@@ -631,12 +631,12 @@
     "original_source_status": "PARTIAL",
     "companion_not_original_html": true,
     "raw_html_sha256": "cbdac3c60d26684a56987765e6a6b6a820bcc91bf84067708b7f8482e0604b28",
-    "extracted_fields_count": 0,
+    "extracted_fields_count": 23,
     "original_gallery_image_count": 1,
     "source_is_original_html": true,
-    "generated_description": "",
+    "generated_description": "Midea MIH90GHN18(DP) — настенный внутренний блок VRF-системы серии MIH_G Inverter. По характеристикам продавца, производительность охлаждения составляет 9 кВт, обогрева — 10 кВт. Указаны также: расход воздуха 1420 м³/ч, уровень шума 33 дБ, габариты блока 1200 × 295 × 265 мм.",
     "original_page_has_separate_description": false,
-    "result": "FIELD_EXTRACTION_FAILED",
-    "issue": "Missing product-specific type or cooling/heating field"
+    "result": "COMPANION_READY",
+    "issue": ""
   }
 ]

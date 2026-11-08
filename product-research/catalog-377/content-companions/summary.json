@@ -1,8 +1,7 @@
 {
   "input_partial_models": 40,
   "results": {
-    "COMPANION_READY": 39,
-    "FIELD_EXTRACTION_FAILED": 1
+    "COMPANION_READY": 40
   },
   "authentic_existing_original_html_unchanged": true,
   "facts_source": "independently verified original exact-model HTML supplier specification tables",
