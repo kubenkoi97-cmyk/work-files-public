@@ -16,7 +16,7 @@ def inventory():
 
 def all_states():
     states={}
-    for prefix in ("batch-","recovery-batch-","deep-batch-","supplemental-batch-","supplemental-v2-batch-"):
+    for prefix in ("batch-","recovery-batch-","deep-batch-","supplemental-batch-","supplemental-v2-batch-","igc-http-batch-","midea-batch-"):
         for p in sorted(STAT.glob(prefix+"*.csv")):
             tag=p.stem[len(prefix):]
             with p.open(encoding="utf-8-sig",newline="") as f:
@@ -32,7 +32,7 @@ def all_states():
                     old=states.get(k)
                     # Never replace a verified complete source with a failed
                     # later attempt; preserve MirCli/source priority.
-                    if old and old.get("status")=="COMPLETE" and prefix!="supplemental-v2-batch-":
+                    if old and old.get("status")=="COMPLETE" and prefix not in ("supplemental-v2-batch-","igc-http-batch-","midea-batch-"):
                         continue
                     states[k]=r
     return states
