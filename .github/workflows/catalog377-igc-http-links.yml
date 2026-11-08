@@ -16,6 +16,7 @@ jobs:
       - run: python -m pip install -q requests beautifulsoup4
       - name: Extract exact product detail links
         run: |
+          python - <<'PY'
           import requests
           from bs4 import BeautifulSoup
           from urllib.parse import urljoin,urlparse
@@ -55,3 +56,4 @@ jobs:
               except Exception as e:
                   print('ERROR',url,str(e)[:200],flush=True)
           
+          PY
