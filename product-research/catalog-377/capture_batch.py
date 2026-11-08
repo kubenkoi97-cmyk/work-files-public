@@ -45,6 +45,7 @@ SESSION = requests.Session()
 SESSION.headers.update(HEADERS)
 IGC_OFFICIAL_LINKS = None  # populated once per batch to avoid repeated catalogue crawls
 EFFECT_CATALOG_LINKS = None
+IGC_HTTP_INDEX = None  # original IGC manufacturer catalogue; HTTP works, HTTPS is inaccessible
 
 def key(s):
     return re.sub(r"[^A-Z0-9]", "", unicodedata.normalize("NFKC", str(s)).upper())
@@ -83,7 +84,7 @@ def parse_source(url, brand, model, response):
     # Require brand too. A listing whose title only says 'search results'
     # does not count as a verified product page.
     primary=" ".join(heads+[title])
-    if key(model) not in key(primary) or key(brand) not in key(primary):
+    if not exact_model_in_text(model,primary) or key(brand) not in key(primary):
         return None
     bad=["поиск по сайту", "результаты поиска", "не найдено", "страница не найдена",
          "404 not found", "access denied", "service unavailable"]
@@ -337,7 +338,62 @@ def external_candidates(brand, model):
         if u not in cleaned:cleaned.append(u)
     return cleaned[:28]
 
+def exact_model_in_text(model, text):
+    """Match full SKU including suffix; never accept (DC7) for (DC), or (DP) for bare MIH."""
+    compact=re.sub(r"\s+","",str(text)).upper()
+    sku=re.sub(r"\s+","",str(model)).upper()
+    return bool(re.search(r"(?<![A-Z0-9])"+re.escape(sku)+r"(?![A-Z0-9(])",compact))
+
+def igc_http_candidates(model):
+    """Find real model-specific URLs in manufacturer's table onclick links.
+
+    The HTTPS version fails on the publisher's host, but HTTP serves complete
+    original HTML. No invented product URL is regarded as a verified result.
+    """
+    global IGC_HTTP_INDEX
+    if IGC_HTTP_INDEX is None:
+        IGC_HTTP_INDEX=[]
+        categories=[
+           "kanalnye_bloki_vrf",
+           "kassetnye_vrf_1_potochnye_komplekty",
+           "kassetnye_vrf_4_kh_potochnye_komplekty",
+           "napolno_potolochnye_bloki_vrf",
+           "nastennye_bloki_vrf",
+           "pritochnye_bloki_vrf",
+           "ventilyatsionnye_ustanovki_vrf",
+        ]
+        for category in categories:
+            category_url="http://igc-aircon.com/product/"+category+"/"
+            response=get(category_url,timeout=16)
+            if not response:continue
+            soup=BeautifulSoup(response.text,"html.parser")
+            for td in soup.select("td[onclick],tr[onclick],a[href]"):
+                title=td.get_text(" ",strip=True)
+                event=td.get("onclick","")
+                found=re.search(r"""(?:location(?:\.href)?\s*=\s*)['"]([^'"]+)['"]""",event)
+                href=found.group(1) if found else td.get("href","")
+                if not href or "/product/" not in href or not title:continue
+                # Preserve HTTP since publisher's HTTPS certificate endpoint
+                # drops incoming requests from GitHub runners.
+                url=urljoin(category_url,href).replace("https://igc-aircon.com/","http://igc-aircon.com/").replace("https://www.igc-aircon.com/","http://igc-aircon.com/")
+                if url.rstrip("/")!=category_url.rstrip("/"):
+                    IGC_HTTP_INDEX.append((title,url))
+        print("IGC_HTTP_LISTINGS",len(IGC_HTTP_INDEX),flush=True)
+    matches=[]
+    for title,url in IGC_HTTP_INDEX:
+        if exact_model_in_text(model,title) and url not in matches:
+            matches.append(url)
+    return matches[:8]
+
 def choose_source(brand, model):
+    # This source was overlooked previously because HTTPS fails; the
+    # exact IGC model has already been checked on MirCli in the first pass.
+    if brand=="IGC":
+        urls=igc_http_candidates(model)
+        for u in urls:
+            page=parse_source(u,brand,model,get(u,timeout=18))
+            if page and page["has_description"] and page["has_specs"] and page["photos"]:
+                return page,[u],"IGC official (HTTP)"
     # MirCli and broad-source passes have already been exhausted for these
     # specific unresolved SKUs. Prefer the validated exact seller URL for
     # this supplemental pass; preserve provenance and strict model check.
@@ -421,7 +477,10 @@ def download_assets(page,folder):
     def one(item):
         url,meta=item
         try:
-            r=requests.get(url,headers=HEADERS,timeout=14)
+            fetch_url=url
+            if urlparse(url).hostname in ("igc-aircon.com","www.igc-aircon.com"):
+                fetch_url=url.replace("https://","http://").replace("www.igc-aircon.com","igc-aircon.com")
+            r=requests.get(fetch_url,headers=HEADERS,timeout=14)
             if r.status_code!=200 or not r.content or len(r.content)>12_000_000:
                 raise ValueError("HTTP "+str(r.status_code)+" or asset size limit")
             content_type=r.headers.get("content-type","").split(";")[0].strip()
