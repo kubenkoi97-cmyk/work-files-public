@@ -63,7 +63,9 @@ def audit_one(z, model,brand):
         if not m.get("has_description") or not m.get("has_specs"):
             row["reason"]="Description/specifications incomplete"
             return row
-        photos=m.get("image_files",[])
+        photos=[photo for photo in m.get("image_files",[])
+                if not any(x in (photo.get("url","")+" "+photo.get("file","")).lower()
+                           for x in ("picture.loading.svg","placeholder.svg","loading.svg","loader.svg"))]
         row["photos"]=len(photos)
         if not photos:
             row["reason"]="No downloaded product photos"
