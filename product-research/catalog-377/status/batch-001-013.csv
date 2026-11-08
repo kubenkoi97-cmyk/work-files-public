@@ -1,0 +1,14 @@
+﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
+2,IGC,IMS-K15NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+3,IGC,IMS-K22NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-K22NHDC5/,True,True,10,10,76,
+4,IGC,IMS-K28NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-K28NHDC5/,True,True,10,10,76,
+5,IGC,IMS-K36NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-K36NHDC5/,True,True,10,10,74,
+6,IGC,IMS-K45NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-K45NHDC5/,True,True,10,10,74,
+7,IGC,IMS-K56NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-K56NHDC5/,True,True,10,10,74,
+8,IGC,IMS-K71NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-K71NHDC5/,True,True,10,10,75,
+9,IGC,IMS-K080NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+10,IGC,IMS-K90NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+11,IGC,IMS-K100NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+12,IGC,IMS-K110NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+13,IGC,IMS-BS22NH (DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+14,IGC,IMS-BS36NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
