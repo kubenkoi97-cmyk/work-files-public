@@ -1,5 +1,5 @@
 ﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
-42,IGC,IMS-4T140NHQ(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+42,IGC,IMS-4T140NHQ(DC),COMPLETE,IGC official (HTTP),http://igc-aircon.com/product/kassetnye_vrf_4_kh_potochnye_komplekty/vnutrenniy_kassetnyy_4_kh_potoch_blok_igc_ims_4t140nhq_dc_komplekt/,True,True,3,3,73,
 49,IGC,IMS-QV100NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
 52,IGC,IMS-AHU220NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
 53,IGC,IMS-AHU280NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
