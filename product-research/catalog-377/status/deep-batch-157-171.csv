@@ -1,0 +1,16 @@
+﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
+158,Kentatsu,KTVB160HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65096.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+159,Kentatsu,KTVB180HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65097.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+160,Kentatsu,KTLB18HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65098.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+161,Kentatsu,KTLB24HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65099.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+162,Kentatsu,KTLB30HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65100.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+163,Kentatsu,KTLB40HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65101.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+164,Kentatsu,KTLB50HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65102.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+165,Kentatsu,KTLB60HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65103.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+166,Kentatsu,KTLB72HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65104.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+167,Kentatsu,KTLB80HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65105.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+168,Kentatsu,KTLB90HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65106.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+169,Kentatsu,KTLB115HZBN1,PARTIAL,External,https://www.effect-nn.ru/condition_65107.htm,False,False,2,2,13,"Exact page found, but description/specs/images not all confirmed"
+170,Kentatsu,KTKB18HZBN1,NOT_FOUND,,,,,,,,No verified exact model product HTML
+171,Kentatsu,KTKB24HZBN1,NOT_FOUND,,,,,,,,No verified exact model product HTML
+172,Kentatsu,KTKB30HZBN1,NOT_FOUND,,,,,,,,No verified exact model product HTML
