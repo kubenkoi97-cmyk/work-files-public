@@ -340,9 +340,12 @@ def external_candidates(brand, model):
 
 def exact_model_in_text(model, text):
     """Match full SKU including suffix; never accept (DC7) for (DC), or (DP) for bare MIH."""
-    compact=re.sub(r"\s+","",str(text)).upper()
+    # Preserve whitespace *between* brand and model. Removing every space
+    # incorrectly glues "IGC IMS-..." into "IGCIMS-...", rejecting real SKUs.
+    primary=str(text).upper()
     sku=re.sub(r"\s+","",str(model)).upper()
-    return bool(re.search(r"(?<![A-Z0-9])"+re.escape(sku)+r"(?![A-Z0-9(])",compact))
+    regex=re.escape(sku).replace(r"\(",r"\s*\(")
+    return bool(re.search(r"(?<![A-Z0-9])"+regex+r"(?![A-Z0-9(])",primary))
 
 def igc_http_candidates(model):
     """Find real model-specific URLs in manufacturer's table onclick links.
