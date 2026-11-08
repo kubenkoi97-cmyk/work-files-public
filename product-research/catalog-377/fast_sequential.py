@@ -230,6 +230,8 @@ def main():
     ap.add_argument("--max-models",type=int,default=62)
     ap.add_argument("--start-row",type=int,default=1)
     ap.add_argument("--end-row",type=int,default=377)
+    ap.add_argument("--retry-pending",action="store_true",
+                    help="Recheck previously attempted SKUs when new sources are available")
     args=ap.parse_args()
     inventory=c.inventory()
     with (STATUS/"master_status.csv").open(encoding="utf-8-sig",newline="") as f:
@@ -244,11 +246,11 @@ def main():
         key=f"{idx:03d}"
         old=master[(brand,model)]
         checkpoint=TRACK/f"{key}.json"
-        if checkpoint.exists():
+        if checkpoint.exists() and not args.retry_pending:
             try:
                 prior=json.loads(checkpoint.read_text())
-                if prior.get("result")=="COMPLETE" and prior.get("release_verified"):
-                    print("SKIP_COMPLETED",key,brand,model,flush=True)
+                if prior.get("finished_utc"):
+                    print("SKIP_ALREADY_CHECKED",key,brand,model,prior.get("result"),flush=True)
                     continue
             except (ValueError,OSError):pass
         print("MODEL_BEGIN",pos,"of",min(len(pending),args.max_models),key,brand,model,flush=True)
