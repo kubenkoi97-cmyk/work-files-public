@@ -1,0 +1,56 @@
+name: Catalog377 save actual alternative Kentatsu source pages for unresolved SKUs
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-supplemental-kentatsu.yml'
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        include:
+          - {start: 156, end: 171, label: "157-171"}
+          - {start: 171, end: 186, label: "172-186"}
+          - {start: 186, end: 201, label: "187-201"}
+          - {start: 201, end: 216, label: "202-216"}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests beautifulsoup4 lxml
+      - name: Capture original alternative product pages for current unresolved SKUs
+        run: python product-research/catalog-377/capture_batch.py --start ${{ matrix.start }} --end ${{ matrix.end }} --only-master-unresolved
+      - name: Publish source HTML with photos and explicit quality flags
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LABEL: ${{ matrix.label }}
+        run: |
+          set -eu
+          tag="catalog377-supplemental-batch-$LABEL"
+          archive="product-research/catalog-377/output/catalog377-$LABEL.zip"
+          status="product-research/catalog-377/output/catalog377-$LABEL-status.csv"
+          gh release create "$tag" "$archive" "$status" \
+            --title "Catalog 377 additional exact-model Kentatsu HTML + images $LABEL" \
+            --notes "Authentic alternative seller HTML, local images, metadata; any missing seller descriptions are explicitly PARTIAL, not COMPLETE."
+      - name: Persist model-level status
+        env:
+          LABEL: ${{ matrix.label }}
+        run: |
+          set -eu
+          mkdir -p product-research/catalog-377/status
+          cp "product-research/catalog-377/output/catalog377-$LABEL-status.csv" "product-research/catalog-377/status/supplemental-batch-$LABEL.csv"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "product-research/catalog-377/status/supplemental-batch-$LABEL.csv"
+          git commit -m "Record genuine Kentatsu vendor source page and photos $LABEL"
+          for i in 1 2 3 4 5 6 7 8; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
