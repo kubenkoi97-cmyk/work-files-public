@@ -1,4 +1,5 @@
 name: Catalog377 historical IGC exact-model HTML discovery
+# Common Crawl JSON parsing fixed; skip temporarily unavailable Internet Archive.
 on:
   push:
     paths:
