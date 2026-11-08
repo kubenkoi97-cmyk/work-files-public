@@ -1,0 +1,57 @@
+name: Catalog377 inspect real HTTP IGC product links
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-igc-http-links.yml'
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests beautifulsoup4
+      - name: Extract exact product detail links
+        run: |
+          import requests
+          from bs4 import BeautifulSoup
+          from urllib.parse import urljoin,urlparse
+          hosts=[
+          'http://igc-aircon.com/product/kanalnye_bloki_vrf/',
+          'http://igc-aircon.com/product/kassetnye_vrf_1_potochnye_komplekty/',
+          'http://igc-aircon.com/product/kassetnye_vrf_4_kh_potochnye_komplekty/',
+          'http://igc-aircon.com/product/napolno_potolochnye_bloki_vrf/',
+          ]
+          targets=['IMS-BS22NHQ(DC)','IMS-1T28NH(DC)','IMS-4TM28NH(DC5)','IMS-AHU220NH(DC)','IMS-BH220NH(DC)','IMS-QV100NH(DC)']
+          for url in hosts:
+              try:
+                  r=requests.get(url,timeout=14,headers={'User-Agent':'Mozilla/5.0'})
+                  s=BeautifulSoup(r.text,'html.parser')
+                  print("CATEGORY",r.status_code,len(r.content),r.url,"TITLE",s.title.get_text(" ",strip=True)[:80] if s.title else None,flush=True)
+                  for model in targets:
+                      exact=s.find_all(string=lambda txt:bool(txt and model.lower() in txt.lower()))
+                      for match in exact[:2]:
+                          par=match.parent
+                          links=[]
+                          for ancestor in [par]+list(par.parents)[:5]:
+                              if not hasattr(ancestor,'find_all'):continue
+                              for a in ancestor.find_all('a',href=True,limit=10):
+                                  if a['href'] not in links:links.append(a['href'])
+                              if links:break
+                          print('MATCH',model,'TAG',str(par)[:230],'LINKS',links[:6],flush=True)
+                  for p in s.select('a[href]'):
+                      t=p.get_text(" ",strip=True)
+                      if 'IMS-BS22NHQ(DC)' in t:
+                          dest=urljoin(r.url,p.get('href',''))
+                          print('DIRECT',t[:130],dest,flush=True)
+                          if dest!=r.url:
+                              rr=requests.get(dest.replace('https://','http://'),timeout=13,headers={'User-Agent':'Mozilla/5.0'})
+                              soup=BeautifulSoup(rr.text,'html.parser')
+                              print('PRODUCT',rr.status_code,rr.url,len(rr.content),[h.get_text(" ",strip=True) for h in soup.find_all('h1')][:3], 'images',len(soup.find_all('img')),flush=True)
+                          break
+              except Exception as e:
+                  print('ERROR',url,str(e)[:200],flush=True)
+          
