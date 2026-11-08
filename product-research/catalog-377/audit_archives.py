@@ -13,6 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import re
 import tempfile
+import time
 import unicodedata
 import zipfile
 
@@ -110,11 +111,25 @@ def fetch_release(release):
     with tempfile.TemporaryDirectory() as temp:
         path=Path(temp)/asset["name"]
         try:
-            with requests.get(asset["browser_download_url"],timeout=125,stream=True) as r:
-                r.raise_for_status()
-                with path.open("wb") as fd:
-                    for chunk in r.iter_content(1024*1024):
-                        if chunk:fd.write(chunk)
+            success=False
+            for attempt in range(6):
+                try:
+                    with requests.get(asset["browser_download_url"],timeout=140,stream=True) as r:
+                        r.raise_for_status()
+                        with path.open("wb") as fd:
+                            for chunk in r.iter_content(1024*1024):
+                                if chunk:fd.write(chunk)
+                    if path.stat().st_size<100:
+                        raise ValueError("Suspiciously small archive")
+                    success=True
+                    break
+                except (requests.RequestException, ValueError, OSError) as ex:
+                    if attempt>=5:
+                        raise
+                    print("RETRY",tag,attempt+1,type(ex).__name__,str(ex)[:100],flush=True)
+                    time.sleep(2*(attempt+1))
+            if not success:
+                raise RuntimeError("Could not download archive after retries")
             if path.stat().st_size<100:
                 raise ValueError("Suspiciously small archive")
             rows=[]
@@ -142,24 +157,28 @@ def main():
     r.raise_for_status()
     releases=r.json()
     relevant=[x for x in releases
-          if re.fullmatch(r"catalog377-(?:recovery-|deep-|supplemental-|supplemental-v2-|igc-http-|midea-)?batch-\d{3}-\d{3}",x["tag_name"])]
+          if re.fullmatch(r"catalog377-(?:recovery-|deep-|supplemental-|supplemental-v2-|igc-http-|midea-|final-sweep-)?batch-\d{3}-\d{3}",x["tag_name"])]
     print("RELEASES_TO_AUDIT",len(relevant),flush=True)
     results={}
     failures={}
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=2) as pool:
         for tag,rows,errors in pool.map(fetch_release,relevant):
             if errors:failures[tag]=errors
             else:results[tag]=rows
             print("CHECKED",tag,len(rows),"FAILED",len(errors),flush=True)
     states={}
     # Initial + recovered passes: recovery takes precedence for the same SKU
-    for stage in ("catalog377-batch-", "catalog377-recovery-batch-", "catalog377-deep-batch-", "catalog377-supplemental-batch-", "catalog377-supplemental-v2-batch-", "catalog377-igc-http-batch-", "catalog377-midea-batch-"):
+    for stage in ("catalog377-batch-", "catalog377-recovery-batch-", "catalog377-deep-batch-", "catalog377-supplemental-batch-", "catalog377-supplemental-v2-batch-", "catalog377-igc-http-batch-", "catalog377-midea-batch-","catalog377-final-sweep-batch-"):
         for tag in sorted(results):
             if not tag.startswith(stage):continue
             for row in results[tag]:
                 k=(row["brand"],row["model"])
                 old=states.get(k)
-                if old and old.get("verified") and stage not in ("catalog377-supplemental-v2-batch-","catalog377-igc-http-batch-","catalog377-midea-batch-"): continue
+                def quality(x):
+                    rank={"COMPLETE":3,"PARTIAL":2,"NOT_FOUND":1,"ERROR":0}
+                    return (3 if x.get("verified") else rank.get(x.get("declared"),0) if x.get("declared")!="COMPLETE" else 1,
+                            int(x.get("photos") or 0),int(x.get("largest_photo") or 0))
+                if old and quality(old)>=quality(row):continue
                 states[k]=row
     lines=sorted(states.values(),key=lambda a:(a["brand"],a["model"]))
     with (REPORT/"audit_status.csv").open("w",newline="",encoding="utf-8-sig") as f:
