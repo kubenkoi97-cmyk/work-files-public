@@ -23,9 +23,17 @@ def matches(model,text):
     sku=re.sub(r"\s+","",model).upper()
     pat=re.escape(sku).replace(r"\(",r"\s*\(")
     return bool(re.search(r"(?<![A-Z0-9])"+pat+r"(?![A-Z0-9(])",str(text).upper()))
-def getfields(soup):
-    """Read first actual product table, never the recommendation widget."""
+def getfields(soup,source_url):
+    """Read the exact product specification table, not recommendations."""
     current={}
+    if "coolsochi.ru/product/" in source_url:
+        # Coolsochi has one dedicated Product table with 23 SKU attributes.
+        for tr in soup.select("table tr"):
+            cells=[c.get_text(" ",strip=True) for c in tr.find_all(["td","th"],recursive=False)]
+            if len(cells)==2:
+                k,v=[x.strip() for x in cells]
+                if k and v and k not in current:current[k]=v
+        return current
     active=False
     seen_start=False
     for tr in soup.select("tr"):
@@ -61,11 +69,12 @@ def sentence(brand,model,fields):
     """No unverified feature claims, only fields verbatim from exact SKU."""
     typ=fields.get("Тип внутреннего блока","").lower()
     series=fields.get("Серия","")
-    cool=fields.get("Охлаждение (кВт)") or fields.get("Охлаждение, кВт")
-    warm=fields.get("Обогрев (кВт)") or fields.get("Обогрев, кВт")
+    cool=fields.get("Охлаждение (кВт)") or fields.get("Охлаждение, кВт") or fields.get("Охлаждения (кВт)")
+    warm=fields.get("Обогрев (кВт)") or fields.get("Обогрев, кВт") or fields.get("Мощность нагревания (кВт)")
+    if isinstance(warm,str):warm=re.sub(r"\s*кВт\s*$","",warm).strip()
     air=fields.get("Расход воздуха (м3/час)")
     noise=fields.get("Уровень шума (дБ)")
-    dims=fields.get("Габариты внутреннего блока ШхВхГ (мм)")
+    dims=fields.get("Габариты внутреннего блока ШхВхГ (мм)") or fields.get("Габариты внутреннего блока")
     if not (typ and cool and warm):
         return "",["Missing product-specific type or cooling/heating field"]
     parts=[f"{brand} {model} — {typ} внутренний блок VRF-системы"+(f" серии {series}" if series else "")+"."]
@@ -117,7 +126,7 @@ with tempfile.TemporaryDirectory() as tmp:
                 if source_manifest.get("model")!=model or not source_manifest.get("image_files"):
                     result.update(result="SOURCE_INCOMPLETE",issue="Source metadata mismatch or missing photo list")
                     manifest.append(result);continue
-                fields=getfields(soup)
+                fields=getfields(soup,row["source_url"])
                 original_description,errs=sentence(brand,model,fields)
                 result.update(
                     raw_html_sha256=hashlib.sha256(raw).hexdigest(),
