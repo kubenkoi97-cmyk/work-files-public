@@ -107,6 +107,9 @@ def parse_source(url, brand, model, response):
     }
 
 def product_images(soup, model, brand, base_url):
+    # Honour the original document's <base href> when resolving image URLs.
+    base_tag=soup.find("base",href=True)
+    if base_tag:base_url=urljoin(base_url,base_tag["href"])
     # Only product gallery, not generic page images or related products.
     out=[]
     tag_entries=[]
@@ -114,7 +117,7 @@ def product_images(soup, model, brand, base_url):
         alt=img.get("alt","")
         raw=" ".join([alt,img.get("title","")])
         candidates=[]
-        for attr in ("src","data-src","data-original","data-lazy-src"):
+        for attr in ("src","data-src","data-original","data-lazy-src","data-zoom-image"):
             if img.get(attr): candidates.append(img[attr])
         for attr in ("srcset","data-srcset"):
             for seg in img.get(attr,"").split(","):
@@ -369,6 +372,8 @@ def choose_source(brand, model):
 def choose_download_urls(page):
     soup=page["soup"]
     base=page["url"]
+    base_tag=soup.find("base",href=True)
+    if base_tag:base=urljoin(base,base_tag["href"])
     photo_urls=[p["url"] for p in page["photos"]]
     asset_urls={}
     for u in photo_urls:
@@ -380,7 +385,7 @@ def choose_download_urls(page):
                 "preload" in tag.get("rel",[]) and tag.get("as") in ("image","style","font","script")):
                 attrs=["href"]
         elif tag.name in ("img","source","video"):
-            attrs=["src","poster","data-src","data-original"]
+            attrs=["src","poster","data-src","data-original","data-zoom-image"]
         elif tag.name=="script":
             attrs=["src"]
         for attr in attrs:
@@ -410,6 +415,16 @@ def download_assets(page,folder):
             if r.status_code!=200 or not r.content or len(r.content)>12_000_000:
                 raise ValueError("HTTP "+str(r.status_code)+" or asset size limit")
             content_type=r.headers.get("content-type","").split(";")[0].strip()
+            # Some older sellers serve WEBP images with text/plain or octet-stream.
+            # Identify the real format from the file signature, not the header.
+            if r.content[:4]==b"RIFF" and r.content[8:12]==b"WEBP":
+                content_type="image/webp"
+            elif r.content.startswith(b"\x89PNG\\r\\n\\x1a\\n"):
+                content_type="image/png"
+            elif r.content.startswith(b"\xff\\xd8\\xff"):
+                content_type="image/jpeg"
+            elif r.content.startswith((b"GIF87a",b"GIF89a")):
+                content_type="image/gif"
             if content_type.startswith("text/html"):raise ValueError("received HTML, not asset")
             ext=mimetypes.guess_extension(content_type) or ""
             basename=safe(Path(urlparse(url).path).name)[:75] or "resource"
@@ -435,8 +450,10 @@ def download_assets(page,folder):
 def offline_html(page,asset_map,foldername):
     soup=BeautifulSoup(page["text"],"html.parser")
     base=page["url"]
+    base_tag=soup.find("base",href=True)
+    if base_tag:base=urljoin(base,base_tag["href"])
     for tag in soup.find_all(["img","source","video","link","script"]):
-        for attr in ("src","href","poster","data-src","data-original"):
+        for attr in ("src","href","poster","data-src","data-original","data-zoom-image"):
             raw=tag.get(attr)
             if not raw:continue
             u=urljoin(base,htmlmod.unescape(raw))
