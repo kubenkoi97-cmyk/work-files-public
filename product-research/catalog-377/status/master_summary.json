@@ -1,9 +1,9 @@
 {
   "inventory_total": 377,
   "counts": {
-    "COMPLETE": 314,
-    "NOT_FOUND": 24,
-    "PARTIAL": 39
+    "COMPLETE": 325,
+    "NOT_FOUND": 12,
+    "PARTIAL": 40
   },
   "brands": {
     "Bosch": {
@@ -18,28 +18,17 @@
     },
     "IGC": {
       "total": 52,
-      "complete": 29,
+      "complete": 40,
       "unresolved": [
         "IMS-BS22NH (DC)",
         "IMS-BS36NH(DC)",
         "IMS-BS45NH(DC)",
-        "IMS-BS22NHQ(DC)",
-        "IMS-BS28NHQ(DC)",
         "IMS-BS36NHQ(DC)",
         "IMS-BS45NHQ(DC)",
         "IMS-BS56NHQ(DC)",
         "IMS-BS71NHQ(DC)",
         "IMS-BH220NH(DC)",
         "IMS-BH280NH(DC)",
-        "IMS-1T28NH (DC)",
-        "IMS-1T36NH(DC)",
-        "IMS-1T45NH(DC)",
-        "IMS-1T56NH(DC)",
-        "IMS-1T71NH(DC)",
-        "IMS-4TM28NH (DC5)",
-        "IMS-4TM36NH(DC5)",
-        "IMS-4TM45NH(DC5)",
-        "IMS-4T140NHQ(DC)",
         "IMS-QV100NH(DC)",
         "IMS-AHU220NH(DC)",
         "IMS-AHU280NH(DC)"
