@@ -52,6 +52,13 @@ SOURCES=[
 def norm(s):
     return re.sub("[^A-Z0-9]","",str(s).upper())
 
+def exact_model_in_pdf(model,text):
+    # Permit spaces introduced by PDF text extraction between model glyphs,
+    # but do not let IMS-...NH(DC) match IMS-...NH(DC5) or (DC7).
+    sku=re.sub(r"\s+","",str(model)).upper()
+    needle=r"\s*".join(re.escape(c) for c in sku)
+    return bool(re.search(r"(?<![A-Z0-9])"+needle+r"(?![A-Z0-9])",text.upper()))
+
 def download(url):
     for attempt in range(3):
         try:
@@ -86,7 +93,7 @@ for source in SOURCES:
         source_entries.append({
             **source,"downloaded":True,"actual_url":final_url,"bytes":len(raw),
             "pages":pages,"sha256":hashlib.sha256(raw).hexdigest(),
-            "normalized_pdf_text":norm(content)
+            "normalized_pdf_text":norm(content),"extracted_pdf_text":content
         })
         print("SAVED",name,len(raw),"PAGES",pages,flush=True)
     except Exception as e:
@@ -100,7 +107,7 @@ for sku in models:
         if not evidence["downloaded"] or evidence["brand"]!=sku["brand"]:continue
         target=evidence.get("model")
         if target and target!=sku["model"]:continue
-        found=norm(sku["model"]) in evidence["normalized_pdf_text"]
+        found=exact_model_in_pdf(sku["model"],evidence["extracted_pdf_text"])
         matches.append({
             "pdf":evidence["name"],
             "exact_sku_in_pdf_text":found,
@@ -132,7 +139,7 @@ with (OUT/"sku_source_map.csv").open("w",newline="",encoding="utf-8-sig") as f:
 summary={
  "unresolved_exact_skus":len(models),
  "original_html_complete_from_this_support_pack":0,
- "source_pdfs": [{k:v for k,v in x.items() if k!="normalized_pdf_text"} for x in source_entries],
+ "source_pdfs": [{k:v for k,v in x.items() if k not in ("normalized_pdf_text","extracted_pdf_text")} for x in source_entries],
  "models_with_exact_sku_in_original_pdf":sum(any(s["exact_sku_in_pdf_text"] for s in r["supporting_sources"]) for r in mapped),
  "photos":"Original product photographs remain in linked earlier per-SKU HTML ZIPs for PARTIAL; PDFs are supporting evidence only."
 }
