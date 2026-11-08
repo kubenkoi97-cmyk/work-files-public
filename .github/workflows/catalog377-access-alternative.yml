@@ -1,0 +1,36 @@
+name: Diagnose alternative exact SKU source vendors
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-access-alternative.yml'
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - run: |
+          python -m pip install -q requests beautifulsoup4
+          python - <<'PY'
+          import requests
+          from bs4 import BeautifulSoup
+          urls=[
+            'https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-kttb60hzbn1',
+            'https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-ktkb18hzbn1',
+            'https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-kthb40hzbn1',
+            'https://www.igc-aircon.com/product/kassetnye_vrf_1_potochnye_komplekty/',
+            'https://www.igc-aircon.com/product/kanalnye_bloki_vrf/',
+            'https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_bs22nhq_dc/',
+            'https://toplan.ru/sistemy-condicionirovaniya/vrf/igc.html',
+            'https://midea.kg/index.php/product-categories/vrf-sistemy/vnutrennie-bloki',
+          ]
+          for u in urls:
+            try:
+              r=requests.get(u,headers={'User-Agent':'Mozilla/5.0'},timeout=12)
+              s=BeautifulSoup(r.text,'html.parser')
+              texts=s.get_text(' ',strip=True).lower()
+              head=[h.get_text(' ',strip=True)[:110] for h in s.select('h1')][:1]
+              print('SOURCE',r.status_code,len(r.content),'H1',str(head),
+                    'SPEC',('характеристики' in texts),'DESC',('описание' in texts),
+                    'IMG',len(s.select('img')),'URL',u,flush=True)
+            except Exception as e:print('ERROR',str(e)[:100],'URL',u,flush=True)
+          PY
