@@ -1,0 +1,74 @@
+name: Catalog377 final exact-model vendor sweep for all unresolved HTML
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-final-sweep.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        include:
+          - {start: 0, end: 13, label: "001-013"}
+          - {start: 13, end: 26, label: "014-026"}
+          - {start: 26, end: 39, label: "027-039"}
+          - {start: 39, end: 52, label: "040-052"}
+          - {start: 156, end: 171, label: "157-171"}
+          - {start: 171, end: 186, label: "172-186"}
+          - {start: 186, end: 201, label: "187-201"}
+          - {start: 201, end: 216, label: "202-216"}
+          - {start: 340, end: 341, label: "341-341"}
+          - {start: 349, end: 350, label: "350-350"}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet requests beautifulsoup4 lxml pillow
+      - name: Exhaust manufacturer HTTP and accessible exact-model sellers
+        run: python product-research/catalog-377/capture_batch.py --start ${{ matrix.start }} --end ${{ matrix.end }} --only-master-unresolved
+      - name: Save ZIP of authentic HTML and local product gallery
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LABEL: ${{ matrix.label }}
+        run: |
+          set -eu
+          tag="catalog377-final-sweep-batch-$LABEL"
+          zip="product-research/catalog-377/output/catalog377-$LABEL.zip"
+          csv="product-research/catalog-377/output/catalog377-$LABEL-status.csv"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$zip" "$csv" --clobber
+          else
+            gh release create "$tag" "$zip" "$csv"               --title "Catalog 377 final exact SKU HTML and image recovery — $LABEL"               --notes "Searches multiple exact product pages after earlier MirCli-first passes. All archived sources are genuine HTML; missing separate descriptions remain PARTIAL, nonexistent product pages NOT_FOUND. Exact model suffix required."
+          fi
+      - name: Commit independent per-SKU evidence status for this batch
+        env:
+          LABEL: ${{ matrix.label }}
+        run: |
+          set -eu
+          mkdir -p product-research/catalog-377/status
+          cp "product-research/catalog-377/output/catalog377-$LABEL-status.csv" "product-research/catalog-377/status/final-sweep-batch-$LABEL.csv"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "product-research/catalog-377/status/final-sweep-batch-$LABEL.csv"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Exact SKU final external HTML search $LABEL"
+          for attempt in 1 2 3 4 5 6 7 8; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: catalog377-final-sweep-${{ matrix.label }}
+          path: product-research/catalog-377/output/
+          retention-days: 7
