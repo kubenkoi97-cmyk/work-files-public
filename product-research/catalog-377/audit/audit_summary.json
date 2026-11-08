@@ -1,0 +1,13 @@
+{
+  "releases_scanned": 34,
+  "releases_downloaded": 34,
+  "release_failures": {},
+  "unique_models_found": 377,
+  "counts": {
+    "VERIFIED": 267,
+    "NOT_FOUND": 110
+  },
+  "verified_ready": 267,
+  "definition": "Original HTML, offline HTML, exact model heading, product description/specs, all local product images decodable, one image >=200x200.",
+  "status": "audit_completed"
+}
