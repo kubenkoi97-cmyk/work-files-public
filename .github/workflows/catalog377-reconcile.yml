@@ -13,6 +13,7 @@ on:
   # final reconciliation of original plus corrected alternate vendor releases
   # Recompute after newly downloaded official IGC HTTP and Midea product archives
   # Final 377-SKU evidence and restored IGC exact-model HTML source audit
+  # Verify corrected original webpage description requirement for all 377 SKUs
   workflow_dispatch:
 concurrency:
   group: catalog377-master-status
