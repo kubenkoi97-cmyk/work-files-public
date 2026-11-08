@@ -57,6 +57,12 @@ def get(url, timeout=15):
         r=SESSION.get(url,timeout=timeout,allow_redirects=True)
         if r.status_code != 200 or len(r.content)<500:
             return None
+        # Older Russian vendor pages declare "ANSI", which is not a valid
+        # Python encoding. Requests then incorrectly substitutes UTF-8 and
+        # loses all Russian descriptions/specifications.
+        declared=(r.encoding or "").strip().lower()
+        if declared in ("ansi","iso-8859-1","latin-1","latin1",""):
+            r.encoding=r.apparent_encoding or "windows-1251"
         return r
     except requests.RequestException:
         return None
@@ -94,7 +100,7 @@ def parse_source(url, brand, model, response):
         "характеристики","охлаждение", "обогрев", "мощность", "вес", "габарит"])
     return {
         "url": response.url, "title":title,"heads":heads,
-        "text":text,"soup":soup,"photos":gallery,
+        "text":text,"raw_bytes":response.content,"source_encoding":response.encoding,"soup":soup,"photos":gallery,
         "has_description": descr_score>=2 or ("описание" in page_text.lower()),
         "has_specs": spec_score>=2,
         "ctype":ctype,"brand":brand,"model":model
@@ -423,6 +429,17 @@ def capture(row, dirpath):
             manifest.update(status="NOT_FOUND",reason="No verified exact model product HTML")
         else:
             original=page["text"]
+            # Keep the true raw bytes for any legacy non-UTF-8 product site.
+            enc=(page.get("source_encoding") or "").lower()
+            if enc not in ("utf-8","utf8","ascii","us-ascii"):
+                (product_dir/"source-original-charset.html").write_bytes(page["raw_bytes"])
+                original=re.sub(r"(?i)(<meta[^>]*charset\\s*=\\s*['\\\"]?)(?:ansi|windows-1251|cp1251)",
+                                lambda m:m.group(1)+"utf-8",original)
+                if not re.search(r"(?i)<meta[^>]+charset",original):
+                    original=re.sub(r"(?i)<head([^>]*)>",r'<head\\1><meta charset="utf-8">',original,count=1)
+            # The decoded document remains original page markup, not an
+            # authored model card; only charset marker is normalized.
+            page["text"]=original
             (product_dir/"original.html").write_text(original,encoding="utf-8")
             asset_map,downloaded_photos,failures=download_assets(page,product_dir/"page_files")
             (product_dir/"offline.html").write_text(
