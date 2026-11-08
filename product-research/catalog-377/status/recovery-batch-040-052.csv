@@ -1,0 +1,10 @@
+﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
+41,IGC,IMS-4T125NHQ(DC),COMPLETE,External,https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_4t125nhq_dc/,True,True,6,6,39,
+42,IGC,IMS-4T140NHQ(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+43,IGC,IMS-QV28NH(DC),COMPLETE,External,https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_qv28nh_dc/,True,True,6,6,40,
+44,IGC,IMS-QV36NH(DC),COMPLETE,External,https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_qv36nh_dc/,True,True,6,6,40,
+49,IGC,IMS-QV100NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+50,IGC,IMS-QV125NH(DC),COMPLETE,External,https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_qv125nh_dc/,True,True,6,6,40,
+51,IGC,IMS-QV140NH(DC),COMPLETE,External,https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_qv140nh_dc/,True,True,6,6,40,
+52,IGC,IMS-AHU220NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+53,IGC,IMS-AHU280NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
