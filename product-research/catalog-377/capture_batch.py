@@ -217,6 +217,14 @@ def external_candidates(brand, model):
         for name,dest in EFFECT_CATALOG_LINKS:
             if key(model) in key(name):
                 extra.append(dest)
+    if brand=="Midea":
+        tail=model.lower().replace("(","-").replace(")","")
+        extra.extend([
+            "https://air-midea.ru/midea-"+tail,
+            "https://coolsochi.ru/product/midea-"+tail+"/",
+            "https://vsekondicioneri.ru/product/midea-"+tail+"/",
+            "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea_"+model.lower().replace("-","_").replace("(","_").replace(")","")+"/",
+        ])
     # Query actual vendor sites plus Bing's well-formed RSS results. HTML
     # search engines may hide organic links; do not mistake that for no SKU.
     q=f'"{model}" "{brand}" купить характеристики'
