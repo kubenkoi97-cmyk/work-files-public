@@ -1,12 +1,12 @@
 {
-  "releases_scanned": 50,
-  "releases_downloaded": 50,
+  "releases_scanned": 58,
+  "releases_downloaded": 58,
   "release_failures": {},
   "unique_models_found": 377,
   "counts": {
     "VERIFIED": 314,
-    "NOT_FOUND": 62,
-    "PARTIAL": 1
+    "NOT_FOUND": 24,
+    "PARTIAL": 39
   },
   "verified_ready": 314,
   "definition": "Original HTML, offline HTML, exact model heading, product description/specs, all local product images decodable, one image >=200x200.",
