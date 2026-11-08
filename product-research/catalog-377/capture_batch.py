@@ -492,6 +492,11 @@ def capture(row, dirpath):
             (product_dir/"offline.html").write_text(
                 offline_html(page,asset_map,"page_files"),encoding="utf-8")
             has_desc=page["has_description"]
+            # This seller has detailed SKU specification rows, but no
+            # actual product description section; navigation text such as
+            # "О товаре" must not count as a product description.
+            if (urlparse(page["url"]).hostname or "").endswith("gorodskie-sistemy.ru"):
+                has_desc=False
             has_specs=page["has_specs"]
             complete=(has_desc and has_specs and len(downloaded_photos)>=1
                       and len(downloaded_photos)==len(page["photos"]))
