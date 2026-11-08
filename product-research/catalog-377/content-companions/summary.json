@@ -1,0 +1,11 @@
+{
+  "input_partial_models": 40,
+  "results": {
+    "COMPANION_READY": 39,
+    "FIELD_EXTRACTION_FAILED": 1
+  },
+  "authentic_existing_original_html_unchanged": true,
+  "facts_source": "independently verified original exact-model HTML supplier specification tables",
+  "generated_text_is_not_vendor_description": true,
+  "note": "No product description added to or passed off as original retailer HTML"
+}

@@ -1,0 +1,33 @@
+{
+  "brand": "Kentatsu",
+  "model": "KTTB560HZBN1",
+  "source_html_url": "https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-kentatsu-kttb560hzbn1",
+  "html_source_sha256": "39e34e1e5f471bb56f2553c5e0302fb6b7de0e9600330c7eea71159bf40ad97d",
+  "source_archive": "https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/catalog377-final-sweep-batch-187-201/catalog377-187-201.zip",
+  "fields": {
+    "На площадь (м2)": "560",
+    "Вес внутреннего блока": "170 кг",
+    "Виды блоков": "Внутренние блоки",
+    "Габариты внутреннего блока ШхВхГ (мм)": "1850 × 580 × 900",
+    "Диаметр трубопроводов": "5/8 (15.88)-1 1/8 (28.57)",
+    "Категории товара": "VRF-системы, Kentatsu",
+    "Обогрев (кВт)": "63",
+    "Обогрев, кВт": "63",
+    "Напор воздуха": "Высоконапорный",
+    "Охлаждение (кВт)": "56",
+    "Охлаждение, кВт": "56",
+    "Потребляемая мощность (кВт)": "2.03",
+    "Производитель": "Kentatsu",
+    "Расход воздуха (м3/час)": "8400",
+    "Режим работы": "С обогревом",
+    "С фильтрами": "грубой очистки",
+    "С функциями": "с вентиляцией, с осушением",
+    "Серия": "KTTB",
+    "Страна бренда": "Япония",
+    "Уровень шума (дБ)": "49",
+    "Тип внутреннего блока": "Канальный",
+    "Хладагент": "R-410A",
+    "Электропитание (В)": "1~, 220~240 В, 50 Гц"
+  },
+  "is_vendor_description": false
+}
