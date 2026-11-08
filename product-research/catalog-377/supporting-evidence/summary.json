@@ -1,0 +1,51 @@
+{
+  "unresolved_exact_skus": 52,
+  "original_html_complete_from_this_support_pack": 0,
+  "source_pdfs": [
+    {
+      "name": "Kentatsu_DX_PRO_VII_catalog_2025.pdf",
+      "url": "https://www.c-o-k.ru/library/catalogs/kentatsu/140011.pdf",
+      "brand": "Kentatsu",
+      "note": "Kentatsu DX PRO VII catalogue: KTKB/KTTB/KTHB series model tables and series descriptions; downloaded PDF only, not HTML",
+      "downloaded": true,
+      "actual_url": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "bytes": 21903091,
+      "pages": 116,
+      "sha256": "b372ec4d9e8c06da9b6f7b3fcc9f3ec2c958122219d3ddc20d87248f5a1089fb"
+    },
+    {
+      "name": "IGC_VRF_technical_characteristics.pdf",
+      "url": "http://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf",
+      "brand": "IGC",
+      "note": "IGC manufacturer VRF technical characteristics, old DC versions; no model-by-model product HTML",
+      "downloaded": false,
+      "error": "404 Client Error: Not Found for url: http://igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf"
+    },
+    {
+      "name": "Midea_MIH_GHN18_original_manual.pdf",
+      "url": "https://air-midea.com/upload/iblock/5fa/w3uwwedt34zlvayeyypdf82w8bqe3b4d.pdf",
+      "brand": "Midea",
+      "model": "MIH90GHN18",
+      "note": "Midea manufacturer manual for MIH90GHN18 WITHOUT DP",
+      "downloaded": true,
+      "actual_url": "https://air-midea.com/upload/iblock/5fa/w3uwwedt34zlvayeyypdf82w8bqe3b4d.pdf",
+      "bytes": 38678493,
+      "pages": 80,
+      "sha256": "1cbbfa09e0939fc82cccad5526998e31f121f24b04ac1a12e5bc4934bcf56954"
+    },
+    {
+      "name": "Midea_MIH_GHN18_DP_original_manual.pdf",
+      "url": "https://daichi.ru/upload/iblock/e3f/1r0uk23yt3xq50hbmhmd4ctbrsbow353/IOM_Wall-mounted_MIH_GHN18%28DP%29_11_07_25.pdf",
+      "brand": "Midea",
+      "model": "MIH90GHN18(DP)",
+      "note": "Midea manufacturer manual for MIH90GHN18(DP), different variant from the model without suffix",
+      "downloaded": true,
+      "actual_url": "https://daichi.ru/upload/iblock/e3f/1r0uk23yt3xq50hbmhmd4ctbrsbow353/IOM_Wall-mounted_MIH_GHN18%28DP%29_11_07_25.pdf",
+      "bytes": 37164785,
+      "pages": 80,
+      "sha256": "f4e53d416b8072e40eaf292cdcb60cd21d9c8e56650e99f4a18e055af2971a26"
+    }
+  ],
+  "models_with_exact_sku_in_original_pdf": 40,
+  "photos": "Original product photographs remain in linked earlier per-SKU HTML ZIPs for PARTIAL; PDFs are supporting evidence only."
+}
