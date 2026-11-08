@@ -30,9 +30,13 @@ def git_checkpoint(paths,message):
     run(["git","config","user.name","github-actions[bot]"])
     run(["git","config","user.email","41898282+github-actions[bot]@users.noreply.github.com"])
     run(["git","add",*paths])
-    if not subprocess.run(["git","diff","--cached","--quiet"]).returncode:
+    changed=subprocess.run(["git","diff","--cached","--quiet"]).returncode
+    if changed==1:
         run(["git","commit","-m",message])
-    else:return
+    elif changed==0:
+        return
+    else:
+        raise RuntimeError("Unable to inspect staged Git changes")
     for attempt in range(10):
         try:
             run(["git","pull","--rebase","origin","main"],timeout=35)
