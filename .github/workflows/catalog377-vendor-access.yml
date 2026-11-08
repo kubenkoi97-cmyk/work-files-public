@@ -1,0 +1,40 @@
+name: Diagnose exact Kentatsu vendor HTML access
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-vendor-access.yml'
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check real product source page responses
+        run: |
+          python -m pip install -q requests beautifulsoup4
+          python - <<'PY'
+          import requests
+          from bs4 import BeautifulSoup
+          u=[
+            'https://coolsochi.ru/product/kentatsu-ktkb18hzbn1/',
+            'https://coolsochi.ru/product/kentatsu-kttb60hzbn1/',
+            'https://coolsochi.ru/product/kentatsu-kthb40hzbn1/',
+            'https://vsekondicioneri.ru/product/kentatsu-ktkb18hzbn1/',
+            'https://ryazan.vsekondicioneri.ru/product/kentatsu-ktkb18hzbn1/',
+            'https://perm.vsekondicioneri.ru/product/kentatsu-ktkb40hzbn1/',
+            'https://izhevsk.vsekondicioneri.ru/product/kentatsu-kttb60hzbn1/',
+            'https://izhevsk.vsekondicioneri.ru/product/kentatsu-kthb40hzbn1/',
+            'https://vsekondicioneri.ru/product/midea-mih90ghn18/',
+            'https://air-midea.com/search/?q=MIH90GHN18',
+          ]
+          for url in u:
+            try:
+              r=requests.get(url,timeout=13,headers={'User-Agent':'Mozilla/5.0'})
+              soup=BeautifulSoup(r.text,'html.parser')
+              head=[x.get_text(' ',strip=True)[:130] for x in soup.select('h1')][:2]
+              body=soup.get_text(' ',strip=True).lower()
+              print('SOURCE',r.status_code,len(r.content),'HEAD',str(head),
+                    'DESCRIPTION',('описание' in body),'SPECIFICATIONS',('характеристики' in body),
+                    'PHOTOS',len(soup.select('img')),
+                    'URL',url,flush=True)
+            except Exception as e:print('ERROR',url,str(e)[:170],flush=True)
+          PY
