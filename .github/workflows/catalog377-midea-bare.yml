@@ -1,4 +1,5 @@
 name: Catalog377 capture exact Midea MIH90GHN18 original page
+# Full SKU header matching fixed for Midea exact product.
 on:
   push:
     paths:
@@ -23,14 +24,22 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create catalog377-midea-mih90-original             product-research/catalog-377/output/catalog377-341-341.zip             product-research/catalog-377/output/catalog377-341-341-status.csv             --title 'Midea MIH90GHN18 exact original seller HTML, specs and photos'             --notes 'Original external website HTML and local WebP photo gallery. Missing product-only narrative, if any, remains PARTIAL.'
+          tag=catalog377-midea-batch-341-341
+          zip=product-research/catalog-377/output/catalog377-341-341.zip
+          csv=product-research/catalog-377/output/catalog377-341-341-status.csv
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$zip" "$csv" --clobber
+          else
+            gh release create "$tag" "$zip" "$csv" --title 'Midea MIH90GHN18 authentic seller HTML and images' --notes 'Product original HTML, local images, exact SKU; PARTIAL if description missing.'
+          fi
       - name: Save product status
         run: |
           mkdir -p product-research/catalog-377/status
-          cp product-research/catalog-377/output/catalog377-341-341-status.csv product-research/catalog-377/status/midea-mih90-original.csv
+          cp product-research/catalog-377/output/catalog377-341-341-status.csv product-research/catalog-377/status/midea-batch-341-341.csv
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add product-research/catalog-377/status/midea-mih90-original.csv
+          git add product-research/catalog-377/status/midea-batch-341-341.csv
+          if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Record exact Midea MIH90GHN18 original product page'
           for attempt in 1 2 3 4 5; do
             if git pull --rebase origin main && git push; then exit 0; fi
