@@ -44,6 +44,7 @@ HEADERS = {
 SESSION = requests.Session()
 SESSION.headers.update(HEADERS)
 IGC_OFFICIAL_LINKS = None  # populated once per batch to avoid repeated catalogue crawls
+EFFECT_CATALOG_LINKS = None
 
 def key(s):
     return re.sub(r"[^A-Z0-9]", "", unicodedata.normalize("NFKC", str(s)).upper())
@@ -191,10 +192,29 @@ def search_mircli(model):
     return list(dict.fromkeys(links))[:15]
 
 def external_candidates(brand, model):
+    global EFFECT_CATALOG_LINKS
+    # Public listing of exact SKU product pages at effect-nn.ru. Pages hold
+    # genuine model-specific detail links, not aliases guessed from a series.
+    extra=[]
+    if brand=="Kentatsu":
+        if EFFECT_CATALOG_LINKS is None:
+            EFFECT_CATALOG_LINKS=[]
+            for page_num in range(9,28):
+                page_url=f"https://www.effect-nn.ru/cond_category_244_page-{page_num}.htm"
+                rr=get(page_url,timeout=10)
+                if not rr:continue
+                ss=BeautifulSoup(rr.text,"html.parser")
+                for a in ss.find_all("a",href=True):
+                    dest=urljoin(page_url,a["href"])
+                    if re.search(r"/condition_[0-9]+\.htm$",dest):
+                        EFFECT_CATALOG_LINKS.append((a.get_text(" ",strip=True),dest))
+        for name,dest in EFFECT_CATALOG_LINKS:
+            if key(model) in key(name):
+                extra.append(dest)
     # Query actual vendor sites plus Bing's well-formed RSS results. HTML
     # search engines may hide organic links; do not mistake that for no SKU.
     q=f'"{model}" "{brand}" купить характеристики'
-    candidates=[]
+    candidates=list(dict.fromkeys(extra))
     vendor_searches=[
        "https://climatehnik.com/search/?"+urlencode({"q":model}),
        "https://envok.ru/search/?"+urlencode({"q":model}),
