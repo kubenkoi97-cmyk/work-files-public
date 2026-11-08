@@ -1,0 +1,16 @@
+﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
+351,Midea,MIH90GHN18(DP),NOT_FOUND,,,,,,,,No verified exact model product HTML
+352,Midea,MIH15BHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH15BHN18/,True,True,10,10,76,
+353,Midea,MIH22BHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH22BHN18/,True,True,10,10,92,
+354,Midea,MIH28BHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH28BHN18/,True,True,10,10,92,
+355,Midea,MIH36BHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH36BHN18/,True,True,10,10,92,
+356,Midea,MIH45BHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH45BHN18/,True,True,10,10,92,
+357,Midea,MIH56BHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH56BHN18/,True,True,10,10,92,
+358,Midea,MIH71BHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH71BHN18/,True,True,10,10,92,
+359,Midea,MIH80BHN18,COMPLETE,MirCli,https://mircli.ru/Midea-MIH80BHN18/,True,True,10,10,93,
+360,Midea,MIH18Q1HN18(A),COMPLETE,MirCli,https://mircli.ru/Midea-MIH18Q1HN18-A-T-MBQ1-01G/,True,True,12,12,72,
+361,Midea,MIH22Q1HN18(A),COMPLETE,MirCli,https://mircli.ru/Midea-MIH22Q1HN18-A-T-MBQ1-01G/,True,True,12,12,75,
+362,Midea,MIH28Q1HN18(A),COMPLETE,MirCli,https://mircli.ru/Midea-MIH28Q1HN18-A-T-MBQ1-02G/,True,True,12,12,75,
+363,Midea,MIH36Q1HN18(A),COMPLETE,MirCli,https://mircli.ru/Midea-MIH36Q1HN18-A-T-MBQ1-02G/,True,True,12,12,72,
+364,Midea,MIH45Q1HN18(A),COMPLETE,MirCli,https://mircli.ru/Midea-MIH45Q1HN18-A-T-MBQ1-03G/,True,True,12,12,72,
+365,Midea,MIH56Q1HN18(A),COMPLETE,MirCli,https://mircli.ru/Midea-MIH56Q1HN18-A-T-MBQ1-03G/,True,True,12,12,72,
