@@ -28,7 +28,13 @@ def all_states():
                     r["archive_release_url"]=root+"tag/"+release
                     r["archive_download_url"]=root+"download/"+release+"/catalog377-"+tag+".zip"
                     r["result_stage"]="deep" if prefix=="deep-batch-" else "recovery" if prefix=="recovery-batch-" else "initial"
-                    states[(r["brand"],r["model"])]=r
+                    k=(r["brand"],r["model"])
+                    old=states.get(k)
+                    # Never replace a verified complete source with a failed
+                    # later attempt; preserve MirCli/source priority.
+                    if old and old.get("status")=="COMPLETE":
+                        continue
+                    states[k]=r
     return states
 
 def main():
