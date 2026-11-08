@@ -44,6 +44,7 @@ jobs:
                   product-research/catalog-377/status/master_status.csv \
                   product-research/catalog-377/status/master_summary.json \
                   product-research/catalog-377/status/summary.md
+          if git diff --cached --quiet; then echo "Master registry unchanged"; exit 0; fi
           git commit -m "Reconcile 377-model original HTML archive status"
           for i in 1 2 3 4 5 6 7 8; do
             if git pull --rebase origin main && git push; then exit 0; fi
