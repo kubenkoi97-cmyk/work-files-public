@@ -86,7 +86,7 @@ def main():
         row["rejected_archive_url"]=""
         rec=qa.get((row["brand"],row["model"]))
         # QA applies only to the specific chosen archive release.
-        if not rec or ("/releases/tag/"+rec["release_tag"])!=row.get("archive_release_url",""):
+        if not rec or not row.get("archive_release_url","").endswith("/releases/tag/"+rec["release_tag"]):
             continue
         if (rec.get("zip_integrity")=="OK" and rec.get("reason")=="OK"
                 and rec.get("file_presence")=="YES"
