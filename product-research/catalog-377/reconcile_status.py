@@ -23,6 +23,17 @@ def all_states():
                 for row in csv.DictReader(f):
                     if not row.get("model"):continue
                     r=dict(row)
+                    # The original Gorodskie-Sistemy archives were mistakenly
+                    # tagged COMPLETE by a generic navigation-text heuristic.
+                    # This seller publishes exact photos and specs but NO
+                    # independent product description. Keep the genuine HTML
+                    # and image assets, but correct that status to PARTIAL.
+                    if (r.get("brand")=="Kentatsu" and
+                        r.get("model","").startswith(("KTKB","KTTB","KTHB")) and
+                        "gorodskie-sistemy.ru" in r.get("source_url","")):
+                        r["status"]="PARTIAL"
+                        r["has_description"]="False"
+                        r["reason"]="Original seller HTML has exact SKU, photos, and specs but no product-only description"
                     root="https://github.com/kubenkoi97-cmyk/work-files-public/releases/"
                     release=("catalog377-"+prefix)+tag
                     r["archive_release_url"]=root+"tag/"+release
@@ -38,7 +49,8 @@ def all_states():
                         return (rank.get(row.get("status"),-1),
                                 int(row.get("downloaded_product_photos") or 0),
                                 (row.get("has_description")=="True"),
-                                (row.get("has_specs")=="True"))
+                                (row.get("has_specs")=="True"),
+                                {"supplemental-batch":1,"supplemental-v2-batch":3,"final-sweep-batch":4}.get(row.get("result_stage",""),2))
                     if old and quality(old)>=quality(r):
                         continue
                     states[k]=r
