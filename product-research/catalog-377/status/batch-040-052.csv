@@ -1,0 +1,14 @@
+﻿excel_row,brand,model,status,site,source_url,has_description,has_specs,photo_links_found,downloaded_product_photos,downloaded_page_assets,reason
+41,IGC,IMS-4T125NHQ(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+42,IGC,IMS-4T140NHQ(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+43,IGC,IMS-QV28NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+44,IGC,IMS-QV36NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+45,IGC,IMS-QV45NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-QV45NH-DC5-/,True,True,6,6,70,
+46,IGC,IMS-QV56NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-QV56NH-DC5-/,True,True,6,6,70,
+47,IGC,IMS-QV71NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-QV71NH-DC5-/,True,True,6,6,70,
+48,IGC,IMS-QV90NH(DC),COMPLETE,MirCli,https://mircli.ru/IGC-IMS-QV90NH-DC5-/,True,True,6,6,70,
+49,IGC,IMS-QV100NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+50,IGC,IMS-QV125NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+51,IGC,IMS-QV140NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+52,IGC,IMS-AHU220NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
+53,IGC,IMS-AHU280NH(DC),NOT_FOUND,,,,,,,,No verified exact model product HTML
