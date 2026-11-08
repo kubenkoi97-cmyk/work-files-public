@@ -1,0 +1,105 @@
+{
+  "unresolved_models": [
+    "IMS-K22NH(DC)",
+    "IMS-K28NH(DC)",
+    "IMS-K36NH(DC)",
+    "IMS-K45NH(DC)",
+    "IMS-K56NH(DC)",
+    "IMS-K71NH(DC)",
+    "IMS-BS22NH (DC)",
+    "IMS-BS36NH(DC)",
+    "IMS-BS45NH(DC)",
+    "IMS-BS36NHQ(DC)",
+    "IMS-BS45NHQ(DC)",
+    "IMS-BS56NHQ(DC)",
+    "IMS-BS71NHQ(DC)",
+    "IMS-BH220NH(DC)",
+    "IMS-BH280NH(DC)",
+    "IMS-QV45NH(DC)",
+    "IMS-QV56NH(DC)",
+    "IMS-QV71NH(DC)",
+    "IMS-QV90NH(DC)",
+    "IMS-QV100NH(DC)",
+    "IMS-AHU220NH(DC)",
+    "IMS-AHU280NH(DC)"
+  ],
+  "candidate_count": 0,
+  "model_counts": {},
+  "candidates": [],
+  "index_failures": [
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2026-43-index",
+      "pattern": "igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2026-43-index",
+      "pattern": "iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2026-39-index",
+      "pattern": "igc-aircon.com/product/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2026-39-index",
+      "pattern": "www.igc-aircon.com/product/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2026-39-index",
+      "pattern": "igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2026-39-index",
+      "pattern": "iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2025-47-index",
+      "pattern": "igc-aircon.com/product/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2025-47-index",
+      "pattern": "www.igc-aircon.com/product/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2025-47-index",
+      "pattern": "igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2025-47-index",
+      "pattern": "iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2024-51-index",
+      "pattern": "igc-aircon.com/product/*",
+      "scan_status": "HTTP_503"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2024-51-index",
+      "pattern": "www.igc-aircon.com/product/*",
+      "scan_status": "ERROR",
+      "reason": "HTTPSConnectionPool(host='index.commoncrawl.org', port=443): Read timed out. (read timeout=45)"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2024-51-index",
+      "pattern": "igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/*",
+      "scan_status": "ERROR",
+      "reason": "HTTPSConnectionPool(host='index.commoncrawl.org', port=443): Max retries exceeded with url: /CC-MAIN-2024-51-index?url=igc.com.ru%2Fcatalog%2Fvnutrennie_bloki_vrf_sistemy%2F%2A&output=json&filter=status%3A200&c"
+    },
+    {
+      "index": "https://index.commoncrawl.org/CC-MAIN-2024-51-index",
+      "pattern": "iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/*",
+      "scan_status": "ERROR",
+      "reason": "HTTPSConnectionPool(host='index.commoncrawl.org', port=443): Max retries exceeded with url: /CC-MAIN-2024-51-index?url=iclim.ru%2Fcatalog%2Fpromyshlennye_konditsionery%2Fmultizonalnye_sistemy%2Fvnutrennie_bloki"
+    }
+  ],
+  "not_a_capture": "Common Crawl index URLs do not prove exact product page. No status upgrade without fetching original HTML and photo files."
+}
