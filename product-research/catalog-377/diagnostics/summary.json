@@ -1,0 +1,14 @@
+{
+  "catalog_total": 377,
+  "complete_claimed_in_master": 325,
+  "unresolved": 52,
+  "distribution": {
+    "HISTORICAL_SKU_NO_ORIGINAL_INDIVIDUAL_PAGE": 11,
+    "EXACT_SKU_NOT_CONFIRMED": 1,
+    "PUBLISHED_WITHOUT_PRODUCT_DESCRIPTION": 38,
+    "ORIGINAL_PAGE_ONLY_SPECS_AND_IMAGES": 2
+  },
+  "original_page_plus_photos_exists": 40,
+  "no_individual_original_html": 12,
+  "warning": "Registry COMPLETE is not independent ZIP verification. Existing standalone audit suffered GitHub HTTP 504."
+}
