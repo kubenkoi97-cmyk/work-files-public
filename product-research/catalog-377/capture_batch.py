@@ -23,6 +23,8 @@ from pathlib import Path
 import re
 import sys
 import time
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 import unicodedata
 from urllib.parse import urljoin, urlparse, quote, urlencode, parse_qs
 from urllib.robotparser import RobotFileParser
@@ -54,6 +56,20 @@ def key(s):
 def safe(s):
     return re.sub(r"[^A-Za-z0-9._-]", "_", str(s)).strip("_")[:85]
 
+def retry_after_seconds(value, fallback):
+    if not value:
+        return fallback
+    try:
+        return max(0.0,float(value))
+    except (ValueError,TypeError):
+        try:
+            date=parsedate_to_datetime(value)
+            if date.tzinfo is None:
+                date=date.replace(tzinfo=timezone.utc)
+            return max(0.0,(date-datetime.now(timezone.utc)).total_seconds())
+        except (ValueError,TypeError,OverflowError):
+            return fallback
+
 def get(url, timeout=15):
     """Respect server throttling and log HTTP failure separately from missing SKU.
 
@@ -78,15 +94,13 @@ def get(url, timeout=15):
             if status==429:
                 # Honor server's explicit retry window. If long, stop now,
                 # preserve RATE_LIMITED evidence instead of hammering.
-                try: delay=float(retry_after)
-                except (TypeError,ValueError): delay=8.0
+                delay=retry_after_seconds(retry_after,8.0)
                 if attempt==0 and delay<=20:
                     time.sleep(max(2,delay))
                     continue
                 return None
             if status in (502,503,504) and attempt==0:
-                try: delay=float(retry_after)
-                except (TypeError,ValueError):delay=3.0
+                delay=retry_after_seconds(retry_after,3.0)
                 if delay>20:return None
                 time.sleep(max(2,delay))
                 continue
