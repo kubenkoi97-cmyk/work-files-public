@@ -16,7 +16,7 @@ def inventory():
 
 def all_states():
     states={}
-    for prefix in ("batch-","recovery-batch-","deep-batch-","supplemental-batch-","supplemental-v2-batch-","igc-http-batch-","midea-batch-"):
+    for prefix in ("batch-","recovery-batch-","deep-batch-","supplemental-batch-","supplemental-v2-batch-","igc-http-batch-","midea-batch-","final-sweep-batch-"):
         for p in sorted(STAT.glob(prefix+"*.csv")):
             tag=p.stem[len(prefix):]
             with p.open(encoding="utf-8-sig",newline="") as f:
@@ -30,9 +30,16 @@ def all_states():
                     r["result_stage"]=prefix.rstrip("-")
                     k=(r["brand"],r["model"])
                     old=states.get(k)
-                    # Never replace a verified complete source with a failed
-                    # later attempt; preserve MirCli/source priority.
-                    if old and old.get("status")=="COMPLETE" and prefix not in ("supplemental-v2-batch-","igc-http-batch-","midea-batch-"):
+                    # Prefer confirmed complete sources, then partial pages
+                    # with local product photos. Never downgrade PARTIAL to
+                    # NOT_FOUND or COMPLETE to PARTIAL after a failed retry.
+                    rank={"COMPLETE":3,"PARTIAL":2,"NOT_FOUND":1,"ERROR":0}
+                    def quality(row):
+                        return (rank.get(row.get("status"),-1),
+                                int(row.get("downloaded_product_photos") or 0),
+                                (row.get("has_description")=="True"),
+                                (row.get("has_specs")=="True"))
+                    if old and quality(old)>=quality(r):
                         continue
                     states[k]=r
     return states
