@@ -1,0 +1,42 @@
+name: Catalog377 audit all authoritative ZIP assets with authenticated release download
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-audit-cli-all.yml'
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        shard: [0,1,2,3,4,5]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q pillow beautifulsoup4
+      - name: Verify actual release asset contents with authenticated GitHub CLI
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUDIT_SHARD: ${{ matrix.shard }}
+          AUDIT_SHARDS: "6"
+        run: python product-research/catalog-377/audit_gh_cli.py
+      - name: Save integrity results per exact SKU
+        run: |
+          set -eu
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "product-research/catalog-377/audit-v2/integrity-shard-${{ matrix.shard }}.csv"             "product-research/catalog-377/audit-v2/summary-shard-${{ matrix.shard }}.json"
+          git commit -m "Verify source ZIP files and product photos for audit shard ${{ matrix.shard }}"
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 4
+          done
+          exit 1
