@@ -1,0 +1,46 @@
+name: Catalog377 publish 40 verified facts companions (original HTML unchanged)
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-40-content-companions.yml'
+permissions:
+  contents: write
+jobs:
+  companions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q beautifulsoup4
+      - name: Extract exact SKU seller specs from authentic saved HTML archives
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python product-research/catalog-377/build_partial_content_companions.py
+      - name: Publish separate, attributed, non-original factual description ZIP
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -eu
+          tag=catalog377-40-factual-content-companions
+          archive=product-research/catalog-377/output/catalog377-40-factual-content-companions.zip
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$archive" --clobber
+          else
+            gh release create "$tag" "$archive"               --title "Catalog 377 — verified factual descriptions for 40 partial original HTMLs"               --notes "40 exact products, original retailer HTML and galleries remain unchanged in prior releases. New concise factual text is authored only from verified SKU-specific seller specifications and is separately attributed. This is NOT original retailer description."
+          fi
+      - name: Save source provenance, descriptions and extraction results
+        run: |
+          set -eu
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add product-research/catalog-377/content-companions/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Store 40 standalone exact-model fact-checked descriptions and source specifications"
+          for attempt in 1 2 3 4 5 6; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 4
+          done
+          exit 1
