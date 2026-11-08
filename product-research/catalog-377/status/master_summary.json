@@ -1,7 +1,8 @@
 {
   "inventory_total": 377,
   "counts": {
-    "COMPLETE": 325,
+    "COMPLETE": 315,
+    "WRONG_MODEL": 10,
     "NOT_FOUND": 12,
     "PARTIAL": 40
   },
@@ -18,8 +19,14 @@
     },
     "IGC": {
       "total": 52,
-      "complete": 40,
+      "complete": 30,
       "unresolved": [
+        "IMS-K22NH(DC)",
+        "IMS-K28NH(DC)",
+        "IMS-K36NH(DC)",
+        "IMS-K45NH(DC)",
+        "IMS-K56NH(DC)",
+        "IMS-K71NH(DC)",
         "IMS-BS22NH (DC)",
         "IMS-BS36NH(DC)",
         "IMS-BS45NH(DC)",
@@ -29,6 +36,10 @@
         "IMS-BS71NHQ(DC)",
         "IMS-BH220NH(DC)",
         "IMS-BH280NH(DC)",
+        "IMS-QV45NH(DC)",
+        "IMS-QV56NH(DC)",
+        "IMS-QV71NH(DC)",
+        "IMS-QV90NH(DC)",
         "IMS-QV100NH(DC)",
         "IMS-AHU220NH(DC)",
         "IMS-AHU280NH(DC)"
@@ -90,5 +101,5 @@
   "fully_verified": false,
   "process_terminated": true,
   "definition": "COMPLETE only when exact model has source HTML, verified description/specs, and downloaded product photos",
-  "methodology": "First pass statuses overridden by documented fallback recovery; source artifacts linked per model"
+  "methodology": "Original archives matched to independently validated zip files; wrong SKU captures quarantined with link preserved only as rejected source"
 }
