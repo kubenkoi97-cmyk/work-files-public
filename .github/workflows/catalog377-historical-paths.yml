@@ -1,0 +1,31 @@
+name: Catalog377 cross-year Common Crawl search for exact IGC HTML paths
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-historical-paths.yml'
+permissions:
+  contents: write
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests
+      - name: Search original product URL snapshots in Common Crawl archives
+        run: python product-research/catalog-377/probe_commoncrawl_exact_paths.py
+      - name: Publish provenance and model-level candidates
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add product-research/catalog-377/history-diagnostics/commoncrawl_candidates_22.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Index historical exact IGC product URL candidates, without inferring HTML completeness'
+          for try in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 4
+          done
+          exit 1
