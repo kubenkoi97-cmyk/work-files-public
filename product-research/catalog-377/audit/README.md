@@ -2,6 +2,6 @@
 
 Проверены фактические ZIP-архивы из GitHub Releases. Точный результат по каждой модели: [audit_status.csv](./audit_status.csv).
 
-Подтверждено (VERIFIED): **60** / 377.
+Подтверждено (VERIFIED): **146** / 377.
 
-Обнаруженные ошибки: 49 пакетов. Технический отчёт: [audit_summary.json](./audit_summary.json).
+Обнаруженные ошибки: 41 пакетов. Технический отчёт: [audit_summary.json](./audit_summary.json).
