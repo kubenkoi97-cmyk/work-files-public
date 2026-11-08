@@ -1,0 +1,70 @@
+{
+  "sampled_models": [
+    "IMS-K22NH(DC)",
+    "IMS-BS36NHQ(DC)",
+    "IMS-BH220NH(DC)",
+    "IMS-QV100NH(DC)"
+  ],
+  "total_unresolved_igc": 22,
+  "public_indexes": [],
+  "findings": [
+    {
+      "model": "IMS-K22NH(DC)",
+      "source": "Wayback CDX",
+      "result": {
+        "error": "HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=17)"
+      }
+    },
+    {
+      "model": "IMS-K22NH(DC)",
+      "source": "Wayback seller",
+      "result": {
+        "status": 503,
+        "body": "<html><head><meta charset=\"UTF-8\"><title>Internet Archive: Temporarily Offline</title><style>p{font-size:24px;}img{margin-bottom:2rem;}</sty"
+      }
+    },
+    {
+      "model": "IMS-BS36NHQ(DC)",
+      "source": "Wayback CDX",
+      "result": {
+        "error": "HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=17)"
+      }
+    },
+    {
+      "model": "IMS-BS36NHQ(DC)",
+      "source": "Wayback seller",
+      "result": {
+        "error": "HTTPSConnectionPool(host='web.archive.org', port=443): Read timed out. (read timeout=17)"
+      }
+    },
+    {
+      "model": "IMS-BH220NH(DC)",
+      "source": "Wayback CDX",
+      "result": {
+        "error": "HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /cdx/search/cdx?url=*.igc-aircon.com/*imsbh220nh*&output=json&filter=statuscode:200&collapse=urlkey&limit=10 (Caus"
+      }
+    },
+    {
+      "model": "IMS-BH220NH(DC)",
+      "source": "Wayback seller",
+      "result": {
+        "error": "HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /cdx/search/cdx?url=*.iclim.ru/*imsbh220nh*&output=json&filter=statuscode:200&collapse=urlkey&limit=10 (Caused by "
+      }
+    },
+    {
+      "model": "IMS-QV100NH(DC)",
+      "source": "Wayback CDX",
+      "result": {
+        "error": "HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /cdx/search/cdx?url=*.igc-aircon.com/*imsqv100nh*&output=json&filter=statuscode:200&collapse=urlkey&limit=10 (Caus"
+      }
+    },
+    {
+      "model": "IMS-QV100NH(DC)",
+      "source": "Wayback seller",
+      "result": {
+        "error": "HTTPSConnectionPool(host='web.archive.org', port=443): Max retries exceeded with url: /cdx/search/cdx?url=*.iclim.ru/*imsqv100nh*&output=json&filter=statuscode:200&collapse=urlkey&limit=10 (Caused by "
+      }
+    }
+  ],
+  "caveat": "Index record is NOT original HTML; requires exact-SKU verification and capture of underlying page."
+}
