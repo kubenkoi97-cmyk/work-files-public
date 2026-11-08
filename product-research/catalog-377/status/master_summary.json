@@ -1,9 +1,9 @@
 {
   "inventory_total": 377,
   "counts": {
-    "COMPLETE": 325,
+    "COMPLETE": 363,
     "NOT_FOUND": 12,
-    "PARTIAL": 40
+    "PARTIAL": 2
   },
   "brands": {
     "Bosch": {
@@ -36,47 +36,8 @@
     },
     "Kentatsu": {
       "total": 213,
-      "complete": 175,
-      "unresolved": [
-        "KTKB18HZBN1",
-        "KTKB24HZBN1",
-        "KTKB30HZBN1",
-        "KTKB40HZBN1",
-        "KTKB50HZBN1",
-        "KTKB60HZBN1",
-        "KTKB72HZBN1",
-        "KTKB80HZBN1",
-        "KTKB90HZBN1",
-        "KTKB115HZBN1",
-        "KTKB140HZBN1",
-        "KTKB160HZBN1",
-        "KTTB60HZBN1",
-        "KTTB72HZBN1",
-        "KTTB80HZBN1",
-        "KTTB90HZBN1",
-        "KTTB115HZBN1",
-        "KTTB125HZBN1",
-        "KTTB140HZBN1",
-        "KTTB160HZBN1",
-        "KTTB200HZBN1",
-        "KTTB224HZBN1",
-        "KTTB250HZBN1",
-        "KTTB280HZBN1",
-        "KTTB340HZBN1",
-        "KTTB400HZBN1",
-        "KTTB450HZBN1",
-        "KTTB560HZBN1",
-        "KTHB40HZBN1",
-        "KTHB50HZBN1",
-        "KTHB60HZBN1",
-        "KTHB72HZBN1",
-        "KTHB80HZBN1",
-        "KTHB90HZBN1",
-        "KTHB100HZBN1",
-        "KTHB115HZBN1",
-        "KTHB125HZBN1",
-        "KTHB140HZBN1"
-      ]
+      "complete": 213,
+      "unresolved": []
     },
     "Midea": {
       "total": 103,
