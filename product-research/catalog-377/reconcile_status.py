@@ -16,13 +16,21 @@ def inventory():
 
 def all_states():
     states={}
-    for prefix in ("batch-","recovery-batch-","deep-batch-","supplemental-batch-","supplemental-v2-batch-","igc-http-batch-","midea-batch-","final-sweep-batch-"):
+    for prefix in ("batch-","recovery-batch-","deep-batch-","supplemental-batch-","supplemental-v2-batch-","igc-http-batch-","midea-batch-","final-sweep-batch-","fast-"):
         for p in sorted(STAT.glob(prefix+"*.csv")):
             tag=p.stem[len(prefix):]
             with p.open(encoding="utf-8-sig",newline="") as f:
                 for row in csv.DictReader(f):
                     if not row.get("model"):continue
                     r=dict(row)
+                    # Independently rejected earlier IGC DC5 captures must not
+                    # outrank any later correct DC archive in per-SKU selection.
+                    if (prefix=="batch-" and r.get("brand")=="IGC"
+                        and r.get("model","").startswith(("IMS-K","IMS-QV"))
+                        and "mircli.ru" in r.get("source_url","")
+                        and any(x in r.get("source_url","").lower() for x in ("dc5","dc-5"))):
+                        r["status"]="WRONG_MODEL"
+                        r["reason"]="Quarantined DC5 page for requested DC model"
                     # The original Gorodskie-Sistemy archives were mistakenly
                     # tagged COMPLETE by a generic navigation-text heuristic.
                     # This seller publishes exact photos and specs but NO
@@ -36,21 +44,21 @@ def all_states():
                         r["reason"]="Original seller HTML has exact SKU, photos, and specs but no product-only description"
                     root="https://github.com/kubenkoi97-cmyk/work-files-public/releases/"
                     release=("catalog377-"+prefix)+tag
-                    r["archive_release_url"]=root+"tag/"+release
-                    r["archive_download_url"]=root+"download/"+release+"/catalog377-"+tag+".zip"
+                    r["archive_release_url"]=r.get("archive_release_url") or root+"tag/"+release
+                    r["archive_download_url"]=r.get("archive_download_url") or root+"download/"+release+"/catalog377-"+tag+".zip"
                     r["result_stage"]=prefix.rstrip("-")
                     k=(r["brand"],r["model"])
                     old=states.get(k)
                     # Prefer confirmed complete sources, then partial pages
                     # with local product photos. Never downgrade PARTIAL to
                     # NOT_FOUND or COMPLETE to PARTIAL after a failed retry.
-                    rank={"COMPLETE":3,"PARTIAL":2,"NOT_FOUND":1,"ERROR":0}
+                    rank={"COMPLETE":3,"PARTIAL":2,"NOT_FOUND":1,"WRONG_MODEL":0,"ERROR":0}
                     def quality(row):
                         return (rank.get(row.get("status"),-1),
                                 int(row.get("downloaded_product_photos") or 0),
                                 (row.get("has_description")=="True"),
                                 (row.get("has_specs")=="True"),
-                                {"supplemental-batch":1,"supplemental-v2-batch":3,"final-sweep-batch":4}.get(row.get("result_stage",""),2))
+                                {"supplemental-batch":1,"supplemental-v2-batch":3,"final-sweep-batch":4,"fast":5}.get(row.get("result_stage",""),2))
                     if old and quality(old)>=quality(r):
                         continue
                     states[k]=r
