@@ -281,6 +281,7 @@ def external_candidates(brand, model):
         candidates.append("https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_"+slug+"/")
     if brand=="Midea":
         candidates.extend([
+            f"https://coolsochi.ru/product/midea-{model.lower().replace('(', '-').replace(')', '')}/",
             f"https://vsekondicioneri.ru/product/midea-{model.lower().replace('(', '-').replace(')', '')}/",
             f"https://nizhniy-novgorod.vsekondicioneri.ru/product/midea-{model.lower().replace('(', '-').replace(')', '')}/",
         ])
