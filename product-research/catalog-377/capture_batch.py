@@ -338,6 +338,16 @@ def external_candidates(brand, model):
     return cleaned[:28]
 
 def choose_source(brand, model):
+    # MirCli and broad-source passes have already been exhausted for these
+    # specific unresolved SKUs. Prefer the validated exact seller URL for
+    # this supplemental pass; preserve provenance and strict model check.
+    if brand=="Kentatsu" and model.startswith(("KTKB","KTTB","KTHB")):
+        u=("https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/"
+           "vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/"
+           "vnutrennij-blok-vrf-sistemy-kentatsu-"+model.lower())
+        p=parse_source(u,brand,model,get(u,timeout=18))
+        if p:
+            return p,[u],"External"
     # A real page for the exact model is necessary but not sufficient:
     # if it has no description or gallery, continue checking vendors.
     attempts=[]
