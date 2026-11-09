@@ -1,15 +1,15 @@
 {
   "total_exact_skus": 377,
   "verified_original_html_and_photos": 355,
-  "original_page_also_has_product_description": 315,
-  "verified_original_html_but_no_independent_description": 40,
+  "original_page_also_has_product_description": 353,
+  "verified_original_html_but_no_independent_description": 2,
   "wrong_model_suffix_quarantined": 10,
   "exact_individual_page_unavailable": 12,
   "statuses": {
-    "COMPLETE": 315,
+    "COMPLETE": 353,
     "WRONG_MODEL": 10,
     "NOT_FOUND": 12,
-    "PARTIAL": 40
+    "PARTIAL": 2
   },
-  "important": "Original HTML capture and data-complete source are separate gates. PARTIAL does not mean HTML/photos missing."
+  "important": "Exact original HTML, description and archive integrity are separately checked; old supplier originals preserved."
 }

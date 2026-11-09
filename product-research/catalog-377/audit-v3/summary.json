@@ -1,0 +1,9 @@
+{
+  "total_reaudited": 40,
+  "promoted_original_html": 38,
+  "still_partial": 2,
+  "by_status": {
+    "VERIFIED": 40
+  },
+  "method": "Independent gh release download; CRC, exact homoglyph-safe SKU H1, raw original + offline HTML, original publisher prose, specs, locally decoded product images"
+}
