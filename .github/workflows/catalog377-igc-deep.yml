@@ -1,0 +1,69 @@
+name: Catalog377 deep historical IGC exact-DC HTML search and evidence archives
+on:
+  push:
+    paths:
+      - '.github/workflows/catalog377-igc-deep.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        shard: [0,1,2]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --quiet requests beautifulsoup4 lxml
+      - name: Inspect official catalogues, seller originals, indexed and historic model variants
+        run: python product-research/catalog-377/igc_deep_search.py --shard ${{ matrix.shard }} --shards 3
+      - name: Publish candidate evidence ZIP separately, not yet current catalogue model archive
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SHARD: ${{ matrix.shard }}
+        run: |
+          set -eu
+          d="product-research/catalog-377/igc-deep-2026-11-09/shard-$SHARD"
+          tag="catalog377-igc-deep-research-$SHARD"
+          zip="catalog377-igc-deep-research-$SHARD.zip"
+          cd "$d"
+          zip -qr "$GITHUB_WORKSPACE/$zip" results.json requests.csv catalogue_http.json progress.json exact_html/ alias_reference_html/ 2>/dev/null || zip -qr "$GITHUB_WORKSPACE/$zip" .
+          cd "$GITHUB_WORKSPACE"
+          unzip -t "$zip" | tail -2
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$zip" "$d/results.json" "$d/requests.csv" --clobber
+          else
+            gh release create "$tag" "$zip" "$d/results.json" "$d/requests.csv" \
+              --title "IGC historical exact (DC) HTML deep hunt, research shard $SHARD" \
+              --notes "Evidence and source bytes ONLY. Unsuffixed HTML stored as unverified reference. No DC5/DC7, series page, or nonmatching SKU is promoted to original requested (DC) page. Exact matches require further photo + ZIP QA."
+          fi
+      - name: Commit each stage report and HTTP proof to repository
+        env:
+          SHARD: ${{ matrix.shard }}
+        run: |
+          set -eu
+          d="product-research/catalog-377/igc-deep-2026-11-09/shard-$SHARD"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "$d/results.json" "$d/requests.csv" "$d/catalogue_http.json"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Evidence: exact IGC historical DC original HTML search shard $SHARD"
+          for i in 1 2 3 4 5 6 7 8 9; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 5
+          done
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: catalog377-igc-deep-shard-${{ matrix.shard }}
+          path: product-research/catalog-377/igc-deep-2026-11-09/
+          retention-days: 7
