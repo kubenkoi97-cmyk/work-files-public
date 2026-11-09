@@ -27,8 +27,8 @@ TARGETS={
 }
 def token(s):return re.sub(r"[^A-Z0-9]","",str(s).upper())
 def title_match(model,h1):
-    s=str(h1).upper().replace(" ","")
-    t=str(model).upper().replace(" ","")
+    s=str(h1).upper()
+    t=re.sub(r"\\s+","",str(model).upper())
     # Reject the DP sibling for the unmodified version.
     regex=r"(?<![A-Z0-9])"+re.escape(t)+r"(?![A-Z0-9(])"
     return bool(re.search(regex,s))
