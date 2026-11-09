@@ -1,0 +1,58 @@
+[
+  {
+    "url": "http://igc-aircon.com/product/nastennye_bloki_vrf/",
+    "final_url": "http://igc-aircon.com/product/nastennye_bloki_vrf/",
+    "http": 200,
+    "bytes": 1077069,
+    "content_type": "text/html; charset=utf-8",
+    "links_found": 14
+  },
+  {
+    "url": "http://igc-aircon.com/product/kanalnye_bloki_vrf/",
+    "final_url": "http://igc-aircon.com/product/kanalnye_bloki_vrf/",
+    "http": 200,
+    "bytes": 1140642,
+    "content_type": "text/html; charset=utf-8",
+    "links_found": 30
+  },
+  {
+    "url": "http://igc-aircon.com/product/napolno_potolochnye_bloki_vrf/",
+    "final_url": "http://igc-aircon.com/product/napolno_potolochnye_bloki_vrf/",
+    "http": 200,
+    "bytes": 1094685,
+    "content_type": "text/html; charset=utf-8",
+    "links_found": 18
+  },
+  {
+    "url": "http://igc-aircon.com/product/pritochnye_bloki_vrf/",
+    "final_url": "http://igc-aircon.com/product/pritochnye_bloki_vrf/",
+    "http": 404,
+    "bytes": 724399,
+    "content_type": "text/html; charset=utf-8",
+    "links_found": 0
+  },
+  {
+    "url": "http://igc-aircon.com/product/ventilyatsionnye_ustanovki_vrf/",
+    "final_url": "http://igc-aircon.com/product/ventilyatsionnye_ustanovki_vrf/",
+    "http": 404,
+    "bytes": 724459,
+    "content_type": "text/html; charset=utf-8",
+    "links_found": 0
+  },
+  {
+    "url": "https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/",
+    "final_url": "https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/",
+    "http": 200,
+    "bytes": 1603119,
+    "content_type": "text/html; charset=utf-8",
+    "links_found": 30
+  },
+  {
+    "url": "https://igc.com.ru/catalog/arkhiv_modeley/",
+    "final_url": "https://igc.com.ru/catalog/arkhiv_modeley/",
+    "http": 200,
+    "bytes": 1458419,
+    "content_type": "text/html",
+    "links_found": 0
+  }
+]
