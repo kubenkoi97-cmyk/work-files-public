@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/catalog377-midea-final-probe.yml'
+      - 'product-research/catalog-377/probe_midea_last_two.py'
   workflow_dispatch:
 permissions:
   contents: write
