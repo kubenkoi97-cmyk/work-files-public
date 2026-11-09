@@ -1,0 +1,275 @@
+{
+  "date_utc": "2026-11-09T16:34:03Z",
+  "targets": {
+    "MIH90GHN18": [
+      "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18/",
+      "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18/",
+      "https://vsekondicioneri.ru/product/midea-mih90ghn18/",
+      "https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-midea-mih90ghn18",
+      "https://midea.kg/product-categories/vrf-sistemy/vnutrennie-bloki/nastennyy-blok-v8"
+    ],
+    "MIH90GHN18(DP)": [
+      "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18-dp/",
+      "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18_dp/",
+      "https://vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
+      "https://ryazan.vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
+      "https://coolsochi.ru/product/midea-mih90ghn18-dp/",
+      "https://www.klimat-master.ru/serie/mih-gdp-v8/"
+    ]
+  },
+  "results": [
+    {
+      "model": "MIH90GHN18",
+      "requested_url": "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18/",
+      "date_utc": "2026-11-09T16:33:48Z",
+      "http": 404,
+      "final_url": "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18/",
+      "bytes": 435481,
+      "content_type": "text/html; charset=UTF-8",
+      "finding": "HTTP_UNAVAILABLE_OR_NOT_HTML"
+    },
+    {
+      "model": "MIH90GHN18",
+      "requested_url": "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18/",
+      "date_utc": "2026-11-09T16:33:49Z",
+      "http": 404,
+      "final_url": "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18/",
+      "bytes": 300351,
+      "content_type": "text/html; charset=UTF-8",
+      "finding": "HTTP_UNAVAILABLE_OR_NOT_HTML"
+    },
+    {
+      "model": "MIH90GHN18",
+      "requested_url": "https://vsekondicioneri.ru/product/midea-mih90ghn18/",
+      "date_utc": "2026-11-09T16:33:53Z",
+      "http": 200,
+      "final_url": "https://vsekondicioneri.ru/product/midea-mih90ghn18/",
+      "bytes": 11141,
+      "content_type": "text/html; charset=UTF-8",
+      "h1": "",
+      "title": "",
+      "exact_sku_h1": false,
+      "canonical_model_in_body": false,
+      "section_candidates": [],
+      "product_headings": [
+        "JavaScript отключен в вашем браузере. Пожалуйста, включите JavaScript, чтобы продолжить."
+      ],
+      "section_candidate_count": 0,
+      "img_nodes": 0,
+      "exact_model_image_elements": [],
+      "finding": "NO_EXACT_H1"
+    },
+    {
+      "model": "MIH90GHN18",
+      "requested_url": "https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-midea-mih90ghn18",
+      "date_utc": "2026-11-09T16:33:54Z",
+      "http": 200,
+      "final_url": "https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-midea-mih90ghn18",
+      "bytes": 220780,
+      "content_type": "text/html; charset=utf-8",
+      "h1": "Внутренний блок VRF-системы Midea MIH90GHN18",
+      "title": "Купить внутренний блок VRF-системы Midea MIH90GHN18 в Москве | Городские системы",
+      "exact_sku_h1": false,
+      "canonical_model_in_body": true,
+      "section_candidates": [
+        "Характеристики На площадь (м2) 90 Вес внутреннего блока 15 кг Виды блоков Внутренние блоки Габариты внутреннего блока ШхВхГ (мм) 1200 × 295 × 265 Диаметр трубопроводов 3/8 (9.52)-5/8 (15.9) Инвертор Есть Категории товара VRF-системы, Midea Обогрев (кВт) 10 Охлаждение (кВт) 9 Все характеристики",
+        "На площадь (м2) 90 Вес внутреннего блока 15 кг Виды блоков Внутренние блоки Габариты внутреннего блока ШхВхГ (мм) 1200 × 295 × 265 Диаметр трубопроводов 3/8 (9.52)-5/8 (15.9) Инвертор Есть Категории товара VRF-системы, Midea Обогрев (кВт) 10 Охлаждение (кВт) 9",
+        "Характеристики Доставка и оплата Монтаж Технические характеристики Внутренний блок VRF-системы Midea MIH90GHN18 Основные На площадь (м2) 90 Вес внутреннего блока 15 кг Виды блоков Внутренние блоки Габариты внутреннего блока ШхВхГ (мм) 1200 × 295 × 265 Диаметр трубопроводов 3/8 (9.52)-5/8 (15.9) Инвертор Есть Категории товара VRF-системы, Midea Обогрев (кВт) 10 Охлаждение (кВт) 9 Охлаждение, кВт 9 Потребляемая мощность (кВт) 0.065 Производитель Midea Расход воздуха (м3/час) 1420 Режим работы С обогревом С фильтрами грубой очистки С функциями с самоочисткой, с вентиляцией, с осушением, с режимом СОН, с автоматическим режимом работы, с таймером, с авторестартом, с экономичным режимом, с автоматическим покачиванием жалюзи, с комфортным воздухораспределением, с функцией \"Никого нет дома\", с датчиком присутствия, с автоматической разморозкой, с функцией мягкого обдува Серия MIH_G Inverter Страна бренда Китай Уровень шума (дБ) 33 Тип внутреннего блока Настенный Цвет внутреннего блока белый Электропитание (В) 1~, 220~240 В, 50 Гц Доставка и оплата ▎Доставка товаров Мы рады предложить вам удобные и надежные варианты доставки, чтобы вы могли наслаждаться покупками без лишних хлопот! ▎Курьерская доставка по Москве Мы осуществляем курьерскую доставку по всей территории Москвы, включая районы в пределах МКАД. Стоимость доставки составляет всего 1000 рублей. Наши курьеры гарантируют быструю и аккуратную доставку ваших заказов прямо к вашей двери. ▎Самовывоз Если вы предпочитаете забрать свой заказ самостоятельно, мы с радостью предоставим возможность самовывоза. Вы можете забрать свои товары в удобное для вас время. ▎Доставка за пределы МКАД Для клиентов, находящихся за пределами МКАД, мы также предлагаем доставку. В этом случае стоимость доставки будет зависеть от расстояния и включает дополнительную плату за километраж. Чтобы узнать точную стоимость и детали доставки за пределы МКАД, пожалуйста, свяжитесь с нашим менеджером. Мы всегда готовы помочь вам с любыми вопросами! Монта",
+        "Технические характеристики Внутренний блок VRF-системы Midea MIH90GHN18 Основные На площадь (м2) 90 Вес внутреннего блока 15 кг Виды блоков Внутренние блоки Габариты внутреннего блока ШхВхГ (мм) 1200 × 295 × 265 Диаметр трубопроводов 3/8 (9.52)-5/8 (15.9) Инвертор Есть Категории товара VRF-системы, Midea Обогрев (кВт) 10 Охлаждение (кВт) 9 Охлаждение, кВт 9 Потребляемая мощность (кВт) 0.065 Производитель Midea Расход воздуха (м3/час) 1420 Режим работы С обогревом С фильтрами грубой очистки С функциями с самоочисткой, с вентиляцией, с осушением, с режимом СОН, с автоматическим режимом работы, с таймером, с авторестартом, с экономичным режимом, с автоматическим покачиванием жалюзи, с комфортным воздухораспределением, с функцией \"Никого нет дома\", с датчиком присутствия, с автоматической разморозкой, с функцией мягкого обдува Серия MIH_G Inverter Страна бренда Китай Уровень шума (дБ) 33 Тип внутреннего блока Настенный Цвет внутреннего блока белый Электропитание (В) 1~, 220~240 В, 50 Гц Доставка и оплата ▎Доставка товаров Мы рады предложить вам удобные и надежные варианты доставки, чтобы вы могли наслаждаться покупками без лишних хлопот! ▎Курьерская доставка по Москве Мы осуществляем курьерскую доставку по всей территории Москвы, включая районы в пределах МКАД. Стоимость доставки составляет всего 1000 рублей. Наши курьеры гарантируют быструю и аккуратную доставку ваших заказов прямо к вашей двери. ▎Самовывоз Если вы предпочитаете забрать свой заказ самостоятельно, мы с радостью предоставим возможность самовывоза. Вы можете забрать свои товары в удобное для вас время. ▎Доставка за пределы МКАД Для клиентов, находящихся за пределами МКАД, мы также предлагаем доставку. В этом случае стоимость доставки будет зависеть от расстояния и включает дополнительную плату за километраж. Чтобы узнать точную стоимость и детали доставки за пределы МКАД, пожалуйста, свяжитесь с нашим менеджером. Мы всегда готовы помочь вам с любыми вопросами! Монтаж Базовый (или стандартный) монтаж сплит",
+        "Технические характеристики Внутренний блок VRF-системы Midea MIH90GHN18 Основные На площадь (м2) 90 Вес внутреннего блока 15 кг Виды блоков Внутренние блоки Габариты внутреннего блока ШхВхГ (мм) 1200 × 295 × 265 Диаметр трубопроводов 3/8 (9.52)-5/8 (15.9) Инвертор Есть Категории товара VRF-системы, Midea Обогрев (кВт) 10 Охлаждение (кВт) 9 Охлаждение, кВт 9 Потребляемая мощность (кВт) 0.065 Производитель Midea Расход воздуха (м3/час) 1420 Режим работы С обогревом С фильтрами грубой очистки С функциями с самоочисткой, с вентиляцией, с осушением, с режимом СОН, с автоматическим режимом работы, с таймером, с авторестартом, с экономичным режимом, с автоматическим покачиванием жалюзи, с комфортным воздухораспределением, с функцией \"Никого нет дома\", с датчиком присутствия, с автоматической разморозкой, с функцией мягкого обдува Серия MIH_G Inverter Страна бренда Китай Уровень шума (дБ) 33 Тип внутреннего блока Настенный Цвет внутреннего блока белый Электропитание (В) 1~, 220~240 В, 50 Гц Доставка и оплата ▎Доставка товаров Мы рады предложить вам удобные и надежные варианты доставки, чтобы вы могли наслаждаться покупками без лишних хлопот! ▎Курьерская доставка по Москве Мы осуществляем курьерскую доставку по всей территории Москвы, включая районы в пределах МКАД. Стоимость доставки составляет всего 1000 рублей. Наши курьеры гарантируют быструю и аккуратную доставку ваших заказов прямо к вашей двери. ▎Самовывоз Если вы предпочитаете забрать свой заказ самостоятельно, мы с радостью предоставим возможность самовывоза. Вы можете забрать свои товары в удобное для вас время. ▎Доставка за пределы МКАД Для клиентов, находящихся за пределами МКАД, мы также предлагаем доставку. В этом случае стоимость доставки будет зависеть от расстояния и включает дополнительную плату за километраж. Чтобы узнать точную стоимость и детали доставки за пределы МКАД, пожалуйста, свяжитесь с нашим менеджером. Мы всегда готовы помочь вам с любыми вопросами! Монтаж Базовый (или стандартный) монтаж сплит"
+      ],
+      "product_headings": [
+        "Основные этапы работ",
+        "Материалы, входящие в стоимость"
+      ],
+      "section_candidate_count": 6,
+      "img_nodes": 47,
+      "exact_model_image_elements": [
+        {
+          "src": "https://gorodskie-sistemy.ru/image/cache/images/d82d0226861784f54ba12bfd3a8b9ea0f492cd68-100x100.jpg",
+          "alt": "Внутренний блок VRF-системы Midea MIH90GHN18"
+        },
+        {
+          "src": "https://gorodskie-sistemy.ru/image/cache/images/d82d0226861784f54ba12bfd3a8b9ea0f492cd68-500x500.jpg",
+          "alt": "Внутренний блок VRF-системы Midea MIH90GHN18"
+        }
+      ],
+      "finding": "NO_EXACT_H1"
+    },
+    {
+      "model": "MIH90GHN18",
+      "requested_url": "https://midea.kg/product-categories/vrf-sistemy/vnutrennie-bloki/nastennyy-blok-v8",
+      "date_utc": "2026-11-09T16:33:56Z",
+      "http": 200,
+      "final_url": "https://midea.kg/product-categories/vrf-sistemy/vnutrennie-bloki/nastennyy-blok-v8",
+      "bytes": 138304,
+      "content_type": "text/html; charset=UTF-8",
+      "h1": "",
+      "title": "Настенный блок V8 |  | MBT Midea",
+      "exact_sku_h1": false,
+      "canonical_model_in_body": true,
+      "section_candidates": [
+        "Настенный блок V8 VRF Системы Новая серия внутренний блок\n                                                        \n                                                                                                                    | тип в/б: настенный Модели Документация Модель кВт Цена MIH15GHN18 1.5 Количество В запрос MIH22GHN18 2.2 Количество В запрос MIH28GHN18 2.8 Количество В запрос MIH36GHN18 3.6 Количество В запрос MIH45GHN18 4.5 Количество В запрос MIH56GHN18 5.6 Количество В запрос MIH71GHN18 7.1 Количество В запрос MIH80GHN18 8 Количество В запрос MIH90GHN18 9 Количество В запрос Каталоги Midea-VRF-V8-Indoor-Units-Catalog",
+        "Внутренние блоки VRF настенного типа не отличаются по внешнему виду от внутренних блоков обычных сплит систем и органично впишутся в большинство дизайнерских решений. Закрытая конструкция Дроссельные клапаны и дренажные насосы настенной этой модели имеют закрытую конструкцию, что снижает уровень шума. Потолочное исполнение Новый теплообменник настенной модели разработан для удовлетворения требований по установке вблизи потолка, минимальное расстояние от потолка составляет 3 см. Свободный дренаж без ограничения пространства В настенных моделях можно реализовать горизонтальный, нисходящий или восходящий дренаж, что делает установку более гибкой. Высоконапорный дренажный насос В стандартную комплектацию входит дренажный насос с высотой подъема 1200 мм, что упрощает монтаж дренажного трубопровода. Особенности и преимущества Бесшумная работа Минимальный уровень шума настенной модели составляет всего 27 дБ (А), что идеально подходит для гостиниц и других мест, где низкий уровень шума имеет важное значение. Режим сна Интеллектуальный режим сна обеспечивает комфортный сон и бодрое пробуждение. Двунаправленная подача воздушного потока с эффектом Коанда Благодаря технологии двунаправленной подачи воздушного потока с эффектом Коанда холодный воздух не дует прямо на человека, а горячий воздух равномерно прогревает ноги. Обратная связь по неисправностям Раннее предупреждение о неисправности дренажного насоса. Автоматическое переключение охлаждения/обогрева Автоматический выбор режима охлаждения или обогрева для достижения заданной температуры."
+      ],
+      "product_headings": [
+        "Бытовые кондиционеры",
+        "Полупромышленные",
+        "Фильтры для воды",
+        "Чиллеры",
+        "Фанкойлы",
+        "VRF Системы",
+        "Тепловые насосы",
+        "Руфтопы",
+        "ККБ",
+        "Котлы",
+        "Водонагреватели"
+      ],
+      "section_candidate_count": 2,
+      "img_nodes": 14,
+      "exact_model_image_elements": [],
+      "finding": "NO_EXACT_H1"
+    },
+    {
+      "model": "MIH90GHN18(DP)",
+      "requested_url": "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18-dp/",
+      "date_utc": "2026-11-09T16:33:58Z",
+      "http": 404,
+      "final_url": "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18-dp/",
+      "bytes": 435502,
+      "content_type": "text/html; charset=UTF-8",
+      "finding": "HTTP_UNAVAILABLE_OR_NOT_HTML"
+    },
+    {
+      "model": "MIH90GHN18(DP)",
+      "requested_url": "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18_dp/",
+      "date_utc": "2026-11-09T16:33:58Z",
+      "http": 404,
+      "final_url": "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18_dp/",
+      "bytes": 300318,
+      "content_type": "text/html; charset=UTF-8",
+      "finding": "HTTP_UNAVAILABLE_OR_NOT_HTML"
+    },
+    {
+      "model": "MIH90GHN18(DP)",
+      "requested_url": "https://vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
+      "date_utc": "2026-11-09T16:33:59Z",
+      "http": 200,
+      "final_url": "https://vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
+      "bytes": 11151,
+      "content_type": "text/html; charset=UTF-8",
+      "h1": "",
+      "title": "",
+      "exact_sku_h1": false,
+      "canonical_model_in_body": false,
+      "section_candidates": [],
+      "product_headings": [
+        "JavaScript отключен в вашем браузере. Пожалуйста, включите JavaScript, чтобы продолжить."
+      ],
+      "section_candidate_count": 0,
+      "img_nodes": 0,
+      "exact_model_image_elements": [],
+      "finding": "NO_EXACT_H1"
+    },
+    {
+      "model": "MIH90GHN18(DP)",
+      "requested_url": "https://ryazan.vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
+      "date_utc": "2026-11-09T16:33:59Z",
+      "http": 200,
+      "final_url": "https://ryazan.vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
+      "bytes": 10571,
+      "content_type": "text/html; charset=UTF-8",
+      "h1": "",
+      "title": "",
+      "exact_sku_h1": false,
+      "canonical_model_in_body": false,
+      "section_candidates": [],
+      "product_headings": [
+        "JavaScript отключен в вашем браузере. Пожалуйста, включите JavaScript, чтобы продолжить."
+      ],
+      "section_candidate_count": 0,
+      "img_nodes": 0,
+      "exact_model_image_elements": [],
+      "finding": "NO_EXACT_H1"
+    },
+    {
+      "model": "MIH90GHN18(DP)",
+      "requested_url": "https://coolsochi.ru/product/midea-mih90ghn18-dp/",
+      "date_utc": "2026-11-09T16:34:00Z",
+      "http": 200,
+      "final_url": "https://coolsochi.ru/product/midea-mih90ghn18-dp/",
+      "bytes": 155920,
+      "content_type": "text/html; charset=utf-8",
+      "h1": "Внутренний блок VRF-системы Midea MIH90GHN18(DP)",
+      "title": "Midea MIH90GHN18(DP) — купить в Сочи",
+      "exact_sku_h1": false,
+      "canonical_model_in_body": true,
+      "section_candidates": [
+        "Руководство компании и в частности Генеральный директор уделяет пристальное внимание качеству обслуживания своих клиентов. Если у вас возникли вопросы или вы столкнулись с какими-либо трудностями на любом этапе заказа, мы будем благодарны за подробную информацию. Все сообщения рассматриваются лично руководителем компании ООО «АРКТИКА»."
+      ],
+      "product_headings": [
+        "Характеристики Midea MIH90GHN18(DP)",
+        "Монтаж Midea MIH90GHN18(DP)",
+        "Монтаж VRF/VRV-системы",
+        "Что рассчитывается отдельно",
+        "Гарантия Midea MIH90GHN18(DP)",
+        "Доставка и самовывоз Midea MIH90GHN18(DP)",
+        "Самовывоз",
+        "Доставка по России",
+        "Доставка по Сочи",
+        "Доставка",
+        "Оплата Midea MIH90GHN18(DP)",
+        "Монтаж VRF/VRV-оборудования Midea MIH90GHN18(DP)",
+        "Рассчитать VRF/VRV-систему",
+        "Почему выбирают CoolSochi"
+      ],
+      "section_candidate_count": 1,
+      "img_nodes": 21,
+      "exact_model_image_elements": [
+        {
+          "src": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+          "alt": "Внутренний блок VRF-системы Midea MIH90GHN18(DP)"
+        },
+        {
+          "src": "/wa-data/public/shop/products/00/webp/52/49/24952/images/57743/57743.686x0.webp",
+          "alt": "Внутренний блок VRF-системы Midea MIH90GHN18(DP)"
+        }
+      ],
+      "finding": "NO_EXACT_H1"
+    },
+    {
+      "model": "MIH90GHN18(DP)",
+      "requested_url": "https://www.klimat-master.ru/serie/mih-gdp-v8/",
+      "date_utc": "2026-11-09T16:34:01Z",
+      "http": 200,
+      "final_url": "https://www.klimat-master.ru/serie/mih-gdp-v8/",
+      "bytes": 115171,
+      "content_type": "text/html; charset=UTF-8",
+      "h1": "VRF/VRV внутренние настенные Midea Внутренние настенные блоки MIH-G(DP) (V8)",
+      "title": "Midea Внутренние настенные блоки MIH-G(DP) (V8) — VRF/VRV внутренние настенные купить в Москве с доставкой и установкой, характеристики | Климат-Мастер",
+      "exact_sku_h1": false,
+      "canonical_model_in_body": false,
+      "section_candidates": [
+        "Настенный блок VRF-системы Midea MIH-G(DP) (V8) обеспечивает комфортный микроклимат, оснащён дренажным насосом, системой фильтрации и модулем плазменной стерилизации. Технология META 2.0 снижает энергопотребление до 35%, поддерживает точное регулирование температуры, работает тихо (от 22 дБ)."
+      ],
+      "product_headings": [
+        "Выбор города:",
+        "",
+        "Midea Внутренние настенные блоки MIH-G(DP) (V8)",
+        "Midea MIH15GHN18(DP)",
+        "Midea MIH22GHN18(DP)",
+        "Midea MIH28GHN18(DP)",
+        "Midea MIH36GHN18(DP)",
+        "Midea MIH45GHN18(DP)",
+        "Midea MIH56GHN18(DP)",
+        "Midea MIH71GHN18(DP)",
+        "Midea MIH80GHN18(DP)",
+        ""
+      ],
+      "section_candidate_count": 1,
+      "img_nodes": 31,
+      "exact_model_image_elements": [],
+      "finding": "NO_EXACT_H1"
+    }
+  ]
+}
