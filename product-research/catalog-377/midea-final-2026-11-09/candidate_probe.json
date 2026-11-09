@@ -1,5 +1,5 @@
 {
-  "date_utc": "2026-11-09T16:34:03Z",
+  "date_utc": "2026-11-09T16:35:43Z",
   "targets": {
     "MIH90GHN18": [
       "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18/",
@@ -21,7 +21,7 @@
     {
       "model": "MIH90GHN18",
       "requested_url": "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18/",
-      "date_utc": "2026-11-09T16:33:48Z",
+      "date_utc": "2026-11-09T16:35:28Z",
       "http": 404,
       "final_url": "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18/",
       "bytes": 435481,
@@ -31,20 +31,20 @@
     {
       "model": "MIH90GHN18",
       "requested_url": "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18/",
-      "date_utc": "2026-11-09T16:33:49Z",
+      "date_utc": "2026-11-09T16:35:30Z",
       "http": 404,
       "final_url": "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18/",
-      "bytes": 300351,
+      "bytes": 300288,
       "content_type": "text/html; charset=UTF-8",
       "finding": "HTTP_UNAVAILABLE_OR_NOT_HTML"
     },
     {
       "model": "MIH90GHN18",
       "requested_url": "https://vsekondicioneri.ru/product/midea-mih90ghn18/",
-      "date_utc": "2026-11-09T16:33:53Z",
+      "date_utc": "2026-11-09T16:35:31Z",
       "http": 200,
       "final_url": "https://vsekondicioneri.ru/product/midea-mih90ghn18/",
-      "bytes": 11141,
+      "bytes": 10535,
       "content_type": "text/html; charset=UTF-8",
       "h1": "",
       "title": "",
@@ -62,14 +62,14 @@
     {
       "model": "MIH90GHN18",
       "requested_url": "https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-midea-mih90ghn18",
-      "date_utc": "2026-11-09T16:33:54Z",
+      "date_utc": "2026-11-09T16:35:32Z",
       "http": 200,
       "final_url": "https://gorodskie-sistemy.ru/polupromyshlennoe-oborudovanie/vrf-sistemy-kondicionirovaniya/vnutrennij-blok-vrv/vnutrennij-blok-vrf-sistemy-midea-mih90ghn18",
       "bytes": 220780,
       "content_type": "text/html; charset=utf-8",
       "h1": "Внутренний блок VRF-системы Midea MIH90GHN18",
       "title": "Купить внутренний блок VRF-системы Midea MIH90GHN18 в Москве | Городские системы",
-      "exact_sku_h1": false,
+      "exact_sku_h1": true,
       "canonical_model_in_body": true,
       "section_candidates": [
         "Характеристики На площадь (м2) 90 Вес внутреннего блока 15 кг Виды блоков Внутренние блоки Габариты внутреннего блока ШхВхГ (мм) 1200 × 295 × 265 Диаметр трубопроводов 3/8 (9.52)-5/8 (15.9) Инвертор Есть Категории товара VRF-системы, Midea Обогрев (кВт) 10 Охлаждение (кВт) 9 Все характеристики",
@@ -94,12 +94,13 @@
           "alt": "Внутренний блок VRF-системы Midea MIH90GHN18"
         }
       ],
-      "finding": "NO_EXACT_H1"
+      "finding": "EXACT_H1",
+      "original_saved_path": "product-research/catalog-377/midea-final-2026-11-09/MIH90GHN18_gorodskie-sistemy_ru.html"
     },
     {
       "model": "MIH90GHN18",
       "requested_url": "https://midea.kg/product-categories/vrf-sistemy/vnutrennie-bloki/nastennyy-blok-v8",
-      "date_utc": "2026-11-09T16:33:56Z",
+      "date_utc": "2026-11-09T16:35:34Z",
       "http": 200,
       "final_url": "https://midea.kg/product-categories/vrf-sistemy/vnutrennie-bloki/nastennyy-blok-v8",
       "bytes": 138304,
@@ -133,7 +134,7 @@
     {
       "model": "MIH90GHN18(DP)",
       "requested_url": "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18-dp/",
-      "date_utc": "2026-11-09T16:33:58Z",
+      "date_utc": "2026-11-09T16:35:36Z",
       "http": 404,
       "final_url": "https://midea-pro.ru/catalog/vnutrennie-bloki-vrf-sistemy/midea-mih90ghn18-dp/",
       "bytes": 435502,
@@ -143,20 +144,20 @@
     {
       "model": "MIH90GHN18(DP)",
       "requested_url": "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18_dp/",
-      "date_utc": "2026-11-09T16:33:58Z",
+      "date_utc": "2026-11-09T16:35:39Z",
       "http": 404,
       "final_url": "https://iclim.ru/catalog/promyshlennye_konditsionery/multizonalnye_sistemy/vnutrennie_bloki/midea_mih90ghn18_dp/",
-      "bytes": 300318,
+      "bytes": 300381,
       "content_type": "text/html; charset=UTF-8",
       "finding": "HTTP_UNAVAILABLE_OR_NOT_HTML"
     },
     {
       "model": "MIH90GHN18(DP)",
       "requested_url": "https://vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
-      "date_utc": "2026-11-09T16:33:59Z",
+      "date_utc": "2026-11-09T16:35:39Z",
       "http": 200,
       "final_url": "https://vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
-      "bytes": 11151,
+      "bytes": 9945,
       "content_type": "text/html; charset=UTF-8",
       "h1": "",
       "title": "",
@@ -174,10 +175,10 @@
     {
       "model": "MIH90GHN18(DP)",
       "requested_url": "https://ryazan.vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
-      "date_utc": "2026-11-09T16:33:59Z",
+      "date_utc": "2026-11-09T16:35:39Z",
       "http": 200,
       "final_url": "https://ryazan.vsekondicioneri.ru/product/midea-mih90ghn18-dp/",
-      "bytes": 10571,
+      "bytes": 11165,
       "content_type": "text/html; charset=UTF-8",
       "h1": "",
       "title": "",
@@ -195,14 +196,14 @@
     {
       "model": "MIH90GHN18(DP)",
       "requested_url": "https://coolsochi.ru/product/midea-mih90ghn18-dp/",
-      "date_utc": "2026-11-09T16:34:00Z",
+      "date_utc": "2026-11-09T16:35:40Z",
       "http": 200,
       "final_url": "https://coolsochi.ru/product/midea-mih90ghn18-dp/",
       "bytes": 155920,
       "content_type": "text/html; charset=utf-8",
       "h1": "Внутренний блок VRF-системы Midea MIH90GHN18(DP)",
       "title": "Midea MIH90GHN18(DP) — купить в Сочи",
-      "exact_sku_h1": false,
+      "exact_sku_h1": true,
       "canonical_model_in_body": true,
       "section_candidates": [
         "Руководство компании и в частности Генеральный директор уделяет пристальное внимание качеству обслуживания своих клиентов. Если у вас возникли вопросы или вы столкнулись с какими-либо трудностями на любом этапе заказа, мы будем благодарны за подробную информацию. Все сообщения рассматриваются лично руководителем компании ООО «АРКТИКА»."
@@ -235,12 +236,13 @@
           "alt": "Внутренний блок VRF-системы Midea MIH90GHN18(DP)"
         }
       ],
-      "finding": "NO_EXACT_H1"
+      "finding": "EXACT_H1",
+      "original_saved_path": "product-research/catalog-377/midea-final-2026-11-09/MIH90GHN18_DP_coolsochi_ru.html"
     },
     {
       "model": "MIH90GHN18(DP)",
       "requested_url": "https://www.klimat-master.ru/serie/mih-gdp-v8/",
-      "date_utc": "2026-11-09T16:34:01Z",
+      "date_utc": "2026-11-09T16:35:41Z",
       "http": 200,
       "final_url": "https://www.klimat-master.ru/serie/mih-gdp-v8/",
       "bytes": 115171,
