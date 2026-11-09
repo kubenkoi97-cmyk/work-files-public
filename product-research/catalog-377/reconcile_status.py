@@ -16,7 +16,20 @@ def inventory():
 
 def all_states():
     states={}
-    for prefix in ("batch-","recovery-batch-","deep-batch-","supplemental-batch-","supplemental-v2-batch-","igc-http-batch-","midea-batch-","final-sweep-batch-","fast-"):
+    # An independent ZIP audit must approve newly recovered candidate COMPLETE rows.
+    approved_effect=set()
+    audit_v3=ROOT/"audit-v3"/"partial-effect-qa.csv"
+    if audit_v3.exists():
+        with audit_v3.open(encoding="utf-8-sig",newline="") as fd:
+            for rec in csv.DictReader(fd):
+                if (rec.get("master_status")=="COMPLETE" and rec.get("reason")=="OK"
+                    and rec.get("zip_integrity")=="OK"
+                    and rec.get("exact_heading")=="YES"
+                    and rec.get("has_description_in_manifest")=="YES"
+                    and rec.get("has_specs_in_manifest")=="YES"
+                    and int(rec.get("photo_images_verified") or 0)>=1):
+                    approved_effect.add((rec["brand"],rec["model"],rec["release_tag"]))
+    for prefix in ("batch-","recovery-batch-","deep-batch-","supplemental-batch-","supplemental-v2-batch-","igc-http-batch-","midea-batch-","final-sweep-batch-","fast-","partial-effect-"):
         for p in sorted(STAT.glob(prefix+"*.csv")):
             tag=p.stem[len(prefix):]
             with p.open(encoding="utf-8-sig",newline="") as f:
@@ -47,6 +60,11 @@ def all_states():
                     r["archive_release_url"]=r.get("archive_release_url") or root+"tag/"+release
                     r["archive_download_url"]=r.get("archive_download_url") or root+"download/"+release+"/catalog377-"+tag+".zip"
                     r["result_stage"]=prefix.rstrip("-")
+                    if prefix=="partial-effect-" and r.get("status")=="COMPLETE":
+                        if (r["brand"],r["model"],release) not in approved_effect:
+                            r["status"]="PARTIAL"
+                            r["reason"]="New source not yet independently ZIP+photo+description verified; no promotion"
+
                     k=(r["brand"],r["model"])
                     old=states.get(k)
                     # Prefer confirmed complete sources, then partial pages
@@ -58,7 +76,7 @@ def all_states():
                                 int(row.get("downloaded_product_photos") or 0),
                                 (row.get("has_description")=="True"),
                                 (row.get("has_specs")=="True"),
-                                {"supplemental-batch":1,"supplemental-v2-batch":3,"final-sweep-batch":4,"fast":5}.get(row.get("result_stage",""),2))
+                                {"supplemental-batch":1,"supplemental-v2-batch":3,"final-sweep-batch":4,"fast":5,"partial-effect":6}.get(row.get("result_stage",""),2))
                     if old and quality(old)>=quality(r):
                         continue
                     states[k]=r
@@ -88,6 +106,13 @@ def main():
                 k=(rec["brand"],rec["model"])
                 if k in qa: raise RuntimeError("Duplicate QA source record: "+str(k))
                 qa[k]=rec
+    # The original v2 audit is preserved. v3 inspects newly published original HTML ZIPs.
+    audit_v3=ROOT/"audit-v3"/"partial-effect-qa.csv"
+    if audit_v3.exists():
+        with audit_v3.open(encoding="utf-8-sig",newline="") as fd:
+            for rec in csv.DictReader(fd):
+                if (rec.get("master_status")=="COMPLETE" and rec.get("reason")=="OK"):
+                    qa[(rec["brand"],rec["model"])]=rec
     for row in final:
         row["zip_verified"]="NOT_CHECKED"
         row["rejected_source_url"]=""
@@ -127,7 +152,7 @@ def main():
        fully_verified=counts["COMPLETE"]==377,
        process_terminated=sum(x["status"]!="UNPROCESSED" for x in final)==377,
        definition="COMPLETE only when exact model has source HTML, verified description/specs, and downloaded product photos",
-       methodology="Original archives matched to independently validated zip files; wrong SKU captures quarantined with link preserved only as rejected source")
+       methodology="Original archives matched to independent v2/v3 ZIP+source audits; wrong SKU captures quarantined with link preserved only as rejected source")
     (STAT/"master_summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding="utf-8")
     md=["# Catalog 377 — текущий проверенный статус",
         "",f"Исходно 377 моделей. Обработано: {377-counts['UNPROCESSED']}.",
