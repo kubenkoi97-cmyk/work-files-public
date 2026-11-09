@@ -1,0 +1,147 @@
+{
+  "date_utc": "2026-11-09T16:45:45Z",
+  "shard": 1,
+  "target_total": 22,
+  "models_tested": 7,
+  "exact_model_html_candidates": 0,
+  "models_with_unsuffixed_html_reference": 6,
+  "models": [
+    {
+      "model": "IMS-AHU280NH(DC)",
+      "prior_status": "NOT_FOUND",
+      "checked_urls": 9,
+      "full_exact_html": [],
+      "unverified_unsuffixed": [
+        "https://igc.com.ru/catalog/arkhiv_modeley/igc_ims_ahu280nh/",
+        "https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_ahu280nh/",
+        "https://mircli.ru/IGC-IMS-AHU280NH/"
+      ],
+      "wrong_variant": [],
+      "other_results": {
+        "UNSUFFIXED_UNCONFIRMED": 3,
+        "NOT_ACCESSIBLE": 2,
+        "SEARCH_OR_ERROR": 4
+      }
+    },
+    {
+      "model": "IMS-BS22NH (DC)",
+      "prior_status": "NOT_FOUND",
+      "checked_urls": 12,
+      "full_exact_html": [],
+      "unverified_unsuffixed": [
+        "https://igc.com.ru/catalog/arkhiv_modeley/igc_ims_bs22nh/",
+        "https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_bs22nh/",
+        "https://mircli.ru/IGC-IMS-BS22NH/"
+      ],
+      "wrong_variant": [
+        "http://igc-aircon.com/product/kanalnye_bloki_vrf/vnutrenniy_kanalnyy_ploskiy_blok_igc_200mm_ims_bs22nh_dc7/"
+      ],
+      "other_results": {
+        "UNSUFFIXED_UNCONFIRMED": 3,
+        "NOT_ACCESSIBLE": 2,
+        "WRONG_GENERATION": 1,
+        "WRONG_DC4_DC5_DC7": 1,
+        "DIFFERENT_MODEL_OR_INDEX": 1,
+        "SEARCH_OR_ERROR": 4
+      }
+    },
+    {
+      "model": "IMS-BS45NH(DC)",
+      "prior_status": "NOT_FOUND",
+      "checked_urls": 10,
+      "full_exact_html": [],
+      "unverified_unsuffixed": [
+        "https://igc.com.ru/catalog/arkhiv_modeley/igc_ims_bs45nh/",
+        "https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_bs45nh/",
+        "https://mircli.ru/IGC-IMS-BS45NH/"
+      ],
+      "wrong_variant": [
+        "http://igc-aircon.com/product/kanalnye_bloki_vrf/vnutrenniy_kanalnyy_ploskiy_blok_igc_200mm_ims_bs45nh_dc7_/"
+      ],
+      "other_results": {
+        "UNSUFFIXED_UNCONFIRMED": 3,
+        "NOT_ACCESSIBLE": 2,
+        "WRONG_DC4_DC5_DC7": 1,
+        "SEARCH_OR_ERROR": 4
+      }
+    },
+    {
+      "model": "IMS-BS71NHQ(DC)",
+      "prior_status": "NOT_FOUND",
+      "checked_urls": 9,
+      "full_exact_html": [],
+      "unverified_unsuffixed": [],
+      "wrong_variant": [],
+      "other_results": {
+        "NOT_ACCESSIBLE": 4,
+        "SEARCH_OR_ERROR": 5
+      }
+    },
+    {
+      "model": "IMS-K36NH(DC)",
+      "prior_status": "WRONG_MODEL",
+      "checked_urls": 12,
+      "full_exact_html": [],
+      "unverified_unsuffixed": [
+        "https://igc.com.ru/catalog/arkhiv_modeley/igc_ims_k36nh/",
+        "https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_k36nh/",
+        "https://mircli.ru/IGC-IMS-K36NH/"
+      ],
+      "wrong_variant": [
+        "http://igc-aircon.com/product/nastennye_bloki_vrf/vnutrenniy_nastennyy_blok_igc_ims_k36nh_dc5_/"
+      ],
+      "other_results": {
+        "UNSUFFIXED_UNCONFIRMED": 3,
+        "NOT_ACCESSIBLE": 2,
+        "WRONG_GENERATION": 1,
+        "WRONG_DC4_DC5_DC7": 1,
+        "SEARCH_OR_ERROR": 4,
+        "DIFFERENT_MODEL_OR_INDEX": 1
+      }
+    },
+    {
+      "model": "IMS-K71NH(DC)",
+      "prior_status": "WRONG_MODEL",
+      "checked_urls": 12,
+      "full_exact_html": [],
+      "unverified_unsuffixed": [
+        "https://igc.com.ru/catalog/arkhiv_modeley/igc_ims_k71nh/",
+        "https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_k71nh/",
+        "https://mircli.ru/IGC-IMS-K71NH/"
+      ],
+      "wrong_variant": [
+        "http://igc-aircon.com/product/nastennye_bloki_vrf/vnutrenniy_nastennyy_blok_igc_ims_k71nh_dc5_/"
+      ],
+      "other_results": {
+        "UNSUFFIXED_UNCONFIRMED": 3,
+        "NOT_ACCESSIBLE": 2,
+        "WRONG_GENERATION": 1,
+        "WRONG_DC4_DC5_DC7": 1,
+        "SEARCH_OR_ERROR": 4,
+        "DIFFERENT_MODEL_OR_INDEX": 1
+      }
+    },
+    {
+      "model": "IMS-QV56NH(DC)",
+      "prior_status": "WRONG_MODEL",
+      "checked_urls": 11,
+      "full_exact_html": [],
+      "unverified_unsuffixed": [
+        "https://igc.com.ru/catalog/arkhiv_modeley/igc_ims_qv56nh/",
+        "https://igc.com.ru/catalog/vnutrennie_bloki_vrf_sistemy/igc_ims_qv56nh/",
+        "https://mircli.ru/IGC-IMS-QV56NH/"
+      ],
+      "wrong_variant": [
+        "http://igc-aircon.com/product/napolno_potolochnye_bloki_vrf/vnutrenniy_napolno_potolochnyy_blok_igc_ims_qv56nh_dc5_/"
+      ],
+      "other_results": {
+        "UNSUFFIXED_UNCONFIRMED": 3,
+        "NOT_ACCESSIBLE": 2,
+        "WRONG_GENERATION": 1,
+        "WRONG_DC4_DC5_DC7": 1,
+        "SEARCH_OR_ERROR": 4
+      }
+    }
+  ],
+  "quality_gate": "Exact (DC) in individual H1; unsuffixed, DC4, DC5, DC7 and series pages cannot replace requested SKU."
+}
