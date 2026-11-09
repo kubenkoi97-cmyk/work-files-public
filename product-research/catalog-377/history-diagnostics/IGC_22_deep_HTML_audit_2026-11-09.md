@@ -33,13 +33,13 @@
 | `IMS-K45NH(DC)` | WRONG_MODEL | 3 | 1 | [3](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/catalog377-igc-deep-research-2) |
 | `IMS-K56NH(DC)` | WRONG_MODEL | 3 | 1 | [1](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/catalog377-igc-deep-research-0) |
 | `IMS-K71NH(DC)` | WRONG_MODEL | 3 | 1 | [2](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/catalog377-igc-deep-research-1) |
-| `IMS-QV100NH(DC)` | WRONG_MODEL | 3 | 1 | [3](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/catalog377-igc-deep-research-2) |
+| `IMS-QV100NH(DC)` | NOT_FOUND | 3 | 1 | [3](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/catalog377-igc-deep-research-2) |
 | `IMS-QV45NH(DC)` | WRONG_MODEL | 3 | 1 | [1](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/catalog377-igc-deep-research-0) |
 | `IMS-QV56NH(DC)` | WRONG_MODEL | 3 | 1 | [2](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/catalog377-igc-deep-research-1) |
 | `IMS-QV71NH(DC)` | WRONG_MODEL | 5 | 1 | [3](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/catalog377-igc-deep-research-2) |
 | `IMS-QV90NH(DC)` | WRONG_MODEL | 3 | 1 | [1](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/catalog377-igc-deep-research-0) |
 
-Отдельная машиночитаемая поартикульная таблица со всеми URL: [igc_deep_latest_22.csv](../../status/igc_deep_latest_22.csv).
+Отдельная машиночитаемая поартикульная таблица со всеми URL: [igc_deep_latest_22.csv](../status/igc_deep_latest_22.csv).
 
 ## Архивы действительного исследования
 
