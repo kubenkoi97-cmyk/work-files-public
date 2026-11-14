@@ -26,8 +26,14 @@ SOURCES=[
 ]
 def norm(x): return re.sub(r"\s+","",str(x).upper())
 def exact(model, text):
-    s=norm(text);m=norm(model)
-    return any(s[i-len(m):i].endswith(m) and (i==len(m) or not s[i-len(m)-1].isalnum()) and (i==len(s) or not (s[i].isalnum() or (s[i]=="(" and "(" not in m))) for i in []) if False else bool(re.search(r"(?<![A-Z0-9])"+re.escape(m)+r"(?![A-Z0-9"+(r"\(" if "(" not in m else "")+r"])",s))
+    # Preserve actual whitespace between PDF table cells and lines. Removing all
+    # whitespace from the entire page merges adjacent model IDs and loses matches.
+    m=norm(model)
+    pattern=r"(?<![A-Z0-9])"+r"\s*".join(re.escape(c) for c in m)+r"(?![A-Z0-9])"
+    if "(" not in m:
+        pattern+=r"(?!\s*\()"  # do not confuse a base SKU with a suffixed variant
+    return bool(re.search(pattern,str(text).upper()))
+
 def download(url, maxmb=90):
     for trial in range(2):
         try:
