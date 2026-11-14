@@ -13,7 +13,7 @@ from PIL import Image, ImageOps, ImageDraw
 ROOT=Path("product-research/catalog-377")
 STATUS=ROOT/"status/master_status.csv"
 OUT=Path(os.environ.get("OUTPUT_DIR", "out/catalog377-v11"))
-ARCHIVE=Path(os.environ["SOURCE_ZIP"])
+ARCHIVES={"catalog377-batch-067-081":Path(os.environ["SOURCE_ZIP"]),"catalog377-recovery-batch-067-081":Path(os.environ["SOURCE_ZIP_RECOVERY"])}
 EXPECTED_ROWS=set(range(68,83))
 TARGET_SERIES=None
 NONPRODUCT=re.compile(r"(?:logo|banner|favicon|feature|advantage|wifi|filter|icon|brochure|catalog\.pdf|certif|instruction|schema|diagram)",re.I)
@@ -100,18 +100,19 @@ def main():
     assert len(wanted)==15
     assert all(r["brand"]=="Kentatsu"
                and r["status"]=="COMPLETE" and r["zip_verified"]=="YES" for r in wanted)
-    assert len({r["archive_download_url"] for r in wanted})==1
+    assert len({r["archive_download_url"] for r in wanted})==2
     OUT.mkdir(parents=True,exist_ok=True)
     unz=OUT/"_source-unpacked"
-    with zipfile.ZipFile(ARCHIVE) as f:
-        bad=f.testzip()
-        assert bad is None, f"Bad original ZIP member {bad}"
-        # Archive is an existing public project artifact, not arbitrary user upload.
-        for member in f.infolist():
-            target=(unz/member.filename).resolve()
-            if not str(target).startswith(str(unz.resolve())+os.sep):
-                raise ValueError("Unsafe ZIP path")
-        f.extractall(unz)
+    for tag,archive in ARCHIVES.items():
+        dest_unz=unz/tag
+        with zipfile.ZipFile(archive) as f:
+            bad=f.testzip()
+            assert bad is None, f"Bad original ZIP member {bad}"
+            for member in f.infolist():
+                target=(dest_unz/member.filename).resolve()
+                if not str(target).startswith(str(dest_unz.resolve())+os.sep):
+                    raise ValueError("Unsafe ZIP path")
+            f.extractall(dest_unz)
     entries=[]
     errors=[]
     qa=[]
@@ -124,7 +125,8 @@ def main():
         info={"model":model,"excel_row":r["excel_row"],"source_url":r["source_url"],
               "source_zip":r["archive_download_url"],"images":[]}
         try:
-            folder,manifest=find_model_folder(unz,model)
+            archive_tag=r["archive_download_url"].split("/releases/download/")[1].split("/")[0]
+            folder,manifest=find_model_folder(unz/archive_tag,model)
             assert manifest.get("status") in ("COMPLETE","PARTIAL"), manifest.get("status")
             assert str(manifest.get("model"))==model
             raw=manifest.get("image_files") or []
