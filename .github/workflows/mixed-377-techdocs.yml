@@ -24,7 +24,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          tag="mixed-377-technical-docs-2026-11-14"
+          tag="mixed-377-technical-docs-2026-11-14-v2"
           artifact="product-research/catalog-377/techdocs-2026-11-14/MIXED_377_technical_docs_by_series_2026-11-14.zip"
           test -s "$artifact"
           unzip -t "$artifact" | tail -3
@@ -32,7 +32,7 @@ jobs:
             gh release upload "$tag" "$artifact" --clobber
           else
             gh release create "$tag" "$artifact" \
-              --title "MIXED 377 — technical documentation by series (verified partial collection)" \
+              --title "MIXED 377 — manufacturer documentation by series, round 2 (PDF text matching fixed)" \
               --notes "Exact scope: only the 377 unfilled SKU rows of Каталог 744. Manufacturer original catalogues and model-verified series excerpts, with original full PDFs preserved. Partial/unverified series explicitly remain open. See report.txt/audit.json in ZIP."
           fi
       - name: Publish report CSV back into public repository
@@ -42,7 +42,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add product-research/catalog-377/techdocs-2026-11-14/series_documents_report.csv
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m "Stage 2: document retrieval report for 53 scoped series"
+          git commit -m "Stage 3: corrected exact-SKU PDF match report for 53 series"
           for i in 1 2 3 4 5; do
             if git pull --rebase origin main && git push; then exit 0; fi
             sleep 4
