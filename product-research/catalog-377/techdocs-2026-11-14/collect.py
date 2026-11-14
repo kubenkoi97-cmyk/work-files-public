@@ -30,6 +30,13 @@ SOURCES=[
  ("IGC","VRF_official_technical","https://www.nsk.igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf","full"),
  ("Daikin","VRV_2026","https://www.daikin.at/content/dam/DACE-AT/document-library/catalogues/ac/vrv/Daikin_Katalog_VRV_2026.pdf","full"),
 
+ ("Daikin","FXMQ_A_technical","https://easyspec.daikin.fr/EasySpec/VRV/Documentations/UI/K4_FXMQ-A/Manuel%20technique/ManTech_K4_FXMQ-A.pdf","technical_data"),
+ ("Midea","MI2_T2_engineering","https://air-midea.com/support/marketing/download/12031/","technical_data"),
+ ("Midea","MIH_Q1_A_engineering","https://air-midea.com/upload/iblock/f36/ketg6wqqxg3nlm74zc2junzejabsuorn.pdf","technical_data"),
+ ("Kentatsu","KTGV_Basic_manual_candidate","https://daichi.business/documents/download.php?ID=18761","installation_and_user_manual"),
+ ("Kentatsu","KTYV_Basic_manual_candidate","https://daichi.business/documents/download.php?ID=18868","installation_and_user_manual"),
+ ("Kentatsu","KTVV_Basic_manual_candidate","https://daichi.business/documents/download.php?ID=18768","installation_and_user_manual"),
+
 ]
 def norm(x): return re.sub(r"\s+","",str(x).upper())
 def exact(model, text):
