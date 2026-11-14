@@ -2,7 +2,7 @@
 """Independent exact-SKU audit of the published MIXED 377 / 53-series PDF archive.
 Does not trust previous PARTIAL_VERIFIED status or infer document-to-model coverage.
 """
-import csv, hashlib, json, re, sys, zipfile
+import csv, hashlib, json, os, re, sys, zipfile
 from collections import defaultdict, Counter
 from pathlib import Path
 import fitz
@@ -99,7 +99,7 @@ for (brand,key),member in groups.items():
         "models_without_exact_model_proof":" | ".join(sorted(family_only)),
         "pdfs_with_other_series":" | ".join(x["path"] for x in crossdocs)
     })
-out=base/"independent-audit-2026-11-14"
+out=base/os.environ.get("AUDIT_OUTPUT_DIR","independent-audit-2026-11-14")
 out.mkdir(exist_ok=True,parents=True)
 for name,rows,cols in [
  ("model_exact_coverage.csv",modelrows,["catalog_744_row","brand","model","series_key","model_variant","proof","exact_technical_pdf_count","exact_declaration_count","exact_pdf_names"]),
