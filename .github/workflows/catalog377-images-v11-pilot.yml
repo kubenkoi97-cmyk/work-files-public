@@ -42,11 +42,16 @@ jobs:
           tag="catalog377-images-v11-ktgv-pilot-2026-11-14"
           zip="out/Kentatsu_KTGV_images_v11_pilot.zip"
           test -s "$zip"
-          gh release create "$tag" "$zip" \
-            "out/catalog377-v11-ktgv/PHOTO_SOURCES.csv" \
-            "out/catalog377-v11-ktgv/CONTACT_SHEET.png" \
-            "out/catalog377-v11-ktgv/SUMMARY.json" \
-            --title "Catalog-744 unfilled: Kentatsu KTGV image pilot (v11)" \
-            --notes-file out/catalog377-v11-ktgv/README.txt \
-            --target main
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$zip"               "out/catalog377-v11-ktgv/PHOTO_SOURCES.csv"               "out/catalog377-v11-ktgv/CONTACT_SHEET.png"               "out/catalog377-v11-ktgv/SUMMARY.json" --clobber
+            gh release edit "$tag" --notes-file out/catalog377-v11-ktgv/README.txt
+          else
+            gh release create "$tag" "$zip" \
+              "out/catalog377-v11-ktgv/PHOTO_SOURCES.csv" \
+              "out/catalog377-v11-ktgv/CONTACT_SHEET.png" \
+              "out/catalog377-v11-ktgv/SUMMARY.json" \
+              --title "Catalog-744 unfilled: Kentatsu KTGV image pilot (v11)" \
+              --notes-file out/catalog377-v11-ktgv/README.txt \
+              --target main
+          fi
           gh release view "$tag" --json assets,url --jq '{url:.url,assets:[.assets[].name]}'
