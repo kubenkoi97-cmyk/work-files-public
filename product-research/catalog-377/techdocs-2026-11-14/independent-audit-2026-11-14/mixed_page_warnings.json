@@ -1,0 +1,134 @@
+[
+  {
+    "path": "Kentatsu/KTGV/KTGV_installation_and_user_manual.pdf",
+    "other_models": {
+      "Midea/MI2_G/MI2-15GDHN18(At)": [
+        72
+      ],
+      "Midea/MI2_G/MI2-22GDHN18(At)": [
+        72
+      ],
+      "Midea/MI2_G/MI2-28GDHN18(At)": [
+        72
+      ],
+      "Midea/MI2_G/MI2-36GDHN18(At)": [
+        73
+      ],
+      "Midea/MI2_G/MI2-45GDHN18(At)": [
+        73
+      ],
+      "Midea/MI2_G/MI2-56GDHN18(At)": [
+        73
+      ],
+      "Midea/MI2_G/MI2-71GDHN18(At)": [
+        74
+      ],
+      "Midea/MI2_G/MI2-80GDHN18(At)": [
+        74
+      ]
+    }
+  },
+  {
+    "path": "Midea/MIH_G/MIH_G_catalog_vrf_v8_2025_2026.pdf",
+    "other_models": {
+      "Midea/MIH_G_DP/MIH15GHN18(DP)": [
+        1
+      ],
+      "Midea/MIH_G_DP/MIH22GHN18(DP)": [
+        1
+      ],
+      "Midea/MIH_G_DP/MIH28GHN18(DP)": [
+        1
+      ],
+      "Midea/MIH_G_DP/MIH36GHN18(DP)": [
+        1
+      ],
+      "Midea/MIH_G_DP/MIH45GHN18(DP)": [
+        1
+      ],
+      "Midea/MIH_G_DP/MIH56GHN18(DP)": [
+        1
+      ],
+      "Midea/MIH_G_DP/MIH71GHN18(DP)": [
+        1
+      ],
+      "Midea/MIH_G_DP/MIH80GHN18(DP)": [
+        1
+      ],
+      "Midea/MIH_G_DP/MIH90GHN18(DP)": [
+        1
+      ]
+    }
+  },
+  {
+    "path": "Midea/MIH_G_DP/MIH_G_DP_catalog.pdf",
+    "other_models": {
+      "Midea/MIH_G/MIH71GHN18": [
+        1
+      ],
+      "Midea/MIH_G/MIH80GHN18": [
+        1
+      ],
+      "Midea/MIH_G/MIH90GHN18": [
+        1
+      ]
+    }
+  },
+  {
+    "path": "Kentatsu/KTA_HFAN1/KTA_HFAN1_catalog.pdf",
+    "other_models": {
+      "Kentatsu/KTA_HZAN1/KTA220HZAN1": [
+        1
+      ],
+      "Kentatsu/KTA_HZAN1/KTA280HZAN1": [
+        1
+      ]
+    }
+  },
+  {
+    "path": "Kentatsu/KTA_HZAN1/KTA_HZAN1_catalog.pdf",
+    "other_models": {
+      "Kentatsu/KTA_HFAN1/KTA115HFAN1": [
+        1
+      ],
+      "Kentatsu/KTA_HFAN1/KTA125HFAN1": [
+        1
+      ],
+      "Kentatsu/KTA_HFAN1/KTA140HFAN1": [
+        1
+      ],
+      "Kentatsu/KTA_HFAN1/KTA150HFAN1": [
+        1
+      ]
+    }
+  },
+  {
+    "path": "Midea/MI2_G_DP/MI2_G_DP_catalog.pdf",
+    "other_models": {
+      "Midea/MI2_G/MI2-15GDHN18(At)": [
+        3
+      ],
+      "Midea/MI2_G/MI2-22GDHN18(At)": [
+        3
+      ],
+      "Midea/MI2_G/MI2-28GDHN18(At)": [
+        3
+      ],
+      "Midea/MI2_G/MI2-36GDHN18(At)": [
+        3
+      ],
+      "Midea/MI2_G/MI2-45GDHN18(At)": [
+        3
+      ],
+      "Midea/MI2_G/MI2-56GDHN18(At)": [
+        3
+      ],
+      "Midea/MI2_G/MI2-71GDHN18(At)": [
+        3
+      ],
+      "Midea/MI2_G/MI2-80GDHN18(At)": [
+        3
+      ]
+    }
+  }
+]
