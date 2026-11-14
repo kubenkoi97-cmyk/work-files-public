@@ -21,7 +21,7 @@ jobs:
         run: python product-research/catalog-377/techdocs-2026-11-14/collect.py
       - name: Publish single public ZIP archive
         env:
-          GH_TOKEN: \${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
           tag="mixed-377-technical-docs-2026-11-14"
