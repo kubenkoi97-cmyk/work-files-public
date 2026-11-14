@@ -1,0 +1,29 @@
+name: MIXED-377 postprocess identical PDF deduplication
+on:
+  push:
+    paths:
+      - '.github/workflows/mixed-377-techdocs-dedup.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  deduplicate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download verified v3 technical document ZIP
+        run: |
+          mkdir -p /tmp/mixed377/v3 /tmp/mixed377/v4
+          gh release download mixed-377-technical-docs-2026-11-14-v3 --pattern 'MIXED_377_technical_docs_by_series_2026-11-14.zip' -D /tmp/mixed377/v3
+          test -s /tmp/mixed377/v3/MIXED_377_technical_docs_by_series_2026-11-14.zip
+      - name: Deduplicate PDFs by SHA-256, verify integrity and report
+        run: |
+          python product-research/catalog-377/techdocs-2026-11-14/deduplicate.py             /tmp/mixed377/v3/MIXED_377_technical_docs_by_series_2026-11-14.zip             /tmp/mixed377/v4/MIXED_377_technical_docs_by_series_2026-11-14.zip             | tee /tmp/mixed377/v4/dedup_results.json
+          unzip -t /tmp/mixed377/v4/MIXED_377_technical_docs_by_series_2026-11-14.zip | tail -3
+      - name: Publish validated deduplicated ZIP
+        run: |
+          gh release create mixed-377-technical-docs-2026-11-14-v4             /tmp/mixed377/v4/MIXED_377_technical_docs_by_series_2026-11-14.zip             /tmp/mixed377/v4/dedup_results.json             --title 'MIXED 377 — technical PDFs by series, duplicate-clean v4'             --notes 'Validated exact-377 unfilled-only scope. v3 original and page extraction preserved, duplicates removed by exact file SHA256; no separate per-model copies. 45/53 series have at least one verified technical PDF. 8 series unresolved. See manifest and report.'
