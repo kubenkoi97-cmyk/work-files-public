@@ -1,0 +1,51 @@
+name: Catalog744 v11 recover exact Midea partial photo archives
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/catalog377-images-v11-midea-partials.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  verify-and-republish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { start: 336, end: 350 }
+          - { start: 351, end: 365 }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q Pillow
+      - name: Recheck PARTIAL original ZIPs and exact model picture files
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: kubenkoi97-cmyk/work-files-public
+          START_ROW: ${{ matrix.start }}
+          END_ROW: ${{ matrix.end }}
+          OUTPUT_DIR: out/v11-${{ matrix.start }}-${{ matrix.end }}
+        run: python product-research/catalog-377/curate_images_v11_all_batches.py
+      - name: Replace existing stage assets with corrected photo sets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: kubenkoi97-cmyk/work-files-public
+          START_ROW: ${{ matrix.start }}
+          END_ROW: ${{ matrix.end }}
+        run: |
+          set -euo pipefail
+          printf -v lo "%03d" "$START_ROW"
+          printf -v hi "%03d" "$END_ROW"
+          tag="catalog377-images-v11-${lo}-${hi}-2026-11-14"
+          dir="out/v11-${START_ROW}-${END_ROW}"
+          zip="out/Catalog744_images_v11_${lo}-${hi}.zip"
+          test -s "$zip"
+          gh release upload "$tag" "$zip" \
+            "$dir/CONTACT_SHEET.png" "$dir/PHOTO_SOURCES.csv" "$dir/SUMMARY.json" --clobber
+          gh release edit "$tag" --notes-file "$dir/README.txt"
+          gh release view "$tag" --json assets,url --jq '{url:.url,assets:[.assets[].name]}'
