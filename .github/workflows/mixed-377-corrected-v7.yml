@@ -1,0 +1,60 @@
+name: MIXED377 quarantine regional source collision and re-audit v7
+on:
+  push:
+    paths:
+      - '.github/workflows/mixed-377-corrected-v7.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+      AUDIT_OUTPUT_DIR: independent-audit-v7-2026-11-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install technical PDF text parser
+        run: python -m pip install -q pymupdf
+      - name: Download immutable v6 source archive
+        run: |
+          mkdir -p /tmp/mixed377/v6 /tmp/mixed377/v7
+          gh release download mixed-377-technical-docs-2026-11-14-v6 \
+            -p 'MIXED_377_technical_docs_by_series_2026-11-14.zip' -D /tmp/mixed377/v6
+      - name: Remove unsafe overseas source and retain all historically released sources
+        run: |
+          python product-research/catalog-377/techdocs-2026-11-14/curate_source_v7.py \
+            /tmp/mixed377/v6/MIXED_377_technical_docs_by_series_2026-11-14.zip \
+            /tmp/mixed377/v7/MIXED_377_technical_docs_by_series_2026-11-14.zip \
+            | tee /tmp/mixed377/v7/source_change_log.json
+      - name: Independently recheck each of 377 models and every PDF
+        run: |
+          python product-research/catalog-377/techdocs-2026-11-14/independent_audit.py \
+            /tmp/mixed377/v7/MIXED_377_technical_docs_by_series_2026-11-14.zip \
+            | tee /tmp/mixed377/v7/audit_v7_log.txt
+          unzip -t /tmp/mixed377/v7/MIXED_377_technical_docs_by_series_2026-11-14.zip | tail -3
+      - name: Publish public corrected ZIP and machine-readable QA results
+        run: |
+          root="product-research/catalog-377/techdocs-2026-11-14/independent-audit-v7-2026-11-14"
+          gh release create mixed-377-technical-docs-2026-11-14-v7 \
+            /tmp/mixed377/v7/MIXED_377_technical_docs_by_series_2026-11-14.zip \
+            "$root/audit_summary.json" "$root/series_exact_coverage.csv" \
+            /tmp/mixed377/v7/source_change_log.json \
+            --title 'MIXED 377 — corrected source provenance audit v7' \
+            --notes 'Only 377 unfilled SKUs; preserves v6 history, excludes overseas Midea ATOM 2024 catalog due 4.5-vs-1.5-kW exact-label conflict. Independent per-model checks performed. 53 SKU-prefix families are not 53 fully verified OEM series. See model audit and group review CSV. Do not use model-unverified documents for specifications.'
+      - name: Commit versioned independent audit (never overwrite v6 audit)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add product-research/catalog-377/techdocs-2026-11-14/independent-audit-v7-2026-11-14/
+          git commit -m 'Publish 377-model source-safe v7 evidence audit and model level statuses'
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then exit 0; fi
+            sleep 4
+          done
+          exit 1
