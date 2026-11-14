@@ -125,8 +125,12 @@ def main():
         sig=((sig^byte)*0x01000193)&0xffffffff
     assert f"{sig:08x}"=="b1d25baf", "Master SKU inventory is not the 377 unfilled Excel models"
     assert len(wanted)==len(EXPECTED_ROWS)
-    usable=[r for r in wanted if r["status"] in ("COMPLETE","PARTIAL")
-            and r["zip_verified"]=="YES" and r.get("archive_download_url")]
+    usable=[r for r in wanted if
+            ((r["status"]=="COMPLETE" and r["zip_verified"]=="YES")
+             or r["status"]=="PARTIAL")
+            and r.get("archive_download_url")]
+    # PARTIAL sources had NOT_CHECKED ZIP flags in older audit.
+    # Verify their ZIP integrity and exact model manifest now before accepting photos.
     excluded=[dict(model=r["model"],brand=r["brand"],reason=r["status"])
               for r in wanted if r not in usable]
     downloads=OUT.parent/"_source-zips"
