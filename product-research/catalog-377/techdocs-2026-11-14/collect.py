@@ -49,9 +49,10 @@ def exact(model, text):
     return bool(re.search(pattern,str(text).upper()))
 
 def download(url, maxmb=90):
-    for trial in range(2):
+    risky_endpoint='daichi.business' in url
+    for trial in range(1 if risky_endpoint else 2):
         try:
-            r=SESSION.get(url, timeout=(14,85),allow_redirects=True)
+            r=SESSION.get(url, timeout=(6,18) if risky_endpoint else (14,85),allow_redirects=True)
             r.raise_for_status()
             data=r.content
             if len(data)>maxmb*1024*1024: raise ValueError("oversize")
