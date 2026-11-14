@@ -63,7 +63,7 @@ def main():
     seen_paths=set()
     errors=[]
     per_packet=[]
-    archive=OUT/"Каталог_744_фотографии_v11_сборка.zip"
+    archive=OUT/"Catalog_744_images_v11_all.zip"
     with zipfile.ZipFile(archive,"w",zipfile.ZIP_DEFLATED,compresslevel=6) as dst:
         for index,(tag,name,lo,hi) in enumerate(PACKETS,1):
             path=dl(tag,name)
