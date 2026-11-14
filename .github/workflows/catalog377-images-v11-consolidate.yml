@@ -1,0 +1,35 @@
+name: Catalog744 v11 consolidate 377 unfilled product photo packets
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/catalog377-images-v11-consolidate.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch all completed stages and consolidate one series-based archive
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: kubenkoi97-cmyk/work-files-public
+        run: python product-research/catalog-377/consolidate_images_v11.py
+      - name: Publish public consolidated Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: kubenkoi97-cmyk/work-files-public
+        run: |
+          set -euo pipefail
+          target="product-research/catalog-377/images-v11-final"
+          archive="$target/Каталог_744_фотографии_v11_сборка.zip"
+          test -s "$archive"
+          gh release create "catalog377-images-v11-all-377-2026-11-14" \
+            "$archive" "$target/SUMMARY_ALL.json" "$target/ALL_377_MODELS.csv" "$target/COMPLETION.txt" \
+            --title "Каталог 744 — изображения 377 незалитых моделей (v11)" \
+            --notes "Общий архив по сериям и точным моделям. Первичные HTML не изменены. В архиве подробный реестр 377 моделей, происхождение изображений и нерешённые позиции. Автоматический контроль завершён; визуальная QA изображений остаётся обязательной." \
+            --target main
+          gh release view "catalog377-images-v11-all-377-2026-11-14" --json assets,url --jq '{url:.url,assets:[.assets[].name]}'
