@@ -23,6 +23,13 @@ SOURCES=[
  ("Bosch","AF_4CC_manual","https://daichi.ru/upload/iblock/c0f/0z4lvnkh1hkuv0x99wg2j4ta7nex092n/AF-4CC%20%D0%BA%D0%B0%D1%81%D1%81%D0%B5%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%82%D0%B8%D0%BF%D0%B0%20%20600%D1%85600.pdf","installation_and_user_manual"),
  ("Midea","MIH_G_manual","https://air-midea.com/upload/iblock/5fa/w3uwwedt34zlvayeyypdf82w8bqe3b4d.pdf","installation_and_user_manual"),
  ("Midea","MIH_G_DP_manual","https://daichi.ru/upload/iblock/e3f/1r0uk23yt3xq50hbmhmd4ctbrsbow353/IOM_Wall-mounted_MIH_GHN18%28DP%29_11_07_25.pdf","installation_and_user_manual"),
+ ("Midea","VRF_V8_2025_2026","https://www.c-o-k.ru/library/catalogs/midea/140017.pdf","full"),
+ ("Midea","MIH_B_installation_manual","https://daichi.ru/upload/iblock/068/zdvzisq2aftnxqjjx296ou262ldcznn5/IOM%2BWall-mounted%20MIH_BHN18_250924.pdf","installation_and_user_manual"),
+ ("Midea","MIH_B_technical","https://air-midea.com/upload/iblock/bc5/hv485zb0phwxgxczuo2lyb34669g2d21.pdf","technical_data"),
+ ("IGC","VRF_legacy_DC_catalogue","https://www.c-o-k.ru/library/catalogs/igc/38195/140669.pdf","full"),
+ ("IGC","VRF_official_technical","https://www.nsk.igc-aircon.com/upload/iblock/8e1/f2umkqwfiqx3p6b65iz03odbvjqw01vo.pdf","full"),
+ ("Daikin","VRV_2026","https://www.daikin.at/content/dam/DACE-AT/document-library/catalogues/ac/vrv/Daikin_Katalog_VRV_2026.pdf","full"),
+
 ]
 def norm(x): return re.sub(r"\s+","",str(x).upper())
 def exact(model, text):
