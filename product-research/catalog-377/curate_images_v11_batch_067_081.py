@@ -119,10 +119,11 @@ def main():
     carddata=[]
     for r in wanted:
         model=r["model"]
+        real_row=int(r["excel_row"])+(69 if int(r["excel_row"])>=54 else 0)
         series=re.match(r"^[A-Z]+",model).group(0)
         dest=OUT/series/safe_component(model)
         dest.mkdir(parents=True,exist_ok=True)
-        info={"model":model,"excel_row":r["excel_row"],"source_url":r["source_url"],
+        info={"model":model,"excel_row":real_row,"source_url":r["source_url"],
               "source_zip":r["archive_download_url"],"images":[]}
         try:
             archive_tag=r["archive_download_url"].split("/releases/download/")[1].split("/")[0]
@@ -172,7 +173,7 @@ def main():
                 square_image(x["im"]).save(p,quality=94,subsampling=0)
                 final.append((x["kind"],p,x["url"]))
                 status="NEEDS_SOURCE_QA" if min(x["width"],x["height"])<600 else "SOURCE_DIMENSIONS_OK"
-                entries.append(dict(row=r["excel_row"],model=model,series=series,
+                entries.append(dict(row=real_row,model=model,series=series,
                                     file=str(p.relative_to(OUT)),kind=x["kind"],
                                     source_image=x["url"],source_page=r["source_url"],
                                     source_width=x["width"],source_height=x["height"],
@@ -210,7 +211,7 @@ def main():
         writer=csv.DictWriter(f,fieldnames=fields); writer.writeheader();writer.writerows(entries)
     with (OUT/"REVIEW_NOTES.csv").open("w",encoding="utf-8-sig",newline="") as f:
         writer=csv.writer(f);writer.writerow(["model","event","detail"]);writer.writerows(qa)
-    summary={"scope":"Unfilled rows 68-82 of Catalog 744 ONLY",
+    summary={"scope":"Unfilled current Excel rows 137-151 (archived inventory rows 68-82) ONLY",
              "source":"Archived exact-model HTML and gallery from catalog-377",
              "models_target":len(wanted),
              "models_with_jpg":len(carddata),
@@ -222,7 +223,7 @@ def main():
              "originals_modified":False}
     (OUT/"SUMMARY.json").write_text(json.dumps(summary,indent=2,ensure_ascii=False),encoding="utf-8")
     (OUT/"README.txt").write_text(
-       "Серии KTGV, KTYV, KTZV — изображения для незалитых строк 68–82.\n"
+       "Серии KTGV, KTYV, KTZV — изображения для незалитых строк 137–151.\n"
        "Каждая модель имеет отдельный комплект JPG 850x850. "
        "Ракурсы берутся только из исходной товарной галереи архивного HTML.\n"
        "Статус: CURATED_AWAITING_VISUAL_QA, не выдавать за финально проверенные "
