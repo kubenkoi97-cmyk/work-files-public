@@ -46,11 +46,16 @@ jobs:
           tag="catalog377-images-v11-kentatsu-067-081-2026-11-14"
           zip="out/Kentatsu_KTGV_KTYV_KTZV_images_v11.zip"
           test -s "$zip"
-          gh release create "$tag" "$zip" \
-            "out/catalog377-v11-ktgv-ktyv-ktzv/PHOTO_SOURCES.csv" \
-            "out/catalog377-v11-ktgv-ktyv-ktzv/CONTACT_SHEET.png" \
-            "out/catalog377-v11-ktgv-ktyv-ktzv/SUMMARY.json" \
-            --title "Catalog-744 unfilled: Kentatsu KTGV KTYV KTZV 15 SKUs (v11)" \
-            --notes-file out/catalog377-v11-ktgv-ktyv-ktzv/README.txt \
-            --target main
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "$zip"               "out/catalog377-v11-ktgv-ktyv-ktzv/PHOTO_SOURCES.csv"               "out/catalog377-v11-ktgv-ktyv-ktzv/CONTACT_SHEET.png"               "out/catalog377-v11-ktgv-ktyv-ktzv/SUMMARY.json" --clobber
+            gh release edit "$tag" --notes-file out/catalog377-v11-ktgv-ktyv-ktzv/README.txt
+          else
+            gh release create "$tag" "$zip" \
+              "out/catalog377-v11-ktgv-ktyv-ktzv/PHOTO_SOURCES.csv" \
+              "out/catalog377-v11-ktgv-ktyv-ktzv/CONTACT_SHEET.png" \
+              "out/catalog377-v11-ktgv-ktyv-ktzv/SUMMARY.json" \
+              --title "Catalog-744 unfilled: Kentatsu KTGV KTYV KTZV 15 SKUs (v11)" \
+              --notes-file out/catalog377-v11-ktgv-ktyv-ktzv/README.txt \
+              --target main
+          fi
           gh release view "$tag" --json assets,url --jq '{url:.url,assets:[.assets[].name]}'
