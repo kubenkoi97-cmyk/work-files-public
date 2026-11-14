@@ -1,0 +1,32 @@
+name: MIXED-377 source expansion v5
+on:
+  push:
+    paths:
+      - '.github/workflows/mixed-377-techdocs-v5.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  supplement:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests pymupdf
+      - name: Download validated no-duplicate v4
+        run: |
+          mkdir -p /tmp/mixed377/v4 /tmp/mixed377/v5
+          gh release download mixed-377-technical-docs-2026-11-14-v4              -p 'MIXED_377_technical_docs_by_series_2026-11-14.zip' -D /tmp/mixed377/v4
+      - name: Find additional exact and series-only original PDFs and extract pages
+        run: |
+          python product-research/catalog-377/techdocs-2026-11-14/supplement_v5.py              /tmp/mixed377/v4/MIXED_377_technical_docs_by_series_2026-11-14.zip              /tmp/mixed377/v5/MIXED_377_technical_docs_by_series_2026-11-14.zip              | tee /tmp/mixed377/v5/source_expansion_log.txt
+          unzip -t /tmp/mixed377/v5/MIXED_377_technical_docs_by_series_2026-11-14.zip | tail -3
+      - name: Release verified v5 single ZIP
+        run: |
+          gh release create mixed-377-technical-docs-2026-11-14-v5              /tmp/mixed377/v5/MIXED_377_technical_docs_by_series_2026-11-14.zip              /tmp/mixed377/v5/source_expansion_log.txt              --title 'MIXED 377 — technical documentation by series v5, verified provenance'              --notes 'Scope unchanged: only 377 originally unfilled catalog models. Previous 45/53 groups have exact-model PDF evidence. Added manufacturer documentation for IGC DC5 and carefully labeled Midea / Kentatsu series-level supporting pages where possible. All originals preserved; no duplicate PDFs. See supplemental_v5_evidence.json for distinction between exact SKU and series-level support.'
