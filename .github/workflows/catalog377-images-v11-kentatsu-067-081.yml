@@ -24,13 +24,17 @@ jobs:
           GH_REPO: kubenkoi97-cmyk/work-files-public
         run: |
           set -euo pipefail
-          mkdir -p _sources
-          gh release download catalog377-batch-067-081 -p catalog377-067-081.zip -D _sources
-          test -s _sources/catalog377-067-081.zip
-          unzip -t _sources/catalog377-067-081.zip | tail -2
-      - name: Curate all product gallery images for exact 5 models
+          mkdir -p _sources/base _sources/recovery
+          gh release download catalog377-batch-067-081 -p catalog377-067-081.zip -D _sources/base
+          gh release download catalog377-recovery-batch-067-081 -p catalog377-067-081.zip -D _sources/recovery
+          test -s _sources/base/catalog377-067-081.zip
+          test -s _sources/recovery/catalog377-067-081.zip
+          unzip -t _sources/base/catalog377-067-081.zip | tail -2
+          unzip -t _sources/recovery/catalog377-067-081.zip | tail -2
+      - name: Curate product gallery images from exact SKU base and recovery ZIPs
         env:
-          SOURCE_ZIP: _sources/catalog377-067-081.zip
+          SOURCE_ZIP: _sources/base/catalog377-067-081.zip
+          SOURCE_ZIP_RECOVERY: _sources/recovery/catalog377-067-081.zip
           OUTPUT_DIR: out/catalog377-v11-ktgv-ktyv-ktzv
         run: python product-research/catalog-377/curate_images_v11_batch_067_081.py
       - name: Publish test package, source trace and QA contact sheet
