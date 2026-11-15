@@ -75,6 +75,30 @@ try:
 except Exception as exc:
     print("IGC_IMS1T direct fetch failed:",str(exc)[:250],flush=True)
 
+# New regional-library originals: accept a manual ONLY for models spelled out in its PDF.
+KENTATSU_CANDIDATES={
+    "KTZV":"https://www.iclim.ru/library/kentatsu-ktzv-hzbn1-instruktsiya.pdf",
+    "KTLV":"https://www.iclim.ru/library/kentatsu-ktlv-hzbn1-instruktsiya.pdf",
+    "KTKV":"https://www.iclim.ru/library/kentatsu-ktkv-hzbn1-instruktsiya.pdf",
+    "KTGB":"https://www.iclim.ru/library/kentatsu-dx-pro-vii-ktgb-hzbn1-instruktsiya.pdf",
+}
+new_kentatsu={}
+for group,url in KENTATSU_CANDIDATES.items():
+    models=[r["model"] for r in rows if r["brand"]=="Kentatsu" and r["series_key"]==group]
+    try:
+        reply=requests.get(url,timeout=80,headers={"User-Agent":"Mozilla/5.0","Accept":"application/pdf"})
+        if not(reply.ok and reply.content.startswith(b"%PDF-")):raise ValueError(f"bad HTTP/PDF {reply.status_code}")
+        verified=proofexact(reply.content,models)
+        correct=[m for m,ok in verified.items() if ok]
+        print("KENTATSU_NEW_MANUAL",group,"checked",len(models),"exact",len(correct),"models",correct,flush=True)
+        if correct:
+            name=f"Kentatsu/{group}/{group}_installation_and_user_manual_2026.pdf"
+            if name in oldpdf:raise AssertionError("new documentation path already in release")
+            oldpdf[name]=reply.content
+            new_kentatsu[group]=(name,set(correct),url)
+    except Exception as e:
+        print("KENTATSU_NEW_MANUAL_ERROR",group,str(e)[:280],flush=True)
+
 # Reconcile per-model proof names, never infer from folder membership.
 source_paths=collections.defaultdict(list)
 for r in rows:
@@ -85,7 +109,11 @@ for r in rows:
             raise AssertionError(f"Audit references absent PDF: {n}")
         if n.split("/")[0]!=r["brand"]:
             raise AssertionError(f"Wrong-brand PDF: {n} for {r['model']}")
-    if extra_pdf is not None and r["brand"]=="IGC" and r["series_key"]=="IMS_1T":
+    if r["brand"]=="Kentatsu" and r["series_key"] in new_kentatsu and r["model"] in new_kentatsu[r["series_key"]][1]:
+        name,verified,url=new_kentatsu[r["series_key"]]
+        names=[name]+names
+        r["new_proof"]="DIRECT_2026_KENTATSU_MANUAL_EXACT"
+    elif extra_pdf is not None and r["brand"]=="IGC" and r["series_key"]=="IMS_1T":
         # Replace the superseded excerpt with the clean original exact-model catalog.
         names=[n for n in names if "IMS_1T_catalog.pdf" not in n]
         names=["IGC/IMS_1T/IMS_1T_catalog.pdf"]+names
@@ -154,7 +182,7 @@ for n,payload in oldpdf.items():
 readme=f"""MIXED 377 — пакет подготовки загрузки Selectel, 2026-11-15
 All 377 unfilled catalog products appear in REPORTS/ALL_377.csv.
 Immutable source archive v7 SHA256: {sha}
-READY: {sum(x['new_proof'] in ('ARCHIVE_V7_EXACT','DIRECT_MANUFACTURER_CATALOG_2026_EXACT') for x in document_index)} exact technical models.
+READY: {sum(x['new_proof'] in ('ARCHIVE_V7_EXACT','DIRECT_MANUFACTURER_CATALOG_2026_EXACT','DIRECT_2026_KENTATSU_MANUAL_EXACT') for x in document_index)} exact technical models.
 DECLARATION ONLY: {sum(x['new_proof']=='DECLARATION_ONLY' for x in document_index)} models, technical manuals still missing.
 NOT MODEL VERIFIED: {sum(x['new_proof']=='NOT_MODEL_VERIFIED' for x in document_index)} models.
 UPLOAD_TO_SELECTEL: {len(upload)} distinct PDF payloads under explicit destination folder paths.
@@ -171,6 +199,7 @@ Deployment:
 CRITICAL: 2024 overseas Midea ATOM file is quarantined from v7 due 4.5 vs 1.5 kW regional inconsistency on MI2-15Q4CDHN18(At).
 Pending models cannot be called complete.
 IGC direct source: {EXTRA_1T}
+NEW KENTATSU direct sources: {len(new_kentatsu)} verified PDFs; see REPORTS/NEW_KENTATSU_PDF_SOURCES.csv
 2026 EAEU model listing (not a substitute for technical PDF): https://xn----7sbajahheyaepn1ca0aveqcb0fxl.xn--p1acf/document/eaes-n-ru-d-cnra08v0854326/
 """
 with zipfile.ZipFile(DEST,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=5,allowZip64=True) as z:
@@ -182,6 +211,9 @@ with zipfile.ZipFile(DEST,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=5,a
         [{"zip_path":n,"sha256":hashlib.sha256(b).hexdigest(),"bytes":len(b),"target_url":"https://docs.proclimate5.ru/"+n.split("UPLOAD_TO_SELECTEL/",1)[1]}
          for n,b in sorted(upload.items())],
         ["zip_path","sha256","bytes","target_url"]))
+    z.writestr("REPORTS/NEW_KENTATSU_PDF_SOURCES.csv",writecsv(
+        [{"series":g,"source_url":t[2],"new_pdf_filename":t[0].split("/")[-1],"models_confirmed":" | ".join(sorted(t[1]))} for g,t in sorted(new_kentatsu.items())],
+        ["series","source_url","new_pdf_filename","models_confirmed"]))
     z.writestr("README_SELECTEL.txt",readme.encode("utf-8"))
 with zipfile.ZipFile(DEST) as z:
     assert z.testzip() is None
@@ -189,11 +221,12 @@ with zipfile.ZipFile(DEST) as z:
     assert len(document_index)==377
 report={
     "source_zip_sha256":sha,"archive":str(DEST),"archive_bytes":DEST.stat().st_size,
-    "products":377,"exact_technical":sum(r["new_proof"] in ("ARCHIVE_V7_EXACT","DIRECT_MANUFACTURER_CATALOG_2026_EXACT") for r in document_index),
+    "products":377,"exact_technical":sum(r["new_proof"] in ("ARCHIVE_V7_EXACT","DIRECT_MANUFACTURER_CATALOG_2026_EXACT","DIRECT_2026_KENTATSU_MANUAL_EXACT") for r in document_index),
     "declaration_only":sum(r["new_proof"]=="DECLARATION_ONLY" for r in document_index),
     "unverified":sum(r["new_proof"]=="NOT_MODEL_VERIFIED" for r in document_index),
     "upload_pdf_files":len(upload),"review_pdf_files":len(review),"full_original_catalogs":len(full),
     "new_igc_pdf_downloaded":extra_pdf is not None,
+    "new_kentatsu":{g:{"models_confirmed":len(t[1]),"source_url":t[2]} for g,t in new_kentatsu.items()},
     "not_uploaded_to_selectel":True}
 print(json.dumps(report,ensure_ascii=False,indent=2),flush=True)
 pathlib.Path(str(DEST)+".summary.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
