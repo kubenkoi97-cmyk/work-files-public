@@ -1,0 +1,60 @@
+name: MIXED377 optimized Selectel v6 delta publish
+on:
+  push:
+    paths:
+      - '.github/workflows/mixed-377-selectel-v6-delta-optimized.yml'
+permissions:
+  contents: write
+  actions: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Cancel redundant long full rebuild, keep v5 immutable
+        run: |
+          gh run cancel 43737834837 || true
+      - run: python -m pip install -q requests pymupdf
+      - name: Download already verified immutable v5 release
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/mixed377-v6-opt
+          gh release download mixed-377-selectel-package-2026-11-15-v5 \
+            -p MIXED_377_Selectel_PDF_package_2026-11-15_v5.zip \
+            -D /tmp/mixed377-v6-opt
+      - name: Add only exact IGC IMS5 manual and update 377-model mapping
+        run: |
+          set -euo pipefail
+          python product-research/catalog-377/techdocs-2026-11-15/upgrade_v5_selectel_v6.py \
+            /tmp/mixed377-v6-opt/MIXED_377_Selectel_PDF_package_2026-11-15_v5.zip \
+            /tmp/mixed377-v6-opt/MIXED_377_Selectel_PDF_package_2026-11-15_v6.zip
+          unzip -t /tmp/mixed377-v6-opt/MIXED_377_Selectel_PDF_package_2026-11-15_v6.zip | tail -2
+      - name: Publish full validated archive, independent audit CSV, and summary
+        run: |
+          set -euo pipefail
+          zip=/tmp/mixed377-v6-opt/MIXED_377_Selectel_PDF_package_2026-11-15_v6.zip
+          unzip -p "$zip" REPORTS/ALL_377.csv > /tmp/mixed377-v6-opt/MIXED_377_exact_PDF_manifest_v6.csv
+          unzip -p "$zip" REPORTS/NEED_MORE_PROOF.csv > /tmp/mixed377-v6-opt/MIXED_377_remaining_20_v6.csv
+          unzip -p "$zip" REPORTS/SERVER_FILE_MANIFEST.csv > /tmp/mixed377-v6-opt/MIXED_377_Selectel_67_PDF_files_v6.csv
+          tag=mixed-377-selectel-package-2026-11-15-v6
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release already exists, uploading verified files with no v5 mutation"
+            gh release upload "$tag" "$zip" "$zip.summary.json" \
+              /tmp/mixed377-v6-opt/MIXED_377_exact_PDF_manifest_v6.csv \
+              /tmp/mixed377-v6-opt/MIXED_377_remaining_20_v6.csv \
+              /tmp/mixed377-v6-opt/MIXED_377_Selectel_67_PDF_files_v6.csv --clobber
+          else
+            gh release create "$tag" "$zip" "$zip.summary.json" \
+              /tmp/mixed377-v6-opt/MIXED_377_exact_PDF_manifest_v6.csv \
+              /tmp/mixed377-v6-opt/MIXED_377_remaining_20_v6.csv \
+              /tmp/mixed377-v6-opt/MIXED_377_Selectel_67_PDF_files_v6.csv \
+              --title "MIXED 377 — Selectel v6, 357 exact SKU PDFs and 20 remaining" \
+              --notes "Full 377-model inventory and upload-ready 67 PDFs. Original v5 content preserved; added exact IGC IMS5 PDF for 5 models. 20 exact technical PDF gaps tracked. Upload only contents of UPLOAD_TO_SELECTEL/; server URLs do not work before upload."
+          fi
