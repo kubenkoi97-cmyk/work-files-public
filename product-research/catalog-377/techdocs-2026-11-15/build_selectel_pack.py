@@ -104,7 +104,7 @@ MIDEA_CANDIDATES={
     "MI2_Q4C":"https://www.iclim.ru/library/midea-mi2-q4c-instruktsiya.pdf",
     "MI2_Q1":"https://www.iclim.ru/library/midea-mi2-q1dhn18-at-instruktsiya.pdf",
     "MI2_T3":"https://www.iclim.ru/library/midea-mi2-t3dhn18-at-instruktsiya.pdf",
-    "MI2_Q4":"https://www.iclim.ru/library/midea-mi2-q4-instruktsiya.pdf",
+    "MI2_Q4":"https://midea-pro.ru/library/midea-mi2-q4dhn18-at-instruktsiya.pdf",
     "MI2_G_DP":"https://www.iclim.ru/library/midea-mi2-gdhn18-at-dp-instruktsiya.pdf",
     "MI2_DL":"https://www.iclim.ru/library/midea-mi2-dldhn18-at-instruktsiya.pdf",
 }
