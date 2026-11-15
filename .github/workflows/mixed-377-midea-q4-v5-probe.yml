@@ -1,0 +1,37 @@
+name: MIXED377 Q4 exact 12 SKU PDF verification
+on:
+  push:
+    paths:
+      - '.github/workflows/mixed-377-midea-q4-v5-probe.yml'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests pymupdf
+      - name: Verify newly indexed Midea MI2 Q4 full family PDF
+        run: |
+          python - <<'PY'
+          import requests,fitz,re
+          urls=[
+          'https://midea-pro.ru/library/midea-mi2-q4dhn18-at-instruktsiya.pdf',
+          'https://www.midea-pro.ru/library/midea-mi2-q4dhn18-at-instruktsiya.pdf']
+          models=['MI2-'+x+'Q4DHN18(At)' for x in ['28','36','45','56','71','80','90','100','112','140','160','180']]
+          def clean(v):return re.sub('[^a-z0-9]','',v.lower())
+          for url in urls:
+              try:
+                  r=requests.get(url,timeout=50,headers={'User-Agent':'Mozilla/5.0','Accept':'application/pdf,*/*'})
+                  print('SOURCE',url,r.status_code,len(r.content),r.url,flush=True)
+                  if not r.content.startswith(b'%PDF-'):continue
+                  with fitz.open(stream=r.content,filetype='pdf') as pdf:
+                      hits={m:[i+1 for i,p in enumerate(pdf) if clean(m) in clean(p.get_text())] for m in models}
+                      print('PDF_PAGES',len(pdf),'MATCHES',{m:v for m,v in hits.items() if v},flush=True)
+                      print('FIRST',pdf[0].get_text()[:700],flush=True)
+              except Exception as e:print('EXCEPTION',str(e)[:200],flush=True)
+          PY
