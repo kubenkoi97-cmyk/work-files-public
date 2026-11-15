@@ -1,0 +1,42 @@
+name: MIXED377 audited Selectel upload pack 2026-11-15 v4
+on:
+  push:
+    paths:
+      - '.github/workflows/mixed-377-selectel-2026-11-15-v4.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF analysis and transport
+        run: python -m pip install -q requests pymupdf
+      - name: Fetch immutable archived v7 PDF materials
+        run: |
+          mkdir -p /tmp/mixed377-2026-11-15
+          gh release download mixed-377-technical-docs-2026-11-14-v7 -p 'MIXED_377_technical_docs_by_series_2026-11-14.zip' -D /tmp/mixed377-2026-11-15
+          sha256sum /tmp/mixed377-2026-11-15/MIXED_377_technical_docs_by_series_2026-11-14.zip
+      - name: Prepare safe package with evidence report per each SKU
+        run: |
+          set -euo pipefail
+          python product-research/catalog-377/techdocs-2026-11-15/build_selectel_pack.py \
+            /tmp/mixed377-2026-11-15/MIXED_377_technical_docs_by_series_2026-11-14.zip \
+            /tmp/mixed377-2026-11-15/MIXED_377_Selectel_PDF_package_2026-11-15_v4.zip \
+            | tee /tmp/mixed377-2026-11-15/BUILD_LOG.txt
+          unzip -t /tmp/mixed377-2026-11-15/MIXED_377_Selectel_PDF_package_2026-11-15_v4.zip | tail -3
+      - name: Publish NEW non-overwriting public release
+        run: |
+          gh release create mixed-377-selectel-package-2026-11-15-v4 \
+            /tmp/mixed377-2026-11-15/MIXED_377_Selectel_PDF_package_2026-11-15_v4.zip \
+            /tmp/mixed377-2026-11-15/MIXED_377_Selectel_PDF_package_2026-11-15_v4.zip.summary.json \
+            --title 'MIXED 377 — audited upload preparation for Selectel (v4, new Midea DP and DL plus IGC DC5)' \
+            --notes 'All 377 SKU rows are covered in REPORTS. Upload only UPLOAD_TO_SELECTEL contents. Model-unverified PDFs are explicitly isolated in REVIEW_ONLY_NOT_FOR_UPLOAD. Links are prospective until real Selectel upload and HTTP check; not all 377 models have technical PDF proof.'
