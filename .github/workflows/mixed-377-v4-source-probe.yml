@@ -1,0 +1,24 @@
+name: MIXED 377 v4 missing-PDF direct verification
+on:
+  push:
+    paths:
+      - '.github/workflows/mixed-377-v4-source-probe.yml'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests pymupdf
+      - name: Verify exact SKU strings across candidate manufacturer PDFs
+        run: python product-research/catalog-377/techdocs-2026-11-15/probe_missing_v4.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mixed-377-v4-probe-results
+          path: /tmp/mixed_v4_probe.json
+          retention-days: 10
