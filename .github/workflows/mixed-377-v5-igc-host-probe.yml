@@ -1,0 +1,36 @@
+name: MIXED377 IGC manufacturer mirror PDF probe
+on:
+  push:
+    paths:
+      - '.github/workflows/mixed-377-v5-igc-host-probe.yml'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests pymupdf
+      - name: Test manufacturer IGC official regional mirrors and PDF applicability
+        run: |
+          python - <<'PY'
+          import requests,fitz,re,concurrent.futures,urllib3
+          urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+          path='/upload/iblock/2fd/g7gqb0wx6uqkoxuz7qf9lnhfzsxzpmks.pdf'
+          hosts=['igc-aircon.com','www.igc-aircon.com','nsk.igc-aircon.com','chel.igc-aircon.com','kzn.igc-aircon.com','spb.igc-aircon.com','msk.igc-aircon.com','www.igc.com.ru']
+          targets=['IMS-4TM28NH(DC5)','IMS-4TM36NH(DC5)','IMS-4TM45NH(DC5)','IMS-4TM56NH(DC5)','IMS-4TM15NH(DC5)']
+          def check(h):
+            url='https://'+h+path
+            try:
+              r=requests.get(url,timeout=25,verify=False,headers={'User-Agent':'Mozilla/5.0'})
+              if r.status_code!=200 or not r.content.startswith(b'%PDF-'):return h,r.status_code,len(r.content),[],r.url
+              with fitz.open(stream=r.content,filetype='pdf') as d:t=re.sub(r'[^A-Z0-9]','', '\n'.join(p.get_text('text') for p in d).upper())
+              return h,200,len(r.content),[m for m in targets if re.sub(r'[^A-Z0-9]','',m.upper()) in t],r.url
+            except Exception as e:return h,'ERROR',str(e)[:140],[],url
+          with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
+            for result in ex.map(check,hosts):print('MIRROR',result,flush=True)
+          PY
