@@ -99,6 +99,31 @@ for group,url in KENTATSU_CANDIDATES.items():
     except Exception as e:
         print("KENTATSU_NEW_MANUAL_ERROR",group,str(e)[:280],flush=True)
 
+# Current Russian-language Midea manuals located after v7. Exact suffix must occur in PDF.
+MIDEA_CANDIDATES={
+    "MI2_Q4C":"https://www.iclim.ru/library/midea-mi2-q4c-instruktsiya.pdf",
+    "MI2_Q1":"https://www.iclim.ru/library/midea-mi2-q1dhn18-at-instruktsiya.pdf",
+    "MI2_T3":"https://www.iclim.ru/library/midea-mi2-t3dhn18-at-instruktsiya.pdf",
+    "MI2_Q4":"https://www.iclim.ru/library/midea-mi2-q4-instruktsiya.pdf",
+    "MI2_G_DP":"https://www.iclim.ru/library/midea-mi2-g-instruktsiya.pdf",
+}
+new_midea={}
+for group,url in MIDEA_CANDIDATES.items():
+    models=[r["model"] for r in rows if r["brand"]=="Midea" and r["series_key"]==group]
+    try:
+        reply=requests.get(url,timeout=80,headers={"User-Agent":"Mozilla/5.0","Accept":"application/pdf"})
+        if not(reply.ok and reply.content.startswith(b"%PDF-")):raise ValueError(f"bad HTTP/PDF {reply.status_code}")
+        checked=proofexact(reply.content,models)
+        correct=[m for m,ok in checked.items() if ok]
+        print("MIDEA_NEW_MANUAL",group,"checked",len(models),"exact",len(correct),"models",correct,flush=True)
+        if correct:
+            name=f"Midea/{group}/{group}_installation_and_user_manual_2026.pdf"
+            if name in oldpdf:raise AssertionError("new documentation path already in release")
+            oldpdf[name]=reply.content
+            new_midea[group]=(name,set(correct),url)
+    except Exception as e:
+        print("MIDEA_NEW_MANUAL_ERROR",group,str(e)[:280],flush=True)
+
 # Reconcile per-model proof names, never infer from folder membership.
 source_paths=collections.defaultdict(list)
 for r in rows:
@@ -113,6 +138,10 @@ for r in rows:
         name,verified,url=new_kentatsu[r["series_key"]]
         names=[name]+names
         r["new_proof"]="DIRECT_2026_KENTATSU_MANUAL_EXACT"
+    elif r["brand"]=="Midea" and r["series_key"] in new_midea and r["model"] in new_midea[r["series_key"]][1]:
+        name,verified,url=new_midea[r["series_key"]]
+        names=[name]+names
+        r["new_proof"]="DIRECT_2026_MIDEA_MANUAL_EXACT"
     elif extra_pdf is not None and r["brand"]=="IGC" and r["series_key"]=="IMS_1T":
         # Replace the superseded excerpt with the clean original exact-model catalog.
         names=[n for n in names if "IMS_1T_catalog.pdf" not in n]
@@ -182,7 +211,7 @@ for n,payload in oldpdf.items():
 readme=f"""MIXED 377 — пакет подготовки загрузки Selectel, 2026-11-15
 All 377 unfilled catalog products appear in REPORTS/ALL_377.csv.
 Immutable source archive v7 SHA256: {sha}
-READY: {sum(x['new_proof'] in ('ARCHIVE_V7_EXACT','DIRECT_MANUFACTURER_CATALOG_2026_EXACT','DIRECT_2026_KENTATSU_MANUAL_EXACT') for x in document_index)} exact technical models.
+READY: {sum(x['new_proof'] in ('ARCHIVE_V7_EXACT','DIRECT_MANUFACTURER_CATALOG_2026_EXACT','DIRECT_2026_KENTATSU_MANUAL_EXACT','DIRECT_2026_MIDEA_MANUAL_EXACT') for x in document_index)} exact technical models.
 DECLARATION ONLY: {sum(x['new_proof']=='DECLARATION_ONLY' for x in document_index)} models, technical manuals still missing.
 NOT MODEL VERIFIED: {sum(x['new_proof']=='NOT_MODEL_VERIFIED' for x in document_index)} models.
 UPLOAD_TO_SELECTEL: {len(upload)} distinct PDF payloads under explicit destination folder paths.
@@ -200,6 +229,7 @@ CRITICAL: 2024 overseas Midea ATOM file is quarantined from v7 due 4.5 vs 1.5 kW
 Pending models cannot be called complete.
 IGC direct source: {EXTRA_1T}
 NEW KENTATSU direct sources: {len(new_kentatsu)} verified PDFs; see REPORTS/NEW_KENTATSU_PDF_SOURCES.csv
+NEW MIDEA direct sources: {len(new_midea)} verified PDFs; see REPORTS/NEW_MIDEA_PDF_SOURCES.csv
 2026 EAEU model listing (not a substitute for technical PDF): https://xn----7sbajahheyaepn1ca0aveqcb0fxl.xn--p1acf/document/eaes-n-ru-d-cnra08v0854326/
 """
 with zipfile.ZipFile(DEST,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=5,allowZip64=True) as z:
@@ -214,19 +244,23 @@ with zipfile.ZipFile(DEST,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=5,a
     z.writestr("REPORTS/NEW_KENTATSU_PDF_SOURCES.csv",writecsv(
         [{"series":g,"source_url":t[2],"new_pdf_filename":t[0].split("/")[-1],"models_confirmed":" | ".join(sorted(t[1]))} for g,t in sorted(new_kentatsu.items())],
         ["series","source_url","new_pdf_filename","models_confirmed"]))
+    z.writestr("REPORTS/NEW_MIDEA_PDF_SOURCES.csv",writecsv(
+        [{"series":g,"source_url":t[2],"new_pdf_filename":t[0].split("/")[-1],"models_confirmed":" | ".join(sorted(t[1]))} for g,t in sorted(new_midea.items())],
+        ["series","source_url","new_pdf_filename","models_confirmed"]))
     z.writestr("README_SELECTEL.txt",readme.encode("utf-8"))
 with zipfile.ZipFile(DEST) as z:
     assert z.testzip() is None
-    assert len([r for r in document_index if r["new_proof"]=="NOT_MODEL_VERIFIED"]) in (101,103)
+    assert sum(r["new_proof"]=="NOT_MODEL_VERIFIED" for r in document_index)+sum(r["new_proof"]=="DECLARATION_ONLY" for r in document_index)+sum(r["new_proof"] in ("ARCHIVE_V7_EXACT","DIRECT_MANUFACTURER_CATALOG_2026_EXACT","DIRECT_2026_KENTATSU_MANUAL_EXACT","DIRECT_2026_MIDEA_MANUAL_EXACT") for r in document_index)==377
     assert len(document_index)==377
 report={
     "source_zip_sha256":sha,"archive":str(DEST),"archive_bytes":DEST.stat().st_size,
-    "products":377,"exact_technical":sum(r["new_proof"] in ("ARCHIVE_V7_EXACT","DIRECT_MANUFACTURER_CATALOG_2026_EXACT","DIRECT_2026_KENTATSU_MANUAL_EXACT") for r in document_index),
+    "products":377,"exact_technical":sum(r["new_proof"] in ("ARCHIVE_V7_EXACT","DIRECT_MANUFACTURER_CATALOG_2026_EXACT","DIRECT_2026_KENTATSU_MANUAL_EXACT","DIRECT_2026_MIDEA_MANUAL_EXACT") for r in document_index),
     "declaration_only":sum(r["new_proof"]=="DECLARATION_ONLY" for r in document_index),
     "unverified":sum(r["new_proof"]=="NOT_MODEL_VERIFIED" for r in document_index),
     "upload_pdf_files":len(upload),"review_pdf_files":len(review),"full_original_catalogs":len(full),
     "new_igc_pdf_downloaded":extra_pdf is not None,
     "new_kentatsu":{g:{"models_confirmed":len(t[1]),"source_url":t[2]} for g,t in new_kentatsu.items()},
+    "new_midea":{g:{"models_confirmed":len(t[1]),"source_url":t[2]} for g,t in new_midea.items()},
     "not_uploaded_to_selectel":True}
 print(json.dumps(report,ensure_ascii=False,indent=2),flush=True)
 pathlib.Path(str(DEST)+".summary.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
