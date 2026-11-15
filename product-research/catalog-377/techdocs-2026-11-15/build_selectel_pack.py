@@ -143,6 +143,25 @@ try:
 except Exception as e:
     print("IGC_4TM_DC5_FAILED",str(e)[:280],flush=True)
 
+# Confirmed IGC IMS 5 original installation manual, exact full SKU on page 4.
+IGC_IMS5="https://iclim.ru/library/igc-ims-5-vnutrennie-bloki-instruktsiya.pdf"
+new_igc_ims5=None
+try:
+    resp=requests.get(IGC_IMS5,timeout=90,headers={"User-Agent":"Mozilla/5.0","Accept":"application/pdf"})
+    if not(resp.ok and resp.content.startswith(b"%PDF-")):raise ValueError(f"non-PDF source: {resp.status_code}")
+    models_ims5=[r["model"] for r in rows if r["brand"]=="IGC" and r["series_key"] in ("IMS_4TM","IMS_QV")]
+    found=proofexact(resp.content,models_ims5)
+    # Exact model + matching same generation; can serve more than one of the 53 code groups.
+    verified={m for m,ok in found.items() if ok}
+    print("IGC_IMS5_EXACT_MODELS",len(verified),sorted(verified),flush=True)
+    expected={"IMS-4TM28NH (DC5)","IMS-4TM36NH(DC5)","IMS-4TM45NH(DC5)","IMS-4TM56NH(DC5)","IMS-QV100NH(DC)"}
+    if not expected <= verified:raise ValueError(f"key IGC models absent: {expected-verified}")
+    p="IGC/IMS_5/IMS_5_installation_and_user_manual_2026.pdf"
+    oldpdf[p]=resp.content
+    new_igc_ims5=(p,verified,IGC_IMS5)
+except Exception as exc:
+    print("IGC_IMS5_NOT_CONFIRMED",str(exc)[:300],flush=True)
+
 # Reconcile per-model proof names, never infer from folder membership.
 source_paths=collections.defaultdict(list)
 for r in rows:
@@ -157,6 +176,9 @@ for r in rows:
         name,verified,url=new_kentatsu[r["series_key"]]
         names=[name]+names
         r["new_proof"]="DIRECT_2026_KENTATSU_MANUAL_EXACT"
+    elif r["brand"]=="IGC" and new_igc_ims5 is not None and r["model"] in new_igc_ims5[1] and r["proof"]!="EXACT_MODEL_TECH_PDF":
+        names=[new_igc_ims5[0]]+names
+        r["new_proof"]="DIRECT_IGC_IMS5_TECH_MANUAL_EXACT"
     elif r["brand"]=="IGC" and r["series_key"]=="IMS_4TM" and new_igc_4tm is not None and r["model"] in new_igc_4tm[1]:
         names=[new_igc_4tm[0]]+names
         r["new_proof"]="DIRECT_IGC_DC5_INSTALL_MANUAL_EXACT"
@@ -233,7 +255,7 @@ for n,payload in oldpdf.items():
 readme=f"""MIXED 377 — пакет подготовки загрузки Selectel, 2026-11-15
 All 377 unfilled catalog products appear in REPORTS/ALL_377.csv.
 Immutable source archive v7 SHA256: {sha}
-READY: {sum(x['new_proof'] in ('ARCHIVE_V7_EXACT','DIRECT_MANUFACTURER_CATALOG_2026_EXACT','DIRECT_2026_KENTATSU_MANUAL_EXACT','DIRECT_2026_MIDEA_MANUAL_EXACT','DIRECT_IGC_DC5_INSTALL_MANUAL_EXACT') for x in document_index)} exact technical models.
+READY: {sum(x['new_proof'] in ('ARCHIVE_V7_EXACT','DIRECT_MANUFACTURER_CATALOG_2026_EXACT','DIRECT_2026_KENTATSU_MANUAL_EXACT','DIRECT_2026_MIDEA_MANUAL_EXACT','DIRECT_IGC_DC5_INSTALL_MANUAL_EXACT','DIRECT_IGC_IMS5_TECH_MANUAL_EXACT') for x in document_index)} exact technical models.
 DECLARATION ONLY: {sum(x['new_proof']=='DECLARATION_ONLY' for x in document_index)} models, technical manuals still missing.
 NOT MODEL VERIFIED: {sum(x['new_proof']=='NOT_MODEL_VERIFIED' for x in document_index)} models.
 UPLOAD_TO_SELECTEL: {len(upload)} distinct PDF payloads under explicit destination folder paths.
@@ -252,7 +274,8 @@ Pending models cannot be called complete.
 IGC direct source: {EXTRA_1T}
 NEW KENTATSU direct sources: {len(new_kentatsu)} verified PDFs; see REPORTS/NEW_KENTATSU_PDF_SOURCES.csv
 NEW MIDEA direct sources: {len(new_midea)} verified PDFs; see REPORTS/NEW_MIDEA_PDF_SOURCES.csv
-IGC DC5 manual: {url_4tm if new_igc_4tm is not None else "not verified"}; SSL chain was not verified on origin, check against independent manufacturer catalogue
+IGC DC5 manual: {url_4tm if new_igc_4tm is not None else "not verified"}; SSL chain was not verified on origin.
+IGC IMS 5 confirmed: {IGC_IMS5 if new_igc_ims5 is not None else "not found"}; see REPORTS/IGC_IMS5_MODELS.csv
 2026 EAEU model listing (not a substitute for technical PDF): https://xn----7sbajahheyaepn1ca0aveqcb0fxl.xn--p1acf/document/eaes-n-ru-d-cnra08v0854326/
 """
 with zipfile.ZipFile(DEST,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=5,allowZip64=True) as z:
@@ -270,14 +293,17 @@ with zipfile.ZipFile(DEST,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=5,a
     z.writestr("REPORTS/NEW_MIDEA_PDF_SOURCES.csv",writecsv(
         [{"series":g,"source_url":t[2],"new_pdf_filename":t[0].split("/")[-1],"models_confirmed":" | ".join(sorted(t[1]))} for g,t in sorted(new_midea.items())],
         ["series","source_url","new_pdf_filename","models_confirmed"]))
+    z.writestr("REPORTS/IGC_IMS5_MODELS.csv",writecsv(
+        [{"source_url":new_igc_ims5[2],"pdf_name":new_igc_ims5[0],"model":m} for m in sorted(new_igc_ims5[1])] if new_igc_ims5 else [],
+        ["source_url","pdf_name","model"]))
     z.writestr("README_SELECTEL.txt",readme.encode("utf-8"))
 with zipfile.ZipFile(DEST) as z:
     assert z.testzip() is None
-    assert sum(r["new_proof"]=="NOT_MODEL_VERIFIED" for r in document_index)+sum(r["new_proof"]=="DECLARATION_ONLY" for r in document_index)+sum(r["new_proof"] in ("ARCHIVE_V7_EXACT","DIRECT_MANUFACTURER_CATALOG_2026_EXACT","DIRECT_2026_KENTATSU_MANUAL_EXACT","DIRECT_2026_MIDEA_MANUAL_EXACT","DIRECT_IGC_DC5_INSTALL_MANUAL_EXACT") for r in document_index)==377
+    assert sum(r["new_proof"]=="NOT_MODEL_VERIFIED" for r in document_index)+sum(r["new_proof"]=="DECLARATION_ONLY" for r in document_index)+sum(r["new_proof"] in ("ARCHIVE_V7_EXACT","DIRECT_MANUFACTURER_CATALOG_2026_EXACT","DIRECT_2026_KENTATSU_MANUAL_EXACT","DIRECT_2026_MIDEA_MANUAL_EXACT","DIRECT_IGC_DC5_INSTALL_MANUAL_EXACT","DIRECT_IGC_IMS5_TECH_MANUAL_EXACT") for r in document_index)==377
     assert len(document_index)==377
 report={
     "source_zip_sha256":sha,"archive":str(DEST),"archive_bytes":DEST.stat().st_size,
-    "products":377,"exact_technical":sum(r["new_proof"] in ("ARCHIVE_V7_EXACT","DIRECT_MANUFACTURER_CATALOG_2026_EXACT","DIRECT_2026_KENTATSU_MANUAL_EXACT","DIRECT_2026_MIDEA_MANUAL_EXACT","DIRECT_IGC_DC5_INSTALL_MANUAL_EXACT") for r in document_index),
+    "products":377,"exact_technical":sum(r["new_proof"] in ("ARCHIVE_V7_EXACT","DIRECT_MANUFACTURER_CATALOG_2026_EXACT","DIRECT_2026_KENTATSU_MANUAL_EXACT","DIRECT_2026_MIDEA_MANUAL_EXACT","DIRECT_IGC_DC5_INSTALL_MANUAL_EXACT","DIRECT_IGC_IMS5_TECH_MANUAL_EXACT") for r in document_index),
     "declaration_only":sum(r["new_proof"]=="DECLARATION_ONLY" for r in document_index),
     "unverified":sum(r["new_proof"]=="NOT_MODEL_VERIFIED" for r in document_index),
     "upload_pdf_files":len(upload),"review_pdf_files":len(review),"full_original_catalogs":len(full),
@@ -285,6 +311,7 @@ report={
     "new_kentatsu":{g:{"models_confirmed":len(t[1]),"source_url":t[2]} for g,t in new_kentatsu.items()},
     "new_midea":{g:{"models_confirmed":len(t[1]),"source_url":t[2]} for g,t in new_midea.items()},
     "new_igc_4tm":({"models_confirmed":len(new_igc_4tm[1]),"source_url":new_igc_4tm[2],"tls_verified":False} if new_igc_4tm else None),
+    "new_igc_ims5":({"models_confirmed":len(new_igc_ims5[1]),"source_url":new_igc_ims5[2]} if new_igc_ims5 else None),
     "not_uploaded_to_selectel":True}
 print(json.dumps(report,ensure_ascii=False,indent=2),flush=True)
 pathlib.Path(str(DEST)+".summary.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
