@@ -1,0 +1,32 @@
+name: MIXED377 2026 Midea original regional manuals probe
+on:
+  push:
+    paths:
+      - '.github/workflows/mixed-377-midea-exact-pdf-probe.yml'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Confirm actual PDF response before updating 377 upload pack
+        shell: bash
+        run: |
+          python - <<'PY'
+          import urllib.request,urllib.error
+          candidates={
+             "MI2_Q4C":"midea-mi2-q4c-instruktsiya.pdf",
+             "MI2_Q1":"midea-mi2-q1dhn18-at-instruktsiya.pdf",
+             "MI2_T3":"midea-mi2-t3dhn18-at-instruktsiya.pdf",
+             "MI2_Q4":"midea-mi2-q4-instruktsiya.pdf",
+             "MI2_G_DP":"midea-mi2-g-instruktsiya.pdf",
+             "MI2_DL":"midea-mi2-dl-instruktsiya.pdf"}
+          for group,filename in candidates.items():
+              url="https://www.iclim.ru/library/"+filename
+              try:
+                  req=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0","Accept":"application/pdf"})
+                  with urllib.request.urlopen(req,timeout=20) as r:
+                      print(group,url,r.status,r.read(8),r.headers.get("Content-Type"),flush=True)
+              except Exception as exc:print(group,url,type(exc).__name__,str(exc)[:180],flush=True)
+          PY
