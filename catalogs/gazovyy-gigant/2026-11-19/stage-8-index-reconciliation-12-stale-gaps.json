@@ -1,0 +1,21 @@
+{
+  "stage": 8,
+  "date": "2026-11-19",
+  "kind": "index-reconciliation-not-new-specifications",
+  "products_in_current_catalog": 347,
+  "products_original": 367,
+  "red_excluded": 20,
+  "preliminary_open": 1171,
+  "already_populated_but_stale_in_checklist": 12,
+  "truly_open": 1159,
+  "different_initial_and_current_row_numbers": 901,
+  "affected_models": {
+    "MVC-M785WV2GN1": 6,
+    "MVC-M850WV2GN1": 6
+  },
+  "original_index_column": "Исходная строка",
+  "current_index_column": "Позиция в наполнении 347",
+  "source": "stage-7-mixed workbook and stage-7-open-checks",
+  "review_result": "No existing characteristics overwritten. Corrected open-check ledger based on exact model name and target field.",
+  "warning": "1159 checks still open. Do not call catalog final."
+}
