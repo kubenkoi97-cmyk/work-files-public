@@ -1,0 +1,995 @@
+Исходная строка,Бренд,Модель,Поле,Было,Стало,Исходный атрибут,Тип источника,Ссылка,Причина
+85,Bosch,MDCI 22-3,"Уровень шума, дБ(А)",,59,Уровень шума,HTML,https://www.klimat-master.ru/goods/bosch-mdci-22-3/,
+85,Bosch,MDCI 22-3,Хладагент [PROP_290],,R410A,Марка хладагента (фреона),HTML,https://www.klimat-master.ru/goods/bosch-mdci-22-3/,
+85,Bosch,MDCI 22-3,"Электропитание, В",,3 Фазы / 400 В / 50 Гц,Электропитание,HTML,https://www.klimat-master.ru/goods/bosch-mdci-22-3/,
+85,Bosch,MDCI 22-3,Кол-во подключаемых блоков,,11,Количество подключаемых внутренних блоков,HTML,https://www.klimat-master.ru/goods/bosch-mdci-22-3/,
+85,Bosch,MDCI 22-3,Диаметр труб хладагента [PROP_25],,"9,52/19,05",Диаметр жидкостной магистрали; Диаметр газовой магистрали,HTML,https://www.klimat-master.ru/goods/bosch-mdci-22-3/,По двум отдельным источниковым полям: жидкостная/газовая
+81,Bosch,MDCI 12-3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Bosch-MDCI-12-3/,
+81,Bosch,MDCI 12-3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+46,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Bosch-MDCI-12-3/,
+81,Bosch,MDCI 12-3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-15...+27,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Bosch-MDCI-12-3/,
+81,Bosch,MDCI 12-3,Кол-во подключаемых блоков,,6,Max кол-во комнат,HTML,https://mircli.ru/Bosch-MDCI-12-3/,
+79,Bosch,MDCI 14-1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Bosch-MDCI-14-1/,
+79,Bosch,MDCI 14-1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+46,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Bosch-MDCI-14-1/,
+79,Bosch,MDCI 14-1,Диапазон рабочих темп. нагрев. °С [PROP_200],,-15...+27,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Bosch-MDCI-14-1/,
+79,Bosch,MDCI 14-1,Кол-во подключаемых блоков,,6,Max кол-во комнат,HTML,https://mircli.ru/Bosch-MDCI-14-1/,
+82,Bosch,MDCI 14-3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Bosch-MDCI-14-3/,
+82,Bosch,MDCI 14-3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+46,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Bosch-MDCI-14-3/,
+82,Bosch,MDCI 14-3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-15...+27,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Bosch-MDCI-14-3/,
+82,Bosch,MDCI 14-3,Кол-во подключаемых блоков,,6,Max кол-во комнат,HTML,https://mircli.ru/Bosch-MDCI-14-3/,
+83,Bosch,MDCI 16-3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Bosch-MDCI-16-3/,
+83,Bosch,MDCI 16-3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+46,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Bosch-MDCI-16-3/,
+83,Bosch,MDCI 16-3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-15...+27,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Bosch-MDCI-16-3/,
+83,Bosch,MDCI 16-3,Кол-во подключаемых блоков,,7,Max кол-во комнат,HTML,https://mircli.ru/Bosch-MDCI-16-3/,
+84,Bosch,MDCI 18-3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Bosch-MDCI-18-3/,
+84,Bosch,MDCI 18-3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Bosch-MDCI-18-3/,
+84,Bosch,MDCI 18-3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-15...+27,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Bosch-MDCI-18-3/,
+84,Bosch,MDCI 18-3,Кол-во подключаемых блоков,,9,Max кол-во комнат,HTML,https://mircli.ru/Bosch-MDCI-18-3/,
+80,Bosch,MDCI 16-1,"Охлаждение, кВт",,16,Охлаждение (кВт),HTML,https://xn----btbhecoan1adge2acqq1d9e.xn--90ais/naruzhnyy-blok-vrf-sistemy-bosch-mdci-16-1,
+80,Bosch,MDCI 16-1,Инвертор,,да,Инвертор,HTML,https://xn----btbhecoan1adge2acqq1d9e.xn--90ais/naruzhnyy-blok-vrf-sistemy-bosch-mdci-16-1,
+70,Daikin,REMQ5U,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-REMQ5U/,
+70,Daikin,REMQ5U,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-REMQ5U/,
+70,Daikin,REMQ5U,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-REMQ5U/,
+64,Daikin,RXYQ10U/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYQ10U-40/,
+64,Daikin,RXYQ10U/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYQ10U-40/,
+64,Daikin,RXYQ10U/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYQ10U-40/,
+65,Daikin,RXYQ12U/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYQ12U-40/,
+65,Daikin,RXYQ12U/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYQ12U-40/,
+65,Daikin,RXYQ12U/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYQ12U-40/,
+66,Daikin,RXYQ14U/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYQ14U-40/,
+66,Daikin,RXYQ14U/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYQ14U-40/,
+66,Daikin,RXYQ14U/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYQ14U-40/,
+67,Daikin,RXYQ16U/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYQ16U-40/,
+67,Daikin,RXYQ16U/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYQ16U-40/,
+67,Daikin,RXYQ16U/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYQ16U-40/,
+68,Daikin,RXYQ18U/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYQ18U-40/,
+68,Daikin,RXYQ18U/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYQ18U-40/,
+68,Daikin,RXYQ18U/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYQ18U-40/,
+69,Daikin,RXYQ20U/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYQ20U-40/,
+69,Daikin,RXYQ20U/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYQ20U-40/,
+69,Daikin,RXYQ20U/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYQ20U-40/,
+63,Daikin,RXYQ8U/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYQ8U-40/,
+63,Daikin,RXYQ8U/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYQ8U-40/,
+61,Daikin,RXYSQ10TY/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYSQ10TY-40/,
+61,Daikin,RXYSQ10TY/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+52,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYSQ10TY-40/,
+61,Daikin,RXYSQ10TY/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYSQ10TY-40/,
+62,Daikin,RXYSQ12TY/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYSQ12TY-40/,
+62,Daikin,RXYSQ12TY/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+52,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYSQ12TY-40/,
+62,Daikin,RXYSQ12TY/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYSQ12TY-40/,
+54,Daikin,RXYSQ4T8V/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYSQ4T8V-40/,
+54,Daikin,RXYSQ4T8V/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+46,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYSQ4T8V-40/,
+54,Daikin,RXYSQ4T8V/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYSQ4T8V-40/,
+57,Daikin,RXYSQ4T8Y/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYSQ4T8Y-40/,
+57,Daikin,RXYSQ4T8Y/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+46,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYSQ4T8Y-40/,
+57,Daikin,RXYSQ4T8Y/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYSQ4T8Y-40/,
+55,Daikin,RXYSQ5T8V/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYSQ5T8V-40/,
+55,Daikin,RXYSQ5T8V/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+46,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYSQ5T8V-40/,
+55,Daikin,RXYSQ5T8V/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYSQ5T8V-40/,
+58,Daikin,RXYSQ5T8Y/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYSQ5T8Y-40/,
+58,Daikin,RXYSQ5T8Y/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+46,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RXYSQ5T8Y-40/,
+58,Daikin,RXYSQ5T8Y/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYSQ5T8Y-40/,
+56,Daikin,RXYSQ6T8V/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYSQ6T8V-40/,
+56,Daikin,RXYSQ6T8V/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYSQ6T8V-40/,
+59,Daikin,RXYSQ6T8Y/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYSQ6T8Y-40/,
+59,Daikin,RXYSQ6T8Y/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYSQ6T8Y-40/,
+60,Daikin,RXYSQ8TY/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RXYSQ8TY-40/,
+60,Daikin,RXYSQ8TY/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RXYSQ8TY-40/,
+72,Daikin,RYMQ10U,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RYMQ10U/,
+72,Daikin,RYMQ10U,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RYMQ10U/,
+72,Daikin,RYMQ10U,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RYMQ10U/,
+73,Daikin,RYMQ12U,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RYMQ12U/,
+73,Daikin,RYMQ12U,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RYMQ12U/,
+73,Daikin,RYMQ12U,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RYMQ12U/,
+74,Daikin,RYMQ14U,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RYMQ14U/,
+74,Daikin,RYMQ14U,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RYMQ14U/,
+74,Daikin,RYMQ14U,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RYMQ14U/,
+75,Daikin,RYMQ16U,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RYMQ16U/,
+75,Daikin,RYMQ16U,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RYMQ16U/,
+75,Daikin,RYMQ16U,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RYMQ16U/,
+76,Daikin,RYMQ18U,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RYMQ18U/,
+76,Daikin,RYMQ18U,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RYMQ18U/,
+76,Daikin,RYMQ18U,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RYMQ18U/,
+77,Daikin,RYMQ20U,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RYMQ20U/,
+77,Daikin,RYMQ20U,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+43,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Daikin-RYMQ20U/,
+77,Daikin,RYMQ20U,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RYMQ20U/,
+71,Daikin,RYMQ8U,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Daikin-RYMQ8U/,
+71,Daikin,RYMQ8U,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Daikin-RYMQ8U/,
+103,Kentatsu,KTRB1010HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB1010HZAN3/,
+103,Kentatsu,KTRB1010HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB1010HZAN3/,
+103,Kentatsu,KTRB1010HZAN3,Кол-во подключаемых блоков,,59,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB1010HZAN3/,
+118,Kentatsu,KTRB1010HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB1010HZAN3-i/,
+118,Kentatsu,KTRB1010HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB1010HZAN3-i/,
+118,Kentatsu,KTRB1010HZAN3-i,Кол-во подключаемых блоков,,59,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB1010HZAN3-i/,
+89,Kentatsu,KTRB250HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB250HZAN3/,
+89,Kentatsu,KTRB250HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB250HZAN3/,
+89,Kentatsu,KTRB250HZAN3,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB250HZAN3/,
+104,Kentatsu,KTRB250HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB250HZAN3-i/,
+104,Kentatsu,KTRB250HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB250HZAN3-i/,
+104,Kentatsu,KTRB250HZAN3-i,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB250HZAN3-i/,
+90,Kentatsu,KTRB290HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB290HZAN3/,
+90,Kentatsu,KTRB290HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB290HZAN3/,
+90,Kentatsu,KTRB290HZAN3,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB290HZAN3/,
+105,Kentatsu,KTRB290HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB290HZAN3-i/,
+105,Kentatsu,KTRB290HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB290HZAN3-i/,
+105,Kentatsu,KTRB290HZAN3-i,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB290HZAN3-i/,
+91,Kentatsu,KTRB340HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB340HZAN3/,
+91,Kentatsu,KTRB340HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB340HZAN3/,
+91,Kentatsu,KTRB340HZAN3,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB340HZAN3/,
+106,Kentatsu,KTRB340HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB340HZAN3-i/,
+106,Kentatsu,KTRB340HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB340HZAN3-i/,
+106,Kentatsu,KTRB340HZAN3-i,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB340HZAN3-i/,
+92,Kentatsu,KTRB400HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB400HZAN3/,
+92,Kentatsu,KTRB400HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB400HZAN3/,
+92,Kentatsu,KTRB400HZAN3,Кол-во подключаемых блоков,,23,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB400HZAN3/,
+107,Kentatsu,KTRB400HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB400HZAN3-i/,
+107,Kentatsu,KTRB400HZAN3-i,Кол-во подключаемых блоков,,23,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB400HZAN3-i/,
+93,Kentatsu,KTRB450HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB450HZAN3/,
+93,Kentatsu,KTRB450HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB450HZAN3/,
+93,Kentatsu,KTRB450HZAN3,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB450HZAN3/,
+108,Kentatsu,KTRB450HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB450HZAN3-i/,
+108,Kentatsu,KTRB450HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB450HZAN3-i/,
+108,Kentatsu,KTRB450HZAN3-i,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB450HZAN3-i/,
+94,Kentatsu,KTRB500HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB500HZAN3/,
+94,Kentatsu,KTRB500HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB500HZAN3/,
+94,Kentatsu,KTRB500HZAN3,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB500HZAN3/,
+109,Kentatsu,KTRB500HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB500HZAN3-i/,
+109,Kentatsu,KTRB500HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB500HZAN3-i/,
+109,Kentatsu,KTRB500HZAN3-i,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB500HZAN3-i/,
+95,Kentatsu,KTRB560HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB560HZAN3/,
+95,Kentatsu,KTRB560HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB560HZAN3/,
+95,Kentatsu,KTRB560HZAN3,Кол-во подключаемых блоков,,33,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB560HZAN3/,
+110,Kentatsu,KTRB560HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB560HZAN3-i/,
+110,Kentatsu,KTRB560HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB560HZAN3-i/,
+110,Kentatsu,KTRB560HZAN3-i,Кол-во подключаемых блоков,,33,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB560HZAN3-i/,
+96,Kentatsu,KTRB615HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB615HZAN3/,
+96,Kentatsu,KTRB615HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB615HZAN3/,
+96,Kentatsu,KTRB615HZAN3,Кол-во подключаемых блоков,,36,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB615HZAN3/,
+111,Kentatsu,KTRB615HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB615HZAN3-i/,
+111,Kentatsu,KTRB615HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB615HZAN3-i/,
+111,Kentatsu,KTRB615HZAN3-i,Кол-во подключаемых блоков,,36,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB615HZAN3-i/,
+97,Kentatsu,KTRB670HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB670HZAN3/,
+97,Kentatsu,KTRB670HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB670HZAN3/,
+97,Kentatsu,KTRB670HZAN3,Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB670HZAN3/,
+112,Kentatsu,KTRB670HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB670HZAN3-i/,
+112,Kentatsu,KTRB670HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB670HZAN3-i/,
+112,Kentatsu,KTRB670HZAN3-i,Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB670HZAN3-i/,
+98,Kentatsu,KTRB730HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB730HZAN3/,
+98,Kentatsu,KTRB730HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB730HZAN3/,
+98,Kentatsu,KTRB730HZAN3,Кол-во подключаемых блоков,,43,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB730HZAN3/,
+113,Kentatsu,KTRB730HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB730HZAN3-i/,
+113,Kentatsu,KTRB730HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB730HZAN3-i/,
+113,Kentatsu,KTRB730HZAN3-i,Кол-во подключаемых блоков,,43,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB730HZAN3-i/,
+99,Kentatsu,KTRB785HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB785HZAN3/,
+99,Kentatsu,KTRB785HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB785HZAN3/,
+99,Kentatsu,KTRB785HZAN3,Кол-во подключаемых блоков,,46,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB785HZAN3/,
+114,Kentatsu,KTRB785HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB785HZAN3-i/,
+114,Kentatsu,KTRB785HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB785HZAN3-i/,
+114,Kentatsu,KTRB785HZAN3-i,Кол-во подключаемых блоков,,46,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB785HZAN3-i/,
+100,Kentatsu,KTRB850HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB850HZAN3/,
+100,Kentatsu,KTRB850HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB850HZAN3/,
+100,Kentatsu,KTRB850HZAN3,Кол-во подключаемых блоков,,50,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB850HZAN3/,
+115,Kentatsu,KTRB850HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB850HZAN3-i/,
+115,Kentatsu,KTRB850HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB850HZAN3-i/,
+115,Kentatsu,KTRB850HZAN3-i,Кол-во подключаемых блоков,,50,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB850HZAN3-i/,
+101,Kentatsu,KTRB900HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB900HZAN3/,
+101,Kentatsu,KTRB900HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB900HZAN3/,
+101,Kentatsu,KTRB900HZAN3,Кол-во подключаемых блоков,,53,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB900HZAN3/,
+116,Kentatsu,KTRB900HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB900HZAN3-i/,
+116,Kentatsu,KTRB900HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB900HZAN3-i/,
+116,Kentatsu,KTRB900HZAN3-i,Кол-во подключаемых блоков,,53,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB900HZAN3-i/,
+102,Kentatsu,KTRB950HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB950HZAN3/,
+102,Kentatsu,KTRB950HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB950HZAN3/,
+102,Kentatsu,KTRB950HZAN3,Кол-во подключаемых блоков,,56,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB950HZAN3/,
+117,Kentatsu,KTRB950HZAN3-i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KTRB950HZAN3-i/,
+117,Kentatsu,KTRB950HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KTRB950HZAN3-i/,
+117,Kentatsu,KTRB950HZAN3-i,Кол-во подключаемых блоков,,56,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KTRB950HZAN3-i/,
+171,Kentatsu,KVAG1010CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG1010CZAN3/,
+171,Kentatsu,KVAG1010CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG1010CZAN3/,
+171,Kentatsu,KVAG1010CZAN3,Кол-во подключаемых блоков,,59,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG1010CZAN3/,
+156,Kentatsu,KVAG1010HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG1010HZAN3/,
+156,Kentatsu,KVAG1010HZAN3,Кол-во подключаемых блоков,,59,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG1010HZAN3/,
+157,Kentatsu,KVAG250CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG250CZAN3/,
+157,Kentatsu,KVAG250CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG250CZAN3/,
+157,Kentatsu,KVAG250CZAN3,Кол-во подключаемых блоков,,14,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG250CZAN3/,
+142,Kentatsu,KVAG250HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG250HZAN3/,
+142,Kentatsu,KVAG250HZAN3,Кол-во подключаемых блоков,,14,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG250HZAN3/,
+158,Kentatsu,KVAG290CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG290CZAN3/,
+158,Kentatsu,KVAG290CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG290CZAN3/,
+158,Kentatsu,KVAG290CZAN3,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG290CZAN3/,
+143,Kentatsu,KVAG290HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG290HZAN3/,
+143,Kentatsu,KVAG290HZAN3,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG290HZAN3/,
+159,Kentatsu,KVAG340CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG340CZAN3/,
+159,Kentatsu,KVAG340CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG340CZAN3/,
+159,Kentatsu,KVAG340CZAN3,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG340CZAN3/,
+144,Kentatsu,KVAG340HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG340HZAN3/,
+144,Kentatsu,KVAG340HZAN3,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG340HZAN3/,
+160,Kentatsu,KVAG400CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG400CZAN3/,
+160,Kentatsu,KVAG400CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG400CZAN3/,
+160,Kentatsu,KVAG400CZAN3,Кол-во подключаемых блоков,,23,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG400CZAN3/,
+145,Kentatsu,KVAG400HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG400HZAN3/,
+145,Kentatsu,KVAG400HZAN3,Кол-во подключаемых блоков,,23,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG400HZAN3/,
+161,Kentatsu,KVAG450CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG450CZAN3/,
+161,Kentatsu,KVAG450CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG450CZAN3/,
+161,Kentatsu,KVAG450CZAN3,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG450CZAN3/,
+146,Kentatsu,KVAG450HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG450HZAN3/,
+146,Kentatsu,KVAG450HZAN3,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG450HZAN3/,
+162,Kentatsu,KVAG500CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG500CZAN3/,
+162,Kentatsu,KVAG500CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG500CZAN3/,
+162,Kentatsu,KVAG500CZAN3,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG500CZAN3/,
+147,Kentatsu,KVAG500HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG500HZAN3/,
+147,Kentatsu,KVAG500HZAN3,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG500HZAN3/,
+163,Kentatsu,KVAG560CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG560CZAN3/,
+163,Kentatsu,KVAG560CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG560CZAN3/,
+163,Kentatsu,KVAG560CZAN3,Кол-во подключаемых блоков,,33,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG560CZAN3/,
+148,Kentatsu,KVAG560HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG560HZAN3/,
+148,Kentatsu,KVAG560HZAN3,Кол-во подключаемых блоков,,33,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG560HZAN3/,
+164,Kentatsu,KVAG615CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG615CZAN3/,
+164,Kentatsu,KVAG615CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG615CZAN3/,
+164,Kentatsu,KVAG615CZAN3,Кол-во подключаемых блоков,,36,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG615CZAN3/,
+149,Kentatsu,KVAG615HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG615HZAN3/,
+149,Kentatsu,KVAG615HZAN3,Кол-во подключаемых блоков,,36,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG615HZAN3/,
+165,Kentatsu,KVAG680CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG680CZAN3/,
+165,Kentatsu,KVAG680CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG680CZAN3/,
+165,Kentatsu,KVAG680CZAN3,Кол-во подключаемых блоков,,40,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG680CZAN3/,
+150,Kentatsu,KVAG680HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG680HZAN3/,
+150,Kentatsu,KVAG680HZAN3,Кол-во подключаемых блоков,,40,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG680HZAN3/,
+166,Kentatsu,KVAG730CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG730CZAN3/,
+166,Kentatsu,KVAG730CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG730CZAN3/,
+166,Kentatsu,KVAG730CZAN3,Кол-во подключаемых блоков,,42,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG730CZAN3/,
+151,Kentatsu,KVAG730HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG730HZAN3/,
+151,Kentatsu,KVAG730HZAN3,Кол-во подключаемых блоков,,42,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG730HZAN3/,
+167,Kentatsu,KVAG800CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG800CZAN3/,
+167,Kentatsu,KVAG800CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG800CZAN3/,
+167,Kentatsu,KVAG800CZAN3,Кол-во подключаемых блоков,,46,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG800CZAN3/,
+152,Kentatsu,KVAG800HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG800HZAN3/,
+152,Kentatsu,KVAG800HZAN3,Кол-во подключаемых блоков,,46,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG800HZAN3/,
+168,Kentatsu,KVAG850CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG850CZAN3/,
+168,Kentatsu,KVAG850CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG850CZAN3/,
+168,Kentatsu,KVAG850CZAN3,Кол-во подключаемых блоков,,49,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG850CZAN3/,
+153,Kentatsu,KVAG850HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG850HZAN3/,
+153,Kentatsu,KVAG850HZAN3,Кол-во подключаемых блоков,,49,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG850HZAN3/,
+169,Kentatsu,KVAG900CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG900CZAN3/,
+169,Kentatsu,KVAG900CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG900CZAN3/,
+169,Kentatsu,KVAG900CZAN3,Кол-во подключаемых блоков,,52,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG900CZAN3/,
+154,Kentatsu,KVAG900HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG900HZAN3/,
+154,Kentatsu,KVAG900HZAN3,Кол-во подключаемых блоков,,52,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG900HZAN3/,
+170,Kentatsu,KVAG950CZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG950CZAN3/,
+170,Kentatsu,KVAG950CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAG950CZAN3/,
+170,Kentatsu,KVAG950CZAN3,Кол-во подключаемых блоков,,56,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG950CZAN3/,
+155,Kentatsu,KVAG950HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAG950HZAN3/,
+155,Kentatsu,KVAG950HZAN3,Кол-во подключаемых блоков,,56,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAG950HZAN3/,
+141,Kentatsu,KVAH1010HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAH1010HZAN3/,
+141,Kentatsu,KVAH1010HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAH1010HZAN3/,
+141,Kentatsu,KVAH1010HZAN3,Кол-во подключаемых блоков,,59,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAH1010HZAN3/,
+135,Kentatsu,KVAH250HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAH250HZAN3/,
+135,Kentatsu,KVAH250HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAH250HZAN3/,
+135,Kentatsu,KVAH250HZAN3,Кол-во подключаемых блоков,,14,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAH250HZAN3/,
+136,Kentatsu,KVAH340HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAH340HZAN3/,
+136,Kentatsu,KVAH340HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAH340HZAN3/,
+136,Kentatsu,KVAH340HZAN3,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAH340HZAN3/,
+137,Kentatsu,KVAH730HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAH730HZAN3/,
+137,Kentatsu,KVAH730HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAH730HZAN3/,
+137,Kentatsu,KVAH730HZAN3,Кол-во подключаемых блоков,,42,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAH730HZAN3/,
+138,Kentatsu,KVAH800HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAH800HZAN3/,
+138,Kentatsu,KVAH800HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAH800HZAN3/,
+138,Kentatsu,KVAH800HZAN3,Кол-во подключаемых блоков,,46,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAH800HZAN3/,
+139,Kentatsu,KVAH900HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAH900HZAN3/,
+139,Kentatsu,KVAH900HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAH900HZAN3/,
+139,Kentatsu,KVAH900HZAN3,Кол-во подключаемых блоков,,52,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAH900HZAN3/,
+140,Kentatsu,KVAH950HZAN3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAH950HZAN3/,
+140,Kentatsu,KVAH950HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAH950HZAN3/,
+140,Kentatsu,KVAH950HZAN3,Кол-во подключаемых блоков,,56,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAH950HZAN3/,
+126,Kentatsu,KVAM100HZAN1i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM100HZAN1i/,
+126,Kentatsu,KVAM100HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM100HZAN1i/,
+126,Kentatsu,KVAM100HZAN1i,Кол-во подключаемых блоков,,8,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM100HZAN1i/,
+127,Kentatsu,KVAM120HZAN1i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM120HZAN1i/,
+127,Kentatsu,KVAM120HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM120HZAN1i/,
+127,Kentatsu,KVAM120HZAN1i,Кол-во подключаемых блоков,,10,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM120HZAN1i/,
+130,Kentatsu,KVAM120HZAN3i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM120HZAN3i/,
+130,Kentatsu,KVAM120HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM120HZAN3i/,
+130,Kentatsu,KVAM120HZAN3i,Кол-во подключаемых блоков,,7,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM120HZAN3i/,
+128,Kentatsu,KVAM140HZAN1i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM140HZAN1i/,
+128,Kentatsu,KVAM140HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM140HZAN1i/,
+128,Kentatsu,KVAM140HZAN1i,Кол-во подключаемых блоков,,12,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM140HZAN1i/,
+131,Kentatsu,KVAM140HZAN3i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM140HZAN3i/,
+131,Kentatsu,KVAM140HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM140HZAN3i/,
+131,Kentatsu,KVAM140HZAN3i,Кол-во подключаемых блоков,,8,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM140HZAN3i/,
+129,Kentatsu,KVAM160HZAN1i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM160HZAN1i/,
+129,Kentatsu,KVAM160HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM160HZAN1i/,
+129,Kentatsu,KVAM160HZAN1i,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM160HZAN1i/,
+132,Kentatsu,KVAM160HZAN3i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM160HZAN3i/,
+132,Kentatsu,KVAM160HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM160HZAN3i/,
+132,Kentatsu,KVAM160HZAN3i,Кол-во подключаемых блоков,,9,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM160HZAN3i/,
+133,Kentatsu,KVAM220HZAN3i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM220HZAN3i/,
+133,Kentatsu,KVAM220HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM220HZAN3i/,
+133,Kentatsu,KVAM220HZAN3i,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM220HZAN3i/,
+134,Kentatsu,KVAM260HZAN3i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM260HZAN3i/,
+134,Kentatsu,KVAM260HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM260HZAN3i/,
+134,Kentatsu,KVAM260HZAN3i,Кол-во подключаемых блоков,,22,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM260HZAN3i/,
+125,Kentatsu,KVAM80HZAN1i,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KVAM80HZAN1i/,
+125,Kentatsu,KVAM80HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+49,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KVAM80HZAN1i/,
+125,Kentatsu,KVAM80HZAN1i,Кол-во подключаемых блоков,,6,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KVAM80HZAN1i/,
+120,Kentatsu,KYRA100HZAN1-A,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KYRA100HZAN1-A/,
+120,Kentatsu,KYRA100HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KYRA100HZAN1-A/,
+120,Kentatsu,KYRA100HZAN1-A,Кол-во подключаемых блоков,,6,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KYRA100HZAN1-A/,
+121,Kentatsu,KYRA120HZAN1-A,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KYRA120HZAN1-A/,
+121,Kentatsu,KYRA120HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KYRA120HZAN1-A/,
+121,Kentatsu,KYRA120HZAN1-A,Кол-во подключаемых блоков,,7,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KYRA120HZAN1-A/,
+122,Kentatsu,KYRA140HZAN1-A,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KYRA140HZAN1-A/,
+122,Kentatsu,KYRA140HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KYRA140HZAN1-A/,
+122,Kentatsu,KYRA140HZAN1-A,Кол-во подключаемых блоков,,8,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KYRA140HZAN1-A/,
+123,Kentatsu,KYRA160HZAN1-A,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KYRA160HZAN1-A/,
+123,Kentatsu,KYRA160HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KYRA160HZAN1-A/,
+123,Kentatsu,KYRA160HZAN1-A,Кол-во подключаемых блоков,,9,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KYRA160HZAN1-A/,
+124,Kentatsu,KYRA180HZAN1-A,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KYRA180HZAN1-A/,
+124,Kentatsu,KYRA180HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KYRA180HZAN1-A/,
+124,Kentatsu,KYRA180HZAN1-A,Кол-во подключаемых блоков,,9,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KYRA180HZAN1-A/,
+119,Kentatsu,KYRA80HZAN1-A,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Kentatsu-KYRA80HZAN1-A/,
+119,Kentatsu,KYRA80HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],,-5...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Kentatsu-KYRA80HZAN1-A/,
+119,Kentatsu,KYRA80HZAN1-A,Кол-во подключаемых блоков,,4,Max кол-во комнат,HTML,https://mircli.ru/Kentatsu-KYRA80HZAN1-A/,
+344,IGC,IRFT-022HA/NB-Q,"Уровень шума, дБ(А)",,71,"Уровень шума номинальный, дБ",HTML,https://kzn.iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_022ha_nb_q/,
+347,IGC,IRFT-035HA/NB-Q,"Уровень шума, дБ(А)",,71,"Уровень шума номинальный, дБ",HTML,https://spb.iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_035ha_nb_q/,
+310,IGC,IMS-EX330NB(7),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/IGC-IMS-EX330NB-7-/,
+310,IGC,IMS-EX330NB(7),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/IGC-IMS-EX330NB-7-/,
+310,IGC,IMS-EX330NB(7),Кол-во подключаемых блоков,,20,Max кол-во комнат,HTML,https://mircli.ru/IGC-IMS-EX330NB-7-/,
+311,IGC,IWF-X200K22W-A,"Расход воды, м³/ч",,0.4998,"Расход воды, л/мин",HTML,https://mircli.ru/IGC-IWF-X200K22W-A/,1 л/мин = 0.06 м³/ч
+312,IGC,IWF-X300K22W-A,"Расход воды, м³/ч",,0.57,"Расход воды, л/мин",HTML,https://mircli.ru/IGC-IWF-X300K22W-A/,1 л/мин = 0.06 м³/ч
+313,IGC,IWF-X400K22W-A,"Расход воды, м³/ч",,0.7698,"Расход воды, л/мин",HTML,https://mircli.ru/IGC-IWF-X400K22W-A/,1 л/мин = 0.06 м³/ч
+314,IGC,IWF-X500K22W-A,"Расход воды, м³/ч",,0.84,"Расход воды, л/мин",HTML,https://mircli.ru/IGC-IWF-X500K22W-A/,1 л/мин = 0.06 м³/ч
+315,IGC,IWF-X600K22W-A,"Расход воды, м³/ч",,0.9702,"Расход воды, л/мин",HTML,https://mircli.ru/IGC-IWF-X600K22W-A/,1 л/мин = 0.06 м³/ч
+28,Midea,MIH252FLHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih252flhn18/,
+28,Midea,MIH252FLHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih252flhn18/,
+23,Midea,MIH252FSHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih252fshn18/,
+23,Midea,MIH252FSHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih252fshn18/,
+29,Midea,MIH280FLHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih280flhn18/,
+29,Midea,MIH280FLHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih280flhn18/,
+24,Midea,MIH280FSHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih280fshn18/,
+24,Midea,MIH280FSHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih280fshn18/,
+30,Midea,MIH335FLHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih335flhn18/,
+30,Midea,MIH335FLHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih335flhn18/,
+25,Midea,MIH335FSHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih335fshn18/,
+25,Midea,MIH335FSHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih335fshn18/,
+31,Midea,MIH450FLHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih450flhn18/,
+31,Midea,MIH450FLHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih450flhn18/,
+26,Midea,MIH450FSHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih450fshn18/,
+26,Midea,MIH450FSHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih450fshn18/,
+32,Midea,MIH560FLHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih560flhn18/,
+32,Midea,MIH560FLHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih560flhn18/,
+27,Midea,MIH560FSHN18,"Гарантия, мес. [PROP_438]",,36,"Гарантия, мес.",HTML,https://coolsochi.ru/product/midea-mih560fshn18/,
+27,Midea,MIH560FSHN18,Инвертор,,да,Инвертор,HTML,https://coolsochi.ru/product/midea-mih560fshn18/,
+1,Midea,MIH112T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH112T1HN18/,
+2,Midea,MIH125T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH125T1HN18/,
+3,Midea,MIH140T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH140T1HN18/,
+4,Midea,MIH160T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH200T1HN18/,
+5,Midea,MIH200T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH200T1HN18/,
+6,Midea,MIH224T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH200T1HN18/,
+7,Midea,MIH252T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH252T1HN18/,
+8,Midea,MIH280T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH450T1HN18/,
+9,Midea,MIH335T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH335T1HN18/,
+10,Midea,MIH400T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH400T1HN18/,
+11,Midea,MIH450T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH450T1HN18/,
+12,Midea,MIH560T1HN18,"Электропитание, В",,220,"Напряжение, В",HTML,https://mircli.ru/Midea-MIH560T1HN18/,
+19,Midea,MIH100DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH100DLHN18/,
+20,Midea,MIH112DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH112DLHN18/,
+21,Midea,MIH125DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH125DLHN18/,
+22,Midea,MIH140DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH140DLHN18/,
+33,Midea,MIH22F3HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH22F3HN18/,
+40,Midea,MIH22F4HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH22F4HN18/,
+47,Midea,MIH22F5HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH22F5HN18/,
+34,Midea,MIH28F3HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH28F3HN18/,
+41,Midea,MIH28F4HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH28F4HN18/,
+48,Midea,MIH28F5HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH28F5HN18/,
+13,Midea,MIH36DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH36DLHN18/,
+35,Midea,MIH36F3HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH36F3HN18/,
+42,Midea,MIH36F4HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH36F4HN18/,
+49,Midea,MIH36F5HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH36F5HN18/,
+14,Midea,MIH45DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH45DLHN18/,
+36,Midea,MIH45F3HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH45F3HN18/,
+43,Midea,MIH45F4HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH45F4HN18/,
+50,Midea,MIH45F5HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH45F5HN18/,
+15,Midea,MIH56DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH56DLHN18/,
+37,Midea,MIH56F3HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH56F3HN18/,
+44,Midea,MIH56F4HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH56F4HN18/,
+51,Midea,MIH56F5HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH56F5HN18/,
+16,Midea,MIH71DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH71DLHN18/,
+38,Midea,MIH71F3HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH71F3HN18/,
+45,Midea,MIH71F4HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH71F4HN18/,
+52,Midea,MIH71F5HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH71F5HN18/,
+17,Midea,MIH80DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH80DLHN18/,
+39,Midea,MIH80F3HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH80F3HN18/,
+46,Midea,MIH80F4HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH80F4HN18/,
+53,Midea,MIH80F5HN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH80F5HN18/,
+18,Midea,MIH90DLHN18,"Электропитание, В",,220/50/1,Питание(в/Гц/Ф),HTML,https://mircli.ru/Midea-MIH90DLHN18/,
+276,Midea,MV8-1010WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-1010WV2GN1-PRO-40/,
+276,Midea,MV8-1010WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-1010WV2GN1-PRO-40/,
+276,Midea,MV8-1010WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,58,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-1010WV2GN1-PRO-40/,
+262,Midea,MV8-252WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-252WV2GN1-PRO-40/,
+262,Midea,MV8-252WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-252WV2GN1-PRO-40/,
+262,Midea,MV8-252WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-252WV2GN1-PRO-40/,
+263,Midea,MV8-280WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-280WV2GN1-PRO-40/,
+263,Midea,MV8-280WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-280WV2GN1-PRO-40/,
+263,Midea,MV8-280WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-280WV2GN1-PRO-40/,
+264,Midea,MV8-335WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-335WV2GN1-PRO-40/,
+264,Midea,MV8-335WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-335WV2GN1-PRO-40/,
+264,Midea,MV8-335WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-335WV2GN1-PRO-40/,
+265,Midea,MV8-400WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-400WV2GN1-PRO-40/,
+265,Midea,MV8-400WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-400WV2GN1-PRO-40/,
+265,Midea,MV8-400WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,22,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-400WV2GN1-PRO-40/,
+266,Midea,MV8-450WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-450WV2GN1-PRO-40/,
+266,Midea,MV8-450WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-450WV2GN1-PRO-40/,
+266,Midea,MV8-450WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-450WV2GN1-PRO-40/,
+267,Midea,MV8-500WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-500WV2GN1-PRO-40/,
+267,Midea,MV8-500WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-500WV2GN1-PRO-40/,
+267,Midea,MV8-500WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-500WV2GN1-PRO-40/,
+268,Midea,MV8-560WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-560WV2GN1-PRO-40/,
+268,Midea,MV8-560WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-560WV2GN1-PRO-40/,
+268,Midea,MV8-560WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-560WV2GN1-PRO-40/,
+269,Midea,MV8-615WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-615WV2GN1-PRO-40/,
+269,Midea,MV8-615WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-615WV2GN1-PRO-40/,
+269,Midea,MV8-615WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,35,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-615WV2GN1-PRO-40/,
+270,Midea,MV8-670WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-670WV2GN1-PRO-40/,
+270,Midea,MV8-670WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-670WV2GN1-PRO-40/,
+270,Midea,MV8-670WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-670WV2GN1-PRO-40/,
+271,Midea,MV8-730WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-730WV2GN1-PRO-40/,
+271,Midea,MV8-730WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-730WV2GN1-PRO-40/,
+271,Midea,MV8-730WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,42,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-730WV2GN1-PRO-40/,
+272,Midea,MV8-785WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-785WV2GN1-PRO-40/,
+272,Midea,MV8-785WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-785WV2GN1-PRO-40/,
+272,Midea,MV8-785WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,45,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-785WV2GN1-PRO-40/,
+273,Midea,MV8-850WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-850WV2GN1-PRO-40/,
+273,Midea,MV8-850WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-850WV2GN1-PRO-40/,
+273,Midea,MV8-850WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,48,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-850WV2GN1-PRO-40/,
+274,Midea,MV8-900WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-900WV2GN1-PRO-40/,
+274,Midea,MV8-900WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-900WV2GN1-PRO-40/,
+274,Midea,MV8-900WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,52,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-900WV2GN1-PRO-40/,
+275,Midea,MV8-950WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8-950WV2GN1-PRO-40/,
+275,Midea,MV8-950WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8-950WV2GN1-PRO-40/,
+275,Midea,MV8-950WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,55,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8-950WV2GN1-PRO-40/,
+291,Midea,MV8i-1010WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1010WV2GN1-PRO-40/,
+291,Midea,MV8i-1010WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1010WV2GN1-PRO-40/,
+291,Midea,MV8i-1010WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-1010WV2GN1-PRO-40/,
+291,Midea,MV8i-1010WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,58,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1010WV2GN1-PRO-40/,
+292,Midea,MV8i-1060WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-PRO-40/,
+292,Midea,MV8i-1060WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-PRO-40/,
+292,Midea,MV8i-1060WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-PRO-40/,
+292,Midea,MV8i-1060WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,62,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-PRO-40/,
+293,Midea,MV8i-1120WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-PRO-40/,
+293,Midea,MV8i-1120WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-PRO-40/,
+293,Midea,MV8i-1120WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-PRO-40/,
+293,Midea,MV8i-1120WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-PRO-40/,
+294,Midea,MV8i-1170WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-PRO-40/,
+294,Midea,MV8i-1170WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-PRO-40/,
+294,Midea,MV8i-1170WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-PRO-40/,
+294,Midea,MV8i-1170WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-PRO-40/,
+277,Midea,MV8i-252WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-252WV2GN1-PRO-40/,
+277,Midea,MV8i-252WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-252WV2GN1-PRO-40/,
+277,Midea,MV8i-252WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-252WV2GN1-PRO-40/,
+278,Midea,MV8i-280WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-280WV2GN1-PRO-40/,
+278,Midea,MV8i-280WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-280WV2GN1-PRO-40/,
+278,Midea,MV8i-280WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-280WV2GN1-PRO-40/,
+279,Midea,MV8i-335WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-335WV2GN1-PRO-40/,
+279,Midea,MV8i-335WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-335WV2GN1-PRO-40/,
+279,Midea,MV8i-335WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-335WV2GN1-PRO-40/,
+280,Midea,MV8i-400WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-400WV2GN1-PRO-40/,
+280,Midea,MV8i-400WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-400WV2GN1-PRO-40/,
+280,Midea,MV8i-400WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,22,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-400WV2GN1-PRO-40/,
+281,Midea,MV8i-450WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-450WV2GN1-PRO-40/,
+281,Midea,MV8i-450WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-450WV2GN1-PRO-40/,
+281,Midea,MV8i-450WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-450WV2GN1-PRO-40/,
+282,Midea,MV8i-500WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-500WV2GN1-PRO-40/,
+282,Midea,MV8i-500WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-500WV2GN1-PRO-40/,
+282,Midea,MV8i-500WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-500WV2GN1-PRO-40/,
+283,Midea,MV8i-560WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-560WV2GN1-PRO-40/,
+283,Midea,MV8i-560WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-560WV2GN1-PRO-40/,
+283,Midea,MV8i-560WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-560WV2GN1-PRO-40/,
+283,Midea,MV8i-560WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,32,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-560WV2GN1-PRO-40/,
+284,Midea,MV8i-615WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-615WV2GN1-PRO-40/,
+284,Midea,MV8i-615WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-615WV2GN1-PRO-40/,
+284,Midea,MV8i-615WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-615WV2GN1-PRO-40/,
+284,Midea,MV8i-615WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,35,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-615WV2GN1-PRO-40/,
+285,Midea,MV8i-670WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-670WV2GN1-PRO-40/,
+285,Midea,MV8i-670WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-670WV2GN1-PRO-40/,
+285,Midea,MV8i-670WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-670WV2GN1-PRO-40/,
+285,Midea,MV8i-670WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-670WV2GN1-PRO-40/,
+286,Midea,MV8i-730WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-730WV2GN1-PRO-40/,
+286,Midea,MV8i-730WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-730WV2GN1-PRO-40/,
+286,Midea,MV8i-730WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-730WV2GN1-PRO-40/,
+286,Midea,MV8i-730WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,42,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-730WV2GN1-PRO-40/,
+287,Midea,MV8i-785WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-785WV2GN1-PRO-40/,
+287,Midea,MV8i-785WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-785WV2GN1-PRO-40/,
+287,Midea,MV8i-785WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-785WV2GN1-PRO-40/,
+287,Midea,MV8i-785WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,45,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-785WV2GN1-PRO-40/,
+288,Midea,MV8i-850WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-850WV2GN1-PRO-40/,
+288,Midea,MV8i-850WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-850WV2GN1-PRO-40/,
+288,Midea,MV8i-850WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-850WV2GN1-PRO-40/,
+288,Midea,MV8i-850WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,48,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-850WV2GN1-PRO-40/,
+289,Midea,MV8i-900WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-900WV2GN1-PRO-40/,
+289,Midea,MV8i-900WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-900WV2GN1-PRO-40/,
+289,Midea,MV8i-900WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-900WV2GN1-PRO-40/,
+289,Midea,MV8i-900WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,52,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-900WV2GN1-PRO-40/,
+290,Midea,MV8i-950WV2GN1(PRO)/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-950WV2GN1-PRO-40/,
+290,Midea,MV8i-950WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-950WV2GN1-PRO-40/,
+290,Midea,MV8i-950WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MV8i-950WV2GN1-PRO-40/,
+290,Midea,MV8i-950WV2GN1(PRO)/-40,Кол-во подключаемых блоков,,55,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-950WV2GN1-PRO-40/,
+223,Midea,MV8M-100WV2HN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8M-100WV2HN1-40/,
+223,Midea,MV8M-100WV2HN1/-40,Кол-во подключаемых блоков,,6,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8M-100WV2HN1-40/,
+228,Midea,MV8M-120WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8M-120WV2GN1-40/,
+228,Midea,MV8M-120WV2GN1/-40,Кол-во подключаемых блоков,,8,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8M-120WV2GN1-40/,
+224,Midea,MV8M-120WV2HN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8M-120WV2HN1-40/,
+224,Midea,MV8M-120WV2HN1/-40,Кол-во подключаемых блоков,,8,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8M-120WV2HN1-40/,
+229,Midea,MV8M-140WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8M-140WV2GN1-40/,
+229,Midea,MV8M-140WV2GN1/-40,Кол-во подключаемых блоков,,10,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8M-140WV2GN1-40/,
+225,Midea,MV8M-140WV2HN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8M-140WV2HN1-40/,
+225,Midea,MV8M-140WV2HN1/-40,Кол-во подключаемых блоков,,10,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8M-140WV2HN1-40/,
+226,Midea,MV8M-160WV2HN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8M-160WV2HN1-40/,
+226,Midea,MV8M-160WV2HN1/-40,Кол-во подключаемых блоков,,11,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8M-160WV2HN1-40/,
+231,Midea,MV8M-170WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8M-170WV2GN1-40/,
+231,Midea,MV8M-170WV2GN1/-40,Кол-во подключаемых блоков,,11,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8M-170WV2GN1-40/,
+227,Midea,MV8M-170WV2HN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8M-170WV2HN1-40/,
+227,Midea,MV8M-170WV2HN1/-40,Кол-во подключаемых блоков,,11,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8M-170WV2HN1-40/,
+222,Midea,MV8M-80WV2HN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8M-80WV2HN1-40/,
+222,Midea,MV8M-80WV2HN1/-40,Кол-во подключаемых блоков,,5,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8M-80WV2HN1-40/,
+232,Midea,MV8S-252WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8S-252WV2GN1-40/,
+232,Midea,MV8S-252WV2GN1/-40,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8S-252WV2GN1-40/,
+233,Midea,MV8S-280WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8S-280WV2GN1-40/,
+233,Midea,MV8S-280WV2GN1/-40,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8S-280WV2GN1-40/,
+234,Midea,MV8S-335WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8S-335WV2GN1-40/,
+234,Midea,MV8S-335WV2GN1/-40,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8S-335WV2GN1-40/,
+235,Midea,MV8S-400WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8S-400WV2GN1-40/,
+235,Midea,MV8S-400WV2GN1/-40,Кол-во подключаемых блоков,,23,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8S-400WV2GN1-40/,
+236,Midea,MV8S-450WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8S-450WV2GN1-40/,
+236,Midea,MV8S-450WV2GN1/-40,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8S-450WV2GN1-40/,
+237,Midea,MV8S-500WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8S-500WV2GN1-40/,
+237,Midea,MV8S-500WV2GN1/-40,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8S-500WV2GN1-40/,
+238,Midea,MV8S-560WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8S-560WV2GN1-40/,
+238,Midea,MV8S-560WV2GN1/-40,Кол-во подключаемых блоков,,33,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8S-560WV2GN1-40/,
+239,Midea,MV8S-615WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8S-615WV2GN1-40/,
+239,Midea,MV8S-615WV2GN1/-40,Кол-во подключаемых блоков,,36,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8S-615WV2GN1-40/,
+240,Midea,MV8S-670WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8S-670WV2GN1-40/,
+240,Midea,MV8S-670WV2GN1/-40,Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8S-670WV2GN1-40/,
+241,Midea,MV8Si-252WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-252WV2GN1-40/,
+241,Midea,MV8Si-252WV2GN1/-40,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-252WV2GN1-40/,
+242,Midea,MV8Si-280WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-280WV2GN1-40/,
+242,Midea,MV8Si-280WV2GN1/-40,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-280WV2GN1-40/,
+243,Midea,MV8Si-335WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-335WV2GN1-40/,
+243,Midea,MV8Si-335WV2GN1/-40,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-335WV2GN1-40/,
+244,Midea,MV8Si-400WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-400WV2GN1-40/,
+244,Midea,MV8Si-400WV2GN1/-40,Кол-во подключаемых блоков,,23,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-400WV2GN1-40/,
+245,Midea,MV8Si-450WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-450WV2GN1-40/,
+245,Midea,MV8Si-450WV2GN1/-40,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-450WV2GN1-40/,
+246,Midea,MV8Si-500WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-500WV2GN1-40/,
+246,Midea,MV8Si-500WV2GN1/-40,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-500WV2GN1-40/,
+247,Midea,MV8Si-560WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-560WV2GN1-40/,
+247,Midea,MV8Si-560WV2GN1/-40,Кол-во подключаемых блоков,,33,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-560WV2GN1-40/,
+248,Midea,MV8Si-615WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-615WV2GN1-40/,
+248,Midea,MV8Si-615WV2GN1/-40,Кол-во подключаемых блоков,,36,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-615WV2GN1-40/,
+249,Midea,MV8Si-670WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-670WV2GN1-40/,
+249,Midea,MV8Si-670WV2GN1/-40,Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-670WV2GN1-40/,
+250,Midea,MVC-M224WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M224WV2GN1-40/,
+250,Midea,MVC-M224WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M224WV2GN1-40/,
+250,Midea,MVC-M224WV2GN1/-40,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M224WV2GN1-40/,
+251,Midea,MVC-M280WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M280WV2GN1-40/,
+251,Midea,MVC-M280WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M280WV2GN1-40/,
+251,Midea,MVC-M280WV2GN1/-40,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M280WV2GN1-40/,
+252,Midea,MVC-M335WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M335WV2GN1-40/,
+252,Midea,MVC-M335WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M335WV2GN1-40/,
+252,Midea,MVC-M335WV2GN1/-40,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M335WV2GN1-40/,
+253,Midea,MVC-M400WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M400WV2GN1-40/,
+253,Midea,MVC-M400WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M400WV2GN1-40/,
+253,Midea,MVC-M400WV2GN1/-40,Кол-во подключаемых блоков,,23,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M400WV2GN1-40/,
+254,Midea,MVC-M450WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M450WV2GN1-40/,
+254,Midea,MVC-M450WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M450WV2GN1-40/,
+254,Midea,MVC-M450WV2GN1/-40,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M450WV2GN1-40/,
+255,Midea,MVC-M500WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M500WV2GN1-40/,
+255,Midea,MVC-M500WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M500WV2GN1-40/,
+255,Midea,MVC-M500WV2GN1/-40,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M500WV2GN1-40/,
+256,Midea,MVC-M560WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M560WV2GN1-40/,
+256,Midea,MVC-M560WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M560WV2GN1-40/,
+256,Midea,MVC-M560WV2GN1/-40,Кол-во подключаемых блоков,,33,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M560WV2GN1-40/,
+257,Midea,MVC-M615WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M615WV2GN1-40/,
+257,Midea,MVC-M615WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M615WV2GN1-40/,
+257,Midea,MVC-M615WV2GN1/-40,Кол-во подключаемых блоков,,36,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M615WV2GN1-40/,
+258,Midea,MVC-M670WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M670WV2GN1-40/,
+258,Midea,MVC-M670WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M670WV2GN1-40/,
+258,Midea,MVC-M670WV2GN1/-40,Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M670WV2GN1-40/,
+259,Midea,MVC-M730WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M730WV2GN1-40/,
+259,Midea,MVC-M730WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M730WV2GN1-40/,
+259,Midea,MVC-M730WV2GN1/-40,Кол-во подключаемых блоков,,43,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M730WV2GN1-40/,
+260,Midea,MVC-M785WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M785WV2GN1-40/,
+260,Midea,MVC-M785WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M785WV2GN1-40/,
+260,Midea,MVC-M785WV2GN1/-40,Кол-во подключаемых блоков,,46,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M785WV2GN1-40/,
+261,Midea,MVC-M850WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M850WV2GN1-40/,
+261,Midea,MVC-M850WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],,-40...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M850WV2GN1-40/,
+261,Midea,MVC-M850WV2GN1/-40,Кол-во подключаемых блоков,,50,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M850WV2GN1-40/,
+177,Midea,MVUH200BT-VA1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVUH200BT-VA1/,
+177,Midea,MVUH200BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVUH200BT-VA1/,
+177,Midea,MVUH200BT-VA1,Диапазон рабочих темп. нагрев. °С [PROP_200],,-20...+27,"Диапазон t на обогрев, С",HTML,https://mircli.ru/Midea-MVUH200BT-VA1/,
+177,Midea,MVUH200BT-VA1,Кол-во подключаемых блоков,,12,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVUH200BT-VA1/,
+218,Midea,MV8i-1010WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1010WV2GN1-ULTRA-/,
+218,Midea,MV8i-1010WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1010WV2GN1-ULTRA-/,
+218,Midea,MV8i-1010WV2GN1(ULTRA),Кол-во подключаемых блоков,,58,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1010WV2GN1-ULTRA-/,
+201,Midea,MV8i-1060WV2GN1(PRO),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-PRO-/,
+201,Midea,MV8i-1060WV2GN1(PRO),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-PRO-/,
+201,Midea,MV8i-1060WV2GN1(PRO),Кол-во подключаемых блоков,,62,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-PRO-/,
+219,Midea,MV8i-1060WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-ULTRA-/,
+219,Midea,MV8i-1060WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-ULTRA-/,
+219,Midea,MV8i-1060WV2GN1(ULTRA),Кол-во подключаемых блоков,,62,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-ULTRA-/,
+202,Midea,MV8i-1120WV2GN1(PRO),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-PRO-/,
+202,Midea,MV8i-1120WV2GN1(PRO),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-PRO-/,
+202,Midea,MV8i-1120WV2GN1(PRO),Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-PRO-/,
+220,Midea,MV8i-1120WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-ULTRA-/,
+220,Midea,MV8i-1120WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-ULTRA-/,
+220,Midea,MV8i-1120WV2GN1(ULTRA),Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-ULTRA-/,
+203,Midea,MV8i-1170WV2GN1(PRO),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-PRO-/,
+203,Midea,MV8i-1170WV2GN1(PRO),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-PRO-/,
+203,Midea,MV8i-1170WV2GN1(PRO),Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-PRO-/,
+221,Midea,MV8i-1170WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-ULTRA-/,
+221,Midea,MV8i-1170WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-ULTRA-/,
+221,Midea,MV8i-1170WV2GN1(ULTRA),Кол-во подключаемых блоков,,64,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-ULTRA-/,
+204,Midea,MV8i-252WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-252WV2GN1-ULTRA-/,
+204,Midea,MV8i-252WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-252WV2GN1-ULTRA-/,
+204,Midea,MV8i-252WV2GN1(ULTRA),Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-252WV2GN1-ULTRA-/,
+205,Midea,MV8i-280WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-280WV2GN1-ULTRA-/,
+205,Midea,MV8i-280WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-280WV2GN1-ULTRA-/,
+205,Midea,MV8i-280WV2GN1(ULTRA),Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-280WV2GN1-ULTRA-/,
+206,Midea,MV8i-335WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-335WV2GN1-ULTRA-/,
+206,Midea,MV8i-335WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-335WV2GN1-ULTRA-/,
+206,Midea,MV8i-335WV2GN1(ULTRA),Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-335WV2GN1-ULTRA-/,
+207,Midea,MV8i-400WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-400WV2GN1-ULTRA-/,
+207,Midea,MV8i-400WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-400WV2GN1-ULTRA-/,
+207,Midea,MV8i-400WV2GN1(ULTRA),Кол-во подключаемых блоков,,22,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-400WV2GN1-ULTRA-/,
+208,Midea,MV8i-450WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-450WV2GN1-ULTRA-/,
+208,Midea,MV8i-450WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-450WV2GN1-ULTRA-/,
+208,Midea,MV8i-450WV2GN1(ULTRA),Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-450WV2GN1-ULTRA-/,
+209,Midea,MV8i-500WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-500WV2GN1-ULTRA-/,
+209,Midea,MV8i-500WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-500WV2GN1-ULTRA-/,
+209,Midea,MV8i-500WV2GN1(ULTRA),Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-500WV2GN1-ULTRA-/,
+210,Midea,MV8i-560WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-560WV2GN1-ULTRA-/,
+210,Midea,MV8i-560WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-560WV2GN1-ULTRA-/,
+210,Midea,MV8i-560WV2GN1(ULTRA),Кол-во подключаемых блоков,,32,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-560WV2GN1-ULTRA-/,
+211,Midea,MV8i-615WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-615WV2GN1-ULTRA-/,
+211,Midea,MV8i-615WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-615WV2GN1-ULTRA-/,
+211,Midea,MV8i-615WV2GN1(ULTRA),Кол-во подключаемых блоков,,35,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-615WV2GN1-ULTRA-/,
+212,Midea,MV8i-670WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-670WV2GN1-ULTRA-/,
+212,Midea,MV8i-670WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-670WV2GN1-ULTRA-/,
+212,Midea,MV8i-670WV2GN1(ULTRA),Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-670WV2GN1-ULTRA-/,
+213,Midea,MV8i-730WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-730WV2GN1-ULTRA-/,
+213,Midea,MV8i-730WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-730WV2GN1-ULTRA-/,
+213,Midea,MV8i-730WV2GN1(ULTRA),Кол-во подключаемых блоков,,42,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-730WV2GN1-ULTRA-/,
+214,Midea,MV8i-785WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-785WV2GN1-ULTRA-/,
+214,Midea,MV8i-785WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-785WV2GN1-ULTRA-/,
+214,Midea,MV8i-785WV2GN1(ULTRA),Кол-во подключаемых блоков,,45,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-785WV2GN1-ULTRA-/,
+215,Midea,MV8i-850WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-850WV2GN1-ULTRA-/,
+215,Midea,MV8i-850WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-850WV2GN1-ULTRA-/,
+215,Midea,MV8i-850WV2GN1(ULTRA),Кол-во подключаемых блоков,,48,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-850WV2GN1-ULTRA-/,
+216,Midea,MV8i-900WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-900WV2GN1-ULTRA-/,
+216,Midea,MV8i-900WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-900WV2GN1-ULTRA-/,
+216,Midea,MV8i-900WV2GN1(ULTRA),Кол-во подключаемых блоков,,52,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-900WV2GN1-ULTRA-/,
+217,Midea,MV8i-950WV2GN1(ULTRA),Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8i-950WV2GN1-ULTRA-/,
+217,Midea,MV8i-950WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8i-950WV2GN1-ULTRA-/,
+217,Midea,MV8i-950WV2GN1(ULTRA),Кол-во подключаемых блоков,,55,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8i-950WV2GN1-ULTRA-/,
+180,Midea,MV8Si-252WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-252WV2GN1/,
+180,Midea,MV8Si-252WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8Si-252WV2GN1/,
+180,Midea,MV8Si-252WV2GN1,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-252WV2GN1/,
+181,Midea,MV8Si-280WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-280WV2GN1/,
+181,Midea,MV8Si-280WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8Si-280WV2GN1/,
+181,Midea,MV8Si-280WV2GN1,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-280WV2GN1/,
+182,Midea,MV8Si-335WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-335WV2GN1/,
+182,Midea,MV8Si-335WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8Si-335WV2GN1/,
+182,Midea,MV8Si-335WV2GN1,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-335WV2GN1/,
+183,Midea,MV8Si-400WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-400WV2GN1/,
+183,Midea,MV8Si-400WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8Si-400WV2GN1/,
+183,Midea,MV8Si-400WV2GN1,Кол-во подключаемых блоков,,23,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-400WV2GN1/,
+184,Midea,MV8Si-450WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-450WV2GN1/,
+184,Midea,MV8Si-450WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8Si-450WV2GN1/,
+184,Midea,MV8Si-450WV2GN1,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-450WV2GN1/,
+185,Midea,MV8Si-500WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-500WV2GN1/,
+185,Midea,MV8Si-500WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8Si-500WV2GN1/,
+185,Midea,MV8Si-500WV2GN1,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-500WV2GN1/,
+186,Midea,MV8Si-560WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-560WV2GN1/,
+186,Midea,MV8Si-560WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8Si-560WV2GN1/,
+186,Midea,MV8Si-560WV2GN1,Кол-во подключаемых блоков,,33,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-560WV2GN1/,
+187,Midea,MV8Si-615WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-615WV2GN1/,
+187,Midea,MV8Si-615WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8Si-615WV2GN1/,
+187,Midea,MV8Si-615WV2GN1,Кол-во подключаемых блоков,,36,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-615WV2GN1/,
+188,Midea,MV8Si-670WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MV8Si-670WV2GN1/,
+188,Midea,MV8Si-670WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MV8Si-670WV2GN1/,
+188,Midea,MV8Si-670WV2GN1,Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Midea-MV8Si-670WV2GN1/,
+189,Midea,MVC-M224WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M224WV2GN1/,
+189,Midea,MVC-M224WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M224WV2GN1/,
+189,Midea,MVC-M224WV2GN1,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M224WV2GN1/,
+190,Midea,MVC-M280WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M280WV2GN1/,
+190,Midea,MVC-M280WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M280WV2GN1/,
+190,Midea,MVC-M280WV2GN1,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M280WV2GN1/,
+191,Midea,MVC-M335WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M335WV2GN1/,
+191,Midea,MVC-M335WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M335WV2GN1/,
+191,Midea,MVC-M335WV2GN1,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M335WV2GN1/,
+192,Midea,MVC-M400WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M400WV2GN1/,
+192,Midea,MVC-M400WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M400WV2GN1/,
+192,Midea,MVC-M400WV2GN1,Кол-во подключаемых блоков,,22,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M400WV2GN1/,
+193,Midea,MVC-M450WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M450WV2GN1/,
+193,Midea,MVC-M450WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M450WV2GN1/,
+193,Midea,MVC-M450WV2GN1,Кол-во подключаемых блоков,,26,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M450WV2GN1/,
+194,Midea,MVC-M500WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M500WV2GN1/,
+194,Midea,MVC-M500WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M500WV2GN1/,
+194,Midea,MVC-M500WV2GN1,Кол-во подключаемых блоков,,29,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M500WV2GN1/,
+195,Midea,MVC-M560WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M560WV2GN1/,
+195,Midea,MVC-M560WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M560WV2GN1/,
+195,Midea,MVC-M560WV2GN1,Кол-во подключаемых блоков,,32,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M560WV2GN1/,
+196,Midea,MVC-M615WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M615WV2GN1/,
+196,Midea,MVC-M615WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M615WV2GN1/,
+196,Midea,MVC-M615WV2GN1,Кол-во подключаемых блоков,,35,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M615WV2GN1/,
+197,Midea,MVC-M670WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M670WV2GN1/,
+197,Midea,MVC-M670WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M670WV2GN1/,
+197,Midea,MVC-M670WV2GN1,Кол-во подключаемых блоков,,39,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M670WV2GN1/,
+198,Midea,MVC-M730WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M730WV2GN1/,
+198,Midea,MVC-M730WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M730WV2GN1/,
+198,Midea,MVC-M730WV2GN1,Кол-во подключаемых блоков,,42,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M730WV2GN1/,
+199,Midea,MVC-M785WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M785WV2GN1/,
+199,Midea,MVC-M785WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M785WV2GN1/,
+199,Midea,MVC-M785WV2GN1,Кол-во подключаемых блоков,,45,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M785WV2GN1/,
+200,Midea,MVC-M850WV2GN1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVC-M850WV2GN1/,
+200,Midea,MVC-M850WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVC-M850WV2GN1/,
+200,Midea,MVC-M850WV2GN1,Кол-во подключаемых блоков,,48,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVC-M850WV2GN1/,
+175,Midea,MVUH100BT-VA1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVUH100BT-VA1/,
+175,Midea,MVUH100BT-VA1,Кол-во подключаемых блоков,,6,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVUH100BT-VA1/,
+176,Midea,MVUH120BT-VA1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVUH120BT-VA1/,
+176,Midea,MVUH120BT-VA1,Кол-во подключаемых блоков,,7,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVUH120BT-VA1/,
+172,Midea,MVUH35BT-VA1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVUH35BT-VA1/,
+172,Midea,MVUH35BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVUH35BT-VA1/,
+172,Midea,MVUH35BT-VA1,Кол-во подключаемых блоков,,3,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVUH35BT-VA1/,
+173,Midea,MVUH50BT-VA1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVUH50BT-VA1/,
+173,Midea,MVUH50BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVUH50BT-VA1/,
+173,Midea,MVUH50BT-VA1,Кол-во подключаемых блоков,,3,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVUH50BT-VA1/,
+174,Midea,MVUH60BT-VA1,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVUH60BT-VA1/,
+174,Midea,MVUH60BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,"Диапазон t на охлаждение, С",HTML,https://mircli.ru/Midea-MVUH60BT-VA1/,
+174,Midea,MVUH60BT-VA1,Кол-во подключаемых блоков,,3,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVUH60BT-VA1/,
+296,Midea,MVUW252A-VA3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVUW252A-VA3/,
+296,Midea,MVUW252A-VA3,Кол-во подключаемых блоков,,13,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVUW252A-VA3/,
+297,Midea,MVUW280A-VA3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVUW280A-VA3/,
+297,Midea,MVUW280A-VA3,Кол-во подключаемых блоков,,16,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVUW280A-VA3/,
+298,Midea,MVUW335A-VA3,Хладагент [PROP_290],,R410A,Хладагент,HTML,https://mircli.ru/Midea-MVUW335A-VA3/,
+298,Midea,MVUW335A-VA3,Кол-во подключаемых блоков,,19,Max кол-во комнат,HTML,https://mircli.ru/Midea-MVUW335A-VA3/,
+70,Daikin,REMQ5U,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-REMQ5U/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+64,Daikin,RXYQ10U/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYQ10U-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+65,Daikin,RXYQ12U/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYQ12U-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+66,Daikin,RXYQ14U/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYQ14U-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+67,Daikin,RXYQ16U/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYQ16U-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+68,Daikin,RXYQ18U/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYQ18U-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+69,Daikin,RXYQ20U/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYQ20U-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+63,Daikin,RXYQ8U/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYQ8U-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+61,Daikin,RXYSQ10TY/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYSQ10TY-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+62,Daikin,RXYSQ12TY/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYSQ12TY-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+54,Daikin,RXYSQ4T8V/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYSQ4T8V-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+57,Daikin,RXYSQ4T8Y/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYSQ4T8Y-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+55,Daikin,RXYSQ5T8V/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYSQ5T8V-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+58,Daikin,RXYSQ5T8Y/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYSQ5T8Y-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+56,Daikin,RXYSQ6T8V/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYSQ6T8V-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+59,Daikin,RXYSQ6T8Y/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYSQ6T8Y-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+60,Daikin,RXYSQ8TY/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Daikin-RXYSQ8TY-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+72,Daikin,RYMQ10U,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RYMQ10U/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+73,Daikin,RYMQ12U,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RYMQ12U/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+74,Daikin,RYMQ14U,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RYMQ14U/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+75,Daikin,RYMQ16U,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RYMQ16U/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+76,Daikin,RYMQ18U,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RYMQ18U/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+77,Daikin,RYMQ20U,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RYMQ20U/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+71,Daikin,RYMQ8U,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Daikin-RYMQ8U/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+103,Kentatsu,KTRB1010HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB1010HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+118,Kentatsu,KTRB1010HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB1010HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+89,Kentatsu,KTRB250HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB250HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+104,Kentatsu,KTRB250HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB250HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+90,Kentatsu,KTRB290HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB290HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+105,Kentatsu,KTRB290HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB290HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+91,Kentatsu,KTRB340HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB340HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+106,Kentatsu,KTRB340HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB340HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+92,Kentatsu,KTRB400HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB400HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+107,Kentatsu,KTRB400HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB400HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+93,Kentatsu,KTRB450HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB450HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+108,Kentatsu,KTRB450HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB450HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+94,Kentatsu,KTRB500HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB500HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+109,Kentatsu,KTRB500HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB500HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+95,Kentatsu,KTRB560HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB560HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+110,Kentatsu,KTRB560HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB560HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+96,Kentatsu,KTRB615HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB615HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+111,Kentatsu,KTRB615HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB615HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+97,Kentatsu,KTRB670HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB670HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+112,Kentatsu,KTRB670HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB670HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+98,Kentatsu,KTRB730HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB730HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+113,Kentatsu,KTRB730HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB730HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+99,Kentatsu,KTRB785HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB785HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+114,Kentatsu,KTRB785HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB785HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+100,Kentatsu,KTRB850HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB850HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+115,Kentatsu,KTRB850HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB850HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+101,Kentatsu,KTRB900HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB900HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+116,Kentatsu,KTRB900HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB900HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+102,Kentatsu,KTRB950HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB950HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+117,Kentatsu,KTRB950HZAN3-i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KTRB950HZAN3-i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+171,Kentatsu,KVAG1010CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG1010CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+156,Kentatsu,KVAG1010HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG1010HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+157,Kentatsu,KVAG250CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG250CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+142,Kentatsu,KVAG250HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG250HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+158,Kentatsu,KVAG290CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG290CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+143,Kentatsu,KVAG290HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG290HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+159,Kentatsu,KVAG340CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG340CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+144,Kentatsu,KVAG340HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG340HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+160,Kentatsu,KVAG400CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG400CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+145,Kentatsu,KVAG400HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG400HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+161,Kentatsu,KVAG450CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG450CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+146,Kentatsu,KVAG450HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG450HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+162,Kentatsu,KVAG500CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG500CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+147,Kentatsu,KVAG500HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG500HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+163,Kentatsu,KVAG560CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG560CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+148,Kentatsu,KVAG560HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG560HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+164,Kentatsu,KVAG615CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG615CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+149,Kentatsu,KVAG615HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG615HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+165,Kentatsu,KVAG680CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG680CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+150,Kentatsu,KVAG680HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG680HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+166,Kentatsu,KVAG730CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG730CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+151,Kentatsu,KVAG730HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG730HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+167,Kentatsu,KVAG800CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG800CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+152,Kentatsu,KVAG800HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG800HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+168,Kentatsu,KVAG850CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG850CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+153,Kentatsu,KVAG850HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG850HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+169,Kentatsu,KVAG900CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG900CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+154,Kentatsu,KVAG900HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG900HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+170,Kentatsu,KVAG950CZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG950CZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+155,Kentatsu,KVAG950HZAN3,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAG950HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+141,Kentatsu,KVAH1010HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAH1010HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+135,Kentatsu,KVAH250HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAH250HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+136,Kentatsu,KVAH340HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAH340HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+137,Kentatsu,KVAH730HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAH730HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+138,Kentatsu,KVAH800HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAH800HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+139,Kentatsu,KVAH900HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAH900HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+140,Kentatsu,KVAH950HZAN3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAH950HZAN3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+126,Kentatsu,KVAM100HZAN1i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM100HZAN1i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+127,Kentatsu,KVAM120HZAN1i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM120HZAN1i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+130,Kentatsu,KVAM120HZAN3i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM120HZAN3i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+128,Kentatsu,KVAM140HZAN1i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM140HZAN1i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+131,Kentatsu,KVAM140HZAN3i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM140HZAN3i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+129,Kentatsu,KVAM160HZAN1i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM160HZAN1i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+132,Kentatsu,KVAM160HZAN3i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM160HZAN3i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+133,Kentatsu,KVAM220HZAN3i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM220HZAN3i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+134,Kentatsu,KVAM260HZAN3i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM260HZAN3i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+125,Kentatsu,KVAM80HZAN1i,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KVAM80HZAN1i/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+120,Kentatsu,KYRA100HZAN1-A,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KYRA100HZAN1-A/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+121,Kentatsu,KYRA120HZAN1-A,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KYRA120HZAN1-A/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+122,Kentatsu,KYRA140HZAN1-A,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KYRA140HZAN1-A/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+123,Kentatsu,KYRA160HZAN1-A,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KYRA160HZAN1-A/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+124,Kentatsu,KYRA180HZAN1-A,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KYRA180HZAN1-A/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+119,Kentatsu,KYRA80HZAN1-A,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Kentatsu-KYRA80HZAN1-A/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+310,IGC,IMS-EX330NB(7),Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/IGC-IMS-EX330NB-7-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+311,IGC,IWF-X200K22W-A,"Обогрев, кВт",106,2.94,"Обогрев, кВт",HTML,https://mircli.ru/IGC-IWF-X200K22W-A/,Исправлено ошибочное прежнее значение: прямое значение мощности точной карточки модели
+312,IGC,IWF-X300K22W-A,"Обогрев, кВт",112,3.23,"Обогрев, кВт",HTML,https://mircli.ru/IGC-IWF-X300K22W-A/,Исправлено ошибочное прежнее значение: прямое значение мощности точной карточки модели
+313,IGC,IWF-X400K22W-A,"Обогрев, кВт",119,4.3,"Обогрев, кВт",HTML,https://mircli.ru/IGC-IWF-X400K22W-A/,Исправлено ошибочное прежнее значение: прямое значение мощности точной карточки модели
+314,IGC,IWF-X500K22W-A,"Обогрев, кВт",100.1,4.84,"Обогрев, кВт",HTML,https://mircli.ru/IGC-IWF-X500K22W-A/,Исправлено ошибочное прежнее значение: прямое значение мощности точной карточки модели
+315,IGC,IWF-X600K22W-A,"Обогрев, кВт",103.8,5.26,"Обогрев, кВт",HTML,https://mircli.ru/IGC-IWF-X600K22W-A/,Исправлено ошибочное прежнее значение: прямое значение мощности точной карточки модели
+276,Midea,MV8-1010WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-1010WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+262,Midea,MV8-252WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-252WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+263,Midea,MV8-280WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-280WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+264,Midea,MV8-335WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-335WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+265,Midea,MV8-400WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-400WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+266,Midea,MV8-450WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-450WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+267,Midea,MV8-500WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-500WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+268,Midea,MV8-560WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-560WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+269,Midea,MV8-615WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-615WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+270,Midea,MV8-670WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-670WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+271,Midea,MV8-730WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-730WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+272,Midea,MV8-785WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-785WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+273,Midea,MV8-850WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-850WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+274,Midea,MV8-900WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-900WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+275,Midea,MV8-950WV2GN1(PRO)/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8-950WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+291,Midea,MV8i-1010WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1010WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+292,Midea,MV8i-1060WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+293,Midea,MV8i-1120WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+294,Midea,MV8i-1170WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+277,Midea,MV8i-252WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-252WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+278,Midea,MV8i-280WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-280WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+279,Midea,MV8i-335WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-335WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+280,Midea,MV8i-400WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-400WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+281,Midea,MV8i-450WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-450WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+282,Midea,MV8i-500WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-500WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+283,Midea,MV8i-560WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-560WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+284,Midea,MV8i-615WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-615WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+285,Midea,MV8i-670WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-670WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+286,Midea,MV8i-730WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-730WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+287,Midea,MV8i-785WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-785WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+288,Midea,MV8i-850WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-850WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+289,Midea,MV8i-900WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-900WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+290,Midea,MV8i-950WV2GN1(PRO)/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-950WV2GN1-PRO-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+223,Midea,MV8M-100WV2HN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8M-100WV2HN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+228,Midea,MV8M-120WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8M-120WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+224,Midea,MV8M-120WV2HN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8M-120WV2HN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+229,Midea,MV8M-140WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8M-140WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+225,Midea,MV8M-140WV2HN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8M-140WV2HN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+226,Midea,MV8M-160WV2HN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8M-160WV2HN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+231,Midea,MV8M-170WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8M-170WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+227,Midea,MV8M-170WV2HN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8M-170WV2HN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+222,Midea,MV8M-80WV2HN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8M-80WV2HN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+232,Midea,MV8S-252WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8S-252WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+233,Midea,MV8S-280WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8S-280WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+234,Midea,MV8S-335WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8S-335WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+235,Midea,MV8S-400WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8S-400WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+236,Midea,MV8S-450WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8S-450WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+237,Midea,MV8S-500WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8S-500WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+238,Midea,MV8S-560WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8S-560WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+239,Midea,MV8S-615WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8S-615WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+240,Midea,MV8S-670WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8S-670WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+241,Midea,MV8Si-252WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-252WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+242,Midea,MV8Si-280WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-280WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+243,Midea,MV8Si-335WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-335WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+244,Midea,MV8Si-400WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-400WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+245,Midea,MV8Si-450WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-450WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+246,Midea,MV8Si-500WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-500WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+247,Midea,MV8Si-560WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-560WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+248,Midea,MV8Si-615WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-615WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+249,Midea,MV8Si-670WV2GN1/-40,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-670WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+250,Midea,MVC-M224WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M224WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+251,Midea,MVC-M280WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M280WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+252,Midea,MVC-M335WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M335WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+253,Midea,MVC-M400WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M400WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+254,Midea,MVC-M450WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M450WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+255,Midea,MVC-M500WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M500WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+256,Midea,MVC-M560WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M560WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+257,Midea,MVC-M615WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M615WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+258,Midea,MVC-M670WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M670WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+259,Midea,MVC-M730WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M730WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+260,Midea,MVC-M785WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M785WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+261,Midea,MVC-M850WV2GN1/-40,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M850WV2GN1-40/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+177,Midea,MVUH200BT-VA1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MVUH200BT-VA1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+218,Midea,MV8i-1010WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1010WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+201,Midea,MV8i-1060WV2GN1(PRO),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-PRO-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+219,Midea,MV8i-1060WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1060WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+202,Midea,MV8i-1120WV2GN1(PRO),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-PRO-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+220,Midea,MV8i-1120WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1120WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+203,Midea,MV8i-1170WV2GN1(PRO),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-PRO-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+221,Midea,MV8i-1170WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-1170WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+204,Midea,MV8i-252WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-252WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+205,Midea,MV8i-280WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-280WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+206,Midea,MV8i-335WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-335WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+207,Midea,MV8i-400WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-400WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+208,Midea,MV8i-450WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-450WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+209,Midea,MV8i-500WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-500WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+210,Midea,MV8i-560WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-560WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+211,Midea,MV8i-615WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-615WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+212,Midea,MV8i-670WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-670WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+213,Midea,MV8i-730WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-730WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+214,Midea,MV8i-785WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-785WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+215,Midea,MV8i-850WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-850WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+216,Midea,MV8i-900WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-900WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+217,Midea,MV8i-950WV2GN1(ULTRA),Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8i-950WV2GN1-ULTRA-/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+180,Midea,MV8Si-252WV2GN1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-252WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+181,Midea,MV8Si-280WV2GN1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-280WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+182,Midea,MV8Si-335WV2GN1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-335WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+183,Midea,MV8Si-400WV2GN1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-400WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+184,Midea,MV8Si-450WV2GN1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-450WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+185,Midea,MV8Si-500WV2GN1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-500WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+186,Midea,MV8Si-560WV2GN1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-560WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+187,Midea,MV8Si-615WV2GN1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-615WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+188,Midea,MV8Si-670WV2GN1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MV8Si-670WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+189,Midea,MVC-M224WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M224WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+190,Midea,MVC-M280WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M280WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+191,Midea,MVC-M335WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M335WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+192,Midea,MVC-M400WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M400WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+193,Midea,MVC-M450WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M450WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+194,Midea,MVC-M500WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M500WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+195,Midea,MVC-M560WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M560WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+196,Midea,MVC-M615WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M615WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+197,Midea,MVC-M670WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M670WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+198,Midea,MVC-M730WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M730WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+199,Midea,MVC-M785WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M785WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+200,Midea,MVC-M850WV2GN1,Компрессор,Инвертор,Спиральный,Тип компрессора,HTML,https://mircli.ru/Midea-MVC-M850WV2GN1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+175,Midea,MVUH100BT-VA1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MVUH100BT-VA1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+176,Midea,MVUH120BT-VA1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MVUH120BT-VA1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+172,Midea,MVUH35BT-VA1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MVUH35BT-VA1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+173,Midea,MVUH50BT-VA1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MVUH50BT-VA1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+174,Midea,MVUH60BT-VA1,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MVUH60BT-VA1/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+296,Midea,MVUW252A-VA3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MVUW252A-VA3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+297,Midea,MVUW280A-VA3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MVUW280A-VA3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+298,Midea,MVUW335A-VA3,Компрессор,Инвертор,Роторный,Тип компрессора,HTML,https://mircli.ru/Midea-MVUW335A-VA3/,"Коррекция схемы: 'Инвертор' относится к отдельному признаку, здесь тип компрессора"
+230,Midea,MV8M-160WV2GN1/-40,Хладагент [PROP_290],,R410A,Хладагент,WEB,https://mircli.ru/Midea-MV8M-160WV2GN1-40/,"Точная карточка модели /-40, расширенные характеристики"
+230,Midea,MV8M-160WV2GN1/-40,Кол-во подключаемых блоков,,11,Max кол-во комнат,WEB,https://mircli.ru/Midea-MV8M-160WV2GN1-40/,"Точная карточка модели /-40, макс. число внутренних блоков"
+230,Midea,MV8M-160WV2GN1/-40,Компрессор,,Роторный,Тип компрессора,WEB,https://mircli.ru/Midea-MV8M-160WV2GN1-40/,Точная карточка модели /-40
+300,IGC,IWF-Q1700CAQ4T44,Режим работы [PROP_423],,тепло-холод,"Мощность охлаждения, Мощность обогрева",WEB,https://toplan.ru/fankoil/cassette-fankojli/igc.html,Подтверждены оба режима из карточки точной модели
+230,Midea,MV8M-160WV2GN1/-40,Детальное описание,,Наружный блок VRF-системы Midea MV8M-160WV2GN1/-40 — инверторный наружный модуль для многозонального кондиционирования.<br><br>Основные характеристики:<br>- Тип оборудования: Наружный блок VRF.<br>- Формат установки: Наружное размещение.<br>- Назначение: Подключение совместимых внутренних блоков.<br><br>Преимущества и особенности:<br>- Инверторная технология: помогает адаптировать работу системы к текущей нагрузке.<br>- Управление iECO: предусмотрено для энергосберегающей работы.<br>- Низкотемпературное исполнение: предназначено для расширения условий эксплуатации.<br><br>Идеальное решение для:<br>- Коммерческих объектов с многозональным кондиционированием.<br>- Проектов с совместимыми внутренними блоками.<br><br>Наружный блок VRF-системы Midea MV8M-160WV2GN1/-40 — решение для построения управляемой климатической системы с несколькими зонами.<br>,Описание по точной карточке,WEB,https://mircli.ru/Midea-MV8M-160WV2GN1-40/,Описание переработано по пятичастному HTML-шаблону
+299,IGC,IWF-Q1700CAQ4T22,Детальное описание,,Кассетный фанкойл IGC IWF-Q1700CAQ4T22 — встраиваемый в потолок водяной фанкойл для кондиционирования помещений.<br><br>Основные характеристики:<br>- Тип оборудования: Кассетный фанкойл.<br>- Формат установки: Встраивание в подвесной потолок.<br>- Назначение: Подача охлаждённого воздуха от водяного контура.<br><br>Преимущества и особенности:<br>- Двухтрубная схема: предусматривает подключение к общему контуру теплоносителя.<br>- Кассетный монтаж: позволяет разместить устройство в потолочном пространстве.<br>- Воздухообмен: обеспечивает распределение подготовленного воздуха по помещению.<br><br>Идеальное решение для:<br>- Офисных и общественных пространств.<br>- Помещений с системой холодоснабжения на базе чиллера.<br><br>Кассетный фанкойл IGC IWF-Q1700CAQ4T22 — вариант для потолочного монтажа в составе водяной системы кондиционирования.<br>,Описание по точной карточке,WEB,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_q1700caq4t22/,Описание переработано по пятичастному HTML-шаблону
+300,IGC,IWF-Q1700CAQ4T44,Детальное описание,,Кассетный фанкойл IGC IWF-Q1700CAQ4T44 — кассетный водяной фанкойл с отдельными контурами нагрева и охлаждения.<br><br>Основные характеристики:<br>- Тип оборудования: Четырёхтрубный кассетный фанкойл.<br>- Формат установки: Потолочное размещение.<br>- Назначение: Нагрев и охлаждение воздуха при подключении к соответствующим водяным контурам.<br><br>Преимущества и особенности:<br>- Четырёхтрубная конструкция: позволяет организовать отдельные линии для горячего и холодного теплоносителя.<br>- Кассетное исполнение: предназначено для интеграции в подвесные потолки.<br><br>Идеальное решение для:<br>- Административных и коммерческих помещений.<br>- Объектов с водяными системами охлаждения и нагрева.<br><br>Кассетный фанкойл IGC IWF-Q1700CAQ4T44 — решение для помещений с раздельными контурами горячего и холодного теплоносителя.<br>,Описание по точной карточке,WEB,https://toplan.ru/fankoil/cassette-fankojli/igc.html,Описание переработано по пятичастному HTML-шаблону
+318,IGC,IMBR-C440ANB,Детальное описание,,Модульный чиллер IGC IMBR-C440ANB — оборудование с воздушным охлаждением конденсатора для подготовки холодной воды.<br><br>Основные характеристики:<br>- Тип оборудования: Модульный чиллер.<br>- Формат установки: Наружная установка.<br>- Назначение: Охлаждение теплоносителя.<br><br>Преимущества и особенности:<br>- Готовый гидромодуль: в состав входят элементы циркуляции и защиты водяного контура.<br>- Спиральный компрессор: обеспечивает работу холодильного контура.<br>- Защита от замерзания: контроллер управляет водяным контуром при снижении температуры.<br><br>Идеальное решение для:<br>- Крупных коммерческих объектов.<br>- Систем холодоснабжения и кондиционирования.<br><br>Модульный чиллер IGC IMBR-C440ANB — модульное решение для подготовки охлаждённого теплоносителя.<br>,Описание по точной карточке,WEB,https://iclim.ru/catalog/promyshlennye_konditsionery/chillery/igc_imbr_c440anb/,Описание переработано по пятичастному HTML-шаблону
