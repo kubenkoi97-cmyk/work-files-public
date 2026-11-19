@@ -1,0 +1,303 @@
+{
+  "stage": 9,
+  "date": "2026-11-19",
+  "base": "stage-8-index-reconciliation-12-stale-gaps.json",
+  "products": 347,
+  "exact_models": 18,
+  "new_values": 198,
+  "prior_open": 1159,
+  "closed": 108,
+  "open": 1051,
+  "conflicts": 0,
+  "rule": "Only fill blank values for exact ULTRA models; do not copy from PRO or base variants.",
+  "models": {
+    "MV8i-252WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12600",
+        "Диаметр труб хладагента [PROP_25]": "12,7/25,4",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "940",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "940×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "195",
+        "Максимальный ток, А": "17",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-280WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12600",
+        "Диаметр труб хладагента [PROP_25]": "12,7/25,4",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "940",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "940×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "195",
+        "Максимальный ток, А": "18.8",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-335WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "13500",
+        "Диаметр труб хладагента [PROP_25]": "12,7/25,4",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "940",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "940×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "195",
+        "Максимальный ток, А": "23",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-400WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "14400",
+        "Диаметр труб хладагента [PROP_25]": "15,9/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "940",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "940×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "213",
+        "Максимальный ток, А": "26.2",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-450WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "15600",
+        "Диаметр труб хладагента [PROP_25]": "15,9/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "940",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "940×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "213",
+        "Максимальный ток, А": "31.4",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-500WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "16500",
+        "Диаметр труб хладагента [PROP_25]": "15,9/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "940",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "940×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "215",
+        "Максимальный ток, А": "33",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-560WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "22000",
+        "Диаметр труб хладагента [PROP_25]": "15,9/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "295",
+        "Максимальный ток, А": "40.5",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-615WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "22000",
+        "Диаметр труб хладагента [PROP_25]": "15,9/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "295",
+        "Максимальный ток, А": "41.5",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-670WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "21500",
+        "Диаметр труб хладагента [PROP_25]": "15,9/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "315",
+        "Максимальный ток, А": "46",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-730WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "21500",
+        "Диаметр труб хладагента [PROP_25]": "15,9/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "315",
+        "Максимальный ток, А": "51",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-785WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/31,8",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1880",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1880×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "373",
+        "Максимальный ток, А": "51",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-850WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "28000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/34,9",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1880",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1880×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "405",
+        "Максимальный ток, А": "56.8",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-900WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "28000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/34,9",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1880",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1880×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "405",
+        "Максимальный ток, А": "57",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-950WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/34,9",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1880",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1880×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "406",
+        "Максимальный ток, А": "63.8",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-1010WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/34,9",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1880",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1880×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "406",
+        "Максимальный ток, А": "64",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-1060WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/34,9",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1880",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1880×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "440",
+        "Максимальный ток, А": "74.6",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-1120WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/34,9",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1880",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1880×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "440",
+        "Максимальный ток, А": "75",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    },
+    "MV8i-1170WV2GN1(ULTRA)": {
+      "source": "https://air-midea.com/support/marketing/download/11964/",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/34,9",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1880",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1880×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "442",
+        "Максимальный ток, А": "80",
+        "Диапазон рабочих темп. нагрев. °С [PROP_200]": "-30...+30",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/support/marketing/download/11964/\" target=\"_blank\">Midea VRF 2025–2026 — заводской каталог V8i ULTRA (PDF)</a>"
+      }
+    }
+  }
+}
