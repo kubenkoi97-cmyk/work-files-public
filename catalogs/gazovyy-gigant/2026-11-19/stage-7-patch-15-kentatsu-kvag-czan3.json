@@ -1,0 +1,269 @@
+{
+  "stage": 7,
+  "date": "2026-11-19",
+  "base": "stage-6-patch-21-midea-models.json",
+  "total_products": 347,
+  "models_changed": 15,
+  "added_cells": 150,
+  "closed_checklist_gaps": 90,
+  "remaining_checklist_gaps": 1171,
+  "conflicts_preserved": 15,
+  "rule": "Only fill blank cells, do not overwrite existing conflict values. KVAG-CZAN3 differs from KVAG-HZAN3 and is cooling-only.",
+  "models": {
+    "KVAG250CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "12,7/22,2",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Вес наружного блока, кг [PROP_33]": "195",
+        "Максимальный ток, А": "28.2",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 18,
+      "operation_mode": "холод"
+    },
+    "KVAG290CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "12,7/22,2",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Вес наружного блока, кг [PROP_33]": "195",
+        "Максимальный ток, А": "28.6",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 20,
+      "operation_mode": "холод"
+    },
+    "KVAG340CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "12,7/22,2",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Вес наружного блока, кг [PROP_33]": "195",
+        "Максимальный ток, А": "29.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 24,
+      "operation_mode": "холод"
+    },
+    "KVAG400CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "15,88/25,4",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Вес наружного блока, кг [PROP_33]": "195",
+        "Максимальный ток, А": "29.5",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 28,
+      "operation_mode": "холод"
+    },
+    "KVAG450CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "15,88/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Вес наружного блока, кг [PROP_33]": "215",
+        "Максимальный ток, А": "38.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 32,
+      "operation_mode": "холод"
+    },
+    "KVAG500CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "15,88/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Вес наружного блока, кг [PROP_33]": "215",
+        "Максимальный ток, А": "38.5",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 36,
+      "operation_mode": "холод"
+    },
+    "KVAG560CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "16000",
+        "Диаметр труб хладагента [PROP_25]": "15,88/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1635×765",
+        "Вес наружного блока, кг [PROP_33]": "285",
+        "Максимальный ток, А": "40.2",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 40,
+      "operation_mode": "холод"
+    },
+    "KVAG615CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "16000",
+        "Диаметр труб хладагента [PROP_25]": "15,88/28,6",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1635×765",
+        "Вес наружного блока, кг [PROP_33]": "285",
+        "Максимальный ток, А": "40.6",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 44,
+      "operation_mode": "холод"
+    },
+    "KVAG680CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "16000",
+        "Диаметр труб хладагента [PROP_25]": "19,05/31,8",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1635×765",
+        "Вес наружного блока, кг [PROP_33]": "300",
+        "Максимальный ток, А": "46",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 49,
+      "operation_mode": "холод"
+    },
+    "KVAG730CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "19,05/35,0",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "369",
+        "Максимальный ток, А": "55.4",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 52,
+      "operation_mode": "холод"
+    },
+    "KVAG800CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "369",
+        "Максимальный ток, А": "55.9",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 56,
+      "operation_mode": "холод"
+    },
+    "KVAG850CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "369",
+        "Максимальный ток, А": "56.5",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 61,
+      "operation_mode": "холод"
+    },
+    "KVAG900CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "401",
+        "Максимальный ток, А": "62.9",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 64,
+      "operation_mode": "холод"
+    },
+    "KVAG950CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "401",
+        "Максимальный ток, А": "63.5",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 64,
+      "operation_mode": "холод"
+    },
+    "KVAG1010CZAN3": {
+      "source": "https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Вес наружного блока, кг [PROP_33]": "401",
+        "Максимальный ток, А": "64",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO 2025–2026 — каталог KVAG-CZAN3 (PDF)</a>"
+      },
+      "catalog_connected_units": 64,
+      "operation_mode": "холод"
+    }
+  }
+}
