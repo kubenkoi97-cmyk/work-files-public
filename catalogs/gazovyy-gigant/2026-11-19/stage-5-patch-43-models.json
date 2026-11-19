@@ -1,0 +1,661 @@
+{
+  "stage": 5,
+  "date": "2026-11-19",
+  "base": "stage-4-mixed-347-products-77-columns.csv",
+  "target": "Климат_347_MIXED_этап5_2026-11-19.xlsx",
+  "row_count": 347,
+  "model_count": 43,
+  "added_cells": 388,
+  "closed_gap_count": 237,
+  "remaining_gap_count": 1375,
+  "conflicts_unresolved": 23,
+  "warning": "R410A/R32 for Midea describes compatibility, not proven actual charge. Conflicting prior data not overwritten. Workbook in ChatGPT, source-backed patch in GitHub.",
+  "models": {
+    "MIH22F3HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "915×470×200",
+        "Ширина, мм": "915",
+        "Высота, мм": "470",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "16.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH28F3HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "915×470×200",
+        "Ширина, мм": "915",
+        "Высота, мм": "470",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "16.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH36F3HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "915×470×200",
+        "Ширина, мм": "915",
+        "Высота, мм": "470",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "16.9",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH45F3HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1133×470×200",
+        "Ширина, мм": "1133",
+        "Высота, мм": "470",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "20",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH56F3HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1253×566×200",
+        "Ширина, мм": "1253",
+        "Высота, мм": "566",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "24.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH71F3HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "9,53/15,9",
+        "Габариты (ШхВхГ), мм": "1253×566×200",
+        "Ширина, мм": "1253",
+        "Высота, мм": "566",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "26.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH80F3HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "9,53/15,9",
+        "Габариты (ШхВхГ), мм": "1253×566×200",
+        "Ширина, мм": "1253",
+        "Высота, мм": "566",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "26.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH22F4HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1020×495×200",
+        "Ширина, мм": "1020",
+        "Высота, мм": "495",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "21.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH28F4HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1020×495×200",
+        "Ширина, мм": "1020",
+        "Высота, мм": "495",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "21.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH36F4HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1020×495×200",
+        "Ширина, мм": "1020",
+        "Высота, мм": "495",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "21.9",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH45F4HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1240×495×200",
+        "Ширина, мм": "1240",
+        "Высота, мм": "495",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "26.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH56F4HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1360×591×200",
+        "Ширина, мм": "1360",
+        "Высота, мм": "591",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "32.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH71F4HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "9,53/15,9",
+        "Габариты (ШхВхГ), мм": "1360×591×200",
+        "Ширина, мм": "1360",
+        "Высота, мм": "591",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "33.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH80F4HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "9,53/15,9",
+        "Габариты (ШхВхГ), мм": "1360×591×200",
+        "Ширина, мм": "1360",
+        "Высота, мм": "591",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "33.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH22F5HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1020×495×200",
+        "Ширина, мм": "1020",
+        "Высота, мм": "495",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "21.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH28F5HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1020×495×200",
+        "Ширина, мм": "1020",
+        "Высота, мм": "495",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "21.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH36F5HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1020×495×200",
+        "Ширина, мм": "1020",
+        "Высота, мм": "495",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "21.9",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH45F5HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1240×495×200",
+        "Ширина, мм": "1240",
+        "Высота, мм": "495",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "26.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH56F5HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "6,35/12,7",
+        "Габариты (ШхВхГ), мм": "1360×591×200",
+        "Ширина, мм": "1360",
+        "Высота, мм": "591",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "32.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH71F5HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "9,53/15,9",
+        "Габариты (ШхВхГ), мм": "1360×591×200",
+        "Ширина, мм": "1360",
+        "Высота, мм": "591",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "33.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "MIH80F5HN18": {
+      "brand": "Midea",
+      "source": "https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf",
+      "values": {
+        "Хладагент [PROP_290]": "R410A/R32",
+        "Диаметр труб хладагента [PROP_25]": "9,53/15,9",
+        "Габариты (ШхВхГ), мм": "1360×591×200",
+        "Ширина, мм": "1360",
+        "Высота, мм": "591",
+        "Глубина, мм": "200",
+        "Вес (нетто), кг": "33.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://air-midea.com/upload/iblock/43b/0lq6fla7pf4pijetalxk0gyjb10xk3v2.pdf\" target=\"_blank\">Midea V8 — технический каталог (PDF)</a>"
+      }
+    },
+    "KVAH250HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "12,7/22,2",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "210",
+        "Максимальный ток, А": "24.3",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAH340HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "12,7/22,2",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "210",
+        "Максимальный ток, А": "25.9",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAH730HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "19,05/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "379",
+        "Максимальный ток, А": "51",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAH800HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "379",
+        "Максимальный ток, А": "51",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAH900HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "405",
+        "Максимальный ток, А": "57",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAH950HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "405",
+        "Максимальный ток, А": "63.5",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAH1010HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "405",
+        "Максимальный ток, А": "64",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG250HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "12,7/22,2",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "205",
+        "Максимальный ток, А": "21.9",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG290HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "12,7/22,2",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "205",
+        "Максимальный ток, А": "22.2",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG340HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "12000",
+        "Диаметр труб хладагента [PROP_25]": "12,7/22,2",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "990×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "990",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "205",
+        "Максимальный ток, А": "23",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG400HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "14000",
+        "Диаметр труб хладагента [PROP_25]": "15,88/28,6",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "258",
+        "Максимальный ток, А": "26.1",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG450HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "14000",
+        "Диаметр труб хладагента [PROP_25]": "15,88/28,6",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "258",
+        "Максимальный ток, А": "29",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG500HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "17800",
+        "Диаметр труб хладагента [PROP_25]": "15,88/28,6",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "275",
+        "Максимальный ток, А": "30.8",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG560HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "17800",
+        "Диаметр труб хладагента [PROP_25]": "15,88/28,6",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "317",
+        "Максимальный ток, А": "39.7",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG615HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "17800",
+        "Диаметр труб хладагента [PROP_25]": "15,88/28,6",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1340×1635×765",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1340",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1635",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "765",
+        "Вес наружного блока, кг [PROP_33]": "317",
+        "Максимальный ток, А": "41.5",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG680HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "19,05/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "386",
+        "Максимальный ток, А": "53",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG730HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "19,05/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "386",
+        "Максимальный ток, А": "55",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG800HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "29000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "386",
+        "Максимальный ток, А": "57",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG850HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "392",
+        "Максимальный ток, А": "62",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG900HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "392",
+        "Максимальный ток, А": "63.5",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG950HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "418",
+        "Максимальный ток, А": "63.6",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    },
+    "KVAG1010HZAN3": {
+      "brand": "Kentatsu",
+      "source": "https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf",
+      "values": {
+        "Электропитание, В": "380–415 В, 50 Гц, 3 фазы",
+        "Расход воздуха, м³/час": "30000",
+        "Диаметр труб хладагента [PROP_25]": "22,2/35,0",
+        "Габариты наружного блока (ШxВxГ), мм [PROP_32]": "1850×1760×825",
+        "Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]": "1850",
+        "Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]": "1760",
+        "Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]": "825",
+        "Вес наружного блока, кг [PROP_33]": "418",
+        "Максимальный ток, А": "64",
+        "Техническая документация [TECH_DOCUMENTATION]": "<a href=\"https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf\" target=\"_blank\">Kentatsu DX PRO A — заводской каталог (PDF)</a>"
+      }
+    }
+  }
+}
