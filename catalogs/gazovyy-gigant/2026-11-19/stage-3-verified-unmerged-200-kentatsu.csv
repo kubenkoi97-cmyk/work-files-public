@@ -1,0 +1,201 @@
+Исходная строка,Модель,Поле,Подтверждённое значение,Первоисточник,Статус внесения
+94,KTRB500HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",940,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+94,KTRB500HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+94,KTRB500HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+94,KTRB500HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",940×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+94,KTRB500HZAN3,"Вес наружного блока, кг [PROP_33]",218,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+94,KTRB500HZAN3,Диаметр труб хладагента [PROP_25],"15,9/28,6",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+94,KTRB500HZAN3,"Расход воздуха, м³/час",17000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+94,KTRB500HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+94,KTRB500HZAN3,"Максимальный ток, А",33.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+94,KTRB500HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1340,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1340×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,"Вес наружного блока, кг [PROP_33]",277,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,Диаметр труб хладагента [PROP_25],"15,9/28,6",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,"Расход воздуха, м³/час",17000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,"Максимальный ток, А",40.5,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+95,KTRB560HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1340,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1340×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,"Вес наружного блока, кг [PROP_33]",277,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,Диаметр труб хладагента [PROP_25],"15,9/28,6",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,"Расход воздуха, м³/час",17000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,"Максимальный ток, А",41.5,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+96,KTRB615HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1340,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1340×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,"Вес наружного блока, кг [PROP_33]",297,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,Диаметр труб хладагента [PROP_25],"15,9/28,6",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,"Максимальный ток, А",46.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+97,KTRB670HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,"Вес наружного блока, кг [PROP_33]",380,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,Диаметр труб хладагента [PROP_25],"22,2/31,8",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,"Максимальный ток, А",48.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+98,KTRB730HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,"Вес наружного блока, кг [PROP_33]",380,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,Диаметр труб хладагента [PROP_25],"22,2/31,8",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,"Максимальный ток, А",51.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+99,KTRB785HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,"Вес наружного блока, кг [PROP_33]",419,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,Диаметр труб хладагента [PROP_25],"22,2/34,9",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,"Максимальный ток, А",56.8,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+100,KTRB850HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,"Вес наружного блока, кг [PROP_33]",419,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,Диаметр труб хладагента [PROP_25],"22,2/34,9",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,"Максимальный ток, А",57.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+101,KTRB900HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,"Вес наружного блока, кг [PROP_33]",420,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,Диаметр труб хладагента [PROP_25],"22,2/34,9",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,"Расход воздуха, м³/час",24000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,"Максимальный ток, А",63.7,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+102,KTRB950HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,"Вес наружного блока, кг [PROP_33]",420,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,Диаметр труб хладагента [PROP_25],"22,2/34,9",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,"Расход воздуха, м³/час",24000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,"Максимальный ток, А",64.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+103,KTRB1010HZAN3,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",940,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",940×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,"Вес наружного блока, кг [PROP_33]",218,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,Диаметр труб хладагента [PROP_25],"15,9/28,6",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,"Расход воздуха, м³/час",17000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,"Максимальный ток, А",33.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+109,KTRB500HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1340,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1340×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,"Вес наружного блока, кг [PROP_33]",277,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,Диаметр труб хладагента [PROP_25],"15,9/28,6",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,"Расход воздуха, м³/час",17000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,"Максимальный ток, А",40.5,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+110,KTRB560HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1340,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1340×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,"Вес наружного блока, кг [PROP_33]",277,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,Диаметр труб хладагента [PROP_25],"15,9/28,6",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,"Расход воздуха, м³/час",17000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,"Максимальный ток, А",41.5,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+111,KTRB615HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1340,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1340×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,"Вес наружного блока, кг [PROP_33]",297,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,Диаметр труб хладагента [PROP_25],"15,9/28,6",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,"Максимальный ток, А",46.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+112,KTRB670HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,"Вес наружного блока, кг [PROP_33]",380,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,Диаметр труб хладагента [PROP_25],"22,2/31,8",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,"Максимальный ток, А",48.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+113,KTRB730HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,"Вес наружного блока, кг [PROP_33]",380,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,Диаметр труб хладагента [PROP_25],"22,2/31,8",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,"Максимальный ток, А",51.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+114,KTRB785HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,"Вес наружного блока, кг [PROP_33]",419,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,Диаметр труб хладагента [PROP_25],"22,2/34,9",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,"Максимальный ток, А",56.8,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+115,KTRB850HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,"Вес наружного блока, кг [PROP_33]",419,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,Диаметр труб хладагента [PROP_25],"22,2/34,9",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,"Расход воздуха, м³/час",25000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,"Максимальный ток, А",57.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+116,KTRB900HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,"Вес наружного блока, кг [PROP_33]",420,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,Диаметр труб хладагента [PROP_25],"22,2/34,9",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,"Расход воздуха, м³/час",24000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,"Максимальный ток, А",63.7,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+117,KTRB950HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",1880,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",1760,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",1880×1760×825,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,"Вес наружного блока, кг [PROP_33]",420,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,Диаметр труб хладагента [PROP_25],"22,2/34,9",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,"Расход воздуха, м³/час",24000,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,"Электропитание, В","380~415 В, 50 Гц, 3 фазы",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,"Максимальный ток, А",64.0,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
+118,KTRB1010HZAN3-i,Техническая документация [TECH_DOCUMENTATION],"<a href=""https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf"" target=""_blank"">Технический каталог Kentatsu DX PRO VII (PDF)</a>",https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,НЕ ВНЕСЕНО В XLSX: ошибка экспорта/редактирования
