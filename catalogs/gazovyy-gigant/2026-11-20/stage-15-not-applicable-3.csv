@@ -1,0 +1,4 @@
+Модель,Поле,Решение,Причина,Источник
+SMK-D140HHN1-3,"Охлаждение, кВт",НЕПРИМЕНИМО,Гидромодуль рассчитан на нагрев водяного контура; режим холодопроизводительности не заявлен,https://www.midea.com.ua/sites/default/files/downloadables-documents/pdf/tm-smk-d140hhn1-3-high-temperature-hydraulic-module.pdf
+SMK-D140HHN1-3,"Расход воздуха, м³/час",НЕПРИМЕНИМО,"Модуль использует водяной теплообменник, не нормируется как воздушный внутренний/наружный блок",https://www.midea.com.ua/sites/default/files/downloadables-documents/pdf/tm-smk-d140hhn1-3-high-temperature-hydraulic-module.pdf
+SMK-D140HHN1-3,Кол-во подключаемых блоков,НЕПРИМЕНИМО,Гидромодуль не является наружным VRF-блоком,https://www.midea.com.ua/sites/default/files/downloadables-documents/pdf/tm-smk-d140hhn1-3-high-temperature-hydraulic-module.pdf
