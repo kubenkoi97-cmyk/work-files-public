@@ -1,0 +1,11 @@
+# Price update gate 3 — verified package, 2026-11-20
+
+**Confirmed retail-price input:** one supplier sheet `Worksheet`, SKU B, recommended retail price P, RUB, R1 structure with category sections; zero formulas, zero merged cells, zero detected two-row kits. `kit (one SKU)` in LOG is 469 supplier entries marketed as sets, not two-code R2 kits.
+
+**Old catalog:** all 5,989 original rows preserved once. 230 prices changed after strict matching; 426 equal prices; 1,797 not verified; 3,536 discontinued rows kept unchanged. 16 of the unverified cards were flagged by A12.2 for matching an individual model token but not a complete signature.
+
+**Additions:** 28,777 distinct canonical SKUs selected from 59,565 catalog rows. Main XLSX contains all existing products and 6,487 additions. Seven supplementary XLSX books contain the remaining 22,290 additions: 2,420 fans, 18,616 ventilation valves in 5 pieces, 1,254 automation. All spreadsheets have a `LOG` tab. Full selected additions also exported to UTF-8 BOM semicolon CSV.
+
+**Validation:** XLSX main source IDs checked 5,989/5,989 with no duplicates, no source status or sort changes, matched retail prices checked; seven supplemental XLSX files validated, each ZIP integrity passed; 28,777 selected keys unique; complete package ZIP has 11 entries, archive integrity passed. A12.4 filter found no independently confirmable unpriced component-plus-kit pair. 30,788 catalog rows excluded or held for review (19,763 name/article mismatch; 9,485 invalid SKU; 921 existing; 323 blank retail; 164 unclear category; 126 conflicting duplicate; 6 catalog duplicate).
+
+**Delivery:** chat package `ПРАВКА_ЦЕН_2026-11-20_ПОЛНЫЙ_КОМПЛЕКТ.zip` and individual main workbook + CSV. Binary XLSX/ZIP files are in the ChatGPT conversation only, not GitHub, since the connector available here does not accept binary local-file upload. No online shop actions were performed. The 22,290 supplement entries have not been merged into the main XLSX; for publication, treat this as a staged import package and review business assortment first.
