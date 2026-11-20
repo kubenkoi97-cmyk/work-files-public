@@ -1,0 +1,87 @@
+Позиция 347,Модель,Поле,Было,Стало,URL первоисточника,Основание,Статус,Этап
+172,MVUH35BT-VA1,"Электропитание, В",,220-240/50/1,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"220–240 В, 50 Гц, 1 фаза; заводская таблица",ВНЕСЕНО,13
+172,MVUH35BT-VA1,"Расход воздуха, м³/час",,2500,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+172,MVUH35BT-VA1,Диаметр труб хладагента [PROP_25],,"6,35/12,7",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Жидкость/газ, мм; знак десятичной запятой",ВНЕСЕНО,13
+172,MVUH35BT-VA1,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,795×555×365,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Габариты корпуса без упаковки, Ш×В×Г",ВНЕСЕНО,13
+172,MVUH35BT-VA1,"Вес наружного блока, кг [PROP_33]",,35,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Масса нетто, кг",ВНЕСЕНО,13
+172,MVUH35BT-VA1,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,795,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+172,MVUH35BT-VA1,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,555,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+172,MVUH35BT-VA1,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,365,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+172,MVUH35BT-VA1,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf"" target=""_blank"">Midea Atom B — Engineering Data (PDF)</a>",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,Документ содержит точную модель; не документ схожей серии,ВНЕСЕНО,13
+173,MVUH50BT-VA1,"Электропитание, В",,220-240/50/1,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"220–240 В, 50 Гц, 1 фаза; заводская таблица",ВНЕСЕНО,13
+173,MVUH50BT-VA1,"Расход воздуха, м³/час",,2700,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+173,MVUH50BT-VA1,Диаметр труб хладагента [PROP_25],,"6,35/12,7",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Жидкость/газ, мм; знак десятичной запятой",ВНЕСЕНО,13
+173,MVUH50BT-VA1,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,795×555×365,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Габариты корпуса без упаковки, Ш×В×Г",ВНЕСЕНО,13
+173,MVUH50BT-VA1,"Вес наружного блока, кг [PROP_33]",,35,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Масса нетто, кг",ВНЕСЕНО,13
+173,MVUH50BT-VA1,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,795,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+173,MVUH50BT-VA1,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,555,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+173,MVUH50BT-VA1,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,365,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+173,MVUH50BT-VA1,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf"" target=""_blank"">Midea Atom B — Engineering Data (PDF)</a>",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,Документ содержит точную модель; не документ схожей серии,ВНЕСЕНО,13
+174,MVUH60BT-VA1,"Электропитание, В",,220-240/50/1,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"220–240 В, 50 Гц, 1 фаза; заводская таблица",ВНЕСЕНО,13
+174,MVUH60BT-VA1,"Расход воздуха, м³/час",,2700,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+174,MVUH60BT-VA1,Диаметр труб хладагента [PROP_25],,"9,53/15,9",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Жидкость/газ, мм; знак десятичной запятой",ВНЕСЕНО,13
+174,MVUH60BT-VA1,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,795×555×365,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Габариты корпуса без упаковки, Ш×В×Г",ВНЕСЕНО,13
+174,MVUH60BT-VA1,"Вес наружного блока, кг [PROP_33]",,35,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Масса нетто, кг",ВНЕСЕНО,13
+174,MVUH60BT-VA1,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,795,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+174,MVUH60BT-VA1,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,555,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+174,MVUH60BT-VA1,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,365,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+174,MVUH60BT-VA1,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf"" target=""_blank"">Midea Atom B — Engineering Data (PDF)</a>",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,Документ содержит точную модель; не документ схожей серии,ВНЕСЕНО,13
+175,MVUH100BT-VA1,"Электропитание, В",,220-240/50/1,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"220–240 В, 50 Гц, 1 фаза; заводская таблица",ВНЕСЕНО,13
+175,MVUH100BT-VA1,"Расход воздуха, м³/час",,4000,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+175,MVUH100BT-VA1,Диаметр труб хладагента [PROP_25],,"9,53/15,9",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Жидкость/газ, мм; знак десятичной запятой",ВНЕСЕНО,13
+175,MVUH100BT-VA1,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,910×712×426,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Габариты корпуса без упаковки, Ш×В×Г",ВНЕСЕНО,13
+175,MVUH100BT-VA1,"Вес наружного блока, кг [PROP_33]",,52.5,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Масса нетто, кг",ВНЕСЕНО,13
+175,MVUH100BT-VA1,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,910,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+175,MVUH100BT-VA1,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,712,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+175,MVUH100BT-VA1,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,426,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+175,MVUH100BT-VA1,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf"" target=""_blank"">Midea Atom B — Engineering Data (PDF)</a>",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,Документ содержит точную модель; не документ схожей серии,ВНЕСЕНО,13
+176,MVUH120BT-VA1,"Электропитание, В",,220-240/50/1,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"220–240 В, 50 Гц, 1 фаза; заводская таблица",ВНЕСЕНО,13
+176,MVUH120BT-VA1,"Расход воздуха, м³/час",,5000,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+176,MVUH120BT-VA1,Диаметр труб хладагента [PROP_25],,"9,53/15,9",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Жидкость/газ, мм; знак десятичной запятой",ВНЕСЕНО,13
+176,MVUH120BT-VA1,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,950×840×440,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Габариты корпуса без упаковки, Ш×В×Г",ВНЕСЕНО,13
+176,MVUH120BT-VA1,"Вес наружного блока, кг [PROP_33]",,62.5,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Масса нетто, кг",ВНЕСЕНО,13
+176,MVUH120BT-VA1,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,950,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+176,MVUH120BT-VA1,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,840,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+176,MVUH120BT-VA1,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,440,https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+176,MVUH120BT-VA1,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf"" target=""_blank"">Midea Atom B — Engineering Data (PDF)</a>",https://air-midea.com/upload/iblock/be4/h58vpyespjq5v60gx2yg2uuwc82t9wbu.pdf,Документ содержит точную модель; не документ схожей серии,ВНЕСЕНО,13
+177,MVUH200BT-VA1,"Электропитание, В",,220-240/50/1,https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf,"220–240 В, 50 Гц, 1 фаза; заводская таблица",ВНЕСЕНО,13
+177,MVUH200BT-VA1,"Расход воздуха, м³/час",,6350,https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+177,MVUH200BT-VA1,Диаметр труб хладагента [PROP_25],,"9,53/19,1",https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf,"Жидкость/газ, мм; знак десятичной запятой",ВНЕСЕНО,13
+177,MVUH200BT-VA1,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,979×1327×400,https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf,"Габариты корпуса без упаковки, Ш×В×Г",ВНЕСЕНО,13
+177,MVUH200BT-VA1,"Вес наружного блока, кг [PROP_33]",,103,https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf,"Масса нетто, кг",ВНЕСЕНО,13
+177,MVUH200BT-VA1,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,979,https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+177,MVUH200BT-VA1,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1327,https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+177,MVUH200BT-VA1,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,400,https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+177,MVUH200BT-VA1,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf"" target=""_blank"">Руководство Midea MVUH200BT-VA1 (PDF)</a>",https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/37793/138737.pdf,Документ содержит точную модель; не документ схожей серии,ВНЕСЕНО,13
+300,IWF-X200K22W-A,"Габариты (ШхВхГ), мм",,965×325×230,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x200k22w_a/,Габариты версии -A по точной дилерской карточке,ВНЕСЕНО,13
+300,IWF-X200K22W-A,"Вес (нетто), кг",,16,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x200k22w_a/,"Масса версии -A, не базовой IWF-X",ВНЕСЕНО,13
+300,IWF-X200K22W-A,"Ширина, мм",,965,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x200k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+300,IWF-X200K22W-A,"Высота, мм",,325,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x200k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+300,IWF-X200K22W-A,"Глубина, мм",,230,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x200k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+300,IWF-X200K22W-A,Тип подключения,,двухтрубный,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x200k22w_a/,2-х трубная водяная система; встроенный трехходовой клапан,ВНЕСЕНО,13
+301,IWF-X300K22W-A,"Габариты (ШхВхГ), мм",,965×325×230,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x300k22w_a/,Габариты версии -A по точной дилерской карточке,ВНЕСЕНО,13
+301,IWF-X300K22W-A,"Вес (нетто), кг",,16.7,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x300k22w_a/,"Масса версии -A, не базовой IWF-X",ВНЕСЕНО,13
+301,IWF-X300K22W-A,"Ширина, мм",,965,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x300k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+301,IWF-X300K22W-A,"Высота, мм",,325,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x300k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+301,IWF-X300K22W-A,"Глубина, мм",,230,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x300k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+301,IWF-X300K22W-A,Тип подключения,,двухтрубный,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x300k22w_a/,2-х трубная водяная система; встроенный трехходовой клапан,ВНЕСЕНО,13
+302,IWF-X400K22W-A,"Габариты (ШхВхГ), мм",,965×325×230,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x400k22w_a/,Габариты версии -A по точной дилерской карточке,ВНЕСЕНО,13
+302,IWF-X400K22W-A,"Вес (нетто), кг",,17,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x400k22w_a/,"Масса версии -A, не базовой IWF-X",ВНЕСЕНО,13
+302,IWF-X400K22W-A,"Ширина, мм",,965,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x400k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+302,IWF-X400K22W-A,"Высота, мм",,325,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x400k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+302,IWF-X400K22W-A,"Глубина, мм",,230,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x400k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+302,IWF-X400K22W-A,Тип подключения,,двухтрубный,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x400k22w_a/,2-х трубная водяная система; встроенный трехходовой клапан,ВНЕСЕНО,13
+303,IWF-X500K22W-A,"Габариты (ШхВхГ), мм",,1089×328×227,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x500k22w_a/,Габариты версии -A по точной дилерской карточке,ВНЕСЕНО,13
+303,IWF-X500K22W-A,"Вес (нетто), кг",,19,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x500k22w_a/,"Масса версии -A, не базовой IWF-X",ВНЕСЕНО,13
+303,IWF-X500K22W-A,"Ширина, мм",,1089,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x500k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+303,IWF-X500K22W-A,"Высота, мм",,328,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x500k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+303,IWF-X500K22W-A,"Глубина, мм",,227,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x500k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+303,IWF-X500K22W-A,Тип подключения,,двухтрубный,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x500k22w_a/,2-х трубная водяная система; встроенный трехходовой клапан,ВНЕСЕНО,13
+304,IWF-X600K22W-A,"Габариты (ШхВхГ), мм",,1089×328×227,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x600k22w_a/,Габариты версии -A по точной дилерской карточке,ВНЕСЕНО,13
+304,IWF-X600K22W-A,"Вес (нетто), кг",,19,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x600k22w_a/,"Масса версии -A, не базовой IWF-X",ВНЕСЕНО,13
+304,IWF-X600K22W-A,"Ширина, мм",,1089,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x600k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+304,IWF-X600K22W-A,"Высота, мм",,328,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x600k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+304,IWF-X600K22W-A,"Глубина, мм",,227,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x600k22w_a/,"Точная модель, подтверждено источником",ВНЕСЕНО,13
+304,IWF-X600K22W-A,Тип подключения,,двухтрубный,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x600k22w_a/,2-х трубная водяная система; встроенный трехходовой клапан,ВНЕСЕНО,13
+10,MIH400T1HN18,Диаметр труб хладагента [PROP_25],,"12,7/25,4",https://russia-midea.ru/midea-mih-t1-v8-mih400t1hn18/,"Жидкость/газ, мм; exact model",ВНЕСЕНО,13
+12,MIH560T1HN18,Диаметр труб хладагента [PROP_25],,"15,9/28,6",https://russia-midea.ru/midea-mih-t1-v8-mih560t1hn18/,"Жидкость/газ, мм; exact model",ВНЕСЕНО,13
