@@ -1,0 +1,8 @@
+Строка Excel,Модель,Поле,Было,"Bosch, подтверждено",Источник,Решение
+81,MDCI 16-1,"Электропитание, В","1~, 220~240 В, 50 Гц",220-240 В / 1 фаза / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Не изменено: разные форматы/округление
+81,MDCI 16-1,Диаметр труб хладагента [PROP_25],"9,52/19,05","9,53/19,1",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Не изменено: разные форматы/округление
+86,MDCI 22-3,"Электропитание, В",3 Фазы / 400 В / 50 Гц,380-415 В / 3 фазы / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Не изменено: разные форматы/округление
+86,MDCI 22-3,Диаметр труб хладагента [PROP_25],"9,52/19,05","9,53/19,1",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Не изменено: разные форматы/округление
+87,MDCI 26-3,"Обогрев, кВт",7.2,28.5,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Исправлено: явная ошибка
+88,MDCI 40-3,"Обогрев, кВт",7.2,45,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Исправлено: явная ошибка
+89,MDCI 45-3,"Обогрев, кВт",7.2,50,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Исправлено: явная ошибка
