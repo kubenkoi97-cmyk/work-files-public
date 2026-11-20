@@ -1,0 +1,101 @@
+Строка Excel,Модель,Поле,Было,Стало,Первоисточник,Основание,Тип
+80,MDCI 14-1,"Электропитание, В",,220-240 В / 1 фаза / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+80,MDCI 14-1,"Расход воздуха, м³/час",,6000,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+80,MDCI 14-1,Диаметр труб хладагента [PROP_25],,"9,53/15,9",https://static.eseficiencia.es/media/2022/05/catalogo-general-vrf_bosch-2022.pdf,"Точная строка модели, таблица труб Bosch VRF: жидкостная / газовая, мм",НОВОЕ
+80,MDCI 14-1,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,900,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+80,MDCI 14-1,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1327,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+80,MDCI 14-1,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+80,MDCI 14-1,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,900×1327×400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+80,MDCI 14-1,"Вес наружного блока, кг [PROP_33]",,99,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+80,MDCI 14-1,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 14-1)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+81,MDCI 16-1,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 16-1)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+81,MDCI 16-1,Кол-во подключаемых блоков,,7,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+82,MDCI 12-3,"Электропитание, В",,380-415 В / 3 фазы / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+82,MDCI 12-3,"Расход воздуха, м³/час",,6000,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+82,MDCI 12-3,Диаметр труб хладагента [PROP_25],,"9,53/15,9",https://static.eseficiencia.es/media/2022/05/catalogo-general-vrf_bosch-2022.pdf,"Точная строка модели, таблица труб Bosch VRF: жидкостная / газовая, мм",НОВОЕ
+82,MDCI 12-3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,900,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+82,MDCI 12-3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1327,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+82,MDCI 12-3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+82,MDCI 12-3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,900×1327×400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+82,MDCI 12-3,"Вес наружного блока, кг [PROP_33]",,95,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+82,MDCI 12-3,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 12-3)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+83,MDCI 14-3,"Электропитание, В",,380-415 В / 3 фазы / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+83,MDCI 14-3,"Расход воздуха, м³/час",,6000,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+83,MDCI 14-3,Диаметр труб хладагента [PROP_25],,"9,53/15,9",https://static.eseficiencia.es/media/2022/05/catalogo-general-vrf_bosch-2022.pdf,"Точная строка модели, таблица труб Bosch VRF: жидкостная / газовая, мм",НОВОЕ
+83,MDCI 14-3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,900,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+83,MDCI 14-3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1327,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+83,MDCI 14-3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+83,MDCI 14-3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,900×1327×400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+83,MDCI 14-3,"Вес наружного блока, кг [PROP_33]",,99,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+83,MDCI 14-3,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 14-3)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+84,MDCI 16-3,"Электропитание, В",,380-415 В / 3 фазы / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+84,MDCI 16-3,"Расход воздуха, м³/час",,6000,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+84,MDCI 16-3,Диаметр труб хладагента [PROP_25],,"9,53/19,1",https://static.eseficiencia.es/media/2022/05/catalogo-general-vrf_bosch-2022.pdf,"Точная строка модели, таблица труб Bosch VRF: жидкостная / газовая, мм",НОВОЕ
+84,MDCI 16-3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,900,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+84,MDCI 16-3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1327,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+84,MDCI 16-3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+84,MDCI 16-3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,900×1327×400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+84,MDCI 16-3,"Вес наружного блока, кг [PROP_33]",,100,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+84,MDCI 16-3,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 16-3)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+85,MDCI 18-3,"Электропитание, В",,380-415 В / 3 фазы / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+85,MDCI 18-3,"Расход воздуха, м³/час",,6800,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+85,MDCI 18-3,Диаметр труб хладагента [PROP_25],,"9,53/19,1",https://static.eseficiencia.es/media/2022/05/catalogo-general-vrf_bosch-2022.pdf,"Точная строка модели, таблица труб Bosch VRF: жидкостная / газовая, мм",НОВОЕ
+85,MDCI 18-3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,900,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+85,MDCI 18-3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1327,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+85,MDCI 18-3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+85,MDCI 18-3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,900×1327×400,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+85,MDCI 18-3,"Вес наружного блока, кг [PROP_33]",,107,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+85,MDCI 18-3,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 18-3)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+86,MDCI 22-3,"Номинальная мощность, кВт",,6.8,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+86,MDCI 22-3,"Расход воздуха, м³/час",,10494,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+86,MDCI 22-3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,1120,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+86,MDCI 22-3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1558,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+86,MDCI 22-3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,528,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+86,MDCI 22-3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,1120×1558×528,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+86,MDCI 22-3,"Вес наружного блока, кг [PROP_33]",,146.5,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+86,MDCI 22-3,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 22-3)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Охлаждение, кВт",,26,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Номинальная мощность, кВт",,7.6,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Электропитание, В",,380-415 В / 3 фазы / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Расход воздуха, м³/час",,10494,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Уровень шума, дБ(А)",,60,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,Диаметр труб хладагента [PROP_25],,"9,53/22,2",https://static.eseficiencia.es/media/2022/05/catalogo-general-vrf_bosch-2022.pdf,"Точная строка модели, таблица труб Bosch VRF: жидкостная / газовая, мм",НОВОЕ
+87,MDCI 26-3,Хладагент [PROP_290],,R410A,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,1120,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1558,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,528,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,1120×1558×528,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Вес наружного блока, кг [PROP_33]",,147,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 26-3)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,Кол-во подключаемых блоков,,12,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Охлаждение, кВт",,40,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Номинальная мощность, кВт",,11.9,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Электропитание, В",,380-415 В / 3 фазы / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Расход воздуха, м³/час",,16575,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Уровень шума, дБ(А)",,62,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,Диаметр труб хладагента [PROP_25],,"12,7/22,2",https://static.eseficiencia.es/media/2022/05/catalogo-general-vrf_bosch-2022.pdf,"Точная строка модели, таблица труб Bosch VRF: жидкостная / газовая, мм",НОВОЕ
+88,MDCI 40-3,Хладагент [PROP_290],,R410A,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,1360,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1650,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,540,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,1360×1650×540,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,"Вес наружного блока, кг [PROP_33]",,240,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 40-3)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+88,MDCI 40-3,Кол-во подключаемых блоков,,14,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Охлаждение, кВт",,45,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Номинальная мощность, кВт",,13.6,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Электропитание, В",,380-415 В / 3 фазы / 50 Гц,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Расход воздуха, м³/час",,16575,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Уровень шума, дБ(А)",,62,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,Диаметр труб хладагента [PROP_25],,"12,7/25,4",https://static.eseficiencia.es/media/2022/05/catalogo-general-vrf_bosch-2022.pdf,"Точная строка модели, таблица труб Bosch VRF: жидкостная / газовая, мм",НОВОЕ
+89,MDCI 45-3,Хладагент [PROP_290],,R410A,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Ширина наружного блока, мм [OUTDOOR_UNIT_LENGTH]",,1460,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Высота наружного блока, мм [OUTDOOR_UNIT_HEIGHT]",,1650,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Глубина наружного блока, мм [OUTDOOR_UNIT_DEPTH]",,540,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Габариты наружного блока (ШxВxГ), мм [PROP_32]",,1460×1650×540,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,"Вес наружного блока, кг [PROP_33]",,275,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,Техническая документация [TECH_DOCUMENTATION],,"<a href=""https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf"" target=""_blank"" rel=""noopener"">Bosch Air Flux — технический каталог (MDCI 45-3)</a>",https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+89,MDCI 45-3,Кол-во подключаемых блоков,,15,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,Bosch MDCI exact model table; source pages PDF/HTML,НОВОЕ
+87,MDCI 26-3,"Обогрев, кВт",7.2,28.5,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,"ЗАМЕНЕНО: предыдущая явная ошибка, 7.2 кВт не соответствует модели",ИСПРАВЛЕНИЕ
+88,MDCI 40-3,"Обогрев, кВт",7.2,45,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,"ЗАМЕНЕНО: предыдущая явная ошибка, 7.2 кВт не соответствует модели",ИСПРАВЛЕНИЕ
+89,MDCI 45-3,"Обогрев, кВт",7.2,50,https://www.boschvrf.com.tr/en/mini-vrv-mdci-dis-unite/,"ЗАМЕНЕНО: предыдущая явная ошибка, 7.2 кВт не соответствует модели",ИСПРАВЛЕНИЕ
