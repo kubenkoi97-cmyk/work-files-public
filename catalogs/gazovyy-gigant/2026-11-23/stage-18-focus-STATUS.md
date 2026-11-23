@@ -7,6 +7,6 @@ Base: stage-17-mixed-347-products-77-columns.csv. 347 products, 77 columns. The 
 - Диапазон рабочих темп. охл. °С [PROP_27]: 144 blank before, 1 filled, 143 raw blank after.
 - Диапазон рабочих темп. нагрев. °С [PROP_200]: 257 blank before, 30 filled, 227 raw blank after.
 
-Total verified fills: 186. Raw blanks include non-applicable fields; not equivalent to open applicable tasks. Source journal records exact model and URL. Catalogue PDF screenshot failed due to size; parsed text provided exact model tables. For KTRB, 260 is equivalent point-to-point length, not aggregate. Existing nonempty values retained; remaining winter variants require exact suffix sources.
+Total verified fills: 186. Raw blanks include non-applicable fields; not equivalent to open applicable tasks. Source journal records exact model and URL. Catalogue PDF screenshot failed due to size; parsed text provided exact model tables. For KTRB, 260 is equivalent point-to-point length, not aggregate. KYRA geometry verified against the better-aligned Daichi catalogue: 80 = 35/10; 100/120 = 45/20; 140/160/180 = 60/30 (20 if outdoor below). Existing nonempty values retained; remaining winter variants require exact suffix sources.
 
-Next: verify KYRA group geometry (table header alignment), remaining Kentatsu families, Midea exact /-40 variants, Daikin, Bosch, IGC, then distinguish N/A and unresolved. Do not work on any other column.
+Next: remaining Kentatsu families, Midea exact /-40 variants, Daikin, Bosch, IGC, then distinguish N/A and unresolved. Do not work on any other column.
