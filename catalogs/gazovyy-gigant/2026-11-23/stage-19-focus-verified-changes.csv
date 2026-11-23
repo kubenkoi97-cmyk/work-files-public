@@ -1,0 +1,93 @@
+CSV row,Brand,Model,Field,Old,New,Source URL,Evidence
+126,Kentatsu,KVAM80HZAN1i,Серия,,DX PRO A mini,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,Exact model listed in table p. 23
+126,Kentatsu,KVAM80HZAN1i,"Длина трассы/перепад высот, м [PROP_26]",,25/20,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,"p.23 actual outdoor-to-indoor length, outdoor above/below; visually verified"
+127,Kentatsu,KVAM100HZAN1i,Серия,,DX PRO A mini,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,Exact model listed in table p. 23
+127,Kentatsu,KVAM100HZAN1i,"Длина трассы/перепад высот, м [PROP_26]",,25/20,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,"p.23 actual outdoor-to-indoor length, outdoor above/below; visually verified"
+128,Kentatsu,KVAM120HZAN1i,Серия,,DX PRO A mini,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,Exact model listed in table p. 23
+128,Kentatsu,KVAM120HZAN1i,"Длина трассы/перепад высот, м [PROP_26]",,25/20,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,"p.23 actual outdoor-to-indoor length, outdoor above/below; visually verified"
+129,Kentatsu,KVAM140HZAN1i,Серия,,DX PRO A mini,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,Exact model listed in table p. 23
+129,Kentatsu,KVAM140HZAN1i,"Длина трассы/перепад высот, м [PROP_26]",,55/30 (20 при НБ ниже),https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,"p.23 actual outdoor-to-indoor length, outdoor above/below; visually verified"
+130,Kentatsu,KVAM160HZAN1i,Серия,,DX PRO A mini,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,Exact model listed in table p. 23
+130,Kentatsu,KVAM160HZAN1i,"Длина трассы/перепад высот, м [PROP_26]",,55/30 (20 при НБ ниже),https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,"p.23 actual outdoor-to-indoor length, outdoor above/below; visually verified"
+131,Kentatsu,KVAM120HZAN3i,Серия,,DX PRO A mini,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,Exact model listed in table p. 23
+131,Kentatsu,KVAM120HZAN3i,"Длина трассы/перепад высот, м [PROP_26]",,100/50 (40 при НБ ниже),https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,"p.23 actual outdoor-to-indoor length, outdoor above/below; visually verified"
+132,Kentatsu,KVAM140HZAN3i,Серия,,DX PRO A mini,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,Exact model listed in table p. 23
+132,Kentatsu,KVAM140HZAN3i,"Длина трассы/перепад высот, м [PROP_26]",,100/50 (40 при НБ ниже),https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,"p.23 actual outdoor-to-indoor length, outdoor above/below; visually verified"
+133,Kentatsu,KVAM160HZAN3i,Серия,,DX PRO A mini,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,Exact model listed in table p. 23
+133,Kentatsu,KVAM160HZAN3i,"Длина трассы/перепад высот, м [PROP_26]",,100/50 (40 при НБ ниже),https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,"p.23 actual outdoor-to-indoor length, outdoor above/below; visually verified"
+135,Kentatsu,KVAM260HZAN3i,Серия,,DX PRO A mini,https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,Exact model listed in table p. 23
+135,Kentatsu,KVAM260HZAN3i,"Длина трассы/перепад высот, м [PROP_26]",,100/50 (40 при НБ ниже),https://onokom.ru/dok/kentatsu/2025/catalog/2025-catalog-dx-pro-a-mini-kvam-i-vrf.pdf,"p.23 actual outdoor-to-indoor length, outdoor above/below; visually verified"
+136,Kentatsu,KVAH250HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Exact model tables printed pp. 78–79
+136,Kentatsu,KVAH250HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-20...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range in exact model table pp. 78–79
+137,Kentatsu,KVAH340HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Exact model tables printed pp. 78–79
+137,Kentatsu,KVAH340HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-20...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range in exact model table pp. 78–79
+138,Kentatsu,KVAH730HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Exact model tables printed pp. 78–79
+138,Kentatsu,KVAH730HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-20...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range in exact model table pp. 78–79
+139,Kentatsu,KVAH800HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Exact model tables printed pp. 78–79
+139,Kentatsu,KVAH800HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-20...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range in exact model table pp. 78–79
+140,Kentatsu,KVAH900HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Exact model tables printed pp. 78–79
+140,Kentatsu,KVAH900HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-20...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range in exact model table pp. 78–79
+141,Kentatsu,KVAH950HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Exact model tables printed pp. 78–79
+141,Kentatsu,KVAH950HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-20...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range in exact model table pp. 78–79
+142,Kentatsu,KVAH1010HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Exact model tables printed pp. 78–79
+142,Kentatsu,KVAH1010HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-20...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range in exact model table pp. 78–79
+143,Kentatsu,KVAG250HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+143,Kentatsu,KVAG250HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+143,Kentatsu,KVAG250HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+144,Kentatsu,KVAG290HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+144,Kentatsu,KVAG290HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+144,Kentatsu,KVAG290HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+145,Kentatsu,KVAG340HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+145,Kentatsu,KVAG340HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+145,Kentatsu,KVAG340HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+146,Kentatsu,KVAG400HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+146,Kentatsu,KVAG400HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+146,Kentatsu,KVAG400HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+147,Kentatsu,KVAG450HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+147,Kentatsu,KVAG450HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+147,Kentatsu,KVAG450HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+148,Kentatsu,KVAG500HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+148,Kentatsu,KVAG500HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+148,Kentatsu,KVAG500HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+149,Kentatsu,KVAG560HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+149,Kentatsu,KVAG560HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+149,Kentatsu,KVAG560HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+150,Kentatsu,KVAG615HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+150,Kentatsu,KVAG615HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+150,Kentatsu,KVAG615HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+151,Kentatsu,KVAG680HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+151,Kentatsu,KVAG680HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+151,Kentatsu,KVAG680HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+152,Kentatsu,KVAG730HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+152,Kentatsu,KVAG730HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+152,Kentatsu,KVAG730HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+153,Kentatsu,KVAG800HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+153,Kentatsu,KVAG800HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+153,Kentatsu,KVAG800HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+154,Kentatsu,KVAG850HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+154,Kentatsu,KVAG850HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+154,Kentatsu,KVAG850HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+155,Kentatsu,KVAG900HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+155,Kentatsu,KVAG900HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+155,Kentatsu,KVAG900HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+156,Kentatsu,KVAG950HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+156,Kentatsu,KVAG950HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+156,Kentatsu,KVAG950HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+157,Kentatsu,KVAG1010HZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, heat pump"
+157,Kentatsu,KVAG1010HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],,-15...+55,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common cooling range exact model tables pp. 80–83
+157,Kentatsu,KVAG1010HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+24,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Common heating range exact model tables pp. 80–81
+158,Kentatsu,KVAG250CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+159,Kentatsu,KVAG290CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+160,Kentatsu,KVAG340CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+161,Kentatsu,KVAG400CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+162,Kentatsu,KVAG450CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+163,Kentatsu,KVAG500CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+164,Kentatsu,KVAG560CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+165,Kentatsu,KVAG615CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+166,Kentatsu,KVAG680CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+167,Kentatsu,KVAG730CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+168,Kentatsu,KVAG800CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+169,Kentatsu,KVAG850CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+170,Kentatsu,KVAG900CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+171,Kentatsu,KVAG950CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
+172,Kentatsu,KVAG1010CZAN3,Серия,,DX PRO A,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Exact model tables pp. 80–83, cooling only"
