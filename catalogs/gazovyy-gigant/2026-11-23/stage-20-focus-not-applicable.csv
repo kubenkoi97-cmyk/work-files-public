@@ -1,0 +1,71 @@
+CSV row,Brand,Model,Field,Source URL,Reason
+158,Kentatsu,KVAG250CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+159,Kentatsu,KVAG290CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+160,Kentatsu,KVAG340CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+161,Kentatsu,KVAG400CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+162,Kentatsu,KVAG450CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+163,Kentatsu,KVAG500CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+164,Kentatsu,KVAG560CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+165,Kentatsu,KVAG615CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+166,Kentatsu,KVAG680CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+167,Kentatsu,KVAG730CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+168,Kentatsu,KVAG800CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+169,Kentatsu,KVAG850CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+170,Kentatsu,KVAG900CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+171,Kentatsu,KVAG950CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+172,Kentatsu,KVAG1010CZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,Cooling-only model; no heating mode
+188,Midea,MVC-M224WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+189,Midea,MVC-M280WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+190,Midea,MVC-M335WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+191,Midea,MVC-M400WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+192,Midea,MVC-M450WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+193,Midea,MVC-M500WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+194,Midea,MVC-M560WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+195,Midea,MVC-M615WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+196,Midea,MVC-M670WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+197,Midea,MVC-M730WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+198,Midea,MVC-M785WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+199,Midea,MVC-M850WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"VC MAX cooling only, 12-model series explicitly stated"
+249,Midea,MVC-M224WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+250,Midea,MVC-M280WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+251,Midea,MVC-M335WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+252,Midea,MVC-M400WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+253,Midea,MVC-M450WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+254,Midea,MVC-M500WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+255,Midea,MVC-M560WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+256,Midea,MVC-M615WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+257,Midea,MVC-M670WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+258,Midea,MVC-M730WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+259,Midea,MVC-M785WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+260,Midea,MVC-M850WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,Cooling-only VC MAX; -40 kit extends cooling range only
+295,Midea,MVUW252A-VA3,Диапазон рабочих темп. охл. °С [PROP_27],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"Water-cooled VRF installed indoors; manufacturer specifies inlet water 7–45°C, not outdoor air operating range"
+295,Midea,MVUW252A-VA3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"Water-cooled VRF installed indoors; manufacturer specifies inlet water 7–45°C, not outdoor air operating range"
+296,Midea,MVUW280A-VA3,Диапазон рабочих темп. охл. °С [PROP_27],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"Water-cooled VRF installed indoors; manufacturer specifies inlet water 7–45°C, not outdoor air operating range"
+296,Midea,MVUW280A-VA3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"Water-cooled VRF installed indoors; manufacturer specifies inlet water 7–45°C, not outdoor air operating range"
+297,Midea,MVUW335A-VA3,Диапазон рабочих темп. охл. °С [PROP_27],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"Water-cooled VRF installed indoors; manufacturer specifies inlet water 7–45°C, not outdoor air operating range"
+297,Midea,MVUW335A-VA3,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.thermotrade.ru/wp-content/uploads/2024/08/midea_vrf_2024-2025.pdf,"Water-cooled VRF installed indoors; manufacturer specifies inlet water 7–45°C, not outdoor air operating range"
+332,IGC,IRFT-022HA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+333,IGC,IRFT-026HA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+334,IGC,IRFT-035HA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+335,IGC,IRFT-043HA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+336,IGC,IRFT-061HA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+337,IGC,IRFT-087HA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+338,IGC,IRFT-105HA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+339,IGC,IRFT-122HA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+340,IGC,IRFT-156HA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+341,IGC,IRFT-022CA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+341,IGC,IRFT-022CA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Exact cooling-only rooftop variant
+342,IGC,IRFT-026CA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+342,IGC,IRFT-026CA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Exact cooling-only rooftop variant
+343,IGC,IRFT-043CA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+343,IGC,IRFT-043CA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Exact cooling-only rooftop variant
+344,IGC,IRFT-061CA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+344,IGC,IRFT-061CA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Exact cooling-only rooftop variant
+345,IGC,IRFT-087CA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+345,IGC,IRFT-087CA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Exact cooling-only rooftop variant
+346,IGC,IRFT-105CA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+346,IGC,IRFT-105CA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Exact cooling-only rooftop variant
+347,IGC,IRFT-122CA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+347,IGC,IRFT-122CA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Exact cooling-only rooftop variant
+348,IGC,IRFT-156CA/NB-Q,"Длина трассы/перепад высот, м [PROP_26]",https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Packaged rooftop unit: no site-installed indoor/outdoor refrigerant line
+348,IGC,IRFT-156CA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],https://www.igc-aircon.com/product/kryshnye_konditsionery_ruftop/,Exact cooling-only rooftop variant
