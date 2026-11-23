@@ -134,17 +134,17 @@ CSV row,Brand,Model,Field,Old,New,Source URL,Evidence
 119,Kentatsu,KTRB1010HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],,-30...+30,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Common heating row for exact model table, pp. 32–33"
 119,Kentatsu,KTRB1010HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",,260 (экв.)/110,https://www.c-o-k.ru/library/catalogs/kentatsu/37986/140011.pdf,"Catalogue pp. 32–33; maximum equivalent outdoor-to-indoor 260 m, elevation 110 m; NOT total 1100 m"
 120,Kentatsu,KYRA80HZAN1-A,Серия,,DX PRO Compact,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue printed pages 17–18, model table KYRA_HZAN1-A"
-120,Kentatsu,KYRA80HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,35/10,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue p.17: actual length outdoor-to-indoor and height difference, equal in both directions"
+120,Kentatsu,KYRA80HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,35/10,https://daichi.business/support/documents/download.php?ID=24781,Daichi catalogue: actual outdoor-to-indoor length and elevation by exact model group; 140–180 max 30 m above / 20 m below
 121,Kentatsu,KYRA100HZAN1-A,Серия,,DX PRO Compact,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue printed pages 17–18, model table KYRA_HZAN1-A"
-121,Kentatsu,KYRA100HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,35/10,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue p.17: actual length outdoor-to-indoor and height difference, equal in both directions"
+121,Kentatsu,KYRA100HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,45/20,https://daichi.business/support/documents/download.php?ID=24781,Daichi catalogue: actual outdoor-to-indoor length and elevation by exact model group; 140–180 max 30 m above / 20 m below
 122,Kentatsu,KYRA120HZAN1-A,Серия,,DX PRO Compact,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue printed pages 17–18, model table KYRA_HZAN1-A"
-122,Kentatsu,KYRA120HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,35/10,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue p.17: actual length outdoor-to-indoor and height difference, equal in both directions"
+122,Kentatsu,KYRA120HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,45/20,https://daichi.business/support/documents/download.php?ID=24781,Daichi catalogue: actual outdoor-to-indoor length and elevation by exact model group; 140–180 max 30 m above / 20 m below
 123,Kentatsu,KYRA140HZAN1-A,Серия,,DX PRO Compact,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue printed pages 17–18, model table KYRA_HZAN1-A"
-123,Kentatsu,KYRA140HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,45/20,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue p.17: actual length outdoor-to-indoor and height difference, equal in both directions"
+123,Kentatsu,KYRA140HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,60/30 (20 при НБ ниже),https://daichi.business/support/documents/download.php?ID=24781,Daichi catalogue: actual outdoor-to-indoor length and elevation by exact model group; 140–180 max 30 m above / 20 m below
 124,Kentatsu,KYRA160HZAN1-A,Серия,,DX PRO Compact,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue printed pages 17–18, model table KYRA_HZAN1-A"
-124,Kentatsu,KYRA160HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,45/20,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue p.17: actual length outdoor-to-indoor and height difference, equal in both directions"
+124,Kentatsu,KYRA160HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,60/30 (20 при НБ ниже),https://daichi.business/support/documents/download.php?ID=24781,Daichi catalogue: actual outdoor-to-indoor length and elevation by exact model group; 140–180 max 30 m above / 20 m below
 125,Kentatsu,KYRA180HZAN1-A,Серия,,DX PRO Compact,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue printed pages 17–18, model table KYRA_HZAN1-A"
-125,Kentatsu,KYRA180HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,45/20,https://kentatsu.group/wa-content/docs/vrf.pdf,"Catalogue p.17: actual length outdoor-to-indoor and height difference, equal in both directions"
+125,Kentatsu,KYRA180HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",,60/30 (20 при НБ ниже),https://daichi.business/support/documents/download.php?ID=24781,Daichi catalogue: actual outdoor-to-indoor length and elevation by exact model group; 140–180 max 30 m above / 20 m below
 179,Midea,MV8Si-252WV2GN1,Серия,,V8Si,https://eurasia-vent.ru/products/v8si-v8si,Exact model in named series listing
 180,Midea,MV8Si-280WV2GN1,Серия,,V8Si,https://eurasia-vent.ru/products/v8si-v8si,Exact model in named series listing
 181,Midea,MV8Si-335WV2GN1,Серия,,V8Si,https://eurasia-vent.ru/products/v8si-v8si,Exact model in named series listing
