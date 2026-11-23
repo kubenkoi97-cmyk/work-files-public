@@ -1,0 +1,32 @@
+CSV row,Brand,Model,Field,Value,Issue
+90,Kentatsu,KTRB250HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+91,Kentatsu,KTRB290HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+92,Kentatsu,KTRB340HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+93,Kentatsu,KTRB400HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+94,Kentatsu,KTRB450HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+95,Kentatsu,KTRB500HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+96,Kentatsu,KTRB560HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+97,Kentatsu,KTRB615HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+98,Kentatsu,KTRB670HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+99,Kentatsu,KTRB730HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+100,Kentatsu,KTRB785HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+101,Kentatsu,KTRB850HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+102,Kentatsu,KTRB900HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+103,Kentatsu,KTRB950HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+104,Kentatsu,KTRB1010HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+105,Kentatsu,KTRB250HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+106,Kentatsu,KTRB290HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+107,Kentatsu,KTRB340HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+108,Kentatsu,KTRB400HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+109,Kentatsu,KTRB450HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+110,Kentatsu,KTRB500HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+111,Kentatsu,KTRB560HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+112,Kentatsu,KTRB615HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+113,Kentatsu,KTRB670HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+114,Kentatsu,KTRB730HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+115,Kentatsu,KTRB785HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+116,Kentatsu,KTRB850HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+117,Kentatsu,KTRB900HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+118,Kentatsu,KTRB950HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+119,Kentatsu,KTRB1010HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,Prior stage equivalent length; standardization to actual length requires confirmation
+134,Kentatsu,KVAM220HZAN3i,Серия,,"Catalogue lists KVAM224HZAN3i, not KVAM220HZAN3i; exact model evidence required"
