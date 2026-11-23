@@ -1,0 +1,17 @@
+CSV row,Brand,Model,Field,Old,New,Source URL,Evidence
+134,Kentatsu,KVAM220HZAN3i,Серия,,DX PRO A mini,https://mircli.ru/Kentatsu-KVAM220HZAN3i/,Exact SKU product card explicitly names series
+226,Midea,MV8M-170WV2HN1/-40,Серия,,V8M,https://mircli.ru/Midea-MV8M-170WV2HN1-40/,Exact winter-kit product card explicitly names V8M; no numerical operating limits transferred
+230,Midea,MV8M-170WV2GN1/-40,Серия,,V8M,https://mircli.ru/Midea-MV8M-170WV2GN1-40/,Exact winter-kit product card explicitly names V8M; no numerical operating limits transferred
+301,IGC,IWF-X200K22W-A,Серия,,X,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x200k22w_a/,Exact model card identifies series X
+302,IGC,IWF-X300K22W-A,Серия,,X,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x300k22w_a/,Exact model card identifies series X
+303,IGC,IWF-X400K22W-A,Серия,,X,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x400k22w_a/,Exact model card identifies series X
+304,IGC,IWF-X500K22W-A,Серия,,X,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x500k22w_a/,Exact model card identifies series X
+305,IGC,IWF-X600K22W-A,Серия,,X,https://iclim.ru/catalog/promyshlennye_konditsionery/fankoyly/igc_iwf_x600k22w_a/,Exact model card identifies series X
+333,IGC,IRFT-026HA/NB-Q,Серия,,IRFT-Q,https://iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_026ha_nb_q/,Exact rooftop model card names IRFT-Q series
+335,IGC,IRFT-043HA/NB-Q,Серия,,IRFT-Q,https://iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_043ha_nb_q/,Exact rooftop model card names IRFT-Q series
+336,IGC,IRFT-061HA/NB-Q,Серия,,IRFT-Q,https://iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_061ha_nb_q/,Exact rooftop model card names IRFT-Q series
+337,IGC,IRFT-087HA/NB-Q,Серия,,IRFT-Q,https://iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_087ha_nb_q/,Exact rooftop model card names IRFT-Q series
+340,IGC,IRFT-156HA/NB-Q,Серия,,IRFT-Q,https://iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_156ha_nb_q/,Exact rooftop model card names IRFT-Q series
+341,IGC,IRFT-022CA/NB-Q,Серия,,IRFT-Q,https://iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_022ca_nb_q/,Exact rooftop model card names IRFT-Q series
+343,IGC,IRFT-043CA/NB-Q,Серия,,IRFT-Q,https://iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_043ca_nb_q/,Exact rooftop model card names IRFT-Q series
+348,IGC,IRFT-156CA/NB-Q,Серия,,IRFT-Q,https://iclim.ru/catalog/promyshlennye_konditsionery/kryshnye_konditsionery/igc_irft_156ca_nb_q/,Exact rooftop model card names IRFT-Q series
