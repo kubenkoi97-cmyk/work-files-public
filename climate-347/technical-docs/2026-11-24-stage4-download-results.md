@@ -1,0 +1,8 @@
+# Stage 4 — actual PDF download result
+
+Release: https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/climate-347-pdf-stage4-45498327706
+ZIP asset: 196008635 bytes, SHA256 d341a6192d60b071620c43440c08feecaf2a9983b5e432bd24323b2ebb191533. 17 distinct original PDFs, 21/26 source groups downloaded. 170 catalog models with exact technical text hits (Kentatsu 83, Midea 77, Daikin 8, Bosch 2, IGC 0). No Selectel-ready files; visual/regional review and excerpts pending. ZIP passed testzip on runner. Public repo and uploaded asset status verified through GitHub API; anonymous HTTP download not independently checked.
+
+Scope correction: runner attempted 339 model codes including one extraneous IRFT-035CA/NB-Q; actual catalog models attempted 338/347. Extra code had no match and does not affect 170 confirmed text hits. Nine catalog rows not included in this run (7 fan coils and 2 rows missing base paths). Remove extra code from final manifest. IGC declaration scanned/no exact text; passport downloaded but no exact text, requires visual review. No actual workbook changes.
+
+Additional source found after workflow start: Bosch technical catalog https://www.bosch-homecomfort.com/ke/media/country_pool/pdfs/catalogues/vrf_2021_en.pdf contains MDCI 22-3 and 26-3; web screenshot failed due size, regional check pending. Midea V8S and V8M service/install manuals found in C-O-K library https://www.c-o-k.ru/library/instructions/midea/kondicionery-promyshlennye/38660 and /38659; base models only, winter modification evidence still needed. Older IGC industrial catalog excluded for IRFT-Q because exact current generation absent.
