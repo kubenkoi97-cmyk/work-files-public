@@ -1,0 +1,26 @@
+# Climate 347 — CURRENT STATE / точка продолжения
+Обновлено 2026-11-24. Статус OPEN. Обязательное чтение перед каждым продолжением, включая новый чат.
+
+## Источник и ограничения
+- Исходник: Климат_347_этап29(1).xlsx, лист Каталог 347, B — название, E — бренд, K — серия, AQ — TECH_DOCUMENTATION. 347 уникальных SKU. Состав: Midea 178, Kentatsu 83, IGC 51, Daikin 24, Bosch 11. Контроль SHA256 списка sorted(brand TAB model) с LF: b11a94ae13d7ee8d9563e23ec22c51136e968abdbe0d8261f74ded25e3c30343.
+- Промпт пользователя: Тех-документация(6).txt. Использовать все полезные подтверждённые PDF, не полный общий каталог вместо вырезки, точные модель/поколение/версия, исходные страницы, без дублей SHA256, HTML буквально, только AQ. URL строго по предоставленным путям, имена PDF совпадают с реальными файлами. Не объявлять Selectel-загрузку без проверки. Не изменять остальные данные/метаданные Excel.
+- Источники путей: https://docs.proclimate5.ru/multizonalnye_vrv_i_vrf_sistemy/{vnutrennie_bloki_VRF_sistem_Midea,naruzhnye_bloki_VRF_sistem_Bosch,naruzhnye_bloki_VRF_sistem_Midea,naruzhnye_bloki_VRF_sistem_Daikin,naruzhnye_bloki_VRF_sistem_Kentatsu}/2026/; https://docs.proclimate5.ru/fankoyly/kassetnye_fankoyly/kassetnye_fankoyly_IGC/2026/; https://docs.proclimate5.ru/fankoyly/nastennye_fankoyly/nastennye_fankoyly_IGC/2026/; https://docs.proclimate5.ru/chillery/IGC/2026/; https://docs.proclimate5.ru/rooftopy/IGC/2026/.
+- BLOCKED_NO_BASE_URL: IGC IMS-EX330NB(7), Midea SMK-D140HHN1-3. Никаких выдуманных путей.
+
+## Последний подтвержденный этап 9
+Release climate-347-pdf-stage9-45505224491; Actions run 45505224491 success. https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/climate-347-pdf-stage9-45505224491
+- Climate_347_stage9_review.zip 767917866 bytes, SHA256 4add40ccdd6ca5296fc7268c08d5767fd0971595ee461d84a1044905cc91888b. 47 исходных PDF включая карантин.
+- Climate_347_stage9_partial_Selectel.zip 172874883 bytes, SHA256 74b0a5f45c4b3fba3bb5e3446da5a1552d569142a1ea1542ae026d07a3a2a862. 24 PDF, 280 назначений документов, 256 уникальных товаров (239 технические, 17 только декларации). 91 товар без подготовленного документа. ВАЖНО: поле partial_upload_models=347 в summary этапа 9 ОШИБОЧНО (defaultdict populated empty keys); не использовать его. 256=239+17. Следующий аудит пересчитает по непустым manifest rows.
+- Реестры release: coverage_347.csv, html_by_model.csv, partial_selectel_manifest.csv, new_verified_assignments.csv, stage9_checks.csv, stage9_new_downloads.csv. Подробные исходники и доказательства в REPORTS/ архива. Исходный Excel не обновлён; последняя промежуточная копия в чате этап 8 — 100 строк AQ; экспорт потерял 2 метафайла, не финальная. Восстановить исходную книгу и проверить структуру всех листов.
+- Stage 9 ATOM B excerpt rejected (mean pixel delta 0.09943 >0.05). 5 моделей ждут безопасного извлечения страниц 4/16. Не обходить визуальную проверку; попробовать select() из копии исходного PDF. V4+W 3 модели пока без утверждённого документа. Дополнительные MIH-FHN18 и V8 indoor service PDF скачаны, требуется визуально проверить титулы и соответствие.
+- 73 Midea /-40: базовые руководства имеются, зимняя опция подтверждена каталогом на уровне серий, но отдельная инструкция комплекта и точное применимое исполнение не доказаны. Не назначать базовые PDF как полную зимнюю документацию. Daikin: часть зимних моделей подтверждена только каталогом опции, а не инструкцией комплекта. IGC IRFT-Q 17 только декларации, техническое руководство отсутствует. IWF-Q1700CAQ4T22 паспорт не найден; T44 не подходит.
+- IGC 26 чиллеров подтверждены: обложка 1230, в PDF page 14 (printed 13) точное 1320. Оригиналы и evidence сохранены. Bosch wrong C2W manual в QUARANTINE.
+- 94 страницы исходных PDF для визуальной проверки: stage8-previews/ + preview_index.csv этапа 8. Не считать факт наличия строки в PDF гарантией применимости.
+
+## Обязательный порядок каждого захода
+1. Прочесть CURRENT_STATE.md и последний аудит; сверить GitHub Releases/Actions фактический результат, SHA и размер.
+2. Скачать последний опубликованный пакет, проверить ZIP, пересчитать уникальные (brand, model) только по непустым назначениям, отдельно техдокументы и декларации, сравнить список 347 с исходником.
+3. По remaining.csv искать прежде всего недостающие документы, а для частично закрытых — все дополнительные полезные типы. Проверить исходный PDF, титул, точный код, страницы, исключения. Не повторять скачивание дубликатов. Сканы визуально проверить.
+4. Собрать новую версию ZIP с UPLOAD_TO_SELECTEL и отдельным REVIEW/QUARANTINE, точным manifest и HTML. Проверить hash каждой ссылки, порядок, дубликаты, фактические файлы. Проверить публичный URL без токена (HTTP 200/206 + ZIP signature).
+5. После каждого захода сохранить неизменяемый audits/stageNN.md, current state, per-model coverage, remaining, download attempts, file manifest, evidence, summary.json, предыдущие версии не стирать. Если workflow не завершился, указать RUNNING, не выдавать архив как опубликованный.
+6. Только после проверенного пакета сформировать промежуточный/финальный XLSX от исходника. Ссылки prospective, пока Selectel не загружен. Не называть проект закрытым по одному совпадению/каталогу. Записывать выявленные ошибки и конкретный следующий шаг.
