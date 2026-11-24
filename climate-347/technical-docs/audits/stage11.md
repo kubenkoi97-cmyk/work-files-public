@@ -1,0 +1,4 @@
+# Stage 11 completed audit
+
+## Этап 11 — завершён
+Actions 45506953322 success; release https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/climate-347-pdf-stage11-45506953322. Пакет 179826333 bytes SHA256 a02f2a5e7e40802e6250d76f0d3bf7dad333b99b666ce4a66aa76657a92de585, дельта 27371456 bytes SHA256 a81cbcfad75c569783d8e114c592f33ba15113ee680546a90b88cf3b356dd9b4. 261 товар, 244 тех. включая 62 только каталог, 182 содержательные, 17 только декларации, 86 без подготовленных файлов. 25 PDF, 285 назначений; без прироста назначения. 3 уникальных кандидата по QR: V8Si ID17230, V4+W ID16628 (старые MDVS, не назначать), ATOM B ID17273 (2026). VC MAX ID17059 дубль. Страница 111 Daikin отклонена текстовой проверкой из-за кодировки шрифта, визуально подтверждена (ASCII код модели сдвинут на -29). Stage10 публичный HTTP206 ZIP 504b0304. Все исходники: stage9_review + stage10_delta_review + stage11_delta_review, 51 уникальный оригинал включая карантин и кандидаты.
