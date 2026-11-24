@@ -1,0 +1,526 @@
+CSV row,Brand,Model,Field,Old,New,Source URL,Evidence
+55,Daikin,RXYSQ4T8V/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+46,-40+46,,Formatting only; numeric endpoints unchanged
+55,Daikin,RXYSQ4T8V/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+55,Daikin,RXYSQ4T8V/-40,"Длина трассы/перепад высот, м [PROP_26]",,120/40,https://daikin-russia.ru/catalog/vrf-sistemy/naruznye-bloki-vrf-sistem-s-dorabotkoi/rxysq4t8v-40,Actual 120 m; elevation 40 m both directions.
+56,Daikin,RXYSQ5T8V/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+46,-40+46,,Formatting only; numeric endpoints unchanged
+56,Daikin,RXYSQ5T8V/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+57,Daikin,RXYSQ6T8V/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+46,-40+46,,Formatting only; numeric endpoints unchanged
+57,Daikin,RXYSQ6T8V/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+58,Daikin,RXYSQ4T8Y/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+46,-40+46,,Formatting only; numeric endpoints unchanged
+58,Daikin,RXYSQ4T8Y/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+58,Daikin,RXYSQ4T8Y/-40,"Длина трассы/перепад высот, м [PROP_26]",,120/40,https://daikin.ltd/daikin-rxysq4t8y-40,Actual 120 m; elevation 40 m both directions.
+59,Daikin,RXYSQ5T8Y/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+46,-40+46,,Formatting only; numeric endpoints unchanged
+59,Daikin,RXYSQ5T8Y/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+60,Daikin,RXYSQ6T8Y/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+46,-40+46,,Formatting only; numeric endpoints unchanged
+60,Daikin,RXYSQ6T8Y/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+61,Daikin,RXYSQ8TY/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+52,-40+52,,Formatting only; numeric endpoints unchanged
+61,Daikin,RXYSQ8TY/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+62,Daikin,RXYSQ10TY/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+52,-40+52,,Formatting only; numeric endpoints unchanged
+62,Daikin,RXYSQ10TY/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+63,Daikin,RXYSQ12TY/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+52,-40+52,,Formatting only; numeric endpoints unchanged
+63,Daikin,RXYSQ12TY/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+63,Daikin,RXYSQ12TY/-40,"Длина трассы/перепад высот, м [PROP_26]",,120/40,https://daikin.ltd/daikin-rxysq12ty-40,Actual 120 m; elevation 40 m both directions.
+64,Daikin,RXYQ8U/-40,"Длина трассы/перепад высот, м [PROP_26]",165/50 (40 при НБ ниже),165/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+64,Daikin,RXYQ8U/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+43,-40+43,,Formatting only; numeric endpoints unchanged
+64,Daikin,RXYQ8U/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+65,Daikin,RXYQ10U/-40,"Длина трассы/перепад высот, м [PROP_26]",165/50 (40 при НБ ниже),165/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+65,Daikin,RXYQ10U/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+43,-40+43,,Formatting only; numeric endpoints unchanged
+65,Daikin,RXYQ10U/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+66,Daikin,RXYQ12U/-40,"Длина трассы/перепад высот, м [PROP_26]",165/50 (40 при НБ ниже),165/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+66,Daikin,RXYQ12U/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+43,-40+43,,Formatting only; numeric endpoints unchanged
+66,Daikin,RXYQ12U/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+67,Daikin,RXYQ14U/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+43,-40+43,,Formatting only; numeric endpoints unchanged
+67,Daikin,RXYQ14U/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+67,Daikin,RXYQ14U/-40,"Длина трассы/перепад высот, м [PROP_26]",,165/50,https://daikin-russia.ru/catalog/vrf-sistemy/naruznye-bloki-vrf-sistem-s-dorabotkoi/rxyq14u-40,Actual 165 m; elevation 50 above / 40 below.
+68,Daikin,RXYQ16U/-40,"Длина трассы/перепад высот, м [PROP_26]",165/50 (40 при НБ ниже),165/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+68,Daikin,RXYQ16U/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+43,-40+43,,Formatting only; numeric endpoints unchanged
+68,Daikin,RXYQ16U/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+69,Daikin,RXYQ18U/-40,"Длина трассы/перепад высот, м [PROP_26]",165/50 (40 при НБ ниже),165/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+69,Daikin,RXYQ18U/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+43,-40+43,,Formatting only; numeric endpoints unchanged
+69,Daikin,RXYQ18U/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+70,Daikin,RXYQ20U/-40,"Длина трассы/перепад высот, м [PROP_26]",165/50 (40 при НБ ниже),165/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+70,Daikin,RXYQ20U/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+43,-40+43,,Formatting only; numeric endpoints unchanged
+70,Daikin,RXYQ20U/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+71,Daikin,REMQ5U,Диапазон рабочих темп. охл. °С [PROP_27],-5...+43,-5+43,,Formatting only; numeric endpoints unchanged
+71,Daikin,REMQ5U,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+72,Daikin,RYMQ8U,"Длина трассы/перепад высот, м [PROP_26]",135/50 (40 при НБ ниже; до 90 при условиях),135/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+72,Daikin,RYMQ8U,Диапазон рабочих темп. охл. °С [PROP_27],-5...+43,-5+43,,Formatting only; numeric endpoints unchanged
+72,Daikin,RYMQ8U,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+73,Daikin,RYMQ10U,"Длина трассы/перепад высот, м [PROP_26]",135/50 (40 при НБ ниже; до 90 при условиях),135/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+73,Daikin,RYMQ10U,Диапазон рабочих темп. охл. °С [PROP_27],-5...+43,-5+43,,Formatting only; numeric endpoints unchanged
+73,Daikin,RYMQ10U,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+74,Daikin,RYMQ12U,"Длина трассы/перепад высот, м [PROP_26]",135/50 (40 при НБ ниже; до 90 при условиях),135/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+74,Daikin,RYMQ12U,Диапазон рабочих темп. охл. °С [PROP_27],-5...+43,-5+43,,Formatting only; numeric endpoints unchanged
+74,Daikin,RYMQ12U,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+75,Daikin,RYMQ14U,"Длина трассы/перепад высот, м [PROP_26]",135/50 (40 при НБ ниже; до 90 при условиях),135/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+75,Daikin,RYMQ14U,Диапазон рабочих темп. охл. °С [PROP_27],-5...+43,-5+43,,Formatting only; numeric endpoints unchanged
+75,Daikin,RYMQ14U,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+76,Daikin,RYMQ16U,"Длина трассы/перепад высот, м [PROP_26]",135/50 (40 при НБ ниже; до 90 при условиях),135/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+76,Daikin,RYMQ16U,Диапазон рабочих темп. охл. °С [PROP_27],-5...+43,-5+43,,Formatting only; numeric endpoints unchanged
+76,Daikin,RYMQ16U,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+77,Daikin,RYMQ18U,"Длина трассы/перепад высот, м [PROP_26]",135/50 (40 при НБ ниже; до 90 при условиях),135/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+77,Daikin,RYMQ18U,Диапазон рабочих темп. охл. °С [PROP_27],-5...+43,-5+43,,Formatting only; numeric endpoints unchanged
+77,Daikin,RYMQ18U,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+78,Daikin,RYMQ20U,"Длина трассы/перепад высот, м [PROP_26]",135/50 (40 при НБ ниже; до 90 при условиях),135/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+78,Daikin,RYMQ20U,Диапазон рабочих темп. охл. °С [PROP_27],-5...+43,-5+43,,Formatting only; numeric endpoints unchanged
+78,Daikin,RYMQ20U,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+15.5,-20+15.5,,Formatting only; numeric endpoints unchanged
+79,Bosch,MDCI 12-1,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+79,Bosch,MDCI 12-1,Диапазон рабочих темп. охл. °С [PROP_27],-15…+43,-15+43,,Formatting only; numeric endpoints unchanged
+79,Bosch,MDCI 12-1,Диапазон рабочих темп. нагрев. °С [PROP_200],-15…+27,-15+27,,Formatting only; numeric endpoints unchanged
+80,Bosch,MDCI 14-1,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+80,Bosch,MDCI 14-1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+43,-15+43,,Formatting only; numeric endpoints unchanged
+80,Bosch,MDCI 14-1,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+81,Bosch,MDCI 16-1,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+81,Bosch,MDCI 16-1,Диапазон рабочих темп. охл. °С [PROP_27],-15 - 43,-15+43,,Formatting only; numeric endpoints unchanged
+81,Bosch,MDCI 16-1,Диапазон рабочих темп. нагрев. °С [PROP_200],-15 - 27,-15+27,,Formatting only; numeric endpoints unchanged
+82,Bosch,MDCI 12-3,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+82,Bosch,MDCI 12-3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+43,-15+43,,Formatting only; numeric endpoints unchanged
+82,Bosch,MDCI 12-3,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+83,Bosch,MDCI 14-3,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+83,Bosch,MDCI 14-3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+43,-15+43,,Formatting only; numeric endpoints unchanged
+83,Bosch,MDCI 14-3,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+84,Bosch,MDCI 16-3,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+84,Bosch,MDCI 16-3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+43,-15+43,,Formatting only; numeric endpoints unchanged
+84,Bosch,MDCI 16-3,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+85,Bosch,MDCI 18-3,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+85,Bosch,MDCI 18-3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+43,-15+43,,Formatting only; numeric endpoints unchanged
+85,Bosch,MDCI 18-3,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+86,Bosch,MDCI 22-3,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+86,Bosch,MDCI 22-3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+48,-15+48,,Formatting only; numeric endpoints unchanged
+86,Bosch,MDCI 22-3,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+24,-15+24,,Formatting only; numeric endpoints unchanged
+87,Bosch,MDCI 26-3,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+87,Bosch,MDCI 26-3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+48,-15+48,,Formatting only; numeric endpoints unchanged
+87,Bosch,MDCI 26-3,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+24,-15+24,,Formatting only; numeric endpoints unchanged
+88,Bosch,MDCI 40-3,"Длина трассы/перепад высот, м [PROP_26]",100/30 (20 при НБ ниже),100/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+88,Bosch,MDCI 40-3,Диапазон рабочих темп. охл. °С [PROP_27],-5...+48,-5+48,,Formatting only; numeric endpoints unchanged
+88,Bosch,MDCI 40-3,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+24,-15+24,,Formatting only; numeric endpoints unchanged
+89,Bosch,MDCI 45-3,"Длина трассы/перепад высот, м [PROP_26]",100/30 (20 при НБ ниже),100/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+89,Bosch,MDCI 45-3,Диапазон рабочих темп. охл. °С [PROP_27],-5...+48,-5+48,,Formatting only; numeric endpoints unchanged
+89,Bosch,MDCI 45-3,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+24,-15+24,,Formatting only; numeric endpoints unchanged
+90,Kentatsu,KTRB250HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+90,Kentatsu,KTRB250HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+90,Kentatsu,KTRB250HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+91,Kentatsu,KTRB290HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+91,Kentatsu,KTRB290HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+91,Kentatsu,KTRB290HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+92,Kentatsu,KTRB340HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+92,Kentatsu,KTRB340HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+92,Kentatsu,KTRB340HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+93,Kentatsu,KTRB400HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+93,Kentatsu,KTRB400HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+93,Kentatsu,KTRB400HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+94,Kentatsu,KTRB450HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+94,Kentatsu,KTRB450HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+94,Kentatsu,KTRB450HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+95,Kentatsu,KTRB500HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+95,Kentatsu,KTRB500HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+95,Kentatsu,KTRB500HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+96,Kentatsu,KTRB560HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+96,Kentatsu,KTRB560HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+96,Kentatsu,KTRB560HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+97,Kentatsu,KTRB615HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+97,Kentatsu,KTRB615HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+97,Kentatsu,KTRB615HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+98,Kentatsu,KTRB670HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+98,Kentatsu,KTRB670HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+98,Kentatsu,KTRB670HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+99,Kentatsu,KTRB730HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+99,Kentatsu,KTRB730HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+99,Kentatsu,KTRB730HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+100,Kentatsu,KTRB785HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+100,Kentatsu,KTRB785HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+100,Kentatsu,KTRB785HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+101,Kentatsu,KTRB850HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+101,Kentatsu,KTRB850HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+101,Kentatsu,KTRB850HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+102,Kentatsu,KTRB900HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+102,Kentatsu,KTRB900HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+102,Kentatsu,KTRB900HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+103,Kentatsu,KTRB950HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+103,Kentatsu,KTRB950HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+103,Kentatsu,KTRB950HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+104,Kentatsu,KTRB1010HZAN3,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+104,Kentatsu,KTRB1010HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+104,Kentatsu,KTRB1010HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+105,Kentatsu,KTRB250HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+105,Kentatsu,KTRB250HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+105,Kentatsu,KTRB250HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+106,Kentatsu,KTRB290HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+106,Kentatsu,KTRB290HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+106,Kentatsu,KTRB290HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+107,Kentatsu,KTRB340HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+107,Kentatsu,KTRB340HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+107,Kentatsu,KTRB340HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+108,Kentatsu,KTRB400HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+108,Kentatsu,KTRB400HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+108,Kentatsu,KTRB400HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+109,Kentatsu,KTRB450HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+109,Kentatsu,KTRB450HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+109,Kentatsu,KTRB450HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+110,Kentatsu,KTRB500HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+110,Kentatsu,KTRB500HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+110,Kentatsu,KTRB500HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+111,Kentatsu,KTRB560HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+111,Kentatsu,KTRB560HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+111,Kentatsu,KTRB560HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+112,Kentatsu,KTRB615HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+112,Kentatsu,KTRB615HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+112,Kentatsu,KTRB615HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+113,Kentatsu,KTRB670HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+113,Kentatsu,KTRB670HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+113,Kentatsu,KTRB670HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+114,Kentatsu,KTRB730HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+114,Kentatsu,KTRB730HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+114,Kentatsu,KTRB730HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+115,Kentatsu,KTRB785HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+115,Kentatsu,KTRB785HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+115,Kentatsu,KTRB785HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+116,Kentatsu,KTRB850HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+116,Kentatsu,KTRB850HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+116,Kentatsu,KTRB850HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+117,Kentatsu,KTRB900HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+117,Kentatsu,KTRB900HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+117,Kentatsu,KTRB900HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+118,Kentatsu,KTRB950HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+118,Kentatsu,KTRB950HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+118,Kentatsu,KTRB950HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+119,Kentatsu,KTRB1010HZAN3-i,"Длина трассы/перепад высот, м [PROP_26]",260 (экв.)/110,260/110,https://www.c-o-k.ru/library/instructions/kentatsu/kondicionery-promyshlennye/37986/140011.pdf,"Formatting only; original qualification retained. 260 m is equivalent length, actual length not established; do not interpret as actual."
+119,Kentatsu,KTRB1010HZAN3-i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+119,Kentatsu,KTRB1010HZAN3-i,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+120,Kentatsu,KYRA80HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],-5...+55,-5+55,,Formatting only; numeric endpoints unchanged
+120,Kentatsu,KYRA80HZAN1-A,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+121,Kentatsu,KYRA100HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],-5...+55,-5+55,,Formatting only; numeric endpoints unchanged
+121,Kentatsu,KYRA100HZAN1-A,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+122,Kentatsu,KYRA120HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],-5...+55,-5+55,,Formatting only; numeric endpoints unchanged
+122,Kentatsu,KYRA120HZAN1-A,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+123,Kentatsu,KYRA140HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+123,Kentatsu,KYRA140HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],-5...+55,-5+55,,Formatting only; numeric endpoints unchanged
+123,Kentatsu,KYRA140HZAN1-A,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+124,Kentatsu,KYRA160HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+124,Kentatsu,KYRA160HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],-5...+55,-5+55,,Formatting only; numeric endpoints unchanged
+124,Kentatsu,KYRA160HZAN1-A,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+125,Kentatsu,KYRA180HZAN1-A,"Длина трассы/перепад высот, м [PROP_26]",60/30 (20 при НБ ниже),60/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+125,Kentatsu,KYRA180HZAN1-A,Диапазон рабочих темп. охл. °С [PROP_27],-5...+55,-5+55,,Formatting only; numeric endpoints unchanged
+125,Kentatsu,KYRA180HZAN1-A,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+126,Kentatsu,KVAM80HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+126,Kentatsu,KVAM80HZAN1i,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+127,Kentatsu,KVAM100HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+127,Kentatsu,KVAM100HZAN1i,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+128,Kentatsu,KVAM120HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+128,Kentatsu,KVAM120HZAN1i,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+129,Kentatsu,KVAM140HZAN1i,"Длина трассы/перепад высот, м [PROP_26]",55/30 (20 при НБ ниже),55/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+129,Kentatsu,KVAM140HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+129,Kentatsu,KVAM140HZAN1i,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+130,Kentatsu,KVAM160HZAN1i,"Длина трассы/перепад высот, м [PROP_26]",55/30 (20 при НБ ниже),55/30,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+130,Kentatsu,KVAM160HZAN1i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+130,Kentatsu,KVAM160HZAN1i,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+131,Kentatsu,KVAM120HZAN3i,"Длина трассы/перепад высот, м [PROP_26]",100/50 (40 при НБ ниже),100/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+131,Kentatsu,KVAM120HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+131,Kentatsu,KVAM120HZAN3i,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+132,Kentatsu,KVAM140HZAN3i,"Длина трассы/перепад высот, м [PROP_26]",100/50 (40 при НБ ниже),100/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+132,Kentatsu,KVAM140HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+132,Kentatsu,KVAM140HZAN3i,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+133,Kentatsu,KVAM160HZAN3i,"Длина трассы/перепад высот, м [PROP_26]",100/50 (40 при НБ ниже),100/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+133,Kentatsu,KVAM160HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+133,Kentatsu,KVAM160HZAN3i,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+134,Kentatsu,KVAM220HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+135,Kentatsu,KVAM260HZAN3i,"Длина трассы/перепад высот, м [PROP_26]",100/50 (40 при НБ ниже),100/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+135,Kentatsu,KVAM260HZAN3i,Диапазон рабочих темп. охл. °С [PROP_27],-15...+49,-15+49,,Formatting only; numeric endpoints unchanged
+135,Kentatsu,KVAM260HZAN3i,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+136,Kentatsu,KVAH250HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+136,Kentatsu,KVAH250HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+136,Kentatsu,KVAH250HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+137,Kentatsu,KVAH340HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (110 при НБ выше),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+137,Kentatsu,KVAH340HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+137,Kentatsu,KVAH340HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+138,Kentatsu,KVAH730HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+138,Kentatsu,KVAH730HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+138,Kentatsu,KVAH730HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+139,Kentatsu,KVAH800HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+139,Kentatsu,KVAH800HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+139,Kentatsu,KVAH800HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+140,Kentatsu,KVAH900HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+140,Kentatsu,KVAH900HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+140,Kentatsu,KVAH900HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+141,Kentatsu,KVAH950HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+141,Kentatsu,KVAH950HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+141,Kentatsu,KVAH950HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+142,Kentatsu,KVAH1010HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+142,Kentatsu,KVAH1010HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+142,Kentatsu,KVAH1010HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+24,-20+24,,Formatting only; numeric endpoints unchanged
+143,Kentatsu,KVAG250HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (110 при НБ выше),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+143,Kentatsu,KVAG250HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+143,Kentatsu,KVAG250HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+144,Kentatsu,KVAG290HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+144,Kentatsu,KVAG290HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+144,Kentatsu,KVAG290HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+145,Kentatsu,KVAG340HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+145,Kentatsu,KVAG340HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+145,Kentatsu,KVAG340HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+146,Kentatsu,KVAG400HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+146,Kentatsu,KVAG400HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+146,Kentatsu,KVAG400HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+147,Kentatsu,KVAG450HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+147,Kentatsu,KVAG450HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+147,Kentatsu,KVAG450HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+148,Kentatsu,KVAG500HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+148,Kentatsu,KVAG500HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+148,Kentatsu,KVAG500HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+149,Kentatsu,KVAG560HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+149,Kentatsu,KVAG560HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+149,Kentatsu,KVAG560HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+150,Kentatsu,KVAG615HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+150,Kentatsu,KVAG615HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+150,Kentatsu,KVAG615HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+151,Kentatsu,KVAG680HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+151,Kentatsu,KVAG680HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+151,Kentatsu,KVAG680HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+152,Kentatsu,KVAG730HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+152,Kentatsu,KVAG730HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+152,Kentatsu,KVAG730HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+153,Kentatsu,KVAG800HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+153,Kentatsu,KVAG800HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+153,Kentatsu,KVAG800HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+154,Kentatsu,KVAG850HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+154,Kentatsu,KVAG850HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+154,Kentatsu,KVAG850HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+155,Kentatsu,KVAG900HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+155,Kentatsu,KVAG900HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+155,Kentatsu,KVAG900HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+156,Kentatsu,KVAG950HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+156,Kentatsu,KVAG950HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+156,Kentatsu,KVAG950HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+157,Kentatsu,KVAG1010HZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+157,Kentatsu,KVAG1010HZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+157,Kentatsu,KVAG1010HZAN3,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+158,Kentatsu,KVAG250CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+158,Kentatsu,KVAG250CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+159,Kentatsu,KVAG290CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+159,Kentatsu,KVAG290CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+160,Kentatsu,KVAG340CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+160,Kentatsu,KVAG340CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+161,Kentatsu,KVAG400CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+161,Kentatsu,KVAG400CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+162,Kentatsu,KVAG450CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+162,Kentatsu,KVAG450CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+163,Kentatsu,KVAG500CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+163,Kentatsu,KVAG500CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+164,Kentatsu,KVAG560CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+164,Kentatsu,KVAG560CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+165,Kentatsu,KVAG615CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+165,Kentatsu,KVAG615CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+166,Kentatsu,KVAG680CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+166,Kentatsu,KVAG680CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+167,Kentatsu,KVAG730CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+167,Kentatsu,KVAG730CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+168,Kentatsu,KVAG800CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+168,Kentatsu,KVAG800CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+169,Kentatsu,KVAG850CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+169,Kentatsu,KVAG850CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+170,Kentatsu,KVAG900CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+170,Kentatsu,KVAG900CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+171,Kentatsu,KVAG950CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+171,Kentatsu,KVAG950CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+172,Kentatsu,KVAG1010CZAN3,"Длина трассы/перепад высот, м [PROP_26]",200/130 (макс.; 110/130 по положению НБ),200/130,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+172,Kentatsu,KVAG1010CZAN3,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+173,Midea,MVUH35BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+173,Midea,MVUH35BT-VA1,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+174,Midea,MVUH50BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+174,Midea,MVUH50BT-VA1,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+175,Midea,MVUH60BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+175,Midea,MVUH60BT-VA1,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+176,Midea,MVUH100BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+176,Midea,MVUH100BT-VA1,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+177,Midea,MVUH120BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+177,Midea,MVUH120BT-VA1,Диапазон рабочих темп. нагрев. °С [PROP_200],-15...+27,-15+27,,Formatting only; numeric endpoints unchanged
+178,Midea,MVUH200BT-VA1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+178,Midea,MVUH200BT-VA1,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...+27,-20+27,,Formatting only; numeric endpoints unchanged
+178,Midea,MVUH200BT-VA1,"Длина трассы/перепад высот, м [PROP_26]",,80/30,https://climamarket.ru/vrf-sistemi/naruzhnie-bloki/20-229-kvt/naruzhnyj-blok-vrf-sistemy-midea-mvuh200bt-va1,"Exact SKU: max between blocks 80 m, outdoor/indoor elevation 30 m; aggregate 200 excluded."
+178,Midea,MVUH200BT-VA1,Серия,ATOM,ATOM B,https://vsekondicioneri.ru/product/midea-mvuh200bt-va1/,Exact model series Atom B Inverter; normalized to catalogue series naming.
+179,Midea,MV8Si-252WV2GN1,"Длина трассы/перепад высот, м [PROP_26]",150/50 (40 при НБ ниже),150/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+179,Midea,MV8Si-252WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+179,Midea,MV8Si-252WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+180,Midea,MV8Si-280WV2GN1,"Длина трассы/перепад высот, м [PROP_26]",150/50 (40 при НБ ниже),150/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+180,Midea,MV8Si-280WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+180,Midea,MV8Si-280WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+181,Midea,MV8Si-335WV2GN1,"Длина трассы/перепад высот, м [PROP_26]",150/50 (40 при НБ ниже),150/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+181,Midea,MV8Si-335WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+181,Midea,MV8Si-335WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+182,Midea,MV8Si-400WV2GN1,"Длина трассы/перепад высот, м [PROP_26]",150/50 (40 при НБ ниже),150/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+182,Midea,MV8Si-400WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+182,Midea,MV8Si-400WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+183,Midea,MV8Si-450WV2GN1,"Длина трассы/перепад высот, м [PROP_26]",150/50 (40 при НБ ниже),150/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+183,Midea,MV8Si-450WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+183,Midea,MV8Si-450WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+184,Midea,MV8Si-500WV2GN1,"Длина трассы/перепад высот, м [PROP_26]",150/50 (40 при НБ ниже),150/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+184,Midea,MV8Si-500WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+184,Midea,MV8Si-500WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+185,Midea,MV8Si-560WV2GN1,"Длина трассы/перепад высот, м [PROP_26]",150/50 (40 при НБ ниже),150/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+185,Midea,MV8Si-560WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+185,Midea,MV8Si-560WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+186,Midea,MV8Si-615WV2GN1,"Длина трассы/перепад высот, м [PROP_26]",150/50 (40 при НБ ниже),150/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+186,Midea,MV8Si-615WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+186,Midea,MV8Si-615WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+187,Midea,MV8Si-670WV2GN1,"Длина трассы/перепад высот, м [PROP_26]",150/50 (40 при НБ ниже),150/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+187,Midea,MV8Si-670WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+187,Midea,MV8Si-670WV2GN1,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+188,Midea,MVC-M224WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+189,Midea,MVC-M280WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+190,Midea,MVC-M335WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+191,Midea,MVC-M400WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+192,Midea,MVC-M450WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+193,Midea,MVC-M500WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+194,Midea,MVC-M560WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+195,Midea,MVC-M615WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+196,Midea,MVC-M670WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+197,Midea,MVC-M730WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+198,Midea,MVC-M785WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+199,Midea,MVC-M850WV2GN1,Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+200,Midea,MV8i-1060WV2GN1(PRO),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+200,Midea,MV8i-1060WV2GN1(PRO),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+201,Midea,MV8i-1120WV2GN1(PRO),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+201,Midea,MV8i-1120WV2GN1(PRO),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+202,Midea,MV8i-1170WV2GN1(PRO),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+202,Midea,MV8i-1170WV2GN1(PRO),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+203,Midea,MV8i-252WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+203,Midea,MV8i-252WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+204,Midea,MV8i-280WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+204,Midea,MV8i-280WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+205,Midea,MV8i-335WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+205,Midea,MV8i-335WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+206,Midea,MV8i-400WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+206,Midea,MV8i-400WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+207,Midea,MV8i-450WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+207,Midea,MV8i-450WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+208,Midea,MV8i-500WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+208,Midea,MV8i-500WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+209,Midea,MV8i-560WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+209,Midea,MV8i-560WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+210,Midea,MV8i-615WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+210,Midea,MV8i-615WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+211,Midea,MV8i-670WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+211,Midea,MV8i-670WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+212,Midea,MV8i-730WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+212,Midea,MV8i-730WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+213,Midea,MV8i-785WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+213,Midea,MV8i-785WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+214,Midea,MV8i-850WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+214,Midea,MV8i-850WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+215,Midea,MV8i-900WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+215,Midea,MV8i-900WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+216,Midea,MV8i-950WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+216,Midea,MV8i-950WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+217,Midea,MV8i-1010WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+217,Midea,MV8i-1010WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+218,Midea,MV8i-1060WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+218,Midea,MV8i-1060WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+219,Midea,MV8i-1120WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+219,Midea,MV8i-1120WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+220,Midea,MV8i-1170WV2GN1(ULTRA),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+220,Midea,MV8i-1170WV2GN1(ULTRA),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+231,Midea,MV8S-252WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+231,Midea,MV8S-252WV2GN1/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+232,Midea,MV8S-280WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+233,Midea,MV8S-335WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+234,Midea,MV8S-400WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+235,Midea,MV8S-450WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+236,Midea,MV8S-500WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+237,Midea,MV8S-560WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+238,Midea,MV8S-615WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+239,Midea,MV8S-670WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+240,Midea,MV8Si-252WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+241,Midea,MV8Si-280WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+242,Midea,MV8Si-335WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+243,Midea,MV8Si-400WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+244,Midea,MV8Si-450WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+245,Midea,MV8Si-500WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+246,Midea,MV8Si-560WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+247,Midea,MV8Si-615WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+248,Midea,MV8Si-670WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+249,Midea,MVC-M224WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+250,Midea,MVC-M280WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+251,Midea,MVC-M335WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+252,Midea,MVC-M400WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+253,Midea,MVC-M450WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+254,Midea,MVC-M500WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+255,Midea,MVC-M560WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+256,Midea,MVC-M615WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+257,Midea,MVC-M670WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+258,Midea,MVC-M730WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+259,Midea,MVC-M785WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+260,Midea,MVC-M850WV2GN1/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+261,Midea,MV8-252WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+261,Midea,MV8-252WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+262,Midea,MV8-280WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+263,Midea,MV8-335WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+264,Midea,MV8-400WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+265,Midea,MV8-450WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+266,Midea,MV8-500WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+267,Midea,MV8-560WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+268,Midea,MV8-615WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+269,Midea,MV8-670WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+270,Midea,MV8-730WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+271,Midea,MV8-785WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+272,Midea,MV8-850WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+273,Midea,MV8-900WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+274,Midea,MV8-950WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+275,Midea,MV8-1010WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+276,Midea,MV8i-252WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+277,Midea,MV8i-280WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+278,Midea,MV8i-335WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+279,Midea,MV8i-400WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+280,Midea,MV8i-450WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+281,Midea,MV8i-500WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+282,Midea,MV8i-560WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+282,Midea,MV8i-560WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+283,Midea,MV8i-615WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+283,Midea,MV8i-615WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+284,Midea,MV8i-670WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+284,Midea,MV8i-670WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+285,Midea,MV8i-730WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+285,Midea,MV8i-730WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+286,Midea,MV8i-785WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+286,Midea,MV8i-785WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+287,Midea,MV8i-850WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+287,Midea,MV8i-850WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+288,Midea,MV8i-900WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+288,Midea,MV8i-900WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+289,Midea,MV8i-950WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+289,Midea,MV8i-950WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+290,Midea,MV8i-1010WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+290,Midea,MV8i-1010WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+291,Midea,MV8i-1060WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+291,Midea,MV8i-1060WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+292,Midea,MV8i-1120WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+292,Midea,MV8i-1120WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+293,Midea,MV8i-1170WV2GN1(PRO)/-40,Диапазон рабочих темп. охл. °С [PROP_27],-40...+55,-40+55,,Formatting only; numeric endpoints unchanged
+293,Midea,MV8i-1170WV2GN1(PRO)/-40,Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+30,-30+30,,Formatting only; numeric endpoints unchanged
+294,Midea,SMK-D140HHN1-3,Диапазон рабочих темп. нагрев. °С [PROP_200],-20...30,-20+30,,Formatting only; numeric endpoints unchanged
+295,Midea,MVUW252A-VA3,"Длина трассы/перепад высот, м [PROP_26]",120/50 (40 при НБ ниже),120/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+296,Midea,MVUW280A-VA3,"Длина трассы/перепад высот, м [PROP_26]",120/50 (40 при НБ ниже),120/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+297,Midea,MVUW335A-VA3,"Длина трассы/перепад высот, м [PROP_26]",120/50 (40 при НБ ниже),120/50,,Formatting only; original qualification retained. Second number retains original standard/catalogued maximum; directional/conditional limitations in old value.
+300,IGC,IMS-EX330NB(7),Диапазон рабочих темп. охл. °С [PROP_27],-15...+55,-15+55,,Formatting only; numeric endpoints unchanged
+300,IGC,IMS-EX330NB(7),Диапазон рабочих темп. нагрев. °С [PROP_200],-30...+24,-30+24,,Formatting only; numeric endpoints unchanged
+306,IGC,IMBR-C220ANB,Диапазон рабочих темп. охл. °С [PROP_27],5...45,+5+45,,Formatting only; numeric endpoints unchanged
+332,IGC,IRFT-022HA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16...52,+16+52,,Formatting only; numeric endpoints unchanged
+333,IGC,IRFT-026HA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16…52,+16+52,,Formatting only; numeric endpoints unchanged
+333,IGC,IRFT-026HA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],10…24,+10+24,,Formatting only; numeric endpoints unchanged
+334,IGC,IRFT-035HA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16...52,+16+52,,Formatting only; numeric endpoints unchanged
+335,IGC,IRFT-043HA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16…52,+16+52,,Formatting only; numeric endpoints unchanged
+335,IGC,IRFT-043HA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],-10…24,-10+24,,Formatting only; numeric endpoints unchanged
+336,IGC,IRFT-061HA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16-52,+16+52,,Formatting only; numeric endpoints unchanged
+336,IGC,IRFT-061HA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],-10…24,-10+24,,Formatting only; numeric endpoints unchanged
+337,IGC,IRFT-087HA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16…52,+16+52,,Formatting only; numeric endpoints unchanged
+337,IGC,IRFT-087HA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],16…52,+16+52,,Formatting only; numeric endpoints unchanged
+338,IGC,IRFT-105HA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16...52,+16+52,,Formatting only; numeric endpoints unchanged
+339,IGC,IRFT-122HA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16...52,+16+52,,Formatting only; numeric endpoints unchanged
+340,IGC,IRFT-156HA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16…52,+16+52,,Formatting only; numeric endpoints unchanged
+340,IGC,IRFT-156HA/NB-Q,Диапазон рабочих темп. нагрев. °С [PROP_200],16…52,+16+52,,Formatting only; numeric endpoints unchanged
+341,IGC,IRFT-022CA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16…52,+16+52,,Formatting only; numeric endpoints unchanged
+342,IGC,IRFT-026CA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16...52,+16+52,,Formatting only; numeric endpoints unchanged
+343,IGC,IRFT-043CA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16…52,+16+52,,Formatting only; numeric endpoints unchanged
+344,IGC,IRFT-061CA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16...52,+16+52,,Formatting only; numeric endpoints unchanged
+345,IGC,IRFT-087CA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16...52,+16+52,,Formatting only; numeric endpoints unchanged
+346,IGC,IRFT-105CA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16...52,+16+52,,Formatting only; numeric endpoints unchanged
+347,IGC,IRFT-122CA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16...52,+16+52,,Formatting only; numeric endpoints unchanged
+348,IGC,IRFT-156CA/NB-Q,Диапазон рабочих темп. охл. °С [PROP_27],16…52,+16+52,,Formatting only; numeric endpoints unchanged
