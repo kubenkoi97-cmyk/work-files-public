@@ -1,0 +1,22 @@
+name: Climate 347 stage 19 IMS7 visual verification evidence
+on:
+  push:
+    paths:
+      - '.github/workflows/climate347-pdf-stage19.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q pymupdf
+      - run: python climate-347/technical-docs/stage19_preview.py
