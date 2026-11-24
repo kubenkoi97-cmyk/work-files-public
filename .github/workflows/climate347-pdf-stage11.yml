@@ -1,0 +1,31 @@
+name: Climate 347 stage 11 exact winter catalog and QR recovery
+on:
+  push:
+    paths:
+      - '.github/workflows/climate347-pdf-stage11.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests pymupdf opencv-python-headless numpy
+      - run: python climate-347/technical-docs/stage11_audit.py
+      - name: Publish audited archive and delta
+        run: |
+          gh release create climate-347-pdf-stage11-${{ github.run_id }} /tmp/climate347v11/Climate_347_stage11_partial_Selectel.zip /tmp/climate347v11/Climate_347_stage11_delta_review.zip /tmp/climate347v11/summary.json /tmp/climate347v11/coverage_347.csv /tmp/climate347v11/remaining.csv /tmp/climate347v11/html_by_model.csv /tmp/climate347v11/partial_selectel_manifest.csv /tmp/climate347v11/download_attempts.csv --title 'Climate 347 — stage 11 exact winter catalogue and QR evidence' --notes 'Only verified document assignments in partial package; new downloads are candidates pending scope review. Selectel not uploaded.'
+      - name: Publish original page previews
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add climate-347/technical-docs/stage11-previews
+          if ! git diff --cached --quiet; then git commit -m 'Stage 11 exact catalogue page evidence'; git pull --rebase; git push; fi
