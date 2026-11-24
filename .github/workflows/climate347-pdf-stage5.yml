@@ -1,4 +1,4 @@
-name: Climate 347 PDF retrieval stage 5
+name: Climate 347 PDF retrieval stage 5 corrected
 on:
   push:
     paths:
