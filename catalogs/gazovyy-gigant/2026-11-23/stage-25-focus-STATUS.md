@@ -1,0 +1,2 @@
+# Stage 25 — delivery checkpoint, focused final pass
+347 products / 77 columns; 18 additional source-confirmed fills from exact winter model pages (Daikin and Midea). Other 73 columns unchanged vs stage 24. Raw blanks 1, 183, 99, 188; 146 documented N/A from prior stages; 325 blanks awaiting source/applicability verification. Existing review flags preserved; no claim all earlier values independently reverified. User-requested delivery checkpoint, not 100% verified. No filling by nearest model. All stage 18–24 source logs retained.
