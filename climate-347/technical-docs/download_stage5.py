@@ -41,6 +41,9 @@ sources=[
 ("Daikin","Daikin_2024_Daichi_catalog.pdf","catalog",["https://daichi.business/upload/iblock/fe1/D1_2024_DD24_02.01.01_260124.pdf"]),
 ("Midea","VC_MAX_installation_manual.pdf","manual",["https://24wvent.ru/documentation/3/MD23IU-046B-RU_27_11_23.pdf"]),
 ("Midea","ATOM_B_installation_manual.pdf","manual",["https://air-midea.com/upload/iblock/1f4/euymk0wyekscfn9tbt73pdjzeq12tfwu.pdf"]),
+("Bosch","Bosch_VRF_RU_catalog.pdf","catalog",["https://www.c-o-k.ru/library/catalogs/bosch/33333/118605.pdf"]),
+("Bosch","MDCI_technical_training.pdf","technical",["https://hvacgroup.ro/wp-content/uploads/2024/08/Mini-VRF_MDCI_Installation.pdf"]),
+("Midea","Midea_2024_Daichi_catalog.pdf","catalog",["https://daichi.business/upload/iblock/32c/M2_2024_DM24_02.01.02_Small_260824.pdf"]),
 ]
 def fetch(item):
  b,name,kind,urls=item;errors=[]
@@ -121,13 +124,16 @@ for path,raw in originals.items():
     with fitz.open() as out:
      for i in sorted(pp):out.insert_pdf(pdf,from_page=i,to_page=i)
      data=out.tobytes(garbage=4,deflate=True)
-    with fitz.open(stream=data,filetype="pdf") as out:
-     assert len(out)==len(pp)
-     for j,i in enumerate(sorted(pp)):
-      assert out[j].get_text()==pages[i]
-      a=pdf[i].get_pixmap(matrix=fitz.Matrix(.2,.2));b=out[j].get_pixmap(matrix=fitz.Matrix(.2,.2))
-      assert a.samples==b.samples
-    excerpts[name]=data
+    try:
+     with fitz.open(stream=data,filetype="pdf") as out:
+      assert len(out)==len(pp)
+      for j,i in enumerate(sorted(pp)):
+       assert out[j].get_text()==pages[i]
+       a=pdf[i].get_pixmap(matrix=fitz.Matrix(.2,.2));b=out[j].get_pixmap(matrix=fitz.Matrix(.2,.2))
+       assert a.samples==b.samples
+     excerpts[name]=data
+    except Exception as e:
+     print("EXCERPT_REJECTED",name,str(e),flush=True)
   docrows.append(dict(brand=brand,archive_path=path,kind=kind,source=" | ".join(dict.fromkeys(metadata.get(path,[]))),bytes=len(raw),sha256=sha,pages=len(pages),text_chars=sum(len(t) for t in pages),models_exact=len(hits)))
 coverage=[]
 for (b,m),folder in inventory.items():
