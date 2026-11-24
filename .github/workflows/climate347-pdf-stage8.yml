@@ -1,0 +1,31 @@
+name: Climate 347 stage 8 validated package and previews
+on:
+  push:
+    paths:
+      - '.github/workflows/climate347-pdf-stage8.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -q requests pymupdf
+      - run: python climate-347/technical-docs/stage8_visual_pack.py
+      - name: Publish extended partial archive
+        run: |
+          gh release create climate-347-pdf-stage8-${{ github.run_id }} /tmp/climate347v8/Climate_347_stage8_partial_Selectel.zip /tmp/climate347v8/summary.json /tmp/climate347v8/coverage_347.csv /tmp/climate347v8/partial_selectel_manifest.csv /tmp/climate347v8/preview_index.csv --title 'Climate 347 — stage 8 expanded partial Selectel package' --notes 'Only validated scopes; not all required documents. No Selectel upload.'
+      - name: Publish review previews
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add climate-347/technical-docs/stage8-previews
+          if ! git diff --cached --quiet; then git commit -m 'Climate 347 actual source PDF page previews'; git pull --rebase; git push; fi
