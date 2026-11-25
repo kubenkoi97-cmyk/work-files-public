@@ -1,0 +1,16 @@
+{
+  "stage": 24,
+  "status": "FINAL_SCOPE_FIXED_WAITING_TWO_BASE_URL",
+  "total": 347,
+  "ready": 327,
+  "held": 2,
+  "deferred": 18,
+  "expected_final_sku": 329,
+  "expected_final_pdfs": 44,
+  "expected_final_assignments": 410,
+  "excluded_types": "certificates,declarations,approvals,warranty,commercial",
+  "fresh_binary_audit": false,
+  "blocker": "two exact category URLs; DNS prevents archive download",
+  "excel_modified": false,
+  "selectel_uploaded": false
+}
