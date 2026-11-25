@@ -1,0 +1,20 @@
+{
+  "stage": 23,
+  "date": "2026-11-25",
+  "status": "OPEN",
+  "scope": 18,
+  "new_eligible_pdfs": 0,
+  "new_assignments": 0,
+  "prepared_sku": 327,
+  "prepared_pdf": 41,
+  "prepared_assignments": 407,
+  "held_sku": 2,
+  "held_pdf": 3,
+  "missing_sku": 18,
+  "total_sku": 347,
+  "coverage_basis": "prior confirmed audits; release metadata verified, no binary recount",
+  "anonymous_stage20": "DNS_FAILURE",
+  "excel_modified": false,
+  "selectel_uploaded": false,
+  "external_requests": false
+}
