@@ -1,0 +1,35 @@
+name: Climate347 images stage16b missing models acquisition
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/climate347-images-stage16b.yml']
+permissions:
+  contents: write
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -q pymupdf requests beautifulsoup4 Pillow numpy
+      - run: python climate-347/images/stage16b_focused.py
+      - name: Save evidence
+        run: |
+          set -euo pipefail
+          tag="climate347-images-stage16b-${GITHUB_RUN_ID}"
+          gh release create "$tag" Climate347_stage16b_candidates.zip --title "Climate347 stage16b missing-model candidates" --notes "Exact-card galleries and native catalogue rasters for manual review only." --target "$GITHUB_SHA"
+          gh release view "$tag" --json assets,url
+          sha256sum Climate347_stage16b_candidates.zip
+          curl -fsSL --range 0-3 "https://github.com/${GITHUB_REPOSITORY}/releases/download/$tag/Climate347_stage16b_candidates.zip" | head -c4 | od -An -tx1 || true
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add climate-347/images/audits/stage-16b-*
+          git commit -m 'Climate347 stage16b missing-model evidence'
+          git pull --rebase origin main
+          git push origin HEAD:main
