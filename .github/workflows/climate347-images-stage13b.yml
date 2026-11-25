@@ -1,0 +1,35 @@
+name: Climate347 stage 13b full size cabinet quality review
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/climate347-images-stage13b.yml']
+permissions:
+  contents: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -q pymupdf requests Pillow numpy
+      - run: python climate-347/images/stage13b_fullsize.py
+      - name: Save full-size review
+        run: |
+          set -euo pipefail
+          tag="climate347-images-stage13b-${GITHUB_RUN_ID}"
+          gh release create "$tag" Climate347_stage13b_fullsize_review.zip --title "Climate347 stage13b full-size review (candidates)" --notes "850x850 actual review JPEGs, native source resolution separately recorded." --target "$GITHUB_SHA"
+          gh release view "$tag" --json assets,url
+          sha256sum Climate347_stage13b_fullsize_review.zip
+          curl -fsSL --range 0-3 "https://github.com/${GITHUB_REPOSITORY}/releases/download/$tag/Climate347_stage13b_fullsize_review.zip" | head -c4 | od -An -tx1 || true
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add climate-347/images/audits/stage-13b-*
+          git commit -m 'Climate347 stage13b fullsize visual review candidates'
+          git pull --rebase origin main
+          git push origin HEAD:main
