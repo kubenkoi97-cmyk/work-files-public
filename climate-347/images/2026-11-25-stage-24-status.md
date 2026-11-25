@@ -1,2 +1,7 @@
 # Stage 24 — final working package preparation
 Stages 22 and 23 completed successfully. Stage22: 89 candidate occurrences, 22 unique; two contact sheets inspected. Kentatsu wide repeats; ULTRA narrow 512×669 body; IGC T22 531×217 soft; both 440 wrong 3-bay image; MIH native cabinet crops 140×161 and 139×161, inadequate. Stage23 2 raster occurrences, both architectural backgrounds, no usable product raster. No added approvals. Stage21 approved overlay 35 records (4 replacements, 31 additions) is authoritative. Base ZIP 456 JPG/279 models, effective 487/305. All galleries OPEN; 42 missing. Build verified overlay release and assemble base plus overlay if transport permits.
+
+## Consolidated working archive — physically assembled and verified
+Filename: Climate347_Фотографии_487_JPG_305_моделей.zip
+Bytes: 45686084. SHA256: 8166fdb4d756f95f5ed9a2afd82e31a25793de8bf7bde16c93ab3e1763e3eb7c.
+Base SHA256 verified; 35 overlay files validated by runner; 4 replacements and 31 additions applied, 487 JPEG files in 305 model folders across 31 series, 85 unique SHA256 hashes. All 487 decoded at 850x850, ZIP CRC test passed. Full assembled archive provided in chat (not uploaded as a GitHub release); public approved overlay release: https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/climate347-images-overlay24-45618375037. Remaining 42 without confirmed image, full gallery gate OPEN. No unapproved stage22/23 candidates included. Authoritative model registry remains stage21.

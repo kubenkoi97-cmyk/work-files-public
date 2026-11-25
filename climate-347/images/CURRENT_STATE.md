@@ -1,5 +1,5 @@
 # Climate 347 — изображения: точка продолжения
-Последнее состояние: этап 21, 25.11.2026. Задача OPEN. Не путать с соседней веткой technical-docs.
+Последнее состояние: этап 24, 25.11.2026. Задача OPEN. Не путать с соседней веткой technical-docs.
 ## Уточнение пользователя (приоритет над прежним HOLD зимнего исполнения)
 [WINTER_VARIANTS_RULE.md](WINTER_VARIANTS_RULE.md): фото /-40 и /-30 равно фото точной базовой модели без зимнего комплекта. Остальные правила v11 не меняются.
 ## Входные данные
@@ -90,3 +90,8 @@ Stage 20 row-by-row review and effective registries: [347 models](audits/stage-2
 
 ## Stage 22–24 — reviewed, consolidation
 [Report](2026-11-25-stage-24-status.md). Stages 22/23 completed; 91 candidate occurrences, no approved JPG. Counts unchanged 305/347, 487 JPG; stage21 overlay authoritative. Packaging script pack24_overlay.py verifies all 35 overlay JPGs by SHA256 and dimensions.
+
+## Consolidated working archive — physically assembled and verified
+Filename: Climate347_Фотографии_487_JPG_305_моделей.zip
+Bytes: 45686084. SHA256: 8166fdb4d756f95f5ed9a2afd82e31a25793de8bf7bde16c93ab3e1763e3eb7c.
+Base SHA256 verified; 35 overlay files validated by runner; 4 replacements and 31 additions applied, 487 JPEG files in 305 model folders across 31 series, 85 unique SHA256 hashes. All 487 decoded at 850x850, ZIP CRC test passed. Full assembled archive provided in chat (not uploaded as a GitHub release); public approved overlay release: https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/climate347-images-overlay24-45618375037. Remaining 42 without confirmed image, full gallery gate OPEN. No unapproved stage22/23 candidates included. Authoritative model registry remains stage21.
