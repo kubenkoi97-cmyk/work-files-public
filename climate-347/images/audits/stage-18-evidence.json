@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Bosch MDCI 40/45",
+    "url": "https://www.bosch-industrial.com/gb/media/country_pool/service/catalogues/br_bosch_climate_5000_vrf_mdci.pdf",
+    "status": "PDF_ACQUIRED",
+    "pages": 6,
+    "selected": [
+      1,
+      2
+    ],
+    "sha256": "9501000a782256df22021f49f826afaae4d1efa9aebd7da7c3853e4baed44fbb"
+  },
+  {
+    "label": "Midea 2024 Daichi",
+    "url": "https://daichi.business/upload/iblock/32c/M2_2024_DM24_02.01.02_Small_260824.pdf",
+    "status": "PDF_ACQUIRED",
+    "pages": 272,
+    "selected": [
+      31,
+      32,
+      36,
+      96,
+      103,
+      113,
+      116,
+      118,
+      120,
+      122
+    ],
+    "sha256": "2a64e23f4a93b0febfbc1b41acf32f09b2862696e47c56ab94b6956ff34dc374"
+  }
+]
