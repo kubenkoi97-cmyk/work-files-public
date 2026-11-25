@@ -87,3 +87,6 @@ Stage 20 row-by-row review and effective registries: [347 models](audits/stage-2
 
 ## Stage 21 — completed and reviewed (current)
 [Report](2026-11-25-stage-21-status.md), [347 models](audits/stage-21-current-models.csv), [42 remaining](audits/stage-21-remaining-42.csv), [individual decisions](audits/stage-21-review-42.csv), [effective overlay](audits/stage-21-approved-overlay.csv). Run 45615944102 success; 65 candidates/26 unique including non-product graphics; no approved JPG. Effective coverage 305/347, 487 JPG, 42 missing. ZIP https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/climate347-images-stage21-45615944102/Climate347_stage21_candidates.zip. Preserve stage19 winter rule and prior approved images.
+
+## Stage 22–24 — reviewed, consolidation
+[Report](2026-11-25-stage-24-status.md). Stages 22/23 completed; 91 candidate occurrences, no approved JPG. Counts unchanged 305/347, 487 JPG; stage21 overlay authoritative. Packaging script pack24_overlay.py verifies all 35 overlay JPGs by SHA256 and dimensions.

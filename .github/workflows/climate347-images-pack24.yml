@@ -1,0 +1,25 @@
+name: Climate347 verified overlay for consolidated archive
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/climate347-images-pack24.yml']
+permissions:
+  contents: write
+jobs:
+  pack:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q Pillow
+      - run: python climate-347/images/pack24_overlay.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Climate347_approved_overlay_35
+          path: Climate347_approved_overlay_35.zip
+      - run: |
+          tag="climate347-images-overlay24-${GITHUB_RUN_ID}"
+          gh release create "$tag" Climate347_approved_overlay_35.zip --title "Climate347 approved overlay, 35 verified JPG" --notes "Apply over stage5 base. 4 replacements and 31 additions."
+          sha256sum Climate347_approved_overlay_35.zip
+          curl -fsSL --range 0-3 "https://github.com/${GITHUB_REPOSITORY}/releases/download/$tag/Climate347_approved_overlay_35.zip" | head -c4 | od -An -tx1
