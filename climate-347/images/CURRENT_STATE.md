@@ -1,11 +1,11 @@
 # Climate 347 — изображения: точка продолжения
-Последнее состояние: этап 19, 25.11.2026. Задача OPEN. Не путать с соседней веткой technical-docs.
+Последнее состояние: этап 20, 25.11.2026. Задача OPEN. Не путать с соседней веткой technical-docs.
 ## Уточнение пользователя (приоритет над прежним HOLD зимнего исполнения)
 [WINTER_VARIANTS_RULE.md](WINTER_VARIANTS_RULE.md): фото /-40 и /-30 равно фото точной базовой модели без зимнего комплекта. Остальные правила v11 не меняются.
 ## Входные данные
 Исходный Excel Климат_347_этап29(2).xlsx, вкладка «Каталог 347», 347 товаров, 33 серии, 243 отдельные наружные блоки. HTML-архивы Bosch(1).7z, Daikin(2).7z, IGC(1).7z, Kentatsu(1).7z, Midea(1).7z. Оригинальный промпт: [MASTER_PROMPT_v11.txt](MASTER_PROMPT_v11.txt). Использовать сохранённые HTML в первую очередь; проверять точный код в самой карточке, брать только главную товарную галерею. 
 ## Что читать в новом чате
-1. Сначала [актуальный реестр 347 моделей](audits/stage-19-current-models.csv), [актуальный реестр 33 серий](audits/stage-19-current-series.csv), [актуальные 42 без фото](audits/stage-19-remaining-42.csv), [отчёт этапа 8](2026-11-25-stage-08-status.md). Далее этот файл, [MASTER_PROMPT_v11.txt](MASTER_PROMPT_v11.txt), [TASKS.md](TASKS.md), [аудит всех моделей](audits/stage-05-models.csv), [очередь](audits/stage-06-task-queue.csv), [аудит серий](audits/stage-05-series.csv).
+1. Сначала [актуальный реестр 347 моделей](audits/stage-20-current-models.csv), [актуальный реестр 33 серий](audits/stage-20-current-series.csv), [актуальные 42 без фото](audits/stage-20-remaining-42.csv), [отчёт этапа 8](2026-11-25-stage-08-status.md). Далее этот файл, [MASTER_PROMPT_v11.txt](MASTER_PROMPT_v11.txt), [TASKS.md](TASKS.md), [аудит всех моделей](audits/stage-05-models.csv), [очередь](audits/stage-06-task-queue.csv), [аудит серий](audits/stage-05-series.csv).
 2. Историю этапов по ссылкам ниже, источники [этапа 2](audits/stage-02-sources.csv), реестры [этапа 1](audits/stage-01-models.csv), [этапа 2](audits/stage-02-models.csv), [этапа 4](audits/stage-04-models.csv), [серии этапа 4](audits/stage-04-series.csv).
 3. [Манифест бинарных файлов](FILE_MANIFEST.md). Не считать локальные имена рабочими ссылками GitHub. Найти файлы в предыдущем чате/библиотеке или получить из приложенного handoff ZIP; если недоступны — продолжить проверку источников и очереди, но не утверждать, что заменены реальные JPG. Не запрашивать повторно весь контекст, если он уже доступен.
 ## Текущие цифры
@@ -82,3 +82,5 @@ Kentatsu KVAG560CZAN3: три 850x850 просмотрены/скрининг: 2
 
 ## Stage 20 — acquisition reviewed
 [Report](2026-11-25-stage-20-status.md) · [Candidates](https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/climate347-images-stage20-45615289082/Climate347_stage20_candidates.zip). 105 occurrences, 15 unique, 0 approved; stage19 effective counts and overlay unchanged. Stage21 acquisition initiated; no results claimed.
+
+Stage 20 row-by-row review and effective registries: [347 models](audits/stage-20-current-models.csv), [42 remaining](audits/stage-20-remaining-42.csv), [decisions](audits/stage-20-review-42.csv), [overlay](audits/stage-20-approved-overlay.csv). ZIP SHA256 and public range signature verified in successful runner logs. Stage21 run 45615944102 in progress at last check.
