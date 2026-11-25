@@ -1,0 +1,11 @@
+# Stage 18 — actual image acquisition, 25.11.2026
+
+Actions [45612794458](https://github.com/kubenkoi97-cmyk/work-files-public/actions/runs/45612794458) completed/success. 72 queued page probes; 56 attempted page/source records (including two PDF pages), 39 distinct product models actually represented in results; rate limit stopped remaining host queues. 20 web candidate occurrences for 10 Midea models and 2 native Bosch PDF rasters, 6 unique pixel hashes. Candidate ZIP is real, integrity checked by runner, SHA256 verified in job log and Release API, anonymous HTTP ZIP signature 50 4b 03 04 confirmed: [download](https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/climate347-images-stage18-45612794458/Climate347_stage18_candidates.zip), 3111055 bytes, sha256 2ba5754a7a1652ed8ea5efeee772f237bb1117da192844663bbda629723e2e57.
+
+## Visual decisions
+- Bosch official separate 40–45 kW brochure, PDF page 1 xref298 native 1183×1830 (object with reflection 1024×1477), page 2 xref14 378×708, shared manufacturer image. Contact sheet and high-res 850 JPG reviewed: sharp two fans, correct series, reflection at bottom, specific variant not identified; 40 W1360 vs 45 W1460, H1650. HOLD, do not copy blindly into both. Source https://www.bosch-industrial.com/gb/media/country_pool/service/catalogues/br_bosch_climate_5000_vrf_mdci.pdf.
+- Midea 5 V8S and 5 VC MAX base cards (Cityclimat), 20 occurrences, 4 hashes, better original object 415×672 and 534×700 respectively; visual contact sheet checked. Winter execution still not proven, VC MAX front panel differs from previous candidates. HOLD. Midea 2024 catalogue acquired, selected pages 31,32,36,96,103,113,116,118,120,122, no additional qualifying native raster in result. Other P0 not closed; Kentatsu thumbnail errors, 429 host stop, H440/C440 source failed, Toplan direct T22 photo visually soft, direct container DNS blocked.
+- Recovered 10 exact saved Midea MIH HTML files from Midea(1).7z and checked product image and OG path. OG exact URLs already tested stage10. Next route public original source path, not repeated 750x0 thumbnail; no watermark manipulation.
+
+## Effective coverage
+0 newly approved, 467 JPG / 290 models / 57 missing, all 347 OPEN. Existing overlay (15 entries) and base archive unchanged. Separate source ZIP not final. No changes to workbook. No supplier contact. 
