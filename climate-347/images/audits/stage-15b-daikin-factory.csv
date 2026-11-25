@@ -1,0 +1,7 @@
+model,url,status,detail,source_width,source_height,object_width,object_height,upscale,pixel_sha256,review_sha256,file
+RYMQ14-20U,https://www.daikin.eu/content/dam/MDM/Pictures/VRV/OutdoorUnits/Packshots/RYMQ14-20U.tif,FAILED,size limit,,,,,,,,
+RYMQ14-20U,https://www.daikin.eu/content/dam/MDM/Pictures/VRV/OutdoorUnits/Packshots/RYMQ14-20U.tif/_jcr_content/renditions/original,FAILED,size limit,,,,,,,,
+RYMQ14-20U,https://www.daikin.eu/content/dam/MDM/Pictures/VRV/OutdoorUnits/Packshots/RYMQ14-20U.tif/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg,CANDIDATE,JPEG,1004,1280,1004,1280,0.5859,3ceacb2496a14e5005eced8d9fc1a00141cd46ccca578d5307737103554b5fb5,7bbdd8c38f8f674ad8d04b190bcb659674ea6eebb24434d6f820867aca4e6ac5,review/3ceacb2496a14e5005eced8d.jpg
+RXYQ14-20U,https://www.daikin.co.uk/content/dam/MDM/Pictures/VRV/OutdoorUnits/Packshots/RXYQ14-20U.tif,FAILED,size limit,,,,,,,,
+RXYQ14-20U,https://www.daikin.co.uk/content/dam/MDM/Pictures/VRV/OutdoorUnits/Packshots/RXYQ14-20U.tif/_jcr_content/renditions/original,FAILED,size limit,,,,,,,,
+RXYQ14-20U,https://www.daikin.co.uk/content/dam/MDM/Pictures/VRV/OutdoorUnits/Packshots/RXYQ14-20U.tif/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg,CANDIDATE,JPEG,1004,1280,1004,1280,0.5859,3ceacb2496a14e5005eced8d9fc1a00141cd46ccca578d5307737103554b5fb5,7bbdd8c38f8f674ad8d04b190bcb659674ea6eebb24434d6f820867aca4e6ac5,review/3ceacb2496a14e5005eced8d.jpg
