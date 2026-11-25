@@ -1,0 +1,15 @@
+# Stage 17 — acquisition reconciliation and visual verification, 25.11.2026
+
+Existing Actions run [45606216932](https://github.com/kubenkoi97-cmyk/work-files-public/actions/runs/45606216932) completed/success before this reconciliation. 56 attempted pages; 39 candidate occurrences for 24 models, 8 unique pixel hashes. Release [candidate ZIP](https://github.com/kubenkoi97-cmyk/work-files-public/releases/tag/climate347-images-stage17-45606216932), 2014037 bytes, digest from Release API sha256:6ef8f4b1b1cca069bb5f555313219005d1975b2a26bfa9c3056b6fa6ca4bc7f4. This session checked release metadata, not anonymous download bytes (container DNS failure). Contact sheet and all five available 850×850 selected JPG previews inspected. No newly approved JPG.
+
+## Important correction: IGC C440/H440
+Factory passport printed pp11,36 (PDF12,37) specifies IMBR(G)-C(H)440ANB 4400×2250×2450 mm, 8 fans 2×4, four long-side bays. Stage15 C440 and stage16 H440 identical review SHA256 528adde81bb33c02a626caf9fc3a13d8d1de9eb2d7e98fd805644c7fb3266c56; inspected 850px photo shows only three longitudinal coil bays, compatible with 330 drawing (PDF36), not 440. Quarantine pending true four-bay packshot; preserve prior file/history.
+Passport p12 table and p37 drawing checked directly from saved previews; p36 330 drawing compared; p13-14 establish combined-model layout. The 1320 model is explicitly present in internal table, despite older cover discrepancy. No technical-docs file changed. Stage15 approved C440 bytes retained in immutable historical path, excluded from new effective overlay, not physically deleted. H440 remains P0. Other 20 IMBR images remain subject to existing individual configuration QA; do not assume group approval.
+
+## Other decisions
+- Kentatsu 19: exact dealer cards provide repeated wide frontal image, two almost-identical hashes; not usable on 990/1340 groups. New catalogue PDFs acquired by existing runner, selected p80; no approved new product raster demonstrated.
+- Midea VC MAX 5: two independent base dealers provide geometry-compatible 1340-width frontal packshot and M730 angled view. Actual object 518×680 (1.103× resize), not full 1920 canvas; quality reasonably sharp but installed /-40 kit exterior unproven. HOLD. All other original P0 unchanged.
+- Locally recovered IGC(1).7z: SHA256 3feebaae65b51872efb29013b7c729040a716c364d778162e1640db601793ffa matches manifest, extracted 24 IMBR exact HTML pages, no exact C440/H440 or IWF-Q saved page. Handoff base archive checked ZIP integrity, 456 JPG/279 model folders, SHA256 51bd67583715c355dff367cdff88a809f085b2a38c81b7cef89fae6e5ba03a32. Base untouched.
+
+## Current effective state
+467 JPG / 290 models with working JPG / 57 without; 4 replacement + 11 addition overlay records. Midea 145/178, Kentatsu 64/83, IGC 48/51, Bosch 9/11, Daikin 24/24. All 347 OPEN under v11; P0 57 P1 43 P2 73 P3 93 P4 81. New effective overlay excludes C440; history remains intact. No supplier request, no original workbook changes. Prioritize genuine 440 chassis, exact winter version, cabinet OEM cross-reference, then IMBR configuration audit.
