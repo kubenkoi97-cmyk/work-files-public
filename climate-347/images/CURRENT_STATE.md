@@ -79,3 +79,6 @@ Kentatsu KVAG560CZAN3: три 850x850 просмотрены/скрининг: 2
 
 ## Этап 19 — 15 зимних моделей восстановлены (актуально)
 [Отчёт](2026-11-25-stage-19-status.md), [347 моделей](audits/stage-19-current-models.csv), [33 серии](audits/stage-19-current-series.csv), [42 без фото](audits/stage-19-remaining-42.csv), [решения 57](audits/stage-19-review-57.csv), [актуальный overlay](audits/stage-19-approved-overlay.csv), [20 добавленных JPG](audits/stage-19-approved-additions.csv). Пользователь подтвердил идентичное внешнее исполнение зимних и соответствующих базовых моделей. 5 V8S из точных сохранённых HTML, 5 V8Si и 5 VC MAX из проверенного базового ZIP; физически 20 JPG (4 уникальных визуала) в approved-delta/stage-19. Два неполных V8S ракурса и узкая деталь VC MAX не размножены. 487 JPG / 305 моделей / 42 без, все 347 OPEN полной галереи. При сборке использовать stage19 overlay (35 файловых записей). Осталось Midea MIH 10, ULTRA 8, Kentatsu 19, Bosch 2, IGC 3.
+
+## Stage 20 — acquisition reviewed
+[Report](2026-11-25-stage-20-status.md) · [Candidates](https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/climate347-images-stage20-45615289082/Climate347_stage20_candidates.zip). 105 occurrences, 15 unique, 0 approved; stage19 effective counts and overlay unchanged. Stage21 acquisition initiated; no results claimed.
