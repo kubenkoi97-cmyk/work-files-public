@@ -1,0 +1,3 @@
+# User clarification — winter variants, 25.11.2026
+
+For /-40 and /-30 winter executions, use photos of the exact corresponding base model without the winter kit; the external appearance is the same according to the user's explicit instruction. No need for separate proof of installed winter kit appearance. This does not permit substitution between different base model codes, sizes, generations, brands, or other configurations. Preserve all other v11 gates, including complete gallery and quality. This clarification overrides earlier winter-only HOLD decisions. Historical prompt and status records are retained unchanged.
