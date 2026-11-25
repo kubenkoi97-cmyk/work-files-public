@@ -1,0 +1,129 @@
+[
+  {
+    "name": "IGC_IMBR_passport_p1.jpg",
+    "status": "EXISTING_PREVIEW",
+    "sha256": "906ea733c3773d9ef2109af38beff85b1c52dd626df088ea68643b74704df4cb"
+  },
+  {
+    "name": "IGC_IMBR_passport_p12.jpg",
+    "status": "EXISTING_PREVIEW",
+    "sha256": "e523bc7ce1712d780430a55319eab4a57b6af1120368171264c7f5d6b637ea03"
+  },
+  {
+    "name": "IGC_IMBR_passport_p13.jpg",
+    "status": "EXISTING_PREVIEW",
+    "sha256": "21ce1c925dd3a71b76d7a3896cd26d4533f93b8182c4fcceede3e9b0a0ace75b"
+  },
+  {
+    "name": "IGC_IMBR_passport_p14.jpg",
+    "status": "EXISTING_PREVIEW",
+    "sha256": "2890c97cbdb0c63a735ba3c77b0e670c48fcff8e18fc4c8be476780f2fed3d34"
+  },
+  {
+    "name": "IGC_IMBR_passport_p15.jpg",
+    "status": "EXISTING_PREVIEW",
+    "sha256": "650fceaec4312340e613098221247eb7a4bf0a4b5d2a4db1d0ae593473653afa"
+  },
+  {
+    "name": "IGC_IMBR_passport_p36.jpg",
+    "status": "EXISTING_PREVIEW",
+    "sha256": "147d0bc97cca1b9c991d6097df415f26b8cc6e80f37ddb15ebde335a42a32edc"
+  },
+  {
+    "name": "IGC_IMBR_passport_p37.jpg",
+    "status": "EXISTING_PREVIEW",
+    "sha256": "c8c811e44642b61908b633b0eb7b90031c1569a1aebb7340544fe9cbc194466b"
+  },
+  {
+    "name": "IGC_IMBR_passport_p38.jpg",
+    "status": "EXISTING_PREVIEW",
+    "sha256": "9dd42f8d868e1c94b79a06745ed62ca53d2ccec7f06723641583f9aade01b9b8"
+  },
+  {
+    "name": "https://daichi.business/support/documents/download.php?ID=28080",
+    "status": "PDF_ACQUIRED",
+    "pages": 140,
+    "selected": [
+      80
+    ],
+    "sha256": "46a40ff1acd90602d4a44d74cef94f14e7c072879a834158821742079b41b19f"
+  },
+  {
+    "name": "https://www.c-o-k.ru/library/catalogs/daichi/38190/140641.pdf",
+    "status": "PDF_ACQUIRED",
+    "pages": 140,
+    "selected": [
+      80
+    ],
+    "sha256": "80da35f58e765d7a267d110cac1ffc9d38af7adf3a37b4d6e45897e9ef80a32a"
+  },
+  {
+    "name": "https://daichi.business/",
+    "status": "PUBLIC_PAGE",
+    "title": "Кондиционеры оптом в Daichi Business",
+    "links": [
+      {
+        "text": "Перейти в каталог",
+        "url": "https://daichi.business/catalog/"
+      },
+      {
+        "text": "Войти",
+        "url": "https://daichi.business/personal/"
+      },
+      {
+        "text": "Каталог",
+        "url": "https://daichi.business/"
+      },
+      {
+        "text": "Войти",
+        "url": "https://daichi.business/personal/"
+      }
+    ]
+  },
+  {
+    "name": "https://daichi.business/support/",
+    "status": "PUBLIC_PAGE",
+    "title": "Поддержка партнеров Daichi",
+    "links": [
+      {
+        "text": "Перейти в каталог",
+        "url": "https://daichi.business/catalog/"
+      },
+      {
+        "text": "Войти",
+        "url": "https://daichi.business/personal/"
+      },
+      {
+        "text": "Каталог",
+        "url": "https://daichi.business/support/"
+      },
+      {
+        "text": "Войти",
+        "url": "https://daichi.business/personal/"
+      }
+    ]
+  },
+  {
+    "name": "https://kentatsurussia.ru/",
+    "status": "PUBLIC_PAGE",
+    "title": "Официальный сайт Kentatsu: системы кондиционирования, вентиляции и отопления — купить у официальных дилеров",
+    "links": [
+      {
+        "text": "Каталог",
+        "url": "https://kentatsurussia.ru/catalog/"
+      },
+      {
+        "text": "Каталог",
+        "url": "https://kentatsurussia.ru/catalog/"
+      },
+      {
+        "text": "Весь каталог",
+        "url": "https://kentatsurussia.ru/catalog/"
+      },
+      {
+        "text": "Каталог",
+        "url": "https://kentatsurussia.ru/catalog/"
+      }
+    ]
+  }
+]
