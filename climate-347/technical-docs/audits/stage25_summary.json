@@ -1,0 +1,23 @@
+{
+  "stage": 25,
+  "status": "FINAL_SCOPE_COMPLETE",
+  "total_sku": 347,
+  "prepared_sku": 327,
+  "technical_pdfs": 41,
+  "assignments": 407,
+  "deferred_sku": 18,
+  "excluded_sku": 2,
+  "blank_aq": 20,
+  "red_rows": [
+    294,
+    300
+  ],
+  "workbook_sha256": "493a84607625da32806fc1b6807c1aab755b4dd9804f7078ae38f77aac640ea5",
+  "workbook_delivered_in_chat": true,
+  "workbook_binary_on_github": false,
+  "archive_sha256": "bc853ccdeff05f353f1171be34a5872bbe5346b555a5c420b71280fdc1a7cd68",
+  "archive_audit_run": 45516021681,
+  "archive_audit_success": true,
+  "standalone_certificates_declarations": 0,
+  "selectel_uploaded": false
+}
