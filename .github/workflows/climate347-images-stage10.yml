@@ -1,0 +1,30 @@
+name: Climate347 images stage 10 candidate acquisition
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/climate347-images-stage10.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q requests beautifulsoup4 Pillow
+      - run: python climate-347/images/stage10_acquire.py
+      - name: Publish unapproved candidate evidence
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          tag="climate347-images-stage10-${GITHUB_RUN_ID}"
+          gh release create "$tag" Climate347_stage10_external_candidates.zip stage10-out/download-results.csv stage10-out/summary.json $(find stage10-out -maxdepth 1 -name 'contact-*.jpg') --title "Climate347 stage10 external candidates (NOT approved)" --notes "Public image originals for exact-model visual review, not final v11 assets. See audit manifest." --target "$GITHUB_SHA"
+          gh release view "$tag" --json url,assets --jq '{url,assets:[.assets[]|{name,size,url}]}'
+          sha256sum Climate347_stage10_external_candidates.zip
+          curl -fsSL --range 0-3 "https://github.com/${GITHUB_REPOSITORY}/releases/download/$tag/Climate347_stage10_external_candidates.zip" | head -c 4 | od -An -tx1 || true
