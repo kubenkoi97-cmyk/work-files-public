@@ -1,0 +1,12 @@
+{
+  "target_models": 56,
+  "queued_pages": 140,
+  "attempted_pages": 140,
+  "web_models_with_images": 45,
+  "web_files": 193,
+  "pdf_occurrences": 58,
+  "pdf_unique": 56,
+  "unique_all": 87,
+  "sheets": 6,
+  "approved": 0
+}

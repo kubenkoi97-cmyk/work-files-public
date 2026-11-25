@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Midea_V8S_2025",
+    "url": "https://www.midea.com/content/dam/midea-aem/id/PD-Midea-V8S-VRF-Catalogue-2025-06-30-V6.pdf",
+    "status": "PDF_ACQUIRED",
+    "pages": 26,
+    "selected": 11,
+    "sha256": "87fa914e75043d61c1295edb3ee360c51a917d89d4ef966e369deb0ca5c6f101"
+  },
+  {
+    "name": "Midea_V8_all",
+    "url": "https://www.savame.com/wp-content/uploads/2025/04/Midea-VRF-V8-All-Catalogue-EN.pdf",
+    "status": "PDF_ACQUIRED",
+    "pages": 98,
+    "selected": 14,
+    "sha256": "f46eb1c8ac514233bfb558b5494ba371b1948c3005315ce0224c11775f09da60"
+  },
+  {
+    "name": "Midea_Daichi_2026",
+    "url": "https://www.c-o-k.ru/library/catalogs/daichi/38190/140641.pdf",
+    "status": "PDF_ACQUIRED",
+    "pages": 140,
+    "selected": 8,
+    "sha256": "80da35f58e765d7a267d110cac1ffc9d38af7adf3a37b4d6e45897e9ef80a32a"
+  },
+  {
+    "name": "Midea_V8S_RU",
+    "url": "https://onokom.ru/dok/midea/2024/catalog/2024-catalog-v8s.pdf",
+    "status": "PDF_ACQUIRED",
+    "pages": 1,
+    "selected": 1,
+    "sha256": "d42ac53ccc66df7e2fcea23623c3f0e05d23abeb7573165d87660e504890e793"
+  }
+]
