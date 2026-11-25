@@ -1,0 +1,34 @@
+name: Climate347 stage15b Daikin exact cabinet factory asset
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/climate347-images-stage15b.yml']
+permissions:
+  contents: write
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: kubenkoi97-cmyk/work-files-public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -q pymupdf requests beautifulsoup4 Pillow numpy
+      - run: python climate-347/images/stage15b_daikin.py
+      - name: Save exact factory asset evidence
+        run: |
+          set -euo pipefail
+          tag="climate347-images-stage15b-${GITHUB_RUN_ID}"
+          gh release create "$tag" Climate347_stage15b_Daikin_factory.zip --title "Climate347 stage15b Daikin factory packshots" --notes "Exact model range factory assets; review before approval." --target "$GITHUB_SHA"
+          sha256sum Climate347_stage15b_Daikin_factory.zip
+          curl -fsSL --range 0-3 "https://github.com/${GITHUB_REPOSITORY}/releases/download/$tag/Climate347_stage15b_Daikin_factory.zip" | head -c4 | od -An -tx1 || true
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add climate-347/images/audits/stage-15b-*
+          git commit -m 'Climate347 stage15b Daikin factory images'
+          git pull --rebase origin main
+          git push origin HEAD:main
