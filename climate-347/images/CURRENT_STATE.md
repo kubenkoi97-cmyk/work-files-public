@@ -1,24 +1,26 @@
 # Climate 347 — изображения: точка продолжения
-Последнее состояние: этап 25, 26.11.2026. Задача OPEN. Не путать с соседней веткой technical-docs.
+Последнее состояние: этап 26, 26.11.2026. Задача OPEN. Не путать с соседней веткой technical-docs.
 ## Уточнение пользователя (приоритет над прежним HOLD зимнего исполнения)
 [WINTER_VARIANTS_RULE.md](WINTER_VARIANTS_RULE.md): фото /-40 и /-30 равно фото точной базовой модели без зимнего комплекта. Остальные правила v11 не меняются.
+## Приоритет сохранённых точных HTML
+[EXACT_HTML_RULE.md](EXACT_HTML_RULE.md) — обязательное уточнение 26.11.2026, имеет приоритет над прежними блокировками по геометрии сохранённых исходных карточек. Для самостоятельного поиска наружных блоков проверка типоразмера сохраняется.
 ## Входные данные
 Исходный Excel Климат_347_этап29(2).xlsx, вкладка «Каталог 347», 347 товаров, 33 серии, 243 отдельные наружные блоки. HTML-архивы Bosch(1).7z, Daikin(2).7z, IGC(1).7z, Kentatsu(1).7z, Midea(1).7z. Оригинальный промпт: [MASTER_PROMPT_v11.txt](MASTER_PROMPT_v11.txt). Использовать сохранённые HTML в первую очередь; проверять точный код в самой карточке, брать только главную товарную галерею. 
 ## Что читать в новом чате
-1. Сначала [актуальный реестр 347 моделей](audits/stage-21-current-models.csv), [актуальный реестр 33 серий](audits/stage-21-current-series.csv), [актуальные 42 без фото](audits/stage-21-remaining-42.csv), [отчёт этапа 8](2026-11-25-stage-08-status.md). Далее этот файл, [MASTER_PROMPT_v11.txt](MASTER_PROMPT_v11.txt), [TASKS.md](TASKS.md), [аудит всех моделей](audits/stage-05-models.csv), [очередь](audits/stage-06-task-queue.csv), [аудит серий](audits/stage-05-series.csv).
+1. Сначала [актуальный реестр 347 моделей](audits/stage-26-current-models.csv), [актуальный реестр 33 серий](audits/stage-26-current-series.csv), [актуальная 21 без фото](audits/stage-26-remaining-21.csv), [отчёт этапа 8](2026-11-25-stage-08-status.md). Далее этот файл, [MASTER_PROMPT_v11.txt](MASTER_PROMPT_v11.txt), [TASKS.md](TASKS.md), [аудит всех моделей](audits/stage-05-models.csv), [очередь](audits/stage-06-task-queue.csv), [аудит серий](audits/stage-05-series.csv).
 2. Историю этапов по ссылкам ниже, источники [этапа 2](audits/stage-02-sources.csv), реестры [этапа 1](audits/stage-01-models.csv), [этапа 2](audits/stage-02-models.csv), [этапа 4](audits/stage-04-models.csv), [серии этапа 4](audits/stage-04-series.csv).
 3. [Манифест бинарных файлов](FILE_MANIFEST.md). Не считать локальные имена рабочими ссылками GitHub. Найти файлы в предыдущем чате/библиотеке или получить из приложенного handoff ZIP; если недоступны — продолжить проверку источников и очереди, но не утверждать, что заменены реальные JPG. Не запрашивать повторно весь контекст, если он уже доступен.
 ## Текущие цифры
 | Бренд | Всего | Рабочие фото | Без рабочих фото |
 |---|---:|---:|---:|
 | Midea | 178 | 160 | 18 |
-| Kentatsu | 83 | 64 | 19 |
+| Kentatsu | 83 | 83 | 0 |
 | IGC | 51 | 48 | 3 |
 | Daikin | 24 | 24 | 0 |
-| Bosch | 11 | 9 | 2 |
-| Всего | 347 | 305 | 42 |
-Эффективное покрытие с учётом дельты; базовый ZIP 456 JPG/279 моделей, после применения 487 JPG/305 моделей. Все 347 OPEN по полной галерее.
-Базовый ZIP: 456 JPG, 79 уникальных хешей (главных JPG 46 уникальных). С учётом дельты: 487 JPG; уникальность после объединения ещё не пересчитана. 26 серий с фото для каждого товара, 5 частично, 2 без JPG. Ни одна серия не закрыта по v11. Приоритеты: P0 42, P1 43, P2 73, P3 93, P4 96, все OPEN. 
+| Bosch | 11 | 11 | 0 |
+| Всего | 347 | 326 | 21 |
+Эффективное покрытие с учётом дельты; базовый ZIP 456 JPG/279 моделей, после применения 526 JPG/326 моделей. Все 347 OPEN по полной галерее.
+Базовый ZIP: 456 JPG, 79 уникальных хешей (главных JPG 46 уникальных). С учётом дельты: 526 JPG; уникальность после объединения ещё не пересчитана. 26 серий с фото для каждого товара, 5 частично, 2 без JPG. Ни одна серия не закрыта по v11. Приоритеты: P0 21, P1 25, P2 73, P3 93, P4 135, все OPEN. 
 ## История (не перезаписывать)
 - [Этап 1](2026-11-24-stage-01-status.md) — 631 JPG, 324 модели.
 - [Этап 2](2026-11-24-stage-02-status.md) — 638 JPG, 329 моделей.
@@ -86,7 +88,7 @@ Kentatsu KVAG560CZAN3: три 850x850 просмотрены/скрининг: 2
 Stage 20 row-by-row review and effective registries: [347 models](audits/stage-20-current-models.csv), [42 remaining](audits/stage-20-remaining-42.csv), [decisions](audits/stage-20-review-42.csv), [overlay](audits/stage-20-approved-overlay.csv). ZIP SHA256 and public range signature verified in successful runner logs. Stage21 run 45615944102 in progress at last check.
 
 ## Stage 21 — completed and reviewed (current)
-[Report](2026-11-25-stage-21-status.md), [347 models](audits/stage-21-current-models.csv), [42 remaining](audits/stage-21-remaining-42.csv), [individual decisions](audits/stage-21-review-42.csv), [effective overlay](audits/stage-21-approved-overlay.csv). Run 45615944102 success; 65 candidates/26 unique including non-product graphics; no approved JPG. Effective coverage 305/347, 487 JPG, 42 missing. ZIP https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/climate347-images-stage21-45615944102/Climate347_stage21_candidates.zip. Preserve stage19 winter rule and prior approved images.
+[Report](2026-11-25-stage-21-status.md), [347 models](audits/stage-26-current-models.csv), [42 remaining](audits/stage-21-remaining-42.csv), [individual decisions](audits/stage-21-review-42.csv), [effective overlay](audits/stage-21-approved-overlay.csv). Run 45615944102 success; 65 candidates/26 unique including non-product graphics; no approved JPG. Effective coverage 305/347, 487 JPG, 42 missing. ZIP https://github.com/kubenkoi97-cmyk/work-files-public/releases/download/climate347-images-stage21-45615944102/Climate347_stage21_candidates.zip. Preserve stage19 winter rule and prior approved images.
 
 ## Stage 22–24 — reviewed, consolidation
 [Report](2026-11-25-stage-24-status.md). Stages 22/23 completed; 91 candidate occurrences, no approved JPG. Counts unchanged 305/347, 487 JPG; stage21 overlay authoritative. Packaging script pack24_overlay.py verifies all 35 overlay JPGs by SHA256 and dimensions.
@@ -98,3 +100,6 @@ Base SHA256 verified; 35 overlay files validated by runner; 4 replacements and 3
 
 ## Stage25 — targeted 79-model original HTML audit (current)
 [Report](2026-11-26-stage-25-status.md), [79-model registry](audits/stage-25-user-selected-79.csv). 79 exact H1 pages, 478 resolved local gallery raster references, 31 unique pixel hashes, 58 JPG/8 unique in stage24 archive, 21 without JPG. KTRB 18 existing P1 across two widths need exact cabinet verification. No new approvals; working coverage remains 305/347, 487 JPG, 42 missing; stage21 master/overlay and stage24 ZIP unchanged.
+
+## Stage26 — current user clarification and restored JPG
+[Report](2026-11-26-stage-26-status.md), [rule](EXACT_HTML_RULE.md), [347 models](audits/stage-26-current-models.csv), [33 series](audits/stage-26-current-series.csv), [21 remaining](audits/stage-26-remaining-21.csv), [79 selected review](audits/stage-26-user-selected-79.csv), [39 new source records](audits/stage-26-approved-additions.csv), [74 effective overlay](audits/stage-26-approved-overlay.csv). 526 JPG /326 models/21 missing. All 79 selected have a working JPG; 58 existing exact-card mains byte-identical to reprocessed originals. 18 KTRB P1 moved to P4. Full gallery OPEN; Bosch original resolution caveat. Use only latest overlay. Consolidated ZIP sha256 8070c3f5c68d93b8d3e64c4e509dfb2897294d07733fa66847e144312723c55c, provided in chat.
