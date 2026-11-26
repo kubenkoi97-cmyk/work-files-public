@@ -1,0 +1,3 @@
+# Climate 347 — terminology revision
+
+User requested site-aligned terminology «Крышные кондиционеры». On sheet «Каталог 347», rows 332–348 (17 IGC IRFT models), replaced «Руфтоп» with «Крышный кондиционер» in name (B) and description (AT), with minor smoothing of intro phrase. All 34 changed catalog cells logged in Log. No other catalog value changed (in-memory comparison). ZIP integrity passed. Product codes, articles, technical characteristics, category property and row order unchanged. Temperature of leaving water retained for chillers pending confirmation of site-specific field applicability; integrated hydromodule is not a technical prerequisite. Output XLSX delivered in chat; binary not uploaded to GitHub.
